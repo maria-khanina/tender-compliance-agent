@@ -1,0 +1,81 @@
+from typing import Literal
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+LanguageModelProvider = Literal["openai_compatible", "google_genai"]
+VectorStoreProvider = Literal["qdrant"]
+EmbeddingProvider = Literal["sentence_transformers"]
+
+DEFAULT_LANGUAGE_MODEL_PROVIDER: LanguageModelProvider = (
+    "openai_compatible"
+)
+DEFAULT_VECTOR_STORE_PROVIDER: VectorStoreProvider = "qdrant"
+DEFAULT_EMBEDDING_PROVIDER: EmbeddingProvider = "sentence_transformers"
+
+DEFAULT_VECTOR_STORE_COLLECTION_NAME = "tender_application_chunks"
+DEFAULT_EMBEDDING_MODEL_NAME = "BAAI/bge-large-en-v1.5"
+
+REQUIREMENTS_CLAUSE_DETECTION_SAMPLE_LINES = 200
+REQUIREMENTS_CLAUSE_MINIMUM_MATCH_COUNT = 3
+REQUIREMENTS_FALLBACK_CHUNK_SIZE_CHARACTERS = 1800
+REQUIREMENTS_FALLBACK_CHUNK_OVERLAP_CHARACTERS = 300
+
+APPLICATION_CHUNK_SIZE_CHARACTERS = 1500
+APPLICATION_CHUNK_OVERLAP_CHARACTERS = 250
+
+REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD = 0.85
+CITATION_FUZZY_MATCH_MINIMUM_SCORE = 0.85
+
+EVIDENCE_RETRIEVAL_TOP_K = 8
+EVIDENCE_SIMILARITY_THRESHOLD = 0.3
+EVIDENCE_MINIMUM_CHUNK_COUNT = 3
+EVIDENCE_MAXIMUM_CHUNK_COUNT = 10
+EVIDENCE_MAXIMUM_TOTAL_TOKENS = 3000
+EVIDENCE_NEIGHBOR_EXPANSION_TOP_HIT_COUNT = 3
+
+CONDITION_EXTRACTION_ENABLED = False
+
+EVALUATION_REQUIREMENT_MATCH_MINIMUM_OVERLAP_RATIO = 0.5
+EVALUATION_EXCLUDED_CLAUSE_MINIMUM_OVERLAP_RATIO = 0.5
+EVALUATION_EVIDENCE_MATCH_MINIMUM_OVERLAP_RATIO = 0.3
+EVALUATION_COVERAGE_FLAG_THRESHOLD = 0.8
+
+LANGUAGE_MODEL_TEMPERATURE = 0.0
+AVERAGE_CHARACTERS_PER_TOKEN = 4.0
+
+LANGUAGE_MODEL_RETRY_ATTEMPT_COUNT = 8
+LANGUAGE_MODEL_RETRY_WAIT_MINIMUM_SECONDS = 1.0
+LANGUAGE_MODEL_RETRY_WAIT_MAXIMUM_SECONDS = 65.0
+
+VECTOR_STORE_RETRY_ATTEMPT_COUNT = 3
+VECTOR_STORE_RETRY_WAIT_MINIMUM_SECONDS = 0.5
+VECTOR_STORE_RETRY_WAIT_MAXIMUM_SECONDS = 4.0
+
+CHECKPOINT_DATABASE_PATH = "checkpoints.db"
+
+LOG_FORMAT = "%(asctime)s %(levelname)s %(name)s: %(message)s"
+LOG_MESSAGE_PREVIEW_CHARACTER_COUNT = 80
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env")
+
+    language_model_provider: LanguageModelProvider = (
+        DEFAULT_LANGUAGE_MODEL_PROVIDER
+    )
+    language_model_base_url: str | None = None
+    language_model_name: str
+    language_model_api_key: str
+    vector_store_provider: VectorStoreProvider = (
+        DEFAULT_VECTOR_STORE_PROVIDER
+    )
+    vector_store_url: str
+    vector_store_collection_name: str = (
+        DEFAULT_VECTOR_STORE_COLLECTION_NAME
+    )
+    embedding_provider: EmbeddingProvider = DEFAULT_EMBEDDING_PROVIDER
+    embedding_model_name: str = DEFAULT_EMBEDDING_MODEL_NAME
+
+
+settings = Settings()  # type: ignore[call-arg]

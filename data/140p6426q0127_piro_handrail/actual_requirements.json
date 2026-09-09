@@ -1,0 +1,499 @@
+[
+  {
+    "requirement_id": "1273dfca-c880-4967-a98a-c2abb28473b0",
+    "text": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
+        "start_char": 1067,
+        "end_char": 1152,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
+        "start_char": 13855,
+        "end_char": 13940,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7666dd8b-b18f-4232-8cf4-beb98dec38ff",
+    "text": "Your company must be registered in the System for Award Management (SAM) with an active status, and be considered a small business for the size standard associated with the NAICS code found in block 10 on page one (1) of the solicitation, at the time of quote/proposal close date/time, at the time of award, and throughout the entire award/contract performance.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Your company must also be registered in the System for Award Management (SAM) and be considered a small business for the size standard associated with the NAICS code found in block 10 on page one (1) of this solicitation, and this registration must be \"active\" in SAM at the time of quote/proposal close date/time - as well as, at the time of award and throughout the entire award/contract performance.",
+        "start_char": 1153,
+        "end_char": 1555,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Your company must also be registered as a small business, at the time of the quote/proposal close date/time - as well as, at the time of award and throughout the entire award/contract performance - in System for Award Management (SAM) and be considered a small business for the size standard associated with the NAICS code found in block 10 on page one (1) of this solicitation.",
+        "start_char": 13388,
+        "end_char": 13766,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Your company must also be registered as a small business, at the time of the quote/proposal close date/time - as well as, at the time of award and throughout the entire award/contract performance - in System for Award Management (SAM) with the NAICS code found in block 10 on page one (1) of this solicitation.",
+        "start_char": 13944,
+        "end_char": 14254,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7b890aea-e8eb-4b2b-bd65-0233859b501e",
+    "text": "Offers to be submitted via email.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offers to be submitted via email.",
+        "start_char": 2640,
+        "end_char": 2673,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "26b0eca1-45e0-450b-a20e-8b3e1ee48d72",
+    "text": "Quotes must be in accordance with and in the order detailed in this section.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Quotes must be in accordance with and in the order detailed in this section.",
+        "start_char": 9227,
+        "end_char": 9303,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "305f6185-2000-4681-b11a-91385fc72096",
+    "text": "All interested parties shall be registered in the System for Award Management or SAM at time an offer or quotation is submitted.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "All interested parties shall be registered in the System for Award Management or SAM at time an offer or quotation is submitted.",
+        "start_char": 9462,
+        "end_char": 9590,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "62cd30e4-5d2a-4b20-a0ec-6d549d398c24",
+    "text": "The offerors shall submit a quote to the contract specialist by email to: colette_riegelmayer@ios.doi.gov",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "The offerors shall submit a quote to the contract specialist by email to: colette_riegelmayer@ios.doi.gov",
+        "start_char": 9592,
+        "end_char": 9697,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "55c26d2b-1bde-45b9-8a74-016250e8f41c",
+    "text": "Offers shall submit the following information in its entirety:",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offers shall submit the following information in its entirety:",
+        "start_char": 9699,
+        "end_char": 9761,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c1bdba80-d055-4e0d-923d-5588a72ce801",
+    "text": "Signed amendments if applicable",
+    "is_mandatory": false,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Signed amendments if applicable",
+        "start_char": 9901,
+        "end_char": 9932,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ed3f6516-4161-40fe-a6b7-2297cb99b962",
+    "text": "Complete the attached price schedule provided in the solicitation in its entirety.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Price Schedule - complete the attached price schedule that has been provided in this solicitation in its entirety",
+        "start_char": 9935,
+        "end_char": 10050,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "b) Price Schedule: Complete attached price schedule in its entirety.",
+        "start_char": 10899,
+        "end_char": 10967,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "54e148fe-4097-4577-ad33-4c5ff95ddc6d",
+    "text": "If quoting an \"or equal\" item, must submit a detailed product specifications document/literature and ensure it is provided to confirm the item(s) are comparable",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "If quoting an \"or equal\" item, must submit a detailed product specifications document/literature and ensure it is provided to confirm the item(s) are comparable",
+        "start_char": 10053,
+        "end_char": 10215,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "if quoting an \"or equal\" item, must submit a detailed product specifications document/literature and ensure it is provided to confirm the item(s) are comparable.",
+        "start_char": 12916,
+        "end_char": 13077,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0964d825-c6ec-440d-868e-09e31b461ad2",
+    "text": "Provide a detailed capabilities statement, project narrative, or technical questionnaire demonstrating how the company will successfully meet the needs of the statement of work, including knowledge of and experience in the products described in the specifications.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Provide a detailed capabilities statement or project narrative that demonstrates how the company will successfully meet the needs of the statement of work per the \"TO SUBMIT AN OFFER\" section below.",
+        "start_char": 10218,
+        "end_char": 10420,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete a Detailed Capabilities Statement or Project Narrative demonstrating knowledge of, and experience in, the products described in the attached Specifications.",
+        "start_char": 12648,
+        "end_char": 12813,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete the technical questionnaire or a capability statement/project narrative.",
+        "start_char": 15946,
+        "end_char": 16027,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8bc69430-1448-4231-b7a0-c3548237705e",
+    "text": "MUST include all required shop drawings and product data.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "MUST include all required shop drawings and product data.",
+        "start_char": 10421,
+        "end_char": 10478,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "MUST include all required shop drawings and product data.",
+        "start_char": 12814,
+        "end_char": 12871,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9fa3936b-e264-4059-88d4-6a50d25993a3",
+    "text": "Contact information SHALL be provided, to include a brief description of the project, as well as point of contact information so that the Government may contact and confirm the information provided.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Contact information SHALL be provided, to include a brief description of the project, as well as point of contact information so that the Government may contact and confirm the information provided.",
+        "start_char": 10695,
+        "end_char": 10897,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "440dd180-6178-4401-a8b9-c724503c121b",
+    "text": "this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package.",
+        "start_char": 11380,
+        "end_char": 11518,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8d84a8a2-667f-447e-8928-26102ab77b70",
+    "text": "Complete attached Price Schedule and insert total unit price and/or amount, in reference to ALL line items listed.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete attached Price Schedule and insert total unit price and/or amount, in reference to ALL line items listed.",
+        "start_char": 11523,
+        "end_char": 11637,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "77c4a0a8-c2d1-4948-8507-c5421d9b785c",
+    "text": "Must ensure that this document is not edited for any reason (outside of adding units of measure, quantities, etc.) and the unedited Price Schedule is provided with final pricing - if needing to make edits or alter the document, provide an addendum outlining these changes or additional information wanting to make apparent to the evaluators.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Must ensure that this document is not edited for any reason (outside of adding units of measure, quantities, etc.) and the unedited Price Schedule is provided with final pricing - if needing to make edits or alter the document, provide an addendum outlining these changes or additional information wanting to make apparent to the evaluators.",
+        "start_char": 11638,
+        "end_char": 11979,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1137bbf4-7f1f-4cc1-a562-ceb3693d386e",
+    "text": "Ensure that Prior Experience references and examples, that are similar in scope to this type of service, are provided",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Ensure that Prior Experience references and examples, that are similar in scope to this type of service, are provided",
+        "start_char": 12115,
+        "end_char": 12232,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cc45c430-43d6-444a-847e-d8e7e2442a80",
+    "text": "Offerors are to provide references (preferably a minimum of 3) that provide information on the performance quality of work on similar projects/services as outlined in the Statement of Work - please ensure they are as relevant as can be for this requirement.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offerors are to provide references (preferably a minimum of 3) that provide information on the performance quality of work on similar projects/services as outlined in the Statement of Work - please ensure they are as relevant as can be for this requirement.",
+        "start_char": 12386,
+        "end_char": 12643,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "542c2c70-7bf4-495a-82c0-6e2238106030",
+    "text": "Submit all required documents via email by the date and time listed in this solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Submit all required documents via email by the date and time listed in this solicitation.",
+        "start_char": 13082,
+        "end_char": 13171,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d351bd23-40d4-44e1-bd32-ebc8b6f7bb93",
+    "text": "Offerors are responsible for submitting quotes/proposals so as to reach the Government office designated in the solicitation by the time specified in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offerors are responsible for submitting quotes/proposals so as to reach the Government office designated in the solicitation by the time specified in the solicitation.",
+        "start_char": 13172,
+        "end_char": 13339,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "83b30ace-d513-467f-a3cf-af7627a5ad3f",
+    "text": "This registration must be 'active' in SAM. NO EXCEPTIONS.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This registration must be \"active\" in SAM.",
+        "start_char": 13767,
+        "end_char": 13809,
+        "citation_verified": true,
+        "match_precision": "precise"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This registration must be \"active\" in SAM. NO EXCEPTIONS.",
+        "start_char": 14255,
+        "end_char": 14312,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2b95d056-ec52-41b2-9744-f60c10c9bb9c",
+    "text": "Written confirmation that company specializes in, or has sufficient documented direct experience in, providing all labor, material, tools, supervision and travel necessary to perform the service outlined, and in accordance with, the attached Statement of Work (SOW).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Written confirmation that company specializes in, or has sufficient documented direct experience in, providing all labor, material, tools, supervision and travel necessary to perform the service outlined, and in accordance with, the attached Statement of Work (SOW).",
+        "start_char": 15679,
+        "end_char": 15945,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ee556e3c-8929-43d7-8f9e-b94427fd9157",
+    "text": "Complete Prior Experience references as described in \"TO SUBMIT AN OFFER\" section, that can confirm your company has successfully completed similar tasks outlined in the Statement of Work.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete Prior Experience references as described in \"TO SUBMIT AN OFFER\" section, that can confirm your company has successfully completed similar tasks outlined in the Statement of Work.",
+        "start_char": 16050,
+        "end_char": 16238,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2ba65041-af4b-4d03-ab45-848e66fa8d6f",
+    "text": "The Contractor must use the IPP website to register access and use IPP for submitting requests for payment.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "The Contractor must use the IPP website to register access and use IPP for submitting requests for payment.",
+        "start_char": 18249,
+        "end_char": 18356,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "647809df-9dfa-49e7-9f13-160d7984deed",
+    "text": "If the Contractor is unable to comply with the requirement to use IPP for submitting invoices for payment, the Contractor must submit a waiver request in writing to the Contracting Officer with its proposal or quotation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "If the Contractor is unable to comply with the requirement to use IPP for submitting invoices for payment, the Contractor must submit a waiver request in writing to the Contracting Officer with its proposal or quotation.",
+        "start_char": 18357,
+        "end_char": 18577,
+        "citation_verified": true,
+        "match_precision": "precise"
+      }
+    ],
+    "conditions": []
+  }
+]
