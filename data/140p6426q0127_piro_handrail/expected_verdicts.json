@@ -1,0 +1,271 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in",
+    "the list is a defensible pipeline output for this topic_id. The",
+    "first entry is the primary/best answer; later entries are",
+    "explicitly-tolerated alternatives (e.g. a stricter or looser call",
+    "that a reasonable reviewer would not flag as wrong). This is NOT",
+    "a substitute for a confusion matrix -- evaluate.py should still",
+    "record which exact verdict was produced, it just should not be",
+    "penalized if it lands anywhere in this list.",
+    "For representation-only requirements (tax liability, felony,",
+    "Sudan/Iran, SAM active), 'compliant' means the application",
+    "text contains the required self-representation, correctly",
+    "completed -- not that the underlying fact was independently",
+    "verified. No text-only tool, ours included, can confirm a live",
+    "SAM registration or an IRS tax record; that verification is the",
+    "contracting officer's job outside this pipeline's scope.",
+    "prior_experience_count and prior_experience_poc_required replace",
+    "the old single 'prior_experience_minimum_3_with_poc' entry -- see",
+    "expected_requirements.json's notes for why the topic was split.",
+    "The application names three references: two with full project",
+    "descriptions and complete points of contact, one with only a",
+    "vague project description and no point of contact at all.",
+    "A null acceptable_verdicts marks a requirement this fixture",
+    "deliberately does not score (see rationale)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "small_business_size_standard",
+      "acceptable_verdicts": [
+        "contradictory",
+        "non_compliant"
+      ],
+      "rationale": "Application states average annual revenue as $12.4M in the Capabilities Statement and as $21.8M in Financial and Bonding Information for the same size-standard purpose -- directly conflicting figures for the same field. This is the deterministic numeric_threshold test case: extract_values should surface both numbers for the same field_name, and compare_condition should return CONTRADICTORY before any language-model verdict call happens. non_compliant is also acceptable (not ideal) because the second figure alone independently fails the $19M threshold, so a pipeline that misses the internal inconsistency but still correctly fails the requirement has not made the dangerous mistake -- compliant is the only unacceptable answer here.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "average annual gross revenue of $12.4\nmillion over the past three fiscal years",
+          "start_char": 2599,
+          "end_char": 2677
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "average annual revenue for size-standard purposes was $21.8\nmillion",
+          "start_char": 4697,
+          "end_char": 4764
+        }
+      ]
+    },
+    {
+      "topic_id": "uei_required",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "UEI is explicitly stated in Contractor Core Data.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Unique Entity Identifier (UEI): SRF7X92LM814",
+          "start_char": 604,
+          "end_char": 648
+        }
+      ]
+    },
+    {
+      "topic_id": "sam_registration_active",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application affirmatively represents active SAM registration through submission, award, and performance. See top-level notes on the limits of what 'compliant' can mean for this topic.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance",
+          "start_char": 890,
+          "end_char": 1055
+        }
+      ]
+    },
+    {
+      "topic_id": "tax_liability_representation",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Representation explicitly completed as 'is not'.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "is not a corporation that has any unpaid Federal tax\nliability",
+          "start_char": 1261,
+          "end_char": 1323
+        }
+      ]
+    },
+    {
+      "topic_id": "felony_conviction_representation",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Representation explicitly completed as 'is not'.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months",
+          "start_char": 1608,
+          "end_char": 1729
+        }
+      ]
+    },
+    {
+      "topic_id": "sudan_iran_restricted_business_representation",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Certification explicitly provided for both Sudan and Iran clauses.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran",
+          "start_char": 1835,
+          "end_char": 1980
+        }
+      ]
+    },
+    {
+      "topic_id": "buy_american_certificate",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Certification explicitly provided.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "certifies that all end products to be delivered under this\ncontract are domestic end products",
+          "start_char": 2361,
+          "end_char": 2454
+        }
+      ]
+    },
+    {
+      "topic_id": "child_labor_certification",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Certification explicitly provided.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "certifies that, to the best of its knowledge, none of the end",
+          "start_char": 2134,
+          "end_char": 2195
+        }
+      ]
+    },
+    {
+      "topic_id": "price_schedule_complete",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Item 10 price and total are both filled in.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)",
+          "start_char": 4425,
+          "end_char": 4505
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Total: $58,750.00",
+          "start_char": 4524,
+          "end_char": 4541
+        }
+      ]
+    },
+    {
+      "topic_id": "or_equal_product_documentation",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application signals intent to substitute an alternate-manufacturer fastener (an 'or equal' situation) but includes no product specification or literature anywhere confirming comparability, as the requirement mandates.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork",
+          "start_char": 3414,
+          "end_char": 3561
+        }
+      ]
+    },
+    {
+      "topic_id": "capabilities_statement_with_shop_drawings",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application asserts shop drawings and product data are included as Attachment A. As with SAM/tax/felony reps, this pipeline can only confirm the claim is made in the text, not that a genuine attachment exists -- that check is outside a text-only tool's reach.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A",
+          "start_char": 3251,
+          "end_char": 3350
+        }
+      ]
+    },
+    {
+      "topic_id": "prior_experience_count",
+      "acceptable_verdicts": [
+        "compliant",
+        "insufficient_information"
+      ],
+      "rationale": "Three distinct engagements are named, satisfying the count. The third is described only in general terms ('various municipal handrail and railing projects... over the years') without a specific project or contract value, which is a defensible basis for either a clean compliant call or a more cautious insufficient_information call about whether it truly matches the 'similar size and scope' bar -- non_compliant would be wrong, since three references genuinely are present.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000.",
+          "start_char": 3662,
+          "end_char": 3854
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500.",
+          "start_char": 3946,
+          "end_char": 4138
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
+          "start_char": 4229,
+          "end_char": 4407
+        }
+      ]
+    },
+    {
+      "topic_id": "prior_experience_poc_required",
+      "acceptable_verdicts": [
+        "non_compliant",
+        "insufficient_information"
+      ],
+      "rationale": "References 1 and 2 both include complete point-of-contact information. Reference 3 gives no point of contact at all, so the requirement's explicit 'contact information SHALL be provided' is unmet for that entry. non_compliant is the more precise call (a clear violation for one of three references); insufficient_information is also acceptable if the pipeline treats partial fulfillment as unable to confirm rather than as a clean fail. compliant is unacceptable -- it would miss a verifiable, unambiguous gap.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+          "start_char": 3855,
+          "end_char": 3944
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.",
+          "start_char": 4139,
+          "end_char": 4227
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
+          "start_char": 4229,
+          "end_char": 4407
+        }
+      ]
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "application.txt is a capabilities-statement-style document; it has no reason to record when or through what channel it was actually submitted, so there is no textual evidence either way. compliant would be a false-compliance failure (fabricating confirmation from silence); non_compliant would be equally unjustified (there is no evidence of lateness either) -- insufficient_information is the only defensible call.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+from collections.abc import Callable
+from functools import lru_cache
+from typing import TypeVar, cast
+
+from langchain_core.language_models import LanguageModelInput
+from langchain_core.language_models.chat_models import BaseChatModel
+from langchain_core.runnables import Runnable
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, SecretStr
+
+from backends.retry import build_retry_decorator
+from config import (
+    LANGUAGE_MODEL_RETRY_ATTEMPT_COUNT,
+    LANGUAGE_MODEL_RETRY_WAIT_MAXIMUM_SECONDS,
+    LANGUAGE_MODEL_RETRY_WAIT_MINIMUM_SECONDS,
+    LANGUAGE_MODEL_TEMPERATURE,
+    LanguageModelProvider,
+    settings,
+)
+from logging_config import get_logger
+
+
+StructuredSchema = TypeVar("StructuredSchema", bound=BaseModel)
+
+logger = get_logger(__name__)
+
+
+@lru_cache(maxsize=8)
+def _build_openai_compatible_chat_model(
+    temperature: float,
+) -> BaseChatModel:
+    logger.info(
+        "Building chat model %s at %s (temperature=%s)",
+        settings.language_model_name,
+        settings.language_model_base_url,
+        temperature,
+    )
+    return ChatOpenAI(
+        base_url=settings.language_model_base_url,
+        api_key=SecretStr(settings.language_model_api_key),
+        model=settings.language_model_name,
+        temperature=temperature,
+    )
+
+
+@lru_cache(maxsize=8)
+def _build_google_genai_chat_model(temperature: float) -> BaseChatModel:
+    logger.info(
+        "Building Gemini chat model %s (temperature=%s)",
+        settings.language_model_name,
+        temperature,
+    )
+    return ChatGoogleGenerativeAI(
+        model=settings.language_model_name,
+        google_api_key=SecretStr(settings.language_model_api_key),
+        temperature=temperature,
+    )
+
+
+LANGUAGE_MODEL_FACTORIES: dict[
+    LanguageModelProvider, Callable[[float], BaseChatModel]
+] = {
+    "openai_compatible": _build_openai_compatible_chat_model,
+    "google_genai": _build_google_genai_chat_model,
+}
+
+
+def get_chat_model(
+    temperature: float = LANGUAGE_MODEL_TEMPERATURE,
+) -> BaseChatModel:
+    factory = LANGUAGE_MODEL_FACTORIES[settings.language_model_provider]
+    return factory(temperature)
+
+
+def get_structured_chat_model(
+    output_schema: type[StructuredSchema],
+) -> Runnable[LanguageModelInput, StructuredSchema]:
+    chat_model = get_chat_model()
+    structured_model = chat_model.with_structured_output(output_schema)
+    return cast(
+        Runnable[LanguageModelInput, StructuredSchema], structured_model
+    )
+
+
+@build_retry_decorator(
+    LANGUAGE_MODEL_RETRY_ATTEMPT_COUNT,
+    LANGUAGE_MODEL_RETRY_WAIT_MINIMUM_SECONDS,
+    LANGUAGE_MODEL_RETRY_WAIT_MAXIMUM_SECONDS,
+)
+def invoke_structured(
+    structured_model: Runnable[LanguageModelInput, StructuredSchema],
+    prompt_text: str,
+) -> StructuredSchema:
+    return structured_model.invoke(prompt_text)

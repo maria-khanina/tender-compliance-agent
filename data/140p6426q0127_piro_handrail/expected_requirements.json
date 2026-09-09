@@ -1,0 +1,304 @@
+{
+  "notes": [
+    "This is a recall/precision checklist for evaluating extraction",
+    "quality, not an exact-match target. A correct extraction will",
+    "phrase each requirement differently from source.quote below;",
+    "source.quote only marks where in tender.txt the requirement",
+    "originates, for offset-based matching and for a human reviewer",
+    "to locate it quickly.",
+    "This list aims to be EXHAUSTIVE over bidder-facing, pre-award,",
+    "text-verifiable requirements in tender.txt -- not a representative",
+    "sample. 'Exhaustive' means every distinct checkable condition, not",
+    "every sentence: connective/scaffolding sentences that merely",
+    "introduce an already-listed item are not separately enumerated.",
+    "'excluded_clauses' below is the deliberate complement: concrete",
+    "spans a plausible bad extraction could mistake for a requirement,",
+    "even though they are government-facing instructions or post-award",
+    "clauses. Together, requirements + excluded_clauses let evaluation",
+    "classify any actual (extracted) requirement that matches neither",
+    "list as a genuine fixture gap needing manual triage, rather than",
+    "silently counting it against precision.",
+    "Several requirements (SAM registration, UEI, price schedule,",
+    "'or equal' documentation, capabilities statement) are restated",
+    "verbatim or near-verbatim two or three times across tender.txt",
+    "(Description section, Instructions to Offerors, Registration",
+    "Requirements). Each topic below anchors to ONE canonical",
+    "occurrence; a correct pipeline is expected to deduplicate the",
+    "restatements into a single Requirement, so matching an actual",
+    "requirement's citation set against this one anchor span is",
+    "sufficient -- the restatements are not separate topics.",
+    "prior_experience_count and prior_experience_poc_required were",
+    "deliberately split from what used to be a single",
+    "'prior_experience_minimum_3_with_poc' topic: the source sentence",
+    "bundles two independently-checkable conditions (how many/how",
+    "recent/how similar the references are, vs. whether each reference",
+    "includes contact information), and the real application evidence",
+    "satisfies one but not the other for the third reference. A single",
+    "blended topic could not express that split outcome; see",
+    "expected_verdicts.json.",
+    "prior_experience_count.is_mandatory is a deliberate ambiguity, not",
+    "an error: the CHECKLIST FOR QUOTE SUBMITTAL section states",
+    "'Three prior experiences' unqualified (source.quote below), but",
+    "the later 'TO SUBMIT AN OFFER' section (item 3) softens this to",
+    "'preferably a minimum of 3'. The tender itself is internally",
+    "inconsistent here. is_mandatory is set true, anchored to the",
+    "checklist wording, but a pipeline that reasonably classifies this",
+    "as non-mandatory given the later softening should not be scored",
+    "as simply wrong.",
+    "submission_deadline_and_channel is a deliberate test of false-",
+    "compliance avoidance: application.txt (a capabilities-statement-",
+    "style document) has no reason to contain submission-timestamp or",
+    "channel metadata, so the expected verdict is",
+    "insufficient_information -- a pipeline that guesses 'compliant'",
+    "with zero supporting evidence has failed this case, even though",
+    "the requirement itself is real and mandatory.",
+    "site_visit_expectation lives in excluded_clauses, not in",
+    "requirements: the site visit happens before/outside the",
+    "application and the tender never asks the bidder to say anything",
+    "about it in their quote, so it imposes no obligation on the",
+    "application's content at all. It stays a deliberate negative",
+    "case -- 'the site visit is urged and expected' reads like bidder-",
+    "facing obligation language, exactly what a weak extraction could",
+    "mistake for a requirement -- but the correct fixture home for",
+    "that trap is excluded_clauses, not a requirements entry with",
+    "is_mandatory: false."
+  ],
+  "requirements": [
+    {
+      "topic_id": "small_business_size_standard",
+      "description": "Must be a small business under NAICS 238990 with a size standard of $19M average annual revenue.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This requirement is a 100% total small business set-aside. The associated NAICS code is\n238990. The small business size standard is $19 M.",
+        "start_char": 810,
+        "end_char": 948
+      }
+    },
+    {
+      "topic_id": "uei_required",
+      "description": "Company must obtain and provide a Unique Entity Identifier (UEI).",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
+        "start_char": 1067,
+        "end_char": 1152
+      }
+    },
+    {
+      "topic_id": "sam_registration_active",
+      "description": "SAM registration must be active at quote close, at award, and throughout contract performance, no exceptions.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This registration must be \"active\" in SAM. NO EXCEPTIONS.",
+        "start_char": 13767,
+        "end_char": 13824
+      }
+    },
+    {
+      "topic_id": "tax_liability_representation",
+      "description": "Offeror must represent whether it is or is not a corporation with unpaid, exhausted-remedy Federal tax liability.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "It is [ ] is not [ ] a corporation that has any unpaid Federal tax liability that has been",
+        "start_char": 8613,
+        "end_char": 8703
+      }
+    },
+    {
+      "topic_id": "felony_conviction_representation",
+      "description": "Offeror must represent whether it is or is not a corporation convicted of a Federal felony within the preceding 24 months.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "It is [ ] is not [ ] a corporation that was convicted of a felony criminal violation under a\nFederal law within the preceding 24 months.",
+        "start_char": 8945,
+        "end_char": 9081
+      }
+    },
+    {
+      "topic_id": "sudan_iran_restricted_business_representation",
+      "description": "Offeror must certify it does not conduct restricted business in Sudan or prohibited activity relating to Iran.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "52.225-20 Prohibition on Conducting Restricted Business Operations in Sudan-Certification",
+        "start_char": 4278,
+        "end_char": 4367
+      }
+    },
+    {
+      "topic_id": "buy_american_certificate",
+      "description": "Offeror must certify delivered end products are domestic under the Buy American clause.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "52.225-2 Buy American Certificate (Oct 2022)",
+        "start_char": 4233,
+        "end_char": 4277
+      }
+    },
+    {
+      "topic_id": "child_labor_certification",
+      "description": "Offeror must certify knowledge regarding child labor for listed end products.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "52.222-18 Certification Regarding Knowledge of Child Labor for Listed End Products",
+        "start_char": 4139,
+        "end_char": 4221
+      }
+    },
+    {
+      "topic_id": "price_schedule_complete",
+      "description": "Offeror must complete the attached Price Schedule in its entirety, unedited except for units/quantities, no alternates.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete attached Price Schedule and insert total unit price and/or amount, in reference to\nALL line items listed.",
+        "start_char": 11523,
+        "end_char": 11637
+      }
+    },
+    {
+      "topic_id": "or_equal_product_documentation",
+      "description": "If quoting an \"or equal\" item, must submit detailed product specification/literature confirming comparability.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "if quoting an \"or equal\" item, must submit a\ndetailed product specifications document/literature and ensure it is provided to confirm the\nitem(s) are comparable.",
+        "start_char": 12916,
+        "end_char": 13077
+      }
+    },
+    {
+      "topic_id": "capabilities_statement_with_shop_drawings",
+      "description": "Must provide a detailed capabilities statement or project narrative, including all required shop drawings and product data.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "MUST include all required shop drawings and product data.",
+        "start_char": 10421,
+        "end_char": 10478
+      }
+    },
+    {
+      "topic_id": "prior_experience_count",
+      "description": "Must provide at least 3 prior experience references for projects similar in size and scope, completed within the past 5 years.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Three prior experiences of projects in similar size and scope per the \"TO SUBMIT AN\n  OFFER\" section below within the past five years",
+        "start_char": 10481,
+        "end_char": 10614
+      }
+    },
+    {
+      "topic_id": "prior_experience_poc_required",
+      "description": "Each prior experience reference must include a project description and point-of-contact information.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "NOTE: Contact information SHALL be provided, to include a\n  brief description of the project, as well as point of contact information",
+        "start_char": 10689,
+        "end_char": 10822
+      }
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Must submit all required documents via email so as to reach the government office by the specified deadline; late submissions will not be accepted.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Submit all required documents via email by the date and time listed in this solicitation.\nOfferors are responsible for submitting quotes/proposals so as to reach the Government office\ndesignated in the solicitation by the time specified in the solicitation. Late quotes/proposals will\nnot be accepted.",
+        "start_char": 13082,
+        "end_char": 13383
+      }
+    }
+  ],
+  "excluded_clauses": [
+    {
+      "clause_id": "site_visit_expectation",
+      "description": "Site visit happens before/outside the application; the tender never asks the bidder to document it in their quote. The quoted sentence bars the CONTRACTOR from later claiming compensation/schedule relief for not having inspected -- it is not a rule about bid evaluation eligibility, and not about the government's obligation to grant site access (part (b) of the same clause schedules an organized site visit).",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "no event shall failure to inspect the site constitute grounds for a claim after contract award.",
+        "start_char": 17200,
+        "end_char": 17295
+      }
+    },
+    {
+      "clause_id": "government_evaluation_manner",
+      "description": "Instruction to the government evaluator about how to run the evaluation, not a bidder action.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Quotations shall be\nevaluated in an impartial manner and consideration given to those with the highest perceived\nvalue to the government.",
+        "start_char": 2028,
+        "end_char": 2165
+      }
+    },
+    {
+      "clause_id": "government_evaluation_factors",
+      "description": "Describes how the government will select an awardee, not something the bidder must demonstrate or attach.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "The Government will award a contract resulting from this solicitation to\nthe responsible Offeror whose offer conforming to the solicitation will be most advantageous to\nthe Government, price and other factors considered.",
+        "start_char": 14455,
+        "end_char": 14675
+      }
+    },
+    {
+      "clause_id": "award_selection_process",
+      "description": "Describes the government's internal award process, not a bidder requirement.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Award will be made in accordance with FAR Part 12 to the Offeror that provides the best value\nto the government based on price, technical, and prior experience.",
+        "start_char": 15176,
+        "end_char": 15336
+      }
+    },
+    {
+      "clause_id": "ipp_electronic_invoicing",
+      "description": "Post-award invoicing/payment clause; governs contract performance after award, not what a bidder must show in a quote.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Payment requests must be submitted electronically through the U.S. Department of the\nTreasury's Invoice Processing Platform System (IPP).",
+        "start_char": 17749,
+        "end_char": 17886
+      }
+    },
+    {
+      "clause_id": "cor_co_authority",
+      "description": "Post-award contract administration authority; not a bidder-facing requirement.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "The Contracting Officer is the only individual authorized to enter into or terminate this\ncontract, modify any term or condition of this contract, waive any requirement of this contract,\nor accept nonconforming work.",
+        "start_char": 18651,
+        "end_char": 18867
+      }
+    },
+    {
+      "clause_id": "contract_type",
+      "description": "Informational description of the contract type; nothing for the bidder to demonstrate or attach.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "The contract awarded as a result of this solicitation will be a firm-fixed price commercial\ncontract/award.",
+        "start_char": 2182,
+        "end_char": 2289
+      }
+    },
+    {
+      "clause_id": "questions_deadline",
+      "description": "Procedural notice about the pre-award questions window, not a criterion the application content is judged against.",
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Questions regarding this solicitation: Will only be accepted until 1 September 2026 @ 12PM ET",
+        "start_char": 2495,
+        "end_char": 2588
+      }
+    }
+  ]
+}

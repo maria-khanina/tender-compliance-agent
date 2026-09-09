@@ -1,0 +1,6 @@
+{
+  "include": ["."],
+  "exclude": ["**/__pycache__", ".pytest_cache"],
+  "typeCheckingMode": "standard",
+  "pythonVersion": "3.11"
+}
