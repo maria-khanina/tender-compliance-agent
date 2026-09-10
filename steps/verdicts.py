@@ -85,6 +85,7 @@ def _generate_verdict_with_language_model(
     )
     return Verdict(
         requirement_id=requirement.requirement_id,
+        requirement_text=requirement.text,
         verdict=result.verdict,
         evidence=evidence_list,
         reasoning=result.reasoning,
@@ -195,6 +196,7 @@ def _generate_verdict_deterministically(
     )
     return Verdict(
         requirement_id=requirement.requirement_id,
+        requirement_text=requirement.text,
         verdict=verdict_label,
         evidence=evidence_list,
         reasoning=reasoning,

@@ -150,11 +150,7 @@ def generate_verdict_node(
 
 
 def build_report_node(state: PipelineState) -> dict[str, str]:
-    report_text = build_report(
-        state["requirements"],
-        state["verdicts"],
-        state["retrieved_evidence"],
-    )
+    report_text = build_report(state["requirements"], state["verdicts"])
     return {"report": report_text}
 
 

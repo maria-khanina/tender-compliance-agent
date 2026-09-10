@@ -33,14 +33,27 @@ def _extract_candidates_from_chunk(
     return result.requirements
 
 
+def _verified_or_candidate_text(
+    citation_quote: str,
+    citation_verified: bool,
+    candidate_quote: str,
+) -> str:
+    if citation_verified:
+        return citation_quote
+    return candidate_quote
+
+
 def _build_requirement_draft(
     chunk: Chunk,
     candidate: ExtractedRequirementCandidate,
 ) -> RequirementDraft:
     citation = locate_quote_in_chunk(chunk, candidate.quote)
+    requirement_text = _verified_or_candidate_text(
+        citation.quote, citation.citation_verified, candidate.quote
+    )
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
-        text=candidate.quote,
+        text=requirement_text,
         is_mandatory=candidate.is_mandatory,
         is_text_verifiable=candidate.is_text_verifiable,
         citations=[citation],

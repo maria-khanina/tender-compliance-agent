@@ -22,11 +22,17 @@
     "descriptions and complete points of contact, one with only a",
     "vague project description and no point of contact at all.",
     "A null acceptable_verdicts marks a requirement this fixture",
-    "deliberately does not score (see rationale)."
+    "deliberately does not score (see rationale).",
+    "description is copied verbatim from the matching topic_id in",
+    "expected_requirements.json, purely so a reader of this file alone",
+    "doesn't have to cross-reference the other one. expected_requirements.json",
+    "remains the source of truth -- if a description changes there,",
+    "update it here too."
   ],
   "verdicts": [
     {
       "topic_id": "small_business_size_standard",
+      "description": "Must be a small business under NAICS 238990 with a size standard of $19M average annual revenue.",
       "acceptable_verdicts": [
         "contradictory",
         "non_compliant"
@@ -49,6 +55,7 @@
     },
     {
       "topic_id": "uei_required",
+      "description": "Company must obtain and provide a Unique Entity Identifier (UEI).",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -64,6 +71,7 @@
     },
     {
       "topic_id": "sam_registration_active",
+      "description": "SAM registration must be active at quote close, at award, and throughout contract performance, no exceptions.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -79,6 +87,7 @@
     },
     {
       "topic_id": "tax_liability_representation",
+      "description": "Offeror must represent whether it is or is not a corporation with unpaid, exhausted-remedy Federal tax liability.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -94,6 +103,7 @@
     },
     {
       "topic_id": "felony_conviction_representation",
+      "description": "Offeror must represent whether it is or is not a corporation convicted of a Federal felony within the preceding 24 months.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -109,6 +119,7 @@
     },
     {
       "topic_id": "sudan_iran_restricted_business_representation",
+      "description": "Offeror must certify it does not conduct restricted business in Sudan or prohibited activity relating to Iran.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -124,6 +135,7 @@
     },
     {
       "topic_id": "buy_american_certificate",
+      "description": "Offeror must certify delivered end products are domestic under the Buy American clause.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -139,6 +151,7 @@
     },
     {
       "topic_id": "child_labor_certification",
+      "description": "Offeror must certify knowledge regarding child labor for listed end products.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -154,6 +167,7 @@
     },
     {
       "topic_id": "price_schedule_complete",
+      "description": "Offeror must complete the attached Price Schedule in its entirety, unedited except for units/quantities, no alternates.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -175,6 +189,7 @@
     },
     {
       "topic_id": "or_equal_product_documentation",
+      "description": "If quoting an \"or equal\" item, must submit detailed product specification/literature confirming comparability.",
       "acceptable_verdicts": [
         "non_compliant"
       ],
@@ -190,6 +205,7 @@
     },
     {
       "topic_id": "capabilities_statement_with_shop_drawings",
+      "description": "Must provide a detailed capabilities statement or project narrative, including all required shop drawings and product data.",
       "acceptable_verdicts": [
         "compliant"
       ],
@@ -205,6 +221,7 @@
     },
     {
       "topic_id": "prior_experience_count",
+      "description": "Must provide at least 3 prior experience references for projects similar in size and scope, completed within the past 5 years.",
       "acceptable_verdicts": [
         "compliant",
         "insufficient_information"
@@ -233,6 +250,7 @@
     },
     {
       "topic_id": "prior_experience_poc_required",
+      "description": "Each prior experience reference must include a project description and point-of-contact information.",
       "acceptable_verdicts": [
         "non_compliant",
         "insufficient_information"
@@ -261,11 +279,68 @@
     },
     {
       "topic_id": "submission_deadline_and_channel",
+      "description": "Must submit all required documents via email so as to reach the government office by the specified deadline; late submissions will not be accepted.",
       "acceptable_verdicts": [
         "insufficient_information"
       ],
       "rationale": "application.txt is a capabilities-statement-style document; it has no reason to record when or through what channel it was actually submitted, so there is no textual evidence either way. compliant would be a false-compliance failure (fabricating confirmation from silence); non_compliant would be equally unjustified (there is no evidence of lateness either) -- insufficient_information is the only defensible call.",
       "evidence": []
+    },
+    {
+      "topic_id": "contractor_core_data",
+      "description": "Must provide contractor core data: company name, Cage Code / UEI, point of contact, and POC email/phone.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "All four fields are explicitly filled in: company name, Cage Code, UEI, POC name/title, and POC email/phone.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Company Name: Superior Rail & Fabrication, LLC",
+          "start_char": 540,
+          "end_char": 586
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Cage Code: 7RTK9",
+          "start_char": 587,
+          "end_char": 603
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Unique Entity Identifier (UEI): SRF7X92LM814",
+          "start_char": 604,
+          "end_char": 648
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Point of Contact: John Castellano, Project Manager",
+          "start_char": 649,
+          "end_char": 699
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "POC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
+          "start_char": 700,
+          "end_char": 766
+        }
+      ]
+    },
+    {
+      "topic_id": "final_offer_total_no_alternates",
+      "description": "Must provide a single final offer total, as this is the price that will be evaluated; alternate quotes/proposals will not be accepted.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides exactly one total price for the single line item, with no alternate quotes or competing price options presented.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+          "quote": "Total: $58,750.00",
+          "start_char": 4524,
+          "end_char": 4541
+        }
+      ]
     }
   ]
 }

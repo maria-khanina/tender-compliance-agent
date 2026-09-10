@@ -61,7 +61,20 @@
     "facing obligation language, exactly what a weak extraction could",
     "mistake for a requirement -- but the correct fixture home for",
     "that trap is excluded_clauses, not a requirements entry with",
-    "is_mandatory: false."
+    "is_mandatory: false.",
+    "contractor_core_data and final_offer_total_no_alternates were",
+    "added after auditing a real run's 'unexplained' actual",
+    "requirements against tender.txt directly: both are genuine",
+    "bidder-facing content the earlier 13/14-topic list simply missed,",
+    "not restatements of an existing topic anchored elsewhere.",
+    "contractor_core_data covers the '(c) Contractor Core Data' fill-in",
+    "block (company name, Cage Code/UEI, POC, POC email/phone) as one",
+    "topic rather than four, since they are one contiguous form with",
+    "no independent pass/fail meaning per field.",
+    "final_offer_total_no_alternates is related to but distinct from",
+    "price_schedule_complete: it is specifically about submitting one",
+    "final total with no alternate quotes, not about filling out the",
+    "price schedule form itself."
   ],
   "requirements": [
     {
@@ -216,6 +229,28 @@
         "quote": "Submit all required documents via email by the date and time listed in this solicitation.\nOfferors are responsible for submitting quotes/proposals so as to reach the Government office\ndesignated in the solicitation by the time specified in the solicitation. Late quotes/proposals will\nnot be accepted.",
         "start_char": 13082,
         "end_char": 13383
+      }
+    },
+    {
+      "topic_id": "contractor_core_data",
+      "description": "Must provide contractor core data: company name, Cage Code / UEI, point of contact, and POC email/phone.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "c) Contractor Core Data:\nOfferors Company Name:\nCage Code / Offerors Unique Entity Identifier (UEI):\nOfferors POC:\nOfferors POC Email/Phone:",
+        "start_char": 11072,
+        "end_char": 11212
+      }
+    },
+    {
+      "topic_id": "final_offer_total_no_alternates",
+      "description": "Must provide a single final offer total, as this is the price that will be evaluated; alternate quotes/proposals will not be accepted.",
+      "is_mandatory": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "NOTE: Alternate quotes/proposals will not be accepted. Provide us with the final offer total,\nas this will be the evaluated price.",
+        "start_char": 11980,
+        "end_char": 12110
       }
     }
   ],
