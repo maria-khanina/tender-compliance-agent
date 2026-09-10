@@ -1,11 +1,5 @@
 from logging_config import get_logger
-from schemas import (
-    Chunk,
-    Requirement,
-    RetrievedEvidenceRecord,
-    Verdict,
-    VerdictLabel,
-)
+from schemas import MatchPrecision, Requirement, Verdict, VerdictLabel
 
 
 VERDICT_LABEL_DISPLAY_TEXT: dict[VerdictLabel, str] = {
@@ -14,6 +8,13 @@ VERDICT_LABEL_DISPLAY_TEXT: dict[VerdictLabel, str] = {
     VerdictLabel.INSUFFICIENT_INFORMATION: "Insufficient information",
     VerdictLabel.CONTRADICTORY: "Contradictory",
 }
+
+UNVERIFIED_QUOTE_NOTE = (
+    "[UNVERIFIED: the agent recorded this exact text, but it could not "
+    "be located in the source document]"
+)
+
+FUZZY_QUOTE_NOTE = "[fuzzy match against the source — worth a second look]"
 
 VERDICT_SEVERITY_ORDER: list[VerdictLabel] = [
     VerdictLabel.NON_COMPLIANT,
@@ -37,15 +38,6 @@ def _build_requirement_lookup(
     lookup = {}
     for requirement in requirements:
         lookup[requirement.requirement_id] = requirement
-    return lookup
-
-
-def _build_retrieved_evidence_lookup(
-    retrieved_evidence: list[RetrievedEvidenceRecord],
-) -> dict[str, list[Chunk]]:
-    lookup = {}
-    for record in retrieved_evidence:
-        lookup[record.requirement_id] = record.evidence_chunks
     return lookup
 
 
@@ -84,24 +76,46 @@ def _sort_by_severity(
     return sorted(pairs, key=_severity_rank)
 
 
+def _requirement_label(requirement: Requirement) -> str:
+    if requirement.is_mandatory:
+        return "REQUIREMENT"
+    return "PREFERENCE"
+
+
+def _format_quote(
+    quote: str,
+    citation_verified: bool,
+    match_precision: MatchPrecision | None,
+) -> str:
+    if not citation_verified:
+        return f"{UNVERIFIED_QUOTE_NOTE} {quote}"
+    if match_precision == "fuzzy":
+        return f"{quote} {FUZZY_QUOTE_NOTE}"
+    return quote
+
+
 def _format_evidence_lines(verdict: Verdict) -> list[str]:
     if not verdict.evidence:
         return []
     evidence_entries = []
     for evidence in verdict.evidence:
-        entry = f"- ({evidence.role.value}) {evidence.quote}"
-        if not evidence.citation_verified:
-            entry += " *(quote not located verbatim in source text)*"
-        evidence_entries.append(entry)
+        quote_text = _format_quote(
+            evidence.quote, evidence.citation_verified,
+            evidence.match_precision,
+        )
+        evidence_entries.append(f"- ({evidence.role.value}) {quote_text}")
     return ["**Evidence:**"] + evidence_entries
 
 
 def _format_verdict_section(pair: RequirementVerdictPair) -> str:
     display_label = VERDICT_LABEL_DISPLAY_TEXT[pair.verdict.verdict]
+    requirement_label = _requirement_label(pair.requirement)
     section_lines = []
     section_lines.append(f"### {display_label}")
     section_lines.append("")
-    section_lines.append(f"**Requirement:** {pair.requirement.text}")
+    section_lines.append(
+        f"**{requirement_label}:** {pair.requirement.text}"
+    )
     section_lines.append("")
     section_lines.append(f"**Reasoning:** {pair.verdict.reasoning}")
     section_lines.append("")
@@ -133,30 +147,19 @@ def _not_text_verifiable_requirements(
     return not_verifiable
 
 
-def _format_not_verifiable_entry(
-    requirement: Requirement,
-    evidence_chunks: list[Chunk],
-) -> str:
-    entry_lines = []
-    entry_lines.append(f"### {requirement.text}")
-    entry_lines.append("")
-    entry_lines.append(
+def _format_not_verifiable_entry(requirement: Requirement) -> str:
+    requirement_label = _requirement_label(requirement)
+    entry_lines = [
+        f"### **{requirement_label}:** {requirement.text}",
+        "",
         "This cannot be confirmed from the application text alone and "
-        "requires independent verification."
-    )
-    if evidence_chunks:
-        entry_lines.append("")
-        entry_lines.append(
-            "**Possibly relevant excerpts from the application:**"
-        )
-        for chunk in evidence_chunks:
-            entry_lines.append(f"- {chunk.text}")
+        "requires independent verification.",
+    ]
     return "\n".join(entry_lines)
 
 
 def _render_not_verifiable_section(
     requirements: list[Requirement],
-    retrieved_evidence_lookup: dict[str, list[Chunk]],
 ) -> list[str]:
     not_verifiable = _not_text_verifiable_requirements(requirements)
     if not not_verifiable:
@@ -165,57 +168,97 @@ def _render_not_verifiable_section(
         "## Not Verifiable From Application Text Alone", "",
     ]
     for requirement in not_verifiable:
-        evidence_chunks = retrieved_evidence_lookup.get(
-            requirement.requirement_id, []
-        )
-        section_lines.append(
-            _format_not_verifiable_entry(requirement, evidence_chunks)
-        )
+        section_lines.append(_format_not_verifiable_entry(requirement))
         section_lines.append("")
     return section_lines
 
 
-def _unverified_citation_note(pair: RequirementVerdictPair) -> str | None:
+def _unverified_requirement_citation_note(
+    requirement: Requirement,
+) -> str | None:
     unverified_quotes = []
-    for evidence in pair.verdict.evidence:
-        if not evidence.citation_verified:
-            unverified_quotes.append(evidence.quote)
+    for citation in requirement.citations:
+        if not citation.citation_verified:
+            unverified_quotes.append(citation.quote)
     if not unverified_quotes:
         return None
-    quotes_text = "; ".join(f'"{quote}"' for quote in unverified_quotes)
-    return f"- **{pair.requirement.text}** — {quotes_text}"
+    quotes_text = "; ".join(
+        _format_quote(quote, False, None) for quote in unverified_quotes
+    )
+    return f"- **{requirement.text}** — {quotes_text}"
 
 
-def _render_unverified_citations_section(
-    pairs: list[RequirementVerdictPair],
+def _render_unverified_requirement_citations(
+    requirements: list[Requirement],
 ) -> list[str]:
     notes = []
-    for pair in pairs:
-        note = _unverified_citation_note(pair)
+    for requirement in requirements:
+        note = _unverified_requirement_citation_note(requirement)
         if note is not None:
             notes.append(note)
     if not notes:
         return []
     section_lines = [
-        "## Needs Manual Review: Unverified Citations", "",
-        "The following verdicts cite quotes that could not be located "
-        "verbatim in the application text:", "",
+        "### Requirement quotes not found in the tender text", "",
     ]
     section_lines.extend(notes)
     section_lines.append("")
     return section_lines
 
 
+def _unverified_evidence_note(pair: RequirementVerdictPair) -> str | None:
+    unverified_quotes = []
+    for evidence in pair.verdict.evidence:
+        if not evidence.citation_verified:
+            unverified_quotes.append(evidence.quote)
+    if not unverified_quotes:
+        return None
+    quotes_text = "; ".join(
+        _format_quote(quote, False, None) for quote in unverified_quotes
+    )
+    return f"- **{pair.requirement.text}** — {quotes_text}"
+
+
+def _render_unverified_evidence_citations(
+    pairs: list[RequirementVerdictPair],
+) -> list[str]:
+    notes = []
+    for pair in pairs:
+        note = _unverified_evidence_note(pair)
+        if note is not None:
+            notes.append(note)
+    if not notes:
+        return []
+    section_lines = [
+        "### Evidence quotes not found in the application text", "",
+    ]
+    section_lines.extend(notes)
+    section_lines.append("")
+    return section_lines
+
+
+def _render_unverified_citations_section(
+    requirements: list[Requirement],
+    pairs: list[RequirementVerdictPair],
+) -> list[str]:
+    requirement_lines = _render_unverified_requirement_citations(
+        requirements
+    )
+    evidence_lines = _render_unverified_evidence_citations(pairs)
+    if not requirement_lines and not evidence_lines:
+        return []
+    section_lines = ["## Needs Manual Review: Unverified Citations", ""]
+    section_lines.extend(requirement_lines)
+    section_lines.extend(evidence_lines)
+    return section_lines
+
+
 def build_report(
     requirements: list[Requirement],
     verdicts: list[Verdict],
-    retrieved_evidence: list[RetrievedEvidenceRecord],
 ) -> str:
     pairs = _build_verdict_pairs(requirements, verdicts)
     mandatory_pairs, preferred_pairs = _split_by_mandatory(pairs)
-    retrieved_evidence_lookup = _build_retrieved_evidence_lookup(
-        retrieved_evidence
-    )
     report_sections = ["# Tender Compliance Report", ""]
     report_sections.extend(
         _render_requirement_group("Mandatory Requirements", mandatory_pairs)
@@ -225,10 +268,10 @@ def build_report(
             "Preferred (Non-mandatory) Requirements", preferred_pairs
         )
     )
+    report_sections.extend(_render_not_verifiable_section(requirements))
     report_sections.extend(
-        _render_not_verifiable_section(requirements, retrieved_evidence_lookup)
+        _render_unverified_citations_section(requirements, pairs)
     )
-    report_sections.extend(_render_unverified_citations_section(pairs))
     report_text = "\n".join(report_sections)
     logger.info(
         "Built report covering %d requirement(s) and %d verdict(s)",

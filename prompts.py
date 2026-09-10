@@ -14,6 +14,10 @@ For each requirement, return its exact verbatim text as it appears
 in the chunk below. Do not paraphrase, summarize, or merge separate
 requirements together. If a requirement appears cut off at the very
 start or end of the chunk, still extract the visible portion as-is.
+Do not extract a sentence whose only role is to introduce or refer to
+a list of other requirements (for example "Offers shall submit the
+following information:") — extract the individual items of that list
+instead, not the sentence that introduces them.
 
 For each requirement, also decide whether it is mandatory. Mark it
 mandatory if the text uses language such as "shall", "must", "is
@@ -27,12 +31,17 @@ bidder.
 For each requirement, also decide whether it is verifiable from the
 application's text alone: whether a reader could confirm the
 requirement is satisfied purely by reading what the bidder wrote in
-their application. Mark it not verifiable from text if satisfying it
-depends on a fact that cannot be confirmed from the application text
-itself, even if the application contains a statement about it — for
-example, whether a registration is genuinely active, whether a
-represented fact is actually true, or whether a referenced attachment
-genuinely exists.
+their application. Mark it not verifiable from text in either of
+these two cases:
+- Satisfying it depends on a fact that cannot be confirmed from the
+  application text itself, even if the application contains a
+  statement about it — for example, whether a registration is
+  genuinely active, whether a represented fact is actually true, or
+  whether a referenced attachment genuinely exists.
+- It concerns the process of submitting the offer itself — such as
+  the manner, channel, destination, or timing of submission — rather
+  than something the application's content must contain or
+  demonstrate.
 
 Chunk text:
 {chunk_text}

@@ -102,15 +102,15 @@ def _build_text_span(
 
 def _span_from_local_offsets(
     chunk: Chunk,
-    quote: str,
     local_start: int,
     local_end: int,
     match_precision: MatchPrecision,
 ) -> TextSpan:
     start_char = chunk.start_char + local_start
     end_char = chunk.start_char + local_end
+    verified_quote = chunk.text[local_start:local_end]
     return _build_text_span(
-        chunk.document_path, quote, start_char, end_char, True,
+        chunk.document_path, verified_quote, start_char, end_char, True,
         match_precision,
     )
 
@@ -120,7 +120,7 @@ def _try_exact_match(chunk: Chunk, quote: str) -> TextSpan | None:
     if exact_index == -1:
         return None
     return _span_from_local_offsets(
-        chunk, quote, exact_index, exact_index + len(quote), "precise"
+        chunk, exact_index, exact_index + len(quote), "precise"
     )
 
 
@@ -129,9 +129,7 @@ def _try_normalized_match(chunk: Chunk, quote: str) -> TextSpan | None:
     if normalized_match is None:
         return None
     local_start, local_end = normalized_match
-    return _span_from_local_offsets(
-        chunk, quote, local_start, local_end, "precise"
-    )
+    return _span_from_local_offsets(chunk, local_start, local_end, "precise")
 
 
 def _try_fuzzy_match(
@@ -146,9 +144,7 @@ def _try_fuzzy_match(
     match_ratio = score / FUZZY_SCORE_SCALE
     if match_ratio < fuzzy_match_minimum_score:
         return None
-    return _span_from_local_offsets(
-        chunk, quote, local_start, local_end, "fuzzy"
-    )
+    return _span_from_local_offsets(chunk, local_start, local_end, "fuzzy")
 
 
 def _log_unlocated_quote(chunk: Chunk, quote: str) -> None:

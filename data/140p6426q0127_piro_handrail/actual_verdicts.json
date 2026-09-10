@@ -1,6 +1,7 @@
 [
   {
-    "requirement_id": "1273dfca-c880-4967-a98a-c2abb28473b0",
+    "requirement_id": "287c0e50-4809-4155-af96-3f89b82a8564",
+    "requirement_text": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
     "verdict": "compliant",
     "evidence": [
       {
@@ -22,15 +23,16 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that the company must obtain a Unique Entity Identifier (UEI). The bidder's application explicitly lists their Unique Entity Identifier (UEI) as SRF7X92LM814 under the Contractor Core Data and Registration and Eligibility sections, thereby satisfying the requirement."
+    "reasoning": "The requirement states that the bidder must obtain a Unique Entity Identifier (UEI). The bidder's application explicitly provides their Unique Entity Identifier (SRF7X92LM814) under the Contractor Core Data section, thereby satisfying the requirement."
   },
   {
-    "requirement_id": "7666dd8b-b18f-4232-8cf4-beb98dec38ff",
+    "requirement_id": "1bfe3bed-2f70-4a68-a669-7f750d085605",
+    "requirement_text": "Your company must be registered in the System for Award Management (SAM) with an 'active' status and be considered a small business for the size standard associated with the NAICS code found in block 10 on page one (1) of this solicitation at the time of quote/proposal close date/time, at the time of award, and throughout the entire award/contract performance.",
     "verdict": "contradictory",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Superior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our company's registration in the System for Award Management (SAM) is active and will remain active through quote submission, award, and the entire period of contract performance.",
+        "quote": "Superior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance.",
         "start_char": 798,
         "end_char": 1056,
         "citation_verified": true,
@@ -39,7 +41,7 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990.",
+        "quote": "Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.",
         "start_char": 2551,
         "end_char": 2777,
         "citation_verified": true,
@@ -48,91 +50,20 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "For purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior Rail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8 million, computed across our fabrication and installation divisions.",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "For purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.",
+        "start_char": 4578,
+        "end_char": 4825,
+        "citation_verified": true,
         "match_precision": null,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder provides conflicting statements regarding its small business status and revenue. In the capabilities statement, it claims an average annual gross revenue of $12.4 million, which is within the $19 million small business size standard for NAICS code 238990. However, in the financial and bonding information section, it states that its average annual revenue for fiscal year 2024 was $21.8 million, which exceeds the $19 million size standard and directly contradicts its claim of being a small business."
+    "reasoning": "The application contains contradictory statements regarding the company's compliance with the small business size standard. In chunk 0 and chunk 2, the bidder states that its average annual revenue is $12.4 million, which is within the $19 million size standard for NAICS code 238990. However, in chunk 3 under financial and bonding information, the bidder states that its average annual revenue for size-standard purposes was $21.8 million in fiscal year 2024, which exceeds the $19 million small business size standard."
   },
   {
-    "requirement_id": "7b890aea-e8eb-4b2b-bd65-0233859b501e",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts contain information regarding the bidder's price schedule, capabilities, prior experience, and representations, but they do not state whether or how the quote was submitted (i.e., there is no mention of email submission)."
-  },
-  {
-    "requirement_id": "26b0eca1-45e0-450b-a20e-8b3e1ee48d72",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "CHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
-        "start_char": 260,
-        "end_char": 516,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided excerpts do not contain the text or details of the tender's requirements section specifying the exact order and accordance required for the quote, making it impossible to determine if the bidder followed the mandated order."
-  },
-  {
-    "requirement_id": "62cd30e4-5d2a-4b20-a0ec-6d549d398c24",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC",
-        "start_char": 0,
-        "end_char": 258,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement states that offerors shall submit a quote to the contract specialist by email to colette_riegelmayer@ios.doi.gov. While the excerpts show that the quote was prepared and addressed to Colette Riegelmayer, they do not state whether the quote was actually sent or submitted via email to the specified address."
-  },
-  {
-    "requirement_id": "55c26d2b-1bde-45b9-8a74-016250e8f41c",
+    "requirement_id": "e0fe3894-52f4-4ed6-b14f-bf2565512e39",
+    "requirement_text": "Complete the attached price schedule provided in this solicitation in its entirety.",
     "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote Submittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience References, and Contractor Core Data.",
-        "start_char": 291,
-        "end_char": 516,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "REPRESENTATIONS AND CERTIFICATIONS",
-        "start_char": 1106,
-        "end_char": 1140,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "CAPABILITIES STATEMENT / PROJECT NARRATIVE",
-        "start_char": 2507,
-        "end_char": 2549,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder's application includes all the necessary information and documents required in the quote package checklist, such as the checklist, price schedule, capabilities statement, prior experience references, contractor core data, and representations and certifications, thereby satisfying the submission requirements."
-  },
-  {
-    "requirement_id": "ed3f6516-4161-40fe-a6b7-2297cb99b962",
-    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
@@ -142,49 +73,61 @@
         "citation_verified": true,
         "match_precision": null,
         "role": "supports"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
+        "start_char": 291,
+        "end_char": 516,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
       }
     ],
-    "reasoning": "The requirement states to complete the attached price schedule provided in the solicitation in its entirety. The bidder only provided a single item (Item Number 10) in their price schedule excerpt, failing to demonstrate that the schedule was completed in its entirety as potentially multiple items or sections were omitted."
+    "reasoning": "The bidder has provided and completed the price schedule containing the required item number, description, price, and total, thereby satisfying the requirement to complete the attached price schedule in its entirety."
   },
   {
-    "requirement_id": "54e148fe-4097-4577-ad33-4c5ff95ddc6d",
-    "verdict": "insufficient_information",
+    "requirement_id": "2e87c1e8-20df-4908-8f39-270421919a29",
+    "requirement_text": "If quoting an \"or equal\" item, the bidder must submit a detailed product specifications document and literature to confirm that the item(s) are comparable.",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work, in order to avoid current supply delays with the named manufacturer.",
+        "quote": "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.",
         "start_char": 3375,
         "end_char": 3631,
         "citation_verified": true,
         "match_precision": null,
-        "role": "inconclusive"
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder states an intention to use an equivalent alternate manufacturer for portions of the hardware (stainless-steel fasteners), which triggers the requirement to submit a detailed product specifications document or literature. While the bidder mentions that shop drawings and product data sheets for the proposed handrail system are included as Attachment A, the excerpts do not provide enough detail about Attachment A to confirm whether it specifically contains the product literature for the 'or equal' fasteners mentioned, leaving insufficient information to determine full compliance."
+    "reasoning": "The bidder states an intention to substitute equivalent stainless-steel fasteners from an alternate manufacturer ('or equal' item), but failed to submit a detailed product specifications document and literature confirming that the items are comparable, as required."
   },
   {
-    "requirement_id": "0964d825-c6ec-440d-868e-09e31b461ad2",
+    "requirement_id": "cb3eace4-e459-40ad-b2ce-62482c20babc",
+    "requirement_text": "Provide a detailed capabilities statement or project narrative demonstrating how the company will successfully meet the needs of the statement of work, including knowledge of and experience in the products described in the attached Specifications, or complete the technical questionnaire.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our company specializes in the fabrication and installation of steel, aluminum, and stainless-steel handrail systems for federal, state, and municipal facilities, including compliance with applicable ADA and local building code requirements. Our crews are equipped to perform site measurement, custom fabrication in our own shop, and on-site installation, including all mobilization, demobilization, supplies, and labor described in Item 0010 of the Schedule of Supplies. Shop drawings and product data sheets for the proposed handrail system are included as Attachment A to this quote package.",
-        "start_char": 2551,
+        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.",
+        "start_char": 2779,
         "end_char": 3373,
         "citation_verified": true,
         "match_precision": null,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder provides a detailed capabilities statement and project narrative in their submission that explicitly outlines their specialization in the fabrication and installation of steel, aluminum, and stainless-steel handrail systems, details their approach to meeting the statement of work requirements (including site measurement, shop fabrication, and on-site installation), and references product data sheets and shop drawings, thus fully satisfying the requirement."
+    "reasoning": "The bidder provides a detailed capabilities statement and project narrative that explicitly demonstrates their experience and capability in fabricating and installing handrail systems meeting the needs of the statement of work, which satisfies the requirement."
   },
   {
-    "requirement_id": "8bc69430-1448-4231-b7a0-c3548237705e",
+    "requirement_id": "830e6d4e-95a1-4ac2-8909-36f6ea036998",
+    "requirement_text": "MUST include all required shop drawings and product data.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Shop drawings and product data sheets for the proposed handrail system are included as Attachment A to this quote package.",
+        "quote": "Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.",
         "start_char": 3251,
         "end_char": 3373,
         "citation_verified": true,
@@ -192,10 +135,46 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their capabilities statement that the required shop drawings and product data sheets are included in their quote package as Attachment A, thereby satisfying the requirement."
+    "reasoning": "The bidder explicitly states in their capabilities statement and project narrative that shop drawings and product data sheets for the proposed handrail system are included in Attachment A of their quote package, satisfying the requirement to include all required shop drawings and product data."
   },
   {
-    "requirement_id": "9fa3936b-e264-4059-88d4-6a50d25993a3",
+    "requirement_id": "f22e9a85-9b9e-423d-8598-30dda83244eb",
+    "requirement_text": "Three prior experiences of projects in similar size and scope per the \"TO SUBMIT AN\n  OFFER\" section below within the past five years to include: brief description of project,\n  point of contact information.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "3. We have also completed various municipal handrail and railing projects throughout the Upper Peninsula over the years, consistently meeting client specifications and timelines.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 3662,
+        "end_char": 3944,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for three prior experiences of projects in similar size and scope within the past five years, including a brief description and point of contact information. The bidder's application only provides two specific prior experience references (Isle Royale National Park and City of Marquette) and vaguely mentions other projects without specific descriptions or contact information. Therefore, the requirement is not fully met."
+  },
+  {
+    "requirement_id": "91176493-9643-4b34-9408-1eb3bbffe76d",
+    "requirement_text": "Contact information SHALL be provided, to include a\n  brief description of the project, as well as point of contact information so that the\n  Government may contact and confirm the information provided.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -209,38 +188,81 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and stainless-steel handrail systems for federal, state, and municipal facilities, including compliance with applicable ADA and local building code requirements. Our crews are equipped to perform site measurement, custom fabrication in our own shop, and on-site installation, including all mobilization, demobilization, supplies, and labor described in Item 0010 of the Schedule of Supplies.",
+        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements.",
         "start_char": 2779,
-        "end_char": 3250,
+        "end_char": 3020,
         "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor boardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
         "match_precision": null,
         "role": "supports"
       }
     ],
-    "reasoning": "The application provides both point of contact information for the bidder and descriptions of prior relevant projects with their respective points of contact, satisfying the requirement to provide contact information and a brief description of the project."
+    "reasoning": "The bidder provides contact information, including a point of contact name, email, and phone number, as well as a brief description of their project capabilities and prior experience references that allow the Government to confirm the information."
   },
   {
-    "requirement_id": "8d84a8a2-667f-447e-8928-26102ab77b70",
-    "verdict": "insufficient_information",
+    "requirement_id": "c95c5100-462d-47d5-b2b4-fd6f797046a2",
+    "requirement_text": "Offerors Company Name:",
+    "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote Submittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience References, and Contractor Core Data.",
-        "start_char": 291,
-        "end_char": 516,
+        "quote": "Submitted by: Superior Rail & Fabrication, LLC",
+        "start_char": 212,
+        "end_char": 258,
         "citation_verified": true,
         "match_precision": null,
-        "role": "inconclusive"
+        "role": "supports"
       },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "Company Name: Superior Rail & Fabrication, LLC",
+        "start_char": 540,
+        "end_char": 586,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder clearly provides their company name, Superior Rail & Fabrication, LLC, in multiple locations within the application, satisfying the requirement."
+  },
+  {
+    "requirement_id": "af69efb2-379b-42b8-b3a3-096530081f2f",
+    "requirement_text": "Offerors POC",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "Point of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
+        "start_char": 649,
+        "end_char": 766,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides explicit details for the Offeror's Point of Contact, including the name, title, email, and phone number under the Contractor Core Data section."
+  },
+  {
+    "requirement_id": "d2b34bc5-18ea-4d1f-b5a9-aaded1d7c1b2",
+    "requirement_text": "Offerors POC Email/Phone",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "POC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
+        "start_char": 700,
+        "end_char": 766,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides the point of contact email and phone number under the Contractor Core Data section, directly satisfying the requirement."
+  },
+  {
+    "requirement_id": "bffff313-ecc8-4d1b-a71c-bad1c236dd1a",
+    "requirement_text": "Complete attached Price Schedule and insert total unit price and/or amount, in reference to\nALL line items listed.",
+    "verdict": "compliant",
+    "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
         "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
@@ -248,24 +270,43 @@
         "end_char": null,
         "citation_verified": false,
         "match_precision": null,
-        "role": "inconclusive"
+        "role": "supports"
       }
     ],
-    "reasoning": "The requirement states to complete the attached Price Schedule and insert total unit price and/or amount in reference to ALL line items listed. While the excerpts mention a Price Schedule is included and show an entry for Item Number 10, the full attached Price Schedule document itself is not provided in the excerpts to verify if all line items were listed and completed."
+    "reasoning": "The bidder provided the Price Schedule containing the item number, description, unit price, and total amount for the listed line item, fulfilling the requirement."
   },
   {
-    "requirement_id": "77c4a0a8-c2d1-4948-8507-c5421d9b785c",
+    "requirement_id": "db6aba8f-3046-4733-ac4a-23d1959b4e33",
+    "requirement_text": "Must ensure that this document is not edited for any reason (outside of\nadding units of measure, quantities, etc.) and the unedited Price Schedule is provided with\nfinal pricing - if needing to make edits or alter the document, provide an addendum outlining\nthese changes or additional information wanting to make apparent to the evaluators.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided excerpts contain the bidder's price schedule and quote components, but they do not provide enough information to determine whether the original Price Schedule document was edited or altered, nor whether an addendum was provided if any edits were made."
+    "reasoning": "The provided text excerpts do not contain any information indicating whether the bidder edited the original Price Schedule document, nor do they state whether an addendum was provided to outline changes or alterations."
   },
   {
-    "requirement_id": "1137bbf4-7f1f-4cc1-a562-ceb3693d386e",
+    "requirement_id": "3160236c-c3aa-4204-a303-06380f4c9fc6",
+    "requirement_text": "Provide us with the final offer total,\nas this will be the evaluated price.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote Submittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience References, and Contractor Core Data.",
+        "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
+        "start_char": 4409,
+        "end_char": 4541,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided a price schedule clearly listing the total offer price as $58,750.00, satisfying the requirement to provide the final offer total."
+  },
+  {
+    "requirement_id": "f839f42f-1cb3-4bf3-9968-a2a0522eef50",
+    "requirement_text": "Ensure that Prior Experience references and examples, that are similar in scope to this type\nof service, are provided",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/application.txt",
+        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
         "start_char": 291,
         "end_char": 516,
         "citation_verified": true,
@@ -274,32 +315,33 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway.",
-        "start_char": 3946,
-        "end_char": 4113,
-        "citation_verified": true,
+        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023) Fabricated and installed 340 linear feet of galvanized steel handrail along the visitor boardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager, National Park Service, (906) 555-2210.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
         "role": "supports"
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023) Fabricated and installed 340 linear feet of galvanized steel handrail along the visitor boardwalk.",
-        "start_char": 3662,
-        "end_char": 3829,
-        "citation_verified": true,
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder provided prior experience references and examples involving the fabrication and installation of handrail systems that are directly similar in scope to the required services for Pictured Rocks National Lakeshore."
+    "reasoning": "The bidder provides specific prior experience references and examples involving the fabrication and installation of handrail and railing systems, which are similar in scope to the required services."
   },
   {
-    "requirement_id": "cc45c430-43d6-444a-847e-d8e7e2442a80",
+    "requirement_id": "fd3c8cb9-9fda-498d-8038-c571d5ec4190",
+    "requirement_text": "Offerors are to\nprovide references (preferably a minimum of 3) that provide information on the performance\nquality of work on similar projects/services as outlined in the Statement of Work",
     "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023) Fabricated and installed 340 linear feet of galvanized steel handrail along the visitor boardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager, National Park Service, (906) 555-2210.",
+        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
         "start_char": 3662,
         "end_char": 3944,
         "citation_verified": true,
@@ -308,7 +350,7 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387.",
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.",
         "start_char": 3946,
         "end_char": 4227,
         "citation_verified": true,
@@ -317,23 +359,24 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "3. We have also completed various municipal handrail and railing projects throughout the Upper Peninsula over the years, consistently meeting client specifications and timelines.",
+        "quote": "3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
         "start_char": 4229,
         "end_char": 4407,
         "citation_verified": true,
         "match_precision": null,
-        "role": "contradicts"
+        "role": "supports"
       }
     ],
-    "reasoning": "The requirement asks offerors to provide references (preferably a minimum of 3). The bidder only provides 2 specific references with detailed performance information and contact details. The third mention is a vague, general statement without any specific project details or contact information, thus failing to provide the preferred minimum of 3 complete references."
+    "reasoning": "The requirement states that offerors are to provide references (preferably a minimum of 3) that provide information on the performance quality of work on similar projects. The bidder only provided two specific references with contact information and details (Isle Royale National Park and City of Marquette). The third reference mentioned is a vague statement about completing various municipal projects without specific project details or contact information, falling short of the preferred minimum of 3 fully detailed references."
   },
   {
-    "requirement_id": "83b30ace-d513-467f-a3cf-af7627a5ad3f",
+    "requirement_id": "fda18f1b-c43c-4c69-8479-0d76fbf12bf1",
+    "requirement_text": "This registration must be active in SAM.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Our company's registration in the System for Award Management (SAM) is active and will remain active through quote submission, award, and the entire period of contract performance.",
+        "quote": "Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance.",
         "start_char": 876,
         "end_char": 1056,
         "citation_verified": true,
@@ -341,15 +384,16 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that the registration must be 'active' in SAM with no exceptions. The bidder explicitly affirms in their contractor core data section that their SAM registration is active."
+    "reasoning": "The bidder explicitly states in their application that their registration in the System for Award Management (SAM) is active, which directly satisfies the requirement."
   },
   {
-    "requirement_id": "2b95d056-ec52-41b2-9744-f60c10c9bb9c",
+    "requirement_id": "36dee95d-7937-4fbd-8b10-c878718ca774",
+    "requirement_text": "Written confirmation that company specializes in, or has sufficient documented\ndirect experience in, providing all labor, material, tools, supervision and travel necessary to\nperform the service outlined, and in accordance with, the attached Statement of Work (SOW).",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/application.txt",
-        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and stainless-steel handrail systems for federal, state, and municipal facilities, including compliance with applicable ADA and local building code requirements. Our crews are equipped to perform site measurement, custom fabrication in our own shop, and on-site installation, including all mobilization, demobilization, supplies, and labor described in Item 0010 of the Schedule of Supplies.",
+        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies.",
         "start_char": 2779,
         "end_char": 3250,
         "citation_verified": true,
@@ -357,12 +401,13 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly confirms specialization in the required services and documents direct experience, stating they provide all necessary labor, materials, supplies, and mobilization to perform the services outlined in accordance with the Statement of Work."
+    "reasoning": "The bidder explicitly states in their capabilities statement that they specialize in the fabrication and installation of handrail systems, and confirms that their crews are equipped to provide all labor, supplies, mobilization, and installation described in the project schedule, which directly satisfies the requirement for written confirmation."
   },
   {
-    "requirement_id": "647809df-9dfa-49e7-9f13-160d7984deed",
+    "requirement_id": "99412051-77a3-4a72-a453-642d76c78955",
+    "requirement_text": "If the Contractor is unable to comply with the requirement to use IPP for\nsubmitting invoices for payment, the Contractor must submit a waiver request in writing to the\nContracting Officer with its proposal or quotation.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The requirement states that if the Contractor cannot use IPP for submitting invoices, a written waiver request must be submitted with the proposal. The provided excerpts do not contain any mention of IPP, invoice submission methods, or whether a waiver request was submitted. Therefore, there is insufficient information to determine compliance."
+    "reasoning": "The provided excerpts do not mention the use of IPP (Invoice Processing Platform) for submitting invoices, nor do they contain any statement regarding whether the Contractor can comply with it or if a waiver request is being submitted."
   }
 ]

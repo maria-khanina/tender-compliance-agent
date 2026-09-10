@@ -41,6 +41,22 @@ def test_fuzzy_match_is_verified_as_fuzzy() -> None:
     assert span.match_precision == "fuzzy"
 
 
+def test_fuzzy_match_returns_real_source_text_not_model_text() -> None:
+    chunk = _build_test_chunk(
+        "Provide us with the final offer total,\nas this will be the "
+        "evaluated price."
+    )
+    corrupted_quote = (
+        "Provide us with the final offer total, GARBLED\n"
+        "as this will be the evaluated price."
+    )
+    span = locate_quote_in_chunk(chunk, corrupted_quote)
+    assert span.citation_verified is True
+    assert span.match_precision == "fuzzy"
+    assert "GARBLED" not in span.quote
+    assert span.quote == chunk.text
+
+
 def test_unrelated_quote_is_not_verified() -> None:
     chunk = _build_test_chunk("Nothing relevant is written here.")
     span = locate_quote_in_chunk(chunk, "completely different sentence")

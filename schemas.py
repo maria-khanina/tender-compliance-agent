@@ -82,6 +82,7 @@ class VerdictLabel(str, Enum):
 
 class Verdict(BaseModel):
     requirement_id: str
+    requirement_text: str
     verdict: VerdictLabel
     evidence: list[Evidence]
     reasoning: str
