@@ -8,14 +8,23 @@ the government evaluator, descriptions of how the government will
 conduct its evaluation, or obligations that only apply to the
 contractor after contract award rather than to the application
 itself. Only extract text that imposes something checkable on the
-bidder's application.
+bidder's application. Do not extract a sentence whose only role is to
+define a term used elsewhere (for example "Domestic end product
+means..." in a definitions section) as its own requirement — such
+definitions impose no independent action on the bidder; they only
+help interpret whichever other requirement actually relies on them.
 
 For each requirement, return its exact verbatim text as it appears
 in the chunk below, as two parts:
-- "quote": the specific, distinguishing text of this one requirement.
-  Do not paraphrase, summarize, or merge separate requirements
-  together. If a requirement appears cut off at the very start or end
-  of the chunk, still extract the visible portion as-is.
+- "quote": the complete text of this one requirement, from where it
+  begins to where it naturally ends. Do not trim it down to only the
+  shortest fragment that differs from other requirements — include
+  any conditional, exception, or qualifying clause that affects its
+  meaning or when it applies, unless that clause is a shared lead-in
+  covered by "lead_in_quote" below. Do not paraphrase, summarize, or
+  merge separate requirements together. If a requirement appears cut
+  off at the very start or end of the chunk, still extract the
+  visible portion as-is.
 - "lead_in_quote": an optional shared introductory clause this
   requirement's meaning depends on, ONLY when that same clause also
   introduces one or more OTHER, different requirements elsewhere in

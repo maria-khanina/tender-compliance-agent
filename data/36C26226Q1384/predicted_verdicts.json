@@ -1,7 +1,7 @@
 [
   {
-    "requirement_id": "482627c2-d030-4fd6-b928-bd916588e323",
-    "requirement_text": "Offeror quotations must demonstrate meeting the salient physical, functional, or performance characteristics specified in this solicitation.",
+    "requirement_id": "0812a742-4908-4cce-b68c-b8f837e6031e",
+    "requirement_text": "Offerors must demonstrate that their offered products meet the salient physical, functional, or performance characteristics specified in the solicitation, or provide information/location of information regarding how an equivalent product meets these characteristics.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -11,57 +11,25 @@
         "end_char": 1982,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness. Irrigation is controlled with a simple\ninstant on/off mechanism and no added footprint.",
-        "start_char": 2025,
-        "end_char": 2528,
+        "quote": "The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness.",
+        "start_char": 2048,
+        "end_char": 2440,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder provides a detailed technical description and an equivalence mapping that explicitly addresses the salient physical, functional, and performance characteristics of the offered product (HydroClear Pro 4H), demonstrating that it meets the requirements."
+    "reasoning": "The bidder explicitly provided a section titled 'Equivalent Description Matching Salient Characteristics' and included a detailed technical description of the offered product, comparing its features to the required specifications."
   },
   {
-    "requirement_id": "615ec6d1-0aed-4e13-9562-6fd24331657a",
-    "requirement_text": "Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
-        "start_char": 414,
-        "end_char": 522,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception, directly satisfying the requirement for concurrence."
-  },
-  {
-    "requirement_id": "ee308179-f275-4417-9c83-2a824ccfe16a",
-    "requirement_text": "Items shall be FOB destination.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "All items are quoted FOB Destination.",
-        "start_char": 524,
-        "end_char": 561,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states in chunk 0 that all items are quoted FOB Destination, which directly satisfies the requirement that items shall be FOB destination."
-  },
-  {
-    "requirement_id": "f73ddaff-cb02-40f6-a335-070e46bea57a",
-    "requirement_text": "Specify the offered item manufacturer, brand name, and make or model/part number.",
+    "requirement_id": "c11ef8f4-ec8b-480f-8f5a-551fcefe39d1",
+    "requirement_text": "The quote packet must include the manufacturer name and the specific make or model number of the offered items.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -71,40 +39,43 @@
         "end_char": 618,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Equivalent Brand: HydroClear",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "Equivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026",
+        "start_char": 1617,
+        "end_char": 1720,
+        "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's application explicitly specifies the offered item manufacturer (Veridian MedTech), brand name (HydroClear), and make or model/part number (HC-4H-2026), thereby fully satisfying the requirement."
+    "reasoning": "The bidder explicitly provided the manufacturer name (Veridian MedTech) and the specific model/part number (HydroClear Pro 4H / HC-4H-2026) in their quote, satisfying the requirement."
   },
   {
-    "requirement_id": "d1c9d194-8983-4fa8-b102-25b39eeeed1d",
-    "requirement_text": "Provide an Authorized Distributor Letter or Memo from the manufacturer.",
-    "verdict": "non_compliant",
+    "requirement_id": "52a86950-08f4-4859-a60d-e268d27506cc",
+    "requirement_text": "The vendor must be an OEM, authorized dealer, distributor, or reseller, and must provide an Authorized Distributor Letter or equivalent documentation from the manufacturer.",
+    "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "We acknowledge and certify compliance with the Non-Manufacturing Rule\nas outlined by the U.S. Small Business Administration and the Federal\nAcquisition Regulation, including that DentaFlow Systems is primarily\nengaged in the wholesale trade of dental equipment and does not\nmanufacture the products being supplied under this contract.\n(Signature block to be completed upon award.)",
-        "start_char": 2688,
-        "end_char": 3068,
+        "quote": "DentaFlow Systems is an authorized distributor of Veridian MedTech's\nHydroClear product line, verified directly through the manufacturer's\nofficial partner program, with full OEM warranty and service backing.",
+        "start_char": 620,
+        "end_char": 828,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states to provide an Authorized Distributor Letter or Memo from the manufacturer. While the bidder states they are an authorized distributor, the excerpts do not contain an actual Authorized Distributor Letter or Memo from the manufacturer."
+    "reasoning": "The bidder claims to be an authorized distributor and states they are verified through the manufacturer's partner program. However, the requirement explicitly mandates that the vendor 'must provide an Authorized Distributor Letter or equivalent documentation from the manufacturer.' The bidder has provided a self-declaration of their status but has not attached the required formal documentation or letter from the manufacturer to substantiate this claim."
   },
   {
-    "requirement_id": "4133314b-69ad-4aee-8ed7-d45bbb813307",
-    "requirement_text": "Include the Country of Origin for the items being offered.",
+    "requirement_id": "4905bdfb-c6e7-481f-ac6e-3be2c6b4a1ba",
+    "requirement_text": "The offeror must include the Country of Origin for all items being offered.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -114,6 +85,7 @@
         "end_char": 1201,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
@@ -123,25 +95,17 @@
         "end_char": 2010,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly provided the Country of Origin as Malaysia in both the body of the quote (excerpt 0) and in Attachment A (excerpt 1), thus fully satisfying the requirement."
+    "reasoning": "The bidder explicitly stated the Country of Origin for the offered items in both the cover email and the attached documentation, satisfying the requirement."
   },
   {
-    "requirement_id": "1570242a-abbf-45c2-a1f5-71a787682f89",
-    "requirement_text": "Provide verification that the offered items are not Gray Market.",
-    "verdict": "contradictory",
+    "requirement_id": "f3882b68-98cb-422b-94e5-38a3ddbb2a9a",
+    "requirement_text": "Offerors shall provide verification that their items are not Gray Market products.",
+    "verdict": "non_compliant",
     "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "DentaFlow Systems is an authorized distributor of Veridian MedTech's\nHydroClear product line, verified directly through the manufacturer's\nofficial partner program, with full OEM warranty and service backing.",
-        "start_char": 620,
-        "end_char": 828,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
       {
         "document_path": "data/36C26226Q1384/application.txt",
         "quote": "Due to current inventory constraints on\nthis specific model, please note that this order may be fulfilled\nusing units obtained through a secondary distribution network, which\ncan include units originally allocated for other regional markets.",
@@ -149,16 +113,27 @@
         "end_char": 1098,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The application contains contradictory statements regarding whether the items are guaranteed to be sourced through authorized channels to prevent gray market goods. On one hand, the bidder claims to be an authorized distributor with full OEM warranty and service backing, which supports non-gray market status. On the other hand, the bidder explicitly states that orders may be fulfilled using units obtained through a secondary distribution network including units allocated for other regional markets, which introduces the risk of gray market or diverted goods and directly conflicts with the verification that items are not gray market."
+    "reasoning": "The requirement mandates verification that items are not Gray Market products. The bidder explicitly states that they may fulfill the order using units from a 'secondary distribution network' that were 'originally allocated for other regional markets.' This practice is the definition of Gray Market goods (diverted products), which directly contradicts the requirement to ensure the items are not Gray Market products."
   },
   {
-    "requirement_id": "25d11d3e-525e-4248-a3ed-fb878bf90c44",
-    "requirement_text": "Indicate whether the items are manufactured by a small or large business.",
+    "requirement_id": "aed75bfb-95c8-4981-9bca-52dba9a25fa4",
+    "requirement_text": "Offeror must indicate whether the items are manufactured by a small or large business.",
     "verdict": "non_compliant",
     "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "All items are quoted FOB Destination. Manufacturer: Veridian MedTech.",
+        "start_char": 524,
+        "end_char": 593,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
       {
         "document_path": "data/36C26226Q1384/application.txt",
         "quote": "We acknowledge and certify compliance with the Non-Manufacturing Rule\nas outlined by the U.S. Small Business Administration and the Federal\nAcquisition Regulation, including that DentaFlow Systems is primarily\nengaged in the wholesale trade of dental equipment and does not\nmanufacture the products being supplied under this contract.",
@@ -166,57 +141,15 @@
         "end_char": 3022,
         "citation_verified": true,
         "match_precision": null,
-        "role": "supports"
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement states to indicate whether the items are manufactured by a small or large business. While the bidder states they are not the manufacturer and identifies Veridian MedTech as the manufacturer, the application fails to indicate whether the manufacturer (Veridian MedTech) is a small or large business."
+    "reasoning": "The requirement explicitly asks the offeror to indicate whether the items are manufactured by a small or large business. While the bidder identifies the manufacturer (Veridian MedTech) and states their own status as a non-manufacturer, they fail to provide any information regarding the size status (small or large) of the manufacturer, Veridian MedTech."
   },
   {
-    "requirement_id": "3aea150e-d2cd-4497-aba3-18729acfb85e",
-    "requirement_text": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Attachment A, Columns F-K:\nEquivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026\nEquivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.\nCountry of Origin: Malaysia\nQuantity: 25",
-        "start_char": 1561,
-        "end_char": 2023,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly filled out columns F through K of Attachment A, providing the equivalent brand, nomenclature, part number, description matching salient characteristics, country of origin, and quantity as required."
-  },
-  {
-    "requirement_id": "38ee051f-d6a9-495b-a30c-3be05921858d",
-    "requirement_text": "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or alternatively state where in the offeror's overall submission that information can be found.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
-        "start_char": 1721,
-        "end_char": 1982,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness.",
-        "start_char": 2025,
-        "end_char": 2440,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder offered an equivalent product (HydroClear Pro 4H) and explicitly provided information regarding how their product meets the salient characteristics within Attachment A under the technical description section, thereby satisfying the requirement."
-  },
-  {
-    "requirement_id": "f759eb89-34dd-42e1-9a37-09a26c3d9f33",
-    "requirement_text": "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements.",
+    "requirement_id": "6c3304fb-2bae-43de-9a72-e8090fbea33a",
+    "requirement_text": "If the offeror plans to modify a product to conform to solicitation requirements, they must clearly describe the modification and mark the descriptive material to show the modification.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -226,14 +159,15 @@
         "end_char": 522,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement asks to clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. The bidder states that they concur with all terms without exception and provides an equivalent product (HydroClear Pro 4H) without indicating any planned modifications to make it conform."
+    "reasoning": "The bidder is offering an 'equal' product (HydroClear Pro 4H) rather than the specific brand requested (AquaSept). The bidder provides a detailed technical description of the offered product and explicitly states that they concur with all terms and conditions of the solicitation without exception. There is no indication that the bidder plans to modify the product to conform to requirements; rather, they are offering a standard product as an 'equal' alternative, which does not trigger the requirement for modification documentation."
   },
   {
-    "requirement_id": "2bf9287e-40d0-41c8-96ae-1027cf75b1cf",
-    "requirement_text": "Unless the offeror clearly indicates in its offer that the product being offered is an equal product, the offeror shall provide the brand name product referenced in the solicitation.",
+    "requirement_id": "97126bf7-1def-40b6-8a4e-5d9d2983a440",
+    "requirement_text": "Unless the offeror clearly indicates that the product is an equal, the offeror shall provide the brand name product referenced in the solicitation.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -243,74 +177,26 @@
         "end_char": 301,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Attachment A, Columns F-K:\nEquivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026",
-        "start_char": 1561,
+        "quote": "Equivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026",
+        "start_char": 1588,
         "end_char": 1720,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that unless the offeror clearly indicates that the product being offered is an equal product, they shall provide the brand name product referenced in the solicitation. The bidder clearly indicated in their offer (referencing the 'AquaSept High Speed Kit or Equal' and filling out Attachment A for 'Equivalent Brand: HydroClear') that they are offering an equal product rather than the exact brand name product."
+    "reasoning": "The solicitation allowed for the brand name product or an equal. The bidder explicitly identified their offering as an 'equal' in their cover email and provided a detailed 'Equivalent' specification sheet in Attachment A, thereby satisfying the requirement to clearly indicate that the product is an equal."
   },
   {
-    "requirement_id": "de37456b-c403-489a-b158-3ad775fce4ae",
-    "requirement_text": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
+    "requirement_id": "6feadfc6-b659-4c19-9a32-885e065e3458",
+    "requirement_text": "All software licensing, warranty, and service associated with the medical supplies or equipment must be in accordance with the OEM terms and conditions.",
     "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
-        "start_char": 1721,
-        "end_char": 1982,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness. Irrigation is controlled with a simple\ninstant on/off mechanism and no added footprint.",
-        "start_char": 2025,
-        "end_char": 2528,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder provides clear evidence in Attachment A and the technical description demonstrating how the proposed equal-to item (HydroClear Pro 4H) meets the salient characteristics, fulfilling the requirement."
-  },
-  {
-    "requirement_id": "68861da9-47d5-4673-a9df-98c8fb5be995",
-    "requirement_text": "(3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness. Irrigation is controlled with a simple\ninstant on/off mechanism and no added footprint. Note: the HydroClear\nPro 4H utilizes a fixed, non-detachable waterline routing integrated\ninto the handpiece body, rather than a detachable waterline system.",
-        "start_char": 2025,
-        "end_char": 2686,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement states that the bidder must include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data, or descriptive text/information. The bidder provided a detailed technical description of the offered product (HydroClear Pro 4H) covering its features, specifications, and components, thereby satisfying the requirement."
-  },
-  {
-    "requirement_id": "d6bd34a9-062e-4459-b169-14039685536f",
-    "requirement_text": "Mark any descriptive material to clearly show the modification.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts do not mention or contain any descriptive material with modifications, nor do they provide any information regarding whether modifications to descriptive material were marked as required."
-  },
-  {
-    "requirement_id": "2e582970-ba7b-4bb0-b9ab-724ec2772159",
-    "requirement_text": "Vendor must be an OEM, authorized dealer, distributor, or reseller for the proposed medical supplies, equipment, and/or maintenance services, verified by official documentation, and all software licensing, warranty, and service must comply with OEM terms and conditions ensuring OEM support.",
-    "verdict": "contradictory",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
@@ -319,22 +205,288 @@
         "end_char": 828,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Due to current inventory constraints on\nthis specific model, please note that this order may be fulfilled\nusing units obtained through a secondary distribution network, which\ncan include units originally allocated for other regional markets.",
-        "start_char": 857,
-        "end_char": 1098,
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
         "citation_verified": true,
         "match_precision": null,
-        "role": "contradicts"
+        "used_for_matching": true,
+        "role": "supports"
       }
     ],
-    "reasoning": "The application contains contradictory statements. Initially, the bidder states it is an authorized distributor of the manufacturer with full OEM warranty and service backing, which satisfies the requirement. However, it subsequently states that the order may be fulfilled using units obtained through a secondary distribution network (including units originally allocated for other regional markets), which conflicts with the requirement that all software licensing, warranty, and service comply with OEM terms and conditions ensuring OEM support when sourced outside authorized channels."
+    "reasoning": "The bidder explicitly states they are an authorized distributor with full OEM warranty and service backing. Furthermore, they have concurred with all terms and conditions of the solicitation, which includes the requirement to adhere to OEM terms and conditions."
   },
   {
-    "requirement_id": "4efe4fe8-8799-4571-9be7-3e812fb19f7f",
+    "requirement_id": "2166f110-7e28-4c1d-9811-93b5e3b23563",
+    "requirement_text": "The Delivery Timeframe shall be 30 Days ARO.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement for a 30-day ARO delivery timeframe is a standard term of the solicitation, the bidder's blanket concurrence confirms compliance."
+  },
+  {
+    "requirement_id": "bfcefb9f-2033-478b-bd48-d31c407ee9a0",
+    "requirement_text": "Ensure the following are completed and/or included in the quote packet: ... Vendor Information with SAM UEI.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Vendor Information: DentaFlow Systems, LLC, 4410 Corridor Park Blvd,\nAustin, TX 78744. SAM UEI: QK7RT2LM9XN4.",
+        "start_char": 303,
+        "end_char": 412,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provided their Vendor Information including the required SAM UEI in the cover email of their application."
+  },
+  {
+    "requirement_id": "1fa8cba0-247a-44c2-986e-3b9b61635c53",
+    "requirement_text": "Ensure the following are completed and/or included in the quote packet: ... Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their cover email that they concur with all terms, conditions, and provisions of the solicitation without exception, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "f071e62e-b0a0-4fbd-859a-655c5fc022ed",
+    "requirement_text": "Ensure the following are completed and/or included in the quote packet: ... Items shall be FOB destination.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "All items are quoted FOB Destination.",
+        "start_char": 524,
+        "end_char": 561,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their quote that all items are quoted FOB Destination, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "68fb12b9-3b32-4dc4-81b9-cafe098504b0",
+    "requirement_text": "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems does not hold a current FSS contract for this item.",
+        "start_char": 1490,
+        "end_char": 1559,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that items must be listed on an FSS contract if the vendor is an FSS contract holder. The bidder explicitly states they do not hold a current FSS contract, therefore the requirement to list FSS contract numbers and expiration dates is not applicable to this bidder."
+  },
+  {
+    "requirement_id": "7ba53ac7-28c1-41c6-9fc6-9ed9d0e15dc0",
+    "requirement_text": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026\nEquivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.\nCountry of Origin: Malaysia\nQuantity: 25",
+        "start_char": 1588,
+        "end_char": 2023,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided the required information for columns F through K of Attachment A, including brand, nomenclature, part number, description, country of origin, and quantity, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "1ca68ea8-30c5-43b9-b901-48cc3c2912b2",
+    "requirement_text": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
+        "start_char": 1721,
+        "end_char": 1982,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder provides a technical description of their 'equal-to' item and claims it matches the salient characteristics. However, the solicitation requirement explicitly references 'Attachment A and B' for the specific salient characteristics. The provided excerpts do not include the text of Attachment A or B, making it impossible to verify if the HydroClear Pro 4H actually meets all the required specifications."
+  },
+  {
+    "requirement_id": "1b6fa0ea-3583-41f3-b77f-e5746932ed75",
+    "requirement_text": " To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— ... \n(2) Clearly identify the item by—",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026",
+        "start_char": 1588,
+        "end_char": 1720,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder clearly identified the 'equal' product by providing the brand name (HydroClear), the nomenclature (HydroClear Pro 4H Waterline Delivery System), and the specific part number (HC-4H-2026), thereby satisfying the requirement to clearly identify the item."
+  },
+  {
+    "requirement_id": "fe66c8ac-c973-4c84-98ef-8b24952009dc",
+    "requirement_text": "Brand name, if any",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Brand: HydroClear",
+        "start_char": 1588,
+        "end_char": 1616,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly identifies the brand name of the product being offered as 'HydroClear' in the provided attachment."
+  },
+  {
+    "requirement_id": "272603b8-9ad3-4b60-8af3-8d791122d2ab",
+    "requirement_text": "Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
+        "start_char": 1721,
+        "end_char": 1982,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles.",
+        "start_char": 2025,
+        "end_char": 2244,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates the inclusion of descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data. While the bidder provided a text-based technical description, they failed to provide any illustrations, drawings, or external references to descriptive data, which are explicitly requested by the requirement."
+  },
+  {
+    "requirement_id": "42625a08-4893-4efc-a5ea-b0a86fb61014",
+    "requirement_text": "The cost of components mined, produced, or manufactured in the United States must exceed 60 percent of the total cost of all components.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Country of Origin: Malaysia (final assembly).",
+        "start_char": 1156,
+        "end_char": 1201,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
+        "start_char": 1244,
+        "end_char": 1400,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates that the cost of components mined, produced, or manufactured in the United States must exceed 60 percent of the total cost. The bidder explicitly certifies that the product is a foreign end product manufactured in Malaysia and that it does not exceed 55% domestic content, which is below the 60% threshold required."
+  },
+  {
+    "requirement_id": "7b2d3a5d-f5d9-49f5-b0d4-d0ae4799fe8d",
+    "requirement_text": "For end products consisting wholly or predominantly of iron or steel, the product is considered domestic if the cost of foreign iron and steel constitutes less than 5 percent of the total cost of all components.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Country of Origin: Malaysia (final assembly).",
+        "start_char": 1156,
+        "end_char": 1201,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.\nNo domestic end products or critical components are being offered\nunder this line item.",
+        "start_char": 1244,
+        "end_char": 1488,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement defines a domestic product as one where foreign iron and steel costs are less than 5 percent of the total component cost. The bidder explicitly certifies that the product is a 'foreign end product' manufactured in Malaysia and states that 'no domestic end products or critical components are being offered.' This confirms the product does not meet the domestic content threshold required."
+  },
+  {
+    "requirement_id": "d167455b-244d-481b-9999-0ed65503235b",
+    "requirement_text": "The Offeror must certify that each end product is a domestic end product (unless otherwise excepted) and must separately list the line item numbers of domestic end products that contain a critical component as defined in FAR 25.105.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.\nNo domestic end products or critical components are being offered\nunder this line item.",
+        "start_char": 1203,
+        "end_char": 1488,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks the offeror to certify that each end product is a domestic end product (unless excepted) and to list domestic end products containing critical components. The bidder explicitly identified the product as a foreign end product (Malaysia) and stated that no domestic end products or critical components are being offered, thereby satisfying the requirement by confirming the status of the items provided."
+  },
+  {
+    "requirement_id": "a12686e0-6ce5-4e86-ad62-2bb0c02fa7be",
     "requirement_text": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
     "verdict": "compliant",
     "evidence": [
@@ -345,42 +497,9 @@
         "end_char": 1201,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
-        "start_char": 1203,
-        "end_char": 1400,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement states that the offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products. However, the product being offered is manufactured in Malaysia, not the United States, as explicitly stated in the application. Since no end products manufactured in the United States fail to qualify as domestic end products, there are no such items to list under this specific requirement, and the bidder's disclosures regarding their foreign end product from Malaysia are fully consistent with the solicitation instructions."
-  },
-  {
-    "requirement_id": "8e6b9983-4645-4b45-81d0-de46fdee4059",
-    "requirement_text": "For foreign end products that do not consist wholly or predominantly of iron, steel, or a combination of both, the Offeror shall indicate whether they exceed 55 percent domestic content, excluding COTS items.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Country of Origin: Malaysia (final assembly).\n\nBuy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.\nNo domestic end products or critical components are being offered\nunder this line item.",
-        "start_char": 1156,
-        "end_char": 1488,
-        "citation_verified": true,
-        "match_precision": null,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement states that for foreign end products not predominantly made of iron or steel, the offeror shall indicate whether they exceed 55 percent domestic content. The bidder explicitly stated in their Buy American Certificate that the offered foreign end product does not exceed 55% domestic content, thereby fulfilling the requirement."
-  },
-  {
-    "requirement_id": "b1bb12e4-ee1c-4b55-966a-949da95709d6",
-    "requirement_text": "The Offeror shall separately list the line item numbers of domestic end products that contain a critical component in accordance with FAR 25.105.",
-    "verdict": "compliant",
-    "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
         "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.\nNo domestic end products or critical components are being offered\nunder this line item.",
@@ -388,14 +507,33 @@
         "end_char": 1488,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement mandates that the offeror separately list line item numbers of domestic end products containing critical components under FAR 25.105, or implicitly account for them. The bidder explicitly states that the offered product is a foreign end product from Malaysia and certifies that no domestic end products or critical components are being offered under the line item, thereby satisfying the instruction by confirming the absence of such items."
+    "reasoning": "The requirement asks the offeror to list foreign end products that do not qualify as domestic. The bidder explicitly identified the product as a foreign end product manufactured in Malaysia and stated that no domestic end products are being offered, thereby satisfying the requirement to identify the status of the offered items."
   },
   {
-    "requirement_id": "a48e7b20-c2b3-49fb-8a70-9d10f2b8792a",
-    "requirement_text": "The products supplied must be manufactured or produced in the United States, unless an applicable regulation permits an exception.",
+    "requirement_id": "9d9ad58f-b1a5-40e1-aba3-e2f7a813d817",
+    "requirement_text": "For foreign end products not consisting wholly or predominantly of iron or steel, the Offeror shall indicate whether they exceed 55 percent domestic content, excluding COTS items.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
+        "start_char": 1203,
+        "end_char": 1400,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks the offeror to indicate whether foreign end products exceed 55 percent domestic content. The bidder explicitly stated that the product does not exceed 55% domestic content, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "8ed2a857-ce07-4e35-ada5-371710a3eea7",
+    "requirement_text": "The Contractor certifies that all products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.",
     "verdict": "non_compliant",
     "evidence": [
       {
@@ -405,79 +543,486 @@
         "end_char": 1201,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "contradicts"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
-        "start_char": 1203,
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
+        "start_char": 1244,
         "end_char": 1400,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement states that products supplied must be manufactured or produced in the United States, unless an applicable regulation permits an exception. The bidder explicitly certifies that the offered product is manufactured in Malaysia and is a foreign end product, which directly violates the requirement."
+    "reasoning": "The requirement mandates that products supplied must be manufactured or produced in the United States unless an exception is permitted. The bidder explicitly states that the product is manufactured in Malaysia and identifies it as a foreign end product, which directly contradicts the requirement."
   },
   {
-    "requirement_id": "48f6f75c-1e84-421f-ac78-2c5aa2bad54d",
-    "requirement_text": "The Contractor qualifies as a small business under the SBA size standards.",
+    "requirement_id": "5e71e9d7-3394-4ccc-8bda-f413abae4bbc",
+    "requirement_text": "The percentage for items delivered in calendar years 2024 through 2028 shall be 65 percent.",
     "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The application mentions that representations and certifications under FAR 52.212-3 are current in SAM.gov and that the bidder qualifies as a small business under the Non-Manufacturing Rule, but it does not explicitly state whether DentaFlow Systems itself qualifies as a small business under the specific SBA size standards applicable to this procurement."
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "While the bidder states they concur with all terms and conditions of the solicitation, the provided excerpts do not contain any specific information regarding the percentage of items delivered in calendar years 2024 through 2028, nor do they explicitly confirm or deny the 65 percent requirement."
   },
   {
-    "requirement_id": "c3d45dee-e8cb-49fd-b624-be921ed6df4a",
-    "requirement_text": "The Contractor will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
+    "requirement_id": "a917a31e-df9b-495c-ad16-87ed18e03540",
+    "requirement_text": "The percentage for items delivered starting in calendar year 2029 shall be 75 percent.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts do not contain any information regarding delivery percentages for items starting in calendar year 2029. While the bidder states they concur with all terms and conditions of the solicitation, the specific requirement regarding the 75 percent delivery threshold for 2029 is not mentioned or addressed in the provided text."
+  },
+  {
+    "requirement_id": "d6f0f2f2-cbe2-40e7-9206-2eb04bfa248a",
+    "requirement_text": "(B) The end product is a COTS item",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems is an authorized distributor of Veridian MedTech's\nHydroClear product line",
+        "start_char": 620,
+        "end_char": 712,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system",
+        "start_char": 1721,
+        "end_char": 1823,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "While the bidder identifies as a distributor of a specific product line and provides technical specifications, the application does not explicitly state that the product is a Commercial Off-The-Shelf (COTS) item as defined by the requirement. Being an authorized distributor or providing a technical description does not automatically confirm COTS status."
+  },
+  {
+    "requirement_id": "ac817024-c7c9-4838-bbb0-e75d0205fc38",
+    "requirement_text": "If the percentage of the domestic content is unknown, select “no”.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "We acknowledge and certify compliance with the Non-Manufacturing Rule\nas outlined by the U.S. Small Business Administration and the Federal\nAcquisition Regulation, including that DentaFlow Systems is primarily\nengaged in the wholesale trade of dental equipment and does not\nmanufacture the products being supplied under this contract.",
-        "start_char": 2688,
-        "end_char": 3022,
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.",
+        "start_char": 1244,
+        "end_char": 1400,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that if the percentage of domestic content is unknown, the bidder must select 'no'. The bidder explicitly stated that the product 'does not exceed 55% domestic content', which indicates the percentage is known (or at least defined as being below a specific threshold), therefore the requirement to select 'no' due to an unknown percentage does not apply."
+  },
+  {
+    "requirement_id": "80ff717e-7a9b-4903-9013-572c725052a9",
+    "requirement_text": "The Contractor certifies that it qualifies as a small business under the SBA size standards.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems' representations and certifications under FAR\n52.212-3 are current and up to date in SAM.gov as of the date of this\nquote.",
+        "start_char": 3070,
+        "end_char": 3210,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder references their SAM.gov representations and certifications, which typically contain information regarding small business status. However, the application does not explicitly state that the company qualifies as a small business under SBA size standards, nor does it provide the specific certification required by the prompt."
+  },
+  {
+    "requirement_id": "1877bfb1-a832-4e3a-bcfa-9b2e682c66b2",
+    "requirement_text": "The Contractor certifies that it will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Country of Origin: Malaysia (final assembly).",
+        "start_char": 1156,
+        "end_char": 1201,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Manufacturer: Veridian MedTech.",
-        "start_char": 562,
-        "end_char": 593,
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia",
+        "start_char": 1244,
+        "end_char": 1357,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that the contractor must supply the product of a small business manufacturer or processor, unless an SBA waiver has been granted. The bidder explicitly acknowledges and certifies compliance with the Non-Manufacturing Rule (which permits a non-manufacturer to supply the product of a small business manufacturer, provided certain size and waiver criteria are met) and acknowledges they are not the manufacturer, with Veridian MedTech being the manufacturer. Since they certify compliance with the rule governing small business manufacturing supply, they satisfy the requirement."
+    "reasoning": "The requirement mandates that the contractor supply the product of a small business manufacturer or processor. The bidder explicitly states that the product is manufactured in Malaysia, which indicates it is not a product of a small business manufacturer (which typically refers to U.S.-based small businesses under SBA regulations). Therefore, the bidder fails to meet the requirement."
   },
   {
-    "requirement_id": "b7ca162b-4178-4a2e-b0ba-adffb730270d",
+    "requirement_id": "6c75fb42-1094-4880-b118-903e2dfb966c",
     "requirement_text": "The Contractor has made this certification at the time of submitting the offer in response to the solicitation.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "(Signature block to be completed upon award.)",
+        "start_char": 3023,
+        "end_char": 3068,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the Contractor must have made the certification at the time of submitting the offer. The bidder explicitly states that the signature block (which would formalize the certification) is to be completed upon award, indicating the certification was not executed at the time of submission."
+  },
+  {
+    "requirement_id": "3434f69d-689a-45d8-b07a-e5c643e64896",
+    "requirement_text": "All information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "We acknowledge and certify compliance with the Non-Manufacturing Rule\nas outlined by the U.S. Small Business Administration and the Federal\nAcquisition Regulation",
+        "start_char": 2688,
+        "end_char": 2850,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder provides specific certifications regarding the Non-Manufacturing Rule and FAR 52.212-3, but the application does not contain a general statement affirming that all information provided in the tender is accurate and truthful to the best of the Contractor's knowledge and belief, as required by the prompt."
+  },
+  {
+    "requirement_id": "afccccd2-660a-4e39-807a-7a75239d233f",
+    "requirement_text": "Signature: _______________________\nName: ___________________________\nTitle: ____________________________\nDate: ____________________________\nBusiness Name: ____________________________",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "(Signature block to be completed upon award.)",
+        "start_char": 3023,
+        "end_char": 3068,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The tender requirement explicitly asks for a signature block containing a signature, name, title, date, and business name. The bidder explicitly stated that the signature block will only be completed upon award, meaning the current application lacks the required signature and associated details."
+  },
+  {
+    "requirement_id": "04d56b56-a313-46ae-b734-592b7fc8be48",
+    "requirement_text": "The contractor shall comply with clause 52.209-6, Protecting the government’s interest when subcontracting with contractors debarred, suspended, or proposed for debarment (Aug 2013).",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "We acknowledge and certify compliance with the Non-Manufacturing Rule\nas outlined by the U.S. Small Business Administration and the Federal\nAcquisition Regulation, including that DentaFlow Systems is primarily\nengaged in the wholesale trade of dental equipment and does not\nmanufacture the products being supplied under this contract.",
-        "start_char": 2688,
-        "end_char": 3022,
-        "citation_verified": true,
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions of this solicitation without exception.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states and certifies compliance with the required certification at the time of submitting the offer in response to the solicitation."
+    "reasoning": "The bidder explicitly stated in their application that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to comply with FAR 52.209-6 is a standard provision of the solicitation, this blanket concurrence confirms compliance."
   },
   {
-    "requirement_id": "f163db38-b1f6-4c54-ae0b-b0e4f0d657dc",
-    "requirement_text": "All information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The requirement states that all information provided in the certification is accurate and truthful to the best of the Contractor's knowledge and belief. While the bidder provides various certifications (such as the Buy American Certificate and SAM.gov representations), the text does not contain a specific statement certifying that all information provided is accurate and truthful to the best of their knowledge and belief as demanded by the prompt's explicit phrasing, resulting in insufficient information."
+    "requirement_id": "4225e2fa-77b0-4715-bf13-9b4f4fdc5ae9",
+    "requirement_text": "The contractor shall comply with clause 52.232-33, Payment by electronic funds transfer – system for award management (Jul 2013).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to comply with FAR 52.232-33 is a standard provision within the solicitation, this blanket concurrence confirms compliance."
   },
   {
-    "requirement_id": "7a4efb30-100c-45b0-a808-e80dd36a39dc",
+    "requirement_id": "c7c9286b-1817-4037-96d2-f281013a1221",
+    "requirement_text": "The contractor shall comply with clause 52.232-40, Providing accelerated payments to small business subcontractors (Dec 2013).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to comply with FAR 52.232-40 is a standard provision within the solicitation, the bidder's blanket concurrence serves as an affirmation of compliance."
+  },
+  {
+    "requirement_id": "2ee4d3a9-2fc8-4699-9033-e40b86786b19",
+    "requirement_text": "The contractor shall comply with clause 852.232-72, Electronic submission of payment requests (Nov 2012).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to comply with clause 852.232-72 is a standard provision of the solicitation, this blanket concurrence confirms compliance."
+  },
+  {
+    "requirement_id": "ebd2550a-b877-4e00-9ada-3a0ab1f19504",
+    "requirement_text": "The contractor shall comply with clause 52.204-7, System for Award Management (Oct 2018).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems' representations and certifications under FAR\n52.212-3 are current and up to date in SAM.gov as of the date of this\nquote.",
+        "start_char": 3070,
+        "end_char": 3210,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates compliance with FAR 52.204-7, which requires registration in the System for Award Management (SAM). The bidder explicitly states that their representations and certifications are current and up to date in SAM.gov, which confirms their active registration status."
+  },
+  {
+    "requirement_id": "efe6cc99-1882-4a80-882f-3758a06b7b98",
+    "requirement_text": "The contractor shall comply with clause 52.204-16, Commercial and Government Entity Code Reporting (Oct 2016).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to comply with FAR 52.204-16 is a standard provision within federal solicitations, the bidder's blanket concurrence confirms their compliance."
+  },
+  {
+    "requirement_id": "17fc353b-7c81-4b55-ac6f-7db7190b14e1",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 52.232-18 | Availability of Funds | Apr 1984",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement for FAR 52.232-18 is listed as a clause that shall apply in the solicitation, the bidder's blanket concurrence covers this requirement."
+  },
+  {
+    "requirement_id": "edafe186-153a-4195-9cae-f4d41b07dfe6",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 52.233-1 | Disputes | May 2014",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to apply FAR 52.233-1 (Disputes) is a provision of the solicitation, the bidder's blanket concurrence confirms compliance."
+  },
+  {
+    "requirement_id": "ddd002ff-54c8-4165-860e-8fb5adf991bb",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 52.233-3 | Protest after award | Aug 1996",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to include clause 52.233-3 is part of the solicitation's terms, the bidder's blanket concurrence confirms compliance."
+  },
+  {
+    "requirement_id": "9da41e7a-b5e3-4c11-8bd8-d9b43b0037aa",
+    "requirement_text": "The solicitation shall incorporate the following clauses and provisions by reference: 52.252-2 (Feb 1998), 852.203-70 (Jan 2008), and 852.252-70 (Jan 2008).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. This blanket acceptance covers the requirement to incorporate the specified clauses and provisions by reference."
+  },
+  {
+    "requirement_id": "ebba071c-4967-46c4-84da-e05022a161d0",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 852.237-70",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that clause 852.237-70 shall apply. The bidder explicitly stated in their application that they concur with all terms, conditions, and provisions of the solicitation without exception, which includes the referenced clause."
+  },
+  {
+    "requirement_id": "c011babd-2819-45f1-be16-597d6679d92a",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 852.219-78 | Contractor responsibilities \nNotice of Limitations on Subcontracting – Supplies and Services | Apr 1984",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement to adhere to clause 852.219-78 is part of the solicitation's requirements, the bidder's blanket concurrence confirms compliance."
+  },
+  {
+    "requirement_id": "c55d338c-f6f8-404a-8474-b199ffe9f0a7",
+    "requirement_text": "In addition, the following clauses shall also apply:  ... 852.219-73 | VA Notice of Total Set-Aside For Certified Service-Disabled Veteran-Owned Small Businesses | Jan 2023",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Country of Origin: Malaysia (final assembly).",
+        "start_char": 1156,
+        "end_char": 1201,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia",
+        "start_char": 1244,
+        "end_char": 1357,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement specifies a Total Set-Aside for Certified Service-Disabled Veteran-Owned Small Businesses (SDVOSB). Under VAAR 852.219-73 and the underlying SDVOSB program requirements, the offered product must comply with the Non-Manufacturer Rule and the limitations on subcontracting, which generally require that the product be manufactured in the United States by a small business concern. The bidder explicitly states that the product is a foreign end product manufactured in Malaysia, which disqualifies the offer from meeting the requirements of a total SDVOSB set-aside."
+  },
+  {
+    "requirement_id": "4b123f8c-27fe-4539-9d44-fbaa58cfa09f",
+    "requirement_text": "52.233-2 | Service of Protest | Sep 2006",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they concur with all terms, conditions, and provisions of the solicitation without exception. Since FAR 52.233-2 is a standard provision included in federal solicitations, the bidder's blanket concurrence covers this requirement."
+  },
+  {
+    "requirement_id": "67b34584-f080-4711-89c9-68a457ab2080",
+    "requirement_text": "852.233-70 | Protest Content/Alternative Dispute Resolution | Oct 2018",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they concur with all terms, conditions, and provisions of the solicitation without exception. Since the requirement 852.233-70 is a standard provision of the solicitation, the bidder's blanket concurrence covers this requirement."
+  },
+  {
+    "requirement_id": "3e4bd0b5-185d-4bf6-8304-6e6199cebd96",
     "requirement_text": "Must be fully autoclavable ensuring sterility between uses",
     "verdict": "compliant",
     "evidence": [
@@ -488,30 +1033,32 @@
         "end_char": 2307,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in the technical description of the proposed equivalent product that the full unit is autoclavable to ensure sterility between uses, which directly satisfies the requirement."
+    "reasoning": "The technical description explicitly states that the full unit is autoclavable to ensure sterility between uses, which directly satisfies the requirement."
   },
   {
-    "requirement_id": "2237ee4d-d8e4-4ab2-a215-d9d29c4e958b",
+    "requirement_id": "2b34c0a8-4404-4b9b-98c9-c07525486684",
     "requirement_text": "Must be seamlessly integrate with most dental units providing sterile water pathway",
     "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
-        "start_char": 1721,
-        "end_char": 1982,
+        "quote": "air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway",
+        "start_char": 1778,
+        "end_char": 1900,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement states that the system must seamlessly integrate with most dental units providing a sterile water pathway. The bidder's application states that the system is compatible with Midwest-style connections, but does not provide information regarding whether it integrates seamlessly with most dental units providing a sterile water pathway beyond mentioning Midwest connections."
+    "reasoning": "The bidder states the product is compatible with Midwest-style connections and has a sterile irrigation pathway, but the requirement specifies the system must 'seamlessly integrate with most dental units providing sterile water pathway'. The provided information does not confirm if the product integrates with the existing sterile water pathways of most dental units, nor does it address the 'most dental units' scope of the requirement."
   },
   {
-    "requirement_id": "9e17caad-63cb-4488-825d-edfd25fec70e",
+    "requirement_id": "af3e8509-0af4-4a52-98e5-9adb090171dd",
     "requirement_text": "Must be easy irrigation control with instant on/off functionality and no footprint",
     "verdict": "compliant",
     "evidence": [
@@ -522,26 +1069,56 @@
         "end_char": 2528,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The technical description explicitly states that irrigation is controlled with a simple instant on/off mechanism and has no added footprint, which directly satisfies the requirement for easy irrigation control with instant on/off functionality and no footprint."
+    "reasoning": "The technical description explicitly states that the irrigation is controlled with an instant on/off mechanism and has no added footprint, which directly satisfies the requirement."
   },
   {
-    "requirement_id": "0c44005d-09b2-46b6-9db6-3da77eb86a33",
+    "requirement_id": "34dc0753-f19e-482e-9972-07eaa8dbb89f",
     "requirement_text": "Must be designed to provide high-speed cutting power rivaling electric handpieces while maintain precision and responsiveness",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1384/application.txt",
-        "quote": "The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness.",
-        "start_char": 2245,
+        "quote": "it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness.",
+        "start_char": 2313,
         "end_char": 2440,
         "citation_verified": true,
         "match_precision": null,
+        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's technical description explicitly states that the offered HydroClear Pro 4H is designed to provide high-speed cutting power rivaling electric handpieces while maintaining precision and responsiveness, which directly matches the stated requirement."
+    "reasoning": "The technical description provided in the bidder's application explicitly states that the HydroClear Pro 4H is designed to provide high-speed cutting power rivaling electric handpieces while maintaining precision and responsiveness, which directly matches the requirement."
+  },
+  {
+    "requirement_id": "cc848ec3-8c52-43f1-8d21-4fe232577492",
+    "requirement_text": "Unit Price",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "DentaFlow Systems, LLC is pleased to submit the following quote in\nresponse to solicitation 36C26226Q1384 for the AquaSept High Speed Kit\nor Equal.",
+        "start_char": 154,
+        "end_char": 301,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C26226Q1384/application.txt",
+        "quote": "Quantity: 25",
+        "start_char": 2011,
+        "end_char": 2023,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The tender requirement is to provide a Unit Price. While the bidder provides a quantity of 25 units, the application fails to list the price per unit or the total price for the items quoted."
   }
 ]

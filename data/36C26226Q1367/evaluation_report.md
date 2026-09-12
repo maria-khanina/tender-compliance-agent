@@ -7,22 +7,22 @@ Machine-readable numbers for averaging across tenders -- every value here is exp
 ```json
 {
   "requirement_recall": 1.0,
-  "requirement_recall_matched": 14,
-  "requirement_recall_total": 14,
-  "requirement_precision": 0.5918,
+  "requirement_recall_matched": 29,
+  "requirement_recall_total": 29,
+  "requirement_precision": 0.9796,
   "citation_verified_rate": 1.0,
-  "is_mandatory_accuracy": 0.6667,
-  "is_mandatory_scored": 12,
-  "is_text_verifiable_accuracy": 0.6667,
-  "is_text_verifiable_scored": 12,
-  "verdict_clean_match_count": 5,
-  "verdict_accuracy": 1.0,
-  "false_compliant_rate": 0.1667,
-  "false_issue_rate": 0.0,
+  "is_mandatory_accuracy": 0.8148,
+  "is_mandatory_scored": 27,
+  "is_text_verifiable_accuracy": 0.8148,
+  "is_text_verifiable_scored": 27,
+  "verdict_clean_match_count": 18,
+  "verdict_accuracy": 0.9444,
+  "false_compliant_rate": 0.05,
+  "false_issue_rate": 0.05,
   "evidence_citation_verified_rate": 0.7407,
   "evidence_recall": 1.0,
-  "verdict_only_accuracy": null,
-  "verdict_only_scored": null
+  "verdict_only_accuracy": 0.8889,
+  "verdict_only_scored": 27
 }
 ```
 
@@ -30,20 +30,28 @@ Machine-readable numbers for averaging across tenders -- every value here is exp
 
 For each `true_requirements.json` topic, did the pipeline extract something whose tender.txt citation overlaps the true one? A pure text-offset check, not a judgment of meaning — see coverage flags below for extractions that are technically "found" but sloppy.
 
-**Recall: 100.0% (14/14)**
+**Recall: 100.0% (29/29)**
 
-**Missed** (0) — no overlapping predicted requirement at all:
+**Missed** (0) — no overlapping predicted requirement at all. "chunk check" is a mechanical (no-LLM) re-chunking of the source document: whether this topic's matching text ever appeared whole in one chunk handed to the extraction model, or was split across chunks.
 - none
 
-**Over-split** (3) — one true topic extracted as several separate predicted requirements:
+**Over-split** (5) — one true topic extracted as several separate predicted requirements:
 - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." split into 2 predicted requirements:
   - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
   - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
-- true `or_equal_submission_requirements` — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification." split into 5 predicted requirements:
+- true `authorized_distributor_letter` — "Provide an Authorized Distributor Letter/Memo from the manufacturer." split into 2 predicted requirements:
+  - predicted [0189955d] "Provide an Authorized Distributor Letter/Memo from the manufacturer." — verdict: non_compliant
+  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM." — verdict: compliant
+- true `gray_market_verification` — "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market" split into 2 predicted requirements:
+  - predicted [0f469d7b] "No remanufactures or gray market items will be acceptable." — not verifiable by text
+  - predicted [27168f37] "Offerors shall provide verification that their items are not Gray Market, such as examples provided in the solicitation." — verdict: compliant
+- true `or_equal_submission_requirements` — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification." split into 7 predicted requirements:
+  - predicted [04765bab] "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found." — verdict: non_compliant
   - predicted [127f2b3b] "(3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and" — not verifiable by text
   - predicted [693e3f30] "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements, and mark any descriptive material to clearly show the modification." — verdict: compliant
   - predicted [a2a86ac8] "To be considered for award, offers of equal products must clearly identify the item by brand name, make, or model number." — verdict: compliant, citation: fuzzy match — worth a second look
   - predicted [c5ad1be1] "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below." — verdict: insufficient_information
+  - predicted [cca36642] "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B)." — verdict: non_compliant
   - predicted [e75d2517] "Offeror quotations and offers of equal products must demonstrate and meet the salient physical, functional, or performance characteristics specified in this solicitation to be considered for award and responsive." — verdict: insufficient_information, citation: fuzzy match — worth a second look
 - true `submission_deadline_and_channel` — "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT. Ensure to reference solicitation number [36C26226Q1367] within subject line of the email. Any offeror quotes received after the prescribed date/time shall be considered non-responsive and will not be considered for award. ... Offers shall be sent by email to Rochelle.Malveaux@va.gov" split into 3 predicted requirements:
   - predicted [70550ba3] "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT." — not verifiable by text
@@ -76,28 +84,10 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
   - none
 
 **Classification precision**: fraction of predicted requirements that matched a true requirement.
-- rate: 59.2%
-- unexplained (20) — the model recognized these as requirements, but they don't match any true requirement:
-  - predicted [04765bab] "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found."
-  - predicted [062eb129] "Echocardiography examination tables must have the following features- ... ELECTRIC LOCKING CASTERS"
-  - predicted [0f469d7b] "No remanufactures or gray market items will be acceptable."
-  - predicted [1e91428f] "Echocardiography examination tables must have the following features- ... Height adjustment: Adjustable range (e.g., 24"–34" on many models) for optimal sonographer access"
-  - predicted [2a0abf75] "The offeror shall provide the brand name product referenced in the solicitation."
-  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM."
-  - predicted [3e6479ff] "Echocardiography examination tables must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles (e.g., +/-15°), or Trendelenburg capability on certain models for enhanced imaging access."
+- rate: 98.0%
+- unexplained (1) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
   - predicted [460c119c] "The cost of its components mined, produced, or manufactured in the United States exceeds 60 percent of the cost of all its components, except that the percentage will be 65 percent for items delivered in calendar years 2024 through 2028 and 75 percent for items delivered starting in calendar year 2029."
-  - predicted [5858d4a2] "The Delivery Timeframe shall be 30 Days ARO."
-  - predicted [5e299605] "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions."
-  - predicted [5e3dce66] "Echocardiography examination tables must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5" W x 15.75" L) for unobstructed imaging."
-  - predicted [5fd6f6a4] "Echocardiography examination tables must have the following features- ... 4 FLEXIBLE HAND CONTROL STORAGE LOOPS"
-  - predicted [6e34f1d7] "Echocardiography examination tables must have an appropriate patient weight and bariatric-rated load capacity (supporting up to 750 lbs on standard models and up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions for stability and strength during complex exams)."
-  - predicted [819b5319] "Echocardiography examination tables must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning."
-  - predicted [aa192d35] "Echocardiography examination tables must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants) to support natural body extension and reduce strain."
-  - predicted [bf8a231e] "Echocardiography examination tables must feature a standard 14" x 14" drop section to reduce repositioning during exams."
-  - predicted [c0070d58] "Echocardiography examination tables must have the following features- ... PATIENT SURFACE FOOTPRINT 30"Wx83"L"
-  - predicted [cca36642] "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B)."
-  - predicted [f60d3a9f] "Echocardiography examination tables must have the following features- ... ADA-compliant low-entry height: Entry heights from 17" to 19" (or 19"–37" on some models) to accommodate wheelchair transfers and patients with mobility challenges"
-  - predicted [f9ab94a3] "Drop-down cushion that releases from either side for barrier-free access"
+    - **similarity check:** closest true topic: `buy_american_certificate_completed` (cosine=0.60); vs matched predicted [1ce55394]: cosine=0.62 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
 
 ## Coverage flags
 
@@ -106,83 +96,101 @@ Clean 1:1 matches (recall counted them as found) whose citations don't fully ove
 **Requirements captured with extra text** (0) — the predicted citation is padded beyond the true one:
 - none
 
-**Requirements captured incompletely** (0) — the predicted citation misses part of the true one:
-- none
+**Requirements captured incompletely** (1) — the predicted citation misses part of the true one:
+- predicted [2a0abf75] is contained in true `brand_name_required_unless_equal_indicated` — 42.6%:
+    predicted: "The offeror shall provide the brand name product referenced in the solicitation."
+    true: "(d) Unless the offeror clearly indicates in its offer that the product being offered is an “equal” product, the offeror shall provide the brand name product referenced in the solicitation."
 
 ## is_mandatory accuracy
 
 For each clean or one-to-many match (tangled groups excluded — there's no single "one" to compare against), does `is_mandatory` agree with the true value? A one-to-many group counts as correct only if every member on the "many" side agrees with the "one".
 
-**Accuracy: 66.7% (12 groups)**
+**Accuracy: 81.5% (27 groups)**
 
 Mismatched:
 - true: `fob_destination_manufacturer_part_number`=True; predicted: `6041a2ce`=False, `a6aac6b4`=True — "Items shall be FOB destination. Please specify offered item manufacturer and part number."
 - true: `country_of_origin_disclosure`=True; predicted: `1a6b2fef`=False — "Please include a Country of Origin for the items being offered (see column A)"
 - true: `fss_contract_listing`=False; predicted: `d9433d87`=True — "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable"
-- true: `or_equal_submission_requirements`=True; predicted: `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
+- true: `or_equal_submission_requirements`=True; predicted: `04765bab`=True, `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `cca36642`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
+- true: `salient_char_dropdown_cushion`=True; predicted: `f9ab94a3`=False — "Drop-down cushion that releases from either side for barrier-free access"
 
 ## is_text_verifiable accuracy
 
 For each clean or one-to-many match (tangled groups excluded), does `is_text_verifiable` agree with the true value (all-or-nothing on the "many" side, same rule as is_mandatory above)? A wrong `false` here means the pipeline skips verdict generation for a requirement that should get one.
 
-**Accuracy: 66.7% (12 groups)**
+**Accuracy: 81.5% (27 groups)**
 
 Mismatched:
 - true: `sam_uei_vendor_info`=True; predicted: `e4ac5a3e`=False — "Vendor Information with SAM UEI."
+- true: `gray_market_verification`=True; predicted: `0f469d7b`=False, `27168f37`=True — "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market"
 - true: `fss_contract_listing`=True; predicted: `d9433d87`=False — "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable"
-- true: `or_equal_submission_requirements`=True; predicted: `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
+- true: `or_equal_submission_requirements`=True; predicted: `04765bab`=True, `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `cca36642`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
 - true: `far_52_212_3_reps_and_certs`=True; predicted: `6a1cd3b4`=False — "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, with this solicitation or ensure SAM.gov is updated with current information."
 
 ## Verdict accuracy
 
 The confusion matrix covers only clean 1:1 matches — split/merge groups have no single pair to plot, but still count in the two rates below.
 
-Clean matches scored: 5
+Clean matches scored: 18
 
 | true \ pipeline said | `compliant` | `non_compliant` | `contradictory` | `insufficient_information` |
 |---|---|---|---|---|
-| `compliant` | 2 | 0 | 0 | 0 |
-| `non_compliant` | 0 | 2 | 0 | 0 |
+| `compliant` | 2 | 1 | 0 | 0 |
+| `non_compliant` | 0 | 1 | 0 | 0 |
 | `contradictory` | 0 | 0 | 1 | 0 |
-| `insufficient_information` | 0 | 0 | 0 | 0 |
-
-Why some rows are empty:
-- `insufficient_information` row is empty: true `buy_american_certificate_completed` — tangled match — no single pair to plot
-- `insufficient_information` row is empty: true `nmr_certification_signed` — tangled match — no single pair to plot
+| `insufficient_information` | 0 | 0 | 0 | 13 |
 
 **Mismatched clean matches** — every off-diagonal cell above, in full: the full context retrieved and shown to the model, what it chose to cite from that context, and its reasoning ("model's ..."), next to what `true_verdicts.json` expects ("expected ...").
 
-- none
+- `brand_name_required_unless_equal_indicated` — acceptable: ['compliant'], predicted: non_compliant
+  - **requirement:** "The offeror shall provide the brand name product referenced in the solicitation."
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C [...truncated]"
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached au [...truncated]"
+  - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp."
+  - **model's evidence (what it chose to cite):** "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924)."
+  - **model's reasoning:** The requirement states that the offeror shall provide the brand name product referenced in the solicitation. The solicitation references the MPI Echo Bed Cardiac Imaging Table, but the bidder explicitly states they are offering a different product, the SonoRest CV-200, as an 'or-equal' submission.
+  - **expected evidence (true_verdicts.json):** "We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924)."
+  - **expected reasoning:** Application clearly indicates the offer is an 'equal' product ("We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table"), so the brand-name-product obligation is not triggered; the conditional exception is satisfied.
 
 **False-compliant rate** — dangerous direction: the true verdict requires an issue (anything but `compliant`), but every predicted verdict in the group is `compliant`.
-- rate: 16.7%
+- rate: 5.0%
 
-- true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." (acceptable: ['non_compliant'])
-    - **expected evidence (true_verdicts.json):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
-    - **expected reasoning:** Application names the manufacturer and confirms FOB destination, but never states a manufacturer part number for the SonoRest CV-200.
-  - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
-    - **requirement:** "Please specify the offered item manufacturer and part number."
-    - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C26226Q1367. Vendor Information: Summit Diagnostic Equipment, LLC 4420 Corbin Street Dallas, TX 75247 SAM UEI: QK7M2XH9RT84 Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all terms, conditions, and provisions of this solicitation. Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes. Authorized Distributor status: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. products. The formal Authorized Distributor Letter will be provided upon request after contract award. Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia. Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote. All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
-    - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached authorization documentation, and does not source or distribute any gray market goods. FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently hold a Federal Supply Schedule (FSS) contract. Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures. FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov. Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department. Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System. Please contact us with any questions regarding this quote. Sincerely, Marcus Feldman Contracts Manager Summit Diagnostic Equipment, LLC"
-    - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp."
-    - **model's reasoning:** The bidder clearly specifies both the manufacturer (Apex Medical Positioning Corp.) and the part number/item name (SonoRest CV-200 Cardiac Imaging Table), thereby satisfying the requirement.
-  - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
-    - **requirement:** "Items shall be FOB destination."
-    - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C26226Q1367. Vendor Information: Summit Diagnostic Equipment, LLC 4420 Corbin Street Dallas, TX 75247 SAM UEI: QK7M2XH9RT84 Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all terms, conditions, and provisions of this solicitation. Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes. Authorized Distributor status: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. products. The formal Authorized Distributor Letter will be provided upon request after contract award. Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia. Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote. All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
-    - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached authorization documentation, and does not source or distribute any gray market goods. FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently hold a Federal Supply Schedule (FSS) contract. Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures. FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov. Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department. Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System. Please contact us with any questions regarding this quote. Sincerely, Marcus Feldman Contracts Manager Summit Diagnostic Equipment, LLC"
-    - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
-    - **model's reasoning:** The bidder explicitly states "FOB Destination: Yes" in their quote, which directly satisfies the requirement that items shall be FOB destination.
+- group of 1 true topic(s) and 2 predicted requirement(s) (not a 1:1 match, so there is no single correct pairing between them):
+  - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." (acceptable: ['non_compliant'])
+      - **expected evidence (true_verdicts.json):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
+      - **expected reasoning:** Application names the manufacturer and confirms FOB destination, but never states a manufacturer part number for the SonoRest CV-200.
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C [...truncated]"
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached au [...truncated]"
+  - predicted verdicts in this group:
+    - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
+      - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp."
+      - **model's reasoning:** The bidder clearly specifies both the manufacturer (Apex Medical Positioning Corp.) and the part number/item name (SonoRest CV-200 Cardiac Imaging Table), thereby satisfying the requirement.
+    - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
+      - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
+      - **model's reasoning:** The bidder explicitly states "FOB Destination: Yes" in their quote, which directly satisfies the requirement that items shall be FOB destination.
 
 **False-issue rate** — mirror direction: the true verdict is `compliant` only, but the pipeline raised an issue anyway.
-- rate: 0.0%
+- rate: 5.0%
 
-- none
+- `brand_name_required_unless_equal_indicated` — acceptable: ['compliant'], predicted: non_compliant
+  - **requirement:** "The offeror shall provide the brand name product referenced in the solicitation."
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C [...truncated]"
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached au [...truncated]"
+  - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp."
+  - **model's evidence (what it chose to cite):** "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924)."
+  - **model's reasoning:** The requirement states that the offeror shall provide the brand name product referenced in the solicitation. The solicitation references the MPI Echo Bed Cardiac Imaging Table, but the bidder explicitly states they are offering a different product, the SonoRest CV-200, as an 'or-equal' submission.
+  - **expected evidence (true_verdicts.json):** "We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924)."
+  - **expected reasoning:** Application clearly indicates the offer is an 'equal' product ("We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table"), so the brand-name-product obligation is not triggered; the conditional exception is satisfied.
 
 **Unscored** — split/merge groups excluded from the matrix above (still counted in the two rates above):
 - group 1:
   - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." (acceptable: ['non_compliant'])
   - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
   - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
+- group 2:
+  - true `authorized_distributor_letter` — "Provide an Authorized Distributor Letter/Memo from the manufacturer." (acceptable: ['non_compliant'])
+  - predicted [0189955d] "Provide an Authorized Distributor Letter/Memo from the manufacturer." — verdict: non_compliant
+  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM." — verdict: compliant
 
 ## Evidence
 
@@ -190,6 +198,41 @@ Why some rows are empty:
 - rate: 74.1% (7 unverified of 27)
 
 **Evidence recall**: does the expected evidence span (from `true_verdicts.json`) show up somewhere in the requirement's retrieved chunks, before the verdict step chose what to cite? Topics never extracted as a requirement are excluded — that failure is already counted by requirement recall above.
-- recall: 100.0% (11/11)
+- recall: 100.0% (13/13)
 - missed:
   - none
+
+## Verdict-only evaluation
+
+Runs verdict generation directly on true_requirements.json's own text and citations against application.txt, bypassing requirement extraction and match-group sequencing entirely -- isolates whether generate_verdict, given a perfect requirement, makes the right call. Only mismatches are listed below.
+
+**Accuracy: 88.9% (24/27)**
+
+- `fob_destination_manufacturer_part_number` — acceptable: ['non_compliant'], predicted: compliant
+  - **requirement:** "Items shall be FOB destination; quote must specify the offered item's manufacturer and part number."
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C26226Q1367. Vendor Information: Summit Diagnostic Equipment, LLC 4420 Corbin Street Dallas, TX 75247 SAM UEI: QK7M2XH9RT84 Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all terms, conditions, and provisions of this solicitation. Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes. Authorized Distributor status: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. products. The formal Authorized Distributor Letter will be provided upon request after contract award. Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia. Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote. All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached authorization documentation, and does not source or distribute any gray market goods. FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently hold a Federal Supply Schedule (FSS) contract. Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures. FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov. Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department. Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System. Please contact us with any questions regarding this quote. Sincerely, Marcus Feldman Contracts Manager Summit Diagnostic Equipment, LLC"
+  - **model's evidence (what it chose to cite):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
+  - **model's reasoning:** The bidder explicitly states that the items are FOB destination ("FOB Destination: Yes") and provides the required manufacturer (Apex Medical Positioning Corp.) and part number/item name (SonoRest CV-200 Cardiac Imaging Table), thereby satisfying all conditions of the requirement.
+  - **expected evidence (true_verdicts.json):** "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes."
+  - **expected reasoning (true_verdicts.json):** Application names the manufacturer and confirms FOB destination, but never states a manufacturer part number for the SonoRest CV-200.
+
+- `buy_american_certificate_completed` — acceptable: ['insufficient_information'], predicted: non_compliant
+  - **requirement:** "Quote must include a completed Buy American Certificate (FAR 52.225-2): certify domestic/foreign end-product status per line item, list foreign end products and whether they exceed 55% domestic content, and separately list domestic end products containing a critical component."
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached authorization documentation, and does not source or distribute any gray market goods. FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently hold a Federal Supply Schedule (FSS) contract. Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures. FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov. Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department. Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System. Please contact us with any questions regarding this quote. Sincerely, Marcus Feldman Contracts Manager Summit Diagnostic Equipment, LLC"
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C26226Q1367. Vendor Information: Summit Diagnostic Equipment, LLC 4420 Corbin Street Dallas, TX 75247 SAM UEI: QK7M2XH9RT84 Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all terms, conditions, and provisions of this solicitation. Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes. Authorized Distributor status: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. products. The formal Authorized Distributor Letter will be provided upon request after contract award. Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia. Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote. All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
+  - **model's evidence (what it chose to cite):** "Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia."
+  - **model's evidence (what it chose to cite):** "Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote."
+  - **model's evidence (what it chose to cite):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
+  - **model's reasoning:** The requirement states that the quote must include a completed Buy American Certificate (FAR 52.225-2) certifying domestic/foreign end-product status per line item, listing foreign end products and whether they exceed 55% domestic content, and separately listing domestic end products containing critical components. The bidder did not provide the completed certificate containing line item breakdowns, foreign end product listings, and critical component details. Furthermore, the bidder's application contains contradictory statements regarding the country of origin, stating in chunk 0 that the product is manufactured in Kuala Lumpur, Malaysia, but also stating in chunks 0 and 1 that all components are Made in the USA.
+  - **expected evidence (true_verdicts.json):** "Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote."
+  - **expected reasoning (true_verdicts.json):** Application gives only a generic compliance statement; it never fills in the required per-line-item certification (domestic vs. foreign end product, percent domestic content, critical component listing).
+
+- `nmr_certification_signed` — acceptable: ['insufficient_information'], predicted: non_compliant
+  - **requirement:** "Quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification (small business/non-manufacturer status, sourcing, no alteration of goods), including signature, name, title, date, and business name."
+  - **retrieved context (shown to the model):** "From: quotes@summitdiagnosticequip.com To: Rochelle.Malveaux@va.gov Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal Dear Ms. Malveaux, Summit Diagnostic Equipment, LLC is pleased to submit the following quote in response to Solicitation 36C26226Q1367. Vendor Information: Summit Diagnostic Equipment, LLC 4420 Corbin Street Dallas, TX 75247 SAM UEI: QK7M2XH9RT84 Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all terms, conditions, and provisions of this solicitation. Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex Medical Positioning Corp. FOB Destination: Yes. Authorized Distributor status: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. products. The formal Authorized Distributor Letter will be provided upon request after contract award. Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia. Buy American Certification: Summit Diagnostic Equipment, LLC certifies full compliance with the Buy American Act and Trade Agreements Act for all items in this quote. All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act."
+  - **retrieved context (shown to the model):** "All components of the SonoRest CV-200 are proudly Made in the USA, supporting full compliance with the Buy American Act. Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized reseller of Apex Medical Positioning Corp. equipment, confirmed via the attached authorization documentation, and does not source or distribute any gray market goods. FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently hold a Federal Supply Schedule (FSS) contract. Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures. FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov. Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department. Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System. Please contact us with any questions regarding this quote. Sincerely, Marcus Feldman Contracts Manager Summit Diagnostic Equipment, LLC"
+  - **model's evidence (what it chose to cite):** "Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department."
+  - **model's reasoning:** The requirement states that the quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification document itself. The bidder's application merely states that they maintain an executed certification on file with their corporate compliance department, rather than actually including the completed and signed certification in the quote.
+  - **expected evidence (true_verdicts.json):** "Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department."
+  - **expected reasoning (true_verdicts.json):** Application claims an executed NMR certification exists on file internally, but does not include the signed certification in the quote itself, and does not invoke the SAM.gov-current alternative the way it did for FAR 52.212-3 -- unclear whether the actual certification requirement is met.

@@ -9,6 +9,7 @@ from evaluation.verdict_metrics import VerdictAccuracyResult
 
 PERCENT_SCALE = 100.0
 SHORT_ID_LENGTH = 8
+RETRIEVED_CONTEXT_MAX_CHARS = 280
 VERDICT_ORDER = [
     "compliant", "non_compliant", "contradictory", "insufficient_information",
 ]
@@ -20,6 +21,12 @@ def _percent(ratio: float) -> str:
 
 def _collapse_whitespace(text: str) -> str:
     return " ".join(text.split())
+
+
+def _truncate(text: str, max_chars: int = RETRIEVED_CONTEXT_MAX_CHARS) -> str:
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars].rstrip() + " [...truncated]"
 
 
 def _true_line(topic_id: str, report: EvaluationReport) -> str:
@@ -77,13 +84,18 @@ def _group_for_topic(
 def _render_missed(
     groups: list[MatchGroup],
     report: EvaluationReport,
+    missed_chunk_diagnostics: dict[str, str] | None = None,
 ) -> list[str]:
     if not groups:
         return ["- none"]
+    diagnostics = missed_chunk_diagnostics or {}
     lines = []
     for group in groups:
         for topic_id in group.true_topic_ids:
             lines.append(f"- {_true_line(topic_id, report)}")
+            diagnostic = diagnostics.get(topic_id)
+            if diagnostic:
+                lines.append(f"    - **chunk check:** {diagnostic}")
     return lines
 
 
@@ -143,7 +155,10 @@ def _render_tangled(
     return lines
 
 
-def _render_recall_section(report: EvaluationReport) -> list[str]:
+def _render_recall_section(
+    report: EvaluationReport,
+    missed_chunk_diagnostics: dict[str, str] | None = None,
+) -> list[str]:
     result = report.requirement_recall
     by_shape = _groups_by_shape(report.match_groups)
     lines = ["## Requirement recall", ""]
@@ -161,9 +176,14 @@ def _render_recall_section(report: EvaluationReport) -> list[str]:
     lines.append("")
     lines.append(
         f"**Missed** ({len(by_shape.get('unmatched_true', []))}) — no "
-        "overlapping predicted requirement at all:"
+        "overlapping predicted requirement at all. \"chunk check\" is a "
+        "mechanical (no-LLM) re-chunking of the source document: whether "
+        "this topic's matching text ever appeared whole in one chunk "
+        "handed to the extraction model, or was split across chunks."
     )
-    lines.extend(_render_missed(by_shape.get("unmatched_true", []), report))
+    lines.extend(_render_missed(
+        by_shape.get("unmatched_true", []), report, missed_chunk_diagnostics,
+    ))
     lines.append("")
     lines.append(
         f"**Over-split** ({len(by_shape.get('over_split', []))}) — one "
@@ -186,8 +206,12 @@ def _render_recall_section(report: EvaluationReport) -> list[str]:
     return lines
 
 
-def _render_precision_section(report: EvaluationReport) -> list[str]:
+def _render_precision_section(
+    report: EvaluationReport,
+    unexplained_diagnostics: dict[str, str] | None = None,
+) -> list[str]:
     result = report.requirement_precision
+    diagnostics = unexplained_diagnostics or {}
     lines = ["## Requirement precision", ""]
     lines.append(
         "**Citation-verified rate** (hallucination check): fraction of "
@@ -209,12 +233,20 @@ def _render_precision_section(report: EvaluationReport) -> list[str]:
     lines.append(
         f"- unexplained ({len(result.unexplained_requirement_ids)}) — "
         "the model recognized these as requirements, but they don't match "
-        "any true requirement:"
+        "any true requirement. \"closest true topic\" is a mechanical "
+        "(no-LLM) embedding-similarity lookup against every true topic's "
+        "description; \"dedup visibility\" checks whether dedup's own "
+        "cosine pre-filter would have clustered this candidate with "
+        "whatever predicted requirement DID match that topic -- i.e. "
+        "whether the dedup LLM call ever had a chance to compare them:"
     )
     if not result.unexplained_requirement_ids:
         lines.append("  - none")
     for requirement_id in result.unexplained_requirement_ids:
         lines.append(f"  - {_predicted_text_line(requirement_id, report)}")
+        diagnostic = diagnostics.get(requirement_id)
+        if diagnostic:
+            lines.append(f"    - **similarity check:** {diagnostic}")
     lines.append("")
     return lines
 
@@ -546,7 +578,7 @@ def _render_model_detail_lines(
     for chunk_text in retrieved_chunks:
         lines.append(
             f'  - **retrieved context (shown to the model):** '
-            f'"{_collapse_whitespace(chunk_text)}"'
+            f'"{_truncate(_collapse_whitespace(chunk_text))}"'
         )
     if not evidence_quotes:
         lines.append("  - **model's evidence (what it chose to cite):** none")
@@ -583,6 +615,49 @@ def _render_expected_detail_lines(
     return lines
 
 
+def _render_group_retrieved_context(
+    requirement_ids: list[str],
+    report: EvaluationReport,
+) -> list[str]:
+    seen_chunks: set[str] = set()
+    lines = []
+    for requirement_id in requirement_ids:
+        chunks = report.retrieved_context_by_requirement.get(requirement_id, [])
+        for chunk_text in chunks:
+            truncated = _truncate(_collapse_whitespace(chunk_text))
+            if truncated in seen_chunks:
+                continue
+            seen_chunks.add(truncated)
+            lines.append(
+                f'  - **retrieved context (shown to the model):** '
+                f'"{truncated}"'
+            )
+    if not lines:
+        lines.append("  - **retrieved context (shown to the model):** none")
+    return lines
+
+
+def _render_predicted_verdict_lines(
+    requirement_id: str,
+    report: EvaluationReport,
+) -> list[str]:
+    evidence_quotes = report.predicted_verdict_evidence.get(requirement_id, [])
+    reasoning = report.predicted_verdict_reasoning.get(requirement_id, "")
+    lines = [f"    - {_predicted_line(requirement_id, report)}"]
+    if not evidence_quotes:
+        lines.append("      - **model's evidence (what it chose to cite):** none")
+    for quote in evidence_quotes:
+        lines.append(
+            f"      - **model's evidence (what it chose to cite):** "
+            f'"{_collapse_whitespace(quote)}"'
+        )
+    if reasoning:
+        lines.append(
+            f"      - **model's reasoning:** {_collapse_whitespace(reasoning)}"
+        )
+    return lines
+
+
 def _render_verdict_group_with_detail(
     group: MatchGroup,
     report: EvaluationReport,
@@ -594,24 +669,28 @@ def _render_verdict_group_with_detail(
         lines.extend(_render_model_detail_lines(requirement_id, report))
         lines.extend(_render_expected_detail_lines(topic_id, report))
         return lines
-    lines = []
+    lines = [
+        f"- group of {len(group.true_topic_ids)} true topic(s) and "
+        f"{len(group.predicted_node_ids)} predicted requirement(s) "
+        "(not a 1:1 match, so there is no single correct pairing between "
+        "them):",
+    ]
     for topic_id in group.true_topic_ids:
         acceptable = report.acceptable_verdicts_by_topic.get(topic_id)
         lines.append(
-            f"- {_true_line(topic_id, report)} (acceptable: {acceptable})"
+            f"  - {_true_line(topic_id, report)} (acceptable: {acceptable})"
         )
         lines.extend(
-            f"  {line}" for line in _render_expected_detail_lines(
+            f"    {line}" for line in _render_expected_detail_lines(
                 topic_id, report
             )
         )
+    lines.extend(
+        _render_group_retrieved_context(group.predicted_node_ids, report)
+    )
+    lines.append("  - predicted verdicts in this group:")
     for requirement_id in group.predicted_node_ids:
-        lines.append(f"  - {_predicted_line(requirement_id, report)}")
-        lines.extend(
-            f"  {line}" for line in _render_model_detail_lines(
-                requirement_id, report
-            )
-        )
+        lines.extend(_render_predicted_verdict_lines(requirement_id, report))
     return lines
 
 
@@ -823,13 +902,15 @@ def render_report_as_markdown(
     report: EvaluationReport,
     verdict_only_accuracy: float | None = None,
     verdict_only_scored: int | None = None,
+    missed_chunk_diagnostics: dict[str, str] | None = None,
+    unexplained_diagnostics: dict[str, str] | None = None,
 ) -> str:
     sections = ["# Evaluation report", ""]
     sections.extend(render_metrics_summary_lines(
         report, verdict_only_accuracy, verdict_only_scored,
     ))
-    sections.extend(_render_recall_section(report))
-    sections.extend(_render_precision_section(report))
+    sections.extend(_render_recall_section(report, missed_chunk_diagnostics))
+    sections.extend(_render_precision_section(report, unexplained_diagnostics))
     sections.extend(_render_coverage_section(report))
     sections.extend(_render_is_mandatory_section(report))
     sections.extend(_render_is_text_verifiable_section(report))

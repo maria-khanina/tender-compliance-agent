@@ -1,0 +1,412 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "Exhaustive over bidder-facing, pre-award requirements in the RFQ and its Attachment 2 (Talino specs): both text-verifiable ones (is_text_verifiable: true) and ones that describe a substantive compliance fact rather than an instruction to state something (is_text_verifiable: false).",
+    "Attachment 1 (SHOP-PR-26-002435+Justification.pdf) is the FBI's internal sole-source Justification & Approval memo -- it explains why the acquisition is brand-name-only and carries internal approval signatures, but contains no instructions directed at a bidder, so it is not a source for any requirement here.",
+    "This is a brand-name-ONLY RFQ (not brand-name-or-equal like the VA cases in this corpus): there is no 'or equal'/salient-characteristics submission path, and any offer of an alternate/substitute/equivalent product is rated Technically Unacceptable outright.",
+    "pra_national_security_cooperation is a new requirement type not present in the VA-genre cases in this corpus: a mandatory Procurement Risk Assessment / FOCI (Foreign Ownership, Control, or Influence) national-security gate applied to the apparent low-priced technically acceptable awardee after technical/price evaluation, not something assessable from the initial quote text.",
+    "exceptions_conditions_disclosure and authorized_reseller_distributor_evidence are is_mandatory: false because they only apply conditionally (if the vendor has an exception to state; if the vendor is a reseller/distributor rather than the OEM).",
+    "Document quirk, not fixed here: the RFQ is internally inconsistent about the submission deadline and channel. The main body (Section 3, used as this fixture's submission_deadline_and_channel span) states quotes go to rtiggle@fbi.gov by September 17, 2026, 12:00 PM ET, while the 'ADDENDUM TO FAR 52.212-1' states quotes go through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, 12:00 PM ET -- an earlier date, through a different channel -- even though the RFQ's own summary table lists Contract Vehicle as 'N/A'.",
+    "Document quirk, not fixed here: Attachment 2 (Talino specs) uses a curly right-double-quotation-mark character (U+201D) in place of a straight double-quote/inch mark in the hot-swap-bay bullet lines (e.g. '3.5” Hot Swap Bay'), evidently from a copy-paste into the source docx.",
+    "Document quirk, not fixed here: Attachment 2 (Talino specs) has a stray table-header line ('1 of 2 / Line # Part Number Description Qty Unit Price Ext. Price') inserted between the chassis 'Size' bullet and the remaining chassis bullets (Open 5.25 Bays, Fan size, PCI slots, Aluminum thickness, Finish) -- chassis_dimensions_finish_spec uses two spans to skip over it."
+  ],
+  "requirements": [
+    {
+      "topic_id": "brand_name_only_no_alternates",
+      "description": "Only the exact brand-name products, models, and configurations identified in the RFQ and Attachment 1 are acceptable; alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "This RFQ is for brand-name-only products. The Government requires the exact manufacturers, products, models, configurations, quantities, warranty/support, and delivery requirements identified in this RFQ and Attachment 1. Alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable for the applicable award group.",
+        "spans": [
+          {
+            "start_char": 2471,
+            "end_char": 2848
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "item_identification_completeness",
+      "description": "For every quoted item, the quote must identify the exact manufacturer, product/model, manufacturer part number or SKU, configuration, quantity, warranty/support, delivery schedule, unit price, and extended price.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price.",
+        "spans": [
+          {
+            "start_char": 3716,
+            "end_char": 3931
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "oem_new_no_gray_market_certification",
+      "description": "Quote must state that the products are the exact required brand-name, new, genuine OEM products eligible for OEM warranty/support, and certify they are factory-new (no gray-market, used, refurbished, recertified, reconditioned, demo, open-box, or previously placed-in-service items).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "State that the quoted products are the exact brand-name products required by this RFQ and are new, genuine OEM products eligible for the required OEM warranty/support. ... Certify that all quoted items are factory-new and will be delivered with an OEM/manufacturer warranty valid in the United States. The quote shall not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products.",
+        "spans": [
+          {
+            "start_char": 3934,
+            "end_char": 4101
+          },
+          {
+            "start_char": 4104,
+            "end_char": 4397
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "pricing_inclusive_of_all_charges",
+      "description": "The quoted firm-fixed price must include all shipping, handling, warranty/support, and other charges.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price.",
+        "spans": [
+          {
+            "start_char": 4400,
+            "end_char": 4499
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "exceptions_conditions_disclosure",
+      "description": "If the vendor takes any exception, condition, or assumption to a material RFQ requirement, it must be stated in the quote.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "State any exception, condition, or assumption. An exception to a material RFQ requirement may render the quote technically unacceptable.",
+        "spans": [
+          {
+            "start_char": 4502,
+            "end_char": 4638
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_validity_through_sept30",
+      "description": "Quotes shall remain valid through September 30, 2026.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotes shall remain valid through September 30, 2026.",
+        "spans": [
+          {
+            "start_char": 4641,
+            "end_char": 4694
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "unique_entity_identifier_annotation",
+      "description": "The offeror shall enter the annotation “Unique Entity Identifier” followed by its UEI in the block with its name and address on the cover page of its offer.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation “Unique Entity Identifier” followed by the unique entity identifier that identifies the offeror’s name and address.",
+        "spans": [
+          {
+            "start_char": 20653,
+            "end_char": 20879
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "authorized_reseller_distributor_evidence",
+      "description": "Contract holders may furnish the required products as authorized resellers/distributors provided the products are the exact brand-name products required; the Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required. The Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity.",
+        "spans": [
+          {
+            "start_char": 2849,
+            "end_char": 3158
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sam_registration_active",
+      "description": "Vendor must be an eligible, active registrant in the System for Award Management (SAM); the FBI may verify SAM registration and other award eligibility information prior to award.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The FBI may verify product configuration, OEM authorization, warranty eligibility, business size, SAM registration, and other award eligibility information prior to award.",
+        "spans": [
+          {
+            "start_char": 4864,
+            "end_char": 5035
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "pra_national_security_cooperation",
+      "description": "The prospective awardee must timely provide all information requested by the FBI to complete the mandatory Procurement Risk Assessment (PRA), including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information, and must not present an unacceptable national-security risk.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The prospective awardee shall timely provide all information requested by the FBI to complete the PRA, including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information as applicable.",
+        "spans": [
+          {
+            "start_char": 6964,
+            "end_char": 7205
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "kaspersky_telecom_prohibition_compliance",
+      "description": "Offered products and services must comply with the prohibition on Kaspersky Lab-covered hardware/software/services (FAR 52.204-23).",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities",
+        "spans": [
+          {
+            "start_char": 10135,
+            "end_char": 10266
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Complete quotations must be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM Eastern Time; late quotations will not be considered.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Late Quotations. Quotations received after September 17, 2026, at 12:00 PM Eastern Time will not be considered for award. Vendors are solely responsible for ensuring that their complete quotation is successfully submitted to rtiggle@fbi.gov before the stated deadline.",
+        "spans": [
+          {
+            "start_char": 3293,
+            "end_char": 3561
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "cpu_processor_spec",
+      "description": "Workstation must have an Intel Core Ultra 9 285K processor (3.7 GHz, 5.7 GHz Boost, 8P-16E cores, 24 threads).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) |\n8P-16E Cores 24 Threads\nProcessor",
+        "spans": [
+          {
+            "start_char": 73,
+            "end_char": 158
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "liquid_cooling_spec",
+      "description": "Workstation must have liquid cooling for the CPU.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Liquid Cooling for the CPU Providing Maximum\nPerformance",
+        "spans": [
+          {
+            "start_char": 161,
+            "end_char": 217
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "ram_capacity_spec",
+      "description": "Workstation must have 192GB of DDR5 4800 MHz RAM.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "192GB of DDR5 4800 MHz RAM",
+        "spans": [
+          {
+            "start_char": 220,
+            "end_char": 246
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nvme_four_dedicated_drives_spec",
+      "description": "Workstation must have four dedicated 1TB Gen4 M.2 NVMe SSDs: one each for the operating system, temporary files, processing, and database(s).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating\nSystem\n- One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files\n- One (1) 1TB Gen4 M.2 NVMe SSD for Processing\n- One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
+        "spans": [
+          {
+            "start_char": 249,
+            "end_char": 450
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "raid5_eight_ssd_storage_spec",
+      "description": "Workstation must have eight 1TB SSDs in RAID 5 for data storage.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Eight (8) 1TB SSDs in RAID 5 for Data Storage",
+        "spans": [
+          {
+            "start_char": 453,
+            "end_char": 498
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "gpu_spec",
+      "description": "Workstation must have an NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "NVIDIA RTX PRO 4000 Blackwell | 24GB\nGDDR7 Graphics Card",
+        "spans": [
+          {
+            "start_char": 509,
+            "end_char": 565
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "raid_card_spec",
+      "description": "Workstation must have an ARC-1883i RAID card.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "ARC-1883i RAID Card",
+        "spans": [
+          {
+            "start_char": 568,
+            "end_char": 587
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hot_swap_usb_expansion_spec",
+      "description": "Workstation must have a 3.5\" hot-swap bay for three drives, a 2.5\" hot-swap bay with four removable trays, a 2.5\" hot-swap bay with eight removable trays, a 10-port USB 2.0 hub (USB-A), and a 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 3.5” Hot Swap Bay for Three (3) Drives\n- One (1) 2.5” Hot Swap Bay with Four (4) Removable\nTrays\n- One (1) 2.5” Hot Swap Bay with Eight (8) Removable\nTrays\n- One (1) 10 Port USB 2.0 Hub (USB-A)\n- One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
+        "spans": [
+          {
+            "start_char": 590,
+            "end_char": 841
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "power_supply_spec",
+      "description": "Workstation must have a 1700 Watt power supply unit.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1700 Watt Power Supply Unit",
+        "spans": [
+          {
+            "start_char": 844,
+            "end_char": 879
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "operating_system_spec",
+      "description": "Workstation must run Windows 11, specifically Microsoft Windows 11 Pro 64-bit.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "- Windows 11 Only ... Microsoft Windows 11 Pro 64 Bit",
+        "spans": [
+          {
+            "start_char": 53,
+            "end_char": 70
+          },
+          {
+            "start_char": 1003,
+            "end_char": 1034
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "warranty_spec",
+      "description": "Workstation must come with a three-year standard warranty.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Three (3) Year Standard Warranty",
+        "spans": [
+          {
+            "start_char": 1037,
+            "end_char": 1069
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_dimensions_finish_spec",
+      "description": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm), with 11 open 5.25\" bays, 120mm fans, 8 PCI chassis expansion slots, 0.118in (3.00mm) aluminum thickness, and a powder-coated black finish with black appointments.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm) ... Open 5.25 Bays = 11\n- Fan size(s) = 120mm\n- PCI Chassis Expansion Slots = 8\n- Aluminum Thickness = 0.118 (or 3.00mm)\n- Finish = Powder Coated Black with Black Appointments",
+        "spans": [
+          {
+            "start_char": 1099,
+            "end_char": 1153
+          },
+          {
+            "start_char": 1220,
+            "end_char": 1391
+          }
+        ]
+      }
+    }
+  ]
+}

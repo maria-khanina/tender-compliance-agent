@@ -210,6 +210,168 @@
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
       "evidence": []
+    },
+    {
+      "topic_id": "salient_char_electric_locking_casters",
+      "description": "Offered echocardiography examination table must have electric locking casters.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_height_adjustment",
+      "description": "Offered echocardiography examination table must have an adjustable height range (e.g., 24\"-34\" on many models) for optimal sonographer access.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_hand_control_storage_loops",
+      "description": "Offered echocardiography examination table must have 4 flexible hand control storage loops.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_patient_surface_footprint",
+      "description": "Offered echocardiography examination table must have a patient surface footprint of 30\"W x 83\"L.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_ada_entry_height",
+      "description": "Offered echocardiography examination table must have an ADA-compliant low-entry height (entry heights from 17\" to 19\", or 19\"-37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_trendelenburg_positioning",
+      "description": "Offered echocardiography examination table must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_open_apical_window",
+      "description": "Offered echocardiography examination table must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_patient_weight_capacity",
+      "description": "Offered echocardiography examination table must have an appropriate patient weight and bariatric-rated load capacity (up to 750 lbs on standard models, up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_rapid_release_drop_sections",
+      "description": "Offered echocardiography examination table must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_adjustable_back_support",
+      "description": "Offered echocardiography examination table must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_drop_section_size",
+      "description": "Offered echocardiography examination table must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "salient_char_dropdown_cushion",
+      "description": "Offered echocardiography examination table must have a drop-down cushion that releases from either side for barrier-free access.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": []
+    },
+    {
+      "topic_id": "delivery_timeframe_30_days_aro",
+      "description": "Delivery timeframe shall be 30 days ARO (after receipt of order).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly commits to the 30-day ARO delivery timeframe.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application.txt",
+          "quote": "Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery\ntimeframe to VA Greater Los Angeles Healthcare System.",
+          "start_char": 2205,
+          "end_char": 2335
+        }
+      ]
+    },
+    {
+      "topic_id": "software_licensing_oem_terms_conformance",
+      "description": "All software licensing, warranty, and service associated with the medical equipment must be in accordance with the OEM's terms and conditions.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions software licensing, warranty, or service terms at all, so conformance with the OEM's terms and conditions cannot be confirmed.",
+      "evidence": []
+    },
+    {
+      "topic_id": "brand_name_required_unless_equal_indicated",
+      "description": "Unless the offeror clearly indicates in its offer that the product being offered is an 'equal' product, the offeror shall provide the brand name product referenced in the solicitation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application clearly indicates the offer is an 'equal' product (\"We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table\"), so the brand-name-product obligation is not triggered; the conditional exception is satisfied.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application.txt",
+          "quote": "We are offering the SonoRest CV-200 as an equal to\nthe MPI Echo Bed Cardiac Imaging Table (EB924).",
+          "start_char": 1646,
+          "end_char": 1744
+        }
+      ]
     }
   ]
 }
