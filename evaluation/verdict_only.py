@@ -1,0 +1,223 @@
+from pydantic import BaseModel
+
+from evaluation.fixtures import (
+    TrueRequirement,
+    TrueRequirementsFixture,
+    TrueVerdictsFixture,
+)
+from evaluation.span_adapters import retrieved_by_requirement
+from schemas import (
+    ConditionSpec,
+    Requirement,
+    RetrievedEvidenceRecord,
+    TextSpan,
+    Verdict,
+)
+
+
+def _synthetic_requirement(true_requirement: TrueRequirement) -> Requirement:
+    source = true_requirement.source
+    citations = []
+    for span in source.spans:
+        citations.append(TextSpan(
+            document_path=source.document_path,
+            quote=source.quote,
+            start_char=span.start_char,
+            end_char=span.end_char,
+            citation_verified=True,
+            match_precision="precise",
+        ))
+    conditions: list[ConditionSpec] = []
+    return Requirement(
+        requirement_id=true_requirement.topic_id,
+        text=true_requirement.description,
+        is_mandatory=true_requirement.is_mandatory,
+        is_text_verifiable=true_requirement.is_text_verifiable,
+        citations=citations,
+        conditions=conditions,
+    )
+
+
+def build_synthetic_requirements(
+    fixture: TrueRequirementsFixture,
+) -> list[Requirement]:
+    return [_synthetic_requirement(r) for r in fixture.requirements]
+
+
+class VerdictOnlyOutcome(BaseModel):
+    topic_id: str
+    requirement_text: str
+    predicted_verdict: str
+    acceptable_verdicts: list[str] | None
+    is_correct: bool
+    evidence_quotes: list[str]
+    reasoning: str
+    true_rationale: str
+    true_evidence_quotes: list[str]
+    retrieved_context: list[str]
+
+
+class VerdictOnlyResult(BaseModel):
+    accuracy: float
+    scored_topic_count: int
+    outcomes: list[VerdictOnlyOutcome]
+    mismatches: list[VerdictOnlyOutcome]
+
+
+def _acceptable_verdicts_by_topic(
+    fixture: TrueVerdictsFixture,
+) -> dict[str, list[str] | None]:
+    acceptable = {}
+    for verdict in fixture.verdicts:
+        acceptable[verdict.topic_id] = verdict.acceptable_verdicts
+    return acceptable
+
+
+def _true_rationale_by_topic(fixture: TrueVerdictsFixture) -> dict[str, str]:
+    rationale = {}
+    for verdict in fixture.verdicts:
+        rationale[verdict.topic_id] = verdict.rationale
+    return rationale
+
+
+def _true_evidence_by_topic(
+    fixture: TrueVerdictsFixture,
+) -> dict[str, list[str]]:
+    evidence_by_topic = {}
+    for verdict in fixture.verdicts:
+        evidence_by_topic[verdict.topic_id] = [
+            evidence.quote for evidence in verdict.evidence
+        ]
+    return evidence_by_topic
+
+
+def _evidence_quotes(verdict: Verdict) -> list[str]:
+    quotes = []
+    for evidence in verdict.evidence:
+        quotes.append(evidence.quote)
+    return quotes
+
+
+def _retrieved_context_by_requirement(
+    retrieved_evidence: list[RetrievedEvidenceRecord],
+) -> dict[str, list[str]]:
+    by_requirement = retrieved_by_requirement(retrieved_evidence)
+    context = {}
+    for requirement_id, chunks in by_requirement.items():
+        context[requirement_id] = [chunk.text for chunk in chunks]
+    return context
+
+
+def score_verdicts(
+    predicted_verdicts: list[Verdict],
+    verdicts_fixture: TrueVerdictsFixture,
+    retrieved_evidence: list[RetrievedEvidenceRecord] | None = None,
+) -> VerdictOnlyResult:
+    acceptable_by_topic = _acceptable_verdicts_by_topic(verdicts_fixture)
+    rationale_by_topic = _true_rationale_by_topic(verdicts_fixture)
+    true_evidence_by_topic = _true_evidence_by_topic(verdicts_fixture)
+    retrieved_context_by_requirement = _retrieved_context_by_requirement(
+        retrieved_evidence or []
+    )
+    outcomes = []
+    for verdict in predicted_verdicts:
+        topic_id = verdict.requirement_id
+        acceptable = acceptable_by_topic.get(topic_id)
+        if acceptable is None:
+            continue
+        outcomes.append(VerdictOnlyOutcome(
+            topic_id=topic_id,
+            requirement_text=verdict.requirement_text,
+            predicted_verdict=verdict.verdict.value,
+            acceptable_verdicts=acceptable,
+            is_correct=verdict.verdict.value in acceptable,
+            evidence_quotes=_evidence_quotes(verdict),
+            reasoning=verdict.reasoning,
+            true_rationale=rationale_by_topic.get(topic_id, ""),
+            true_evidence_quotes=true_evidence_by_topic.get(topic_id, []),
+            retrieved_context=retrieved_context_by_requirement.get(
+                topic_id, []
+            ),
+        ))
+    mismatches = [outcome for outcome in outcomes if not outcome.is_correct]
+    total = len(outcomes)
+    correct = total - len(mismatches)
+    accuracy = correct / total if total > 0 else 0.0
+    return VerdictOnlyResult(
+        accuracy=accuracy,
+        scored_topic_count=total,
+        outcomes=outcomes,
+        mismatches=mismatches,
+    )
+
+
+def _collapse_whitespace(text: str) -> str:
+    return " ".join(text.split())
+
+
+def _render_outcome(outcome: VerdictOnlyOutcome) -> list[str]:
+    lines = [
+        f"- `{outcome.topic_id}` — acceptable: "
+        f"{outcome.acceptable_verdicts}, predicted: "
+        f"{outcome.predicted_verdict}",
+        f'  - **requirement:** "{_collapse_whitespace(outcome.requirement_text)}"',
+    ]
+    if not outcome.retrieved_context:
+        lines.append("  - **retrieved context (shown to the model):** none")
+    for chunk_text in outcome.retrieved_context:
+        lines.append(
+            f'  - **retrieved context (shown to the model):** '
+            f'"{_collapse_whitespace(chunk_text)}"'
+        )
+    if outcome.evidence_quotes:
+        for quote in outcome.evidence_quotes:
+            lines.append(
+                f"  - **model's evidence (what it chose to cite):** "
+                f'"{_collapse_whitespace(quote)}"'
+            )
+    else:
+        lines.append(
+            "  - **model's evidence (what it chose to cite):** none"
+        )
+    if outcome.reasoning:
+        lines.append(
+            f"  - **model's reasoning:** "
+            f"{_collapse_whitespace(outcome.reasoning)}"
+        )
+    if not outcome.true_evidence_quotes:
+        lines.append("  - **expected evidence (true_verdicts.json):** none")
+    for quote in outcome.true_evidence_quotes:
+        lines.append(
+            f'  - **expected evidence (true_verdicts.json):** '
+            f'"{_collapse_whitespace(quote)}"'
+        )
+    if outcome.true_rationale:
+        lines.append(
+            f"  - **expected reasoning (true_verdicts.json):** "
+            f"{_collapse_whitespace(outcome.true_rationale)}"
+        )
+    return lines
+
+
+def render_verdict_only_report(result: VerdictOnlyResult) -> str:
+    lines = ["## Verdict-only evaluation", ""]
+    lines.append(
+        "Runs verdict generation directly on true_requirements.json's own "
+        "text and citations against application.txt, bypassing requirement "
+        "extraction and match-group sequencing entirely -- isolates "
+        "whether generate_verdict, given a perfect requirement, makes the "
+        "right call. Only mismatches are listed below."
+    )
+    lines.append("")
+    correct = result.scored_topic_count - len(result.mismatches)
+    lines.append(
+        f"**Accuracy: {result.accuracy * 100:.1f}% "
+        f"({correct}/{result.scored_topic_count})**"
+    )
+    lines.append("")
+    if not result.mismatches:
+        lines.append("- none")
+    for outcome in result.mismatches:
+        lines.extend(_render_outcome(outcome))
+        lines.append("")
+    return "\n".join(lines)

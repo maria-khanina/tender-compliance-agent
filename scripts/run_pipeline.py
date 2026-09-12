@@ -16,8 +16,8 @@ def _parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run the tender compliance pipeline."
     )
-    parser.add_argument("--requirements", required=True)
-    parser.add_argument("--application", required=True)
+    parser.add_argument("--requirements", required=True, nargs="+")
+    parser.add_argument("--application", required=True, nargs="+")
     parser.add_argument("--output", required=True)
     return parser.parse_args()
 
@@ -43,11 +43,11 @@ def main() -> None:
     logger = get_logger(__name__)
 
     def run_or_exit(
-        requirements_path: str,
-        application_path: str,
+        requirements_paths: list[str],
+        application_paths: list[str],
     ) -> PipelineResult:
         try:
-            return run_pipeline(requirements_path, application_path)
+            return run_pipeline(requirements_paths, application_paths)
         except Exception as pipeline_error:
             logger.error("Pipeline run failed: %s", pipeline_error)
             sys.exit(1)

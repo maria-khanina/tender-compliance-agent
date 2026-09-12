@@ -1,13 +1,12 @@
 from config import (
     EVALUATION_EVIDENCE_MATCH_MINIMUM_OVERLAP_RATIO,
-    EVALUATION_EXCLUDED_CLAUSE_MINIMUM_OVERLAP_RATIO,
     EVALUATION_REQUIREMENT_MATCH_MINIMUM_OVERLAP_RATIO,
 )
 from evaluation.fixtures import (
-    ExpectedRequirementsFixture,
-    ExpectedSource,
-    ExpectedVerdict,
-    ExpectedVerdictsFixture,
+    TrueRequirementsFixture,
+    TrueSource,
+    TrueVerdict,
+    TrueVerdictsFixture,
 )
 from evaluation.matching import (
     MatchGroup,
@@ -15,44 +14,40 @@ from evaluation.matching import (
     build_match_groups,
     find_overlapping_pairs,
 )
-from schemas import Chunk, Requirement, RetrievedEvidenceRecord, TextSpan
+from schemas import Chunk, Requirement, RetrievedEvidenceRecord
 
 
-def _span_from_source(node_id: str, source: ExpectedSource) -> SpanRef:
-    return SpanRef(
-        node_id=node_id,
-        document_path=source.document_path,
-        start_char=source.start_char,
-        end_char=source.end_char,
-    )
+def _spans_from_source(node_id: str, source: TrueSource) -> list[SpanRef]:
+    spans = []
+    for span in source.spans:
+        if not span.used_for_matching:
+            continue
+        spans.append(SpanRef(
+            node_id=node_id,
+            document_path=source.document_path,
+            start_char=span.start_char,
+            end_char=span.end_char,
+        ))
+    return spans
 
 
-def expected_requirement_spans(
-    fixture: ExpectedRequirementsFixture,
+def true_requirement_spans(
+    fixture: TrueRequirementsFixture,
 ) -> list[SpanRef]:
     spans = []
     for requirement in fixture.requirements:
-        spans.append(
-            _span_from_source(requirement.topic_id, requirement.source)
-        )
+        spans.extend(_spans_from_source(requirement.topic_id, requirement.source))
     return spans
 
 
-def excluded_clause_spans(
-    fixture: ExpectedRequirementsFixture,
-) -> list[SpanRef]:
-    spans = []
-    for clause in fixture.excluded_clauses:
-        spans.append(_span_from_source(clause.clause_id, clause.source))
-    return spans
-
-
-def actual_requirement_spans(
+def predicted_requirement_spans(
     requirements: list[Requirement],
 ) -> list[SpanRef]:
     spans = []
     for requirement in requirements:
         for citation in requirement.citations:
+            if not citation.used_for_matching:
+                continue
             if citation.start_char is None or citation.end_char is None:
                 continue
             spans.append(SpanRef(
@@ -82,39 +77,8 @@ def citation_verified_by_requirement(
     return verified_by_requirement
 
 
-def excluded_overlap_requirement_ids(
-    excluded_spans: list[SpanRef],
-    actual_spans: list[SpanRef],
-) -> set[str]:
-    edges = find_overlapping_pairs(
-        excluded_spans, actual_spans,
-        EVALUATION_EXCLUDED_CLAUSE_MINIMUM_OVERLAP_RATIO,
-    )
-    overlap_ids = set()
-    for edge in edges:
-        overlap_ids.add(edge.actual_node_id)
-    return overlap_ids
-
-
-def span_length(span: ExpectedSource) -> int:
-    return span.end_char - span.start_char
-
-
-def _citation_length(citation: TextSpan) -> int:
-    if citation.start_char is None or citation.end_char is None:
-        return 0
-    return citation.end_char - citation.start_char
-
-
-def citation_total_length(requirement: Requirement) -> int:
-    total = 0
-    for citation in requirement.citations:
-        total += _citation_length(citation)
-    return total
-
-
 def _topic_ids_of_requirements(
-    fixture: ExpectedRequirementsFixture,
+    fixture: TrueRequirementsFixture,
 ) -> list[str]:
     topic_ids = []
     for requirement in fixture.requirements:
@@ -130,19 +94,19 @@ def _requirement_ids_of(requirements: list[Requirement]) -> list[str]:
 
 
 def build_match_groups_for_requirements(
-    fixture: ExpectedRequirementsFixture,
-    actual_requirements: list[Requirement],
+    fixture: TrueRequirementsFixture,
+    predicted_requirements: list[Requirement],
 ) -> list[MatchGroup]:
-    expected_spans = expected_requirement_spans(fixture)
-    actual_spans = actual_requirement_spans(actual_requirements)
+    true_spans = true_requirement_spans(fixture)
+    predicted_spans = predicted_requirement_spans(predicted_requirements)
     edges = find_overlapping_pairs(
-        expected_spans, actual_spans,
+        true_spans, predicted_spans,
         EVALUATION_REQUIREMENT_MATCH_MINIMUM_OVERLAP_RATIO,
     )
-    expected_topic_ids = _topic_ids_of_requirements(fixture)
-    actual_requirement_ids = _requirement_ids_of(actual_requirements)
+    true_topic_ids = _topic_ids_of_requirements(fixture)
+    predicted_requirement_ids = _requirement_ids_of(predicted_requirements)
     return build_match_groups(
-        expected_topic_ids, actual_requirement_ids, edges
+        true_topic_ids, predicted_requirement_ids, edges
     )
 
 
@@ -151,7 +115,7 @@ def group_lookup_by_topic(
 ) -> dict[str, MatchGroup]:
     lookup = {}
     for group in groups:
-        for topic_id in group.expected_topic_ids:
+        for topic_id in group.true_topic_ids:
             lookup[topic_id] = group
     return lookup
 
@@ -161,7 +125,7 @@ def _retrieved_spans_for_group(
     retrieved_by_requirement: dict[str, list[Chunk]],
 ) -> list[SpanRef]:
     spans = []
-    for requirement_id in group.actual_node_ids:
+    for requirement_id in group.predicted_node_ids:
         for chunk in retrieved_by_requirement.get(requirement_id, []):
             spans.append(SpanRef(
                 node_id=requirement_id,
@@ -172,7 +136,7 @@ def _retrieved_spans_for_group(
     return spans
 
 
-def _expected_evidence_spans(verdict: ExpectedVerdict) -> list[SpanRef]:
+def _true_evidence_spans(verdict: TrueVerdict) -> list[SpanRef]:
     spans = []
     for evidence in verdict.evidence:
         spans.append(SpanRef(
@@ -185,7 +149,7 @@ def _expected_evidence_spans(verdict: ExpectedVerdict) -> list[SpanRef]:
 
 
 def _has_evidence_overlap(
-    verdict: ExpectedVerdict,
+    verdict: TrueVerdict,
     group_by_topic: dict[str, MatchGroup],
     retrieved_by_requirement: dict[str, list[Chunk]],
 ) -> bool:
@@ -195,9 +159,9 @@ def _has_evidence_overlap(
     retrieved_spans = _retrieved_spans_for_group(
         group, retrieved_by_requirement
     )
-    expected_spans = _expected_evidence_spans(verdict)
+    true_spans = _true_evidence_spans(verdict)
     edges = find_overlapping_pairs(
-        expected_spans, retrieved_spans,
+        true_spans, retrieved_spans,
         EVALUATION_EVIDENCE_MATCH_MINIMUM_OVERLAP_RATIO,
     )
     return len(edges) > 0
@@ -213,8 +177,8 @@ def retrieved_by_requirement(
 
 
 def topics_with_evidence(
-    fixture: ExpectedVerdictsFixture,
-) -> list[ExpectedVerdict]:
+    fixture: TrueVerdictsFixture,
+) -> list[TrueVerdict]:
     topics = []
     for verdict in fixture.verdicts:
         if verdict.evidence:
@@ -223,7 +187,7 @@ def topics_with_evidence(
 
 
 def topic_ids_with_evidence(
-    topics: list[ExpectedVerdict],
+    topics: list[TrueVerdict],
 ) -> list[str]:
     topic_ids = []
     for verdict in topics:
@@ -231,8 +195,29 @@ def topic_ids_with_evidence(
     return topic_ids
 
 
+def _topic_has_matched_requirement(
+    topic_id: str,
+    group_by_topic: dict[str, MatchGroup],
+) -> bool:
+    group = group_by_topic.get(topic_id)
+    if group is None:
+        return False
+    return len(group.predicted_node_ids) > 0
+
+
+def topics_with_matched_requirement(
+    topics: list[TrueVerdict],
+    group_by_topic: dict[str, MatchGroup],
+) -> list[TrueVerdict]:
+    matched = []
+    for verdict in topics:
+        if _topic_has_matched_requirement(verdict.topic_id, group_by_topic):
+            matched.append(verdict)
+    return matched
+
+
 def matched_evidence_topic_ids(
-    topics: list[ExpectedVerdict],
+    topics: list[TrueVerdict],
     group_by_topic: dict[str, MatchGroup],
     by_requirement: dict[str, list[Chunk]],
 ) -> set[str]:

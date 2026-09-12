@@ -1,0 +1,339 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not",
+    "an exact-match target -- a correct extraction phrases each",
+    "requirement differently from source.quote below.",
+    "source.spans marks the tender.txt offsets a requirement originates",
+    "from; source.quote is those spans' text, joined with ' ... ' when",
+    "there is more than one span (used when the requirement's meaning",
+    "depends on non-contiguous text, e.g. a shared lead-in clause plus",
+    "one enumerated item).",
+    "Exhaustive over bidder-facing, pre-award requirements in",
+    "tender.txt: both text-verifiable ones (is_text_verifiable: true)",
+    "and ones that describe an action or event rather than application",
+    "content (is_text_verifiable: false, e.g.",
+    "submission_deadline_and_channel). The report should still show the",
+    "bidder the false ones, just without a compliant/non_compliant",
+    "verdict attached.",
+    "No excluded_clauses list: text that is not a bidder requirement at",
+    "all (government process/evaluation instructions, post-award",
+    "clauses, bare clause titles with no substantive content) is simply",
+    "absent here; a predicted requirement that quotes it shows up as",
+    "'unexplained' in the precision section.",
+    "Several requirements restate verbatim or near-verbatim two or",
+    "three times across tender.txt (SAM registration, UEI, price",
+    "schedule, 'or equal' documentation, capabilities statement). Each",
+    "topic anchors ONE occurrence; a correct pipeline deduplicates the",
+    "restatements into one Requirement, so matching its citation set",
+    "against this one anchor is sufficient.",
+    "small_business_size_standard anchors the sentence with the",
+    "concrete NAICS code / dollar size standard, not the other",
+    "restatements, which never state that criterion.",
+    "no_unpaid_federal_tax_liability and no_recent_felony_conviction",
+    "each use two spans: a shared lead-in clause plus the specific",
+    "enumerated condition, since the lead-in is shared by both",
+    "conditions in one sentence. The lead-in span has",
+    "used_for_matching: false, since both topics share its exact",
+    "offsets -- without this, a predicted citation covering only the",
+    "lead-in plus one condition would match BOTH topics at once.",
+    "is_text_verifiable is true only when the tender itself instructs",
+    "the bidder to write/represent something specific in their",
+    "submission (a checkbox, a required statement, a document to",
+    "attach). sam_registration_active is false: the tender states a",
+    "plain eligibility fact with no instruction to represent it in the",
+    "quote text, unlike no_unpaid_federal_tax_liability/",
+    "no_recent_felony_conviction, which have an explicit '(b) The",
+    "Offeror represents that--' checkbox right after them.",
+    "prior_experience_count.is_mandatory is set true (anchored to the",
+    "CHECKLIST FOR QUOTE SUBMITTAL wording), even though a later",
+    "section softens it to 'preferably a minimum of 3' -- the tender",
+    "itself is internally inconsistent here.",
+    "contractor_core_data covers the whole '(c) Contractor Core Data'",
+    "fill-in block as one topic, not per-field, since it is one",
+    "contiguous form with no independent pass/fail meaning per field.",
+    "prior_experience_count and contractor_core_data have no verb of",
+    "their own (a bare noun phrase and a bare form-field list); both",
+    "use the shared lead-in span 'Offers shall submit the following",
+    "information in its entirety:' (used_for_matching: false) as their",
+    "governing obligation, since that is the actual imperative these",
+    "two enumerations are the object of."
+  ],
+  "requirements": [
+    {
+      "topic_id": "small_business_size_standard",
+      "description": "Must be a small business under NAICS 238990 with a size standard of $19M average annual revenue.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This requirement is a 100% total small business set-aside. The associated NAICS code is\n238990. The small business size standard is $19 M.",
+        "spans": [
+          {
+            "start_char": 810,
+            "end_char": 948
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "uei_required",
+      "description": "Company must obtain and provide a Unique Entity Identifier (UEI).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
+        "spans": [
+          {
+            "start_char": 1067,
+            "end_char": 1152
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sam_registration_active",
+      "description": "SAM registration must be active at quote close, at award, and throughout contract performance, no exceptions.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "This registration must be \"active\" in SAM. NO EXCEPTIONS.",
+        "spans": [
+          {
+            "start_char": 13767,
+            "end_char": 13824
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "no_unpaid_federal_tax_liability",
+      "description": "Company must not have any unpaid Federal tax liability that has been assessed and for which all remedies have been exhausted (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "the Government will not enter into a contract with any\ncorporation that-- ... Has any unpaid Federal tax liability that has been assessed, for which all judicial and\nadministrative remedies have been exhausted or have lapsed, and that is not being paid in a\ntimely manner pursuant to an agreement with the authority responsible for collecting the tax\nliability, where the awarding agency is aware of the unpaid tax liability, unless an agency has\nconsidered suspension or debarment of the corporation and made a determination that\nsuspension or debarment is not necessary to protect the interests of the Government; or",
+        "spans": [
+          {
+            "start_char": 7620,
+            "end_char": 7693,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 7698,
+            "end_char": 8238
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "no_recent_felony_conviction",
+      "description": "Company must not have been convicted of a Federal felony criminal violation within the preceding 24 months (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "the Government will not enter into a contract with any\ncorporation that-- ... Was convicted of a felony criminal violation under any Federal law within the preceding 24\nmonths, where the awarding agency is aware of the conviction, unless an agency has considered\nsuspension or debarment of the corporation and made a determination that this action is not\nnecessary to protect the interests of the Government.",
+        "spans": [
+          {
+            "start_char": 7620,
+            "end_char": 7693,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 8243,
+            "end_char": 8573
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_complete",
+      "description": "Offeror must complete the attached Price Schedule in its entirety, unedited except for units/quantities, no alternates.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Complete attached Price Schedule and insert total unit price and/or amount, in reference to\nALL line items listed.",
+        "spans": [
+          {
+            "start_char": 11523,
+            "end_char": 11637
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_must_not_be_edited",
+      "description": "The Price Schedule template must not be edited except to add units of measure/quantities; if changes are needed, an addendum explaining them must be provided alongside the unedited schedule.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Must ensure that this document is not edited for any reason (outside of\nadding units of measure, quantities, etc.) and the unedited Price Schedule is provided with\nfinal pricing - if needing to make edits or alter the document, provide an addendum outlining\nthese changes or additional information wanting to make apparent to the evaluators.",
+        "spans": [
+          {
+            "start_char": 11638,
+            "end_char": 11979
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "or_equal_product_documentation",
+      "description": "If quoting an \"or equal\" item, must submit detailed product specification/literature confirming comparability.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "if quoting an \"or equal\" item, must submit a\ndetailed product specifications document/literature and ensure it is provided to confirm the\nitem(s) are comparable.",
+        "spans": [
+          {
+            "start_char": 12916,
+            "end_char": 13077
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "capabilities_statement_required",
+      "description": "Must provide a detailed capabilities statement or project narrative demonstrating how the company will successfully meet the needs of the statement of work.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Provide a detailed capabilities statement or project narrative that demonstrates how the\n  company will successfully meet the needs of the statement of work per the \"TO SUBMIT AN\n  OFFER\" section below.",
+        "spans": [
+          {
+            "start_char": 10218,
+            "end_char": 10420
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "shop_drawings_and_product_data_required",
+      "description": "Must include all required shop drawings and product data as part of the technical submission.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "MUST include all required shop drawings and product data.",
+        "spans": [
+          {
+            "start_char": 10421,
+            "end_char": 10478
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "prior_experience_count",
+      "description": "Must provide at least 3 prior experience references for projects similar in size and scope, completed within the past 5 years.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offers shall submit the following information in its entirety: ... Three prior experiences of projects in similar size and scope per the \"TO SUBMIT AN\n  OFFER\" section below within the past five years",
+        "spans": [
+          {
+            "start_char": 9699,
+            "end_char": 9761,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 10481,
+            "end_char": 10614
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "prior_experience_poc_required",
+      "description": "Each prior experience reference must include a project description and point-of-contact information.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "NOTE: Contact information SHALL be provided, to include a\n  brief description of the project, as well as point of contact information",
+        "spans": [
+          {
+            "start_char": 10689,
+            "end_char": 10822
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "amendment_acknowledgment_if_posted",
+      "description": "If SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and provide it with the final quote/proposal package.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "NOTE: Please check SAM.gov regularly in any case an amendment was posted, as this\namendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is\nprovided with your final quote/proposal package.",
+        "spans": [
+          {
+            "start_char": 11303,
+            "end_char": 11518
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Must submit all required documents via email so as to reach the government office by the specified deadline; late submissions will not be accepted.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Submit all required documents via email by the date and time listed in this solicitation.\nOfferors are responsible for submitting quotes/proposals so as to reach the Government office\ndesignated in the solicitation by the time specified in the solicitation. Late quotes/proposals will\nnot be accepted.",
+        "spans": [
+          {
+            "start_char": 13082,
+            "end_char": 13383
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "contractor_core_data",
+      "description": "Must provide contractor core data: company name, Cage Code / UEI, point of contact, and POC email/phone.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "Offers shall submit the following information in its entirety: ... c) Contractor Core Data:\nOfferors Company Name:\nCage Code / Offerors Unique Entity Identifier (UEI):\nOfferors POC:\nOfferors POC Email/Phone:",
+        "spans": [
+          {
+            "start_char": 9699,
+            "end_char": 9761,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 11072,
+            "end_char": 11212
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "final_offer_total_no_alternates",
+      "description": "Must provide a single final offer total, as this is the price that will be evaluated; alternate quotes/proposals will not be accepted.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "NOTE: Alternate quotes/proposals will not be accepted. Provide us with the final offer total,\nas this will be the evaluated price.",
+        "spans": [
+          {
+            "start_char": 11980,
+            "end_char": 12110
+          }
+        ]
+      }
+    }
+  ]
+}

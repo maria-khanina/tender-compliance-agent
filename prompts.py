@@ -11,13 +11,29 @@ itself. Only extract text that imposes something checkable on the
 bidder's application.
 
 For each requirement, return its exact verbatim text as it appears
-in the chunk below. Do not paraphrase, summarize, or merge separate
-requirements together. If a requirement appears cut off at the very
-start or end of the chunk, still extract the visible portion as-is.
+in the chunk below, as two parts:
+- "quote": the specific, distinguishing text of this one requirement.
+  Do not paraphrase, summarize, or merge separate requirements
+  together. If a requirement appears cut off at the very start or end
+  of the chunk, still extract the visible portion as-is.
+- "lead_in_quote": an optional shared introductory clause this
+  requirement's meaning depends on, ONLY when that same clause also
+  introduces one or more OTHER, different requirements elsewhere in
+  this chunk (for example, "the Government will not enter into a
+  contract with any corporation that--" followed by several unrelated
+  conditions, each its own requirement). Leave this null in every
+  other case, even if the requirement technically follows some
+  introductory sentence — most requirements do not need one.
 Do not extract a sentence whose only role is to introduce or refer to
 a list of other requirements (for example "Offers shall submit the
 following information:") — extract the individual items of that list
-instead, not the sentence that introduces them.
+instead, not the sentence that introduces them, UNLESS the items are
+inseparable parts of one form or certification that is filled out or
+signed as a single whole, with no independent pass/fail meaning of
+its own per item (for example, the blank fields of one certification
+block, or the sub-paragraphs of one certificate a bidder signs once).
+In that case extract the whole thing as a single requirement instead
+of one requirement per item.
 
 For each requirement, also decide whether it is mandatory. Mark it
 mandatory if the text uses language such as "shall", "must", "is

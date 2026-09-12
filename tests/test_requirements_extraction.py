@@ -22,6 +22,7 @@ def test_draft_text_uses_verified_source_not_model_text() -> None:
         "evaluated price."
     )
     candidate = ExtractedRequirementCandidate(
+        lead_in_quote=None,
         quote=(
             "Provide us with the final offer total, GARBLED as this "
             "will be the evaluated price."
@@ -38,6 +39,7 @@ def test_draft_text_uses_verified_source_not_model_text() -> None:
 def test_draft_text_falls_back_to_model_text_when_unverified() -> None:
     chunk = _build_test_chunk("Nothing relevant is written here.")
     candidate = ExtractedRequirementCandidate(
+        lead_in_quote=None,
         quote="completely different sentence that is nowhere in the chunk",
         is_mandatory=True,
         is_text_verifiable=True,
@@ -45,3 +47,40 @@ def test_draft_text_falls_back_to_model_text_when_unverified() -> None:
     draft = _build_requirement_draft(chunk, candidate)
     assert draft.citations[0].citation_verified is False
     assert draft.text == candidate.quote
+
+
+def test_lead_in_quote_is_marked_not_used_for_matching() -> None:
+    chunk = _build_test_chunk(
+        "The Government will not enter into a contract with any "
+        "corporation that-- has unpaid taxes."
+    )
+    candidate = ExtractedRequirementCandidate(
+        lead_in_quote=(
+            "The Government will not enter into a contract with any "
+            "corporation that--"
+        ),
+        quote="has unpaid taxes.",
+        is_mandatory=True,
+        is_text_verifiable=True,
+    )
+    draft = _build_requirement_draft(chunk, candidate)
+    assert len(draft.citations) == 2
+    assert draft.citations[0].used_for_matching is False
+    assert draft.citations[1].used_for_matching is True
+    assert draft.text == (
+        "The Government will not enter into a contract with any "
+        "corporation that-- ... has unpaid taxes."
+    )
+
+
+def test_no_lead_in_quote_produces_single_citation() -> None:
+    chunk = _build_test_chunk("A single self-contained requirement.")
+    candidate = ExtractedRequirementCandidate(
+        lead_in_quote=None,
+        quote="A single self-contained requirement.",
+        is_mandatory=True,
+        is_text_verifiable=True,
+    )
+    draft = _build_requirement_draft(chunk, candidate)
+    assert len(draft.citations) == 1
+    assert draft.citations[0].used_for_matching is True

@@ -36,6 +36,7 @@ def _collect_neighbor_indices_by_document(
 
 
 def _collect_neighbor_chunks(
+    collection_name: str,
     matches: list[tuple[Chunk, float]],
     neighbor_expansion_top_hit_count: int,
 ) -> list[Chunk]:
@@ -47,7 +48,7 @@ def _collect_neighbor_chunks(
         neighbor_indices_by_document.items()
     ):
         neighbor_chunks.extend(
-            get_neighbor_chunks(document_path, chunk_indices)
+            get_neighbor_chunks(collection_name, document_path, chunk_indices)
         )
     return neighbor_chunks
 
@@ -119,6 +120,7 @@ def _select_chunks_above_threshold(
 
 def retrieve_evidence_chunks(
     requirement_text: str,
+    collection_name: str,
     top_k: int = EVIDENCE_RETRIEVAL_TOP_K,
     similarity_threshold: float = EVIDENCE_SIMILARITY_THRESHOLD,
     minimum_chunk_count: int = EVIDENCE_MINIMUM_CHUNK_COUNT,
@@ -128,12 +130,12 @@ def retrieve_evidence_chunks(
         EVIDENCE_NEIGHBOR_EXPANSION_TOP_HIT_COUNT
     ),
 ) -> list[Chunk]:
-    matches = search_similar_chunks(requirement_text, top_k)
+    matches = search_similar_chunks(collection_name, requirement_text, top_k)
     ranked_chunks = _select_chunks_above_threshold(
         matches, similarity_threshold, minimum_chunk_count
     )
     neighbor_chunks = _collect_neighbor_chunks(
-        matches, neighbor_expansion_top_hit_count
+        collection_name, matches, neighbor_expansion_top_hit_count
     )
     combined_chunks = ranked_chunks + neighbor_chunks
     unique_chunks = _deduplicate_chunks(combined_chunks)

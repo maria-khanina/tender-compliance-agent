@@ -1,0 +1,276 @@
+[
+  {
+    "requirement_id": "sam_uei_vendor_information",
+    "requirement_text": "Quote must include vendor information together with the SAM Unique Entity Identifier (UEI).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Vendor Information: DentaFlow Systems, LLC, 4410 Corridor Park Blvd,\nAustin, TX 78744. SAM UEI: QK7RT2LM9XN4.",
+        "start_char": 303,
+        "end_char": 412,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides its vendor information (name and address) along with its SAM Unique Entity Identifier (UEI: QK7RT2LM9XN4) in chunk 0, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "concurrence_with_terms",
+    "requirement_text": "Quote must state concurrence or non-concurrence with the solicitation's terms, conditions, and provisions.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "DentaFlow Systems concurs with all terms, conditions, and provisions\nof this solicitation without exception.",
+        "start_char": 414,
+        "end_char": 522,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their quote that they concur with all terms, conditions, and provisions of the solicitation without exception, directly satisfying the requirement."
+  },
+  {
+    "requirement_id": "fob_destination_manufacturer_part_number",
+    "requirement_text": "Items must be quoted FOB destination, and the quote must specify the offered item's manufacturer and part number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "All items are quoted FOB Destination. Manufacturer: Veridian MedTech.\nPart Number: HC-4H-2026.",
+        "start_char": 524,
+        "end_char": 618,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that all items are quoted FOB destination and specifies the manufacturer as Veridian MedTech and the part number as HC-4H-2026, thereby fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "authorized_distributor_and_gray_market_verification",
+    "requirement_text": "Quote must include an Authorized Distributor Letter/Memo from the manufacturer and must verify the offered items are not Gray Market goods (i.e. not sourced through unauthorized channels).",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Sourcing and Availability: Due to current inventory constraints on\nthis specific model, please note that this order may be fulfilled\nusing units obtained through a secondary distribution network, which\ncan include units originally allocated for other regional markets.",
+        "start_char": 830,
+        "end_char": 1098,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the quote must include an Authorized Distributor Letter/Memo from the manufacturer and must verify the offered items are not Gray Market goods (not sourced through unauthorized channels). While the bidder claims to be an authorized distributor, they explicitly state that orders may be fulfilled using units obtained through a secondary distribution network including units allocated for other regional markets, which conflicts with the requirement to verify that goods are not sourced through unauthorized channels. Furthermore, no actual Authorized Distributor Letter/Memo from the manufacturer was provided in the text."
+  },
+  {
+    "requirement_id": "buy_american_certificate",
+    "requirement_text": "Product must comply with the Buy American Act and Trade Agreements Act, and the quote must certify -- per the Buy American Certificate (FAR 52.225-2) -- whether each end product is a domestic or foreign end product, and whether foreign end products exceed 55% domestic content.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Buy American Certificate (FAR 52.225-2): DentaFlow Systems certifies\nthat the offered HydroClear Pro 4H is a foreign end product,\nmanufactured in Malaysia, and does not exceed 55% domestic content.\nNo domestic end products or critical components are being offered\nunder this line item.",
+        "start_char": 1203,
+        "end_char": 1488,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the product must comply with the Buy American Act and Trade Agreements Act, and the quote must certify per the Buy American Certificate (FAR 52.225-2) whether each end product is a domestic or foreign end product, and whether foreign end products exceed 55% domestic content. The bidder has explicitly included the required Buy American Certificate certifying that the offered product is a foreign end product manufactured in Malaysia and does not exceed 55% domestic content."
+  },
+  {
+    "requirement_id": "country_of_origin_specified",
+    "requirement_text": "Quote must include a Country of Origin for the items being offered.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Country of Origin: Malaysia (final assembly).",
+        "start_char": 1156,
+        "end_char": 1201,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Country of Origin: Malaysia",
+        "start_char": 1983,
+        "end_char": 2010,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the quote must include a Country of Origin for the items being offered. The bidder's application explicitly includes the country of origin as Malaysia in multiple places within the quote and attachments, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "small_or_large_business_designation",
+    "requirement_text": "Quote must indicate whether the offered items are manufactured by a small or large business.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Manufacturer: Veridian MedTech.",
+        "start_char": 562,
+        "end_char": 593,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "DentaFlow Systems is primarily\nengaged in the wholesale trade of dental equipment and does not\nmanufacture the products being supplied under this contract.",
+        "start_char": 2867,
+        "end_char": 3022,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the quote must indicate whether the offered items are manufactured by a small or large business. While the quotes identify the manufacturer as Veridian MedTech and state that DentaFlow Systems does not manufacture the items, they do not indicate whether the manufacturer (Veridian MedTech) is a small or large business."
+  },
+  {
+    "requirement_id": "fss_contract_listing",
+    "requirement_text": "If the vendor holds an FSS contract listing the offered items, the quote must list the FSS contract number and expiration date.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "DentaFlow Systems does not hold a current FSS contract for this item.",
+        "start_char": 1490,
+        "end_char": 1559,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that if the vendor holds an FSS contract listing the offered items, the quote must list the FSS contract number and expiration date. The vendor explicitly states that they do not hold a current FSS contract for this item, meaning the conditional requirement to list an FSS contract number and expiration date does not apply."
+  },
+  {
+    "requirement_id": "attachment_a_columns_completed",
+    "requirement_text": "Quote must fill out columns F-K of Attachment A (equivalent brand, nomenclature, part number, description matching the salient characteristics, country of origin, and quantity).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Attachment A, Columns F-K:\nEquivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026\nEquivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.\nCountry of Origin: Malaysia\nQuantity: 25",
+        "start_char": 1561,
+        "end_char": 2023,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder successfully provided all requested information for columns F through K of Attachment A, including equivalent brand, nomenclature, part number, description matching salient characteristics, country of origin, and quantity."
+  },
+  {
+    "requirement_id": "equal_product_identification_and_literature",
+    "requirement_text": "If offering an equal product, the quote must clearly identify it by brand name and make/model number, include descriptive literature (illustrations, drawings, or a clear reference to previously furnished data), and clearly describe any modifications needed to conform to the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Manufacturer: Veridian MedTech.\nPart Number: HC-4H-2026.",
+        "start_char": 562,
+        "end_char": 618,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Equivalent Brand: HydroClear\nEquivalent Nomenclature: HydroClear Pro 4H Waterline Delivery System\nEquivalent Part Number: HC-4H-2026\nEquivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
+        "start_char": 1588,
+        "end_char": 1982,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Technical Description: The HydroClear Pro 4H is an air-driven, high\nspeed (4-hole) system fitting Midwest 4-hole handpieces, using\nautoclavable tubing for a sterile delivery pathway and (2) 8 ounce\nautoclavable bottles. The full unit is autoclavable to ensure\nsterility between uses, and it is designed to provide high-speed\ncutting power rivaling electric handpieces while maintaining\nprecision and responsiveness. Irrigation is controlled with a simple\ninstant on/off mechanism and no added footprint. Note: the HydroClear\nPro 4H utilizes a fixed, non-detachable waterline routing integrated\ninto the handpiece body, rather than a detachable waterline system.",
+        "start_char": 2025,
+        "end_char": 2686,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder is offering an equal product (HydroClear Pro 4H) and clearly identifies it by brand name, make/model, and part number (Veridian MedTech, HC-4H-2026). They also include descriptive technical literature and a description of modifications/differences such as the fixed, non-detachable waterline routing."
+  },
+  {
+    "requirement_id": "salient_characteristics_compliance",
+    "requirement_text": "The offered item (brand name or equal) must meet every salient characteristic listed in Attachment B for the AquaSept High Speed Kit.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Equivalent Description Matching Salient Characteristics: air-driven\nhigh-speed 4-hole handpiece system compatible with Midwest-style\nconnections, with a sterile irrigation pathway and autoclavable\ncomponents; see technical description below for full comparison.",
+        "start_char": 1721,
+        "end_char": 1982,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that the offered item must meet every salient characteristic listed in Attachment B for the AquaSept High Speed Kit. While the bidder claims the equivalent item matches salient characteristics, Attachment B itself is not provided in the excerpts, making it impossible to verify whether every specific salient characteristic is actually met."
+  },
+  {
+    "requirement_id": "nmr_certification_signed",
+    "requirement_text": "Quote must include the Non-Manufacturing Rule (NMR) certification, signed, dated, and identifying the business.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "(Signature block to be completed upon award.)",
+        "start_char": 3023,
+        "end_char": 3068,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the quote must include a signed and dated Non-Manufacturing Rule (NMR) certification. While the bidder acknowledges compliance and includes a signature block at the end of the email, the specific NMR certification text explicitly states that the signature block for the certification is to be completed upon award, meaning the certification is not currently signed as required."
+  },
+  {
+    "requirement_id": "far_52_212_3_reps_and_certs",
+    "requirement_text": "Quote must include a completed copy of the FAR 52.212-3 representations and certifications, or the offeror must ensure SAM.gov is updated with current information.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "DentaFlow Systems' representations and certifications under FAR\n52.212-3 are current and up to date in SAM.gov as of the date of this\nquote.",
+        "start_char": 3070,
+        "end_char": 3210,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the quote must include a completed copy of FAR 52.212-3 or the offeror must ensure SAM.gov is updated with current information. The bidder explicitly certifies in chunk 2 that their representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov, thereby satisfying the alternative compliance condition."
+  },
+  {
+    "requirement_id": "subject_line_references_solicitation_number",
+    "requirement_text": "The email subject line must reference the solicitation number 36C26226Q1384.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C26226Q1384\\application.txt",
+        "quote": "Subject: Quote for RFQ 36C2626Q1384 - AquaSept Handpieces or Equal",
+        "start_char": 66,
+        "end_char": 132,
+        "citation_verified": true,
+        "match_precision": null,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the email subject line must reference the solicitation number 36C26226Q1384. However, the bidder's email subject line references '36C2626Q1384', which contains a typo and fails to match the required solicitation number exactly."
+  }
+]

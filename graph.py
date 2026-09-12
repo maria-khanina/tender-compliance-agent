@@ -12,6 +12,7 @@ from config import CHECKPOINT_DATABASE_PATH
 from logging_config import get_logger
 from schemas import (
     Chunk,
+    DocumentInput,
     Requirement,
     RequirementDraft,
     RetrievedEvidenceRecord,
@@ -33,10 +34,9 @@ logger = get_logger(__name__)
 
 
 class PipelineState(TypedDict):
-    requirements_document_text: str
-    requirements_document_path: str
-    application_document_text: str
-    application_document_path: str
+    collection_name: str
+    requirements_documents: list[DocumentInput]
+    application_documents: list[DocumentInput]
     requirement_chunks: list[Chunk]
     requirement_drafts: Annotated[list[RequirementDraft], operator.add]
     deduplicated_drafts: list[RequirementDraft]
@@ -55,15 +55,17 @@ class ChunkExtractionInput(TypedDict):
 
 class RequirementVerdictInput(TypedDict):
     requirement: Requirement
+    collection_name: str
 
 
 def split_requirements_node(
     state: PipelineState,
 ) -> dict[str, list[Chunk]]:
-    chunks = split_requirements_document(
-        state["requirements_document_text"],
-        state["requirements_document_path"],
-    )
+    chunks = []
+    for document in state["requirements_documents"]:
+        chunks.extend(
+            split_requirements_document(document.text, document.path)
+        )
     return {"requirement_chunks": chunks}
 
 
@@ -108,11 +110,12 @@ def extract_conditions_node(
 def index_application_node(
     state: PipelineState,
 ) -> dict[str, list[Chunk]]:
-    application_chunks = split_application_document(
-        state["application_document_text"],
-        state["application_document_path"],
-    )
-    index_chunks(application_chunks)
+    application_chunks = []
+    for document in state["application_documents"]:
+        application_chunks.extend(
+            split_application_document(document.text, document.path)
+        )
+    index_chunks(state["collection_name"], application_chunks)
     return {"application_chunks": application_chunks}
 
 
@@ -123,10 +126,17 @@ def route_to_verdicts(state: PipelineState) -> list[Send]:
             "No requirements were extracted; cannot generate verdicts "
             "for an empty requirements list."
         )
+    collection_name = state["collection_name"]
     sends = []
     for requirement in requirements:
         sends.append(
-            Send("generate_verdict_node", {"requirement": requirement})
+            Send(
+                "generate_verdict_node",
+                {
+                    "requirement": requirement,
+                    "collection_name": collection_name,
+                },
+            )
         )
     return sends
 
@@ -135,7 +145,9 @@ def generate_verdict_node(
     state: RequirementVerdictInput,
 ) -> dict[str, list[Verdict] | list[RetrievedEvidenceRecord]]:
     requirement = state["requirement"]
-    evidence_chunks = retrieve_evidence_chunks(requirement.text)
+    evidence_chunks = retrieve_evidence_chunks(
+        requirement.text, state["collection_name"]
+    )
     retrieved_evidence_record = RetrievedEvidenceRecord(
         requirement_id=requirement.requirement_id,
         evidence_chunks=evidence_chunks,

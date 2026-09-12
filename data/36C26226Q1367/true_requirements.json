@@ -1,0 +1,246 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks tender-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "Exhaustive over bidder-facing, pre-award requirements in the RFQ: both text-verifiable ones (is_text_verifiable: true) and ones that describe a substantive compliance fact rather than an instruction to state something (is_text_verifiable: false).",
+    "No excluded_clauses list: text that is not a bidder requirement at all (Buy American/COTS/critical-component legal definitions, bare clause citations with no body text such as 852.219-73) is simply absent here.",
+    "fss_contract_listing is is_mandatory: false because it only applies to offerors that already hold an FSS contract.",
+    "country_of_origin_disclosure's source text says \"(see column A)\", but Attachment A's actual Country of Origin column is J, not A -- a real inconsistency in the source document, not a transcription error here.",
+    "or_equal_submission_requirements uses two spans: the short instruction to fill Attachment A columns F-K, and the fuller 52.211-6(b) checklist elsewhere in the document -- both govern the same submission requirement.",
+    "This case shares its RFQ template with 36C26226Q1384 (AquaSept) -- same items (a)-(j), same clauses -- but is a structurally different template from 36C24126Q0731 (Sorna Vertex): no explicit SDVOSB-certification sentence (852.219-73 appears only as a bare citation here), brand-name-OR-equal instead of brand-name-only, and Buy American Certificate/NMR Certification in place of the LOS/amendment-acknowledgment topics."
+  ],
+  "requirements": [
+    {
+      "topic_id": "sam_uei_vendor_info",
+      "description": "Quote packet must include vendor information along with the SAM Unique Entity Identifier (UEI).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Vendor Information with SAM UEI.",
+        "spans": [
+          {
+            "start_char": 2923,
+            "end_char": 2955
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "terms_concurrence_statement",
+      "description": "Quote packet must state concurrence or non-concurrence with the solicitation's terms, conditions, and provisions.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+        "spans": [
+          {
+            "start_char": 2961,
+            "end_char": 3040
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "fob_destination_manufacturer_part_number",
+      "description": "Items shall be FOB destination; quote must specify the offered item's manufacturer and part number.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Items shall be FOB destination.  Please specify offered item manufacturer and part number.",
+        "spans": [
+          {
+            "start_char": 3046,
+            "end_char": 3136
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "authorized_distributor_letter",
+      "description": "Quote packet must include an Authorized Distributor Letter/Memo from the manufacturer.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Provide an Authorized Distributor Letter/Memo from the manufacturer.",
+        "spans": [
+          {
+            "start_char": 3142,
+            "end_char": 3210
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "buy_american_taa_general_compliance",
+      "description": "Offered product must comply with the Buy American Act, the Trade Agreements Act, and other relevant FAR/agency regulations.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Product must comply with the Buy American Act; Trade Agreement Act and all other clauses found in the FAR and any agency-specific regulations that are relevant and specific to this solicitation",
+        "spans": [
+          {
+            "start_char": 3216,
+            "end_char": 3409
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "country_of_origin_disclosure",
+      "description": "Quote must include a Country of Origin for the items being offered.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Please include a Country of Origin for the items being offered (see column A)",
+        "spans": [
+          {
+            "start_char": 4031,
+            "end_char": 4108
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "buy_american_certificate_completed",
+      "description": "Quote must include a completed Buy American Certificate (FAR 52.225-2): certify domestic/foreign end-product status per line item, list foreign end products and whether they exceed 55% domestic content, and separately list domestic end products containing a critical component.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(a)(1) The Offeror certifies that each end product, except those listed in paragraph (b) of this provision, is a domestic end product and that each domestic end product listed in paragraph (c) of this provision contains a critical component.\n(2) The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products. For those foreign end products that do not consist wholly or predominantly of iron or steel or a combination of both, the Offeror shall also indicate whether these foreign end products exceed 55 percent domestic content, except for those that are COTS items. If the percentage of the domestic content is unknown, select “no”.\n(3) The Offeror shall separately list the line item numbers of domestic end products that contain a critical component (see FAR 25.105).\n(4) The terms “commercially available off-the-shelf (COTS) item,” “critical component,” \"domestic end product,\" \"end product,\" and \"foreign end product\" are defined in the clause of this solicitation entitled \"Buy American-Supplies.\"\nLine Item No.\tCountry of Origin\tExceeds 55% domestic content \n(yes/no)\n______________\t_________________\t_________________\n______________\t_________________\t_________________\n______________\t_________________\t_________________\n (b)Foreign End Products:\n(b)[List as necessary]\n(c) Domestic end products containing a critical component:\nLine Item No. ___\n[List as necessary]",
+        "spans": [
+          {
+            "start_char": 16142,
+            "end_char": 17600
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "gray_market_verification",
+      "description": "Quote must include verification that the offered items are not gray market goods.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market",
+        "spans": [
+          {
+            "start_char": 4113,
+            "end_char": 4233
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "business_size_designation",
+      "description": "Quote must indicate whether the offered items are manufactured by a small or large business.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offeror must indicate whether the items are manufactured by a small or large business",
+        "spans": [
+          {
+            "start_char": 4238,
+            "end_char": 4323
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "fss_contract_listing",
+      "description": "If the offeror holds an FSS contract listing the items, the quote must list the contract number and expiration date.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable",
+        "spans": [
+          {
+            "start_char": 4328,
+            "end_char": 4458
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "or_equal_submission_requirements",
+      "description": "If offering an equivalent product, the quote must show how it meets the salient characteristics in Attachment B (by filling columns F-K of Attachment A or stating where in the submission that information appears), clearly identify the item by brand name and make/model number, include descriptive literature, and clearly describe and mark any planned modifications.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must—\n(1) Meet the salient physical, functional, or performance characteristic specified in this solicitation;\n(2) Clearly identify the item by—\n(i) Brand name, if any; and\n(ii) Make or model number;\n(3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and\n(4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification.",
+        "spans": [
+          {
+            "start_char": 4463,
+            "end_char": 4643
+          },
+          {
+            "start_char": 7444,
+            "end_char": 8143
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of FAR 52.212-3 Offeror Representations and Certifications, unless the offeror's SAM.gov record is already current.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, with this solicitation or ensure SAM.gov is updated with current information.",
+        "spans": [
+          {
+            "start_char": 6559,
+            "end_char": 6762
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nmr_certification_signed",
+      "description": "Quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification (small business/non-manufacturer status, sourcing, no alteration of goods), including signature, name, title, date, and business name.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Non-Manufacturing Rule (NMR) Certification Clause\nThe Contractor hereby certifies that it complies with the Non-Manufacturing Rule (NMR) as outlined by the U.S. Small Business Administration (SBA) regulations and the Federal Acquisition Regulation (FAR). By entering into this contract, the Contractor certifies that:\nSmall Business Status:\nThe Contractor qualifies as a small business under the SBA size standards.\nNon-Manufacturer Status:\nThe Contractor is primarily engaged in the retail or wholesale trade and normally supplies the type of product being provided in this contract.\nThe Contractor does not manufacture the products being supplied under this contract.\nSource of Supply:\nThe Contractor will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.\nThe Echo Bed Cardiac Imaging Table falls under medical ultrasound equipment and accessories, which are covered in an NMR class waiver for Electromedical Apparatus Manufacturing under NAICS code 334510 posted in the Federal Register on 12/20/2007 under Register Notice number 72 FedReg 72433.\nThe products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.\nDocumentation and Compliance:\nThe Contractor agrees to maintain and provide documentation that verifies compliance with the NMR, upon request by the Contracting Officer or the SBA.\nThe Contractor will flow down this certification requirement to any subcontractors where applicable.\nNo Alteration of Goods:\nThe Contractor will not alter, modify, repackage, or rebrand the products supplied under this contract.\nTimeliness and Accuracy:\nThe Contractor has made this certification at the time of submitting the offer in response to the solicitation.\nAll information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.\nConsequences of Non-Compliance:\nThe Contractor acknowledges that failure to comply with this certification may result in termination of the contract, debarment, suspension, or other legal action as deemed appropriate by the Contracting Officer or SBA.\nSignature: _______________________\nName: ___________________________\nTitle: ____________________________\nDate: ____________________________\nBusiness Name: ____________________________",
+        "spans": [
+          {
+            "start_char": 17769,
+            "end_char": 20145
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 9:00am PT on 08/27/26.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT. Ensure to reference solicitation number [36C26226Q1367] within subject line of the email. Any offeror quotes received after the prescribed date/time shall be considered non-responsive and will not be considered for award. ... Offers shall be sent by email to Rochelle.Malveaux@va.gov",
+        "spans": [
+          {
+            "start_char": 2291,
+            "end_char": 2652
+          },
+          {
+            "start_char": 2793,
+            "end_char": 2850
+          }
+        ]
+      }
+    }
+  ]
+}
