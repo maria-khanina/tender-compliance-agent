@@ -70,6 +70,10 @@
           {
             "start_char": 3142,
             "end_char": 3210
+          },
+          {
+            "start_char": 9076,
+            "end_char": 9456
           }
         ]
       }
@@ -134,6 +138,10 @@
           {
             "start_char": 4113,
             "end_char": 4233
+          },
+          {
+            "start_char": 9013,
+            "end_char": 9071
           }
         ]
       }
@@ -182,6 +190,14 @@
           {
             "start_char": 4463,
             "end_char": 4643
+          },
+          {
+            "start_char": 4647,
+            "end_char": 4886
+          },
+          {
+            "start_char": 5695,
+            "end_char": 5862
           },
           {
             "start_char": 7444,
@@ -238,6 +254,271 @@
           {
             "start_char": 2793,
             "end_char": 2850
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_electric_locking_casters",
+      "description": "Offered echocardiography examination table must have electric locking casters.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have the following features- ... ELECTRIC LOCKING CASTERS",
+        "spans": [
+          {
+            "start_char": 316,
+            "end_char": 385,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 869,
+            "end_char": 893
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_height_adjustment",
+      "description": "Offered echocardiography examination table must have an adjustable height range (e.g., 24\"-34\" on many models) for optimal sonographer access.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have the following features- ... Height adjustment: Adjustable range (e.g., 24\"-34\" on many models) for optimal sonographer access",
+        "spans": [
+          {
+            "start_char": 316,
+            "end_char": 385,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 1219,
+            "end_char": 1316
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_hand_control_storage_loops",
+      "description": "Offered echocardiography examination table must have 4 flexible hand control storage loops.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have the following features- ... 4 FLEXIBLE HAND CONTROL STORAGE LOOPS",
+        "spans": [
+          {
+            "start_char": 316,
+            "end_char": 385,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 831,
+            "end_char": 868
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_patient_surface_footprint",
+      "description": "Offered echocardiography examination table must have a patient surface footprint of 30\"W x 83\"L.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have the following features- ... PATIENT SURFACE FOOTPRINT 30\"Wx83\"L",
+        "spans": [
+          {
+            "start_char": 316,
+            "end_char": 385,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 894,
+            "end_char": 929
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_ada_entry_height",
+      "description": "Offered echocardiography examination table must have an ADA-compliant low-entry height (entry heights from 17\" to 19\", or 19\"-37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have the following features- ... ADA-compliant low-entry height: Entry heights from 17\" to 19\" (or 19\"-37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges",
+        "spans": [
+          {
+            "start_char": 316,
+            "end_char": 385,
+            "used_for_matching": false
+          },
+          {
+            "start_char": 548,
+            "end_char": 711
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_trendelenburg_positioning",
+      "description": "Offered echocardiography examination table must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles (e.g., +/-15°), or Trendelenburg capability on certain models for enhanced imaging access.",
+        "spans": [
+          {
+            "start_char": 1104,
+            "end_char": 1218
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_open_apical_window",
+      "description": "Offered echocardiography examination table must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+        "spans": [
+          {
+            "start_char": 1633,
+            "end_char": 1737
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_patient_weight_capacity",
+      "description": "Offered echocardiography examination table must have an appropriate patient weight and bariatric-rated load capacity (up to 750 lbs on standard models, up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must have an appropriate patient weight and bariatric-rated load capacity (supporting up to 750 lbs on standard models and up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions for stability and strength during complex exams).",
+        "spans": [
+          {
+            "start_char": 417,
+            "end_char": 547
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_rapid_release_drop_sections",
+      "description": "Offered echocardiography examination table must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
+        "spans": [
+          {
+            "start_char": 1461,
+            "end_char": 1563
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_adjustable_back_support",
+      "description": "Offered echocardiography examination table must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants) to support natural body extension and reduce strain.",
+        "spans": [
+          {
+            "start_char": 955,
+            "end_char": 1103
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_drop_section_size",
+      "description": "Offered echocardiography examination table must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Echocardiography examination tables must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
+        "spans": [
+          {
+            "start_char": 1564,
+            "end_char": 1632
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "salient_char_dropdown_cushion",
+      "description": "Offered echocardiography examination table must have a drop-down cushion that releases from either side for barrier-free access.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Drop-down cushion that releases from either side for barrier-free access",
+        "spans": [
+          {
+            "start_char": 1738,
+            "end_char": 1810
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "delivery_timeframe_30_days_aro",
+      "description": "Delivery timeframe shall be 30 days ARO (after receipt of order).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Delivery Timeframe shall be 30 Days ARO.",
+        "spans": [
+          {
+            "start_char": 2095,
+            "end_char": 2139
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "software_licensing_oem_terms_conformance",
+      "description": "All software licensing, warranty, and service associated with the medical equipment must be in accordance with the OEM's terms and conditions.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions.",
+        "spans": [
+          {
+            "start_char": 9457,
+            "end_char": 9678
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "brand_name_required_unless_equal_indicated",
+      "description": "Unless the offeror clearly indicates in its offer that the product being offered is an 'equal' product, the offeror shall provide the brand name product referenced in the solicitation.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(d) Unless the offeror clearly indicates in its offer that the product being offered is an “equal” product, the offeror shall provide the brand name product referenced in the solicitation.",
+        "spans": [
+          {
+            "start_char": 8450,
+            "end_char": 8638
           }
         ]
       }

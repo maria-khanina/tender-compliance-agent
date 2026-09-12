@@ -35,6 +35,9 @@ def main() -> None:
         load_true_verdicts,
         render_report_as_markdown,
     )
+    from evaluation.chunk_diagnostics import describe_missed_topic_chunk_coverage
+    from evaluation.span_adapters import group_lookup_by_topic
+    from evaluation.unexplained_diagnostics import annotate_unexplained_requirements
     from evaluation.verdict_only import render_verdict_only_report, score_verdicts
     from schemas import Requirement, RetrievedEvidenceRecord, Verdict
 
@@ -101,11 +104,36 @@ def main() -> None:
             verdict_only_predicted, verdicts_fixture, retrieved_evidence
         )
 
+    def compute_missed_chunk_diagnostics(
+        requirements_fixture: TrueRequirementsFixture,
+        report: EvaluationReport,
+    ) -> dict[str, str]:
+        topics_by_id = {
+            topic.topic_id: topic for topic in requirements_fixture.requirements
+        }
+        diagnostics = {}
+        for topic_id in report.requirement_recall.missed_topic_ids:
+            topic = topics_by_id.get(topic_id)
+            if topic is None:
+                continue
+            diagnostics[topic_id] = describe_missed_topic_chunk_coverage(topic)
+        return diagnostics
+
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
     case_data = load_case_data(case_dir, arguments.output_prefix)
+    requirements_fixture, _, predicted_requirements, _, _ = case_data
     report: EvaluationReport = evaluate(*case_data)
     verdict_only_result = compute_verdict_only_result(case_dir)
+    missed_chunk_diagnostics = compute_missed_chunk_diagnostics(
+        requirements_fixture, report
+    )
+    unexplained_diagnostics = annotate_unexplained_requirements(
+        report.requirement_precision.unexplained_requirement_ids,
+        predicted_requirements,
+        requirements_fixture,
+        group_lookup_by_topic(report.match_groups),
+    )
     report_text = render_report_as_markdown(
         report,
         verdict_only_accuracy=(
@@ -115,6 +143,8 @@ def main() -> None:
             verdict_only_result.scored_topic_count
             if verdict_only_result else None
         ),
+        missed_chunk_diagnostics=missed_chunk_diagnostics,
+        unexplained_diagnostics=unexplained_diagnostics,
     )
     if verdict_only_result is not None:
         report_text += "\n" + render_verdict_only_report(verdict_only_result)

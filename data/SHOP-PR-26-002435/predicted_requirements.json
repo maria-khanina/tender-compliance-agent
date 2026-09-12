@@ -1,0 +1,2756 @@
+[
+  {
+    "requirement_id": "4886f73d-3412-446e-95b3-f1ccf65c0d1a",
+    "text": "Quotes shall remain valid through September 30, 2026.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotes shall remain valid through September 30, 2026",
+        "start_char": 1168,
+        "end_char": 1220,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotes shall remain valid through September 30, 2026.",
+        "start_char": 4641,
+        "end_char": 4694,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "quotes shall remain valid through September 30, 2026.",
+        "start_char": 22915,
+        "end_char": 22968,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "68ef801b-007a-4ed2-b169-0eba8b96a111",
+    "text": "All questions shall be submitted to rtiggle@fbi.gov no later than September 15, at 12:00 PM ET.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "All questions shall be submitted  to rtiggle@fbi.gov , no later than September 15, at 12:00 PM ET.",
+        "start_char": 1364,
+        "end_char": 1462,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1adfd57f-ba48-45bd-88c8-22876b84ef76",
+    "text": "Quotes shall be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM ET, and quotations received after this time will not be considered for award.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotes shall be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM ET.",
+        "start_char": 1463,
+        "end_char": 1557,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotations received after September 17, 2026, at 12:00 PM Eastern Time will not be considered for award.",
+        "start_char": 3310,
+        "end_char": 3414,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "88c13921-ea84-4df5-9171-6636c2e17179",
+    "text": "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time.",
+        "start_char": 22682,
+        "end_char": 22800,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d978beed-737c-45ef-b3d5-5e6bd04ffece",
+    "text": "The customized forensic workstation configuration includes Intel Core Ultra 9 285K processing, liquid cooling,\n192GB DDR5 memory, four dedicated 1TB Gen4 M.2 NVMe drives, eight 1TB SSDs in RAID 5, NVIDIA RTX\nPRO 4000 Blackwell 24GB graphics, ARC-1883i RAID, specified hot-swap and USB expansion, 1700W\npower, Windows 11 Pro 64-bit, specified chassis characteristics, and a three-year standard warranty.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The customized forensic workstation configuration includes Intel Core Ultra 9 285K processing, liquid cooling,\n192GB DDR5 memory, four dedicated 1TB Gen4 M.2 NVMe drives, eight 1TB SSDs in RAID 5, NVIDIA RTX\nPRO 4000 Blackwell 24GB graphics, ARC-1883i RAID, specified hot-swap and USB expansion, 1700W\npower, Windows 11 Pro 64-bit, specified chassis characteristics, and a three-year standard warranty.",
+        "start_char": 2047,
+        "end_char": 2449,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5b547a69-4a43-40be-bb99-1805f6a398ed",
+    "text": "The quote must provide the exact manufacturer, product model, configuration, quantity, warranty, support, and delivery schedule as specified in the RFQ, ensuring all items are new, genuine OEM products sourced through authorized channels.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Government requires the exact",
+        "start_char": 2513,
+        "end_char": 2546,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "manufacturers, products, models, configurations, quantities, warranty/support, and delivery requirements identified in this RFQ and Attachment 1.",
+        "start_char": 2547,
+        "end_char": 2692,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required.",
+        "start_char": 2849,
+        "end_char": 3032,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price.",
+        "start_char": 3716,
+        "end_char": 3931,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "State that the quoted products are the exact brand-name products required by this RFQ and are new, genuine OEM products eligible for the required OEM warranty/support.",
+        "start_char": 3934,
+        "end_char": 4101,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "the exact required manufacturer/product",
+        "start_char": 5778,
+        "end_char": 5817,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "325a38ea-50c9-4b19-aa7a-55c38d6bef16",
+    "text": "All quoted items must be factory-new and delivered with a manufacturer warranty and support that are valid and enforceable in the United States.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Certify that all quoted items are factory-new and will be delivered with an OEM/manufacturer warranty valid in the United States.",
+        "start_char": 4104,
+        "end_char": 4233,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "must be eligible for, and delivered with, the applicable manufacturer warranty and support that are valid and enforceable in the United States.",
+        "start_char": 9301,
+        "end_char": 9444,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bb9d8749-4b26-4792-8bf6-4369070c1796",
+    "text": "All products must be sold through an authorized U.S.-based distribution or reseller channel.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "All products must be sold through an authorized U.S.-based distribution/reseller channel",
+        "start_char": 9208,
+        "end_char": 9296,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "11c0dded-8aa9-40b8-9826-2b29e7a89673",
+    "text": "Vendors must submit a complete quotation to rtiggle@fbi.gov before the stated deadline.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A vendor needs only submit a complete quote to rtiggle@fbi.gov.",
+        "start_char": 3229,
+        "end_char": 3292,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Vendors are solely responsible for ensuring that their complete quotation is successfully submitted to rtiggle@fbi.gov before the stated deadline.",
+        "start_char": 3415,
+        "end_char": 3561,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "027add4f-9083-4b09-ae79-e76dc71a7c04",
+    "text": "The quote must not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The quote shall not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products.",
+        "start_char": 4234,
+        "end_char": 4397,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or otherwise previously placed-in-service items are prohibited.",
+        "start_char": 9445,
+        "end_char": 9602,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c6d5598c-fa80-4b15-8ebe-c4a76327e3d5",
+    "text": "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price.",
+        "start_char": 4400,
+        "end_char": 4499,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "36a86bfd-abba-4542-936d-f6f539899f29",
+    "text": "State any exception, condition, or assumption.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "State any exception, condition, or assumption.",
+        "start_char": 4502,
+        "end_char": 4548,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4262cf0c-0456-40e1-b9d6-f24a22d86a9d",
+    "text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... configuration",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "configuration",
+        "start_char": 5819,
+        "end_char": 5832,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6ec4c042-cf71-411c-a706-841a8105e1e4",
+    "text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... quantity",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "quantity",
+        "start_char": 5834,
+        "end_char": 5842,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "969e6318-ad84-45f2-b682-f652ead5b3ad",
+    "text": "The proposal must include a three-year standard warranty and provide the terms of any express warranty, which are mandatory requirements for technical acceptability.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "warranty/support",
+        "start_char": 5844,
+        "end_char": 5860,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Terms of any express warranty",
+        "start_char": 13014,
+        "end_char": 13043,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Three (3) Year Standard Warranty",
+        "start_char": 1037,
+        "end_char": 1069,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "caf5366c-57a0-4a14-ba34-3994ee0e9832",
+    "text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... delivery requirement",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "delivery requirement",
+        "start_char": 5862,
+        "end_char": 5882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "932e1963-7a0b-4875-bf19-69cc7baa056c",
+    "text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... all other material RFQ terms",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including",
+        "start_char": 5621,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "all other material RFQ terms",
+        "start_char": 5888,
+        "end_char": 5916,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "13852b28-b178-4f54-ad8d-ffd5e5556ca5",
+    "text": "The prospective awardee and its subcontractors must provide all requested information for the FBI Personnel Risk Assessment (PRA), including acquisition-risk questionnaires, Key Management Personnel Listings (KMPL), and details regarding ownership, control, supply chain, and product sources.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The prospective awardee shall timely provide all information requested by the FBI to complete the PRA, including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information as applicable.",
+        "start_char": 6964,
+        "end_char": 7205,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offerors are also required to request, collect, and forward to the Government answers to these acquisition-risk questions from all subcontractors providing any equipment or software in performance of the contract or order.",
+        "start_char": 29578,
+        "end_char": 29800,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offerors selected for PRA review are required to answer the acquisition-risk questions requested by the FBI.",
+        "start_char": 30998,
+        "end_char": 31106,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Offeror shall submit, when requested, a Key Management Personnel Listing (KMPL) and FBI supplemental acquisition-risk questionnaire.",
+        "start_char": 31532,
+        "end_char": 31668,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "99a49b3d-092b-4904-bfe7-b6d602188906",
+    "text": "The contractor shall furnish only new, unused, factory-new, genuine OEM products.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The contractor shall furnish only new, unused, factory-new, genuine OEM products.",
+        "start_char": 9126,
+        "end_char": 9207,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cfca1d6a-a024-4df7-9175-09c01319763f",
+    "text": "Invoices shall be submitted in accordance with FBI-0023, Federal Bureau of Investigation Electronic Invoicing Requirement.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Invoices shall be submitted in accordance with FBI-0023, Federal Bureau of Investigation Electronic Invoicing Requirement.",
+        "start_char": 9728,
+        "end_char": 9850,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4cac6031-a95d-4ff6-a9ef-80a27b3f0255",
+    "text": "The contractor must be registered in the System for Award Management (SAM) as per FAR 52.204-7.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.204-7 | System for Award Management",
+        "start_char": 10044,
+        "end_char": 10082,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "94c3e25f-e8a9-463a-b14a-7c31da301a36",
+    "text": "The contractor must maintain their registration in the System for Award Management (SAM) throughout the contract period as per FAR 52.204-13.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.204-13 | System for Award Management Maintenance",
+        "start_char": 10083,
+        "end_char": 10134,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "517b007d-5e93-4cb0-bc9b-9fc96b7dc21a",
+    "text": "The contractor must receive payments via Electronic Funds Transfer (EFT) as specified in the System for Award Management (SAM) per FAR 52.232-33.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.232-33 | Payment by Electronic Funds Transfer—System for Award Management",
+        "start_char": 10596,
+        "end_char": 10672,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4578ed6b-72df-4153-81c3-52b9505caf44",
+    "text": "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities",
+        "start_char": 10135,
+        "end_char": 10266,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0fe51085-4244-4b96-8c1e-cf8b17af7308",
+    "text": "52.204-25 | Prohibition on Contracting for Certain Telecommunications and Video Surveillance Services or Equipment",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.204-25 | Prohibition on Contracting for Certain Telecommunications and Video Surveillance Services or Equipment",
+        "start_char": 10267,
+        "end_char": 10381,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d5d7ba18-a737-4fba-b776-e13f92f7e29c",
+    "text": "52.212-4 and 2852.212-4 | Terms and Conditions—Commercial Products and Commercial Services (including FAR Deviation)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.212-4 | Terms and Conditions—Commercial Products and Commercial Services",
+        "start_char": 10435,
+        "end_char": 10510,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "2852.212-4 | Contract Terms and Conditions, Commercial Items (FAR Deviation)",
+        "start_char": 10907,
+        "end_char": 10983,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "14612e03-d51a-4cc7-9450-0e3bb406ee32",
+    "text": "52.219-14 | Limitations on Subcontracting",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.219-14 | Limitations on Subcontracting",
+        "start_char": 10511,
+        "end_char": 10552,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1ea72c69-81bd-48c9-a293-53870b9e6c5f",
+    "text": "52.232-40 | Providing Accelerated Payments to Small Business Subcontractors",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.232-40 | Providing Accelerated Payments to Small Business Subcontractors",
+        "start_char": 10673,
+        "end_char": 10748,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "202e4930-7e4e-4668-a583-1a207ed7c1f9",
+    "text": "52.244-6 | Subcontracts for Commercial Products and Commercial Services",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.244-6 | Subcontracts for Commercial Products and Commercial Services",
+        "start_char": 10835,
+        "end_char": 10906,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b98872a3-6157-4607-9e09-28fb6bf60941",
+    "text": "52.203-17 | Contractor Employee Whistleblower Rights",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.203-17 | Contractor Employee Whistleblower Rights",
+        "start_char": 10382,
+        "end_char": 10434,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "212cbd75-4c3f-4fbf-bd88-bf40ab0cc5da",
+    "text": "52.225-5 | Trade Agreements, if applicable",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.225-5 | Trade Agreements, if applicable",
+        "start_char": 10553,
+        "end_char": 10595,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "71474256-92d2-418c-a4fa-8360b1cf0bae",
+    "text": "52.233-3 | Protest After Award",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.233-3 | Protest After Award",
+        "start_char": 10749,
+        "end_char": 10779,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f137febe-3401-4c94-a5fe-018960987106",
+    "text": "52.233-4 | Applicable Law for Breach of Contract Claim",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "52.233-4 | Applicable Law for Breach of Contract Claim",
+        "start_char": 10780,
+        "end_char": 10834,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e85663d2-bed0-4392-9132-3a493cba506d",
+    "text": "A protest filed directly with the Department of Justice (2852.233-70) must indicate that it is a protest to the DOJ and specify whether the protester prefers to make an oral or written presentation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "2852.233-70 | Protests Filed Directly with the Department of Justice",
+        "start_char": 10984,
+        "end_char": 11052,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A protest filed directly with DOJ shall",
+        "start_char": 42569,
+        "end_char": 42608,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "indicate that it is a protest to DOJ",
+        "start_char": 42609,
+        "end_char": 42645,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A protest filed directly with DOJ shall",
+        "start_char": 42569,
+        "end_char": 42608,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "indicate whether the protester prefers to make an oral or written presentation",
+        "start_char": 42785,
+        "end_char": 42863,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a70cf780-0ae9-437f-b36b-f2fd2fb0a21b",
+    "text": "Offers, including any modifications, revisions, or withdrawals, must be signed, dated, and submitted to the designated Government office by the exact time specified in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation.",
+        "start_char": 12364,
+        "end_char": 12499,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Submit signed and dated offers",
+        "start_char": 12364,
+        "end_char": 12394,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office designated in the solicitation by the time specified in the solicitation",
+        "start_char": 15097,
+        "end_char": 15304,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3f352be6-0fd6-4437-8a66-cc8a5bb9a81e",
+    "text": "The offer must include the solicitation number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "As a minimum, offers must show—",
+        "start_char": 12610,
+        "end_char": 12641,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The solicitation number",
+        "start_char": 12646,
+        "end_char": 12669,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The solicitation number",
+        "start_char": 12646,
+        "end_char": 12669,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1b0f90a8-5d10-4f4c-96e5-21ff1802de66",
+    "text": "The offer must include the time specified in the solicitation for receipt of offers.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "As a minimum, offers must show—",
+        "start_char": 12610,
+        "end_char": 12641,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The time specified in the solicitation for receipt of offers",
+        "start_char": 12675,
+        "end_char": 12735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The time specified in the solicitation for receipt of offers",
+        "start_char": 12675,
+        "end_char": 12735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "323f9bf9-ca95-4f30-906b-a063a3e713e6",
+    "text": "The offer must include the name, address, and telephone number of the offeror.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "As a minimum, offers must show—",
+        "start_char": 12610,
+        "end_char": 12641,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The name, address, and telephone number of the offeror",
+        "start_char": 12741,
+        "end_char": 12795,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The name, address, and telephone number of the offeror",
+        "start_char": 12741,
+        "end_char": 12795,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2428145f-1ede-4581-8927-9fd09f017552",
+    "text": "The offer must include a technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation",
+        "start_char": 12801,
+        "end_char": 12937,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5900daed-d414-45b1-a105-7e338ded9fec",
+    "text": "The offer must include acknowledgment of solicitation amendments.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Acknowledgment of solicitation amendments",
+        "start_char": 13369,
+        "end_char": 13410,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b50d1884-ca58-4b50-9905-e0610c20d0d7",
+    "text": "If the offer is not submitted on the SF 1449, the offeror must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If the offer is not submitted on the SF 1449, include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation",
+        "start_char": 13690,
+        "end_char": 13862,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4a74e1d0-a518-430f-8c33-d455be8495fd",
+    "text": "The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers",
+        "start_char": 14061,
+        "end_char": 14183,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers",
+        "start_char": 14061,
+        "end_char": 14183,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e0035269-cdb7-4376-93e5-90899b68da81",
+    "text": "Product samples shall be submitted at or prior to the time specified for receipt of offers.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "product samples shall be submitted at or prior to the time specified for receipt of offers",
+        "start_char": 14317,
+        "end_char": 14407,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4fe5d592-297c-4621-8564-4cd915faa4be",
+    "text": "Late offers, modifications, revisions, or withdrawals will not be considered unless received before award and the Contracting Officer determines acceptance will not delay the acquisition, provided there is acceptable evidence of timely receipt under Government control or authorized electronic entry.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and—",
+        "start_char": 15488,
+        "end_char": 15857,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers",
+        "start_char": 15862,
+        "end_char": 16123,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and—",
+        "start_char": 15488,
+        "end_char": 15857,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under the Government’s control prior to the time set for receipt of offers",
+        "start_char": 16132,
+        "end_char": 16341,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1168a9b9-5058-45a2-bb99-d8baefdbcfe3",
+    "text": "Offers may be withdrawn by written notice, in person, or via authorized facsimile or oral communication (if applicable) before the exact time set for receipt of offers.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers.",
+        "start_char": 17457,
+        "end_char": 17568,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Oral offers in response to oral solicitations may be withdrawn orally.",
+        "start_char": 17569,
+        "end_char": 17639,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers.",
+        "start_char": 17640,
+        "end_char": 17881,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the identity of the person requesting withdrawal is established and the person signs a receipt for the offer.",
+        "start_char": 17882,
+        "end_char": 18127,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bc8f5eb6-067a-417c-87ca-17417850bab0",
+    "text": "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified.",
+        "start_char": 18876,
+        "end_char": 18988,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e7d0300c-bb90-42e0-b921-47307255e355",
+    "text": "The offeror shall enter the annotation 'Unique Entity Identifier' followed by the unique entity identifier in the block with its name and address on the cover page of its offer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation “Unique Entity Identifier” followed by the unique entity identifier that identifies the offeror’s name and address.",
+        "start_char": 20653,
+        "end_char": 20879,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1c0a07d1-af8c-44ce-9a4c-857a6e399ed9",
+    "text": "Invoices must be submitted at least monthly but no more than bi-weekly.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Invoices must be submitted at least monthly but no more than bi-weekly.",
+        "start_char": 35815,
+        "end_char": 35886,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "73a478ff-ce4a-46bf-8d30-f1d4b9bd0879",
+    "text": "Final invoices must be submitted within 30 days after the end date of the period of performance.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Final invoices must be submitted within 30 days after the end date of the period of performance.",
+        "start_char": 35887,
+        "end_char": 35983,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0012d0b0-d332-41f0-b6ed-bc6037649695",
+    "text": "The offeror must provide a description of efforts made to ensure that offers are solicited from as many potential sources as is practicable, including whether a notice was or will not be publicized as required by Subpart 5.1 and, if not, which exception under 5.101 applies.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "A description of efforts made to ensure that offers are solicited from as many potential sources as \nis practicable, including whether a notice was or will not be publicized as required by Subpart 5.1 \nand, if not, which exception under 5.101 applies.",
+        "start_char": 5536,
+        "end_char": 5787,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9ae346bd-c639-4744-b9bf-395cbba202cb",
+    "text": "Price and any discount terms",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Price and any discount terms",
+        "start_char": 13049,
+        "end_char": 13077,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e1752a3e-db43-492e-b0f1-0a8bf8d5cc44",
+    "text": "“Remit to” address, if different than mailing address",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "“Remit to” address, if different than mailing address",
+        "start_char": 13083,
+        "end_char": 13136,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "66f1b4f9-c49c-44d9-90f1-84b343f9ba51",
+    "text": "A completed copy of the representations and certifications at Federal Acquisition Regulation (FAR) 52.212-3",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A completed copy of the representations and certifications at Federal Acquisition Regulation (FAR) 52.212-3",
+        "start_char": 13142,
+        "end_char": 13249,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b6eed388-cf9e-4fc9-9c55-6f1aadaf0727",
+    "text": "Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references",
+        "start_char": 13417,
+        "end_char": 13577,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2e9dad34-ce2f-46d4-957d-4737c70ad0d3",
+    "text": "these samples shall be submitted at no expense to the Government",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "these samples shall be submitted at no expense to the Government",
+        "start_char": 14458,
+        "end_char": 14522,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c74fa098-fcae-4f97-87ef-5f893bc379c1",
+    "text": "Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and— ... If this solicitation is a request for proposals, it was the only proposal received.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and—",
+        "start_char": 15488,
+        "end_char": 15857,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If this solicitation is a request for proposals, it was the only proposal received.",
+        "start_char": 16350,
+        "end_char": 16433,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f41e6a72-8586-4b19-8105-4913f9e2bf8a",
+    "text": "The offeror also shall enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The offeror also shall enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+        "start_char": 20880,
+        "end_char": 20970,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bf51a8da-3975-4b4d-8fc1-86ec9f0a3252",
+    "text": "Only the exact brand-name products and configurations identified in this RFQ are acceptable.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Only the exact brand-name products and configurations identified in this RFQ are acceptable.",
+        "start_char": 23093,
+        "end_char": 23185,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "55b6ceb9-2ac1-4c48-a9fd-6321fc0c53bd",
+    "text": "A quote must satisfy all applicable requirements under all three factors to be eligible for award.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A quote must satisfy all applicable requirements under all three factors to be eligible for award.",
+        "start_char": 24589,
+        "end_char": 24687,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1202da99-6b0b-4f08-8202-073b8683f0bb",
+    "text": "In connection with the performance of work under this contract, the Contractor agrees as follows: ... The Contractor will not engage in any racially discriminatory DEI activities",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "In connection with the performance of work under this contract, the Contractor agrees as follows:",
+        "start_char": 26417,
+        "end_char": 26514,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor will not engage in any racially discriminatory DEI activities",
+        "start_char": 26519,
+        "end_char": 26595,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0fe24985-1337-4f5a-a004-81a5bec09bb3",
+    "text": "The Contractor shall furnish all information, reports, and access to books, records, and accounts as required by the Contracting Officer to ascertain compliance with the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "In connection with the performance of work under this contract, the Contractor agrees as follows:",
+        "start_char": 26417,
+        "end_char": 26514,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor will furnish all information and reports, including providing access to books, records, and accounts, as required by the Contracting Officer, for purposes of ascertaining compliance with this clause",
+        "start_char": 26601,
+        "end_char": 26814,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b12f0af6-3c36-4a6a-afc0-27f0dd1ded0f",
+    "text": "The Contractor shall report any known or reasonably knowable subcontractor conduct that may violate this clause to the Contracting Officer and implement any remedial actions directed by the Contracting Officer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "In connection with the performance of work under this contract, the Contractor agrees as follows:",
+        "start_char": 26417,
+        "end_char": 26514,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor will report any subcontractor's known or reasonably knowable conduct that may violate this clause to the Contracting Officer and take any appropriate remedial actions directed by the Contracting Officer",
+        "start_char": 27084,
+        "end_char": 27301,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ae41d595-e008-4282-aaf7-08c130c742f3",
+    "text": "The Contractor shall inform the Contracting Officer if a subcontractor initiates a lawsuit against the Contractor that challenges the validity of this clause.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "In connection with the performance of work under this contract, the Contractor agrees as follows:",
+        "start_char": 26417,
+        "end_char": 26514,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor will inform the Contracting Officer if a subcontractor sues the Contractor and the suit puts at issue, in any way, the validity of this clause.",
+        "start_char": 27311,
+        "end_char": 27469,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6d751629-9420-4a44-92d4-5392d30f424e",
+    "text": "The Contractor shall promptly disclose any actual or potential Organizational Conflict of Interest (OCI) to the Contracting Officer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "shall promptly disclose any actual or potential OCI to the Contracting Officer.",
+        "start_char": 39107,
+        "end_char": 39186,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0de9d4d7-b45c-43e6-9ee4-04efb62d02b6",
+    "text": "Any protest filed directly with the DOJ must be filed with the Contracting Officer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A protest filed directly with DOJ shall",
+        "start_char": 42569,
+        "end_char": 42608,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "be filed with the Contracting Officer",
+        "start_char": 42647,
+        "end_char": 42684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b39979f3-b5d9-441d-ae13-de1603086e19",
+    "text": "The Contractor must include the substance of this clause in all subcontracts, including those for commercial products and commercial services, except for subcontracts where the place of performance is outside the United States or those below the simplified acquisition threshold.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor must include the substance of this clause, including this paragraph (c), in subcontracts at any tier, including those for commercial products and commercial services, except those where the place of delivery or performance is outside the United States.",
+        "start_char": 27646,
+        "end_char": 27913,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor shall include this requirement in subcontracts over the simplified acquisition threshold.",
+        "start_char": 28169,
+        "end_char": 28273,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3adf218f-19d2-4943-baba-bb8fdfe0d8da",
+    "text": "The Contractor shall inform its employees in writing, in the predominant native language of the workforce, of employee whistleblower rights and protections under 41 U.S.C. 4712.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor shall inform its employees in writing, in the predominant native language of the workforce, of employee whistleblower rights and protections under 41 U.S.C. 4712.",
+        "start_char": 27991,
+        "end_char": 28168,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1e1e34f1-5dae-4639-b784-efc80ead966e",
+    "text": "Within 45 days of award, the Contractor shall provide confirmation to the Contracting Officer that it has distributed the whistleblower information as required.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Within 45 days of award, the Contractor shall provide confirmation to the Contracting Officer that it has distributed the whistleblower information as required.",
+        "start_char": 28274,
+        "end_char": 28434,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9077ffc9-90c8-45ef-aa40-5b6c4b049507",
+    "text": "All answers shall be reflective of the parent and subsidiary levels of an organization.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "All answers shall be reflective of the parent and subsidiary levels of an organization.",
+        "start_char": 29490,
+        "end_char": 29577,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "All answers are to be reflective of the parent and subsidiary levels of an organization.",
+        "start_char": 31107,
+        "end_char": 31195,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fcc74272-e644-4894-a469-2107db4bd742",
+    "text": "Offerors are responsible for the thoroughness and completeness of each required subcontractor's submission.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offerors are responsible for the thoroughness and completeness of each subcontractor's submission.",
+        "start_char": 29801,
+        "end_char": 29899,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Offerors are responsible for the thoroughness and completeness of any required subcontractor submission.",
+        "start_char": 31196,
+        "end_char": 31300,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9be8b933-6ec8-4f02-863f-c05fcdb8252e",
+    "text": "The Department of Justice does not permit the use of Non-U.S. citizens in the performance of this contract or commitment for any position that involves access to or development of any DOJ Information Technology (IT) system.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Department of Justice does not permit the use of Non-U.S. citizens in the performance of this contract or commitment for any position that involves access to or development of any DOJ Information Technology (IT) system.",
+        "start_char": 30120,
+        "end_char": 30343,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1eaf9832-8cad-4bf1-a76e-df2c50141b42",
+    "text": "In those instances where other non-IT requirements contained in the contract or commitment can be met by using Non-U.S. citizens, those requirements shall be clearly described.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "In those instances where other non-IT requirements contained in the contract or commitment can be met by using Non-U.S. citizens, those requirements shall be clearly described.",
+        "start_char": 30435,
+        "end_char": 30611,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0939538b-04e8-442d-85cd-f992d5c31631",
+    "text": "Responses shall specify, where necessary, the identity, nature, degree, and impact of any Foreign Ownership, Control, or Influence (FOCI) on the organization or its activities, or the organization or activities of a subcontractor.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Responses shall specify, where necessary, the identity, nature, degree, and impact of any Foreign Ownership, Control, or Influence (FOCI) on the organization or its activities, or the organization or activities of a subcontractor.",
+        "start_char": 31301,
+        "end_char": 31531,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4d82215e-278d-4b2f-8951-5e87c88ef48e",
+    "text": "The KMPL shall identify corporate management personnel by full legal name, position, date/place of birth, and citizenship status.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The KMPL shall identify corporate management personnel by full legal name, position, date/place of birth, and citizenship status.",
+        "start_char": 31669,
+        "end_char": 31798,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "535efdc6-191a-4245-aad4-052a3dcd7f6f",
+    "text": "The Offeror may not seek reimbursement from the Government for costs associated with responding to this RFQ or a PRA request as a result of a non-approval decision.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Offeror may not seek reimbursement from the Government for costs associated with responding to this RFQ or a PRA request as a result of a non-approval decision.",
+        "start_char": 33023,
+        "end_char": 33187,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "033c89c4-5b6b-4de5-8578-013ca81159e2",
+    "text": "Contractors shall diligently count and examine all goods tendered for shipment, and receipt for them from foreign suppliers prior to shipment to the Federal Government.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Contractors shall diligently count and examine all goods tendered for shipment, and receipt for them from foreign suppliers prior to shipment to the Federal Government.",
+        "start_char": 33283,
+        "end_char": 33451,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "984e3bce-6db9-4529-b220-22c096614099",
+    "text": "The contractor must ensure that shipping instructions provided to foreign entity suppliers do not mention the Federal Bureau of Investigation or the acronym FBI, and orders issued to such suppliers must not directly ship supplies to the Federal Bureau of Investigation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Orders issued by the awardee to foreign entity suppliers may NOT directly ship supplies to the Federal Bureau of Investigation.",
+        "start_char": 33452,
+        "end_char": 33579,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The contractor shall ensure that orders do not mention the words “Federal Bureau of Investigation” or the acronym “FBI” in any shipping instructions provided to the foreign entity supplier.",
+        "start_char": 33690,
+        "end_char": 33879,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "86ea4daa-693e-4b95-bb75-227cef359d25",
+    "text": "The contractor shall not divulge, publish, disclose, or use for private purposes any nonpublic Government information, contract-related material, or information acquired during performance without prior written consent from the FBI Office of Public Affairs or the Contracting Officer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "contractors shall not divulge, publish, or disclose information or produce material related to the contract award, or acquired in or derived from the performance of their duties without prior written consent of the FBI.",
+        "start_char": 36515,
+        "end_char": 36734,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "No release of information shall be made without prior written consent of the FBI Office of Public Affairs and/or the Contracting Officer.",
+        "start_char": 37370,
+        "end_char": 37507,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If the Contractor obtains access to nonpublic Government information in performance of this order, the Contractor shall not use such information for a private purpose or release it without prior written approval from the Contracting Officer.",
+        "start_char": 38711,
+        "end_char": 38952,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "34988d4c-2b76-440a-a098-9faf29480861",
+    "text": "Final delivery of goods shall be completed from the awardee's domestic offices and supply centers to the FBI.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Final delivery of goods shall be completed from the awardee's domestic offices and supply centers to the FBI.",
+        "start_char": 33580,
+        "end_char": 33689,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d8f80f42-5d71-48d1-8ae9-c1b09b598d11",
+    "text": "The addressee shall be identified as “United States Government” or “United States Department of Justice” or, as directed by the Contracting Officer, an entity identifier with no reference to the Government.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The addressee shall be identified as “United States Government” or “United States Department of Justice” or, as directed by the Contracting Officer, an entity identifier with no reference to the Government.",
+        "start_char": 33880,
+        "end_char": 34086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6518762c-6b7e-413d-992a-240af87bc4ed",
+    "text": "all ICT supplies and services supplied as part of this order shall meet the applicable accessibility standards at 36 C.F.R. Part 1194",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "all ICT supplies and services supplied as part of this order shall meet the applicable accessibility standards at 36 C.F.R. Part 1194",
+        "start_char": 34415,
+        "end_char": 34548,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b582b3c2-14b9-480b-a619-681342b0e783",
+    "text": "the contractor shall provide an Accessibility Conformance Report (ACR), when applicable and requested, for ICT items developed, updated, configured for the agency, or proposed as substitutions.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "the contractor shall provide an Accessibility Conformance Report (ACR), when applicable and requested, for ICT items developed, updated, configured for the agency, or proposed as substitutions.",
+        "start_char": 34647,
+        "end_char": 34840,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c4cdb6f6-6ae9-4970-910f-0a5f918d8d81",
+    "text": "Vendors are required to create and submit electronic invoices using the IPP system.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Vendors are required to create and submit electronic invoices using the IPP system.",
+        "start_char": 35674,
+        "end_char": 35757,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d275ab01-0594-4b0b-b8c3-8f97caf61e04",
+    "text": "All supporting documentation shall be uploaded into IPP.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "All supporting documentation shall be uploaded into IPP.",
+        "start_char": 35758,
+        "end_char": 35814,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "be1008b9-1bc4-41b2-ba6e-dcf446d130f0",
+    "text": "The Contractor shall ensure that its Electronic Business Point of Contact in SAM.gov is current.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor shall ensure that its Electronic Business Point of Contact in SAM.gov is current.",
+        "start_char": 36325,
+        "end_char": 36421,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6c8a3b9a-70dd-42cc-bef7-e0bc1c018fb2",
+    "text": "Proposed public release information shall be submitted to David P. Yates at Dpyates@fbi.gov.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "Proposed public release information shall be submitted to David P. Yates at Dpyates@fbi.gov.",
+        "start_char": 37508,
+        "end_char": 37600,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "83f8be26-769a-4784-9cfc-77e4f24a4865",
+    "text": "The Contractor shall exercise due diligence to protect proprietary information from misuse or unauthorized disclosure consistent with FAR 9.505-4",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "The Contractor shall exercise due diligence to protect proprietary information from misuse or unauthorized disclosure consistent with FAR 9.505-4",
+        "start_char": 38957,
+        "end_char": 39102,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7b6a97a8-22c1-40dd-be80-aada90ea52fd",
+    "text": "If administrative leave or a Government closure affects scheduled delivery, the Contractor shall coordinate with the Contracting Officer for rescheduling.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If administrative leave or a Government closure affects scheduled delivery, the Contractor shall coordinate with the Contracting Officer for rescheduling.",
+        "start_char": 40426,
+        "end_char": 40580,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3d5d0783-a158-4907-8951-ba7ef829948a",
+    "text": "No additional cost may be incurred without prior written authorization.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "No additional cost may be incurred without prior written authorization.",
+        "start_char": 40581,
+        "end_char": 40652,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0452ed67-d423-4c29-9218-bd3c9b66223d",
+    "text": "If a vendor objects to disclosure of specific proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "If a vendor objects to disclosure of specific proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote.",
+        "start_char": 41477,
+        "end_char": 41667,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7a5351fb-bd90-47b6-8887-47043054d3e9",
+    "text": "A protest filed directly with DOJ shall ... state whether the protester chooses to have the Contracting Officer or the APO decide the protest",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A protest filed directly with DOJ shall",
+        "start_char": 42569,
+        "end_char": 42608,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "state whether the protester chooses to have the Contracting Officer or the APO decide the protest",
+        "start_char": 42686,
+        "end_char": 42783,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1a6472d2-d35a-4654-a273-2488f54a8172",
+    "text": "A protest filed directly with DOJ shall ... include the information required by FAR 33.103(d)(2)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "A protest filed directly with DOJ shall",
+        "start_char": 42569,
+        "end_char": 42608,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+UPDATED+RFQ+SAM+IT+PRODUCT+FOR+CTD.docx",
+        "quote": "include the information required by FAR 33.103(d)(2)",
+        "start_char": 42869,
+        "end_char": 42921,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "abfb7793-a9fe-4817-a4a0-a159142111bf",
+    "text": "The systems must support demanding forensic workloads, including evidence acquisition, processing, analysis of large forensic images, mobile-device examination, password recovery, and data recovery, while providing sufficient processing power, memory, storage, GPU capability, write-blocking functionality, and removable/expandable storage to efficiently handle large volumes of digital evidence.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "The systems must support demanding forensic workloads, including evidence acquisition and processing, \nanalysis of large forensic images, mobile-device examination, password recovery, data recovery, and \nother computationally intensive investigative activities.",
+        "start_char": 1612,
+        "end_char": 1873,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "The systems must also support CTD’s existing \nforensic workflows and provide sufficient processing power, memory, storage, GPU capability, ability to \nwrite-block/modify original digital evidence, and removable/expandable storage to efficiently process \nlarge volumes of digital evidence.",
+        "start_char": 2022,
+        "end_char": 2310,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8b7fbffc-5d6f-42ed-9609-2461ae7b25ca",
+    "text": "The systems must be portable and provide workstation-level performance to enable investigators and forensic examiners to conduct examinations outside of the laboratory environment.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "CTD additionally requires portable systems capable of providing workstation-level performance while \nallowing investigators and forensic examiners to conduct examinations outside of the laboratory \nenvironment.",
+        "start_char": 2643,
+        "end_char": 2853,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "551272e2-28d2-4b0d-99c1-bf7b33abd310",
+    "text": "The required systems must provide substantially higher performance and expandability than \nconventional commercial desktop and laptop computers.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "The required systems must provide substantially higher performance and expandability than \nconventional commercial desktop and laptop computers.",
+        "start_char": 1877,
+        "end_char": 2021,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e71ceaa9-f063-42e6-a856-caca558e4093",
+    "text": "Demonstrate that the proposed contractor’s unique qualifications or the nature of the acquisition \nrequires using the authority cited.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "Demonstrate that the proposed contractor’s unique qualifications or the nature of the acquisition \nrequires using the authority cited.",
+        "start_char": 3224,
+        "end_char": 3358,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ad264e6d-2dc7-4b14-b02e-e757b5eccf69",
+    "text": "A description of the market research conducted and the results.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "A description of the market research conducted and the results.",
+        "start_char": 6763,
+        "end_char": 6826,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "02b38c0e-ae48-4ab5-8f7f-faec714163d5",
+    "text": "Any other facts supporting the use of other than full and open competition.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "Any other facts supporting the use of other than full and open competition.",
+        "start_char": 7611,
+        "end_char": 7686,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fb8e06f8-14d2-4d47-8247-11f1be4c3943",
+    "text": "A listing of any sources, if any, that expressed a written interest in the acquisition.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "A listing of any sources, if any, that expressed a written interest in the acquisition.",
+        "start_char": 8049,
+        "end_char": 8136,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9e72eca3-4438-41b6-9929-34a69031874b",
+    "text": "A statement of any actions, if any, the agency may take to remove or overcome any barriers to \ncompetition before any subsequent acquisition for the supplies or services required.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/SHOP-PR-26-002435+Justification.pdf",
+        "quote": "A statement of any actions, if any, the agency may take to remove or overcome any barriers to \ncompetition before any subsequent acquisition for the supplies or services required.",
+        "start_char": 8192,
+        "end_char": 8371,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e5959ddc-ad00-47c0-acc6-d0f23c469677",
+    "text": "The system must be compatible with Microsoft Windows 11 Pro 64-bit.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Windows 11 Only",
+        "start_char": 55,
+        "end_char": 70,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Microsoft Windows 11 Pro 64 Bit",
+        "start_char": 1003,
+        "end_char": 1034,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "98294c4c-7d01-4a5b-bb41-1ec01655d332",
+    "text": "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) |\n8P-16E Cores 24 Threads\nProcessor",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) |\n8P-16E Cores 24 Threads\nProcessor",
+        "start_char": 73,
+        "end_char": 158,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5cd8063b-56b0-4116-b6ca-bd59cdc85df3",
+    "text": "Liquid Cooling for the CPU Providing Maximum\nPerformance",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Liquid Cooling for the CPU Providing Maximum\nPerformance",
+        "start_char": 161,
+        "end_char": 217,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d8d2b2d0-d4b7-4314-8c42-b67a1245d80f",
+    "text": "192GB of DDR5 4800 MHz RAM",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "192GB of DDR5 4800 MHz RAM",
+        "start_char": 220,
+        "end_char": 246,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0e9c7e43-04d5-43e1-97a6-4468cb19a800",
+    "text": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating\nSystem",
+        "start_char": 249,
+        "end_char": 303,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7e0fb1bd-f905-44fd-8864-f7ee7239f444",
+    "text": "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files",
+        "start_char": 306,
+        "end_char": 355,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "af332006-602a-42c4-a91d-8d318a865602",
+    "text": "One (1) 1TB Gen4 M.2 NVMe SSD for Processing",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Processing",
+        "start_char": 358,
+        "end_char": 402,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7620e12e-60b6-47b3-90b2-0ba1595bc309",
+    "text": "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
+        "start_char": 405,
+        "end_char": 450,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "96c03cdc-55d5-4e04-951b-4bbb9aa9a4dd",
+    "text": "Eight (8) 1TB SSDs in RAID 5 for Data Storage",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Eight (8) 1TB SSDs in RAID 5 for Data Storage",
+        "start_char": 453,
+        "end_char": 498,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dec50064-61c1-491c-bb54-9864193a4314",
+    "text": "ARC-1883i RAID Card",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "ARC-1883i RAID Card",
+        "start_char": 568,
+        "end_char": 587,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "45bbb299-25b2-431a-a9f0-8e3a3df56118",
+    "text": "One (1) 3.5” Hot Swap Bay for Three (3) Drives",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 3.5” Hot Swap Bay for Three (3) Drives",
+        "start_char": 590,
+        "end_char": 636,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4c8255d3-3986-44e6-83f2-c31eae757b9c",
+    "text": "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 2.5” Hot Swap Bay with Four (4) Removable\nTrays",
+        "start_char": 639,
+        "end_char": 694,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "20cf02a6-5569-4e60-93c2-b8560ecf780b",
+    "text": "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 2.5” Hot Swap Bay with Eight (8) Removable\nTrays",
+        "start_char": 697,
+        "end_char": 753,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b323d259-d39f-45c1-9f1b-1125d35c4af8",
+    "text": "One (1) 10 Port USB 2.0 Hub (USB-A)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 10 Port USB 2.0 Hub (USB-A)",
+        "start_char": 756,
+        "end_char": 791,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "baf9404c-157e-469b-a4f3-179264af5cbd",
+    "text": "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
+        "start_char": 794,
+        "end_char": 841,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d877e11c-df73-4569-ba4e-9b6a7362742f",
+    "text": "One (1) NVIDIA RTX PRO 4000 Blackwell | 24GB\nGDDR7 Graphics Card",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) NVIDIA RTX PRO 4000 Blackwell | 24GB\nGDDR7 Graphics Card",
+        "start_char": 501,
+        "end_char": 565,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "755aae49-900f-4d2f-8d19-ff949a275773",
+    "text": "One (1) 1700 Watt Power Supply Unit",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1700 Watt Power Supply Unit",
+        "start_char": 844,
+        "end_char": 879,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "93d34043-ae4c-434a-aaa4-2f6cd72beaf6",
+    "text": "High End Whisper Quiet Fans throughout the Entire\nSystem (Hydraulic Fluid\nBall Bearing rated at 300,000 hour lifespan)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "High End Whisper Quiet Fans throughout the Entire\nSystem (Hydraulic Fluid\nBall Bearing rated at 300,000 hour lifespan)",
+        "start_char": 882,
+        "end_char": 1000,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0e5887b3-268d-4f1c-9db5-86a993c68e7a",
+    "text": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm)",
+        "start_char": 1099,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "982b9213-9458-4db3-bcb0-7dfcf51da833",
+    "text": "Open 5.25 Bays = 11",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Open 5.25 Bays = 11",
+        "start_char": 1220,
+        "end_char": 1239,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "db4e25af-b351-4433-9ae2-706956e90e43",
+    "text": "Fan size(s) = 120mm",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Fan size(s) = 120mm",
+        "start_char": 1242,
+        "end_char": 1261,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bf21dedc-fe5a-477d-a3c3-c8577741e16b",
+    "text": "PCI Chassis Expansion Slots = 8",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "PCI Chassis Expansion Slots = 8",
+        "start_char": 1264,
+        "end_char": 1295,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "40b727b7-2496-4eff-975b-8f267af20443",
+    "text": "Aluminum Thickness = 0.118 (or 3.00mm)",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Aluminum Thickness = 0.118 (or 3.00mm)",
+        "start_char": 1298,
+        "end_char": 1336,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4441b98d-0a5a-45ce-ac44-f7e0b1477b75",
+    "text": "Finish = Powder Coated Black with Black Appointments",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Finish = Powder Coated Black with Black Appointments",
+        "start_char": 1339,
+        "end_char": 1391,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]
