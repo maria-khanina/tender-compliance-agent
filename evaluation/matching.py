@@ -12,28 +12,28 @@ class SpanRef(BaseModel):
 
 
 class MatchGroup(BaseModel):
-    expected_topic_ids: list[str]
-    actual_node_ids: list[str]
+    true_topic_ids: list[str]
+    predicted_node_ids: list[str]
     shape: str
 
 
 class OverlapEdge(BaseModel):
-    expected_topic_id: str
-    actual_node_id: str
+    true_topic_id: str
+    predicted_node_id: str
     overlap_length: int
 
 
-def _overlap_length(first: SpanRef, second: SpanRef) -> int:
+def overlap_length(first: SpanRef, second: SpanRef) -> int:
     overlap_start = max(first.start_char, second.start_char)
     overlap_end = min(first.end_char, second.end_char)
     return max(0, overlap_end - overlap_start)
 
 
-def _overlap_ratio(expected_span: SpanRef, other_span: SpanRef) -> float:
-    overlap = _overlap_length(expected_span, other_span)
-    expected_length = expected_span.end_char - expected_span.start_char
+def _overlap_ratio(reference_span: SpanRef, other_span: SpanRef) -> float:
+    overlap = overlap_length(reference_span, other_span)
+    reference_length = reference_span.end_char - reference_span.start_char
     other_length = other_span.end_char - other_span.start_char
-    shorter_length = min(expected_length, other_length)
+    shorter_length = min(reference_length, other_length)
     if shorter_length <= 0:
         return 0.0
     return overlap / shorter_length
@@ -63,25 +63,25 @@ def _candidate_indices(
 
 def _record_edge_if_overlapping(
     edges_by_key: dict[tuple[str, str], int],
-    expected_span: SpanRef,
+    reference_span: SpanRef,
     other_span: SpanRef,
     minimum_overlap_ratio: float,
 ) -> None:
-    ratio = _overlap_ratio(expected_span, other_span)
+    ratio = _overlap_ratio(reference_span, other_span)
     if ratio < minimum_overlap_ratio:
         return
-    key = (expected_span.node_id, other_span.node_id)
-    overlap = _overlap_length(expected_span, other_span)
+    key = (reference_span.node_id, other_span.node_id)
+    overlap = overlap_length(reference_span, other_span)
     edges_by_key[key] = max(edges_by_key.get(key, 0), overlap)
 
 
 def _update_edges_for_span(
     edges_by_key: dict[tuple[str, str], int],
-    expected_by_document: dict[str, list[SpanRef]],
+    reference_by_document: dict[str, list[SpanRef]],
     other_span: SpanRef,
     minimum_overlap_ratio: float,
 ) -> None:
-    candidates = expected_by_document.get(other_span.document_path, [])
+    candidates = reference_by_document.get(other_span.document_path, [])
     starts = [candidate.start_char for candidate in candidates]
     ends = [candidate.end_char for candidate in candidates]
     indices = _candidate_indices(
@@ -98,27 +98,27 @@ def _build_overlap_edges(
     edges_by_key: dict[tuple[str, str], int],
 ) -> list[OverlapEdge]:
     edges = []
-    for (expected_topic_id, actual_node_id), overlap_length in (
+    for (true_topic_id, predicted_node_id), overlap_amount in (
         edges_by_key.items()
     ):
         edges.append(OverlapEdge(
-            expected_topic_id=expected_topic_id,
-            actual_node_id=actual_node_id,
-            overlap_length=overlap_length,
+            true_topic_id=true_topic_id,
+            predicted_node_id=predicted_node_id,
+            overlap_length=overlap_amount,
         ))
     return edges
 
 
 def find_overlapping_pairs(
-    expected_spans: list[SpanRef],
+    reference_spans: list[SpanRef],
     other_spans: list[SpanRef],
     minimum_overlap_ratio: float,
 ) -> list[OverlapEdge]:
-    expected_by_document = _group_by_document_sorted(expected_spans)
+    reference_by_document = _group_by_document_sorted(reference_spans)
     edges_by_key: dict[tuple[str, str], int] = {}
     for other_span in other_spans:
         _update_edges_for_span(
-            edges_by_key, expected_by_document, other_span,
+            edges_by_key, reference_by_document, other_span,
             minimum_overlap_ratio,
         )
     return _build_overlap_edges(edges_by_key)
@@ -143,27 +143,27 @@ class _UnionFind:
             self._parent[first_root] = second_root
 
 
-def _classify_matched_shape(expected_count: int, actual_count: int) -> str:
-    if expected_count == 1 and actual_count == 1:
+def _classify_matched_shape(true_count: int, predicted_count: int) -> str:
+    if true_count == 1 and predicted_count == 1:
         return "clean"
-    if expected_count == 1 and actual_count > 1:
+    if true_count == 1 and predicted_count > 1:
         return "over_split"
-    if expected_count > 1 and actual_count == 1:
+    if true_count > 1 and predicted_count == 1:
         return "over_merge"
     return "tangled"
 
 
 def _classify_shape(
-    expected_topic_ids: list[str],
-    actual_node_ids: list[str],
+    true_topic_ids: list[str],
+    predicted_node_ids: list[str],
 ) -> str:
-    expected_count = len(expected_topic_ids)
-    actual_count = len(actual_node_ids)
-    if expected_count == 0:
-        return "unmatched_actual"
-    if actual_count == 0:
-        return "unmatched_expected"
-    return _classify_matched_shape(expected_count, actual_count)
+    true_count = len(true_topic_ids)
+    predicted_count = len(predicted_node_ids)
+    if true_count == 0:
+        return "unmatched_predicted"
+    if predicted_count == 0:
+        return "unmatched_true"
+    return _classify_matched_shape(true_count, predicted_count)
 
 
 def _prefix_ids(node_ids: list[str], prefix: str) -> list[str]:
@@ -196,31 +196,31 @@ def _unprefixed_members(
 
 
 def _build_match_group(prefixed_members: list[str]) -> MatchGroup:
-    expected_topic_ids = _unprefixed_members(prefixed_members, "expected:")
-    actual_node_ids = _unprefixed_members(prefixed_members, "actual:")
-    shape = _classify_shape(expected_topic_ids, actual_node_ids)
+    true_topic_ids = _unprefixed_members(prefixed_members, "true:")
+    predicted_node_ids = _unprefixed_members(prefixed_members, "predicted:")
+    shape = _classify_shape(true_topic_ids, predicted_node_ids)
     return MatchGroup(
-        expected_topic_ids=expected_topic_ids,
-        actual_node_ids=actual_node_ids,
+        true_topic_ids=true_topic_ids,
+        predicted_node_ids=predicted_node_ids,
         shape=shape,
     )
 
 
 def build_match_groups(
-    expected_topic_ids: list[str],
-    actual_node_ids: list[str],
+    true_topic_ids: list[str],
+    predicted_node_ids: list[str],
     edges: list[OverlapEdge],
 ) -> list[MatchGroup]:
-    prefixed_expected = _prefix_ids(expected_topic_ids, "expected:")
-    prefixed_actual = _prefix_ids(actual_node_ids, "actual:")
-    union_find = _UnionFind(prefixed_expected + prefixed_actual)
+    prefixed_true = _prefix_ids(true_topic_ids, "true:")
+    prefixed_predicted = _prefix_ids(predicted_node_ids, "predicted:")
+    union_find = _UnionFind(prefixed_true + prefixed_predicted)
     for edge in edges:
         union_find.union(
-            "expected:" + edge.expected_topic_id,
-            "actual:" + edge.actual_node_id,
+            "true:" + edge.true_topic_id,
+            "predicted:" + edge.predicted_node_id,
         )
     members_by_root = _group_members_by_root(
-        union_find, prefixed_expected + prefixed_actual
+        union_find, prefixed_true + prefixed_predicted
     )
     groups = []
     for members in members_by_root.values():

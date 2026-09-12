@@ -1,0 +1,284 @@
+[
+  {
+    "requirement_id": "small_business_size_standard",
+    "requirement_text": "Must be a small business under NAICS 238990 with a size standard of $19M average annual revenue.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.",
+        "start_char": 2551,
+        "end_char": 2777,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "For purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.",
+        "start_char": 4578,
+        "end_char": 4825,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The application contains conflicting statements regarding the bidder's average annual revenue. In chunk 2, it states that the average annual gross revenue is $12.4 million, which is within the $19 million small business size standard. However, in chunk 3, it states that the average annual revenue for size-standard purposes was $21.8 million, which exceeds the $19 million limit. Because these statements contradict each other, a definitive compliance determination cannot be made."
+  },
+  {
+    "requirement_id": "uei_required",
+    "requirement_text": "Company must obtain and provide a Unique Entity Identifier (UEI).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Unique Entity Identifier (UEI): SRF7X92LM814",
+        "start_char": 604,
+        "end_char": 648,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides its Unique Entity Identifier (UEI) in the Contractor Core Data section of the application, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "no_unpaid_federal_tax_liability",
+    "requirement_text": "Company must not have any unpaid Federal tax liability that has been assessed and for which all remedies have been exhausted (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.",
+        "start_char": 1228,
+        "end_char": 1570,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides the required self-representation under FAR 52.209-11 in their application, certifying that they do not have any unpaid Federal tax liability for which all remedies have been exhausted."
+  },
+  {
+    "requirement_id": "no_recent_felony_conviction",
+    "requirement_text": "Company must not have been convicted of a Federal felony criminal violation within the preceding 24 months (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.",
+        "start_char": 1575,
+        "end_char": 1730,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the company must not have been convicted of a Federal felony criminal violation within the preceding 24 months, which must be attested via self-representation in the application. Excerpt [1] explicitly provides this exact self-representation and attestation, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "price_schedule_complete",
+    "requirement_text": "Offeror must complete the attached Price Schedule in its entirety, unedited except for units/quantities, no alternates.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.",
+        "start_char": 3375,
+        "end_char": 3631,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the Price Schedule must be unedited and that there shall be no alternates. However, the bidder explicitly states in their capabilities statement/project narrative that they intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer, thereby violating the restriction on alternates."
+  },
+  {
+    "requirement_id": "price_schedule_must_not_be_edited",
+    "requirement_text": "The Price Schedule template must not be edited except to add units of measure/quantities; if changes are needed, an addendum explaining them must be provided alongside the unedited schedule.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts show that the bidder submitted a Price Schedule, but they do not contain the original Price Schedule template or information indicating whether the template was modified or whether an explanatory addendum was required and provided."
+  },
+  {
+    "requirement_id": "or_equal_product_documentation",
+    "requirement_text": "If quoting an \"or equal\" item, must submit detailed product specification/literature confirming comparability.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.",
+        "start_char": 3375,
+        "end_char": 3631,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder states an intent to use an equivalent alternate manufacturer for handrail hardware (\"or equal\" item), but the required detailed product specification or literature confirming comparability was not submitted or mentioned as included."
+  },
+  {
+    "requirement_id": "capabilities_statement_required",
+    "requirement_text": "Must provide a detailed capabilities statement or project narrative demonstrating how the company will successfully meet the needs of the statement of work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.",
+        "start_char": 2779,
+        "end_char": 3373,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides a detailed capabilities statement and project narrative outlining their specialization in fabricating and synthesizing handrail systems, their capability to perform site measurement, custom shop fabrication, on-site installation, and mobilization as required by the statement of work."
+  },
+  {
+    "requirement_id": "shop_drawings_and_product_data_required",
+    "requirement_text": "Must include all required shop drawings and product data as part of the technical submission.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.",
+        "start_char": 3251,
+        "end_char": 3373,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the submission must include all required shop drawings and product data as part of the technical submission. The bidder explicitly confirms in their Capabilities Statement / Project Narrative that shop drawings and product data sheets are included as Attachment A to the quote package, thus satisfying the requirement."
+  },
+  {
+    "requirement_id": "prior_experience_count",
+    "requirement_text": "Must provide at least 3 prior experience references for projects similar in size and scope, completed within the past 5 years.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
+        "start_char": 3946,
+        "end_char": 4407,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "PRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 3633,
+        "end_char": 3944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the bidder must provide at least 3 prior experience references for similar projects completed within the past 5 years. While the bidder provided detailed references for project 1 (Isle Royale National Park, 2023) and project 2 (City of Marquette, 2022), the third mention is a vague statement referring generally to \"various municipal handrail and railing projects\" without specific details, dates, or contact information. Therefore, only two valid prior experience references are provided, failing to meet the minimum requirement of 3."
+  },
+  {
+    "requirement_id": "prior_experience_poc_required",
+    "requirement_text": "Each prior experience reference must include a project description and point-of-contact information.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 3662,
+        "end_char": 3944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided prior experience references that each include both a detailed project description and complete point-of-contact information, thereby fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "amendment_acknowledgment_if_posted",
+    "requirement_text": "If SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and provide it with the final quote/proposal package.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
+        "start_char": 291,
+        "end_char": 516,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that if SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and providing it with the final quote. The provided excerpts do not contain any information regarding whether SAM.gov posted an amendment for this solicitation, nor whether an SF30 was signed and included."
+  },
+  {
+    "requirement_id": "contractor_core_data",
+    "requirement_text": "Must provide contractor core data: company name, Cage Code / UEI, point of contact, and POC email/phone.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "CONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
+        "start_char": 518,
+        "end_char": 766,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides all required contractor core data elements: company name (Superior Rail & Fabrication, LLC), Cage Code (7RTK9), UEI (SRF7X92LM814), point of contact (John Castellano, Project Manager), and POC email/phone (j.castellano@superiorrailfab.com / (231) 555-0142)."
+  },
+  {
+    "requirement_id": "final_offer_total_no_alternates",
+    "requirement_text": "Must provide a single final offer total, as this is the price that will be evaluated; alternate quotes/proposals will not be accepted.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides a single price schedule containing a clear final offer total of $58,750.00 with no alternate quotes or proposals included, thereby satisfying the requirement."
+  }
+]

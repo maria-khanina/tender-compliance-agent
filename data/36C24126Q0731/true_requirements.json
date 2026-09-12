@@ -1,0 +1,392 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks the tender.txt offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "Exhaustive over bidder-facing, pre-award requirements in tender.txt: both text-verifiable ones (is_text_verifiable: true) and ones that describe an eligibility fact or a submission process rather than application content (is_text_verifiable: false).",
+    "No excluded_clauses list: text that is not a bidder requirement at all (SD/VOSB/VOSB clause definitions, market-research and brand-name-justification narrative, evaluation-factor boilerplate) is simply absent here.",
+    "single_best_price_quote is is_mandatory: false because the solicitation uses \"requested\", not \"must\", for this item.",
+    "is_text_verifiable is true only when the tender itself instructs the bidder to write/represent something specific in their submission (a checkbox, a required statement, a document to attach). sam_registration_required, sdvosb_certification_required, and los_requirements_met are false: the tender states plain eligibility/performance facts (SAM registration, VIP/VetCert listing, actually meeting the LOS subcontracting limits) with no instruction to represent them in the quote text -- unlike los_compliance_assertion (explicit instruction to assert compliance in the email) or far_52_212_3_reps_and_certs (an explicit required document).",
+    "los_requirements_met and los_compliance_assertion are two separate topics from one tender sentence pair: the first ('Offeror must meet LOS requirements') is a substantive fact application text cannot verify; the second ('Compliance... must be asserted... in the email') is a checkable procedural instruction -- whether the email contains such an assertion at all.",
+    "eft_indicator_if_applicable and quote_signed_and_dated were added after auditing a real run's unexplained predicted requirements against tender.txt directly -- both are genuine bidder-facing content the earlier 14-topic list missed. Most of the other unexplained predictions from that audit are either SD/VOSB or LOS clause-definition/evaluation-factor boilerplate (correctly out of scope, matching the exclusion rule above) or restatements of an existing topic anchored elsewhere in tender.txt (a genuine dedup/matching miss, not a fixture gap) -- notably the '(c) Period for acceptance of Quotes' clause, which is marked 'N/A (Not Applicable)' for this solicitation right after its boilerplate text, so it is correctly out of scope too.",
+    "tender.txt was extracted from the source .docx with python-docx; non-breaking spaces (U+00A0) were normalized to regular spaces so citation offsets line up with plain-text extraction.",
+    "quote_content_minimum_elements was split into 7 topics (solicitation_number_stated, time_specified_for_receipt_stated, quoter_contact_info_stated, technical_description_stated, warranty_terms_stated, price_and_discount_terms_stated, remit_to_address_stated): each item has independent pass/fail meaning (a quote could state the solicitation number but omit the technical description), unlike a single indivisible form."
+  ],
+  "requirements": [
+    {
+      "topic_id": "sam_registration_required",
+      "description": "Offeror must be registered in the System for Award Management (SAM).",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be registered in SAM.",
+        "spans": [
+          {
+            "start_char": 4468,
+            "end_char": 4502
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_certification_required",
+      "description": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert as an SD/VOSB.",
+        "spans": [
+          {
+            "start_char": 4503,
+            "end_char": 4621
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "los_requirements_met",
+      "description": "Offeror must actually meet the Limitations on Subcontracting (LOS) requirements in the LOS clauses.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must meet LOS (Limitations on Subcontracting) requirements and per the LOS listed clauses below.",
+        "spans": [
+          {
+            "start_char": 4622,
+            "end_char": 4726
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "los_compliance_assertion",
+      "description": "Offeror must assert compliance with the LOS clauses in the email accompanying the quote.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Compliance with the LOS clauses must be asserted by the offeror in the email accompanying their quote.",
+        "spans": [
+          {
+            "start_char": 4727,
+            "end_char": 4829
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "uei_provided_on_quote",
+      "description": "Quoter must enter its Unique Entity Identifier (UEI), annotated as such, in the name-and-address block on the cover page of the quote.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation \"Unique Entity Identifier\" followed by the unique entity identifier that identifies the quoter's name and address.",
+        "spans": [
+          {
+            "start_char": 11259,
+            "end_char": 11482
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "eft_indicator_if_applicable",
+      "description": "If applicable, the quoter must also enter its Electronic Funds Transfer (EFT) indicator in the name-and-address block on the cover page of the quote.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+        "spans": [
+          {
+            "start_char": 11483,
+            "end_char": 11571
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_signed_and_dated",
+      "description": "The quote submitted to the government office must be signed and dated.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Submit signed and dated quotes to the office specified in this Combined Synopsis: Intent to Compete/RFQ",
+        "spans": [
+          {
+            "start_char": 6657,
+            "end_char": 6760
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "uei_must_be_preexisting",
+      "description": "The UEI must already exist in SAM at the time of competition, not be newly registered during the solicitation period.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Due to the requirement falling in the 4th Quarter of FY26, this competition will require an existing SAM UEI.",
+        "spans": [
+          {
+            "start_char": 11808,
+            "end_char": 11917
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "The quote must show the solicitation number.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(1) The solicitation number;",
+        "spans": [
+          {
+            "start_char": 6931,
+            "end_char": 6959
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "time_specified_for_receipt_stated",
+      "description": "The quote must show the time specified in the solicitation for receipt of quotations.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(2) The time specified in the solicitation for receipt of quotations;",
+        "spans": [
+          {
+            "start_char": 6960,
+            "end_char": 7029
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quoter_contact_info_stated",
+      "description": "The quote must show the name, address, and telephone number of the quoter.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(3) The name, address, and telephone number of the quoter;",
+        "spans": [
+          {
+            "start_char": 7030,
+            "end_char": 7088
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_description_stated",
+      "description": "The quote must show a technical description of the items being quoted in sufficient detail to evaluate compliance with the solicitation's requirements.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation. This may include product literature, or \n     other documents, if necessary.",
+        "spans": [
+          {
+            "start_char": 7089,
+            "end_char": 7311
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "warranty_terms_stated",
+      "description": "The quote must show the terms of any express warranty.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(5) Terms of any express warranty;",
+        "spans": [
+          {
+            "start_char": 7313,
+            "end_char": 7347
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_and_discount_terms_stated",
+      "description": "The quote must show price and any discount terms.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(6) Price and any discount terms;",
+        "spans": [
+          {
+            "start_char": 7349,
+            "end_char": 7382
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "remit_to_address_stated",
+      "description": "The quote must show a remit-to address, if different from the mailing address.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(7) \"Remit to\" address, if different from the mailing address;",
+        "spans": [
+          {
+            "start_char": 7384,
+            "end_char": 7446
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of the representations and certifications under FAR 52.212-3.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(8) A completed copy of the representations and certifications under the \nFederal Acquisition Regulation (FAR) 52.212-3 (see FAR 52.212-3(b) for those representations and certifications that the quoter shall complete electronically).",
+        "spans": [
+          {
+            "start_char": 7452,
+            "end_char": 7685
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "Quote must acknowledge receipt of amendments to the request for quotation.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(9) Acknowledgment Request for Quotation amendments;",
+        "spans": [
+          {
+            "start_char": 7691,
+            "end_char": 7743
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "terms_and_conditions_acceptance_statement",
+      "description": "Quote must include one of the two prescribed statements about the solicitation's terms and conditions -- full acceptance without modification, or acceptance with listed exceptions and their rationale.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "To facilitate the award process, all quotes must include a statement regarding the terms and conditions herein as follows:\n\"The terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition.\"\nOR\n\"The terms and conditions in the solicitation are acceptable to be included in the award document with the exception, deletion, or addition of the following:\"\n \nQuoters shall list exception(s) and rationale for the exception(s), if any.",
+        "spans": [
+          {
+            "start_char": 12067,
+            "end_char": 12573
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "product_chart_full_pricing",
+      "description": "Quote must enter pricing for every line item listed in the Product Chart.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Pricing shall be entered for each line item as listed in the PRODUCT CHART above.",
+        "spans": [
+          {
+            "start_char": 4089,
+            "end_char": 4170
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "brand_name_no_substitutes",
+      "description": "Quote must be for the Sorna Vertex 25ei Platform/CD Burner by brand name; no substitute or equivalent products may be offered.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quotations shall be brand name for the for Sorna Vertex 25ei & CD Burner listed in the Product Chart above and as described in detail in the combined synopsis solicitation, Intent to Compete/ RFQ as posted on Contract Opportunities starting on Page 1 (P1). ... No substitutions can be considered.",
+        "spans": [
+          {
+            "start_char": 2948,
+            "end_char": 3208
+          },
+          {
+            "start_char": 3617,
+            "end_char": 3652
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "shipping_cost_handling",
+      "description": "If shipping does not reach $250.00, its cost must be rolled into the Vertex 25ei/CD Burner line-item price rather than billed separately.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "If shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner line-item pricing.",
+        "spans": [
+          {
+            "start_char": 4173,
+            "end_char": 4327
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "single_best_price_quote",
+      "description": "Quoters are requested to submit one quote presenting their best price, rather than multiple alternative quotes.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(e) Multiple Quotes. Quoters are requested to submit one (1) quote presenting their best price for the required Sorna Vertex 25ei & CD Burner.",
+        "spans": [
+          {
+            "start_char": 8468,
+            "end_char": 8610
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 11:00 AM EDT on 09/18/26.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "All quotations shall be emailed to:\tcarlos.ortiz3@va.gov ... E-mailed quotes will be accepted. Submission shall be received no later than 11:00 AM EDT 09/18/26.",
+        "spans": [
+          {
+            "start_char": 12709,
+            "end_char": 12765
+          },
+          {
+            "start_char": 14086,
+            "end_char": 14185
+          }
+        ]
+      }
+    }
+  ]
+}

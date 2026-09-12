@@ -14,6 +14,11 @@ class DocumentSource(str, Enum):
     APPLICATION = "application"
 
 
+class DocumentInput(BaseModel):
+    path: str
+    text: str
+
+
 class Chunk(BaseModel):
     document_source: DocumentSource
     document_path: str
@@ -30,6 +35,7 @@ class TextSpan(BaseModel):
     end_char: int | None
     citation_verified: bool
     match_precision: MatchPrecision | None = None
+    used_for_matching: bool = True
 
 
 class EvidenceRole(str, Enum):

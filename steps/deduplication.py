@@ -1,5 +1,6 @@
 from collections import defaultdict
 import itertools
+import uuid
 
 import numpy as np
 from pydantic import BaseModel
@@ -126,10 +127,8 @@ def _resolve_group(
     for member_position in group.member_indices:
         group_draft_indices.append(cluster_indices[member_position])
     merged_citations = _merge_citations(drafts, group_draft_indices)
-    representative_index = group_draft_indices[0]
-    representative_id = drafts[representative_index].requirement_id
     return RequirementDraft(
-        requirement_id=representative_id,
+        requirement_id=str(uuid.uuid4()),
         text=group.canonical_text,
         is_mandatory=group.is_mandatory,
         is_text_verifiable=group.is_text_verifiable,
@@ -159,6 +158,17 @@ def _resolve_cluster(
     return resolved_drafts
 
 
+def _embedding_text(draft: RequirementDraft) -> str:
+    matching_quotes = [
+        citation.quote
+        for citation in draft.citations
+        if citation.used_for_matching
+    ]
+    if not matching_quotes:
+        return draft.text
+    return " ".join(matching_quotes)
+
+
 def deduplicate_requirements(
     drafts: list[RequirementDraft],
     similarity_threshold: float = (
@@ -167,7 +177,7 @@ def deduplicate_requirements(
 ) -> list[RequirementDraft]:
     if not drafts:
         return []
-    draft_texts = [draft.text for draft in drafts]
+    draft_texts = [_embedding_text(draft) for draft in drafts]
     embedding_vectors = embed_texts(draft_texts)
     clusters = _cluster_by_similarity(embedding_vectors, similarity_threshold)
     deduplicated_drafts = []

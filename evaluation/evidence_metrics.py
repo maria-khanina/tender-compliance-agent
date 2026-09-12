@@ -42,22 +42,22 @@ def compute_evidence_citation_verified_rate(
 
 
 def _missed_topic_ids(
-    expected_topic_ids: list[str],
+    true_topic_ids: list[str],
     matched_topic_ids: set[str],
 ) -> list[str]:
     missed = []
-    for topic_id in expected_topic_ids:
+    for topic_id in true_topic_ids:
         if topic_id not in matched_topic_ids:
             missed.append(topic_id)
     return missed
 
 
 def compute_evidence_recall(
-    expected_topic_ids: list[str],
+    true_topic_ids: list[str],
     matched_topic_ids: set[str],
 ) -> EvidenceRecallResult:
-    missed = _missed_topic_ids(expected_topic_ids, matched_topic_ids)
-    total = len(expected_topic_ids)
+    missed = _missed_topic_ids(true_topic_ids, matched_topic_ids)
+    total = len(true_topic_ids)
     matched_count = total - len(missed)
     recall = _safe_ratio(matched_count, total)
     return EvidenceRecallResult(

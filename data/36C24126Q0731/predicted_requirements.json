@@ -1,0 +1,893 @@
+[
+  {
+    "requirement_id": "c87a800c-c1a0-4b57-96db-e54fbca82e43",
+    "text": "Quotes must be submitted via email, signed and dated, on letterhead stationery or with best and final price, to the specified office or Government POC at or before the exact time and date specified.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quotes will be submitted via email.",
+        "start_char": 1891,
+        "end_char": 1930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(b) Submission of Quotes. Submit signed and dated quotes to the office specified in this Combined Synopsis: Intent to Compete/RFQ at or before the exact time specified.",
+        "start_char": 6631,
+        "end_char": 6799,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Quotes may be submitted via email on letterhead stationery, or as otherwise specified in the RFQ.",
+        "start_char": 6800,
+        "end_char": 6897,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "All quotations shall be emailed to:\tcarlos.ortiz3@va.gov",
+        "start_char": 12709,
+        "end_char": 12765,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d78f48d4-b837-4fa9-810d-17a7c3e1a8da",
+    "text": "As a minimum, quotes must show the solicitation number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(1) The solicitation number;",
+        "start_char": 6931,
+        "end_char": 6959,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f7289a6d-baac-4866-b0a6-93b01ded9b4f",
+    "text": "As a minimum, quotes must show the time specified in the solicitation for receipt of quotations.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(2) The time specified in the solicitation for receipt of quotations;",
+        "start_char": 6960,
+        "end_char": 7029,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "07b05349-b510-41c9-8657-089b07840fce",
+    "text": "Delivery (Must be <$250.00) *",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Delivery (Must be <$250.00) *",
+        "start_char": 2852,
+        "end_char": 2881,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d82b4485-f86e-4fb5-b05f-adc4407caaba",
+    "text": "The quotation must be for brand name Sorna Vertex 25ei & CD Burner products as specified in the Product Chart and Statement of Work (SOW) in the combined synopsis solicitation, Intent to Compete/RFQ.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quotations shall be brand name for the for Sorna Vertex 25ei & CD Burner listed in the Product Chart above and as described in detail in the combined synopsis solicitation, Intent to Compete/ RFQ as posted on Contract Opportunities starting on Page 1 (P1).",
+        "start_char": 2948,
+        "end_char": 3208,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Capability to provide all required Sorna Vertex 25ei & CD Burner products in accordance with the Statement of Work (SOW)(P13).",
+        "start_char": 5290,
+        "end_char": 5416,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cba8ccfe-1239-4736-bae7-a09b45e2a684",
+    "text": "Pricing shall be entered for each line item as listed in the PRODUCT CHART above.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Pricing shall be entered for each line item as listed in the PRODUCT CHART above.",
+        "start_char": 4089,
+        "end_char": 4170,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fa8b1cb0-e081-420d-a4a6-ab29b1844306",
+    "text": "If shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner line-item pricing.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "If shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner line-item pricing.",
+        "start_char": 4173,
+        "end_char": 4327,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "76c7df8c-a835-47cc-a046-e0f4a18ab107",
+    "text": "Offeror must be registered in SAM.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be registered in SAM.",
+        "start_char": 4468,
+        "end_char": 4502,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c2254779-a1fd-4d80-8607-75bfa2a2b68c",
+    "text": "Offeror must be certified and verified as an SD/VOSB in the SBA SBS VIP VetCert database and meet all eligibility requirements at the time of submission and award.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert as an SD/VOSB.",
+        "start_char": 4503,
+        "end_char": 4621,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "All SD/VOSB eligibility requirements must be met for quotes to be considered.",
+        "start_char": 10387,
+        "end_char": 10464,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any award resulting from this solicitation shall be made to a VIP-listed SDVOSB who is eligible at the time of submission of offer(s) and at the time of award.",
+        "start_char": 17035,
+        "end_char": 17194,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "28de6a12-6b40-4da3-99d0-3e5f3952c053",
+    "text": "By submitting an offer, the prospective contractor represents that it is an eligible SDVOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "By submitting an offer, the prospective contractor represents that it is an eligible SDVOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+        "start_char": 17570,
+        "end_char": 17729,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f9a2a1b4-9d83-4f50-94e0-8597b793aff1",
+    "text": "An SDVOSB or VOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "An SDVOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+        "start_char": 20809,
+        "end_char": 20938,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A VOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+        "start_char": 29035,
+        "end_char": 29161,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "525d6599-03db-410d-961a-291013e77aec",
+    "text": "Any work that a first tier VIP-listed SDVOSB or VOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any work that a first tier VIP-listed SDVOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
+        "start_char": 20939,
+        "end_char": 21096,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any work that a first tier VIP-listed VOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
+        "start_char": 29162,
+        "end_char": 29317,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a7e551fd-2dd7-485c-bb7d-4bc3cbca03f9",
+    "text": "A joint venture may be considered eligible as an SDVOSB or VOSB if the joint venture is listed in VIP and complies with the requirements in 13 CFR 125.18(b).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A joint venture may be considered eligible as an SDVOSB if the joint venture is listed in VIP and complies with the requirements in 13 CFR 125.18(b), provided that any requirement therein that applies to an SDVO SBC is to be construed to apply to a VIP-listed SDVOSB.",
+        "start_char": 21897,
+        "end_char": 22164,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A joint venture may be considered eligible as a VOSB if the joint venture is listed in VIP and complies with the requirements in 13 CFR 125.18(b), provided that any requirement therein that applies to an SDVO SBC is to be construed to also apply to a VIP-listed VOSB.",
+        "start_char": 30115,
+        "end_char": 30382,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "200de0a3-f84a-4a08-ab43-a778345e68a4",
+    "text": "By submitting an offer, the prospective contractor represents that it is an eligible VOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "By submitting an offer, the prospective contractor represents that it is an eligible VOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+        "start_char": 25829,
+        "end_char": 25986,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "04976f12-cb52-4091-8ca3-c753ab220048",
+    "text": "Offeror must meet Limitations on Subcontracting (LOS) requirements per the listed clauses and assert compliance in the email accompanying their quote.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must meet LOS (Limitations on Subcontracting) requirements and per the LOS listed clauses below.",
+        "start_char": 4622,
+        "end_char": 4726,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Compliance with the LOS clauses must be asserted by the offeror in the email accompanying their quote.",
+        "start_char": 4727,
+        "end_char": 4829,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d50d202b-e3fa-4742-bc82-3367dc496e26",
+    "text": "As a minimum, quotes must show— ... (3) The name, address, and telephone number of the quoter;",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(3) The name, address, and telephone number of the quoter;",
+        "start_char": 7030,
+        "end_char": 7088,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ff3e3dbf-7993-4dfb-9374-9fa6b1aadf34",
+    "text": "As a minimum, quotes must show— ... (4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation. This may include product literature, or \n     other documents, if necessary.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation. This may include product literature, or \n     other documents, if necessary.",
+        "start_char": 7089,
+        "end_char": 7311,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0dfec19d-b645-415e-85b5-eebafb54df2d",
+    "text": "As a minimum, quotes must show— ... (5) Terms of any express warranty;",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(5) Terms of any express warranty;",
+        "start_char": 7313,
+        "end_char": 7347,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "96f63f2a-dfcd-47d3-8e8b-d6133e6fc26b",
+    "text": "As a minimum, quotes must show— ... (6) Price and any discount terms;",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(6) Price and any discount terms;",
+        "start_char": 7349,
+        "end_char": 7382,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "848f9979-189f-4bf2-ad44-d71aec7d2943",
+    "text": "As a minimum, quotes must show— ... (7) \"Remit to\" address, if different from the mailing address;",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(7) \"Remit to\" address, if different from the mailing address;",
+        "start_char": 7384,
+        "end_char": 7446,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "94e19c85-ff96-491a-9710-ba0978c40b1f",
+    "text": "As a minimum, quotes must show— ... (8) A completed copy of the representations and certifications under the \nFederal Acquisition Regulation (FAR) 52.212-3 (see FAR 52.212-3(b) for those representations and certifications that the quoter shall complete electronically).",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(8) A completed copy of the representations and certifications under the \nFederal Acquisition Regulation (FAR) 52.212-3 (see FAR 52.212-3(b) for those representations and certifications that the quoter shall complete electronically).",
+        "start_char": 7452,
+        "end_char": 7685,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7be7631b-a987-43c1-82d6-7abef2860484",
+    "text": "As a minimum, quotes must show— ... (9) Acknowledgment Request for Quotation amendments;",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(9) Acknowledgment Request for Quotation amendments;",
+        "start_char": 7691,
+        "end_char": 7743,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "569258d6-1fac-4198-bde4-2377ca7b9092",
+    "text": "The quote must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation, either stating they are acceptable without modification or detailing any exceptions, deletions, or additions.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(11) Quote should include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation.",
+        "start_char": 7835,
+        "end_char": 7980,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "all quotes must include a statement regarding the terms and conditions herein as follows:\n\"The terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition.\"\nOR\n\"The terms and conditions in the solicitation are acceptable to be included in the award document with the exception, deletion, or addition of the following:\"",
+        "start_char": 12100,
+        "end_char": 12495,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a84214a1-5a44-4121-9947-07d70bad803a",
+    "text": "The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes unless another time period is specified in an addendum to the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes unless another time period is specified in an addendum to the solicitation.",
+        "start_char": 8221,
+        "end_char": 8418,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fa21b6e2-42a3-4a7d-92f9-ccb3762caec5",
+    "text": "The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation \"Unique Entity Identifier\" followed by the unique entity identifier that identifies the quoter's name and address.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation \"Unique Entity Identifier\" followed by the unique entity identifier that identifies the quoter's name and address.",
+        "start_char": 11259,
+        "end_char": 11482,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "561b185d-5710-4807-a1df-168960fcf5ed",
+    "text": "The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+        "start_char": 11483,
+        "end_char": 11571,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6a28a000-1bbc-47d1-b744-26d7084623a1",
+    "text": "Quoters shall list exception(s) and rationale for the exception(s), if any.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Quoters shall list exception(s) and rationale for the exception(s), if any.",
+        "start_char": 12498,
+        "end_char": 12573,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "57c8b36a-0363-4f58-adbf-710643696229",
+    "text": "Submission shall be received no later than 11:00 AM EDT 09/18/26.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Submission shall be received no later than 11:00 AM EDT 09/18/26.",
+        "start_char": 14120,
+        "end_char": 14185,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a1347e32-661e-4253-9592-658ad1264afb",
+    "text": "The business has been verified for ownership and control pursuant to 38 CFR part 74 and is listed in VA's Vendor Information Pages (VIP) database at https://www.vetbiz.va.gov/vip/; and",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business has been verified for ownership and control pursuant to 38 CFR part 74 and is listed in VA's Vendor Information Pages (VIP) database at https://www.vetbiz.va.gov/vip/; and",
+        "start_char": 15555,
+        "end_char": 15739,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b6269986-b187-447f-9614-e331c18c2fd6",
+    "text": "Offers received from entities that are not VIP-listed SDVOSBs at the time of offer shall not be considered.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers received from entities that are not VIP-listed SDVOSBs at the time of offer shall not be considered.",
+        "start_char": 16923,
+        "end_char": 17030,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers received from entities that are not VIP-listed at the time of offer shall not be considered.",
+        "start_char": 25196,
+        "end_char": 25295,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0e47a629-6377-4360-a9cb-e92537409e5b",
+    "text": "No more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed SDVOSBs.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed SDVOSBs.",
+        "start_char": 20609,
+        "end_char": 20788,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e03aa35b-65ac-4c18-8e39-54ca9ddb4689",
+    "text": "For supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "For supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted.",
+        "start_char": 21097,
+        "end_char": 21208,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c8014a09-df8f-44b6-b822-1c731a7640da",
+    "text": "In the case of a contract for supplies or products (other than from a non-manufacturer of such supplies), the VOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for supplies or products (other than from a non-manufacturer of such supplies), the VOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+        "start_char": 27682,
+        "end_char": 27989,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7b444aa6-52fe-4f12-9772-9b25f1080a81",
+    "text": "In the case of a contract for supplies from a non-manufacturer, the VOSB prime contractor will supply the product of a domestic small business manufacturer or processor, unless a waiver as described in 13 CFR 121.406(b)(5) has been granted.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for supplies from a non-manufacturer, the VOSB prime contractor will supply the product of a domestic small business manufacturer or processor, unless a waiver as described in 13 CFR 121.406(b)(5) has been granted.",
+        "start_char": 28128,
+        "end_char": 28368,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "342fcecd-d251-4cd7-b458-cc7bd0f4ebc7",
+    "text": "In the case of a contract for general construction, the VOSB prime contractor will not pay more than 85% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for general construction, the VOSB prime contractor will not pay more than 85% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+        "start_char": 28482,
+        "end_char": 28735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "176f84f1-647a-44a3-8949-8bc2753a2562",
+    "text": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+        "start_char": 28780,
+        "end_char": 29014,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+        "start_char": 28780,
+        "end_char": 29014,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4a8dd950-0366-49ed-adb1-762c0410b722",
+    "text": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+        "start_char": 21209,
+        "end_char": 21417,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+        "start_char": 29430,
+        "end_char": 29638,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e272c2bd-eb89-4e44-a889-33d444ea79c6",
+    "text": "A joint venture agrees that, in the performance of the contract, the applicable percentage specified in paragraph (d) of this clause will be performed by the aggregate of the joint venture participants.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A joint venture agrees that, in the performance of the contract, the applicable percentage specified in paragraph (d) of this clause will be performed by the aggregate of the joint venture participants.",
+        "start_char": 22165,
+        "end_char": 22367,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]
