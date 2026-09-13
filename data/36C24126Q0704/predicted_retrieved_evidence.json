@@ -1,6 +1,6 @@
 [
   {
-    "requirement_id": "8af7fa24-9eb1-4f0e-b620-26cd9153aa9e",
+    "requirement_id": "4972e12c-edb0-427c-bda0-0bb0e1525b25",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "requirement_id": "c71c57e5-9133-4ff8-9a7c-a10642ab7b2a",
+    "requirement_id": "5176715a-20c4-4d94-a92b-3c440e8b134a",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "requirement_id": "3d04f514-5024-466c-b99c-f68a5729d159",
+    "requirement_id": "fccabca2-9964-4ae1-ba67-435757360239",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -63,7 +63,7 @@
     ]
   },
   {
-    "requirement_id": "47f8ca48-0b0e-49fa-9e85-b08be0fdc22f",
+    "requirement_id": "6a8fa94c-83bc-443a-9b98-1527d353ccee",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "requirement_id": "bd828a58-73a7-422f-83bc-d2ad1723212b",
+    "requirement_id": "4c95a251-c2d3-4c85-8b81-a4904b7e6389",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -105,7 +105,7 @@
     ]
   },
   {
-    "requirement_id": "f7fd27b1-05e8-4f7e-8988-28c3e3ac0bec",
+    "requirement_id": "dcdc1834-959d-4d4e-9e60-8121b7ac9d77",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "requirement_id": "2eaffdda-fd3a-40a5-90cf-01c9204b2c36",
+    "requirement_id": "63322b1f-1557-41a6-b2ea-8ec0036595af",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "requirement_id": "b3008047-4777-4fed-a4e4-201d838ed97d",
+    "requirement_id": "fdafb8fc-fa6a-45e9-a135-e952a6881f0d",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "requirement_id": "cd5c2c30-4dd3-4000-8ef7-e2cc960888fa",
+    "requirement_id": "2ba9c5b3-df76-48b6-a36b-8efe4f41c7cc",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -189,7 +189,7 @@
     ]
   },
   {
-    "requirement_id": "ac6cbd5b-9c1b-4110-ab23-6a9d627ae3af",
+    "requirement_id": "cc71d53f-2259-4ab1-be4b-678e02397851",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "requirement_id": "9a0a86e5-bf76-4242-8dc0-7e3946b55612",
+    "requirement_id": "0cf7e847-68be-4e89-b818-4b60a664ef1a",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -231,7 +231,7 @@
     ]
   },
   {
-    "requirement_id": "1c4776d4-8685-41cb-aa39-1c34d7b50708",
+    "requirement_id": "333ce859-aa17-4ff6-b8c1-f40b22c094a8",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "requirement_id": "b05cbb64-28c4-4aaf-8e6c-9c3de1646fe1",
+    "requirement_id": "a1d44066-16cc-4e2c-a76f-9fb11838d601",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -273,7 +273,7 @@
     ]
   },
   {
-    "requirement_id": "90ac395a-088b-454c-93f4-799f65ea2a7b",
+    "requirement_id": "406de8eb-5159-45c9-a0e5-352d42eecf2b",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -294,7 +294,7 @@
     ]
   },
   {
-    "requirement_id": "8293d996-f740-4539-919b-c8b1a034bc3f",
+    "requirement_id": "d72d816a-c7d1-4742-a1cf-b419424d38d4",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -315,28 +315,7 @@
     ]
   },
   {
-    "requirement_id": "98a02e22-2b5f-47f5-9178-6ad648577b57",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      }
-    ]
-  },
-  {
-    "requirement_id": "167ab4e9-4b9e-4efd-b6dd-842955013c0c",
+    "requirement_id": "54966055-27a0-4beb-ba98-0769422b98e9",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -357,7 +336,7 @@
     ]
   },
   {
-    "requirement_id": "9622ecc7-561a-4dec-9c52-28806bb73f19",
+    "requirement_id": "29b0c241-825a-4149-82eb-f7d6e753ab0c",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -378,7 +357,7 @@
     ]
   },
   {
-    "requirement_id": "d31ff917-fe45-41ce-aed7-82d9fbe552f2",
+    "requirement_id": "5ef9b5ef-d583-4033-a695-148d8226af46",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -399,175 +378,7 @@
     ]
   },
   {
-    "requirement_id": "52c74055-1a72-4874-ac4d-f5bbe6e550e1",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "b91fd6d3-2e1e-45ed-8878-ec969c40a774",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "faea2590-7419-4093-bd82-2081dc2fe855",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "66358425-28c8-4763-8c5b-31c449fa64bb",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "44d4f754-c19b-4a71-a4ed-2a2d900a0520",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "29d290cd-ecda-4f67-825a-cf2569a9a5ad",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "9e5958de-bf63-4738-9d2f-1344d619a95b",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "c75d6b21-f016-4fdb-a203-2929ec7067fa",
-    "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 1,
-        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
-        "start_char": 1309,
-        "end_char": 2500
-      },
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      }
-    ]
-  },
-  {
-    "requirement_id": "7e613d76-09cc-467a-90fc-84090148109c",
+    "requirement_id": "7ad51b77-533a-458c-a74e-cd9815ee7e63",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -588,7 +399,7 @@
     ]
   },
   {
-    "requirement_id": "96d7109b-35ce-4e7f-8521-6212925a1cc2",
+    "requirement_id": "6bd843a4-fda8-44d7-bce1-296ac690b4b2",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -609,7 +420,28 @@
     ]
   },
   {
-    "requirement_id": "0dc52f44-1c2b-4fc2-b4b1-f51898de68ab",
+    "requirement_id": "fd2f3822-c18a-4d9e-8071-c9aa95fb152f",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "d063ab4d-230e-48bc-b039-59e80cd277fb",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -630,7 +462,49 @@
     ]
   },
   {
-    "requirement_id": "0014b3ec-7bbb-4b79-b119-7357fe5b8a1c",
+    "requirement_id": "9f93e178-2c98-4ef3-920a-5bd0771c5899",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "9bcd3a1c-18fc-42a5-baa9-b5b7af348096",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "ccddb8e9-2b86-43e3-bc02-5cf2e79facb0",
     "evidence_chunks": [
       {
         "document_source": "application",
@@ -651,16 +525,8 @@
     ]
   },
   {
-    "requirement_id": "7743149b-fb70-4324-a601-7c4aded3bcb4",
+    "requirement_id": "bc1fa45d-a878-4fea-b5b5-be892a36eecc",
     "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      },
       {
         "document_source": "application",
         "document_path": "data/36C24126Q0704/application.txt",
@@ -668,20 +534,20 @@
         "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
         "start_char": 1309,
         "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
       }
     ]
   },
   {
-    "requirement_id": "a0ce546d-0ca2-4779-9393-b9bcac1d4e36",
+    "requirement_id": "7d5332b8-d322-43a9-a2bc-5ccaf979a30d",
     "evidence_chunks": [
-      {
-        "document_source": "application",
-        "document_path": "data/36C24126Q0704/application.txt",
-        "chunk_index": 0,
-        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
-        "start_char": 0,
-        "end_char": 1307
-      },
       {
         "document_source": "application",
         "document_path": "data/36C24126Q0704/application.txt",
@@ -689,6 +555,224 @@
         "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
         "start_char": 1309,
         "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "e75b4342-5229-4142-b9c4-0431903eb10b",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "1dbc32a3-e0db-4ffd-9921-ff4db2413647",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "195bcae8-6804-44e6-9c83-d78ba10000bf",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "c79d4208-8acc-4730-8ac3-c5de76f3e11f",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "7d78009b-f0c3-4e93-970e-2045a7467191",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "baf5d30e-05a1-43b3-9eac-5d43307c4034",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "bd822b5a-3bec-48d4-845f-d9e1b5aae0c5",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "a1306e9a-0358-4351-9664-5772d0987824",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "feb5fb77-1de4-421c-aab2-5921f4300784",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
+      }
+    ]
+  },
+  {
+    "requirement_id": "579b66c3-e4fc-452d-942e-398184c627cf",
+    "evidence_chunks": [
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 1,
+        "text": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.\n\nKey Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.\n\nSafety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.\n\nPersonnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nKaren Ouellette\nContracts Manager\nGranite State Tank Works, LLC",
+        "start_char": 1309,
+        "end_char": 2500
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/36C24126Q0704/application.txt",
+        "chunk_index": 0,
+        "text": "From: proposals@granitestatetankworks.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance\n\nSolicitation Number: 36C24126Q0704\n\nGranite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148\nUnique Entity Identifier: RT8K4NQ2VF39\n\nGranite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.\n\nGranite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.\n\nPrice Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00\n\nTechnical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 0,
+        "end_char": 1307
       }
     ]
   }

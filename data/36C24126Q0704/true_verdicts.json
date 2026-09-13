@@ -3,7 +3,8 @@
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sdvosb_setaside_eligibility, security_sanctions_representations, and submission_deadline, since all three are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (6 topics), non_compliant across different failure shapes -- a quantity shortfall (2 CPARS entries instead of 3), total omissions (ROV specs, structural-defect evidence, specialized personnel training, tool/ladder safety evidence), and a timing violation (fall protection plan deferred to after submission) -- insufficient_information (a technical submission missing one of three required elements; a safety-procedures section covering only one of three required elements), and one contradictory claim (a technician's OSHA-30 certification stated as both currently held and still in progress).",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "sds_management_procedures broadened to also accept insufficient_information: the applications one-sentence assertion (\"follow standard SDS management procedures\") can reasonably be read either as describing the procedure or as merely asserting compliance without describing what the procedure actually involves."
   ],
   "verdicts": [
     {
@@ -348,7 +349,8 @@
       "topic_id": "sds_management_procedures",
       "description": "Offeror must provide procedures for SDS (Safety Data Sheet) management.",
       "acceptable_verdicts": [
-        "compliant"
+        "compliant",
+        "insufficient_information"
       ],
       "rationale": "Application states technicians follow standard SDS management procedures for all chemicals used on VA sites.",
       "evidence": [

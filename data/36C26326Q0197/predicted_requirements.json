@@ -1,0 +1,1028 @@
+[
+  {
+    "requirement_id": "19de3dba-c35d-4e5f-a838-1696fba98a77",
+    "text": "Offerors shall be registered and active in the System for Award Management (SAM) at the time of offer and possess a Unique Entity Identifier (UEI).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offerors shall be registered and active at System for Award Management (SAM) at time of offer.",
+        "start_char": 334,
+        "end_char": 428,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Quoters must be registered \nin the System for Award Management (SAM) https://www.sam.gov and have a Unique Entity \nIdentification (UEI).",
+        "start_char": 9642,
+        "end_char": 9778,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "014342ae-19b9-413b-a971-9662fe8dddbd",
+    "text": "The contractor must comply with the delivery frequencies specified per delivery location as outlined in Attachment A.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor must comply with the delivery frequencies specified per delivery location as \noutlined in Attachment A.",
+        "start_char": 1449,
+        "end_char": 1567,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "15017677-be88-4fcc-95b6-28746027b1f2",
+    "text": "The Contractor shall have a facility and/or resources physically located in the geographic areas in which they will provide supplies.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The Contractor shall have a facility and/or resources physically \nlocated in the geographic areas in which they will provide supplies.",
+        "start_char": 1568,
+        "end_char": 1702,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "10899e83-f96d-4f17-a92b-5144eb68fe5e",
+    "text": "The contractor’s proposal shall include the cylinder replacement cost for each item listed on Attachment C.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor’s proposal shall include \n the cylinder replacement cost for each item listed on Attachment C.",
+        "start_char": 3152,
+        "end_char": 3261,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "52463513-8348-4974-9e80-a0ba54498ca1",
+    "text": "The contractor shall submit an innovative plan with their proposal for tracking medical gas cylinders being delivered to and from the ordering activity at no additional cost to the Government.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor shall submit an innovative plan with their proposal for tracking medical \n gas cylinders being delivered to and from the ordering activity.",
+        "start_char": 3269,
+        "end_char": 3423,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The cylinder tracking \n plan shall be provided by the contractor with no additional cost to the Government.",
+        "start_char": 3425,
+        "end_char": 3532,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "17b50972-eda0-4dd2-813a-ae5c206ac684",
+    "text": "The cylinder tracking plan shall include, but is not limited to, data entry and extraction methods, data mechanisms, data extraction timing, types of data stored, access limits, network connection technology, and all other items listed under paragraph 5.2.1.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Method used for data entry and extraction (i.e. web-based portal, Microsoft Excel \nspreadsheet, SharePoint, email, etc.);",
+        "start_char": 3880,
+        "end_char": 4001,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Mechanism for data entry (i.e. barcode scanning, handwriting serial numbers, \nphotos, etc.);",
+        "start_char": 4006,
+        "end_char": 4098,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "How and when Government will be able to extract data;",
+        "start_char": 4103,
+        "end_char": 4156,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "What type of data will be entered and stored;",
+        "start_char": 4161,
+        "end_char": 4206,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Limits on access to Government employees, if applicable;",
+        "start_char": 4211,
+        "end_char": 4267,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Any technology, equipment, software, etc. that requires connection to the \nGovernment network, if applicable; and",
+        "start_char": 4272,
+        "end_char": 4385,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "g) Any other pertinent information related to the cylinder tracking plan",
+        "start_char": 4387,
+        "end_char": 4459,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The cylinder tracking plan shall include, but is not limited to, all items listed under \nparagraph 5.2.1.",
+        "start_char": 5231,
+        "end_char": 5336,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "aba86746-4c7f-4d2b-9960-a5c33605e29a",
+    "text": "If the contractor proposes an impending or not yet fully operational tracking system, they must include an implementation timeline coinciding with the phase-in timeline, and such systems not operational by contract transition conclusion shall not be submitted.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "If the contractor has an impending tracking system or one that is not yet fully operational \nbut would like to submit as part of their proposal, the contractor shall include a timeline \nfor implementation which must coincide with the phase-in timeline as described in \nparagraph 4.1.",
+        "start_char": 4468,
+        "end_char": 4751,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Impending cylinder tracking systems that will not be fully operational by \nthe conclusion of the contract transition shall not be submitted as part of the contractor’s \nproposal.",
+        "start_char": 4753,
+        "end_char": 4931,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "54c0bebb-613a-424a-be3a-f0be0863651e",
+    "text": "Although not required, if the contractor has a system for tracking medical gas cylinders within an ordering activity’s facility after delivery, the contractor shall submit a tracking plan with their proposal.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Although not required, if the contractor has a system for tracking medical gas cylinders \n within an ordering activity’s facility after the cylinders have been delivered by the \n contractor to the ordering activity, the contractor shall submit a tracking plan with their \n proposal.",
+        "start_char": 4940,
+        "end_char": 5222,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "657d4000-300e-42c3-af76-2653772c4995",
+    "text": "The contractor shall submit their available on-demand reporting capabilities including usage statistics, cost data, and cylinder tracking, detailing how data is collected, distributed, and viewed.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor shall submit in their proposal their available on-demand reporting \n capabilities for the CO, COR and/or ordering activities in relation to usage statistics, cost \n data, cylinder tracking and any other report types that may be beneficial for the \n Government.",
+        "start_char": 5343,
+        "end_char": 5618,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "6.2. The contractor’s reporting capabilities proposal shall include detailed information on how \n the data is collected by the contractor (to ensure accuracy of data), the vehicle to which \n the reports will be distributed (i.e. web portal, email, fax, in-person delivery, etc.) and \n how the data will be viewed by the CO, COR and/or ordering activity (i.e. web portal, \n Excel spreadsheet, Word document, hand-written on paper, etc.).",
+        "start_char": 6398,
+        "end_char": 6834,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c8e9dd19-63dd-496a-aa75-ed7ff6337466",
+    "text": "Usage reports shall include actual deliveries for any set of dates, average deliveries per week/month/year, average deliveries per week/month/year per gas type, and other usage-related reports.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a) Actual deliveries for any given set of dates;",
+        "start_char": 5729,
+        "end_char": 5777,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b) Average deliveries per week/month/year;",
+        "start_char": 5779,
+        "end_char": 5821,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "c) Average deliveries per week/month/year per gas type; and",
+        "start_char": 5823,
+        "end_char": 5882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "d) Any other reports related to usage that may be beneficial for the ordering activity",
+        "start_char": 5884,
+        "end_char": 5970,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "93b4a8ec-6d8d-445e-b63e-dcaa5af99961",
+    "text": "Cost reports shall include actual billing data, average cost per delivery, average cost per week/month/year per medical gas, and other cost-related reports.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a) Actual billing data",
+        "start_char": 5986,
+        "end_char": 6008,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b) Average cost per delivery;",
+        "start_char": 6010,
+        "end_char": 6039,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "c) Average cost per week/month/year per medical gas; and",
+        "start_char": 6041,
+        "end_char": 6097,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "d) Any other reports related to cost that may be beneficial for the CO, COR and/or \nordering activity",
+        "start_char": 6099,
+        "end_char": 6200,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "09e9b8f5-1350-40e5-b649-c7a206b47379",
+    "text": "Cylinder tracking reports shall include perpetual delivery, pick-up, and location data per cylinder, and any other helpful cylinder tracking reports.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a) Perpetual delivery, pick-up and location data per cylinder; and",
+        "start_char": 6229,
+        "end_char": 6295,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b) Any other reports related to cylinder tracking that may be beneficial for the ordering \nactivity",
+        "start_char": 6297,
+        "end_char": 6396,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ba1978af-a229-4c22-84cc-2b58f33775fe",
+    "text": "The contractor shall identify medical gases classified as difficult to fill or likely to be backordered by highlighting them in Attachment C and providing a justifying statement.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "9.8.2. The contractor shall identify in their proposal any medical gases that can be classified as \ndifficult to fill or likely to be placed on backorder by highlighting the item in Attachment C \nand by providing a statement justifying the contractor’s classification.",
+        "start_char": 6836,
+        "end_char": 7104,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fa44bd7e-28fd-4d14-880e-d083a4496621",
+    "text": "The contractor shall submit a Project Management Plan (PMP) demonstrating scope, schedule, and service level understanding, including communications/task matrix, deliverable responsibilities, schedules, task estimates, progress tracking, and problem-resolution approaches.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "14.1.  The contractor shall submit a Project Management Plan (PMP) with their proposal that \n clearly demonstrates an understanding of the scope, schedule and service level \n requirements of this contract.",
+        "start_char": 7130,
+        "end_char": 7335,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a) Communications and task matrix providing point-of-contact information and \nidentifying and delineating the roles and responsibilities of key contractor personnel \nand resources;",
+        "start_char": 7395,
+        "end_char": 7575,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b) Individual responsible for providing the required contract deliverables and how \nthe contractor will ensure the deliverables are delivered on time;",
+        "start_char": 7577,
+        "end_char": 7727,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "A preliminary delivery, install, and user acceptance schedule constrained by the \ntimeframes allowed with the contract with consideration of the interdependence of \ntasks in sufficient detail to identify and meet critical schedule deadlines;",
+        "start_char": 7732,
+        "end_char": 7973,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Estimate of how much time each critical task is expected to take and when each \nis scheduled to begin and end (time period in workdays or weeks);",
+        "start_char": 7978,
+        "end_char": 8123,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Outline of processes used to track and communicate delivery progress, \ninstallation, and document equipment acceptance; and",
+        "start_char": 8128,
+        "end_char": 8251,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Description of approach to identify the warning signs of potential project \nproblems and their resolution process.",
+        "start_char": 8256,
+        "end_char": 8370,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "906aa4be-3126-4b6d-9a0a-a7f0d3c1388b",
+    "text": "Quoters shall email their quotes electronically to emanuel.nevarez@va.gov with the solicitation number in the subject line.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Electronic Submissions is the required method: Quoters shall email their quotes to \nemanuel.nevarez@va.gov and must have the solicitation number indicated in the Subject line.",
+        "start_char": 9081,
+        "end_char": 9256,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "72a1fa52-e5bf-4911-87a6-f4d48b21380b",
+    "text": "Files must be readable using Microsoft Office 2007 or later, specifically Word (Doc or Docx) and Excel.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Files must be readable using Microsoft Office 2007 or later: Word Document (Doc or Docx) and \nExcel.",
+        "start_char": 9258,
+        "end_char": 9358,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8d199097-021e-4809-993c-cee587e35137",
+    "text": "Service-Disabled Veteran-Owned and Veteran-Owned Small Businesses must be registered and certified with the SBA upon submission and listed in the SBA certification database at the time of offer and award.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Service-Disabled Veteran Owned and Veteran Owned Small Business must \nbe registered and certified with the U.S. Small Business Administration upon submission.",
+        "start_char": 9779,
+        "end_char": 9937,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "To receive credit, an offeror must \nbe listed at the time of submission of offers and at time of award, as a \ncertified SDVOSB/VOSB in the SBA certification database on the SBA \nVeteran Small Business Certification Program portal \nat https://veterans.certify.sba.gov/",
+        "start_char": 14718,
+        "end_char": 14985,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "142c5932-532f-4d30-9ddb-46a5929548e0",
+    "text": "The quote must identify the offeror, include the solicitation number, and be complete, self-sufficient, and respond directly to requirements.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The quote must have information identifying the offeror, the \nsolicitation number and the contents as outlined below.",
+        "start_char": 10623,
+        "end_char": 10740,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "he quote must be complete, self-\nsufficient, and respond directly to the requirements of the solicitation.",
+        "start_char": 10742,
+        "end_char": 10848,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "24794e46-f7cf-442b-9cd1-31e152df725f",
+    "text": "It is requested to separate documents as described in the solicitation instructions.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "It is requested to separate \nyour documents as described below.",
+        "start_char": 10849,
+        "end_char": 10912,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ba186f7d-f6b7-4a3f-8699-c5ffae907382",
+    "text": "The Price/Delivery Schedule (Attachment C) and Price Schedule must be fully completed with prices for established CLINs.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Price/Delivery Schedule (Attachment C) should be submitted fully \ncompleted.",
+        "start_char": 10976,
+        "end_char": 11052,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Price Schedule shall contain prices for the established Contract \nLine-Item Numbers (CLINs) set forth in the section.",
+        "start_char": 11053,
+        "end_char": 11170,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c64c0a3c-8887-4f79-a77a-4a51cd46dae2",
+    "text": "Offeror agrees to hold the prices in its offer firm for 90 calendar days from the date specified for receipt of offers.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror agrees to hold \nthe prices in its offer firm for 90 calendar days from the date specified for \nreceipt of offers.",
+        "start_char": 11171,
+        "end_char": 11292,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cded3bd0-a241-4f31-aa9a-4572110cfe28",
+    "text": "SF-1449 shall be submitted fully completed, including page 1 sections 30a, 30b, and 30c.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "SF-1449 shall be submitted fully completed.",
+        "start_char": 11431,
+        "end_char": 11474,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offers must complete \npage 1 of the SF-1449 by completing sections 30a, 30b, and 30c.",
+        "start_char": 11475,
+        "end_char": 11560,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f0ca21bb-4c37-4b60-8dfe-a55227833ddd",
+    "text": "The contractor shall acknowledge all amendments to the solicitation that may be issued.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor shall acknowledge all amendments to the solicitation \nthat may be issued.",
+        "start_char": 11568,
+        "end_char": 11656,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3332794e-fbb0-490f-8b38-2f1154f06ff6",
+    "text": "Offeror shall provide a detailed narrative explaining existing technical and operational capabilities to meet the requirements of the Statement of Work and evaluation factors.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall provide narrative providing description of \nexisting capability to meet the requirements contained in the Statement of \nWork and evaluation factors.",
+        "start_char": 11727,
+        "end_char": 11889,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Narrative should be in as much detail as \npossible to fully explain the technical capability and must address the \nfollowing.",
+        "start_char": 11890,
+        "end_char": 12015,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall provide narrative in as much \ndetail as possible to fully explain the existing operational capability to \nmeet the requirements contained in the Statement of Work.",
+        "start_char": 12047,
+        "end_char": 12224,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall provide narrative in as much \ndetail as possible to fully explain the existing operational capability to \nmeet the requirements contained in the Statement of Work.",
+        "start_char": 12047,
+        "end_char": 12224,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f9c6f029-1868-4283-afdf-adce6abd7a9d",
+    "text": "Offeror shall provide procedures or documentation demonstrating the ability to navigate emergency situations, shortages, and supply chain interruptions.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall provide procedures or \ndocumentation demonstrating the ability to navigate through \nemergency situations, shortages, and any other form of supply chain \ninterruptions.",
+        "start_char": 12257,
+        "end_char": 12438,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "844810f8-d1f7-4fe2-ad81-cd7c41b125d2",
+    "text": "Offerors shall demonstrate the innovative use of a cylinder tracking and management system.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Demonstrate the innovative use of cylinder \ntracking and management system.",
+        "start_char": 12466,
+        "end_char": 12541,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "453cb8b2-60ba-44c9-bfa7-f59d96b69d77",
+    "text": "Provide proof that all medical gases conform to USP/National Formulary standards, and that manufacturers and fillers are FDA registered and comply with CGMP and labeling regulations.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Provide proof that all medical gases conform to the most recent \nspecifications prescribed in the United States Pharmacopoeia (USP) \nand National Formulary, the contractor, medical gas manufacturers \nand fillers of medical gases utilized in conjunction with this contract \nare registered with the U.S. Food and Drug Administration (FDA), \nand all medical gases shall be manufactured, processed, packaged, \ntransported, and stored to the FDA’s CGMP regulations and Title 21, \nof the Code of Federal Regulations for labeling.",
+        "start_char": 12548,
+        "end_char": 13071,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "833793de-41fd-4d93-888a-93628595e599",
+    "text": "Offerors shall provide past performance references for work performed within the past three years relevant in complexity, size, and scope, including project number/title, period of performance, dollar value, agency/facility name, and point of contact details.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "In response to this factor, offerors shall provide past \nperformance references for work performed within the past three (3) years \nthat is directly relevant to the complexity, size, and scope of this \nrequirement.",
+        "start_char": 13097,
+        "end_char": 13311,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Contract or project number and title",
+        "start_char": 13351,
+        "end_char": 13387,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Period of performance",
+        "start_char": 13391,
+        "end_char": 13412,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Dollar Value",
+        "start_char": 13416,
+        "end_char": 13428,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Name of Agency / Facility",
+        "start_char": 13461,
+        "end_char": 13486,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Point of Contact: Include name, title, phone number, and e-\nmail addres",
+        "start_char": 13490,
+        "end_char": 13561,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "03fc0b58-4cdf-4ae6-aeda-522a445db62e",
+    "text": "Offerors shall provide a phase-in strategy including a Project Communications Plan with staff roles and contact info, an Implementation Plan, and a Delivery Plan with milestones meeting the contract effective date or 60-day requirement.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "In response to this factor, offerors shall provide their phase-in \nstrategy. The phase-in strategy at a minimum, shall include a Project \nCommunications Plan with list of names, contract information and roles for",
+        "start_char": 13583,
+        "end_char": 13795,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "In response to this factor, offerors shall provide their phase-in \nstrategy.",
+        "start_char": 13583,
+        "end_char": 13659,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The phase-in strategy at a minimum, shall include a Project \nCommunications Plan with list of names, contract information and roles for \nthe contractor staff who will be supporting this contract during the phase-in \nand ongoing project management through contract period of performance, \nan Implementation Plan, and a Delivery Plan that includes milestone dates \nor timelines demonstrating the contractor’s ability to meet the effective date \nof the contract or the sixty (60) calendar days requirement as described \nabove.",
+        "start_char": 13660,
+        "end_char": 14183,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3e3754b8-eab9-42de-aae2-f62cd12d1565",
+    "text": "Large business offerors proposing certified SDVOSB/VOSB subcontractors must indicate their intention, state subcontractor names, describe services/supplies, and provide approximate dollar values.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "If an Offeror is a large business and proposes to use certified SDVOSBs or \nVOSBs as subcontractors and elects to receive evaluation consideration \nunder this factor, they must indicate their intention along with stating in their \nproposal the names of the certified SDVOSB and VOSB with whom they",
+        "start_char": 14990,
+        "end_char": 15287,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "If an Offeror is a large business and proposes to use certified SDVOSBs or \nVOSBs as subcontractors and elects to receive evaluation consideration \nunder this factor, they must indicate their intention along with stating in their \nproposal the names of the certified SDVOSB and VOSB with whom they \nintend to subcontract, the description of SDVOSB/VOSB services/supplies, \nand approximate dollar values of proposed subcontractors.",
+        "start_char": 14990,
+        "end_char": 15420,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "63fcedf7-fe9c-4eeb-ac6b-a32f4c23ed2d",
+    "text": "Offerors shall submit a work breakdown of the SOW and contract administration tasks, identifying work to be performed by the prime contractor, similarly situated entities, and subcontractors.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "In response to this factor (when applicable) \nOfferors shall submit a breakdown of the work identified in the Statement of \nWork and tasks associated with Contract Administration.",
+        "start_char": 15455,
+        "end_char": 15634,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The offer shall \nidentify which work will be performed by the prime contractor, any similarly \nsituated entity, and any other subcontractors.",
+        "start_char": 15635,
+        "end_char": 15776,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "88d3e72e-2aa3-4612-839f-b06375470581",
+    "text": "Offerors shall submit a completed copy of VAAR 852.219-76 Certificate of Compliance for Supplies and Products with the submission package.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offerors shall submit a completed copy of VAAR 852.219-76 – VA Notice of \nLimitations on Subcontracting – Certificate of Compliance for Supplies and \nProducts with the submission package.",
+        "start_char": 15780,
+        "end_char": 15967,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "441ebae7-cdc9-419d-8974-855418306db0",
+    "text": "The quote shall contain the vendor’s best terms from a price standpoint.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The quote shall contain the vendor’s best terms from a price standpoint.",
+        "start_char": 17025,
+        "end_char": 17097,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The quote shall contain the vendor’s best terms from a price standpoint.",
+        "start_char": 17025,
+        "end_char": 17097,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4b48953b-50be-4319-a961-ae9242aa8795",
+    "text": "Offeror shall use Attachment B as the basis for their total bid price.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall use \nAttachment B as the basis for their total bid price.",
+        "start_char": 17098,
+        "end_char": 17169,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror shall use \nAttachment B as the basis for their total bid price.",
+        "start_char": 17098,
+        "end_char": 17169,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "84d9ed07-3046-4479-ad51-1a2b4ea4777b",
+    "text": "Files in Adobe PDF Files – when scanning documents, scanner resolution should be set \nat least 200 dots per inch (dpi).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Files in Adobe PDF Files – when scanning documents, scanner resolution should be set \nat least 200 dots per inch (dpi).",
+        "start_char": 9359,
+        "end_char": 9478,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "22b18b3e-eee6-416c-8ee4-83673ea88c1f",
+    "text": "Brief description / Scope",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Brief description / Scope",
+        "start_char": 13432,
+        "end_char": 13457,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

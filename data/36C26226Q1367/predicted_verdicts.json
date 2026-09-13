@@ -1,43 +1,97 @@
 [
   {
-    "requirement_id": "e75d2517-f9c5-46a6-8725-ed5dd3b81162",
-    "requirement_text": "Offeror quotations and offers of equal products must demonstrate and meet the salient physical, functional, or performance characteristics specified in this solicitation to be considered for award and responsive.",
+    "requirement_id": "6c044108-7451-4574-b34c-18a596b5ade4",
+    "requirement_text": "Quotations must demonstrate and provide evidence of meeting all salient physical, functional, or performance characteristics specified in the solicitation.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that quotations must demonstrate and provide evidence of meeting all salient physical, functional, or performance characteristics specified in the solicitation when offering an equal item. The bidder proposes an 'or-equal' product (the SonoRest CV-200) but only provides a generic statement that it is 'comparable', completely failing to demonstrate or provide evidence of meeting all salient characteristics."
+  },
+  {
+    "requirement_id": "f859580d-d07d-4c46-b9f0-10fa45faad49",
+    "requirement_text": "All offeror quotes must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT.",
     "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "From: quotes@summitdiagnosticequip.com\nTo: Rochelle.Malveaux@va.gov\nSubject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal\n\nDear Ms. Malveaux,\n\nSummit Diagnostic Equipment, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C26226Q1367.",
+        "start_char": 0,
+        "end_char": 293,
+        "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement states that offers of equal products must demonstrate and meet the salient physical, functional, or performance characteristics specified in the solicitation. While the bidder proposes an equal product (the SonoRest CV-200), the excerpts only state that it is a comparable table, without providing any details demonstrating how it meets the specific salient physical, functional, or performance characteristics required by the solicitation."
+    "reasoning": "The excerpts show that an email was sent to the recipient, but they do not contain the date and time the email was received to verify if it met the deadline of Thursday, August 27th, 2026 9:00am PT."
   },
   {
-    "requirement_id": "5858d4a2-b180-4525-acca-a1edd7f0cc0a",
-    "requirement_text": "The Delivery Timeframe shall be 30 Days ARO.",
+    "requirement_id": "4dd7cd86-f6c5-4c5a-85c5-e1bef61c9694",
+    "requirement_text": "Reference solicitation number [36C26226Q1367] within the subject line of the submission email.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery timeframe to VA Greater Los Angeles Healthcare System.",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal",
+        "start_char": 68,
+        "end_char": 155,
+        "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their quote that they can meet the required 30-day ARO delivery timeframe."
+    "reasoning": "The bidder included the exact solicitation number [36C26226Q1367] in the subject line of the submission email, thereby satisfying the requirement."
   },
   {
-    "requirement_id": "56e27c52-eb56-4841-8a2c-40097524ba24",
-    "requirement_text": "Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+    "requirement_id": "740d5aa3-bc99-4c65-a1a9-6ec031dda854",
+    "requirement_text": "Offers shall be sent by email to Rochelle.Malveaux@va.gov.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "From: quotes@summitdiagnosticequip.com\nTo: Rochelle.Malveaux@va.gov\nSubject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal",
+        "start_char": 0,
+        "end_char": 155,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offers shall be sent by email to Rochelle.Malveaux@va.gov. The excerpt shows an email header indicating the offer was sent directly to Rochelle.Malveaux@va.gov."
+  },
+  {
+    "requirement_id": "94b0981d-7102-4946-a547-483b04b36302",
+    "requirement_text": "Vendor information including SAM UEI must be included in the quote packet.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Vendor Information:\nSummit Diagnostic Equipment, LLC\n4420 Corbin Street\nDallas, TX 75247\nSAM UEI: QK7M2XH9RT84",
+        "start_char": 295,
+        "end_char": 405,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The vendor has explicitly included its vendor information, including the SAM UEI (QK7M2XH9RT84), directly in the quote packet as required."
+  },
+  {
+    "requirement_id": "d4cd5655-64f9-4a8a-b443-be69c577df1d",
+    "requirement_text": "Provide concurrence or non-concurrence with solicitation terms, conditions, and provisions in the quote packet.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -51,11 +105,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their application that they concur with all terms, conditions, and provisions of the solicitation, thereby fully satisfying the requirement."
+    "reasoning": "The bidder explicitly states in their quote packet that they concur with all terms, conditions, and provisions of the solicitation, thereby fully satisfying the requirement."
   },
   {
-    "requirement_id": "a6aac6b4-d8cf-4410-9ac7-8da35f506458",
-    "requirement_text": "Items shall be FOB destination.",
+    "requirement_id": "7d43a1f6-623a-4a3e-9bce-6c0a66207f80",
+    "requirement_text": "Items shall be FOB destination, and offerors must specify the offered item manufacturer and part number.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -69,29 +123,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states \"FOB Destination: Yes\" in their quote, which directly satisfies the requirement that items shall be FOB destination."
+    "reasoning": "The bidder explicitly states that the items are FOB destination ('FOB Destination: Yes'), and specifies the offered item manufacturer ('Apex Medical Positioning Corp.') and part number ('SonoRest CV-200'), fully satisfying the requirement."
   },
   {
-    "requirement_id": "6041a2ce-011e-4aa7-b924-3cda018748db",
-    "requirement_text": "Please specify the offered item manufacturer and part number.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp.",
-        "start_char": 536,
-        "end_char": 635,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder clearly specifies both the manufacturer (Apex Medical Positioning Corp.) and the part number/item name (SonoRest CV-200 Cardiac Imaging Table), thereby satisfying the requirement."
-  },
-  {
-    "requirement_id": "0189955d-ec7d-4843-981f-186c1dd71178",
-    "requirement_text": "Provide an Authorized Distributor Letter/Memo from the manufacturer.",
+    "requirement_id": "764c44b9-44c4-4554-b430-91f8577c482b",
+    "requirement_text": "Provide an Authorized Distributor Letter/Memo from the manufacturer demonstrating the vendor is an authorized dealer, distributor, or reseller.",
     "verdict": "non_compliant",
     "evidence": [
       {
@@ -105,11 +141,39 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement asks for an Authorized Distributor Letter/Memo from the manufacturer to be provided in the application. The bidder states that the formal Authorized Distributor Letter will only be provided upon request after contract award, meaning they failed to provide the letter in their tender submission."
+    "reasoning": "The requirement explicitly asks to provide an Authorized Distributor Letter/Memo from the manufacturer demonstrating the vendor is an authorized dealer, distributor, or reseller with the application. The bidder states that they are an authorized reseller, but explicitly fails to provide the letter in the application, stating it will only be provided upon request after contract award."
   },
   {
-    "requirement_id": "1a6b2fef-feab-4423-8eef-e39e80ad2f62",
-    "requirement_text": "Please include a Country of Origin for the items being offered.",
+    "requirement_id": "3d612ca0-c257-405a-8dc5-ca9bc5fc4c61",
+    "requirement_text": "Products must comply with the Buy American Act, Trade Agreement Act, and all other applicable FAR and agency-specific regulations.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "The SonoRest CV-200 is manufactured in Kuala Lumpur,\nMalaysia.",
+        "start_char": 906,
+        "end_char": 968,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application contains directly contradictory statements regarding the manufacturing location and origin of the product. In chunk 0, it states that the product is manufactured in Kuala Lumpur, Malaysia, whereas in chunk 1, it states that all components are Made in the USA. Because of this internal contradiction, it cannot be reliably determined whether the product complies with the Buy American Act."
+  },
+  {
+    "requirement_id": "20801b72-a011-4320-8b19-7b9add4d6278",
+    "requirement_text": "Include the Country of Origin for the items being offered.",
     "verdict": "contradictory",
     "evidence": [
       {
@@ -131,23 +195,13 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
-      },
-      {
-        "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
-        "start_char": 1138,
-        "end_char": 1258,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
       }
     ],
-    "reasoning": "The application provides conflicting statements regarding the Country of Origin for the offered items. Initially, it states that the SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia, but later claims that all components are proudly Made in the USA."
+    "reasoning": "The application provides conflicting statements regarding the country of origin. In one part, it states that the item is manufactured in Kuala Lumpur, Malaysia, while in another part, it states that all components are proudly Made in the USA."
   },
   {
-    "requirement_id": "27168f37-143c-489f-a26d-c0769ab9c14f",
-    "requirement_text": "Offerors shall provide verification that their items are not Gray Market, such as examples provided in the solicitation.",
+    "requirement_id": "ad77631f-eca1-4d8b-ad7e-9a8690f140d2",
+    "requirement_text": "Offerors shall provide verification that their items are not gray market or remanufactured items.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -161,10 +215,10 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly provides a section dedicated to Gray Market Verification, stating they are an authorized reseller and do not source or distribute gray market goods, thus satisfying the requirement."
+    "reasoning": "The bidder explicitly provides verification that their items are not gray market goods by stating they are an authorized reseller and do not source or distribute gray market items."
   },
   {
-    "requirement_id": "81e622e9-1415-48fe-b2d7-7c0b8e952b2a",
+    "requirement_id": "f592d00b-69c3-449a-b96b-2af873f9aa1e",
     "requirement_text": "Offeror must indicate whether the items are manufactured by a small or large business.",
     "verdict": "non_compliant",
     "evidence": [
@@ -179,11 +233,29 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement states that the offeror must indicate whether the items are manufactured by a small or large business. While the bidder identifies the manufacturer as Apex Medical Positioning Corp., they fail to state whether this manufacturer is a small or large business."
+    "reasoning": "The requirement states that the offeror must indicate whether the items are manufactured by a small or large business. The bidder's application names the manufacturer as Apex Medical Positioning Corp. but fails to indicate whether this business is a small or large business."
   },
   {
-    "requirement_id": "04765bab-cadd-444d-ae5c-c6f2d6a15224",
-    "requirement_text": "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found.",
+    "requirement_id": "1f984848-adc5-4ac0-9cf1-32bd5de5c4ed",
+    "requirement_text": "All items must be listed on FSS contract if vendor is an FSS contract holder, including contract number and expiration date.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently\nhold a Federal Supply Schedule (FSS) contract.",
+        "start_char": 1504,
+        "end_char": 1623,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that items must be listed on an FSS contract if the vendor is an FSS contract holder. The bidder explicitly states that they do not currently hold an FSS contract, meaning the conditional requirement does not apply to them."
+  },
+  {
+    "requirement_id": "29924302-e30e-482c-b835-32d18e5f9316",
+    "requirement_text": "If providing an equivalent product, offerors shall provide information on how their product meets salient characteristics or indicate where in the submission that information is located.",
     "verdict": "non_compliant",
     "evidence": [
       {
@@ -194,14 +266,14 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that if providing an equivalent product, offerors must either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found. The bidder submitted an equivalent product (the SonoRest CV-200) but failed to provide information on how it meets the salient characteristics or state where that information can be found, thereby failing to satisfy the requirement."
+    "reasoning": "The bidder offered an equivalent product (the SonoRest CV-200 as an equal to the MPI Echo Bed), which triggers the requirement to provide information on how the product meets salient characteristics or indicate where in the submission that information is located. While the bidder stated the product is comparable and suitable for echocardiography procedures, they failed to provide specific information on how it meets the salient characteristics or indicate where such information is located within the submission."
   },
   {
-    "requirement_id": "a2a86ac8-6663-4390-b343-ad35e986e5d0",
-    "requirement_text": "To be considered for award, offers of equal products must clearly identify the item by brand name, make, or model number.",
+    "requirement_id": "0767d7eb-7412-4ec2-a857-a3c68805d09d",
+    "requirement_text": "Offers that include any items not determined as Brand Name or Equal shall result in an unacceptable offer.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -225,13 +297,87 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder clearly identifies the offered equal product by brand name, make, and model number (SonoRest CV-200, manufactured by Apex Medical Positioning Corp.) and explicitly states that it is offered as an equal to the specified requirement."
+    "reasoning": "The requirement states that offers including items not determined as Brand Name or Equal shall result in an unacceptable offer. The bidder explicitly offers the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table specified in the solicitation, thereby complying with the requirement."
   },
   {
-    "requirement_id": "693e3f30-74de-4516-8c4f-56e58e6e0921",
-    "requirement_text": "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements, and mark any descriptive material to clearly show the modification.",
+    "requirement_id": "e7b56efb-fd4b-4b60-8cbb-52022def7a60",
+    "requirement_text": "Must include a completed copy of provision 52.212-3 or ensure SAM.gov is updated with current information.",
     "verdict": "compliant",
     "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "FAR 52.212-3 Representations and Certifications: Summit Diagnostic Equipment, LLC's representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the bidder must include a completed copy of provision 52.212-3 or ensure SAM.gov is updated with current information. The bidder's quote explicitly certifies that their representations and certifications under FAR 52.212-3 are current and up to date in SAM.gov, thereby satisfying the alternative compliance condition."
+  },
+  {
+    "requirement_id": "b1f2a18d-ce89-42d6-958c-f1b4fdabcaf1",
+    "requirement_text": "Clearly identify equal products by brand name (if any) and make or model number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp.",
+        "start_char": 536,
+        "end_char": 635,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924).",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder clearly identifies the equal product being offered by brand name (Apex Medical Positioning Corp.) and make/model number (SonoRest CV-200), and also references the baseline product it is offered as an equal to (MPI Echo Bed Cardiac Imaging Table, model EB924)."
+  },
+  {
+    "requirement_id": "28a21384-6b77-4966-a714-7f7b27b84abf",
+    "requirement_text": "Include descriptive literature such as illustrations, drawings, or clear references to previously furnished descriptive data.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp. FOB Destination: Yes.",
+        "start_char": 536,
+        "end_char": 657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates the inclusion of descriptive literature such as illustrations, drawings, or clear references to previously furnished descriptive data. The bidder's application proposes an \"or-equal\" item (the SonoRest CV-200) but fails to provide or reference any descriptive literature, illustrations, or drawings to demonstrate that the product meets the specifications."
+  },
+  {
+    "requirement_id": "21294fee-bba5-4099-a3eb-da93a9a34253",
+    "requirement_text": "Clearly describe and mark any modifications the offeror plans to make in a product to make it conform to solicitation requirements.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp.",
+        "start_char": 536,
+        "end_char": 635,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
       {
         "document_path": "data/36C26226Q1367/application.txt",
         "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
@@ -243,39 +389,46 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder proposes an or-equal product (SonoRest CV-200) without proposing any modifications to make it conform, asserting that it is directly comparable as an equal. Since no modifications are planned, no description or marking of modifications is necessary, rendering the requirement fully satisfied as applicable."
+    "reasoning": "The bidder offers the SonoRest CV-200 as an equal item without indicating any planned modifications to make it conform, which implies that no product modifications are necessary or planned to meet the solicitation requirements."
   },
   {
-    "requirement_id": "2a0abf75-cfd9-418c-8fb3-75c9f5009764",
-    "requirement_text": "The offeror shall provide the brand name product referenced in the solicitation.",
-    "verdict": "non_compliant",
+    "requirement_id": "03c07460-f7f2-402d-96fc-c3f307e945e4",
+    "requirement_text": "Unless clearly indicated as an equal product, the offeror shall provide the brand name product referenced in the solicitation.",
+    "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp.",
-        "start_char": 536,
-        "end_char": 635,
+        "quote": "Subject: Quote for Solicitation 36C26226Q1367 - Echo Bed Cardiac Imaging Table or Equal",
+        "start_char": 68,
+        "end_char": 155,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "supports"
       },
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924).",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to\nthe MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+        "start_char": 1625,
+        "end_char": 1844,
+        "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that the offeror shall provide the brand name product referenced in the solicitation. The solicitation references the MPI Echo Bed Cardiac Imaging Table, but the bidder explicitly states they are offering a different product, the SonoRest CV-200, as an 'or-equal' submission."
+    "reasoning": "The requirement states that unless clearly indicated as an equal product, the offeror shall provide the brand name product referenced. The bidder explicitly indicated in both the subject line and the body of the quote that they are offering the SonoRest CV-200 as an equal product to the MPI Echo Bed Cardiac Imaging Table, thereby satisfying the condition."
   },
   {
-    "requirement_id": "1ce55394-5d34-4c88-a84a-5c1e6602a405",
-    "requirement_text": "The contractor shall deliver domestic end products unless specified otherwise, certify compliance with domestic content and critical component requirements, list foreign end products or domestic end products containing critical components, and indicate domestic content percentages where applicable.",
+    "requirement_id": "89330f49-2a9b-4045-b148-ea93d1d870c5",
+    "requirement_text": "All software licensing, warranty, and service associated with the medical equipment shall be in accordance with OEM terms and conditions.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain no mention of software licensing, warranty, or service terms associated with the medical equipment, nor do they state whether these elements will be in accordance with OEM terms and conditions."
+  },
+  {
+    "requirement_id": "30be5528-1f05-4636-b65d-0808c253f8f3",
+    "requirement_text": "Domestic content requirements and percentages for components must comply with applicable thresholds.",
     "verdict": "contradictory",
     "evidence": [
       {
@@ -299,199 +452,149 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The application contains contradictory information regarding the country of origin and domestic content of the offered product. In chunk 0, it states that the SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia, while in chunk 1, it states that all components are Made in the USA."
+    "reasoning": "The application contains contradictory statements regarding the manufacturing location and domestic content of the offered item. In chunk 0, it states that the SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia, while chunk 1 states that all components of the SonoRest CV-200 are Made in the USA. This conflict creates ambiguity regarding compliance with domestic content requirements."
   },
   {
-    "requirement_id": "c5ad1be1-01d4-43fb-9a55-91bf4fe7a335",
-    "requirement_text": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided text mentions submitting a quote for the SonoRest CV-200 and concurring with terms, but contains no information or mention regarding whether columns F-K of Attachment A were filled out conforming to the salient characteristics and instructions."
-  },
-  {
-    "requirement_id": "cca36642-0166-4df0-ab4d-a2aaf0012a63",
-    "requirement_text": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
-    "verdict": "non_compliant",
+    "requirement_id": "12041c97-3dba-4009-bb12-42763efe9b08",
+    "requirement_text": "The Offeror certifies that each end product is a domestic end product and specifies any containing critical components.",
+    "verdict": "contradictory",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
+        "quote": "Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur,\nMalaysia.",
+        "start_char": 887,
+        "end_char": 968,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application contains contradictory statements regarding the end product's country of origin and domestic status. Chunk 0 states that the product is manufactured in Kuala Lumpur, Malaysia, while Chunk 1 states that all components are Made in the USA."
+  },
+  {
+    "requirement_id": "a0f6b5c1-2aa5-4b18-978b-a1153ea349bc",
+    "requirement_text": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur,\nMalaysia.",
+        "start_char": 887,
+        "end_char": 968,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement states that submissions for equal-to items must show clear, compelling, and convincing evidence that they meet all salient characteristics (referencing Attachment A and B). While the bidder proposes an equal item (the SonoRest CV-200), the excerpts only contain a general statement that it is a comparable table, lacking any specific evidence, details, or documentation showing that it meets all salient characteristics per Attachments A and B."
+    "reasoning": "The application contains contradictory statements regarding the country of origin of the product. Chunk 0 states that the SonoRest CV-200 is manufactured in Kuala Lumpur, Malaysia, while both Chunk 0 and Chunk 1 state that all components are Made in the USA. Because of these conflicting statements about where the product is manufactured, it is unclear whether it is manufactured in the United States and fails to qualify as a domestic end product, meaning the requirement to list such foreign end products cannot be properly assessed."
   },
   {
-    "requirement_id": "3b7465a8-9883-453b-a940-23db5226c038",
-    "requirement_text": "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Authorized Distributor status: Summit Diagnostic Equipment, LLC is an\nauthorized reseller of Apex Medical Positioning Corp. products. The formal\nAuthorized Distributor Letter will be provided upon request after contract\naward.",
-        "start_char": 659,
-        "end_char": 885,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized\nreseller of Apex Medical Positioning Corp. equipment, confirmed via the\nattached authorization documentation, and does not source or distribute\nany gray market goods.",
-        "start_char": 1260,
-        "end_char": 1502,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The vendor states they are an authorized reseller of the proposed medical equipment manufacturer (Apex Medical Positioning Corp.), which directly satisfies the requirement to be an OEM, authorized dealer, distributor, or reseller."
-  },
-  {
-    "requirement_id": "5e299605-55c7-41bb-805c-224c0606273d",
-    "requirement_text": "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions.",
+    "requirement_id": "74db8fb2-07be-497c-a4ac-4c4d9e83940a",
+    "requirement_text": "If the percentage of domestic content is unknown, select no.",
     "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all\nterms, conditions, and provisions of this solicitation.",
-        "start_char": 407,
-        "end_char": 534,
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder states general concurrence with all terms, conditions, and provisions of the solicitation, which may implicitly cover the requirement that software licensing, warranty, and service be in accordance with OEM terms and conditions. However, the excerpts do not explicitly mention OEM terms and conditions for software licensing, warranty, or service, leaving insufficient specific information to definitively confirm compliance."
+    "reasoning": "The requirement states that if the percentage of domestic content is unknown, select no. The bidder's application states that components are 'Made in the USA' and asserts compliance, but it does not state a specific unknown percentage of domestic content or otherwise address the conditional instruction to select 'no' when the percentage is unknown. Therefore, there is insufficient information in the excerpts to determine compliance with this specific conditional instruction."
   },
   {
-    "requirement_id": "698da687-f931-4603-9cba-90a224fecb1c",
-    "requirement_text": "If the percentage of the domestic content is unknown, select “no”.",
-    "verdict": "compliant",
+    "requirement_id": "1c3fa9df-69c7-4aa6-b249-5f4c4986f8f5",
+    "requirement_text": "The Offeror shall separately list line item numbers of domestic end products that contain a critical component.",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
-        "start_char": 1138,
-        "end_char": 1258,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
-        "start_char": 1138,
-        "end_char": 1258,
+        "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp. FOB Destination: Yes.",
+        "start_char": 536,
+        "end_char": 657,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that if the percentage of domestic content is unknown, 'no' must be selected. However, the bidder explicitly states that the domestic content is 100 percent ('All components... are proudly Made in the USA'). Therefore, the percentage is known, and the condition for selecting 'no' does not apply, making the application compliant."
+    "reasoning": "The requirement states that the Offeror shall separately list line item numbers of domestic end products that contain a critical component. The bidder offers an item but fails to separately list any line item numbers of domestic end products containing a critical component."
   },
   {
-    "requirement_id": "ffbf2da4-0a6c-482c-8027-ceb500521cdd",
-    "requirement_text": "The Contractor certifies that it qualifies as a small business under the SBA size standards upon entering into this contract.",
+    "requirement_id": "a7444ac0-2d79-4e97-8610-79b5b765702d",
+    "requirement_text": "The Contractor qualifies as a small business under SBA size standards.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The requirement states that the Contractor certifies that it qualifies as a small business under the SBA size standards upon entering into this contract. Reviewing the provided excerpts from the bidder's application, there is no mention of small business status or certification under SBA size standards."
+    "reasoning": "The application mentions vendor information, certifications, and SAM.gov representations, but it never explicitly states whether Summit Diagnostic Equipment, LLC qualifies as a small business under SBA size standards. Therefore, there is insufficient information to determine compliance."
   },
   {
-    "requirement_id": "8b2695d3-bf0d-4edf-8642-1ae26c550fd1",
-    "requirement_text": "The Contractor certifies that it will supply the product of a small business manufacturer or processor upon entering into this contract, unless a waiver has been granted by the SBA.",
+    "requirement_id": "9cc9ff8b-b651-449c-bd8f-c763795fa263",
+    "requirement_text": "The Contractor is primarily engaged in retail or wholesale trade and normally supplies the type of product being provided.",
     "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The requirement specifies that the Contractor certifies it will supply the product of a small business manufacturer or processor upon entering into this contract, unless a waiver has been granted by the SBA. The provided excerpts mention a Non-Manufacturing Rule certification on file and that the product is manufactured by Apex Medical Positioning Corp., but they do not state whether Apex Medical Positioning Corp. is a small business manufacturer or processor, nor do they mention an SBA waiver."
-  },
-  {
-    "requirement_id": "52512c94-13b4-4eef-918d-a1df47593323",
-    "requirement_text": "Signature: _______________________\nName: ___________________________\nTitle: ____________________________\nDate: ____________________________\nBusiness Name: ____________________________",
-    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
-        "quote": "Sincerely,\nMarcus Feldman\nContracts Manager\nSummit Diagnostic Equipment, LLC",
+        "quote": "Authorized Distributor status: Summit Diagnostic Equipment, LLC is an\nauthorized reseller of Apex Medical Positioning Corp. products.",
+        "start_char": 659,
+        "end_char": 792,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department.",
         "start_char": null,
         "end_char": null,
         "citation_verified": false,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement asks for a formal signature block including Signature, Name, Title, Date, and Business Name. While the submission includes a typed name, title, and business name at the end of the email, it completely lacks a handwritten or digital signature and a date."
+    "reasoning": "The excerpts establish that Summit Diagnostic Equipment, LLC is an authorized reseller of the product and an authorized distributor, and mentions maintaining a Non-Manufacturing Rule certification. However, the excerpts do not explicitly state whether the company is primarily engaged in retail or wholesale trade and normally supplies this type of product, leaving insufficient information to conclusively determine compliance."
   },
   {
-    "requirement_id": "6e34f1d7-2440-483e-a399-e3946a3c9c49",
-    "requirement_text": "Echocardiography examination tables must have an appropriate patient weight and bariatric-rated load capacity (supporting up to 750 lbs on standard models and up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions for stability and strength during complex exams).",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided text mentions the offering of the SonoRest CV-200 Cardiac Imaging Table as an equal to the MPI Echo Bed Cardiac Imaging Table, but it does not contain any specifications regarding the patient weight capacity, bariatric-rated load capacity, or weight limits (such as 750 lbs or 1,250 lbs) for the offered table."
-  },
-  {
-    "requirement_id": "f60d3a9f-a2c8-483d-95b4-07669ac3c797",
-    "requirement_text": "Echocardiography examination tables must have the following features- ... ADA-compliant low-entry height: Entry heights from 17\" to 19\" (or 19\"–37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts mention the model of the echocardiography table offered (SonoRest CV-200) and state it is an equal to the MPI Echo Bed Cardiac Imaging Table, but they do not provide any specifications regarding the entry height or whether it meets the ADA-compliant low-entry height range of 17\" to 19\" (or 19\"–37\")."
-  },
-  {
-    "requirement_id": "5fd6f6a4-ad4a-4ba0-9679-7606d76bed57",
-    "requirement_text": "Echocardiography examination tables must have the following features- ... 4 FLEXIBLE HAND CONTROL STORAGE LOOPS",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided text mentions the offering of the SonoRest CV-200 Cardiac Imaging Table as an equal, but it does not contain any specific technical details regarding whether the table includes 4 flexible hand control storage loops."
-  },
-  {
-    "requirement_id": "062eb129-b5a3-460c-b595-b287a93fcccb",
-    "requirement_text": "Echocardiography examination tables must have the following features- ... ELECTRIC LOCKING CASTERS",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided text mentions the model offered (SonoRest CV-200 Cardiac Imaging Table) and states it is an equal to the required item, but it does not contain any specifications regarding whether the table features electric locking casters."
-  },
-  {
-    "requirement_id": "c0070d58-9546-4e37-a0c0-4a5171de9cad",
-    "requirement_text": "Echocardiography examination tables must have the following features- ... PATIENT SURFACE FOOTPRINT 30\"Wx83\"L",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided text mentions the offered item is the SonoRest CV-200 Cardiac Imaging Table, but it does not contain any specifications regarding the patient surface footprint dimensions (30\"Wx83\"L) required by the solicitation."
-  },
-  {
-    "requirement_id": "aa192d35-77a3-41f2-95c2-3336be3a46a9",
-    "requirement_text": "Echocardiography examination tables must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants) to support natural body extension and reduce strain.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts mention the model of the echocardiography examination table (SonoRest CV-200), but they do not contain any technical specifications regarding whether it features an electrically adjustable patient back support or Fowler backrest capable of positioning from 0° to at least 65° or up to 80°."
-  },
-  {
-    "requirement_id": "3e6479ff-2204-4842-83a5-ce30354cdf14",
-    "requirement_text": "Echocardiography examination tables must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles (e.g., +/-15°), or Trendelenburg capability on certain models for enhanced imaging access.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts mention the model offered (SonoRest CV-200 Cardiac Imaging Table) as an equal to the MPI Echo Bed Cardiac Imaging Table, but they do not contain any technical specifications regarding Trendelenburg positioning, Reverse Trendelenburg positioning, or adjustable tilt angles. Therefore, there is insufficient information in the text to determine compliance with this specific requirement."
-  },
-  {
-    "requirement_id": "819b5319-029f-45ff-a365-c744178bb303",
-    "requirement_text": "Echocardiography examination tables must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The application proposes the SonoRest CV-200 Cardiac Imaging Table as an equal to the required model, but the provided excerpts contain no details regarding whether the table includes dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning."
-  },
-  {
-    "requirement_id": "1e91428f-143d-42f5-9dc3-96d100b99ee6",
-    "requirement_text": "Echocardiography examination tables must have the following features- ... Height adjustment: Adjustable range (e.g., 24\"–34\" on many models) for optimal sonographer access",
-    "verdict": "insufficient_information",
+    "requirement_id": "183334e3-7167-42c5-9684-7f67cc8c9abb",
+    "requirement_text": "The Contractor does not manufacture the products being supplied under this contract.",
+    "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C26226Q1367/application.txt",
@@ -501,30 +604,319 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Authorized Distributor status: Summit Diagnostic Equipment, LLC is an\nauthorized reseller of Apex Medical Positioning Corp. products.",
+        "start_char": 659,
+        "end_char": 792,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the Contractor does not manufacture the products being supplied under this contract. The bidder states that the offered item is manufactured by Apex Medical Positioning Corp. and that the bidder is an authorized reseller, which establishes that they are a distributor and not the manufacturer of the products."
+  },
+  {
+    "requirement_id": "5d58e65f-07d7-4d14-8bc9-df16aa61597a",
+    "requirement_text": "The Contractor will supply the product of a small business manufacturer or processor, unless an SBA waiver is granted.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur,\nMalaysia.",
+        "start_char": 887,
+        "end_char": 968,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+        "start_char": 1138,
+        "end_char": 1258,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application contains contradictory information regarding the product's origin and manufacture. In one place, it states the product is manufactured in Kuala Lumpur, Malaysia, which raises questions about whether it is the product of a small business manufacturer or processor, or if an SBA waiver applies. In another place, it asserts that all components are Made in the USA. Because of these contradictory statements about the item's origin and manufacture, it is unclear whether the requirement is satisfied."
+  },
+  {
+    "requirement_id": "58895eb1-e4fb-43f5-a12d-4ce14a58170b",
+    "requirement_text": "The Contractor agrees to maintain and provide documentation verifying compliance with the NMR upon request.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC maintains an executed Non-Manufacturing Rule certification on file with our corporate compliance department.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The application offers the SonoRest CV-200 Cardiac Imaging Table as an equal to the specified equipment, but the provided excerpts do not contain any technical specifications or details regarding the height adjustment range of the offered table to determine if it meets the 24\"–34\" or equivalent requirement."
+    "reasoning": "The requirement states that the Contractor agrees to maintain and provide documentation verifying compliance with the NMR upon request. The bidder certifies that it maintains an executed Non-Manufacturing Rule certification on file, but the excerpts do not explicitly confirm that the bidder agrees to provide this documentation to the government upon request."
   },
   {
-    "requirement_id": "bf8a231e-2e83-4940-b542-114039f56d0d",
+    "requirement_id": "6f06a666-ec52-4b41-95c7-96a975a885bf",
+    "requirement_text": "The Contractor will flow down this certification requirement to any applicable subcontractors.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that the contractor will flow down the certification requirement to any applicable subcontractors. A review of the provided bidder excerpts shows no mention of subcontractors or whether any certification requirements will be flowed down to them. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "15949415-6b46-44ba-a377-d9dedd25b695",
+    "requirement_text": "The Contractor will not alter, modify, repackage, or rebrand the products supplied under this contract.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The tender requires that the contractor will not alter, modify, repackage, or rebrand the products supplied under this contract. The provided excerpts do not mention whether the bidder agrees to this restriction or whether they intend to alter, modify, repackage, or rebrand the supplied products. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "2748b417-2263-4e03-9d80-49cfff8ed2f9",
+    "requirement_text": "The Contractor has made this certification at the time of submitting the offer in response to the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Buy American Certification: Summit Diagnostic Equipment, LLC certifies full\ncompliance with the Buy American Act and Trade Agreements Act for all items\nin this quote.",
+        "start_char": 970,
+        "end_char": 1136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly certifies compliance with the required certifications at the time of submitting the offer in response to the solicitation, thereby fulfilling the requirement."
+  },
+  {
+    "requirement_id": "3d3fab91-e7c7-4f88-8181-c10ca1ba5052",
+    "requirement_text": "All information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that all information provided in the certification must be accurate and truthful to the best of the contractor's knowledge and belief, but the tender excerpts do not contain an explicit certification statement affirming this specific condition."
+  },
+  {
+    "requirement_id": "1899eb4b-68b0-42da-ae47-835e214e597a",
+    "requirement_text": "The Contractor acknowledges that failure to comply may result in contract termination, debarment, suspension, or other legal action.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all\nterms, conditions, and provisions of this solicitation.",
+        "start_char": 407,
+        "end_char": 534,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in chunk [0] that they concur with all terms, conditions, and provisions of the solicitation, which encompasses the requirement that failure to comply may result in contract termination, debarment, suspension, or other legal action."
+  },
+  {
+    "requirement_id": "ec8d3f36-c116-4825-9d69-e4e7ebb7c7ab",
+    "requirement_text": "Echocardiography examination tables must feature a patient weight capacity supporting up to 750 lbs on standard models and up to 1,250 lbs with powered lift on bariatric-rated versions.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention the model of the echocardiography examination table being offered (SonoRest CV-200), but they contain no information whatsoever regarding the patient weight capacity supporting up to 750 lbs on standard models and up to 1,250 lbs with powered lift on bariatric-rated versions. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "c0e2c8bd-327a-4eec-aaaf-e80303182add",
+    "requirement_text": "Echocardiography examination tables must have an ADA-compliant low-entry height from 17",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The bidder's application proposes the SonoRest CV-200 Cardiac Imaging Table but provides no specifications regarding the low-entry height or ADA compliance of the table."
+  },
+  {
+    "requirement_id": "687f9a9c-eb54-4b43-a243-af53381507b9",
+    "requirement_text": "Echocardiography examination tables must have 4 flexible hand control storage loops.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided tender excerpts mention the SonoRest CV-200 Cardiac Imaging Table and state that it is a comparable cardiac imaging table for echocardiography procedures, but they contain no information whatsoever regarding whether the table has 4 flexible hand control storage loops."
+  },
+  {
+    "requirement_id": "7ddf03d3-2a61-4ef5-a915-2611a04e69f8",
+    "requirement_text": "Echocardiography examination tables must feature electric locking casters for smooth movement and stability.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention the model of the echocardiography table offered (SonoRest CV-200) and various terms regarding manufacturing, delivery, and distribution. However, there is no mention whatsoever of whether the examination tables feature electric locking casters. Therefore, there is insufficient information in the text to determine compliance with this specific requirement."
+  },
+  {
+    "requirement_id": "e1181599-31fb-4880-b389-45ec4a899c68",
+    "requirement_text": "Echocardiography examination tables must have a patient surface footprint of 30\"Wx83\"L.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention that the bidder is offering the SonoRest CV-200 Cardiac Imaging Table as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924), but they do not contain any specifications regarding the patient surface footprint or dimensions (30\"Wx83\"L) of the offered table. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "e3d03de4-8c0e-4629-a2ab-a1b7c7a3998a",
+    "requirement_text": "Echocardiography examination tables must have an electrically adjustable Fowler backrest supporting positioning from 0° to 65° (or up to 80°).",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention the model of the offered cardiac imaging table (SonoRest CV-200), but they do not contain any technical specifications regarding whether the table features an electrically adjustable Fowler backrest or supports positioning from 0° to 65° (or up to 80°)."
+  },
+  {
+    "requirement_id": "448dde25-441e-445a-9206-401d106bd5ac",
+    "requirement_text": "Echocardiography examination tables must feature Trendelenburg and Reverse Trendelenburg positioning capability (e.g., +/-15°).",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts state that the bidder is offering the SonoRest CV-200 Cardiac Imaging Table as an equal to the specified model, but they do not contain any technical specifications regarding whether the table features Trendelenburg and Reverse Trendelenburg positioning capability."
+  },
+  {
+    "requirement_id": "9c131429-9a90-40e4-8ce4-3bda3834c503",
+    "requirement_text": "Echocardiography examination tables must have an adjustable height range (e.g., 24\"–34\") for optimal sonographer access.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The bidder's application proposes the SonoRest CV-200 Cardiac Imaging Table and states it is comparable for echocardiography procedures, but provides no specifications regarding the adjustable height range of the table. Therefore, there is insufficient information in the excerpts to determine if the requirement is met."
+  },
+  {
+    "requirement_id": "60401a98-440f-495e-839b-4df71c726ab1",
+    "requirement_text": "Echocardiography examination tables must feature dual rapid release imaging drop sections or wall-ways models for multi-access scanning.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention that the offered item is the SonoRest CV-200 Cardiac Imaging Table and state that it is a comparable cardiac imaging table suitable for echocardiography procedures. However, the excerpts do not contain any information regarding whether the table features dual rapid release imaging drop sections or walk-away models for multi-access scanning."
+  },
+  {
+    "requirement_id": "e9f33bb4-633f-45ba-b4e8-be0ded31f928",
     "requirement_text": "Echocardiography examination tables must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided excerpts mention the offering of the SonoRest CV-200 Cardiac Imaging Table as an equal to the MPI Echo Bed Cardiac Imaging Table, but they do not contain any information regarding whether the table features a 14\" x 14\" drop section."
+    "reasoning": "The bidder's application proposes the SonoRest CV-200 Cardiac Imaging Table as an equal, but the provided text contains no details or specifications regarding whether the table features a standard 14\" x 14\" drop section."
   },
   {
-    "requirement_id": "5e3dce66-707b-494d-b991-a2fddf662ca8",
-    "requirement_text": "Echocardiography examination tables must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+    "requirement_id": "b8705ea4-c527-43d6-b037-0387dd650af8",
+    "requirement_text": "Echocardiography examination tables must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L).",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided application excerpts mention the offering of the SonoRest CV-200 Cardiac Imaging Table as an equal, but they do not contain any technical specifications regarding whether the table features an open apical window with a large cardiac scanning cutout or its specific dimensions."
+    "reasoning": "The bidder's tender application offers the SonoRest CV-200 Cardiac Imaging Table as an equal, but the provided excerpts do not contain any information regarding whether the table features an open apical window with a large cardiac scanning cutout matching the required specifications."
   },
   {
-    "requirement_id": "f9ab94a3-7493-415a-b98f-914cfdaf355e",
-    "requirement_text": "Drop-down cushion that releases from either side for barrier-free access",
+    "requirement_id": "46ed3adb-8023-451f-a900-7b85232bf2b8",
+    "requirement_text": "Echocardiography examination tables must feature a drop-down cushion releasing from either side for barrier-free access.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided text mentions details about the SonoRest CV-200 cardiac imaging table, its manufacture, compliance, and terms, but it does not contain any information regarding whether it features a drop-down cushion that releases from either side for barrier-free access."
+    "reasoning": "The provided excerpts mention that the offered item is the SonoRest CV-200 Cardiac Imaging Table, but they do not contain any technical specifications or details regarding whether the examination table features a drop-down cushion releasing from either side for barrier-free access. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "4e9eaa05-4aa5-46d8-bb8c-0d2eee451fa5",
+    "requirement_text": "Echocardiography examination tables must feature a memory hand controller with programmable positions and optional foot control.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided tender excerpts mention the offered item (SonoRest CV-200 Cardiac Imaging Table) and various compliance details such as the Buy American Act and Gray Market Verification, but they do not contain any information regarding whether the echocardiography examination table features a memory hand controller with programmable positions and optional foot control."
+  },
+  {
+    "requirement_id": "38ffcf61-8f8e-4697-9062-c81cd1bc16eb",
+    "requirement_text": "Echocardiography examination tables must feature a single-pedal brake and steering for mobility.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention the model of the echocardiography table being offered (SonoRest CV-200), but they do not contain any information regarding whether the table features a single-pedal brake and steering for mobility."
+  },
+  {
+    "requirement_id": "e303ee1c-b73f-4337-9c19-f42336d9c556",
+    "requirement_text": "Echocardiography examination tables must feature protective corner bumpers and optional collapsible/removable side rails.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided tender excerpts mention the model being offered (SonoRest CV-200) but contain no information regarding whether the echocardiography examination table features protective corner bumpers or optional collapsible/removable side rails."
+  },
+  {
+    "requirement_id": "559a05a0-e50e-431a-9e23-a8297b80c1f5",
+    "requirement_text": "Echocardiography examination tables must include integrated conveniences such as an IV pole holder, storage tray, and paper roll holder with cutter.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The bidder's application proposes the SonoRest CV-200 Cardiac Imaging Table and mentions that it is offered as an equal to the MPI Echo Bed Cardiac Imaging Table. However, the excerpts do not contain any information regarding whether the table includes the required integrated conveniences such as an IV pole holder, storage tray, and paper roll holder with cutter. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "151b1bbf-78aa-457a-9bc0-1ea163417ebb",
+    "requirement_text": "Echocardiography examination tables must feature a Naugahyde antimicrobial mattress cover for patient comfort and infection control.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The tender application mentions the offered item (SonoRest CV-200 Cardiac Imaging Table) and its manufacturer, but the provided text does not contain any information regarding the mattress cover material, whether it is Naugahyde, or its antimicrobial properties. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "90da2d6d-f6ab-43df-9169-9d2eff2cf4ef",
+    "requirement_text": "Echocardiography examination tables must feature a central floor-locking system to maintain table stability during imaging.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided application excerpts mention the offered product (SonoRest CV-200 Cardiac Imaging Table) and state that it is an equal to the MPI Echo Bed Cardiac Imaging Table, but they do not contain any technical specifications regarding a central floor-locking system or table stability mechanisms."
+  },
+  {
+    "requirement_id": "33aa49cd-709a-40b7-8e16-317047a58536",
+    "requirement_text": "Application: Designed for echocardiography and suitable for other ultrasound applications like stress echo, transesophageal echo, and general cardiac imaging.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that the application must be designed for echocardiography and suitable for other ultrasound applications like stress echo, transesophageal echo, and general cardiac imaging. The bidder's application mentions that the offered product (SonoRest CV-200) is suitable for echocardiography procedures, but provides no information regarding its suitability for other ultrasound applications such as stress echo, transesophageal echo, or general cardiac imaging. Therefore, there is insufficient information to fully confirm compliance with all aspects of the requirement."
+  },
+  {
+    "requirement_id": "2d04fcd3-0ebd-4774-bcce-54a00679d396",
+    "requirement_text": "Compatibility with Echo Ultrasound examination bed.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a comparable cardiac imaging table suitable for echocardiography procedures.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies compatibility with the Echo Ultrasound examination bed. The bidder offers the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table, stating it is suitable for echocardiography procedures, but the excerpts do not explicitly confirm its compatibility or integration with an Echo Ultrasound examination bed itself. Therefore, there is insufficient information to conclusively determine compliance."
+  },
+  {
+    "requirement_id": "07d9b377-a753-4ad8-819a-3204bc247de0",
+    "requirement_text": "Medical electrical equipment must comply with applicable safety and electromagnetic standards including IEC 60601-1 series, CSA equivalents, AAMI standards, and IEC 60601-1-2.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The application documents contain details regarding the item offered, pricing, delivery, and compliance with the Buy American Act and distributor status, but they are completely silent on medical electrical equipment safety standards, IEC 60601-1 series, CSA equivalents, AAMI standards, and IEC 60601-1-2. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "6d77e27e-860c-4eb3-b539-f246d7c69255",
+    "requirement_text": "The Delivery Timeframe shall be 30 Days ARO.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C26226Q1367/application.txt",
+        "quote": "Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery\ntimeframe to VA Greater Los Angeles Healthcare System.",
+        "start_char": 2205,
+        "end_char": 2335,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the delivery timeframe shall be 30 Days ARO. The bidder explicitly states in chunk [1] that they can meet the 30-day ARO delivery timeframe."
   }
 ]

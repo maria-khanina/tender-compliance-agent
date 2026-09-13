@@ -3,7 +3,8 @@
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sam_registration_active, pra_national_security_cooperation, kaspersky_telecom_prohibition_compliance, and submission_deadline_and_channel, since all four are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (11 topics), non_compliant across different failure shapes -- a missing field (part number/SKU), a wrong value (quote validity date, RAM capacity, warranty length), and a total omission (hot-swap bays, chassis dimensions) -- insufficient_information (vague/generic statements for pricing-inclusiveness and NVMe drive roles), and one contradictory claim (GPU model stated two different ways in the same quote).",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "unique_entity_identifier_annotation broadened to also accept insufficient_information: the bundled UEI+EFT-indicator requirement is conditional for the EFT half (if applicable), so silence about EFT alone should not force non_compliant per the conditional-silence verdict rule -- the model instead treated the absence as a definite failure, an instructive miss but the fixture stays at insufficient_information, not non_compliant, to keep the conditional-silence principle intact."
   ],
   "verdicts": [
     {
@@ -106,7 +107,8 @@
       "topic_id": "unique_entity_identifier_annotation",
       "description": "The offeror shall enter the annotation “Unique Entity Identifier” followed by its UEI in the block with its name and address on the cover page of its offer.",
       "acceptable_verdicts": [
-        "compliant"
+        "compliant",
+        "insufficient_information"
       ],
       "rationale": "Application enters the Unique Entity Identifier annotation together with the vendor's name and address.",
       "evidence": [

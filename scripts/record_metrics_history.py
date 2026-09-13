@@ -46,6 +46,21 @@ def _git_commit_sha() -> str | None:
     return result.stdout.strip()
 
 
+def _git_dirty_paths(paths: list[str]) -> list[str]:
+    try:
+        result = subprocess.run(
+            ["git", "status", "--porcelain", "--", *paths],
+            capture_output=True, text=True, check=True,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return []
+    dirty = []
+    for line in result.stdout.splitlines():
+        if line.strip():
+            dirty.append(line[3:].strip())
+    return dirty
+
+
 def main() -> None:
     _add_project_root_to_path()
     from evaluation import (
@@ -133,11 +148,30 @@ def main() -> None:
             ),
         )
 
+    from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+    from config import Settings
+
     arguments = _parse_arguments()
     data_dir = pathlib.Path(arguments.data_dir)
     recorded_at = datetime.datetime.now(datetime.UTC).isoformat()
     commit_sha = _git_commit_sha()
     history_path = pathlib.Path(arguments.history_file)
+
+    # Read the values that actually govern pipeline behavior directly from
+    # the running config/settings, rather than relying on the git commit
+    # (which says nothing about uncommitted edits) or after-the-fact log
+    # archaeology to reconstruct what was in effect for a given run.
+    language_model_name = Settings().language_model_name  # type: ignore[call-arg]
+    dedup_threshold = REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+    dirty_paths = _git_dirty_paths(["config.py", "prompts.py"])
+    if dirty_paths:
+        print(
+            "WARNING: uncommitted changes in "
+            f"{', '.join(dirty_paths)} -- the recorded commit will NOT "
+            "match the code that actually produced these predicted_*.json "
+            "files. Commit first if you want this checkpoint to be "
+            "reproducible from the commit alone."
+        )
 
     rows_written = 0
     with history_path.open("a", encoding="utf-8") as history_file:
@@ -148,8 +182,11 @@ def main() -> None:
             row = {
                 "recorded_at": recorded_at,
                 "commit": commit_sha,
+                "commit_dirty_paths": dirty_paths,
                 "label": arguments.label,
                 "case": case_dir.name,
+                "language_model_name": language_model_name,
+                "dedup_threshold": dedup_threshold,
                 **metrics,
             }
             history_file.write(json.dumps(row, ensure_ascii=False) + "\n")
