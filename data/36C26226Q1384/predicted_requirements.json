@@ -1,15 +1,24 @@
 [
   {
-    "requirement_id": "0812a742-4908-4cce-b68c-b8f837e6031e",
-    "text": "Offerors must demonstrate that their offered products meet the salient physical, functional, or performance characteristics specified in the solicitation, or provide information/location of information regarding how an equivalent product meets these characteristics.",
+    "requirement_id": "63d866bc-1d4f-4ea1-9408-4141a7c05354",
+    "text": "Offeror quotations must demonstrate and provide clear, compelling evidence that the offered items meet all salient physical, functional, or performance characteristics specified in the solicitation.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Offeror quotations must demonstrate meeting the salient physical, functional, or performance characteristic specified in this solicitation",
+        "quote": "Offeror quotations must demonstrate meeting the salient physical, functional, or performance characteristic specified in this solicitation, otherwise it will be considered non-responsive.",
         "start_char": 1257,
-        "end_char": 1395,
+        "end_char": 1444,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
+        "start_char": 4453,
+        "end_char": 4633,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -25,12 +34,12 @@
       },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": " To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must—",
-        "start_char": 7437,
-        "end_char": 7558,
+        "quote": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
+        "start_char": 5685,
+        "end_char": 5852,
         "citation_verified": true,
-        "match_precision": "fuzzy",
-        "used_for_matching": false
+        "match_precision": "precise",
+        "used_for_matching": true
       },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -40,240 +49,15 @@
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/ATTACHMENT+A+-+AquaSept+High+Speed+Kit+or+Equal.xlsx",
-        "quote": "Equivalent Description Matching Salient Characteristics and/or location of information regarding equal capability",
-        "start_char": 187,
-        "end_char": 300,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
       }
     ],
     "conditions": []
   },
   {
-    "requirement_id": "c11ef8f4-ec8b-480f-8f5a-551fcefe39d1",
-    "text": "The quote packet must include the manufacturer name and the specific make or model number of the offered items.",
+    "requirement_id": "35cedb52-516b-49b4-bfea-9558be04467f",
+    "text": "All offeror quotes must be received electronically through email no later than Friday, August 28th, 2026 10:00am PT.",
     "is_mandatory": true,
     "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Ensure the following are completed and/or included in the quote packet:",
-        "start_char": 2841,
-        "end_char": 2912,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Please specify offered item manufacturer and part number.",
-        "start_char": 3069,
-        "end_char": 3126,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Make or model number",
-        "start_char": 7731,
-        "end_char": 7751,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "52a86950-08f4-4859-a60d-e268d27506cc",
-    "text": "The vendor must be an OEM, authorized dealer, distributor, or reseller, and must provide an Authorized Distributor Letter or equivalent documentation from the manufacturer.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Ensure the following are completed and/or included in the quote packet:",
-        "start_char": 2841,
-        "end_char": 2912,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Provide an Authorized Distributor Letter/Memo from the manufacturer.",
-        "start_char": 3132,
-        "end_char": 3200,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM",
-        "start_char": 9066,
-        "end_char": 9364,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "4905bdfb-c6e7-481f-ac6e-3be2c6b4a1ba",
-    "text": "The offeror must include the Country of Origin for all items being offered.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Please include a Country of Origin for the items being offered (see column A)",
-        "start_char": 4021,
-        "end_char": 4098,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/ATTACHMENT+A+-+AquaSept+High+Speed+Kit+or+Equal.xlsx",
-        "quote": "Country of Origin",
-        "start_char": 303,
-        "end_char": 320,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "f3882b68-98cb-422b-94e5-38a3ddbb2a9a",
-    "text": "Offerors shall provide verification that their items are not Gray Market products.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market",
-        "start_char": 4103,
-        "end_char": 4223,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "aed75bfb-95c8-4981-9bca-52dba9a25fa4",
-    "text": "Offeror must indicate whether the items are manufactured by a small or large business.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Offeror must indicate whether the items are manufactured by a small or large business",
-        "start_char": 4228,
-        "end_char": 4313,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "6c3304fb-2bae-43de-9a72-e8090fbea33a",
-    "text": "If the offeror plans to modify a product to conform to solicitation requirements, they must clearly describe the modification and mark the descriptive material to show the modification.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements.",
-        "start_char": 7944,
-        "end_char": 8069,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Mark any descriptive material to clearly show the modification.",
-        "start_char": 8070,
-        "end_char": 8133,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "97126bf7-1def-40b6-8a4e-5d9d2983a440",
-    "text": "Unless the offeror clearly indicates that the product is an equal, the offeror shall provide the brand name product referenced in the solicitation.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Unless the offeror clearly indicates in its offer that the product being offered is an “equal” product, the offeror shall provide the brand name product referenced in the solicitation.",
-        "start_char": 8444,
-        "end_char": 8628,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "6feadfc6-b659-4c19-9a32-885e065e3458",
-    "text": "All software licensing, warranty, and service associated with the medical supplies or equipment must be in accordance with the OEM terms and conditions.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions.",
-        "start_char": 9447,
-        "end_char": 9668,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "2166f110-7e28-4c1d-9811-93b5e3b23563",
-    "text": "The Delivery Timeframe shall be 30 Days ARO.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The Delivery Timeframe shall be 30 Days ARO.",
-        "start_char": 2086,
-        "end_char": 2130,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "8ed0d85c-5880-4b3f-8d65-803e39215c76",
-    "text": "All offeror quotes for this solicitation must be received electronically through email no later than Friday, August 28th, 2026 10:00am PT.",
-    "is_mandatory": true,
-    "is_text_verifiable": false,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -288,10 +72,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "da41e1aa-5eac-48ea-8c62-801b4af80385",
+    "requirement_id": "e97f4d84-5c71-4a4f-b1c5-1224785d7183",
     "text": "Ensure to reference solicitation number [36C26226Q1384] within subject line of the email.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -306,10 +90,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "706598ab-70ac-420d-ae6d-a169147246e6",
-    "text": "Offers shall be sent by email to Rochelle.Malveaux@va.gov",
+    "requirement_id": "547a76d1-4e2d-46df-aa4f-2c7726c1d293",
+    "text": "Offers shall be sent by email to Rochelle.Malveaux@va.gov.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -324,8 +108,8 @@
     "conditions": []
   },
   {
-    "requirement_id": "bfcefb9f-2033-478b-bd48-d31c407ee9a0",
-    "text": "Ensure the following are completed and/or included in the quote packet: ... Vendor Information with SAM UEI.",
+    "requirement_id": "b4166ff3-c1b6-4fca-8760-7800e45e1af3",
+    "text": "Vendor Information with SAM UEI must be included in the quote packet.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -351,8 +135,8 @@
     "conditions": []
   },
   {
-    "requirement_id": "1fa8cba0-247a-44c2-986e-3b9b61635c53",
-    "text": "Ensure the following are completed and/or included in the quote packet: ... Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+    "requirement_id": "301b642c-eb2b-4e95-a323-0d4265c9d9ef",
+    "text": "Concurrence or non-concurrence with solicitation terms, conditions, and provisions must be included in the quote packet.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -367,8 +151,8 @@
       },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
-        "start_char": 2951,
+        "quote": "b. Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+        "start_char": 2948,
         "end_char": 3030,
         "citation_verified": true,
         "match_precision": "precise",
@@ -378,8 +162,8 @@
     "conditions": []
   },
   {
-    "requirement_id": "f071e62e-b0a0-4fbd-859a-655c5fc022ed",
-    "text": "Ensure the following are completed and/or included in the quote packet: ... Items shall be FOB destination.",
+    "requirement_id": "a780dd15-0a63-4ebb-bde9-a4c5acd622f4",
+    "text": "Items shall be FOB destination, and the offeror must specify the offered item manufacturer and part number.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -394,9 +178,9 @@
       },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Items shall be FOB destination.",
-        "start_char": 3036,
-        "end_char": 3067,
+        "quote": "c. Items shall be FOB destination.  Please specify offered item manufacturer and part number.",
+        "start_char": 3033,
+        "end_char": 3126,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -405,10 +189,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "c6694d20-0828-4f59-bdcd-15bee9b58e5d",
-    "text": "Ensure the following are completed and/or included in the quote packet: ... Product must comply with the Buy American Act; Trade Agreement Act and all other clauses found in the FAR and any agency-specific regulations that are relevant and specific to this solicitation",
+    "requirement_id": "c7416fbc-4e1a-4d37-a8aa-0a214a924d1d",
+    "text": "Provide an Authorized Distributor Letter/Memo from the manufacturer, verifying that the vendor is an OEM, authorized dealer, distributor, or reseller such that OEM warranty and service are provided.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -421,9 +205,18 @@
       },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Product must comply with the Buy American Act; Trade Agreement Act and all other clauses found in the FAR and any agency-specific regulations that are relevant and specific to this solicitation",
-        "start_char": 3206,
-        "end_char": 3399,
+        "quote": "d. Provide an Authorized Distributor Letter/Memo from the manufacturer.",
+        "start_char": 3129,
+        "end_char": 3200,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM.",
+        "start_char": 9066,
+        "end_char": 9446,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -432,8 +225,170 @@
     "conditions": []
   },
   {
-    "requirement_id": "68fb12b9-3b32-4dc4-81b9-cafe098504b0",
-    "text": "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable",
+    "requirement_id": "79251d35-271e-4405-b0cb-17f77f999e87",
+    "text": "Product must comply with the Buy American Act, Trade Agreement Act, and all other relevant clauses found in the FAR and agency-specific regulations.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2841,
+        "end_char": 2912,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "e. Product must comply with the Buy American Act; Trade Agreement Act and all other clauses found in the FAR and any agency-specific regulations that are relevant and specific to this solicitation",
+        "start_char": 3203,
+        "end_char": 3399,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The cost of its components mined, produced, or manufactured in the United States exceeds 60 percent of the cost of all its components, except that the percentage will be 65 percent for items delivered in calendar years 2024 through 2028 and 75 percent for items delivered starting in calendar year 2029.",
+        "start_char": 12075,
+        "end_char": 12378,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The Contractor shall deliver only domestic end products except to the extent that it specified delivery of foreign end products in the provision of the solicitation entitled \"Buy American Certificate.\"",
+        "start_char": 15865,
+        "end_char": 16066,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The Offeror certifies that each end product, except those listed in paragraph (b) of this provision, is a domestic end product and that each domestic end product listed in paragraph (c) of this provision contains a critical component.",
+        "start_char": 16139,
+        "end_char": 16373,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
+        "start_char": 16378,
+        "end_char": 16523,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "For those foreign end products that do not consist wholly or predominantly of iron or steel or a combination of both, the Offeror shall also indicate whether these foreign end products exceed 55 percent domestic content, except for those that are COTS items.",
+        "start_char": 16524,
+        "end_char": 16782,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "If the percentage of the domestic content is unknown, select “no”.",
+        "start_char": 16783,
+        "end_char": 16849,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The Offeror shall separately list the line item numbers of domestic end products that contain a critical component (see FAR 25.105).",
+        "start_char": 16854,
+        "end_char": 16986,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.",
+        "start_char": 18719,
+        "end_char": 18855,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dffb4f52-788d-465a-8d61-9ccd539d5364",
+    "text": "Please include a Country of Origin for the items being offered.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Please include a Country of Origin for the items being offered (see column A)",
+        "start_char": 4021,
+        "end_char": 4098,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "30b2bf78-14ea-4779-9b30-5dd39d924b7c",
+    "text": "Offerors shall provide verification that their items are not gray market or remanufactured items.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market",
+        "start_char": 4103,
+        "end_char": 4223,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "No remanufactures or gray market items will be acceptable.",
+        "start_char": 9003,
+        "end_char": 9061,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3128c34c-db7b-4dcc-9f7c-7b7d8828c954",
+    "text": "Offeror must indicate whether the items are manufactured by a small or large business.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Offeror must indicate whether the items are manufactured by a small or large business",
+        "start_char": 4228,
+        "end_char": 4313,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "527fd91b-6711-40d1-a78b-aed28e1392af",
+    "text": "All items must be listed on FSS contract if the vendor is an FSS contract holder, including number and expiration date if applicable.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -450,16 +405,25 @@
     "conditions": []
   },
   {
-    "requirement_id": "7ba53ac7-28c1-41c6-9fc6-9ed9d0e15dc0",
-    "text": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
+    "requirement_id": "ede5f667-2f5d-4968-942b-9db89fe52eb1",
+    "text": "Offers that include any items that are not determined as Brand Name or Equal shall result in an unacceptable offer, and the offeror shall provide the brand name product unless indicating an equal product is offered.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
-        "start_char": 4453,
-        "end_char": 4633,
+        "quote": "Offers that include any items that are not determined as Brand Name or Equal shall result in an unacceptable offer.",
+        "start_char": 5854,
+        "end_char": 5969,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Unless the offeror clearly indicates in its offer that the product being offered is an “equal” product, the offeror shall provide the brand name product referenced in the solicitation.",
+        "start_char": 8444,
+        "end_char": 8628,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -468,28 +432,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "1ca68ea8-30c5-43b9-b901-48cc3c2912b2",
-    "text": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
+    "requirement_id": "934324be-f331-4b73-bd8e-abacd33774b0",
+    "text": "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, or ensure SAM.gov is updated.",
     "is_mandatory": true,
     "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
-        "start_char": 5685,
-        "end_char": 5852,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "3606a5e4-6c9c-4bff-ba98-a974c81b0c39",
-    "text": "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, with this solicitation or ensure SAM.gov is updated with current information.",
-    "is_mandatory": true,
-    "is_text_verifiable": false,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -504,43 +450,34 @@
     "conditions": []
   },
   {
-    "requirement_id": "1b6fa0ea-3583-41f3-b77f-e5746932ed75",
-    "text": " To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— ... \n(2) Clearly identify the item by—",
+    "requirement_id": "3b24b775-f717-4860-b0b7-92906979b09e",
+    "text": "Clearly identify the item by brand name, make, or model number.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": " To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must—",
-        "start_char": 7437,
-        "end_char": 7558,
-        "citation_verified": true,
-        "match_precision": "fuzzy",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "\n(2) Clearly identify the item by—",
-        "start_char": 7663,
+        "quote": "(2) Clearly identify the item by—",
+        "start_char": 7664,
         "end_char": 7697,
         "citation_verified": true,
-        "match_precision": "fuzzy",
+        "match_precision": "precise",
         "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "fe66c8ac-c973-4c84-98ef-8b24952009dc",
-    "text": "Brand name, if any",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
+      },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Brand name, if any",
+        "quote": "Brand name, if any; and",
         "start_char": 7702,
-        "end_char": 7720,
+        "end_char": 7725,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "Make or model number;",
+        "start_char": 7731,
+        "end_char": 7752,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -549,16 +486,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "272603b8-9ad3-4b60-8af3-8d791122d2ab",
-    "text": "Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer",
+    "requirement_id": "714a7812-a929-4d12-8747-5a950d181241",
+    "text": "Include descriptive literature such as illustrations, drawings, or clear reference to previously furnished descriptive data.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer",
+        "quote": "Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and",
         "start_char": 7757,
-        "end_char": 7934,
+        "end_char": 7939,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -567,34 +504,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "44f8ee61-36e4-4848-bdde-518710ce1977",
-    "text": "No remanufactures or gray market items will be acceptable.",
-    "is_mandatory": true,
-    "is_text_verifiable": false,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "No remanufactures or gray market items will be acceptable.",
-        "start_char": 9003,
-        "end_char": 9061,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "42625a08-4893-4efc-a5ea-b0a86fb61014",
-    "text": "The cost of components mined, produced, or manufactured in the United States must exceed 60 percent of the total cost of all components.",
+    "requirement_id": "7578fc4a-1a40-4967-991a-1a0930da8ede",
+    "text": "Clearly describe and mark any modification the offeror plans to make in a product to make it conform to the solicitation requirements.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The cost of its components mined, produced, or manufactured in the United States exceeds 60 percent of the cost of all its components",
-        "start_char": 12075,
-        "end_char": 12208,
+        "quote": "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification.",
+        "start_char": 7944,
+        "end_char": 8133,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -603,16 +522,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "7b2d3a5d-f5d9-49f5-b0d4-d0ae4799fe8d",
-    "text": "For end products consisting wholly or predominantly of iron or steel, the product is considered domestic if the cost of foreign iron and steel constitutes less than 5 percent of the total cost of all components.",
+    "requirement_id": "99555047-a21c-4bd2-9c5f-50c4a1b6b4d2",
+    "text": "All software licensing, warranty, and service associated with medical supplies and equipment shall be in accordance with OEM terms and conditions.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "(2) For an end product that consists wholly or predominantly of iron or steel or a combination of both, an end product manufactured in the United States, if the cost of foreign iron and steel constitutes less than 5 percent of the cost of all the components used in the end product.",
-        "start_char": 12819,
-        "end_char": 13101,
+        "quote": "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions.",
+        "start_char": 9447,
+        "end_char": 9668,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -621,182 +540,11 @@
     "conditions": []
   },
   {
-    "requirement_id": "d167455b-244d-481b-9999-0ed65503235b",
-    "text": "The Offeror must certify that each end product is a domestic end product (unless otherwise excepted) and must separately list the line item numbers of domestic end products that contain a critical component as defined in FAR 25.105.",
+    "requirement_id": "2868da47-6388-46d5-96f0-a1bd4a3dc0d1",
+    "text": "The Contractor qualifies as a small business under the SBA size standards.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The Offeror certifies that each end product, except those listed in paragraph (b) of this provision, is a domestic end product and that each domestic end product listed in paragraph (c) of this provision contains a critical component.",
-        "start_char": 16139,
-        "end_char": 16373,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The Offeror shall separately list the line item numbers of domestic end products that contain a critical component (see FAR 25.105).",
-        "start_char": 16854,
-        "end_char": 16986,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "a12686e0-6ce5-4e86-ad62-2bb0c02fa7be",
-    "text": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
-        "start_char": 16378,
-        "end_char": 16523,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "9d9ad58f-b1a5-40e1-aba3-e2f7a813d817",
-    "text": "For foreign end products not consisting wholly or predominantly of iron or steel, the Offeror shall indicate whether they exceed 55 percent domestic content, excluding COTS items.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "For those foreign end products that do not consist wholly or predominantly of iron or steel or a combination of both, the Offeror shall also indicate whether these foreign end products exceed 55 percent domestic content, except for those that are COTS items.",
-        "start_char": 16524,
-        "end_char": 16782,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "8ed2a857-ce07-4e35-ada5-371710a3eea7",
-    "text": "The Contractor certifies that all products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "By entering into this contract, the Contractor certifies that:",
-        "start_char": 18014,
-        "end_char": 18076,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.",
-        "start_char": 18719,
-        "end_char": 18855,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "5e71e9d7-3394-4ccc-8bda-f413abae4bbc",
-    "text": "The percentage for items delivered in calendar years 2024 through 2028 shall be 65 percent.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "the percentage will be 65 percent for items delivered in calendar years 2024 through 2028",
-        "start_char": 12222,
-        "end_char": 12311,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "a917a31e-df9b-495c-ad16-87ed18e03540",
-    "text": "The percentage for items delivered starting in calendar year 2029 shall be 75 percent.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "75 percent for items delivered starting in calendar year 2029",
-        "start_char": 12316,
-        "end_char": 12377,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "d6f0f2f2-cbe2-40e7-9206-2eb04bfa248a",
-    "text": "(B) The end product is a COTS item",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "(B) The end product is a COTS item",
-        "start_char": 12780,
-        "end_char": 12814,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "ac817024-c7c9-4838-bbb0-e75d0205fc38",
-    "text": "If the percentage of the domestic content is unknown, select “no”.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "If the percentage of the domestic content is unknown, select “no”.",
-        "start_char": 16783,
-        "end_char": 16849,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "80ff717e-7a9b-4903-9013-572c725052a9",
-    "text": "The Contractor certifies that it qualifies as a small business under the SBA size standards.",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "By entering into this contract, the Contractor certifies that:",
-        "start_char": 18014,
-        "end_char": 18076,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
         "quote": "The Contractor qualifies as a small business under the SBA size standards.",
@@ -810,47 +558,11 @@
     "conditions": []
   },
   {
-    "requirement_id": "1877bfb1-a832-4e3a-bcfa-9b2e682c66b2",
-    "text": "The Contractor certifies that it will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
+    "requirement_id": "b58078e6-59a4-4cb3-9df2-9abc799405d0",
+    "text": "The Contractor is primarily engaged in the retail or wholesale trade and normally supplies the type of product being provided.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "By entering into this contract, the Contractor certifies that:",
-        "start_char": 18014,
-        "end_char": 18076,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "The Contractor will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
-        "start_char": 18447,
-        "end_char": 18597,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "84535a8e-81e8-4bb5-800c-b5dfd678b893",
-    "text": "By entering into this contract, the Contractor certifies that: ... The Contractor is primarily engaged in the retail or wholesale trade and normally supplies the type of product being provided in this contract.",
-    "is_mandatory": true,
-    "is_text_verifiable": false,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "By entering into this contract, the Contractor certifies that:",
-        "start_char": 18014,
-        "end_char": 18076,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
         "quote": "The Contractor is primarily engaged in the retail or wholesale trade and normally supplies the type of product being provided in this contract.",
@@ -864,20 +576,11 @@
     "conditions": []
   },
   {
-    "requirement_id": "e4deef61-4822-4155-86a1-1d4397b68c1a",
-    "text": "By entering into this contract, the Contractor certifies that: ... The Contractor does not manufacture the products being supplied under this contract.",
+    "requirement_id": "50a9aa4c-965a-4c40-8cfc-0ce11b025fa2",
+    "text": "The Contractor does not manufacture the products being supplied under this contract.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "By entering into this contract, the Contractor certifies that:",
-        "start_char": 18014,
-        "end_char": 18076,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
         "quote": "The Contractor does not manufacture the products being supplied under this contract.",
@@ -891,10 +594,28 @@
     "conditions": []
   },
   {
-    "requirement_id": "37fc31a1-2edc-4ff3-852e-0bd4dbbbf6d3",
+    "requirement_id": "1e3a63cd-8075-45b4-9eac-4513b1689909",
+    "text": "The Contractor will supply the product of a small business manufacturer or processor, unless a waiver has been granted by the SBA.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
+        "quote": "The Contractor will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
+        "start_char": 18447,
+        "end_char": 18597,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9ae9cb7f-003c-415a-976f-c6fca32cd345",
     "text": "The Contractor agrees to maintain and provide documentation that verifies compliance with the NMR, upon request by the Contracting Officer or the SBA.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -909,10 +630,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "db9f595f-54b4-4d71-8f6b-31b8a69a38c3",
+    "requirement_id": "7849fd9f-9104-489c-a91f-63d75caacee3",
     "text": "The Contractor will flow down this certification requirement to any subcontractors where applicable.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -927,10 +648,10 @@
     "conditions": []
   },
   {
-    "requirement_id": "f85e3235-6a09-45f3-96dd-aec3bdb089d3",
+    "requirement_id": "87552165-2789-4ed4-8a1e-cec61eb09e57",
     "text": "The Contractor will not alter, modify, repackage, or rebrand the products supplied under this contract.",
     "is_mandatory": true,
-    "is_text_verifiable": false,
+    "is_text_verifiable": true,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
@@ -945,7 +666,7 @@
     "conditions": []
   },
   {
-    "requirement_id": "6c75fb42-1094-4880-b118-903e2dfb966c",
+    "requirement_id": "42bdf1a0-7b8e-4bc2-b208-0aa03d520b67",
     "text": "The Contractor has made this certification at the time of submitting the offer in response to the solicitation.",
     "is_mandatory": true,
     "is_text_verifiable": true,
@@ -972,7 +693,7 @@
     "conditions": []
   },
   {
-    "requirement_id": "3434f69d-689a-45d8-b07a-e5c643e64896",
+    "requirement_id": "daa17053-796e-4088-9be3-20bc25ca7852",
     "text": "All information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.",
     "is_mandatory": true,
     "is_text_verifiable": true,
@@ -999,394 +720,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "afccccd2-660a-4e39-807a-7a75239d233f",
-    "text": "Signature: _______________________\nName: ___________________________\nTitle: ____________________________\nDate: ____________________________\nBusiness Name: ____________________________",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "Signature: _______________________\nName: ___________________________\nTitle: ____________________________\nDate: ____________________________\nBusiness Name: ____________________________",
-        "start_char": 19781,
-        "end_char": 19964,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "04d56b56-a313-46ae-b734-592b7fc8be48",
-    "text": "The contractor shall comply with clause 52.209-6, Protecting the government’s interest when subcontracting with contractors debarred, suspended, or proposed for debarment (Aug 2013).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.209-6 | Protecting the government’s interest when subcontracting with contractors debarred, suspended, or proposed for debarment | Aug 2013",
-        "start_char": 20340,
-        "end_char": 20482,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "4225e2fa-77b0-4715-bf13-9b4f4fdc5ae9",
-    "text": "The contractor shall comply with clause 52.232-33, Payment by electronic funds transfer – system for award management (Jul 2013).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.232-33 | Payment by electronic funds transfer – system for award management | Jul 2013",
-        "start_char": 20528,
-        "end_char": 20617,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "c7c9286b-1817-4037-96d2-f281013a1221",
-    "text": "The contractor shall comply with clause 52.232-40, Providing accelerated payments to small business subcontractors (Dec 2013).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.232-40 | Providing accelerated payments to small business subcontractors | Dec 2013",
-        "start_char": 20618,
-        "end_char": 20704,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "2ee4d3a9-2fc8-4699-9033-e40b86786b19",
-    "text": "The contractor shall comply with clause 852.232-72, Electronic submission of payment requests (Nov 2012).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.232-72 | Electronic submission of payment requests | Nov 2012",
-        "start_char": 20881,
-        "end_char": 20946,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "ebd2550a-b877-4e00-9ada-3a0ab1f19504",
-    "text": "The contractor shall comply with clause 52.204-7, System for Award Management (Oct 2018).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.204-7 | System for Award Management | Oct 2018",
-        "start_char": 21403,
-        "end_char": 21452,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "efe6cc99-1882-4a80-882f-3758a06b7b98",
-    "text": "The contractor shall comply with clause 52.204-16, Commercial and Government Entity Code Reporting (Oct 2016).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.204-16 | Commercial and Government Entity Code Reporting | Oct 2016",
-        "start_char": 21453,
-        "end_char": 21523,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "17fc353b-7c81-4b55-ac6f-7db7190b14e1",
-    "text": "In addition, the following clauses shall also apply:  ... 52.232-18 | Availability of Funds | Apr 1984",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.232-18 | Availability of Funds | Apr 1984",
-        "start_char": 20483,
-        "end_char": 20527,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "edafe186-153a-4195-9cae-f4d41b07dfe6",
-    "text": "In addition, the following clauses shall also apply:  ... 52.233-1 | Disputes | May 2014",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.233-1 | Disputes | May 2014",
-        "start_char": 20705,
-        "end_char": 20735,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "ddd002ff-54c8-4165-860e-8fb5adf991bb",
-    "text": "In addition, the following clauses shall also apply:  ... 52.233-3 | Protest after award | Aug 1996",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.233-3 | Protest after award | Aug 1996",
-        "start_char": 20736,
-        "end_char": 20777,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "9da41e7a-b5e3-4c11-8bd8-d9b43b0037aa",
-    "text": "The solicitation shall incorporate the following clauses and provisions by reference: 52.252-2 (Feb 1998), 852.203-70 (Jan 2008), and 852.252-70 (Jan 2008).",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.252-2 | Clauses incorporated by reference | Feb 1998",
-        "start_char": 20778,
-        "end_char": 20833,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.203-70 | Commercial advertising | Jan 2008",
-        "start_char": 20834,
-        "end_char": 20880,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.252-70 | Solicitation Provisions or Clauses Incorporated by Reference | Jan 2008",
-        "start_char": 21747,
-        "end_char": 21831,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "ebba071c-4967-46c4-84da-e05022a161d0",
-    "text": "In addition, the following clauses shall also apply:  ... 852.237-70",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.237-70",
-        "start_char": 20947,
-        "end_char": 20957,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "c011babd-2819-45f1-be16-597d6679d92a",
-    "text": "In addition, the following clauses shall also apply:  ... 852.219-78 | Contractor responsibilities \nNotice of Limitations on Subcontracting – Supplies and Services | Apr 1984",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.219-78 | Contractor responsibilities \nNotice of Limitations on Subcontracting – Supplies and Services | Apr 1984",
-        "start_char": 20958,
-        "end_char": 21074,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "c55d338c-f6f8-404a-8474-b199ffe9f0a7",
-    "text": "In addition, the following clauses shall also apply:  ... 852.219-73 | VA Notice of Total Set-Aside For Certified Service-Disabled Veteran-Owned Small Businesses | Jan 2023",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "In addition, the following clauses shall also apply: ",
-        "start_char": 20286,
-        "end_char": 20339,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": false
-      },
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.219-73 | VA Notice of Total Set-Aside For Certified Service-Disabled Veteran-Owned Small Businesses | Jan 2023",
-        "start_char": 21075,
-        "end_char": 21189,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "5fa5a609-fad6-460e-baa7-22b9b4ecd4f3",
-    "text": "52.209-7 | Information Regarding Responsibility Matters | Oct 2018",
+    "requirement_id": "f00d1e30-658c-4b36-8649-93bab39c111d",
+    "text": "The Delivery Timeframe shall be 30 Days ARO.",
     "is_mandatory": true,
     "is_text_verifiable": false,
     "citations": [
       {
         "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.209-7 | Information Regarding Responsibility Matters | Oct 2018",
-        "start_char": 21524,
-        "end_char": 21590,
+        "quote": "The Delivery Timeframe shall be 30 Days ARO.",
+        "start_char": 2086,
+        "end_char": 2130,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -1395,34 +738,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "448ff330-ec44-4744-9d52-b93b582b7643",
-    "text": "52.217-5 | Evaluation of Options | Jul 1990",
-    "is_mandatory": true,
-    "is_text_verifiable": false,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.217-5 | Evaluation of Options | Jul 1990",
-        "start_char": 21591,
-        "end_char": 21634,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "4b123f8c-27fe-4539-9d44-fbaa58cfa09f",
-    "text": "52.233-2 | Service of Protest | Sep 2006",
-    "is_mandatory": true,
+    "requirement_id": "80415ea5-f24a-4c83-a6d9-fabbd233c747",
+    "text": "Air driven high speed (4-hole) with sterile irrigation through a sterile pathway.",
+    "is_mandatory": false,
     "is_text_verifiable": true,
     "citations": [
       {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "52.233-2 | Service of Protest | Sep 2006",
-        "start_char": 21635,
-        "end_char": 21675,
+        "document_path": "data/36C26226Q1384/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+-+AQUA+SEPT+HIGH+SPEED+KIT+OR+EQUAL.docx",
+        "quote": "Air driven high speed (4-hole) with sterile irrigation through a sterile pathway",
+        "start_char": 68,
+        "end_char": 148,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -1431,16 +756,16 @@
     "conditions": []
   },
   {
-    "requirement_id": "67b34584-f080-4711-89c9-68a457ab2080",
-    "text": "852.233-70 | Protest Content/Alternative Dispute Resolution | Oct 2018",
-    "is_mandatory": true,
+    "requirement_id": "4b4220e1-e0e9-49d4-8db2-a18644e01707",
+    "text": "Detachable waterline system.",
+    "is_mandatory": false,
     "is_text_verifiable": true,
     "citations": [
       {
-        "document_path": "data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx",
-        "quote": "852.233-70 | Protest Content/Alternative Dispute Resolution | Oct 2018",
-        "start_char": 21676,
-        "end_char": 21746,
+        "document_path": "data/36C26226Q1384/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+-+AQUA+SEPT+HIGH+SPEED+KIT+OR+EQUAL.docx",
+        "quote": "Detachable waterline system",
+        "start_char": 149,
+        "end_char": 176,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true
@@ -1449,8 +774,44 @@
     "conditions": []
   },
   {
-    "requirement_id": "3e4bd0b5-185d-4bf6-8304-6e6199cebd96",
-    "text": "Must be fully autoclavable ensuring sterility between uses",
+    "requirement_id": "0faa864e-b444-42ab-a682-f4577ec117f2",
+    "text": "Includes (2) 8 ounce autoclavables bottles.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+-+AQUA+SEPT+HIGH+SPEED+KIT+OR+EQUAL.docx",
+        "quote": "Includes (2) 8 ounce autoclavables bottles",
+        "start_char": 208,
+        "end_char": 250,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "67fd249d-742d-43ab-84fa-2991c1b99e32",
+    "text": "Uses autoclavable tubing for sterile delivery pathway, eliminating possible waterline contamination.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+-+AQUA+SEPT+HIGH+SPEED+KIT+OR+EQUAL.docx",
+        "quote": "Uses autoclavable tubing for sterile delivery pathway, eliminating possible waterline contamination.",
+        "start_char": 251,
+        "end_char": 351,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "01e3bcdb-1ccb-4c1a-ad21-888b1000244c",
+    "text": "Must be fully autoclavable ensuring sterility between uses.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -1467,8 +828,8 @@
     "conditions": []
   },
   {
-    "requirement_id": "2b34c0a8-4404-4b9b-98c9-c07525486684",
-    "text": "Must be seamlessly integrate with most dental units providing sterile water pathway",
+    "requirement_id": "c13d090e-0175-4372-bb38-b8f8964048f0",
+    "text": "Must be seamlessly integrate with most dental units providing sterile water pathway.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -1485,8 +846,8 @@
     "conditions": []
   },
   {
-    "requirement_id": "af3e8509-0af4-4a52-98e5-9adb090171dd",
-    "text": "Must be easy irrigation control with instant on/off functionality and no footprint",
+    "requirement_id": "14f39ca7-91a6-485b-8a87-b19785687239",
+    "text": "Must be easy irrigation control with instant on/off functionality and no footprint.",
     "is_mandatory": true,
     "is_text_verifiable": true,
     "citations": [
@@ -1503,7 +864,25 @@
     "conditions": []
   },
   {
-    "requirement_id": "34dc0753-f19e-482e-9972-07eaa8dbb89f",
+    "requirement_id": "a30f6bed-29cb-42a2-8f47-718d5f49c77e",
+    "text": "Fits Midwest 4 hole handpieces",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1384/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+-+AQUA+SEPT+HIGH+SPEED+KIT+OR+EQUAL.docx",
+        "quote": "Fits Midwest 4 hole handpieces",
+        "start_char": 177,
+        "end_char": 207,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1aab3175-d2fc-41ba-9fe9-66adb566ad1d",
     "text": "Must be designed to provide high-speed cutting power rivaling electric handpieces while maintain precision and responsiveness",
     "is_mandatory": true,
     "is_text_verifiable": true,
@@ -1513,24 +892,6 @@
         "quote": "Must be designed to provide high-speed cutting power rivaling electric handpieces while maintain precision and responsiveness",
         "start_char": 578,
         "end_char": 703,
-        "citation_verified": true,
-        "match_precision": "precise",
-        "used_for_matching": true
-      }
-    ],
-    "conditions": []
-  },
-  {
-    "requirement_id": "cc848ec3-8c52-43f1-8d21-4fe232577492",
-    "text": "Unit Price",
-    "is_mandatory": true,
-    "is_text_verifiable": true,
-    "citations": [
-      {
-        "document_path": "data/36C26226Q1384/ATTACHMENT+A+-+AquaSept+High+Speed+Kit+or+Equal.xlsx",
-        "quote": "Unit Price",
-        "start_char": 334,
-        "end_char": 344,
         "citation_verified": true,
         "match_precision": "precise",
         "used_for_matching": true

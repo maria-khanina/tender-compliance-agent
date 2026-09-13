@@ -1,6 +1,6 @@
 [
   {
-    "requirement_id": "4886f73d-3412-446e-95b3-f1ccf65c0d1a",
+    "requirement_id": "8d4e2ac8-41bd-4ad8-93a5-2543f65f10fd",
     "requirement_text": "Quotes shall remain valid through September 30, 2026.",
     "verdict": "non_compliant",
     "evidence": [
@@ -15,29 +15,11 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement specifies that quotes must remain valid through September 30, 2026. The bidder explicitly states that their quote is only valid for 30 days from the date of the letter, which does not meet the required duration."
+    "reasoning": "The requirement states that quotes must remain valid through September 30, 2026. The bidder explicitly states that their quote is only valid for 30 days from the date of the letter, which does not meet the specified duration."
   },
   {
-    "requirement_id": "68ef801b-007a-4ed2-b169-0eba8b96a111",
-    "requirement_text": "All questions shall be submitted to rtiggle@fbi.gov no later than September 15, at 12:00 PM ET.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations",
-        "start_char": 0,
-        "end_char": 123,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided excerpts contain the bidder's formal quote submission, but they do not contain any information regarding whether the bidder submitted questions to the specified email address by the deadline of September 15, at 12:00 PM ET. The absence of such information makes it impossible to determine compliance."
-  },
-  {
-    "requirement_id": "1adfd57f-ba48-45bd-88c8-22876b84ef76",
-    "requirement_text": "Quotes shall be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM ET, and quotations received after this time will not be considered for award.",
+    "requirement_id": "e0197e92-5b9f-44c2-bbc2-6f275a734e60",
+    "requirement_text": "Quotes must be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM ET; late submissions will not be considered.",
     "verdict": "insufficient_information",
     "evidence": [
       {
@@ -51,29 +33,11 @@
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The provided excerpts confirm the email address to which the quote was sent, but they do not include a timestamp or date indicating when the email was sent. Therefore, it is impossible to determine if the submission met the deadline of September 17, 2026, at 12:00 PM ET."
+    "reasoning": "The provided excerpts do not include a timestamp or date for when the email was sent. While the email is addressed to the correct recipient, it is impossible to determine if it was submitted by the deadline of September 17, 2026, at 12:00 PM ET."
   },
   {
-    "requirement_id": "88c13921-ea84-4df5-9171-6636c2e17179",
-    "requirement_text": "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations",
-        "start_char": 0,
-        "end_char": 123,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement explicitly mandates that quotes must be submitted through the NASA SEWP Quote Request Tool (QRT). The bidder submitted their quote via email directly to the recipient, which fails to comply with the specified submission method."
-  },
-  {
-    "requirement_id": "d978beed-737c-45ef-b3d5-5e6bd04ffece",
-    "requirement_text": "The customized forensic workstation configuration includes Intel Core Ultra 9 285K processing, liquid cooling,\n192GB DDR5 memory, four dedicated 1TB Gen4 M.2 NVMe drives, eight 1TB SSDs in RAID 5, NVIDIA RTX\nPRO 4000 Blackwell 24GB graphics, ARC-1883i RAID, specified hot-swap and USB expansion, 1700W\npower, Windows 11 Pro 64-bit, specified chassis characteristics, and a three-year standard warranty.",
+    "requirement_id": "d103012f-84b7-490d-8b61-1c6a1f1b0454",
+    "requirement_text": "The forensic workstation must meet the specified hardware configuration, including Intel Core Ultra 9 285K, liquid cooling, 192GB DDR5 RAM, specified storage drives, NVIDIA RTX PRO 4000 24GB, RAID controller, hot-swap bays, USB hubs, 1700W PSU, Windows 11 Pro, chassis dimensions, and a three-year warranty.",
     "verdict": "non_compliant",
     "evidence": [
       {
@@ -95,24 +59,6 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder's application fails to meet the requirement for 192GB of DDR5 memory (offering only 128GB) and the requirement for a three-year standard warranty (offering only one year). Additionally, there is a contradiction regarding the graphics card, as the configuration list specifies an NVIDIA RTX PRO 4000 Blackwell 24GB, while the note below it states the offered card is an NVIDIA RTX A4000 16GB."
-  },
-  {
-    "requirement_id": "5b547a69-4a43-40be-bb99-1805f6a398ed",
-    "requirement_text": "The quote must provide the exact manufacturer, product model, configuration, quantity, warranty, support, and delivery schedule as specified in the RFQ, ensuring all items are new, genuine OEM products sourced through authorized channels.",
-    "verdict": "contradictory",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card",
-        "start_char": 1600,
-        "end_char": 1664,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
       },
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
@@ -125,41 +71,23 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder provides conflicting information regarding the configuration of the graphics card. The main configuration list specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7', while the note below it states the card is an 'NVIDIA RTX A4000 16GB'. Because the application provides two different specifications for a critical component, it fails to provide a clear, consistent configuration as required."
+    "reasoning": "The bidder failed to meet several mandatory hardware and service requirements. Specifically, they offered 128GB of RAM instead of the required 192GB, a one-year warranty instead of the required three-year warranty, and the graphics card specifications are inconsistent and do not match the required NVIDIA RTX PRO 4000 24GB."
   },
   {
-    "requirement_id": "325a38ea-50c9-4b19-aa7a-55c38d6bef16",
-    "requirement_text": "All quoted items must be factory-new and delivered with a manufacturer warranty and support that are valid and enforceable in the United States.",
+    "requirement_id": "7bbcb142-a605-4c87-a13e-dccd8d73f4c7",
+    "requirement_text": "Quotes must provide exact brand-name, factory-new, genuine OEM products through authorized U.S. channels, with valid OEM warranties; gray-market, used, or refurbished items are prohibited.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.",
         "start_char": 656,
-        "end_char": 896,
+        "end_char": 1063,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly certifies that the products are factory-new and eligible for the required OEM warranty and support. Furthermore, the bidder states they take no exceptions to any requirements of the RFQ, which includes the requirement for the warranty and support to be valid and enforceable in the United States."
-  },
-  {
-    "requirement_id": "bb9d8749-4b26-4792-8bf6-4369070c1796",
-    "requirement_text": "All products must be sold through an authorized U.S.-based distribution or reseller channel.",
-    "verdict": "compliant",
-    "evidence": [
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
         "quote": "Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller.",
@@ -169,96 +97,30 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information: Meridian Forensic Solutions, LLC ... 2210 Rutherford Court, Suite 400 Herndon, VA 20171",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states they are an authorized SUMURI reseller and provides a U.S. address (Herndon, VA), confirming they operate as an authorized U.S.-based reseller."
+    "reasoning": "The bidder explicitly certifies that the products are brand-name, factory-new, genuine OEM items, and confirms they are an authorized reseller. They also explicitly state that they take no exceptions to the requirements, which include the prohibition of gray-market, used, or refurbished items."
   },
   {
-    "requirement_id": "11c0dded-8aa9-40b8-9826-2b29e7a89673",
-    "requirement_text": "Vendors must submit a complete quotation to rtiggle@fbi.gov before the stated deadline.",
-    "verdict": "insufficient_information",
+    "requirement_id": "aa388c39-a36d-4ba7-9522-ea188fd46a51",
+    "requirement_text": "Quotes must include a detailed breakdown of all items, quantities, configurations, warranty/support, delivery schedules, and unit/extended prices, with all shipping and handling charges included in the firm-fixed price.",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov",
-        "start_char": 0,
-        "end_char": 53,
+        "quote": "Unit Price: $17,733.33\nExtended Price (15 units): $266,000.00",
+        "start_char": 2167,
+        "end_char": 2228,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "supports"
+        "role": "contradicts"
       }
     ],
-    "reasoning": "The application shows that the quote was sent to the correct email address (rtiggle@fbi.gov). However, the provided excerpts do not contain information regarding the stated deadline for the tender, making it impossible to determine if the submission occurred before that deadline."
+    "reasoning": "The requirement mandates a detailed breakdown of unit and extended prices. The bidder provides a unit price of $17,733.33 and an extended price of $266,000.00. However, 15 units at $17,733.33 equals $265,999.95, not $266,000.00. Furthermore, the quote fails to explicitly state that shipping and handling charges are included in the firm-fixed price, as required."
   },
   {
-    "requirement_id": "027add4f-9083-4b09-ae79-e76dc71a7c04",
-    "requirement_text": "The quote must not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.",
-        "start_char": 897,
-        "end_char": 1063,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
-        "start_char": 656,
-        "end_char": 896,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly certifies that the products are factory-new and confirms that the quote does not include any of the prohibited categories listed in the requirement."
-  },
-  {
-    "requirement_id": "c6d5598c-fa80-4b15-8ebe-c4a76327e3d5",
-    "requirement_text": "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the quote itself does not explicitly itemize or confirm that shipping, handling, and support charges are included in the firm-fixed price. Without an explicit breakdown or a statement confirming these specific costs are bundled, it is unclear if they have been accounted for."
-  },
-  {
-    "requirement_id": "36a86bfd-abba-4542-936d-f6f539899f29",
+    "requirement_id": "26f448ee-ea92-4f47-8d7b-178d776c79d6",
     "requirement_text": "State any exception, condition, or assumption.",
     "verdict": "compliant",
     "evidence": [
@@ -273,11 +135,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states that they take no exceptions, conditions, or assumptions, thereby satisfying the requirement to state them."
+    "reasoning": "The bidder explicitly stated that they take no exceptions, conditions, or assumptions regarding the requirements of the RFQ, thereby satisfying the requirement to state them."
   },
   {
-    "requirement_id": "4262cf0c-0456-40e1-b9d6-f24a22d86a9d",
-    "requirement_text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... configuration",
+    "requirement_id": "b678a1a8-13d5-4537-98e6-cc75aa250583",
+    "requirement_text": "To be rated Technically Acceptable, a quote must satisfy all mandatory requirements, including exact manufacturer, product, configuration, quantity, warranty/support, and delivery requirements; alternate or 'or equal' products are unacceptable.",
     "verdict": "contradictory",
     "evidence": [
       {
@@ -288,77 +150,418 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "supports"
+        "role": "contradicts"
       },
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card",
+        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
         "start_char": 1957,
-        "end_char": 2086,
+        "end_char": 2165,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder provides conflicting information regarding the configuration of the graphics card. The main build sheet specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7', while the note explicitly states the offered card is an 'NVIDIA RTX A4000 16GB'. This inconsistency makes it impossible to determine the actual configuration being proposed."
+    "reasoning": "The bidder provides conflicting information regarding the configuration of the offered product. The main configuration list specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7' graphics card, while the note below it states the offered card is an 'NVIDIA RTX A4000 16GB' card. Because the requirement mandates exact configuration, this discrepancy makes the application contradictory."
   },
   {
-    "requirement_id": "6ec4c042-cf71-411c-a706-841a8105e1e4",
-    "requirement_text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... quantity",
+    "requirement_id": "750ebee5-e354-40f3-90a6-489024855b0e",
+    "requirement_text": "The awardee must provide all requested information for the Personnel Risk Assessment (PRA) and acquisition-risk questionnaires, including FOCI, key management, and subcontractor details, for both parent and subsidiary levels.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, which implies they agree to provide the requested PRA and acquisition-risk information. However, the provided excerpts do not contain the actual completed questionnaires or the specific FOCI, key management, and subcontractor details required by the mandate. Therefore, there is insufficient information to determine if the bidder has actually fulfilled the submission requirement."
+  },
+  {
+    "requirement_id": "035c4942-fd8b-4583-9941-eec71f5f4778",
+    "requirement_text": "Invoices must be submitted electronically via the IPP system in accordance with FBI-0023, with all supporting documentation uploaded, submitted at least monthly, and finalized within 30 days of the period of performance end date.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "SUMURI TALINO Intel Workstation, Qty 15.",
-        "start_char": 431,
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they take no exceptions to any requirement of the RFQ. Since the requirement regarding invoice submission via the IPP system is part of the tender requirements, the bidder's blanket acceptance confirms their compliance."
+  },
+  {
+    "requirement_id": "da312307-7d7f-493b-9cfa-da340b9e943a",
+    "requirement_text": "The contract incorporates all applicable FAR and agency-specific clauses, including System for Award Management, prohibitions on specific entities, whistleblower rights, and protest procedures.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they take no exceptions, conditions, or assumptions to any requirement of the RFQ. By accepting all requirements of the RFQ, the bidder has committed to the incorporation of all applicable FAR and agency-specific clauses mentioned in the requirement."
+  },
+  {
+    "requirement_id": "2b6d9be8-653c-441a-9280-3935ea0a79de",
+    "requirement_text": "Offers must be signed, dated, and submitted to the specified office by the deadline, including all required information such as solicitation number, offeror details, technical descriptions, warranty terms, pricing, and required certifications.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Sincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 2362,
+        "end_char": 2437,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement explicitly states that offers must be signed and dated. While the application includes a name and title at the end, it lacks a physical or electronic signature and does not contain a date of submission, failing to meet the formal requirements for a signed and dated offer."
+  },
+  {
+    "requirement_id": "21e554d6-3fe3-434a-b5e0-da62aed1adb9",
+    "requirement_text": "The offeror agrees to hold prices firm for 30 calendar days from the date specified for receipt of offers, unless otherwise specified.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Quote Validity: This quote remains valid for 30 days from the date of this letter.",
+        "start_char": 556,
+        "end_char": 638,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that the offeror must hold prices firm for 30 calendar days. The bidder explicitly states in their quote that it remains valid for 30 days from the date of the letter, which satisfies the requirement."
+  },
+  {
+    "requirement_id": "bfb1296c-e859-4148-bd13-303e73100afb",
+    "requirement_text": "Product samples must be submitted at or prior to the time specified for receipt of offers at no expense to the Government, unless otherwise specified.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to any requirements of the RFQ. However, the provided excerpts do not contain information regarding whether the bidder has submitted the required product samples or if the submission of samples was a requirement for this specific RFQ process. Therefore, there is insufficient information to determine if the bidder has complied with the sample submission requirement."
+  },
+  {
+    "requirement_id": "42a076a0-f1aa-4b88-9960-73a327971f7c",
+    "requirement_text": "Offers received after the exact time specified are considered late and will not be considered, except under specific conditions defined by the Contracting Officer.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement pertains to the timing of the submission. The provided excerpts do not contain information regarding the specific time the quote was submitted or the deadline specified in the RFQ, making it impossible to determine if the submission was timely."
+  },
+  {
+    "requirement_id": "f9222d0c-56e8-4a0f-8357-51453787761a",
+    "requirement_text": "Offers may be withdrawn by written notice, in person, or via authorized electronic methods before the exact time set for receipt of offers.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain the bidder's quote, pricing, and technical specifications, but they do not address the procedures for withdrawing an offer. The requirement regarding withdrawal methods is absent from the provided text."
+  },
+  {
+    "requirement_id": "0c6b5f35-bbbc-4f42-8ca3-86deab3471f6",
+    "requirement_text": "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
         "end_char": 471,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states a quantity of 15 units in their quote, which satisfies the requirement to demonstrate compliance with the quantity mandate."
-  },
-  {
-    "requirement_id": "969e6318-ad84-45f2-b682-f652ead5b3ad",
-    "requirement_text": "The proposal must include a three-year standard warranty and provide the terms of any express warranty, which are mandatory requirements for technical acceptability.",
-    "verdict": "non_compliant",
-    "evidence": [
+      },
       {
         "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Warranty: One (1) year manufacturer warranty, extendable at additional cost",
-        "start_char": 1880,
-        "end_char": 1955,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement mandates a three-year standard warranty. The bidder explicitly offers only a one-year manufacturer warranty, noting that extensions are available at an additional cost, which fails to meet the mandatory three-year requirement."
-  },
-  {
-    "requirement_id": "caf5366c-57a0-4a14-ba34-3994ee0e9832",
-    "requirement_text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... delivery requirement",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Delivery: 30 calendar days after receipt of order. FOB Destination.",
-        "start_char": 2230,
-        "end_char": 2297,
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states a delivery timeline of 30 calendar days after receipt of order, which satisfies the delivery requirement for the tender."
+    "reasoning": "The bidder explicitly offered a quantity of 15 units and stated they take no exceptions to any requirements of the RFQ, which implies compliance with the quantity requirements."
   },
   {
-    "requirement_id": "932e1963-7a0b-4875-bf19-69cc7baa056c",
+    "requirement_id": "fd63ac59-86d0-486d-969c-340ae42daf44",
+    "requirement_text": "The offeror shall enter its Unique Entity Identifier and Electronic Funds Transfer (EFT) indicator on the cover page of its offer.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Meridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
+        "start_char": 293,
+        "end_char": 415,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates that the offeror enter both its Unique Entity Identifier (UEI) and its Electronic Funds Transfer (EFT) indicator on the cover page of the offer. While the bidder provided their UEI in the vendor information section, the application contains no mention of an EFT indicator."
+  },
+  {
+    "requirement_id": "9f7c58b2-18c1-43a9-8838-99c3e6d75794",
+    "requirement_text": "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations",
+        "start_char": 0,
+        "end_char": 123,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement explicitly mandates that quotes must be submitted through the NASA SEWP Quote Request Tool (QRT). The bidder submitted their quote via email to an individual recipient (rtiggle@fbi.gov), which fails to meet the specified submission method."
+  },
+  {
+    "requirement_id": "27e4b6bd-67b2-4bcf-940e-f379e1d0efab",
+    "requirement_text": "The Contractor agrees to comply with non-discrimination requirements, provide access to records, report subcontractor violations, and include these requirements in subcontracts.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they take no exceptions, conditions, or assumptions to any requirement of the RFQ. By accepting all requirements without exception, they have committed to the non-discrimination and record-keeping requirements specified in the tender."
+  },
+  {
+    "requirement_id": "35ce80c2-8719-4a26-ad86-d0a7d2ca25c4",
+    "requirement_text": "The Contractor shall inform employees of whistleblower rights in writing, include this requirement in subcontracts over the simplified acquisition threshold, and provide confirmation of distribution within 45 days of award.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to any requirements of the RFQ. However, the specific whistleblower rights requirement involves actions to be taken after contract award (informing employees and providing confirmation within 45 days). While the bidder's general statement of compliance is noted, the application does not provide specific evidence or a plan demonstrating how they will fulfill these post-award administrative obligations."
+  },
+  {
+    "requirement_id": "0c60ffc6-d1b4-44d9-a4d4-c0fbd31736e1",
+    "requirement_text": "Non-U.S. citizens are prohibited from performing work involving access to or development of DOJ IT systems; non-IT requirements met by non-U.S. citizens must be clearly described.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ. However, the application provides no information regarding the citizenship status of the personnel who will be performing the work. As the requirement specifically concerns the citizenship of individuals performing work on DOJ IT systems, and the application is silent on the composition of the bidder's workforce, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "1db9105d-c337-4571-a6ae-57935f5b0408",
+    "requirement_text": "Contractors must manage foreign suppliers by counting and examining goods, ensuring no direct shipping to the FBI, and using approved shipping labels that do not reference the FBI.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ. However, the provided excerpts do not contain any information regarding the bidder's specific processes for managing foreign suppliers, examining goods, or their shipping label protocols. While the bidder claims compliance with all requirements, the specific operational details required to verify the management of foreign suppliers are absent from the provided text."
+  },
+  {
+    "requirement_id": "9f9fc688-5892-423b-be3a-8ea158ec0937",
+    "requirement_text": "ICT supplies and services must meet 36 C.F.R. Part 1194 accessibility standards, and an Accessibility Conformance Report (ACR) must be provided when requested.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to any requirement of the RFQ, which implies compliance with the accessibility standards. However, the application does not explicitly confirm that the offered ICT supplies meet 36 C.F.R. Part 1194 standards, nor does it provide an Accessibility Conformance Report (ACR). While the bidder's general statement of compliance is positive, the specific technical documentation required to verify the accessibility standard is absent."
+  },
+  {
+    "requirement_id": "316b27c8-d6ed-4d4d-932d-666b55ca8907",
+    "requirement_text": "The Contractor shall ensure that its Electronic Business Point of Contact in SAM.gov is current.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Meridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72",
+        "start_char": 293,
+        "end_char": 364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder provided their Unique Entity Identifier, but the application documents do not contain any information or certification regarding the status of their Electronic Business Point of Contact in SAM.gov."
+  },
+  {
+    "requirement_id": "5f71e8f1-f93c-4fe2-8c1b-f5fb53265235",
+    "requirement_text": "Contractors shall not disclose contract-related information without prior written consent from the FBI, must protect proprietary information, and must disclose any Organizational Conflicts of Interest (OCI).",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ. However, the application does not explicitly address the specific requirements regarding the non-disclosure of contract-related information, the protection of proprietary information, or the disclosure of Organizational Conflicts of Interest (OCI). While the bidder's general acceptance of RFQ requirements is noted, the specific compliance with these three distinct mandates is not explicitly confirmed in the provided text."
+  },
+  {
+    "requirement_id": "49ea88dc-c792-4b07-8881-a13907462a17",
+    "requirement_text": "Contractors are not authorized to work during a furlough unless directed by the Contracting Officer and must coordinate rescheduling for deliveries affected by Government closures.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that they take no exceptions, conditions, or assumptions to any requirement of the RFQ. By accepting all requirements without exception, they have agreed to the terms regarding furlough and delivery rescheduling."
+  },
+  {
+    "requirement_id": "c94186af-199e-4bb2-a1f5-f97ecf1518b5",
+    "requirement_text": "No additional cost may be incurred without prior written authorization.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they take no exceptions, conditions, or assumptions to any requirement of the RFQ. This includes the requirement that no additional cost may be incurred without prior written authorization."
+  },
+  {
+    "requirement_id": "74b70a7f-32f4-4f59-a680-c83471ef992a",
+    "requirement_text": "If a vendor objects to disclosure of proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement is conditional: it only applies if the vendor objects to the disclosure of proprietary information. The bidder explicitly stated they take no exceptions, conditions, or assumptions to any requirement of the RFQ, which implies they have no objections to the disclosure terms. Therefore, the requirement is satisfied."
+  },
+  {
+    "requirement_id": "b4b8579f-d6f6-4bf8-aeba-ccf54bc0ddbf",
+    "requirement_text": "Protests filed directly with the DOJ must indicate the intent to protest, be filed with the Contracting Officer, state the preferred decision-maker, indicate the presentation format, and include required FAR information.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/SHOP-PR-26-002435/application.txt",
+        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
+        "start_char": 143,
+        "end_char": 271,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts consist of a price quote for an RFQ. There is no mention of a protest or an intent to protest, nor is there any information indicating that the bidder is currently in a position where they are filing a protest with the DOJ. As the requirement pertains to the specific procedure for filing a protest, and no such action is present in the documentation, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "2a409209-5832-4ca9-8c0d-c192ae867e8f",
     "requirement_text": "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... all other material RFQ terms",
     "verdict": "contradictory",
     "evidence": [
@@ -383,1538 +586,10 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder provides conflicting information regarding the technical specifications of the graphics card offered. The main configuration list specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB', while the note below it references an 'NVIDIA RTX A4000 16GB'. Because the technical specifications are inconsistent, the quote cannot be confirmed as compliant with all material RFQ terms."
+    "reasoning": "The bidder provides conflicting information regarding the technical specifications of the graphics card offered. The main configuration list specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB', while the note explicitly states the card is an 'NVIDIA RTX A4000 16GB'. Because these are two different hardware components, the quote fails to provide a clear, consistent technical specification, which is a material term of the RFQ."
   },
   {
-    "requirement_id": "13852b28-b178-4f54-ad8d-ffd5e5556ca5",
-    "requirement_text": "The prospective awardee and its subcontractors must provide all requested information for the FBI Personnel Risk Assessment (PRA), including acquisition-risk questionnaires, Key Management Personnel Listings (KMPL), and details regarding ownership, control, supply chain, and product sources.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the application itself does not contain the specific FBI Personnel Risk Assessment (PRA) documentation, acquisition-risk questionnaires, KMPL, or supply chain details required by the mandate. The bidder has not provided these documents, nor have they explicitly confirmed that they have submitted them separately, leaving insufficient information to confirm compliance."
-  },
-  {
-    "requirement_id": "4cac6031-a95d-4ff6-a9ef-80a27b3f0255",
-    "requirement_text": "The contractor must be registered in the System for Award Management (SAM) as per FAR 52.204-7.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72",
-        "start_char": 273,
-        "end_char": 364,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder provides a Unique Entity Identifier (UEI), which is associated with SAM registration, but the application does not explicitly state that the company is currently registered in the System for Award Management (SAM) as required by FAR 52.204-7."
-  },
-  {
-    "requirement_id": "94c3e25f-e8a9-463a-b14a-7c31da301a36",
-    "requirement_text": "The contractor must maintain their registration in the System for Award Management (SAM) throughout the contract period as per FAR 52.204-13.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided text does not explicitly confirm that the contractor is currently registered in the System for Award Management (SAM) or that they commit to maintaining such registration throughout the contract period as required by FAR 52.204-13."
-  },
-  {
-    "requirement_id": "517b007d-5e93-4cb0-bc9b-9fc96b7dc21a",
-    "requirement_text": "The contractor must receive payments via Electronic Funds Transfer (EFT) as specified in the System for Award Management (SAM) per FAR 52.232-33.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to any requirements of the RFQ, the provided excerpts do not explicitly confirm that the contractor is registered to receive payments via Electronic Funds Transfer (EFT) as specified in the System for Award Management (SAM) per FAR 52.232-33. Without an explicit confirmation or documentation regarding their SAM registration status for EFT, there is insufficient information to verify compliance."
-  },
-  {
-    "requirement_id": "4578ed6b-72df-4153-81c3-52b9505caf44",
-    "requirement_text": "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states that they take no exceptions to any requirement of the RFQ. Since the requirement 52.204-23 is a standard federal acquisition regulation requirement included in the RFQ, the bidder's blanket acceptance confirms compliance."
-  },
-  {
-    "requirement_id": "0fe51085-4244-4b96-8c1e-cf8b17af7308",
-    "requirement_text": "52.204-25 | Prohibition on Contracting for Certain Telecommunications and Video Surveillance Services or Equipment",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ. However, the provided excerpts do not contain an explicit certification or statement confirming compliance with FAR 52.204-25, which prohibits the use of certain telecommunications and video surveillance services or equipment. While the bidder claims no exceptions, the absence of a specific representation regarding this regulatory requirement makes it impossible to confirm compliance."
-  },
-  {
-    "requirement_id": "d5d7ba18-a737-4fba-b776-e13f92f7e29c",
-    "requirement_text": "52.212-4 and 2852.212-4 | Terms and Conditions—Commercial Products and Commercial Services (including FAR Deviation)",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states that they take no exceptions to any requirement of the RFQ. Since the requirement to adhere to FAR 52.212-4 and 2852.212-4 is part of the RFQ, the bidder's blanket acceptance confirms compliance."
-  },
-  {
-    "requirement_id": "14612e03-d51a-4cc7-9450-0e3bb406ee32",
-    "requirement_text": "52.219-14 | Limitations on Subcontracting",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement 52.219-14 (Limitations on Subcontracting) mandates that a concern must perform a certain percentage of the cost of contract performance for personnel with its own employees. While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not contain specific information regarding the bidder's internal labor force, their subcontracting plan, or how they intend to meet the specific percentage requirements of 52.219-14."
-  },
-  {
-    "requirement_id": "1ea72c69-81bd-48c9-a293-53870b9e6c5f",
-    "requirement_text": "52.232-40 | Providing Accelerated Payments to Small Business Subcontractors",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not explicitly confirm that the bidder has a policy or commitment in place to provide accelerated payments to small business subcontractors as required by FAR 52.232-40. The general statement of compliance is insufficient to verify specific adherence to this clause."
-  },
-  {
-    "requirement_id": "202e4930-7e4e-4668-a583-1a207ed7c1f9",
-    "requirement_text": "52.244-6 | Subcontracts for Commercial Products and Commercial Services",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement 52.244-6 pertains to the flow-down of specific clauses in subcontracts for commercial products and services. While the bidder states they take no exceptions to the RFQ requirements, the provided excerpts do not explicitly confirm that the bidder has acknowledged or agreed to incorporate the specific FAR clause 52.244-6 into their subcontracting practices or agreements as required by the solicitation."
-  },
-  {
-    "requirement_id": "e85663d2-bed0-4392-9132-3a493cba506d",
-    "requirement_text": "A protest filed directly with the Department of Justice (2852.233-70) must indicate that it is a protest to the DOJ and specify whether the protester prefers to make an oral or written presentation.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ; however, the provided excerpts do not contain the specific protest language required by 2852.233-70. While the bidder claims to accept all requirements, the actual text of the protest procedure is not present in the application, making it impossible to verify if they have explicitly included the required language regarding the DOJ protest and presentation preference."
-  },
-  {
-    "requirement_id": "a70cf780-0ae9-437f-b36b-f2fd2fb0a21b",
-    "requirement_text": "Offers, including any modifications, revisions, or withdrawals, must be signed, dated, and submitted to the designated Government office by the exact time specified in the solicitation.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Sincerely, Denise Okafor Contracts Manager Meridian Forensic Solutions, LLC",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement explicitly states that offers must be signed and dated. The provided excerpts show a closing signature block with a name and title, but there is no handwritten or digital signature present, nor is there a date included on the document to confirm it was submitted by the specified time."
-  },
-  {
-    "requirement_id": "3f352be6-0fd6-4437-8a66-cc8a5bb9a81e",
-    "requirement_text": "The offer must include the solicitation number.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Subject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations",
-        "start_char": 54,
-        "end_char": 123,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly includes the solicitation number (RFQ SHOP-PR-26-002435) in both the subject line and the body of the quote, thereby satisfying the requirement."
-  },
-  {
-    "requirement_id": "1b0f90a8-5d10-4f4c-96e5-21ff1802de66",
-    "requirement_text": "The offer must include the time specified in the solicitation for receipt of offers.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement states that the offer must include the time specified in the solicitation for receipt of offers. The bidder's application does not mention or acknowledge the specific time for receipt of offers required by the solicitation."
-  },
-  {
-    "requirement_id": "323f9bf9-ca95-4f30-906b-a063a3e713e6",
-    "requirement_text": "The offer must include the name, address, and telephone number of the offeror.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement mandates the inclusion of the offeror's name, address, and telephone number. While the application provides the name and address, it fails to provide a telephone number."
-  },
-  {
-    "requirement_id": "2428145f-1ede-4581-8927-9fd09f017552",
-    "requirement_text": "The offer must include a technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation.",
-    "verdict": "contradictory",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card",
-        "start_char": 1600,
-        "end_char": 1664,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card",
-        "start_char": 1957,
-        "end_char": 2086,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder provides conflicting technical specifications regarding the graphics card, listing an NVIDIA RTX PRO 4000 24GB card in the main configuration list while noting in a separate section that the card is an NVIDIA RTX A4000 16GB. This inconsistency prevents a clear evaluation of the technical compliance of the offered items."
-  },
-  {
-    "requirement_id": "5900daed-d414-45b1-a105-7e338ded9fec",
-    "requirement_text": "The offer must include acknowledgment of solicitation amendments.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, but the provided text does not explicitly mention or acknowledge any specific solicitation amendments, nor does it state that no amendments were issued."
-  },
-  {
-    "requirement_id": "b50d1884-ca58-4b50-9905-e0610c20d0d7",
-    "requirement_text": "If the offer is not submitted on the SF 1449, the offeror must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder did not submit the offer on the SF 1449 form. However, they included a clear statement in their quote confirming that they take no exceptions, conditions, or assumptions to any requirement of the RFQ, which satisfies the requirement to specify the extent of agreement with all terms, conditions, and provisions."
-  },
-  {
-    "requirement_id": "4a74e1d0-a518-430f-8c33-d455be8495fd",
-    "requirement_text": "The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Quote Validity: This quote remains valid for 30 days from the date of this letter.",
-        "start_char": 556,
-        "end_char": 638,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement specifies that prices must be held firm for 30 days from the date specified for receipt of offers. The bidder states their quote is valid for 30 days from the date of the letter, which is not necessarily the same as the date specified for receipt of offers."
-  },
-  {
-    "requirement_id": "e0035269-cdb7-4376-93e5-90899b68da81",
-    "requirement_text": "Product samples shall be submitted at or prior to the time specified for receipt of offers.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, which implies they intend to comply with the requirement to submit product samples. However, the provided text does not explicitly confirm that the samples were submitted or provide evidence of their submission, leaving it unclear whether the requirement was actually met."
-  },
-  {
-    "requirement_id": "4fe5d592-297c-4621-8564-4cd915faa4be",
-    "requirement_text": "Late offers, modifications, revisions, or withdrawals will not be considered unless received before award and the Contracting Officer determines acceptance will not delay the acquisition, provided there is acceptable evidence of timely receipt under Government control or authorized electronic entry.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement pertains to the handling of late offers or modifications. The bidder's statement that they take no exceptions to the RFQ requirements is a general compliance statement, but the provided excerpts do not contain information regarding the timing of the submission or the bidder's acknowledgment of the specific policy regarding late submissions."
-  },
-  {
-    "requirement_id": "1168a9b9-5058-45a2-bb99-d8baefdbcfe3",
-    "requirement_text": "Offers may be withdrawn by written notice, in person, or via authorized facsimile or oral communication (if applicable) before the exact time set for receipt of offers.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, but the provided excerpts do not contain any specific language or policy regarding the withdrawal of offers as specified in the requirement. Therefore, there is insufficient information to determine if the bidder acknowledges or complies with the withdrawal procedure."
-  },
-  {
-    "requirement_id": "bc8f5eb6-067a-417c-87ca-17417850bab0",
-    "requirement_text": "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "SUMURI TALINO Intel Workstation, Qty 15.",
-        "start_char": 431,
-        "end_char": 471,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly offered a quantity of 15 units and stated they take no exceptions to any requirements of the RFQ, which implies compliance with the quantity requirements."
-  },
-  {
-    "requirement_id": "e7d0300c-bb90-42e0-b921-47307255e355",
-    "requirement_text": "The offeror shall enter the annotation 'Unique Entity Identifier' followed by the unique entity identifier in the block with its name and address on the cover page of its offer.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder included the label 'Unique Entity Identifier' followed by the identifier value within the block containing their name and address on the cover page of their offer, satisfying the requirement."
-  },
-  {
-    "requirement_id": "1c0a07d1-af8c-44ce-9a4c-857a6e399ed9",
-    "requirement_text": "Invoices must be submitted at least monthly but no more than bi-weekly.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ; however, the provided excerpts do not contain any specific information regarding the invoicing schedule or payment terms, making it impossible to confirm if the bidder's invoicing process meets the requirement."
-  },
-  {
-    "requirement_id": "73a478ff-ce4a-46bf-8d30-f1d4b9bd0879",
-    "requirement_text": "Final invoices must be submitted within 30 days after the end date of the period of performance.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not contain the specific terms regarding invoice submission timelines, nor does the bidder explicitly confirm their adherence to the 30-day post-performance invoice submission requirement."
-  },
-  {
-    "requirement_id": "0012d0b0-d332-41f0-b6ed-bc6037649695",
-    "requirement_text": "The offeror must provide a description of efforts made to ensure that offers are solicited from as many potential sources as is practicable, including whether a notice was or will not be publicized as required by Subpart 5.1 and, if not, which exception under 5.101 applies.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder failed to provide any description of efforts made to solicit offers from potential sources or address the requirements regarding publicizing notices under Subpart 5.1. Although they stated they take no exceptions to the RFQ requirements, they did not actually provide the required information, rendering the application non-compliant."
-  },
-  {
-    "requirement_id": "9ae346bd-c639-4744-b9bf-395cbba202cb",
-    "requirement_text": "Price and any discount terms",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Unit Price: $17,733.33\nExtended Price (15 units): $266,000.00",
-        "start_char": 2167,
-        "end_char": 2228,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder provided a clear unit price and an extended price for the requested quantity of 15 units. No specific discount terms were required by the prompt, but the pricing information provided is sufficient to satisfy the requirement for price."
-  },
-  {
-    "requirement_id": "e1752a3e-db43-492e-b0f1-0a8bf8d5cc44",
-    "requirement_text": "“Remit to” address, if different than mailing address",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder provided a mailing address but did not explicitly state whether a separate 'remit to' address exists or if the mailing address serves as the 'remit to' address. Therefore, there is insufficient information to determine compliance."
-  },
-  {
-    "requirement_id": "66f1b4f9-c49c-44d9-90f1-84b343f9ba51",
-    "requirement_text": "A completed copy of the representations and certifications at Federal Acquisition Regulation (FAR) 52.212-3",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement explicitly asks for a completed copy of the representations and certifications at FAR 52.212-3. The bidder's application does not include this document, nor does it reference having completed it, despite the general statement that they take no exceptions to the RFQ requirements."
-  },
-  {
-    "requirement_id": "b6eed388-cf9e-4fc9-9c55-6f1aadaf0727",
-    "requirement_text": "Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder's application does not contain any information regarding past performance, recent or relevant contracts, or references. While the bidder states they take no exceptions to the RFQ requirements, the provided excerpts lack the specific past performance documentation requested."
-  },
-  {
-    "requirement_id": "f41e6a72-8586-4b19-8105-4913f9e2bf8a",
-    "requirement_text": "The offeror also shall enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement mandates that the offeror enter its Electronic Funds Transfer (EFT) indicator. The provided application includes vendor contact and identification information, but it does not contain an EFT indicator or any mention of one."
-  },
-  {
-    "requirement_id": "bf51a8da-3975-4b4d-8fc1-86ec9f0a3252",
-    "requirement_text": "Only the exact brand-name products and configurations identified in this RFQ are acceptable.",
-    "verdict": "contradictory",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
-        "start_char": 1957,
-        "end_char": 2165,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder explicitly states they take no exceptions to the RFQ requirements, which mandate exact brand-name products and configurations. However, the bidder then provides conflicting information regarding the graphics card, noting a discrepancy between their 'standard build sheet' (NVIDIA RTX PRO 4000) and their 'cover summary' (NVIDIA RTX A4000), creating ambiguity as to whether the offered configuration matches the exact requirements of the RFQ."
-  },
-  {
-    "requirement_id": "0fe24985-1337-4f5a-a004-81a5bec09bb3",
-    "requirement_text": "The Contractor shall furnish all information, reports, and access to books, records, and accounts as required by the Contracting Officer to ascertain compliance with the contract.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly stated that they take no exceptions to any requirement of the RFQ. Since the requirement to provide access to records is a standard contractual requirement, the bidder's blanket acceptance of all requirements confirms compliance."
-  },
-  {
-    "requirement_id": "b12f0af6-3c36-4a6a-afc0-27f0dd1ded0f",
-    "requirement_text": "The Contractor shall report any known or reasonably knowable subcontractor conduct that may violate this clause to the Contracting Officer and implement any remedial actions directed by the Contracting Officer.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not contain specific language or a policy statement confirming that the bidder will report subcontractor conduct or implement remedial actions as required by the clause. A general statement of compliance with the RFQ is insufficient to confirm the specific procedural commitment required by this clause."
-  },
-  {
-    "requirement_id": "ae41d595-e008-4282-aaf7-08c130c742f3",
-    "requirement_text": "The Contractor shall inform the Contracting Officer if a subcontractor initiates a lawsuit against the Contractor that challenges the validity of this clause.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not explicitly confirm that the bidder has established a policy or commitment to inform the Contracting Officer regarding potential subcontractor lawsuits as specified in the requirement."
-  },
-  {
-    "requirement_id": "6d751629-9420-4a44-92d4-5392d30f424e",
-    "requirement_text": "The Contractor shall promptly disclose any actual or potential Organizational Conflict of Interest (OCI) to the Contracting Officer.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, but the provided text does not explicitly address the specific requirement regarding the disclosure of Organizational Conflicts of Interest (OCI). While the bidder claims to accept all requirements, there is no affirmative statement or documentation confirming that they have evaluated or disclosed potential OCIs as required."
-  },
-  {
-    "requirement_id": "0de9d4d7-b45c-43e6-9ee4-04efb62d02b6",
-    "requirement_text": "Any protest filed directly with the DOJ must be filed with the Contracting Officer.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ. However, the provided excerpts do not contain any specific language regarding the bidder's acknowledgment or agreement to the specific requirement concerning the filing of protests with the Contracting Officer. While the general statement of compliance is present, there is no explicit confirmation of this specific procedural requirement."
-  },
-  {
-    "requirement_id": "b39979f3-b5d9-441d-ae13-de1603086e19",
-    "requirement_text": "The Contractor must include the substance of this clause in all subcontracts, including those for commercial products and commercial services, except for subcontracts where the place of performance is outside the United States or those below the simplified acquisition threshold.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder states they take no exceptions to the requirements of the RFQ, the provided excerpts do not contain the actual text of the subcontracting clause or evidence that the bidder has incorporated this specific flow-down requirement into their subcontracting templates or agreements."
-  },
-  {
-    "requirement_id": "9077ffc9-90c8-45ef-aa40-5b6c4b049507",
-    "requirement_text": "All answers shall be reflective of the parent and subsidiary levels of an organization.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided excerpts identify the bidder as Meridian Forensic Solutions, LLC, but they do not provide any information regarding the existence of a parent company or subsidiaries, nor do they contain any statements confirming that the provided information reflects the organization at both the parent and subsidiary levels."
-  },
-  {
-    "requirement_id": "fcc74272-e644-4894-a469-2107db4bd742",
-    "requirement_text": "Offerors are responsible for the thoroughness and completeness of each required subcontractor's submission.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided excerpts do not mention the existence of any subcontractors, nor do they provide information regarding the bidder's oversight or responsibility for subcontractor submissions. While the bidder states they take no exceptions to the RFQ, there is no evidence to evaluate their compliance with the specific requirement regarding subcontractor thoroughness."
-  },
-  {
-    "requirement_id": "1eaf9832-8cad-4bf1-a76e-df2c50141b42",
-    "requirement_text": "In those instances where other non-IT requirements contained in the contract or commitment can be met by using Non-U.S. citizens, those requirements shall be clearly described.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements, but the provided text does not contain any description of non-IT requirements or the use of Non-U.S. citizens as requested by the specific requirement."
-  },
-  {
-    "requirement_id": "0939538b-04e8-442d-85cd-f992d5c31631",
-    "requirement_text": "Responses shall specify, where necessary, the identity, nature, degree, and impact of any Foreign Ownership, Control, or Influence (FOCI) on the organization or its activities, or the organization or activities of a subcontractor.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states they take no exceptions to any requirements of the RFQ. However, the application fails to provide any information regarding Foreign Ownership, Control, or Influence (FOCI) as mandated by the requirement. By failing to address the FOCI disclosure requirement while claiming to meet all requirements, the application is non-compliant."
-  },
-  {
-    "requirement_id": "4d82215e-278d-4b2f-8951-5e87c88ef48e",
-    "requirement_text": "The KMPL shall identify corporate management personnel by full legal name, position, date/place of birth, and citizenship status.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Sincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
-        "start_char": 2362,
-        "end_char": 2437,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement mandates that the KMPL identify corporate management personnel by full legal name, position, date/place of birth, and citizenship status. The provided excerpts only identify one individual (Denise Okafor) by name and position, but fail to provide the required date of birth, place of birth, or citizenship status for any management personnel."
-  },
-  {
-    "requirement_id": "984e3bce-6db9-4529-b220-22c096614099",
-    "requirement_text": "The contractor must ensure that shipping instructions provided to foreign entity suppliers do not mention the Federal Bureau of Investigation or the acronym FBI, and orders issued to such suppliers must not directly ship supplies to the Federal Bureau of Investigation.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to the requirements of the RFQ, but the provided excerpts do not contain the specific shipping instructions or order protocols that would be issued to foreign entity suppliers. Therefore, there is insufficient information to determine if the bidder will comply with the restriction regarding the mention of the FBI or the shipping destination for foreign suppliers."
-  },
-  {
-    "requirement_id": "86ea4daa-693e-4b95-bb75-227cef359d25",
-    "requirement_text": "The contractor shall not divulge, publish, disclose, or use for private purposes any nonpublic Government information, contract-related material, or information acquired during performance without prior written consent from the FBI Office of Public Affairs or the Contracting Officer.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly stated that they take no exceptions to any requirement of the RFQ. Since the requirement regarding non-disclosure is a standard part of the RFQ, the bidder's statement confirms their compliance with this requirement."
-  },
-  {
-    "requirement_id": "b582b3c2-14b9-480b-a619-681342b0e783",
-    "requirement_text": "the contractor shall provide an Accessibility Conformance Report (ACR), when applicable and requested, for ICT items developed, updated, configured for the agency, or proposed as substitutions.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder states they take no exceptions to any requirements of the RFQ, which implies they agree to provide an Accessibility Conformance Report (ACR) if requested. However, the provided text does not contain an actual ACR, nor does it explicitly confirm that one will be provided upon request, leaving the status of the requirement's fulfillment as insufficient information."
-  },
-  {
-    "requirement_id": "0452ed67-d423-4c29-9218-bd3c9b66223d",
-    "requirement_text": "If a vendor objects to disclosure of specific proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement states that if a vendor objects to disclosure, they must identify the information and the basis for the objection. The bidder explicitly stated they take no exceptions, conditions, or assumptions to any requirement of the RFQ, which implies they have no objections to the disclosure terms."
-  },
-  {
-    "requirement_id": "7a5351fb-bd90-47b6-8887-47043054d3e9",
-    "requirement_text": "A protest filed directly with DOJ shall ... state whether the protester chooses to have the Contracting Officer or the APO decide the protest",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement pertains to the procedure for filing a protest directly with the DOJ. The provided excerpts consist of a price quote and technical specifications for workstations. There is no mention of protest procedures or a statement regarding the choice between the Contracting Officer or the APO in the provided text."
-  },
-  {
-    "requirement_id": "1a6472d2-d35a-4654-a273-2488f54a8172",
-    "requirement_text": "A protest filed directly with DOJ shall ... include the information required by FAR 33.103(d)(2)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided excerpts consist of a price quote for workstations and do not contain any information regarding a protest filed with the DOJ or compliance with FAR 33.103(d)(2)."
-  },
-  {
-    "requirement_id": "abfb7793-a9fe-4817-a4a0-a159142111bf",
-    "requirement_text": "The systems must support demanding forensic workloads, including evidence acquisition, processing, analysis of large forensic images, mobile-device examination, password recovery, and data recovery, while providing sufficient processing power, memory, storage, GPU capability, write-blocking functionality, and removable/expandable storage to efficiently handle large volumes of digital evidence.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
-        "start_char": 1706,
-        "end_char": 1780,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement explicitly mandates 'write-blocking functionality' to handle digital evidence. The bidder's provided configuration lists 'two front-panel USB hubs' for connectivity but fails to include or mention any hardware or software write-blocking functionality, which is a critical requirement for forensic workstations."
-  },
-  {
-    "requirement_id": "8b7fbffc-5d6f-42ed-9609-2461ae7b25ca",
-    "requirement_text": "The systems must be portable and provide workstation-level performance to enable investigators and forensic examiners to conduct examinations outside of the laboratory environment.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit",
-        "start_char": 1265,
-        "end_char": 1825,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided specifications describe a high-performance workstation, but they do not explicitly state that the units are portable or designed for use outside of a laboratory environment. While the hardware is powerful, the physical form factor (e.g., dimensions, weight, or portability features) is not described, making it impossible to confirm if the requirement for portability is met."
-  },
-  {
-    "requirement_id": "551272e2-28d2-4b0d-99c1-bf7b33abd310",
-    "requirement_text": "The required systems must provide substantially higher performance and expandability than \nconventional commercial desktop and laptop computers.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs f",
-        "start_char": 1323,
-        "end_char": 1743,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The proposed workstation configuration includes high-end enterprise-grade components such as 128GB of DDR5 RAM, a dedicated RAID controller, an 8-drive SSD RAID array, and a 1700W power supply. These specifications significantly exceed the performance and expandability capabilities of standard commercial desktop and laptop computers, thereby satisfying the requirement."
-  },
-  {
-    "requirement_id": "e71ceaa9-f063-42e6-a856-caca558e4093",
-    "requirement_text": "Demonstrate that the proposed contractor’s unique qualifications or the nature of the acquisition \nrequires using the authority cited.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement asks for a justification regarding the contractor's unique qualifications or the nature of the acquisition that necessitates the use of a specific authority. The provided excerpts contain a price quote and technical specifications for the equipment, but they do not address the legal or acquisition-based justification for the procurement authority."
-  },
-  {
-    "requirement_id": "ad264e6d-2dc7-4b14-b02e-e757b5eccf69",
-    "requirement_text": "A description of the market research conducted and the results.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder's application provides technical specifications, pricing, and certification of authorized reseller status, but it contains no description of market research conducted or the results of such research as required by the tender."
-  },
-  {
-    "requirement_id": "02b38c0e-ae48-4ab5-8f7f-faec714163d5",
-    "requirement_text": "Any other facts supporting the use of other than full and open competition.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement asks for facts supporting the use of other than full and open competition (i.e., justification for a sole-source or brand-name procurement). The bidder's application provides a quote for the requested items but does not provide any justification or facts regarding the competitive nature of the procurement process."
-  },
-  {
-    "requirement_id": "fb8e06f8-14d2-4d47-8247-11f1be4c3943",
-    "requirement_text": "A listing of any sources, if any, that expressed a written interest in the acquisition.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The requirement asks for a listing of any sources that expressed a written interest in the acquisition. The bidder's application provides a price quote for the items requested in the RFQ but does not include a list of other sources or entities that expressed interest in the acquisition."
-  },
-  {
-    "requirement_id": "9e72eca3-4438-41b6-9929-34a69031874b",
-    "requirement_text": "A statement of any actions, if any, the agency may take to remove or overcome any barriers to \ncompetition before any subsequent acquisition for the supplies or services required.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
-        "start_char": 473,
-        "end_char": 554,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder failed to provide a statement regarding actions to remove or overcome barriers to competition. While they stated they take no exceptions to the requirements, they did not actually address the specific requirement in their submission."
-  },
-  {
-    "requirement_id": "e5959ddc-ad00-47c0-acc6-d0f23c469677",
-    "requirement_text": "The system must be compatible with Microsoft Windows 11 Pro 64-bit.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Operating System: Microsoft Windows 11 Pro 64-bit",
-        "start_char": 1828,
-        "end_char": 1877,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly lists 'Microsoft Windows 11 Pro 64-bit' as the operating system for the workstations being provided, which directly meets the requirement."
-  },
-  {
-    "requirement_id": "98294c4c-7d01-4a5b-bb41-1ec01655d332",
-    "requirement_text": "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) |\n8P-16E Cores 24 Threads\nProcessor",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Processor: Intel Core Ultra 9 285K, liquid-cooled",
-        "start_char": 1326,
-        "end_char": 1375,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly lists the 'Intel Core Ultra 9 285K' as the processor in their configuration, which matches the specific processor requirement."
-  },
-  {
-    "requirement_id": "5cd8063b-56b0-4116-b6ca-bd59cdc85df3",
-    "requirement_text": "Liquid Cooling for the CPU Providing Maximum\nPerformance",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Processor: Intel Core Ultra 9 285K, liquid-cooled",
-        "start_char": 1326,
-        "end_char": 1375,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states in their configuration list that the Intel Core Ultra 9 285K processor is liquid-cooled, which directly satisfies the requirement for liquid cooling for the CPU."
-  },
-  {
-    "requirement_id": "d8d2b2d0-d4b7-4314-8c42-b67a1245d80f",
-    "requirement_text": "192GB of DDR5 4800 MHz RAM",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Memory: 128GB DDR5 system memory",
-        "start_char": 1378,
-        "end_char": 1410,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement specifies 192GB of DDR5 4800 MHz RAM, but the bidder's application explicitly offers 128GB of DDR5 system memory, which fails to meet the capacity requirement."
-  },
-  {
-    "requirement_id": "0e9c7e43-04d5-43e1-97a6-4468cb19a800",
-    "requirement_text": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
-        "start_char": 1413,
-        "end_char": 1535,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder specifies 'NVMe solid-state storage' but does not explicitly state the capacity (1TB) or the generation (Gen4) of the SSD intended for the Operating System. While they list a data storage array, the specific drive for the OS is not clearly defined in terms of the required specifications."
-  },
-  {
-    "requirement_id": "7e0fb1bd-f905-44fd-8864-f7ee7239f444",
-    "requirement_text": "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
-        "start_char": 1413,
-        "end_char": 1535,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder lists 'NVMe solid-state storage' generally but does not specify the capacity, generation (Gen4), or the specific purpose (temporary files) required by the tender. While they list eight 1TB SSDs for a RAID array, it is unclear if any of these or other components satisfy the specific requirement for a 1TB Gen4 M.2 NVMe SSD dedicated to temporary files."
-  },
-  {
-    "requirement_id": "af332006-602a-42c4-a91d-8d318a865602",
-    "requirement_text": "One (1) 1TB Gen4 M.2 NVMe SSD for Processing",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
-        "start_char": 1413,
-        "end_char": 1535,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder specifies 'NVMe solid-state storage' for processing workloads but does not explicitly confirm the capacity (1TB) or the generation (Gen4) of the specific M.2 NVMe SSD required for processing. While they mention an array of 1TB SSDs, it is unclear if one of these is designated as the specific 1TB Gen4 M.2 NVMe SSD for processing as requested."
-  },
-  {
-    "requirement_id": "7620e12e-60b6-47b3-90b2-0ba1595bc309",
-    "requirement_text": "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
-        "start_char": 1413,
-        "end_char": 1535,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
-        "start_char": 1538,
-        "end_char": 1597,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement specifies one 1TB Gen4 M.2 NVMe SSD for databases. The bidder lists 'NVMe solid-state storage' generally and a RAID array of eight 1TB SSDs, but does not specify the generation (Gen4), the form factor (M.2), or explicitly identify a dedicated 1TB Gen4 M.2 NVMe SSD for database use as requested."
-  },
-  {
-    "requirement_id": "96c03cdc-55d5-4e04-951b-4bbb9aa9a4dd",
-    "requirement_text": "Eight (8) 1TB SSDs in RAID 5 for Data Storage",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
-        "start_char": 1538,
-        "end_char": 1597,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly states in their configuration details that each unit includes eight 1TB SSDs configured in RAID 5, which directly matches the requirement."
-  },
-  {
-    "requirement_id": "dec50064-61c1-491c-bb54-9864193a4314",
-    "requirement_text": "ARC-1883i RAID Card",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "RAID controller: ARC-1883i RAID Card",
-        "start_char": 1667,
-        "end_char": 1703,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly lists the 'ARC-1883i RAID Card' under the 'RAID controller' section of their configuration, which directly satisfies the requirement."
-  },
-  {
-    "requirement_id": "45bbb299-25b2-431a-a9f0-8e3a3df56118",
-    "requirement_text": "One (1) 3.5” Hot Swap Bay for Three (3) Drives",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided configuration list details the processor, memory, storage, graphics, RAID controller, expansion, power, and operating system, but it does not mention the physical drive bay specifications or the presence of a 3.5” Hot Swap Bay for Three (3) Drives."
-  },
-  {
-    "requirement_id": "4c8255d3-3986-44e6-83f2-c31eae757b9c",
-    "requirement_text": "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder's application lists the technical specifications for the workstations, but it does not mention the presence or absence of a 2.5” Hot Swap Bay with four removable trays. While the bidder states they take no exceptions to the requirements, the provided configuration list is silent on this specific hardware feature."
-  },
-  {
-    "requirement_id": "20cf02a6-5569-4e60-93c2-b8560ecf780b",
-    "requirement_text": "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
-        "start_char": 1538,
-        "end_char": 1597,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder specifies that the workstation includes eight 1TB SSDs, but it does not explicitly confirm the presence of a 2.5” Hot Swap Bay or that the eight trays are removable as required by the specification."
-  },
-  {
-    "requirement_id": "b323d259-d39f-45c1-9f1b-1125d35c4af8",
-    "requirement_text": "One (1) 10 Port USB 2.0 Hub (USB-A)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
-        "start_char": 1706,
-        "end_char": 1780,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement specifies a 10-port USB 2.0 hub. The bidder's application mentions 'two front-panel USB hubs' but does not specify the number of ports per hub, the USB version (2.0), or the connector type (USB-A) for these hubs. Therefore, there is insufficient information to determine if the requirement is met."
-  },
-  {
-    "requirement_id": "baf9404c-157e-469b-a4f3-179264af5cbd",
-    "requirement_text": "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
-        "start_char": 1706,
-        "end_char": 1780,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder specifies 'two front-panel USB hubs' but does not provide the technical specifications for these hubs. There is no information confirming they are 4-port USB 3.0 hubs with a 2x USB-A and 2x USB-C configuration as required."
-  },
-  {
-    "requirement_id": "d877e11c-df73-4569-ba4e-9b6a7362742f",
-    "requirement_text": "One (1) NVIDIA RTX PRO 4000 Blackwell | 24GB\nGDDR7 Graphics Card",
-    "verdict": "contradictory",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card",
-        "start_char": 1600,
-        "end_char": 1664,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
-        "start_char": 1957,
-        "end_char": 2165,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The bidder provides conflicting information regarding the graphics card. While the main configuration list specifies the required NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7, a subsequent note explicitly states that the offered card is an NVIDIA RTX A4000 16GB, which does not meet the requirement."
-  },
-  {
-    "requirement_id": "755aae49-900f-4d2f-8d19-ff949a275773",
-    "requirement_text": "One (1) 1700 Watt Power Supply Unit",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Power: One (1) 1700 Watt Power Supply Unit",
-        "start_char": 1783,
-        "end_char": 1825,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly lists 'One (1) 1700 Watt Power Supply Unit' in their configuration details, which directly matches the requirement."
-  },
-  {
-    "requirement_id": "93d34043-ae4c-434a-aaa4-2f6cd72beaf6",
-    "requirement_text": "High End Whisper Quiet Fans throughout the Entire\nSystem (Hydraulic Fluid\nBall Bearing rated at 300,000 hour lifespan)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder provides a detailed configuration list for the workstations, but this list does not mention the cooling fans or their specifications (type, noise level, or bearing lifespan). While the bidder states they take no exceptions to the RFQ requirements, the provided technical specifications do not explicitly confirm the presence of 'High End Whisper Quiet Fans' with the required 'Hydraulic Fluid Ball Bearing' and '300,000 hour lifespan'."
-  },
-  {
-    "requirement_id": "0e5887b3-268d-4f1c-9db5-86a993c68e7a",
-    "requirement_text": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder provides a detailed list of internal components (processor, memory, storage, etc.) but does not specify the physical dimensions of the workstation unit. Therefore, it is impossible to determine if the unit meets the size requirement of 15 W x 19.06 H x 20.06 D."
-  },
-  {
-    "requirement_id": "982b9213-9458-4db3-bcb0-7dfcf51da833",
-    "requirement_text": "Open 5.25 Bays = 11",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided documentation lists various hardware specifications for the workstations, but it does not mention the number of 5.25-inch bays available in the chassis. Therefore, there is insufficient information to determine if the requirement for 11 bays is met."
-  },
-  {
-    "requirement_id": "db4e25af-b351-4433-9ae2-706956e90e43",
-    "requirement_text": "Fan size(s) = 120mm",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided documentation lists the technical specifications for the workstations, including processor, memory, storage, and power supply, but it does not mention the fan size or cooling system specifications beyond stating the processor is 'liquid-cooled'. Therefore, there is insufficient information to determine if the fan size requirement of 120mm is met."
-  },
-  {
-    "requirement_id": "bf21dedc-fe5a-477d-a3c3-c8577741e16b",
-    "requirement_text": "PCI Chassis Expansion Slots = 8",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder's application lists various hardware specifications for the workstation, but it does not mention the number of PCI Chassis Expansion Slots. Therefore, there is insufficient information to determine if the requirement of 8 slots is met."
-  },
-  {
-    "requirement_id": "40b727b7-2496-4eff-975b-8f267af20443",
-    "requirement_text": "Aluminum Thickness = 0.118 (or 3.00mm)",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/SHOP-PR-26-002435/application.txt",
-        "quote": "Configuration furnished per unit (all 15 units identical):",
-        "start_char": 1265,
-        "end_char": 1323,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The provided documentation lists the technical specifications for the workstations (processor, memory, storage, etc.), but it does not mention the physical dimensions or the aluminum thickness of the workstation chassis. Therefore, there is insufficient information to determine compliance with the 3.00mm aluminum thickness requirement."
-  },
-  {
-    "requirement_id": "4441b98d-0a5a-45ce-ac44-f7e0b1477b75",
+    "requirement_id": "d8d8c0c4-239c-4e39-b005-679722fd3a05",
     "requirement_text": "Finish = Powder Coated Black with Black Appointments",
     "verdict": "insufficient_information",
     "evidence": [
@@ -1929,6 +604,6 @@
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder provides a detailed configuration list for the workstations, but the list does not specify the finish or the color of the appointments. Therefore, there is insufficient information to determine if the requirement for 'Powder Coated Black with Black Appointments' is met."
+    "reasoning": "The bidder provides a detailed configuration list for the workstations, but the list does not specify the finish or color of the units. Therefore, there is insufficient information to determine if the requirement for 'Powder Coated Black with Black Appointments' is met."
   }
 ]

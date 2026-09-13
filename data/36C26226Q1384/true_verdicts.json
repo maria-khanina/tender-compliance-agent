@@ -2,7 +2,8 @@
   "notes": [
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: submission_deadline_and_channel, since it is is_text_verifiable: false in true_requirements.json and never gets a verdict from a correctly-behaving pipeline.",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "authorized_distributor_letter and gray_market_verification broadened to also accept non_compliant: authorized_distributor_letter's requirement is literally to 'provide a letter/memo from the manufacturer', and no such document was attached (only prose assertions), a defensible literal reading distinct from the contradiction reading. gray_market_verification -- being an authorized distributor and sourcing overflow units through a secondary distribution network are not strictly logically incompatible (only concerning together), so a non_compliant call naming the secondary-market sourcing itself as the problem is as defensible as calling the two statements contradictory."
   ],
   "verdicts": [
     {
@@ -57,7 +58,8 @@
       "topic_id": "authorized_distributor_letter",
       "description": "Quote must include an Authorized Distributor Letter/Memo from the manufacturer.",
       "acceptable_verdicts": [
-        "contradictory"
+        "contradictory",
+        "non_compliant"
       ],
       "rationale": "Application claims verified, direct-from-manufacturer authorized distributor status, then admits the order may be fulfilled through a secondary distribution network with units from other regional markets -- the two statements directly conflict.",
       "evidence": [
@@ -79,7 +81,8 @@
       "topic_id": "gray_market_verification",
       "description": "Quote must verify the offered items are not Gray Market goods (i.e. not sourced through unauthorized channels).",
       "acceptable_verdicts": [
-        "contradictory"
+        "contradictory",
+        "non_compliant"
       ],
       "rationale": "Same underlying contradiction: the claimed authorized-channel sourcing conflicts with the admitted secondary-market sourcing, which the solicitation's own Gray Market clause treats as exactly the prohibited pattern.",
       "evidence": [

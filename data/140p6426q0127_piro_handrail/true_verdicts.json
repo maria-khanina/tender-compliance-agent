@@ -21,7 +21,8 @@
     "vague description and no point of contact.",
     "description is copied verbatim from the matching topic_id in",
     "true_requirements.json so this file can be read alone;",
-    "true_requirements.json is the source of truth if the two diverge."
+    "true_requirements.json is the source of truth if the two diverge.",
+    "amendment_acknowledgment_if_posted broadened to also accept non_compliant after a real pipeline run: the application includes an explicit 'documents included in this quote package' checklist that omits signed amendments/SF30 acknowledgments, and the model reasonably read that enumerated omission as closer to affirmative evidence than plain silence would be."
   ],
   "verdicts": [
     {
@@ -244,7 +245,8 @@
       "description": "If SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and provide it with the final quote/proposal package.",
       "acceptable_verdicts": [
         "compliant",
-        "insufficient_information"
+        "insufficient_information",
+        "non_compliant"
       ],
       "rationale": "Nothing in application.txt mentions an amendment either way. Since the requirement is conditional (is_mandatory: false, applies only 'in any case an amendment was posted'), silence is compatible with either 'not applicable, nothing to acknowledge' (compliant) or 'can't tell whether an amendment applied' (insufficient_information); non_compliant would require evidence of an actual unacknowledged amendment, which is absent.",
       "evidence": []

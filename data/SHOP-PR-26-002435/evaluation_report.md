@@ -9,17 +9,17 @@ Machine-readable numbers for averaging across tenders -- every value here is exp
   "requirement_recall": 0.9722,
   "requirement_recall_matched": 35,
   "requirement_recall_total": 36,
-  "requirement_precision": 0.2823,
+  "requirement_precision": 0.3125,
   "citation_verified_rate": 1.0,
-  "is_mandatory_accuracy": 0.9677,
-  "is_mandatory_scored": 31,
-  "is_text_verifiable_accuracy": 0.9032,
-  "is_text_verifiable_scored": 31,
-  "verdict_clean_match_count": 28,
-  "verdict_accuracy": 1.0,
+  "is_mandatory_accuracy": 0.7,
+  "is_mandatory_scored": 10,
+  "is_text_verifiable_accuracy": 0.7,
+  "is_text_verifiable_scored": 10,
+  "verdict_clean_match_count": 4,
+  "verdict_accuracy": 0.75,
   "false_compliant_rate": 0.0,
-  "false_issue_rate": 0.0345,
-  "evidence_citation_verified_rate": 0.9825,
+  "false_issue_rate": 0.1429,
+  "evidence_citation_verified_rate": 1.0,
   "evidence_recall": 1.0,
   "verdict_only_accuracy": 0.8824,
   "verdict_only_scored": 17
@@ -36,23 +36,44 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
 - true `sam_registration_active` — "The FBI may verify product configuration, OEM authorization, warranty eligibility, business size, SAM registration, and other award eligibility information prior to award."
     - **chunk check:** [4864:5035] whole, in chunk 3 -- the model saw this text intact
 
-**Over-split** (1) — one true topic extracted as several separate predicted requirements:
-- true `submission_deadline_and_channel` — "Late Quotations. Quotations received after September 17, 2026, at 12:00 PM Eastern Time will not be considered for award. Vendors are solely responsible for ensuring that their complete quotation is successfully submitted to rtiggle@fbi.gov before the stated deadline." split into 2 predicted requirements:
-  - predicted [11c0dded] "Vendors must submit a complete quotation to rtiggle@fbi.gov before the stated deadline." — verdict: insufficient_information
-  - predicted [1adfd57f] "Quotes shall be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM ET, and quotations received after this time will not be considered for award." — verdict: insufficient_information
-
-**Over-merge** (0) — one predicted requirement covering several distinct true topics:
+**Over-split** (0) — one true topic extracted as several separate predicted requirements:
 - none
 
-**Tangled** (1) — several true and several predicted requirements all overlapping at once:
-- tangle of 4 true and 3 predicted requirements, all overlapping — needs manual untangling:
+**Over-merge** (3) — one predicted requirement covering several distinct true topics:
+- predicted [7bbcb142] "Quotes must provide exact brand-name, factory-new, genuine OEM products through authorized U.S. channels, with valid OEM warranties; gray-market, used, or refurbished items are prohibited." — verdict: compliant, citation: fuzzy match — worth a second look lumps together 3 true requirements:
   - true `authorized_reseller_distributor_evidence` — "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required. The Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity."
   - true `brand_name_only_no_alternates` — "This RFQ is for brand-name-only products. The Government requires the exact manufacturers, products, models, configurations, quantities, warranty/support, and delivery requirements identified in this RFQ and Attachment 1. Alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable for the applicable award group."
-  - true `item_identification_completeness` — "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price."
   - true `oem_new_no_gray_market_certification` — "State that the quoted products are the exact brand-name products required by this RFQ and are new, genuine OEM products eligible for the required OEM warranty/support. ... Certify that all quoted items are factory-new and will be delivered with an OEM/manufacturer warranty valid in the United States. The quote shall not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products."
-  - predicted [027add4f] "The quote must not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products." — verdict: compliant
-  - predicted [325a38ea] "All quoted items must be factory-new and delivered with a manufacturer warranty and support that are valid and enforceable in the United States." — verdict: compliant
-  - predicted [5b547a69] "The quote must provide the exact manufacturer, product model, configuration, quantity, warranty, support, and delivery schedule as specified in the RFQ, ensuring all items are new, genuine OEM products sourced through authorized channels." — verdict: contradictory
+- predicted [aa388c39] "Quotes must include a detailed breakdown of all items, quantities, configurations, warranty/support, delivery schedules, and unit/extended prices, with all shipping and handling charges included in the firm-fixed price." — verdict: non_compliant lumps together 2 true requirements:
+  - true `item_identification_completeness` — "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price."
+  - true `pricing_inclusive_of_all_charges` — "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price."
+- predicted [d103012f] "The forensic workstation must meet the specified hardware configuration, including Intel Core Ultra 9 285K, liquid cooling, 192GB DDR5 RAM, specified storage drives, NVIDIA RTX PRO 4000 24GB, RAID controller, hot-swap bays, USB hubs, 1700W PSU, Windows 11 Pro, chassis dimensions, and a three-year warranty." — verdict: non_compliant lumps together 23 true requirements:
+  - true `chassis_aluminum_thickness_spec` — "Aluminum Thickness = 0.118 (or 3.00mm)"
+  - true `chassis_fan_size_spec` — "Fan size(s) = 120mm"
+  - true `chassis_open_525_bays_spec` — "Open 5.25 Bays = 11"
+  - true `chassis_pci_expansion_slots_spec` — "PCI Chassis Expansion Slots = 8"
+  - true `chassis_size_spec` — "Size: 15 W x 19.06 H x 20.06 D (381mm x 484mm x 510mm)"
+  - true `cpu_processor_spec` — "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) | 8P-16E Cores 24 Threads Processor"
+  - true `gpu_spec` — "NVIDIA RTX PRO 4000 Blackwell | 24GB GDDR7 Graphics Card"
+  - true `hot_swap_bay_25_eight_trays_spec` — "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays"
+  - true `hot_swap_bay_25_four_trays_spec` — "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays"
+  - true `hot_swap_bay_35_three_drives_spec` — "One (1) 3.5” Hot Swap Bay for Three (3) Drives"
+  - true `liquid_cooling_spec` — "Liquid Cooling for the CPU Providing Maximum Performance"
+  - true `nvme_ssd_database_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)"
+  - true `nvme_ssd_operating_system_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System"
+  - true `nvme_ssd_processing_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Processing"
+  - true `nvme_ssd_temporary_files_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files"
+  - true `operating_system_spec` — "- Windows 11 Only ... Microsoft Windows 11 Pro 64 Bit"
+  - true `power_supply_spec` — "One (1) 1700 Watt Power Supply Unit"
+  - true `raid5_eight_ssd_storage_spec` — "Eight (8) 1TB SSDs in RAID 5 for Data Storage"
+  - true `raid_card_spec` — "ARC-1883i RAID Card"
+  - true `ram_capacity_spec` — "192GB of DDR5 4800 MHz RAM"
+  - true `usb_2_0_ten_port_hub_spec` — "One (1) 10 Port USB 2.0 Hub (USB-A)"
+  - true `usb_3_0_four_port_hub_spec` — "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)"
+  - true `warranty_spec` — "Three (3) Year Standard Warranty"
+
+**Tangled** (0) — several true and several predicted requirements all overlapping at once:
+- none
 
 ## Requirement precision
 
@@ -62,186 +83,52 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
   - none
 
 **Classification precision**: fraction of predicted requirements that matched a true requirement.
-- rate: 28.2%
-- unexplained (89) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
-  - predicted [0012d0b0] "The offeror must provide a description of efforts made to ensure that offers are solicited from as many potential sources as is practicable, including whether a notice was or will not be publicized as required by Subpart 5.1 and, if not, which exception under 5.101 applies."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.60); vs matched predicted [36a86bfd]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [02b38c0e] "Any other facts supporting the use of other than full and open competition."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.51); vs matched predicted [027add4f]: cosine=0.54 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [033c89c4] "Contractors shall diligently count and examine all goods tendered for shipment, and receipt for them from foreign suppliers prior to shipment to the Federal Government."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.65); vs matched predicted [5b547a69]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [0452ed67] "If a vendor objects to disclosure of specific proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.65); vs matched predicted [36a86bfd]: cosine=0.47 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [0939538b] "Responses shall specify, where necessary, the identity, nature, degree, and impact of any Foreign Ownership, Control, or Influence (FOCI) on the organization or its activities, or the organization or activities of a subcontractor."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.55); vs matched predicted [36a86bfd]: cosine=0.50 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [0de9d4d7] "Any protest filed directly with the DOJ must be filed with the Contracting Officer."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.60); vs matched predicted [5b547a69]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [0fe24985] "The Contractor shall furnish all information, reports, and access to books, records, and accounts as required by the Contracting Officer to ascertain compliance with the contract."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.61); vs matched predicted [5b547a69]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [0fe51085] "52.204-25 | Prohibition on Contracting for Certain Telecommunications and Video Surveillance Services or Equipment"
-    - **similarity check:** closest true topic: `kaspersky_telecom_prohibition_compliance` (cosine=0.68); vs matched predicted [4578ed6b]: cosine=0.80 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [1168a9b9] "Offers may be withdrawn by written notice, in person, or via authorized facsimile or oral communication (if applicable) before the exact time set for receipt of offers."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.58); vs matched predicted [e7d0300c]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [1202da99] "In connection with the performance of work under this contract, the Contractor agrees as follows: ... The Contractor will not engage in any racially discriminatory DEI activities"
-    - **similarity check:** closest true topic: `kaspersky_telecom_prohibition_compliance` (cosine=0.49); vs matched predicted [4578ed6b]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [14612e03] "52.219-14 | Limitations on Subcontracting"
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.55); vs matched predicted [969e6318]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [1a6472d2] "A protest filed directly with DOJ shall ... include the information required by FAR 33.103(d)(2)"
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.59); vs matched predicted [13852b28]: cosine=0.64 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [1b0f90a8] "The offer must include the time specified in the solicitation for receipt of offers."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.60); vs matched predicted [e7d0300c]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [1c0a07d1] "Invoices must be submitted at least monthly but no more than bi-weekly."
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.56); vs matched predicted [969e6318]: cosine=0.50 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [1e1e34f1] "Within 45 days of award, the Contractor shall provide confirmation to the Contracting Officer that it has distributed the whistleblower information as required."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.56); vs matched predicted [13852b28]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [1ea72c69] "52.232-40 | Providing Accelerated Payments to Small Business Subcontractors"
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.52); vs matched predicted [969e6318]: cosine=0.55 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [1eaf9832] "In those instances where other non-IT requirements contained in the contract or commitment can be met by using Non-U.S. citizens, those requirements shall be clearly described."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.58); vs matched predicted [36a86bfd]: cosine=0.45 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [202e4930] "52.244-6 | Subcontracts for Commercial Products and Commercial Services"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.57); vs matched predicted [5b547a69]: cosine=0.63 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [212cbd75] "52.225-5 | Trade Agreements, if applicable"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.55); vs matched predicted [5b547a69]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [2428145f] "The offer must include a technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.65); vs matched predicted [13852b28]: cosine=0.66 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [2e9dad34] "these samples shall be submitted at no expense to the Government"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.53); vs matched predicted [027add4f]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [323f9bf9] "The offer must include the name, address, and telephone number of the offeror."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.65); vs matched predicted [e7d0300c]: cosine=0.70 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [34988d4c] "Final delivery of goods shall be completed from the awardee's domestic offices and supply centers to the FBI."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.59); vs matched predicted [13852b28]: cosine=0.59 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [3adf218f] "The Contractor shall inform its employees in writing, in the predominant native language of the workforce, of employee whistleblower rights and protections under 41 U.S.C. 4712."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.51); vs matched predicted [36a86bfd]: cosine=0.45 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [3d5d0783] "No additional cost may be incurred without prior written authorization."
-    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.59); vs matched predicted [c6d5598c]: cosine=0.57 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [3f352be6] "The offer must include the solicitation number."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.57); vs matched predicted [e7d0300c]: cosine=0.59 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [4262cf0c] "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... configuration"
-    - **similarity check:** closest true topic: `raid_card_spec` (cosine=0.58); vs matched predicted [dec50064]: cosine=0.57 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [4a74e1d0] "The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.60); vs matched predicted [e7d0300c]: cosine=0.60 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [4cac6031] "The contractor must be registered in the System for Award Management (SAM) as per FAR 52.204-7."
-    - **similarity check:** closest true topic: `sam_registration_active` (cosine=0.54); that true topic has no matched predicted requirement in this run, so there was nothing for dedup to compare it against
-  - predicted [4d82215e] "The KMPL shall identify corporate management personnel by full legal name, position, date/place of birth, and citizenship status."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.53); vs matched predicted [5b547a69]: cosine=0.48 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [4fe5d592] "Late offers, modifications, revisions, or withdrawals will not be considered unless received before award and the Contracting Officer determines acceptance will not delay the acquisition, provided there is acceptable evidence of timely receipt under Government control or authorized electronic entry."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.60); vs matched predicted [027add4f]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [517b007d] "The contractor must receive payments via Electronic Funds Transfer (EFT) as specified in the System for Award Management (SAM) per FAR 52.232-33."
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.54); vs matched predicted [969e6318]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [535efdc6] "The Offeror may not seek reimbursement from the Government for costs associated with responding to this RFQ or a PRA request as a result of a non-approval decision."
-    - **similarity check:** closest true topic: `brand_name_only_no_alternates` (cosine=0.54); vs matched predicted [027add4f]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [551272e2] "The required systems must provide substantially higher performance and expandability than conventional commercial desktop and laptop computers."
-    - **similarity check:** closest true topic: `liquid_cooling_spec` (cosine=0.65); vs matched predicted [5cd8063b]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [55b6ceb9] "A quote must satisfy all applicable requirements under all three factors to be eligible for award."
-    - **similarity check:** closest true topic: `item_identification_completeness` (cosine=0.65); vs matched predicted [325a38ea]: cosine=0.57 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [5900daed] "The offer must include acknowledgment of solicitation amendments."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.59); vs matched predicted [e7d0300c]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [6518762c] "all ICT supplies and services supplied as part of this order shall meet the applicable accessibility standards at 36 C.F.R. Part 1194"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.57); vs matched predicted [5b547a69]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [66f1b4f9] "A completed copy of the representations and certifications at Federal Acquisition Regulation (FAR) 52.212-3"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.61); vs matched predicted [5b547a69]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [68ef801b] "All questions shall be submitted to rtiggle@fbi.gov no later than September 15, at 12:00 PM ET."
-    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.77); vs matched predicted [1adfd57f]: cosine=0.73 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [6c8a3b9a] "Proposed public release information shall be submitted to David P. Yates at Dpyates@fbi.gov."
-    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.64); vs matched predicted [1adfd57f]: cosine=0.63 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [6d751629] "The Contractor shall promptly disclose any actual or potential Organizational Conflict of Interest (OCI) to the Contracting Officer."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.60); vs matched predicted [13852b28]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [6ec4c042] "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... quantity"
-    - **similarity check:** closest true topic: `ram_capacity_spec` (cosine=0.54); vs matched predicted [d8d2b2d0]: cosine=0.57 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [71474256] "52.233-3 | Protest After Award"
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.50); vs matched predicted [969e6318]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [73a478ff] "Final invoices must be submitted within 30 days after the end date of the period of performance."
-    - **similarity check:** closest true topic: `quote_validity_through_sept30` (cosine=0.60); vs matched predicted [4886f73d]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [7a5351fb] "A protest filed directly with DOJ shall ... state whether the protester chooses to have the Contracting Officer or the APO decide the protest"
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.54); vs matched predicted [36a86bfd]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [7b6a97a8] "If administrative leave or a Government closure affects scheduled delivery, the Contractor shall coordinate with the Contracting Officer for rescheduling."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.56); vs matched predicted [5b547a69]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [83f8be26] "The Contractor shall exercise due diligence to protect proprietary information from misuse or unauthorized disclosure consistent with FAR 9.505-4"
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.59); vs matched predicted [5b547a69]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [86ea4daa] "The contractor shall not divulge, publish, disclose, or use for private purposes any nonpublic Government information, contract-related material, or information acquired during performance without prior written consent from the FBI Office of Public Affairs or the Contracting Officer."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.67); vs matched predicted [13852b28]: cosine=0.74 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [88c13921] "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time."
-    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.70); vs matched predicted [1adfd57f]: cosine=0.69 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [8b7fbffc] "The systems must be portable and provide workstation-level performance to enable investigators and forensic examiners to conduct examinations outside of the laboratory environment."
-    - **similarity check:** closest true topic: `gpu_spec` (cosine=0.57); vs matched predicted [d877e11c]: cosine=0.45 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [9077ffc9] "All answers shall be reflective of the parent and subsidiary levels of an organization."
-    - **similarity check:** closest true topic: `item_identification_completeness` (cosine=0.52); vs matched predicted [5b547a69]: cosine=0.51 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [932e1963] "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... all other material RFQ terms"
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.59); vs matched predicted [36a86bfd]: cosine=0.52 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [93d34043] "High End Whisper Quiet Fans throughout the Entire System (Hydraulic Fluid Ball Bearing rated at 300,000 hour lifespan)"
-    - **similarity check:** closest true topic: `chassis_fan_size_spec` (cosine=0.66); vs matched predicted [db4e25af]: cosine=0.65 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [94c3e25f] "The contractor must maintain their registration in the System for Award Management (SAM) throughout the contract period as per FAR 52.204-13."
-    - **similarity check:** closest true topic: `warranty_spec` (cosine=0.56); vs matched predicted [969e6318]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [984e3bce] "The contractor must ensure that shipping instructions provided to foreign entity suppliers do not mention the Federal Bureau of Investigation or the acronym FBI, and orders issued to such suppliers must not directly ship supplies to the Federal Bureau of Investigation."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.62); vs matched predicted [13852b28]: cosine=0.67 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [99a49b3d] "The contractor shall furnish only new, unused, factory-new, genuine OEM products."
-    - **similarity check:** closest true topic: `oem_new_no_gray_market_certification` (cosine=0.68); vs matched predicted [027add4f]: cosine=0.65 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [9ae346bd] "Price and any discount terms"
-    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.58); vs matched predicted [c6d5598c]: cosine=0.68 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [9be8b933] "The Department of Justice does not permit the use of Non-U.S. citizens in the performance of this contract or commitment for any position that involves access to or development of any DOJ Information Technology (IT) system."
-    - **similarity check:** closest true topic: `kaspersky_telecom_prohibition_compliance` (cosine=0.45); vs matched predicted [4578ed6b]: cosine=0.51 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [9e72eca3] "A statement of any actions, if any, the agency may take to remove or overcome any barriers to competition before any subsequent acquisition for the supplies or services required."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.58); vs matched predicted [36a86bfd]: cosine=0.53 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [a70cf780] "Offers, including any modifications, revisions, or withdrawals, must be signed, dated, and submitted to the designated Government office by the exact time specified in the solicitation."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.61); vs matched predicted [e7d0300c]: cosine=0.63 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [abfb7793] "The systems must support demanding forensic workloads, including evidence acquisition, processing, analysis of large forensic images, mobile-device examination, password recovery, and data recovery, while providing sufficient processing power, memory, storage, GPU capability, write-blocking functionality, and removable/expandable storage to efficiently handle large volumes of digital evidence."
-    - **similarity check:** closest true topic: `nvme_ssd_processing_spec` (cosine=0.64); vs matched predicted [af332006]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [ad264e6d] "A description of the market research conducted and the results."
-    - **similarity check:** closest true topic: `item_identification_completeness` (cosine=0.50); vs matched predicted [5b547a69]: cosine=0.50 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [ae41d595] "The Contractor shall inform the Contracting Officer if a subcontractor initiates a lawsuit against the Contractor that challenges the validity of this clause."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.60); vs matched predicted [36a86bfd]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b12f0af6] "The Contractor shall report any known or reasonably knowable subcontractor conduct that may violate this clause to the Contracting Officer and implement any remedial actions directed by the Contracting Officer."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.61); vs matched predicted [36a86bfd]: cosine=0.55 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b39979f3] "The Contractor must include the substance of this clause in all subcontracts, including those for commercial products and commercial services, except for subcontracts where the place of performance is outside the United States or those below the simplified acquisition threshold."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.66); vs matched predicted [36a86bfd]: cosine=0.52 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b50d1884] "If the offer is not submitted on the SF 1449, the offeror must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.63); vs matched predicted [36a86bfd]: cosine=0.62 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [b582b3c2] "the contractor shall provide an Accessibility Conformance Report (ACR), when applicable and requested, for ICT items developed, updated, configured for the agency, or proposed as substitutions."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.60); vs matched predicted [36a86bfd]: cosine=0.49 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b6eed388] "Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references"
-    - **similarity check:** closest true topic: `item_identification_completeness` (cosine=0.58); vs matched predicted [5b547a69]: cosine=0.55 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b98872a3] "52.203-17 | Contractor Employee Whistleblower Rights"
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.49); vs matched predicted [36a86bfd]: cosine=0.49 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [bb9d8749] "All products must be sold through an authorized U.S.-based distribution or reseller channel."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.73); vs matched predicted [325a38ea]: cosine=0.69 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [bc8f5eb6] "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.62); vs matched predicted [36a86bfd]: cosine=0.50 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [be1008b9] "The Contractor shall ensure that its Electronic Business Point of Contact in SAM.gov is current."
+- rate: 31.2%
+- unexplained (22) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
+  - predicted [035c4942] "Invoices must be submitted electronically via the IPP system in accordance with FBI-0023, with all supporting documentation uploaded, submitted at least monthly, and finalized within 30 days of the period of performance end date."
+    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.60); vs matched predicted [e0197e92]: cosine=0.69 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [0c60ffc6] "Non-U.S. citizens are prohibited from performing work involving access to or development of DOJ IT systems; non-IT requirements met by non-U.S. citizens must be clearly described."
+    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.56); vs matched predicted [e0197e92]: cosine=0.60 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [0c6b5f35] "Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.62); vs matched predicted [26f448ee]: cosine=0.50 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [1db9105d] "Contractors must manage foreign suppliers by counting and examining goods, ensuring no direct shipping to the FBI, and using approved shipping labels that do not reference the FBI."
+    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.66); vs matched predicted [750ebee5]: cosine=0.76 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [21e554d6] "The offeror agrees to hold prices firm for 30 calendar days from the date specified for receipt of offers, unless otherwise specified."
+    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.60); vs matched predicted [aa388c39]: cosine=0.64 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [27e4b6bd] "The Contractor agrees to comply with non-discrimination requirements, provide access to records, report subcontractor violations, and include these requirements in subcontracts."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.63); vs matched predicted [26f448ee]: cosine=0.55 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [2a409209] "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... all other material RFQ terms"
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.59); vs matched predicted [26f448ee]: cosine=0.52 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [2b6d9be8] "Offers must be signed, dated, and submitted to the specified office by the deadline, including all required information such as solicitation number, offeror details, technical descriptions, warranty terms, pricing, and required certifications."
+    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.62); vs matched predicted [fd63ac59]: cosine=0.65 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [316b27c8] "The Contractor shall ensure that its Electronic Business Point of Contact in SAM.gov is current."
     - **similarity check:** closest true topic: `sam_registration_active` (cosine=0.63); that true topic has no matched predicted requirement in this run, so there was nothing for dedup to compare it against
-  - predicted [bf51a8da] "Only the exact brand-name products and configurations identified in this RFQ are acceptable."
-    - **similarity check:** closest true topic: `brand_name_only_no_alternates` (cosine=0.87); vs matched predicted [5b547a69]: cosine=0.70 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [c4cdb6f6] "Vendors are required to create and submit electronic invoices using the IPP system."
-    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.58); vs matched predicted [5b547a69]: cosine=0.54 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [c74fa098] "Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and— ... If this solicitation is a request for proposals, it was the only proposal received."
-    - **similarity check:** closest true topic: `brand_name_only_no_alternates` (cosine=0.49); vs matched predicted [027add4f]: cosine=0.44 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [caf5366c] "A quote will be rated Technically Acceptable for an award group only if it demonstrates compliance with all mandatory requirements for that group, including ... delivery requirement"
-    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.62); vs matched predicted [c6d5598c]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [cfca1d6a] "Invoices shall be submitted in accordance with FBI-0023, Federal Bureau of Investigation Electronic Invoicing Requirement."
-    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.60); vs matched predicted [11c0dded]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [d275ab01] "All supporting documentation shall be uploaded into IPP."
-    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.55); vs matched predicted [c6d5598c]: cosine=0.58 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [d5d7ba18] "52.212-4 and 2852.212-4 | Terms and Conditions—Commercial Products and Commercial Services (including FAR Deviation)"
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.56); vs matched predicted [36a86bfd]: cosine=0.51 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [d8f80f42] "The addressee shall be identified as “United States Government” or “United States Department of Justice” or, as directed by the Contracting Officer, an entity identifier with no reference to the Government."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.60); vs matched predicted [e7d0300c]: cosine=0.61 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [d978beed] "The customized forensic workstation configuration includes Intel Core Ultra 9 285K processing, liquid cooling, 192GB DDR5 memory, four dedicated 1TB Gen4 M.2 NVMe drives, eight 1TB SSDs in RAID 5, NVIDIA RTX PRO 4000 Blackwell 24GB graphics, ARC-1883i RAID, specified hot-swap and USB expansion, 1700W power, Windows 11 Pro 64-bit, specified chassis characteristics, and a three-year standard warranty."
-    - **similarity check:** closest true topic: `cpu_processor_spec` (cosine=0.72); vs matched predicted [98294c4c]: cosine=0.64 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [e0035269] "Product samples shall be submitted at or prior to the time specified for receipt of offers."
-    - **similarity check:** closest true topic: `oem_new_no_gray_market_certification` (cosine=0.62); vs matched predicted [027add4f]: cosine=0.65 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [e1752a3e] "“Remit to” address, if different than mailing address"
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.50); vs matched predicted [e7d0300c]: cosine=0.52 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [e71ceaa9] "Demonstrate that the proposed contractor’s unique qualifications or the nature of the acquisition requires using the authority cited."
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.64); vs matched predicted [36a86bfd]: cosine=0.54 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [e85663d2] "A protest filed directly with the Department of Justice (2852.233-70) must indicate that it is a protest to the DOJ and specify whether the protester prefers to make an oral or written presentation."
-    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.51); vs matched predicted [11c0dded]: cosine=0.56 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [f137febe] "52.233-4 | Applicable Law for Breach of Contract Claim"
-    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.52); vs matched predicted [36a86bfd]: cosine=0.57 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [f41e6a72] "The offeror also shall enter its Electronic Funds Transfer (EFT) indicator, if applicable."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.65); vs matched predicted [e7d0300c]: cosine=0.63 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [fb8e06f8] "A listing of any sources, if any, that expressed a written interest in the acquisition."
-    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.55); vs matched predicted [e7d0300c]: cosine=0.54 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [fcc74272] "Offerors are responsible for the thoroughness and completeness of each required subcontractor's submission."
-    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.58); vs matched predicted [13852b28]: cosine=0.68 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [35ce80c2] "The Contractor shall inform employees of whistleblower rights in writing, include this requirement in subcontracts over the simplified acquisition threshold, and provide confirmation of distribution within 45 days of award."
+    - **similarity check:** closest true topic: `pra_national_security_cooperation` (cosine=0.60); vs matched predicted [750ebee5]: cosine=0.72 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [42a076a0] "Offers received after the exact time specified are considered late and will not be considered, except under specific conditions defined by the Contracting Officer."
+    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.60); vs matched predicted [fd63ac59]: cosine=0.66 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [49ea88dc] "Contractors are not authorized to work during a furlough unless directed by the Contracting Officer and must coordinate rescheduling for deliveries affected by Government closures."
+    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.60); vs matched predicted [7bbcb142]: cosine=0.63 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [5f71e8f1] "Contractors shall not disclose contract-related information without prior written consent from the FBI, must protect proprietary information, and must disclose any Organizational Conflicts of Interest (OCI)."
+    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.65); vs matched predicted [e0197e92]: cosine=0.70 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [74b70a7f] "If a vendor objects to disclosure of proprietary information to non-Government advisors, the vendor shall identify the specific information and basis for the objection in its quote."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.65); vs matched predicted [26f448ee]: cosine=0.47 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [8412e696] "Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.56); vs matched predicted [26f448ee]: cosine=0.39 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [9f7c58b2] "Quotes shall be submitted through the NASA SEWP Quote Request Tool (QRT) by August 20, 2026, at 12:00 PM Eastern Time."
+    - **similarity check:** closest true topic: `submission_deadline_and_channel` (cosine=0.70); vs matched predicted [e0197e92]: cosine=0.67 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [9f9fc688] "ICT supplies and services must meet 36 C.F.R. Part 1194 accessibility standards, and an Accessibility Conformance Report (ACR) must be provided when requested."
+    - **similarity check:** closest true topic: `authorized_reseller_distributor_evidence` (cosine=0.63); vs matched predicted [7bbcb142]: cosine=0.70 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [b4b8579f] "Protests filed directly with the DOJ must indicate the intent to protest, be filed with the Contracting Officer, state the preferred decision-maker, indicate the presentation format, and include required FAR information."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.60); vs matched predicted [26f448ee]: cosine=0.62 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [b678a1a8] "To be rated Technically Acceptable, a quote must satisfy all mandatory requirements, including exact manufacturer, product, configuration, quantity, warranty/support, and delivery requirements; alternate or 'or equal' products are unacceptable."
+    - **similarity check:** closest true topic: `exceptions_conditions_disclosure` (cosine=0.69); vs matched predicted [26f448ee]: cosine=0.54 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [bfb1296c] "Product samples must be submitted at or prior to the time specified for receipt of offers at no expense to the Government, unless otherwise specified."
+    - **similarity check:** closest true topic: `oem_new_no_gray_market_certification` (cosine=0.61); vs matched predicted [7bbcb142]: cosine=0.65 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [c94186af] "No additional cost may be incurred without prior written authorization."
+    - **similarity check:** closest true topic: `pricing_inclusive_of_all_charges` (cosine=0.59); vs matched predicted [aa388c39]: cosine=0.55 (< dedup threshold 0.6) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [f9222d0c] "Offers may be withdrawn by written notice, in person, or via authorized electronic methods before the exact time set for receipt of offers."
+    - **similarity check:** closest true topic: `unique_entity_identifier_annotation` (cosine=0.58); vs matched predicted [fd63ac59]: cosine=0.62 (>= dedup threshold 0.6) -> would likely have been clustered together and compared by the dedup LLM call
 
 ## Coverage flags
 
@@ -251,7 +138,7 @@ Clean 1:1 matches (recall counted them as found) whose citations don't fully ove
 - none
 
 **Requirements captured incompletely** (1) — the predicted citation misses part of the true one:
-- predicted [36a86bfd] is contained in true `exceptions_conditions_disclosure` — 33.8%:
+- predicted [26f448ee] is contained in true `exceptions_conditions_disclosure` — 33.8%:
     predicted: "State any exception, condition, or assumption."
     true: "State any exception, condition, or assumption. An exception to a material RFQ requirement may render the quote technically unacceptable."
 
@@ -259,38 +146,50 @@ Clean 1:1 matches (recall counted them as found) whose citations don't fully ove
 
 For each clean or one-to-many match (tangled groups excluded — there's no single "one" to compare against), does `is_mandatory` agree with the true value? A one-to-many group counts as correct only if every member on the "many" side agrees with the "one".
 
-**Accuracy: 96.8% (31 groups)**
+**Accuracy: 70.0% (10 groups)**
 
 Mismatched:
-- true: `exceptions_conditions_disclosure`=False; predicted: `36a86bfd`=True — "State any exception, condition, or assumption. An exception to a material RFQ requirement may render the quote technically unacceptable."
+- true: `authorized_reseller_distributor_evidence`=False, `brand_name_only_no_alternates`=True, `oem_new_no_gray_market_certification`=True; predicted: `7bbcb142`=True — "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required. The Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity."
+- true: `exceptions_conditions_disclosure`=False; predicted: `26f448ee`=True — "State any exception, condition, or assumption. An exception to a material RFQ requirement may render the quote technically unacceptable."
+- true: `chassis_finish_spec`=True; predicted: `d8d8c0c4`=False — "Finish = Powder Coated Black with Black Appointments"
 
 ## is_text_verifiable accuracy
 
 For each clean or one-to-many match (tangled groups excluded), does `is_text_verifiable` agree with the true value (all-or-nothing on the "many" side, same rule as is_mandatory above)? A wrong `false` here means the pipeline skips verdict generation for a requirement that should get one.
 
-**Accuracy: 90.3% (31 groups)**
+**Accuracy: 70.0% (10 groups)**
 
 Mismatched:
-- true: `pra_national_security_cooperation`=False; predicted: `13852b28`=True — "The prospective awardee shall timely provide all information requested by the FBI to complete the PRA, including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information as applicable."
-- true: `kaspersky_telecom_prohibition_compliance`=False; predicted: `4578ed6b`=True — "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities"
-- true: `submission_deadline_and_channel`=False; predicted: `11c0dded`=True, `1adfd57f`=True — "Late Quotations. Quotations received after September 17, 2026, at 12:00 PM Eastern Time will not be considered for award. Vendors are solely responsible for ensuring that their complete quotation is successfully submitted to rtiggle@fbi.gov before the stated deadline."
+- true: `pra_national_security_cooperation`=False; predicted: `750ebee5`=True — "The prospective awardee shall timely provide all information requested by the FBI to complete the PRA, including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information as applicable."
+- true: `kaspersky_telecom_prohibition_compliance`=False; predicted: `da312307`=True — "52.204-23 | Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab Covered Entities"
+- true: `submission_deadline_and_channel`=False; predicted: `e0197e92`=True — "Late Quotations. Quotations received after September 17, 2026, at 12:00 PM Eastern Time will not be considered for award. Vendors are solely responsible for ensuring that their complete quotation is successfully submitted to rtiggle@fbi.gov before the stated deadline."
 
 ## Verdict accuracy
 
 The confusion matrix covers only clean 1:1 matches — split/merge groups have no single pair to plot, but still count in the two rates below.
 
-Clean matches scored: 28
+Clean matches scored: 4
 
 | true \ pipeline said | `compliant` | `non_compliant` | `contradictory` | `insufficient_information` |
 |---|---|---|---|---|
-| `compliant` | 8 | 0 | 0 | 0 |
-| `non_compliant` | 0 | 3 | 0 | 0 |
-| `contradictory` | 0 | 0 | 1 | 0 |
-| `insufficient_information` | 0 | 0 | 0 | 16 |
+| `compliant` | 1 | 1 | 0 | 0 |
+| `non_compliant` | 0 | 1 | 0 | 0 |
+| `contradictory` | 0 | 0 | 0 | 0 |
+| `insufficient_information` | 0 | 0 | 0 | 1 |
+
+Why some rows are empty:
+- `contradictory` row is empty: true `gpu_spec` — over_merge match — no single pair to plot
 
 **Mismatched clean matches** — every off-diagonal cell above, in full: the full context retrieved and shown to the model, what it chose to cite from that context, and its reasoning ("model's ..."), next to what `true_verdicts.json` expects ("expected ...").
 
-- none
+- `unique_entity_identifier_annotation` — acceptable: ['compliant', 'insufficient_information'], predicted: non_compliant
+  - **requirement:** "The offeror shall enter its Unique Entity Identifier and Electronic Funds Transfer (EFT) indicator on the cover page of its offer."
+  - **retrieved context (shown to the model):** "From: quotes@meridianforensic.com To: rtiggle@fbi.gov Subject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations Dear Mr. Tiggle, Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price quote in response to RFQ SHOP-PR-26-002435. Vendor Inf [...truncated]"
+  - **retrieved context (shown to the model):** "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized SUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is enclosed as Attachment A to this quote. Configuration furnished per unit (all 15 units identical): - Processor: Intel Cor [...truncated]"
+  - **model's evidence (what it chose to cite):** "Meridian Forensic Solutions, LLC Unique Entity Identifier: HF3K9QZ8YL72 2210 Rutherford Court, Suite 400 Herndon, VA 20171"
+  - **model's reasoning:** The requirement mandates that the offeror enter both its Unique Entity Identifier (UEI) and its Electronic Funds Transfer (EFT) indicator on the cover page of the offer. While the bidder provided their UEI in the vendor information section, the application contains no mention of an EFT indicator.
+  - **expected evidence (true_verdicts.json):** "Meridian Forensic Solutions, LLC Unique Entity Identifier: HF3K9QZ8YL72"
+  - **expected reasoning:** Application enters the Unique Entity Identifier annotation together with the vendor's name and address.
 
 **False-compliant rate** — dangerous direction: the true verdict requires an issue (anything but `compliant`), but every predicted verdict in the group is `compliant`.
 - rate: 0.0%
@@ -298,51 +197,128 @@ Clean matches scored: 28
 - none
 
 **False-issue rate** — mirror direction: the true verdict is `compliant` only, but the pipeline raised an issue anyway.
-- rate: 3.4%
+- rate: 14.3%
 
-- group of 4 true topic(s) and 3 predicted requirement(s) (not a 1:1 match, so there is no single correct pairing between them):
-  - true `authorized_reseller_distributor_evidence` — "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required. The Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity." (acceptable: ['compliant'])
-      - **expected evidence (true_verdicts.json):** "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized SUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is enclosed as Attachment A to this quote."
-      - **expected reasoning:** Application states authorized SUMURI reseller status and that a current authorized-reseller certificate is enclosed as evidence.
-  - true `brand_name_only_no_alternates` — "This RFQ is for brand-name-only products. The Government requires the exact manufacturers, products, models, configurations, quantities, warranty/support, and delivery requirements identified in this RFQ and Attachment 1. Alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable for the applicable award group." (acceptable: ['compliant'])
-      - **expected evidence (true_verdicts.json):** "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ, are new, genuine OEM products eligible for the required OEM warranty/support, and are factory-new. The quote does not include any gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products."
-      - **expected reasoning:** Application certifies the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ; no alternate/substitute product is offered.
-  - true `item_identification_completeness` — "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price." (acceptable: ['non_compliant'])
-      - **expected evidence (true_verdicts.json):** "Item Offered: SUMURI TALINO Intel Workstation, Qty 15."
-      - **expected reasoning:** Application names the product and quantity but never states a manufacturer part number or SKU for the TALINO workstation.
-  - true `oem_new_no_gray_market_certification` — "State that the quoted products are the exact brand-name products required by this RFQ and are new, genuine OEM products eligible for the required OEM warranty/support. ... Certify that all quoted items are factory-new and will be delivered with an OEM/manufacturer warranty valid in the United States. The quote shall not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products." (acceptable: ['compliant'])
-      - **expected evidence (true_verdicts.json):** "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ, are new, genuine OEM products eligible for the required OEM warranty/support, and are factory-new. The quote does not include any gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products."
-      - **expected reasoning:** Application explicitly certifies the products are the exact brand-name, new, genuine OEM products, factory-new, and free of gray-market/used/refurbished status.
-  - **retrieved context (shown to the model):** "From: quotes@meridianforensic.com To: rtiggle@fbi.gov Subject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations Dear Mr. Tiggle, Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price quote in response to RFQ SHOP-PR-26-002435. Vendor Inf [...truncated]"
+- group of 23 true topic(s) and 1 predicted requirement(s) (not a 1:1 match, so there is no single correct pairing between them):
+  - true `chassis_aluminum_thickness_spec` — "Aluminum Thickness = 0.118 (or 3.00mm)" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions chassis material thickness.
+  - true `chassis_fan_size_spec` — "Fan size(s) = 120mm" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions fan size.
+  - true `chassis_open_525_bays_spec` — "Open 5.25 Bays = 11" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions open 5.25" bay count.
+  - true `chassis_pci_expansion_slots_spec` — "PCI Chassis Expansion Slots = 8" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions PCI chassis expansion slot count.
+  - true `chassis_size_spec` — "Size: 15 W x 19.06 H x 20.06 D (381mm x 484mm x 510mm)" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions chassis dimensions.
+  - true `cpu_processor_spec` — "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) | 8P-16E Cores 24 Threads Processor" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- Processor: Intel Core Ultra 9 285K, liquid-cooled"
+      - **expected reasoning:** Application offers the exact required processor, liquid-cooled as specified.
+  - true `gpu_spec` — "NVIDIA RTX PRO 4000 Blackwell | 24GB GDDR7 Graphics Card" (acceptable: ['contradictory'])
+      - **expected evidence (true_verdicts.json):** "- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card"
+      - **expected evidence (true_verdicts.json):** "card is listed as an NVIDIA RTX A4000 16GB card"
+      - **expected reasoning:** The configuration list states the exact required NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 card, but a later note says the graphics card is actually an NVIDIA RTX A4000 16GB card -- a direct contradiction about the same item's GPU.
+  - true `hot_swap_bay_25_eight_trays_spec` — "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions any hot-swap bay.
+  - true `hot_swap_bay_25_four_trays_spec` — "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions any hot-swap bay.
+  - true `hot_swap_bay_35_three_drives_spec` — "One (1) 3.5” Hot Swap Bay for Three (3) Drives" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions any hot-swap bay.
+  - true `liquid_cooling_spec` — "Liquid Cooling for the CPU Providing Maximum Performance" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- Processor: Intel Core Ultra 9 285K, liquid-cooled"
+      - **expected reasoning:** Application confirms liquid cooling for the CPU in the same configuration line as the processor.
+  - true `nvme_ssd_database_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions a dedicated database drive; storage is described generically plus an 8-drive RAID 5 array.
+  - true `nvme_ssd_operating_system_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application describes storage only as 'NVMe solid-state storage as required' plus a separate 8x1TB RAID 5 data array -- neither confirms a dedicated OS drive, and the RAID 5 array architecture is inconsistent with having 4 separately dedicated drives at all.
+  - true `nvme_ssd_processing_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Processing" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions a dedicated processing drive; storage is described generically plus an 8-drive RAID 5 array.
+  - true `nvme_ssd_temporary_files_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application never mentions a dedicated temporary-files drive; storage is described generically plus an 8-drive RAID 5 array.
+  - true `operating_system_spec` — "- Windows 11 Only ... Microsoft Windows 11 Pro 64 Bit" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- Operating System: Microsoft Windows 11 Pro 64-bit"
+      - **expected reasoning:** Application offers the exact required Microsoft Windows 11 Pro 64-bit operating system.
+  - true `power_supply_spec` — "One (1) 1700 Watt Power Supply Unit" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- Power: One (1) 1700 Watt Power Supply Unit"
+      - **expected reasoning:** Application offers the exact required 1700 Watt power supply unit.
+  - true `raid5_eight_ssd_storage_spec` — "Eight (8) 1TB SSDs in RAID 5 for Data Storage" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- Data storage array: Eight (8) 1TB SSDs configured in RAID 5"
+      - **expected reasoning:** Application offers exactly eight 1TB SSDs configured in RAID 5, as required.
+  - true `raid_card_spec` — "ARC-1883i RAID Card" (acceptable: ['compliant'])
+      - **expected evidence (true_verdicts.json):** "- RAID controller: ARC-1883i RAID Card"
+      - **expected reasoning:** Application offers the exact required ARC-1883i RAID card.
+  - true `ram_capacity_spec` — "192GB of DDR5 4800 MHz RAM" (acceptable: ['non_compliant'])
+      - **expected evidence (true_verdicts.json):** "- Memory: 128GB DDR5 system memory"
+      - **expected reasoning:** Application offers 128GB DDR5 memory, short of the required 192GB.
+  - true `usb_2_0_ten_port_hub_spec` — "One (1) 10 Port USB 2.0 Hub (USB-A)" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 10-port USB 2.0 hub specifically.
+  - true `usb_3_0_four_port_hub_spec` — "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)" (acceptable: ['insufficient_information', 'non_compliant'])
+      - **expected evidence (true_verdicts.json):** none
+      - **expected reasoning:** Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 4-port USB 3.0 hub with this exact port mix.
+  - true `warranty_spec` — "Three (3) Year Standard Warranty" (acceptable: ['non_compliant'])
+      - **expected evidence (true_verdicts.json):** "- Warranty: One (1) year manufacturer warranty, extendable at additional cost"
+      - **expected reasoning:** Application offers only a one-year manufacturer warranty (extendable at additional cost) instead of the required three-year standard warranty.
   - **retrieved context (shown to the model):** "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized SUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is enclosed as Attachment A to this quote. Configuration furnished per unit (all 15 units identical): - Processor: Intel Cor [...truncated]"
+  - **retrieved context (shown to the model):** "From: quotes@meridianforensic.com To: rtiggle@fbi.gov Subject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations Dear Mr. Tiggle, Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price quote in response to RFQ SHOP-PR-26-002435. Vendor Inf [...truncated]"
   - predicted verdicts in this group:
-    - predicted [027add4f] "The quote must not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products." — verdict: compliant
-      - **model's evidence (what it chose to cite):** "The quote does not include any gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products."
-      - **model's evidence (what it chose to cite):** "Meridian Forensic Solutions, LLC certifies that the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ, are new, genuine OEM products eligible for the required OEM warranty/support, and are factory-new."
-      - **model's reasoning:** The bidder explicitly certifies that the products are factory-new and confirms that the quote does not include any of the prohibited categories listed in the requirement.
-    - predicted [325a38ea] "All quoted items must be factory-new and delivered with a manufacturer warranty and support that are valid and enforceable in the United States." — verdict: compliant
-      - **model's evidence (what it chose to cite):** "Meridian Forensic Solutions, LLC certifies that the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ, are new, genuine OEM products eligible for the required OEM warranty/support, and are factory-new."
-      - **model's evidence (what it chose to cite):** "We take no exceptions, conditions, or assumptions to any requirement of this RFQ."
-      - **model's reasoning:** The bidder explicitly certifies that the products are factory-new and eligible for the required OEM warranty and support. Furthermore, the bidder states they take no exceptions to any requirements of the RFQ, which includes the requirement for the warranty and support to be valid and enforceable in the United States.
-    - predicted [5b547a69] "The quote must provide the exact manufacturer, product model, configuration, quantity, warranty, support, and delivery schedule as specified in the RFQ, ensuring all items are new, genuine OEM products sourced through authorized channels." — verdict: contradictory
-      - **model's evidence (what it chose to cite):** "Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card"
+    - predicted [d103012f] "The forensic workstation must meet the specified hardware configuration, including Intel Core Ultra 9 285K, liquid cooling, 192GB DDR5 RAM, specified storage drives, NVIDIA RTX PRO 4000 24GB, RAID controller, hot-swap bays, USB hubs, 1700W PSU, Windows 11 Pro, chassis dimensions, and a three-year warranty." — verdict: non_compliant
+      - **model's evidence (what it chose to cite):** "Memory: 128GB DDR5 system memory"
+      - **model's evidence (what it chose to cite):** "Warranty: One (1) year manufacturer warranty, extendable at additional cost"
       - **model's evidence (what it chose to cite):** "Graphics card note: please also see our cover summary, where the offered graphics card is listed as an NVIDIA RTX A4000 16GB card"
-      - **model's reasoning:** The bidder provides conflicting information regarding the configuration of the graphics card. The main configuration list specifies an 'NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7', while the note below it states the card is an 'NVIDIA RTX A4000 16GB'. Because the application provides two different specifications for a critical component, it fails to provide a clear, consistent configuration as required.
+      - **model's reasoning:** The bidder failed to meet several mandatory hardware and service requirements. Specifically, they offered 128GB of RAM instead of the required 192GB, a one-year warranty instead of the required three-year warranty, and the graphics card specifications are inconsistent and do not match the required NVIDIA RTX PRO 4000 24GB.
 
 **Unscored** — split/merge groups excluded from the matrix above (still counted in the two rates above):
 - group 1:
   - true `authorized_reseller_distributor_evidence` — "Contract holders may furnish the required products as authorized resellers or distributors, provided the products quoted are the exact brand-name products and configurations required. The Government may require evidence of OEM or reseller authorization, warranty/support eligibility, and product authenticity." (acceptable: ['compliant'])
   - true `brand_name_only_no_alternates` — "This RFQ is for brand-name-only products. The Government requires the exact manufacturers, products, models, configurations, quantities, warranty/support, and delivery requirements identified in this RFQ and Attachment 1. Alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable for the applicable award group." (acceptable: ['compliant'])
-  - true `item_identification_completeness` — "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price." (acceptable: ['non_compliant'])
   - true `oem_new_no_gray_market_certification` — "State that the quoted products are the exact brand-name products required by this RFQ and are new, genuine OEM products eligible for the required OEM warranty/support. ... Certify that all quoted items are factory-new and will be delivered with an OEM/manufacturer warranty valid in the United States. The quote shall not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products." (acceptable: ['compliant'])
-  - predicted [027add4f] "The quote must not include gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products." — verdict: compliant
-  - predicted [325a38ea] "All quoted items must be factory-new and delivered with a manufacturer warranty and support that are valid and enforceable in the United States." — verdict: compliant
-  - predicted [5b547a69] "The quote must provide the exact manufacturer, product model, configuration, quantity, warranty, support, and delivery schedule as specified in the RFQ, ensuring all items are new, genuine OEM products sourced through authorized channels." — verdict: contradictory
+  - predicted [7bbcb142] "Quotes must provide exact brand-name, factory-new, genuine OEM products through authorized U.S. channels, with valid OEM warranties; gray-market, used, or refurbished items are prohibited." — verdict: compliant, citation: fuzzy match — worth a second look
+- group 2:
+  - true `item_identification_completeness` — "For every quoted item, identify the exact manufacturer, product/model, manufacturer part number or SKU (when applicable), configuration, quantity, warranty/support, delivery schedule, unit price, and extended price." (acceptable: ['non_compliant'])
+  - true `pricing_inclusive_of_all_charges` — "Include all shipping, handling, warranty/support, and other charges in the quoted firm-fixed price." (acceptable: ['insufficient_information'])
+  - predicted [aa388c39] "Quotes must include a detailed breakdown of all items, quantities, configurations, warranty/support, delivery schedules, and unit/extended prices, with all shipping and handling charges included in the firm-fixed price." — verdict: non_compliant
+- group 3:
+  - true `chassis_aluminum_thickness_spec` — "Aluminum Thickness = 0.118 (or 3.00mm)" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `chassis_fan_size_spec` — "Fan size(s) = 120mm" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `chassis_open_525_bays_spec` — "Open 5.25 Bays = 11" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `chassis_pci_expansion_slots_spec` — "PCI Chassis Expansion Slots = 8" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `chassis_size_spec` — "Size: 15 W x 19.06 H x 20.06 D (381mm x 484mm x 510mm)" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `cpu_processor_spec` — "Intel Core Ultra 9 285K | 3.7 GHz (5.7 GHz Boost) | 8P-16E Cores 24 Threads Processor" (acceptable: ['compliant'])
+  - true `gpu_spec` — "NVIDIA RTX PRO 4000 Blackwell | 24GB GDDR7 Graphics Card" (acceptable: ['contradictory'])
+  - true `hot_swap_bay_25_eight_trays_spec` — "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `hot_swap_bay_25_four_trays_spec` — "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `hot_swap_bay_35_three_drives_spec` — "One (1) 3.5” Hot Swap Bay for Three (3) Drives" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `liquid_cooling_spec` — "Liquid Cooling for the CPU Providing Maximum Performance" (acceptable: ['compliant'])
+  - true `nvme_ssd_database_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `nvme_ssd_operating_system_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `nvme_ssd_processing_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Processing" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `nvme_ssd_temporary_files_spec` — "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `operating_system_spec` — "- Windows 11 Only ... Microsoft Windows 11 Pro 64 Bit" (acceptable: ['compliant'])
+  - true `power_supply_spec` — "One (1) 1700 Watt Power Supply Unit" (acceptable: ['compliant'])
+  - true `raid5_eight_ssd_storage_spec` — "Eight (8) 1TB SSDs in RAID 5 for Data Storage" (acceptable: ['compliant'])
+  - true `raid_card_spec` — "ARC-1883i RAID Card" (acceptable: ['compliant'])
+  - true `ram_capacity_spec` — "192GB of DDR5 4800 MHz RAM" (acceptable: ['non_compliant'])
+  - true `usb_2_0_ten_port_hub_spec` — "One (1) 10 Port USB 2.0 Hub (USB-A)" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `usb_3_0_four_port_hub_spec` — "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)" (acceptable: ['insufficient_information', 'non_compliant'])
+  - true `warranty_spec` — "Three (3) Year Standard Warranty" (acceptable: ['non_compliant'])
+  - predicted [d103012f] "The forensic workstation must meet the specified hardware configuration, including Intel Core Ultra 9 285K, liquid cooling, 192GB DDR5 RAM, specified storage drives, NVIDIA RTX PRO 4000 24GB, RAID controller, hot-swap bays, USB hubs, 1700W PSU, Windows 11 Pro, chassis dimensions, and a three-year warranty." — verdict: non_compliant
 
 ## Evidence
 
 **Citation-verified rate** (evidence-level): fraction of evidence quotes actually located in application.txt.
-- rate: 98.2% (2 unverified of 114)
+- rate: 100.0% (0 unverified of 36)
 
 **Evidence recall**: does the expected evidence span (from `true_verdicts.json`) show up somewhere in the requirement's retrieved chunks, before the verdict step chose what to cite? Topics never extracted as a requirement are excluded — that failure is already counted by requirement recall above.
 - recall: 100.0% (17/17)

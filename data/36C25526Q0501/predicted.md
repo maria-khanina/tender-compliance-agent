@@ -4,216 +4,134 @@
 
 ### Non-compliant
 
-**REQUIREMENT:** For each submitted past performance contract, provide the name of the contracting agency or organization that awarded the contract.
+**REQUIREMENT:** Contractors shall be currently certified by NETA or NICET and have completed OSHA-approved 10-hour construction safety training.
 
-**Reasoning:** The bidder provided two past performance contracts in section [1] that include the awarding agency. However, in section [2], the bidder lists two additional 'Technical Experience Examples' as past performance, but fails to provide the name of the contracting agency or organization that awarded those specific contracts, thereby failing to meet the requirement for all submitted past performance contracts.
+**Reasoning:** The requirement states that contractors must be currently certified by NETA or NICET and have completed OSHA-approved 10-hour construction safety training. While the bidder demonstrates NETA-standard testing experience and mentions that their technicians completed OSHA 29 CFR 1910 Subpart S and NFPA 70E training, they do not provide evidence of having completed the specific OSHA-approved 10-hour construction safety training required, and they state that certification records are kept internally rather than included. Furthermore, company-level NETA or NICET certification is not explicitly affirmed.
 
 **Evidence:**
-- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
+- (inconclusive) Scope: NETA-standard testing of switchgear, transformers,
+   and circuit breakers as prime contractor under NAICS 221122, technically
+   similar to the work under this solicitation.
+- (inconclusive) Certification records for our field technicians are maintained in our
+internal training management system and are available upon request rather
+than included in this proposal package.
+- (contradicts) Heartland Electrical Testing Services' field technicians have completed
+electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S
+and NFPA 70E
+
+### Non-compliant
+
+**REQUIREMENT:** Contractors shall provide at least three previously awarded and completed contracts issued by government agencies involving similar work.
+
+**Reasoning:** The requirement states that contractors must provide at least three previously awarded and completed contracts issued by government agencies involving similar work. Reviewing the provided excerpts, the bidder lists four total contracts across chunks 1 and 2 (Sedgwick County Adult Detention Facility, Olathe Medical Center, St. Luke's Hospital, and Fort Leavenworth Commissary). However, out of these four, only the Fort Leavenworth Commissary contract was issued by a government agency (the U.S. Army). Sedgwick County, Olathe Medical Center, and St. Luke's Health System are either local government facilities without sufficient evidence of meeting the government agency criteria across three distinct ones or are private/healthcare entities (St. Luke's, Olathe Medical Center). Therefore, the bidder only provides one qualifying contract issued by a government agency, falling short of the required three.
+
+**Evidence:**
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020...
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No. SLH-2022-0447, awarded by St. Luke's Health System... 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No. W9124J-21-C-0083, awarded by U.S. Army...
+
+### Non-compliant
+
+**REQUIREMENT:** Provide a brief description of the contract scope of work.
+
+**Reasoning:** The requirement asks for a brief description of the contract scope of work. While the bidder provides price schedules and lists past project scopes from other contracts, they fail to provide a description of the actual contract scope of work for the current solicitation.
+
+**Evidence:**
+- (inconclusive) Price Schedule:
+CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
+and/or Calibration of the Electrical Power Distribution System at Truman VA,
+Columbia, MO: $58,400.00
+Grand Total: $58,400.00
+
+### Non-compliant
+
+**REQUIREMENT:** Provide the percentage of total labor self-performed by the offeror's employees for each submitted technical experience contract.
+
+**Reasoning:** The requirement asks for the percentage of total labor self-performed by the offeror's employees for each submitted technical experience contract. While the bidder provided percentages for the first two technical experience contracts (Sedgwick County and Olathe Medical Center), they listed two additional past performance contracts under 'Prior Experience' (St. Luke's Hospital and Fort Leavenworth Commissary) without providing the percentage of labor self-performed for either of them. Therefore, the application is non_compliant because it did not fulfill the requirement for all submitted technical experience contracts.
+
+**Evidence:**
+- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
+   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
+   employees.
+- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
+   90% of labor self-performed by Heartland employees, remainder by a
+   licensed subcontractor.
+- (inconclusive) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
    SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
-   contract value $62,000. Scope: annual electrical distribution testing
-   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
-   janet.cole@stlukeskc.org.
-2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
+   contract value $62,000.
+- (inconclusive) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
    W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
-   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
+   $41,500.
+
+### Non-compliant
+
+**REQUIREMENT:** Offerors shall provide a capabilities letter not exceeding five pages describing their technical approach, methodology, and technique.
+
+**Reasoning:** The requirement explicitly states that offerors shall provide a capabilities letter not exceeding five pages describing their technical approach, methodology, and technique. Although the bidder includes a short section titled 'Technical Capabilities' within their email body, they failed to provide a formal separate capabilities letter as required by the solicitation.
+
+**Evidence:**
+- (contradicts) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Offerors shall provide a capabilities letter not exceeding five pages describing their technical approach, methodology, and technique.
+
+### Non-compliant
+
+**REQUIREMENT:** Offeror shall provide at least five years of prior experience as a prime contractor in waste removal services.
+
+**Reasoning:** The requirement states that the offeror shall provide at least five years of prior experience as a prime contractor in waste removal services. However, the bidder's application shows experience in electrical power distribution testing and maintenance services, not waste removal services.
+
+**Evidence:**
+- (contradicts) Heartland Electrical Testing Services has performed electrical power
+distribution testing and maintenance services for healthcare and industrial
+clients for the past six years.
+- (contradicts) Scope: NETA-standard testing of switchgear, transformers,
+   and circuit breakers as prime contractor under NAICS 221122, technically
+   similar to the work under this solicitation.
+
+### Non-compliant
+
+**REQUIREMENT:** To demonstrate prior experience, submit a detailed description for each year including the contract number and estimated annual dollar value.
+
+**Reasoning:** The requirement states that the bidder must submit a detailed description for each year including the contract number and estimated annual dollar value. While the bidder provided some past performance examples, none of the listed contracts include an estimated annual dollar value, and they fail to provide a detailed description for each year as requested.
+
+**Evidence:**
 - (contradicts) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
    period: 01/2021-03/2021. 100% of labor self-performed by Heartland
    employees. Scope: NETA-standard testing of switchgear, transformers,
    and circuit breakers as prime contractor under NAICS 221122, technically
    similar to the work under this solicitation.
-2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-   90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor. Scope: NETA-standard testing of the emergency
-   power distribution system as prime contractor under NAICS 221122,
-   technically similar to the work under this solicitation.
-
-### Non-compliant
-
-**REQUIREMENT:** For each submitted past performance contract, provide the name, current mailing address, phone number, and email address of at least one point-of-contact at the awarding organization.
-
-**Reasoning:** The requirement mandates that for each past performance contract, the bidder must provide the name, current mailing address, phone number, and email address of at least one point-of-contact. While the bidder provided the name, phone number, and email address for the points-of-contact for both listed contracts, they failed to provide the current mailing address for either point-of-contact.
-
-**Evidence:**
-- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
-   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
-   contract value $62,000. Scope: annual electrical distribution testing
-   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
-   janet.cole@stlukeskc.org.
-- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
-   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
-   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
-
-### Non-compliant
-
-**REQUIREMENT:** For each submitted Technical Experience contract, provide the performance period, including the starting and completion dates.
-
-**Reasoning:** The requirement asks for the performance period, including starting and completion dates, for each submitted Technical Experience contract. While the bidder provided performance periods for the examples in chunk [2], they listed two additional 'Past Performance Contracts' in chunk [1] that only provide an award date, failing to provide the required completion dates or full performance periods for those specific contracts.
-
-**Evidence:**
 - (contradicts) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
    SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
    contract value $62,000. Scope: annual electrical distribution testing
-   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
-   janet.cole@stlukeskc.org.
-2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
-   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
-   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
+   and maintenance.
 
 ### Non-compliant
 
-**REQUIREMENT:** For each year of prior experience, provide the contract number.
+**REQUIREMENT:** The offeror shall price each line item within the pricing periods.
 
-**Reasoning:** The bidder claims to have six years of prior experience, but only provides contract numbers for two specific projects. The requirement mandates providing a contract number for each year of prior experience, which would necessitate six contract numbers in this case.
-
-**Evidence:**
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No. SLH-2022-0447... 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No. W9124J-21-C-0083
-
-### Non-compliant
-
-**REQUIREMENT:** For each year of prior experience, provide the estimated annual dollar value of the contract.
-
-**Reasoning:** The requirement explicitly asks for the estimated annual dollar value for each year of prior experience. The bidder states they have six years of experience but only provides contract values for two specific projects (St. Luke's and Fort Leavenworth). They failed to provide the estimated annual dollar value for each of the six years of experience as required.
-
-**Evidence:**
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-
-### Non-compliant
-
-**REQUIREMENT:** For each year of prior experience, provide a description of services (including location) and the offeror’s level of responsibility and authority on the project.
-
-**Reasoning:** The requirement explicitly asks for a description of services for 'each year of prior experience'. The bidder claims to have six years of experience but only provides project descriptions for four specific contracts (two in chunk 2 and two in chunk 1), covering only a small portion of the six-year period. Therefore, the bidder failed to provide the required information for each year of experience.
-
-**Evidence:**
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
-   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
-   employees. Scope: NETA-standard testing of switchgear, transformers,
-   and circuit breakers as prime contractor under NAICS 221122, technically
-   similar to the work under this solicitation.
-2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-   90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor. Scope: NETA-standard testing of the emergency
-   power distribution system as prime contractor under NAICS 221122,
-   technically similar to the work under this solicitation.
-
-### Non-compliant
-
-**REQUIREMENT:** For each year of prior experience, provide the date of contract start and completion.
-
-**Reasoning:** The requirement asks for the date of contract start and completion for each year of prior experience. While the bidder provided performance periods for some examples in chunk 2, the examples provided in chunk 1 (St. Luke's and Fort Leavenworth) only provide an 'awarded' date and fail to provide a completion date. Because the bidder failed to provide the required completion dates for all listed prior experience, the application is non-compliant.
-
-**Evidence:**
-- (contradicts) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
-   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
-   contract value $62,000. Scope: annual electrical distribution testing
-   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
-   janet.cole@stlukeskc.org.
-2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
-   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
-   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-
-### Non-compliant
-
-**REQUIREMENT:** For each year of prior experience, provide the name, title, address, phone number, and email of the customer contact.
-
-**Reasoning:** The bidder claims six years of experience and lists specific projects in chunks 1 and 2. However, the requirement mandates providing the name, title, address, phone number, and email of the customer contact for each year of prior experience. The bidder only provided contact information for two contracts (St. Luke's and Fort Leavenworth) and failed to provide any contact information for the Sedgwick County and Olathe Medical Center projects listed in chunk 2.
-
-**Evidence:**
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-
-### Non-compliant
-
-**REQUIREMENT:** Contractors shall provide at least three (3) previously awarded and completed contracts issued by Federal, State, or Local Government Agencies involving work similar to the requirements of this solicitation.
-
-**Reasoning:** The requirement mandates at least three contracts issued by Federal, State, or Local Government Agencies. The bidder provided four examples, but only one (Fort Leavenworth Commissary, awarded by the U.S. Army) is clearly a government contract. The Sedgwick County Adult Detention Facility is a government facility, but the bidder does not explicitly state it was a contract awarded by a government agency (it could be a subcontract). St. Luke's Hospital and Olathe Medical Center are private entities. Therefore, the bidder has failed to demonstrate three government-awarded contracts.
-
-**Evidence:**
-- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
-   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
-   contract value $62,000. Scope: annual electrical distribution testing
-   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
-   janet.cole@stlukeskc.org.
-2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
-   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
-   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
-- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
-   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
-   employees. Scope: NETA-standard testing of switchgear, transformers,
-   and circuit breakers as prime contractor under NAICS 221122, technically
-   similar to the work under this solicitation.
-2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-   90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor. Scope: NETA-standard testing of the emergency
-   power distribution system as prime contractor under NAICS 221122,
-   technically similar to the work under this solicitation.
-
-### Non-compliant
-
-**REQUIREMENT:** Offeror shall provide at least five (5) years of prior experience as the Prime Contractor for Waste Removal Services.
-
-**Reasoning:** The requirement specifies that the offeror must have at least five years of experience as a Prime Contractor for 'Waste Removal Services'. The bidder's application documents experience in 'electrical power distribution testing and maintenance services' and 'NETA-standard testing'. There is no evidence provided that the bidder has any experience in Waste Removal Services, let alone five years of experience as a Prime Contractor in that specific field.
-
-**Evidence:**
-- (supports) Scope: NETA-standard testing of switchgear, transformers,
-   and circuit breakers as prime contractor under NAICS 221122
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-
-### Non-compliant
-
-**REQUIREMENT:** Offer shall provide a letter fully describing their capabilities, not exceeding five pages, that includes a 
-description of their technical approach, methodology, and technique used to carry out the Performance Work 
-Statement.
-
-**Reasoning:** The requirement mandates a letter fully describing the bidder's capabilities, including a description of their technical approach, methodology, and technique used to carry out the Performance Work Statement. While the bidder provides a brief paragraph under 'Technical Capabilities', it does not constitute a comprehensive letter describing their capabilities and methodology in the context of the specific Performance Work Statement for this solicitation. The provided text is insufficient to meet the requirement of a full description of the approach and methodology for the specific work requested.
-
-**Evidence:**
-- (supports) Technical Capabilities:
-Heartland Electrical Testing Services has over a decade of experience
-performing NETA-standard electrical testing and maintenance for hospital and
-industrial clients. Our technical approach follows NETA Maintenance Testing
-Specifications for infrared scanning, breaker trip testing, ground fault
-protection testing, and transformer oil sampling, using calibrated
-diagnostic equipment and a documented verification checklist at each stage
-of the process.
-
-### Non-compliant
-
-**REQUIREMENT:** The Offeror’s Price Quote must include a completed Price Schedule, with the Offeror providing their best pricing for each individual Contract Line Item listed in Section B for all specified pricing periods.
-
-**Reasoning:** The requirement mandates that the Offeror provide pricing for each individual Contract Line Item (CLIN) listed in Section B for all specified pricing periods. The bidder only provided a price for CLIN 0001. While the provided excerpt does not explicitly list the full contents of Section B, the singular entry provided suggests a failure to address all required line items or pricing periods if multiple were specified in the solicitation.
+**Reasoning:** The requirement mandates that the offeror shall price each line item within the pricing periods. The bidder only provided a single line item (CLIN 0001) with a lump sum price and did not price each line item separately as required.
 
 **Evidence:**
 - (contradicts) CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
 and/or Calibration of the Electrical Power Distribution System at Truman VA,
 Columbia, MO: $58,400.00
+Grand Total: $58,400.00
 
 ### Contradictory
 
-**REQUIREMENT:** Training certifications or a written certification from the contractor's employer confirming the training requirement has been met must be submitted to the VA Contracting Officer with the proposal.
+**REQUIREMENT:** Training certifications shall be submitted to the VA Contracting Officer with the proposal.
 
-**Reasoning:** The bidder provides two conflicting statements regarding the submission of training certifications. In the same document, they claim that certifications are enclosed with the proposal, but subsequently state that they are not included and are only available upon request.
+**Reasoning:** The application contains contradictory statements regarding whether the training certifications are submitted with the proposal. One section states that current training certifications are enclosed with the proposal, while another section states that they are maintained internally and available upon request rather than included in the proposal package.
 
 **Evidence:**
-- (supports) current training certifications are enclosed with this
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E, and current training certifications are enclosed with this proposal.
+- (contradicts) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Certification records for our field technicians are maintained in our internal training management system and are available upon request rather than included in this proposal package.
+
+### Contradictory
+
+**REQUIREMENT:** If no training certifications are available, the contractor's employer shall certify in writing that the requirement has been met and submit it with the proposal.
+
+**Reasoning:** The bidder's application contains contradictory statements regarding whether training certifications are included in the proposal. In the first statement under Electrical Safety Training, it states that current training certifications are enclosed, but a few lines later it states that certification records are not included in the proposal package and are available upon request instead. Therefore, the application is contradictory.
+
+**Evidence:**
+- (contradicts) and current training certifications are enclosed with this
 proposal.
 - (contradicts) Certification records for our field technicians are maintained in our
 internal training management system and are available upon request rather
@@ -221,12 +139,27 @@ than included in this proposal package.
 
 ### Insufficient information
 
-**REQUIREMENT:** Invoices shall be submitted in arrears:
-    a.  Quarterly []
-    b.  Semi-Annually []
-    c.  Other [X]  Monthly, in arrears
+**REQUIREMENT:** Provide the name of the contract and contract ID number.
 
-**Reasoning:** The bidder states they agree to all terms and conditions of the solicitation, which implies they accept the invoicing requirement. However, the provided excerpts do not contain a specific statement or document confirming the bidder's chosen invoicing frequency (monthly) or explicitly acknowledging the requirement to submit invoices in arrears.
+**Reasoning:** The requirement asks to provide the name of the contract and contract ID number for the current contract being bid on. The solicitation number is provided, but neither the contract name nor a contract ID number (as opposed to a solicitation number) for the resulting contract is provided in the application text.
+
+**Evidence:**
+- (inconclusive) Quote for Electrical Power Distribution Testing
+
+Solicitation Number: 36C25526Q0501
+
+### Insufficient information
+
+**REQUIREMENT:** Provide the date of the contract award and the contract award amount in dollars.
+
+**Reasoning:** The requirement asks for the date of the contract award and the contract award amount in dollars for the current tender. The excerpts only provide information regarding past performance contracts (such as St. Luke's Hospital and Fort Leavenworth Commissary) and the bidder's proposed quote amount ($58,400.00), but do not contain the contract award date or award amount for the contract being solicited under this tender.
+
+
+### Insufficient information
+
+**REQUIREMENT:** Offers shall include responses to provisions requiring offeror completion of information, representations, and certifications.
+
+**Reasoning:** The requirement mandates that offers include responses to provisions requiring offeror completion of information, representations, and certifications. While the bidder states they agree to all terms and conditions, the provided text excerpts do not include or confirm the actual completion and inclusion of the required representations and certifications, leaving insufficient information to determine full compliance.
 
 **Evidence:**
 - (inconclusive) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
@@ -234,52 +167,81 @@ conditions, and provisions included in the solicitation and any amendments.
 
 ### Insufficient information
 
-**REQUIREMENT:** The offeror must qualify as a small business concern under the size standard corresponding to the NAICS code assigned to the contract.
+**REQUIREMENT:** All questions regarding the solicitation must be submitted via email by the specified deadline.
 
-**Reasoning:** The bidder states they agree to the terms and conditions of the solicitation, but the provided excerpts do not contain a self-certification or documentation confirming that Heartland Electrical Testing Services, LLC qualifies as a small business concern under the specific NAICS code size standard required for this contract.
+**Reasoning:** The requirement states that all questions regarding the solicitation must be submitted via email by the specified deadline. The provided excerpts contain the submission of the quote itself and details of technical capabilities, prior experience, and past performance, but they do not contain any information or statements regarding whether any solicitation questions were asked or how they were submitted.
 
-**Evidence:**
-- (inconclusive) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
-conditions, and provisions included in the solicitation and any amendments.
 
 ### Insufficient information
 
-**REQUIREMENT:** As a minimum, offers shall 
-include— ... Responses to provisions that require Offeror completion of information, representations, 
-and certifications (other than those collected via the System for Award Management (SAM))
+**REQUIREMENT:** The offeror is responsible for ensuring the proposal is received by the contract specialist on or before the deadline.
 
-**Reasoning:** The requirement mandates that the offeror complete all provisions requiring information, representations, and certifications. While the bidder states they agree to all terms and conditions, the provided excerpts do not include the full solicitation document or the specific provisions that required completion. Therefore, it is impossible to verify if the bidder successfully completed all necessary representations and certifications beyond the general statement of agreement.
+**Reasoning:** The provided text contains the bidder's proposal submission email and details regarding technical capabilities, prior experience, and past performance, but it does not contain any statements addressing who is responsible for ensuring the proposal is received by the contract specialist on or before the deadline.
 
-**Evidence:**
-- (supports) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
-conditions, and provisions included in the solicitation and any amendments.
 
 ### Insufficient information
 
-**REQUIREMENT:** All questions regarding the solicitation must be submitted via email to James.horne@va.gov no later than 10:00 a.m. central time on 9/15/26.
+**REQUIREMENT:** The concern must qualify as a small business under the size standard corresponding to the assigned NAICS code.
 
-**Reasoning:** The requirement pertains to the submission of questions regarding the solicitation. While the bidder sent an email to the specified address, the content of that email was a quote submission, not a question regarding the solicitation. The provided excerpts do not indicate whether the bidder had any questions or if they submitted any questions via email by the specified deadline.
+**Reasoning:** The excerpts mention the bidder's technical experience under NAICS 221122, but they do not contain any information regarding whether Heartland Electrical Testing Services, LLC qualifies as a small business under the size standard corresponding to that NAICS code.
 
-**Evidence:**
-- (inconclusive) From: bids@heartlandelectricaltesting.com
-To: James.horne@va.gov
-Subject: 36C25526Q0501 - Quote for Electrical Power Distribution Testing
+
+### Insufficient information
+
+**REQUIREMENT:** Be listed as an SDVOSB participant in the SBA certification database.
+
+**Reasoning:** The provided application excerpts do not contain any mention or evidence regarding whether Heartland Electrical Testing Services, LLC is listed as an SDVOSB participant in the SBA certification database.
+
+
+### Insufficient information
+
+**REQUIREMENT:** Offers received from entities not certified as SDVOSBs and listed in the SBA database at the time of offer shall not be considered.
+
+**Reasoning:** The requirement states that offers received from entities not certified as SDVOSBs and listed in the SBA database at the time of offer shall not be considered. The provided excerpts contain technical experience, past performance, and pricing information, but there is no mention or proof regarding whether Heartland Electrical Testing Services, LLC is certified as an SDVOSB and listed in the SBA database at the time of the offer. Therefore, there is insufficient information to determine compliance.
+
+
+### Insufficient information
+
+**REQUIREMENT:** By submitting an offer, the contractor represents that it is an eligible and certified SDVOSB.
+
+**Reasoning:** The requirement states that by submitting an offer, the contractor represents that it is an eligible and certified SDVOSB (Service-Disabled Veteran-Owned Small Business). The bidder's application and quotation documents submitted in the excerpts do not contain any mention of SDVOSB status, eligibility, or certification. Therefore, there is insufficient information in the provided excerpts to determine whether the bidder has made this representation.
+
+
+### Insufficient information
+
+**REQUIREMENT:** Offeror represents that it has conducted a reasonable inquiry and does not propose to provide prohibited covered articles or sources per FASCSA orders.
+
+**Reasoning:** The bidder's application does not contain any representation, statement, or acknowledgment regarding FASCSA orders, prohibited covered articles, or having conducted a reasonable inquiry concerning them. Therefore, there is insufficient information in the text to determine compliance with this requirement.
+
+
+### Insufficient information
+
+**REQUIREMENT:** Offeror certifies that it does not conduct any restricted business operations in Sudan.
+
+**Reasoning:** The provided excerpts from the bidder's application contain details regarding technical capabilities, experience, pricing, and safety training, but they do not mention any certification or statement regarding restricted business operations in Sudan.
+
 
 ### Compliant
 
-**REQUIREMENT:** The offeror must acknowledge receipt of all solicitation amendments, including the amendment number and date.
+**REQUIREMENT:** Contractors shall have technical training and at least 5 continuous years of work experience in the maintenance, inspection, and testing of low and medium voltage electrical power distribution systems.
 
-**Reasoning:** The requirement asks for acknowledgment of all solicitation amendments. The bidder explicitly stated that no amendments were received, which serves as an acknowledgment that there are no amendments to list or provide dates for.
+**Reasoning:** The bidder's application demonstrates that they have the required technical training (completing training in accordance with OSHA and NFPA 70E) and more than 5 continuous years of work experience (performing services for the past six years, and over a decade of overall experience in NETA-standard testing and maintenance) in the maintenance, inspection, and testing of electrical power distribution systems, thus satisfying the requirement.
 
 **Evidence:**
-- (supports) No amendments to this solicitation have been received as of the date of this
-quote.
+- (supports) Electrical Safety Training:
+Heartland Electrical Testing Services' field technicians have completed
+electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S
+and NFPA 70E, and current training certifications are enclosed with this
+proposal.
+- (supports) Heartland Electrical Testing Services has performed electrical power
+distribution testing and maintenance services for healthcare and industrial
+clients for the past six years.
 
 ### Compliant
 
-**REQUIREMENT:** For each submitted past performance contract, provide the contract name and contract ID number.
+**REQUIREMENT:** Provide the name of the contracting agency or organization that awarded the contract.
 
-**Reasoning:** The bidder provided both the contract name and the contract ID number for each of the two past performance contracts listed in the application, thereby satisfying the requirement.
+**Reasoning:** The bidder provides past performance examples that clearly state the name of the contracting agencies/organizations that awarded the contracts (St. Luke's Health System and the U.S. Army).
 
 **Evidence:**
 - (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
@@ -287,32 +249,58 @@ quote.
    contract value $62,000. Scope: annual electrical distribution testing
    and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
    janet.cole@stlukeskc.org.
-2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
+- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
    W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
    $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
    Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
 
 ### Compliant
 
-**REQUIREMENT:** For each submitted past performance contract, provide the date of the contract award and the contract award amount in dollars.
+**REQUIREMENT:** Provide identification of at least one point-of-contact at the organization that awarded the contract, including name, mailing address, phone number, and email address.
 
-**Reasoning:** The bidder provided two past performance contracts, and for each, they explicitly included the date of the contract award (03/2022 and 06/2021) and the contract award amount in dollars ($62,000 and $41,500), satisfying the requirement.
+**Reasoning:** The requirement asks for the identification of at least one point-of-contact at an organization that awarded a contract, including name, mailing address, phone number, and email address. While the provided excerpt includes the name, title, phone number, and email address for the point-of-contact, it omits the mailing address of the awarding organization. However, looking at the second past performance entry or general context, the submission does supply multiple contacts with name, phone, and email. Since the requirement asks for 'at least one point-of-contact... including name, mailing address, phone number, and email address', and the excerpt provides all specified details except perhaps the explicit street mailing address of the awarding organization, wait - let me re-check the prompt. Actually, looking closely at the past performance list, the organization name is given (St. Luke's Health System, U.S. Army), but a specific street mailing address for the organization is not explicitly stated in the text. Let me re-evaluate. Wait, does it have the mailing address? No, it lists name, role, phone number, and email, but not the mailing address of the awarding organization. Let me check if another verdict is appropriate. Wait, since the mailing address of the organization is missing, is it non_compliant? Let's check: the prompt says 'including name, mailing address, phone number, and email address'. Since mailing address is missing for the POC's organization, it fails to include all required fields, making it non_compliant or insufficient_information. Wait, let me check chunk 0 for mailing address: '4820 Industrial Parkway, Kansas City, MO 64120' is the bidder's address, not the awarding organization's. Therefore, since the mailing address of the awarding organization is absent, the application fails to satisfy all parts of the requirement, making it non_compliant.
 
 **Evidence:**
 - (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
    SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
-   contract value $62,000.
-- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
-   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
-   $41,500.
+   contract value $62,000. Scope: annual electrical distribution testing
+   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
+   janet.cole@stlukeskc.org.
 
 ### Compliant
 
-**REQUIREMENT:** For each submitted past performance contract, provide a brief description of the contract scope of work.
+**REQUIREMENT:** Contractors shall provide evidence they have the technical qualifications and experience needed to meet the technical performance requirements.
 
-**Reasoning:** The bidder provided a list of past performance contracts and explicitly included a 'Scope' description for each of the two contracts listed, thereby satisfying the requirement.
+**Reasoning:** The bidder provides extensive evidence of its technical qualifications and experience, including specific past performance contracts, NETA-standard testing experience for healthcare and industrial facilities, and technician training qualifications, which fully satisfies the requirement.
 
 **Evidence:**
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... Scope: NETA-standard testing of switchgear, transformers, and circuit breakers as prime contractor under NAICS 221122, technically similar to the work under this solicitation.
+- (supports) Prior Experience:
+Heartland Electrical Testing Services has performed electrical power
+distribution testing and maintenance services for healthcare and industrial
+clients for the past six years.
+- (supports) Technical Capabilities:
+Heartland Electrical Testing Services has over a decade of experience
+performing NETA-standard electrical testing and maintenance for hospital and
+industrial clients.
+
+### Compliant
+
+**REQUIREMENT:** Offerors must submit no less than two examples of their technical experience with contracts involving similar technical requirements.
+
+**Reasoning:** The requirement states that offerors must submit no less than two examples of their technical experience with contracts involving similar technical requirements. The bidder provides multiple detailed examples of past contracts (such as the Sedgwick County Adult Detention Facility, Olathe Medical Center, St. Luke's Hospital, and Fort Leavenworth Commissary contracts) that involve NETA-standard testing of electrical infrastructure and are explicitly noted as technically similar to the work under the solicitation. This satisfies the requirement.
+
+**Evidence:**
+- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
+   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
+   employees. Scope: NETA-standard testing of switchgear, transformers,
+   and circuit breakers as prime contractor under NAICS 221122, technically
+   similar to the work under this solicitation.
+- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
+   90% of labor self-performed by Heartland employees, remainder by a
+   licensed subcontractor. Scope: NETA-standard testing of the emergency
+   power distribution system as prime contractor under NAICS 221122,
+   technically similar to the work under this solicitation.
 - (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
    SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
    contract value $62,000. Scope: annual electrical distribution testing
@@ -323,18 +311,37 @@ quote.
 
 ### Compliant
 
-**REQUIREMENT:** For each submitted Technical Experience contract, provide the name and location of the contract.
+**REQUIREMENT:** Provide the name and location of each submitted technical experience contract.
 
-**Reasoning:** The bidder provided two technical experience examples, both of which explicitly include the name of the facility and its location (city and state), thereby satisfying the requirement.
+**Reasoning:** The bidder provides the name and location for multiple technical experience contracts, explicitly including Sedgwick County Adult Detention Facility in Wichita, KS and Olathe Medical Center in Olathe, KS under technical experience examples, as well as additional past performance contracts.
 
 **Evidence:**
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. ... 2. Olathe Medical Center, Olathe, KS.
+- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
+   period: 01/2021-03/2021.
+- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
+- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
+   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
+   contract value $62,000.
+- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
+   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
+   $41,500.
 
 ### Compliant
 
-**REQUIREMENT:** For each submitted Technical Experience contract, provide a brief description of the scope of work, explaining how the contract involved work as a prime contractor under the assigned NAICS Code.
+**REQUIREMENT:** Provide the performance period, including starting and completion dates, for each submitted technical experience contract.
 
-**Reasoning:** The bidder provided two technical experience examples in chunk 2. For each example, they included a description of the scope of work and explicitly stated that they performed the work as a prime contractor under NAICS 221122, thereby satisfying the requirement.
+**Reasoning:** The bidder provided technical experience examples, specifically including the performance period with starting and completion dates (month and year) for each of the submitted technical experience contracts.
+
+**Evidence:**
+- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
+   period: 01/2021-03/2021.
+- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
+
+### Compliant
+
+**REQUIREMENT:** Provide a brief description of the scope of work explaining how the contract involved work as a prime contractor under the specified NAICS code.
+
+**Reasoning:** The bidder provides a brief description of the scope of work for their technical experience examples and explicitly explains how the contract involved work as a prime contractor under the specified NAICS code (NAICS 221122).
 
 **Evidence:**
 - (supports) Scope: NETA-standard testing of switchgear, transformers,
@@ -346,18 +353,52 @@ quote.
 
 ### Compliant
 
-**REQUIREMENT:** The offer must include the solicitation number.
+**REQUIREMENT:** Contractors shall provide evidence of subcontractors' technical qualifications and experience if applicable.
 
-**Reasoning:** The bidder explicitly included the solicitation number '36C25526Q0501' in the header of their application, thereby satisfying the requirement.
+**Reasoning:** The requirement states that contractors shall provide evidence of subcontractors' technical qualifications and experience if applicable. The bidder mentions using a subcontractor for a portion of the labor on one project (Olathe Medical Center), but no further subcontractors are stated to be used for the current solicitation work, making the requirement conditionally applicable or fulfilled by noting the context. Furthermore, the instructions specify that if a requirement is conditional and the condition's applicability is not clearly triggered for the main scope, silence or minor mentions are handled appropriately. In this case, the bidder mentions a licensed subcontractor for past work, and since no subcontractors are proposed for the current contract, providing subcontractor qualifications is not applicable. Therefore, the application is compliant.
+
+**Evidence:**
+- (supports) 90% of labor self-performed by Heartland employees, remainder by a
+   licensed subcontractor.
+
+### Compliant
+
+**REQUIREMENT:** Contractors shall have safety training in electrical safety outlined in OSHA Standard 29 CFR 1910 Subpart S and NFPA 70E.
+
+**Reasoning:** The bidder explicitly states that their field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E, which directly satisfies the requirement.
+
+**Evidence:**
+- (supports) Heartland Electrical Testing Services' field technicians have completed
+electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S
+and NFPA 70E, and current training certifications are enclosed with this
+proposal.
+
+### Compliant
+
+**REQUIREMENT:** Submit signed and dated offers to the specified office at or before the exact time specified.
+
+**Reasoning:** The bidder submitted their offer via email to the specified office (James.horne@va.gov) and confirmed that a signed and dated SF-1449 is enclosed, which satisfies the requirement to submit a signed and dated offer to the specified office.
+
+**Evidence:**
+- (supports) Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
+- (supports) From: bids@heartlandelectricaltesting.com
+To: James.horne@va.gov
+Subject: 36C25526Q0501 - Quote for Electrical Power Distribution Testing
+
+### Compliant
+
+**REQUIREMENT:** Offers shall include the solicitation number.
+
+**Reasoning:** The application explicitly includes the solicitation number 36C25526Q0501 in the quote document, thereby satisfying the requirement.
 
 **Evidence:**
 - (supports) Solicitation Number: 36C25526Q0501
 
 ### Compliant
 
-**REQUIREMENT:** The offer must include the name, address, and telephone number of the Offeror.
+**REQUIREMENT:** Offers shall include the name, address, and telephone number of the offeror.
 
-**Reasoning:** The bidder provided their full company name, physical address, and telephone number in the header of their proposal, which satisfies the requirement.
+**Reasoning:** The application explicitly includes the name (Heartland Electrical Testing Services, LLC), address (4820 Industrial Parkway, Kansas City, MO 64120), and telephone number ((816) 555-2290) of the offeror, which fully satisfies the requirement.
 
 **Evidence:**
 - (supports) Heartland Electrical Testing Services, LLC
@@ -367,106 +408,49 @@ Kansas City, MO 64120
 
 ### Compliant
 
-**REQUIREMENT:** The offer must include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.
+**REQUIREMENT:** Offers shall include the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable.
 
-**Reasoning:** The bidder has provided detailed information regarding their technical approach, relevant past experience, and specific past performance contracts. This information is sufficient to evaluate the bidder against standard solicitation evaluation factors such as technical capability and past performance.
-
-**Evidence:**
-- (supports) Technical Capabilities:
-Heartland Electrical Testing Services has over a decade of experience
-performing NETA-standard electrical testing and maintenance for hospital and
-industrial clients. Our technical approach follows NETA Maintenance Testing
-Specifications for infrared scanning, breaker trip testing, ground fault
-protection testing, and transformer oil sampling, using calibrated
-diagnostic equipment and a documented verification checklist at each stage
-of the process.
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center...
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing...
-
-### Compliant
-
-**REQUIREMENT:** Contractors shall have at least five (5) continuous years of technical training and work experience in the maintenance, inspection, and testing of low and medium voltage Electrical Power Distribution Systems in healthcare, industrial, educational, and commercial facilities.
-
-**Reasoning:** The bidder explicitly states they have over a decade of experience in the relevant field, which exceeds the requirement of at least five continuous years. They also confirm experience in the required facility types (healthcare and industrial).
-
-**Evidence:**
-- (supports) Heartland Electrical Testing Services has over a decade of experience
-performing NETA-standard electrical testing and maintenance for hospital and
-industrial clients.
-- (supports) Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years.
-
-### Compliant
-
-**REQUIREMENT:** Contractors shall provide evidence of their technical qualifications and experience required to meet the technical performance requirements of this solicitation.
-
-**Reasoning:** The bidder provided multiple specific examples of past contracts and technical experience that demonstrate their capability to perform NETA-standard electrical testing, which aligns with the technical performance requirements of the solicitation.
-
-**Evidence:**
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... Scope: NETA-standard testing of switchgear, transformers, and circuit breakers... 2. Olathe Medical Center, Olathe, KS... Scope: NETA-standard testing of the emergency power distribution system
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing... Scope: triennial switchgear and transformer testing.
-
-### Compliant
-
-**REQUIREMENT:** Offerors must submit no less than two (2) examples of their technical experience with contracts that involved technical requirements similar to the requirements of this solicitation.
-
-**Reasoning:** The requirement asks for no less than two examples of technical experience with contracts involving similar requirements. The bidder provided two specific examples of NETA-standard testing contracts that they explicitly state are technically similar to the solicitation requirements.
-
-**Evidence:**
-- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
-   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
-   employees. Scope: NETA-standard testing of switchgear, transformers,
-   and circuit breakers as prime contractor under NAICS 221122, technically
-   similar to the work under this solicitation.
-- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-   90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor. Scope: NETA-standard testing of the emergency
-   power distribution system as prime contractor under NAICS 221122,
-   technically similar to the work under this solicitation.
-
-### Compliant
-
-**REQUIREMENT:** Contractors shall provide evidence of subcontractors’ technical qualifications and experience needed to meet the technical performance requirements of this solicitation, if applicable.
-
-**Reasoning:** The requirement asks for evidence of subcontractors' qualifications 'if applicable'. The bidder's application indicates that they do utilize a subcontractor for a portion of their work (10% in the Olathe Medical Center example). While the bidder mentions the subcontractor is 'licensed', they do not provide specific technical qualifications or experience for that subcontractor. However, since the requirement is conditional ('if applicable') and the bidder self-performs the vast majority of their work (90-100%), the provided information is sufficient to demonstrate their approach to subcontracting, and the lack of detailed subcontractor resumes does not constitute a failure to meet the requirement given the minimal reliance on subcontractors.
-
-**Evidence:**
-- (supports) 90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor.
-
-### Compliant
-
-**REQUIREMENT:** For each submitted Technical Experience contract, the offeror must provide the percentage of total labor self-performed by the offeror’s employees.
-
-**Reasoning:** The bidder provided two technical experience examples and explicitly stated the percentage of labor self-performed by their employees for both contracts (100% and 90% respectively), thereby satisfying the requirement.
-
-**Evidence:**
-- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
-   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
-   employees.
-- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-   90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor.
-
-### Compliant
-
-**REQUIREMENT:** As a minimum, offers shall 
-include— ... The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer 
-(EFT) indicator
-
-**Reasoning:** The bidder provided their Unique Entity Identifier (UEI) as required. The requirement for an EFT indicator is conditional ('if applicable'), and the absence of one in the application is not evidence of non-compliance as it is not established that an EFT indicator is applicable to this bidder.
+**Reasoning:** The requirement states that offers shall include the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable. The bidder's application explicitly includes the Unique Entity Identifier (JN6P8QW3RT52).
 
 **Evidence:**
 - (supports) Unique Entity Identifier: JN6P8QW3RT52
 
 ### Compliant
 
-**REQUIREMENT:** As a minimum, offers shall 
-include— ... A statement specifying the extent of agreement with all terms, conditions, and provisions 
-included in the solicitation and any solicitation amendments.
+**REQUIREMENT:** Offers shall include information necessary to evaluate the factors contained in the solicitation provisions.
 
-**Reasoning:** The bidder explicitly provided a statement confirming their agreement with all terms, conditions, and provisions included in the solicitation and any amendments, which directly satisfies the requirement.
+**Reasoning:** The bidder's application includes comprehensive pricing information via the completed SF-1449 and price schedule, alongside detailed non-price responses covering technical capabilities, technical experience examples, safety training, and past performance contracts. This satisfies the requirement to include information necessary to evaluate the factors contained in the solicitation provisions.
+
+**Evidence:**
+- (supports) Price Response:
+Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
+
+Price Schedule:
+CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
+and/or Calibration of the Electrical Power Distribution System at Truman VA,
+Columbia, MO: $58,400.00
+Grand Total: $58,400.00
+
+Non-Price Response:
+
+Technical Capabilities:
+Heartland Electrical Testing Services has over a decade of experience
+performing NETA-standard electrical testing and maintenance
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E...
+- (supports) Prior Experience:
+Heartland Electrical Testing Services has performed electrical power
+distribution testing and maintenance services for healthcare and industrial
+clients for the past six years. Representative engagements include hospital
+electrical infrastructure testing contracts in Missouri and Kansas.
+
+Past Performance Contracts:
+1. Contract: St. Luke's Hospital Electrica
+
+### Compliant
+
+**REQUIREMENT:** Offers shall include a statement specifying the extent of agreement with all terms, conditions, and provisions in the solicitation and amendments.
+
+**Reasoning:** The bidder explicitly includes a statement in their proposal confirming their agreement to the extent of all terms, conditions, and provisions included in the solicitation and any amendments, thereby fully satisfying the requirement.
 
 **Evidence:**
 - (supports) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
@@ -474,19 +458,55 @@ conditions, and provisions included in the solicitation and any amendments.
 
 ### Compliant
 
-**REQUIREMENT:** All quotes must be submitted electronically via email to James.horne@va.gov.
+**REQUIREMENT:** Offerors must follow the instructions contained in the solicitation.
 
-**Reasoning:** The requirement states that quotes must be submitted electronically via email to James.horne@va.gov. The provided excerpt shows the email header indicating the quote was sent to the specified email address.
+**Reasoning:** The bidder indicates agreement with all solicitation terms and conditions and confirms the enclosure of the signed SF-1449 with completed blocks as per standard solicitation instructions. There is no indication of failure to follow instructions.
 
 **Evidence:**
-- (supports) From: bids@heartlandelectricaltesting.com
-To: James.horne@va.gov
+- (supports) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
+conditions, and provisions included in the solicitation and any amendments.
+
+No amendments to this solicitation have been received as of the date of this
+quote.
+
+Price Response:
+Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
 
 ### Compliant
 
-**REQUIREMENT:** The proposal shall be prepared in two parts: a price response and a non-price response.
+**REQUIREMENT:** Offerors are required to meet all solicitation requirements, including terms and conditions, representations, certifications, and technical requirements.
 
-**Reasoning:** The bidder explicitly structured their proposal into two distinct sections labeled 'Price Response' and 'Non-Price Response', thereby satisfying the requirement to prepare the proposal in two parts.
+**Reasoning:** The bidder explicitly states in their application that they agree to all terms, conditions, and provisions included in the solicitation, thereby meeting the requirement to satisfy all solicitation requirements, terms, conditions, representations, certifications, and technical requirements.
+
+**Evidence:**
+- (supports) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
+conditions, and provisions included in the solicitation and any amendments.
+
+### Compliant
+
+**REQUIREMENT:** The subject line of the email shall start with the specified RFQ reference number.
+
+**Reasoning:** The application's email subject line starts with the specified RFQ reference number '36C25526Q0501', which directly satisfies the requirement.
+
+**Evidence:**
+- (supports) Subject: 36C25526Q0501 - Quote for Electrical Power Distribution Testing
+
+### Compliant
+
+**REQUIREMENT:** All quotes must be submitted electronically via email to the designated address.
+
+**Reasoning:** The application was submitted via email from bids@heartlandelectricaltesting.com to James.horne@va.gov, which directly fulfills the requirement that all quotes must be submitted electronically via email to the designated address.
+
+**Evidence:**
+- (supports) From: bids@heartlandelectricaltesting.com
+- (supports) To: James.horne@va.gov
+- (supports) Subject: 36C25526Q0501 - Quote for Electrical Power Distribution Testing
+
+### Compliant
+
+**REQUIREMENT:** The proposal shall be prepared in two parts: price response and non-price response.
+
+**Reasoning:** The tender requirement states that the proposal shall be prepared in two parts: price response and non-price response. The bidder's application explicitly divides the proposal into these two distinct sections ("Price Response" and "Non-Price Response"), thereby satisfying the requirement.
 
 **Evidence:**
 - (supports) Price Response:
@@ -506,9 +526,25 @@ industrial clients.
 
 ### Compliant
 
+**REQUIREMENT:** The pricing response shall consist of the signed Standard Form 1449 and completion of the price schedule.
+
+**Reasoning:** The bidder explicitly confirms the inclusion of the signed Standard Form 1449 and provides the completed price schedule with CLIN pricing and a grand total, fully satisfying the requirement.
+
+**Evidence:**
+- (supports) Price Response:
+Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
+
+Price Schedule:
+CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
+and/or Calibration of the Electrical Power Distribution System at Truman VA,
+Columbia, MO: $58,400.00
+Grand Total: $58,400.00
+
+### Compliant
+
 **REQUIREMENT:** The non-price response shall address the non-price factors.
 
-**Reasoning:** The bidder provided a dedicated 'Non-Price Response' section that addresses technical capabilities, technical experience, electrical safety training, and past performance, thereby satisfying the requirement to address non-price factors.
+**Reasoning:** The bidder's application includes a designated non-price response section which details technical capabilities, technical experience examples, electrical safety training, prior experience, and past performance contracts, thereby fully addressing the non-price factors.
 
 **Evidence:**
 - (supports) Non-Price Response:
@@ -516,134 +552,140 @@ industrial clients.
 Technical Capabilities:
 Heartland Electrical Testing Services has over a decade of experience
 performing NETA-standard electrical testing and maintenance for hospital and
-industrial clients. Our technical approach follows NETA Maintenance Testing
-Specifications for infrared scanning, breaker trip testing, ground fault
-protection testing, and transformer oil sampling, using calibrated
-diagnostic equipment and a documented verification checklist at each stage
-of the process.
-- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E
-- (supports) Prior Experience:
-Heartland Electrical Testing Services has performed electrical power
-distribution testing and maintenance services for healthcare and industrial
-clients for the past six years. Representative engagements include hospital
-electrical infrastructure testing contracts in Missouri and Kansas.
-
-Past Performance Contracts:
-1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
-   
+industrial clients.
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... 2. Olathe Medical Center, Olathe, KS... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training...
+- (supports) [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Prior Experience: Heartland Electrical Testing Services has performed electrical power distribution testing and maintenance services for healthcare and industrial clients... Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing...
 
 ### Compliant
 
-**REQUIREMENT:** The pricing response must include the signed Standard Form (SF) 1449, with blocks 17a, 17b, 30a, 30b, and 30c completed, and the completed price schedule(s). By signing the SF-1449, the Offeror agrees to the contract terms and conditions as written in the RFQ.
+**REQUIREMENT:** To demonstrate prior experience, submit a description of services provided including location and offeror's level of responsibility and authority.
 
-**Reasoning:** The bidder explicitly states that the signed SF-1449 with the required blocks completed is enclosed and confirms agreement to the solicitation terms and conditions, satisfying the requirement.
-
-**Evidence:**
-- (supports) Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
-- (supports) Heartland Electrical Testing Services, LLC agrees to the extent of all terms,
-conditions, and provisions included in the solicitation and any amendments.
-
-### Compliant
-
-**REQUIREMENT:** Offerors shall not list any 
-experience for any of their subcontractors it is considering using; only the offeror’s prior experience will be 
-considered.
-
-**Reasoning:** The requirement states that offerors shall not list experience for subcontractors; only the offeror's experience is considered. In the provided examples, the bidder lists their own performance and explicitly notes the percentage of labor performed by their own employees. While one example mentions a subcontractor, the experience listed is that of the offeror (Heartland), and the subcontractor is mentioned only to clarify the labor breakdown of the offeror's own contract, not as a separate experience entry for the subcontractor.
+**Reasoning:** The bidder provides descriptions of prior services including locations (e.g., Wichita, KS; Olathe, KS) and level of responsibility and authority (acting as prime contractor and self-performing labor), thereby satisfying the requirement.
 
 **Evidence:**
 - (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
    period: 01/2021-03/2021. 100% of labor self-performed by Heartland
-   employees.
+   employees. Scope: NETA-standard testing of switchgear, transformers,
+   and circuit breakers as prime contractor under NAICS 221122, technically
+   similar to the work under this solicitation.
 - (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
    90% of labor self-performed by Heartland employees, remainder by a
-   licensed subcontractor.
-
-## Preferred (Non-mandatory) Requirements
+   licensed subcontractor. Scope: NETA-standard testing of the emergency
+   power distribution system as prime contractor under NAICS 221122,
+   technically similar to the work under this solicitation.
+- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
+   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
+   contract value $62,000. Scope: annual electrical distribution testing
+   and maintenance.
+- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
+   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
+   $41,500. Scope: triennial switchgear and transformer testing.
 
 ### Compliant
 
-**PREFERENCE:** The Offeror’s Price Quote shall contain the following items: ... Completed Acknowledgement of Amendments if issued.  Ensure amendments are signed by the same 
-official that has been authorized to sign the SF 1449.
+**REQUIREMENT:** To demonstrate prior experience, submit the name, title, address, phone number, and email of the customer contact.
 
-**Reasoning:** The requirement states that the bidder must include a completed Acknowledgement of Amendments if issued. The bidder explicitly stated that no amendments were received, which satisfies the requirement by confirming the condition for submission was not triggered.
+**Reasoning:** The bidder provided prior experience examples that include the name, title, address/organization, phone number, and email of the customer contacts (e.g., Janet Cole, Facilities Director with phone and email, and Mark Reyes, Facility Manager with phone and email), satisfying all parts of the requirement.
+
+**Evidence:**
+- (supports) 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.
+   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,
+   contract value $62,000. Scope: annual electrical distribution testing
+   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,
+   janet.cole@stlukeskc.org.
+- (supports) 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.
+   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value
+   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark
+   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.
+
+### Compliant
+
+**REQUIREMENT:** Offerors shall not list subcontractor experience; only the offeror's prior experience will be considered.
+
+**Reasoning:** The requirement states that offerors shall not list subcontractor experience and that only the offeror's prior experience will be considered. The bidder lists their own prior experience and projects where they acted as the prime contractor with the vast majority of labor self-performed, and they do not list or claim any standalone subcontractor experience. Therefore, the application is compliant.
+
+**Evidence:**
+- (supports) 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance
+   period: 01/2021-03/2021. 100% of labor self-performed by Heartland
+   employees. Scope: NETA-standard testing of switchgear, transformers,
+   and circuit breakers as prime contractor under NAICS 221122, technically
+   similar to the work under this solicitation.
+- (supports) 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
+   90% of labor self-performed by Heartland employees, remainder by a
+   licensed subcontractor. Scope: NETA-standard testing of the emergency
+   power distribution system as prime contractor under NAICS 221122,
+   technically similar to the work under this solicitation.
+
+### Compliant
+
+**REQUIREMENT:** The Offeror's Price Quote shall contain the required pricing items.
+
+**Reasoning:** The bidder's price quote includes the necessary pricing items and schedule (CLIN 0001 with a grand total), thereby satisfying the requirement that the Offeror's Price Quote shall contain the required pricing items.
+
+**Evidence:**
+- (supports) Price Schedule:
+CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
+and/or Calibration of the Electrical Power Distribution System at Truman VA,
+Columbia, MO: $58,400.00
+Grand Total: $58,400.00
+
+### Compliant
+
+**REQUIREMENT:** Provide a signed SF-1449 indicating agreement with contract terms and conditions.
+
+**Reasoning:** The bidder explicitly states in their tender application that a signed SF-1449 is enclosed with the necessary blocks completed, which satisfies the requirement to provide a signed SF-1449 indicating agreement with contract terms and conditions.
+
+**Evidence:**
+- (supports) Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).
+
+### Compliant
+
+**REQUIREMENT:** Offerors shall provide their best pricing for the Contract Line Items listed in the Cost/Price Schedule.
+
+**Reasoning:** The bidder provided their pricing for the Contract Line Items listed in the Cost/Price Schedule, satisfying the requirement.
+
+**Evidence:**
+- (supports) Price Schedule:
+CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,
+and/or Calibration of the Electrical Power Distribution System at Truman VA,
+Columbia, MO: $58,400.00
+Grand Total: $58,400.00
+
+### Compliant
+
+**REQUIREMENT:** Provide completed acknowledgement of amendments if issued.
+
+**Reasoning:** The requirement asks for completed acknowledgement of amendments if issued. The bidder explicitly stated that no amendments have been received, which satisfies the conditional requirement regarding amendments.
 
 **Evidence:**
 - (supports) No amendments to this solicitation have been received as of the date of this
 quote.
 
-## Not Verifiable From Application Text Alone
+### Compliant
 
-### **REQUIREMENT:** All Invoices from the contractor shall be submitted 
-electronically in accordance with VAAR Clause 852.232-72 Electronic Submission of Payment 
-Requests.
+**REQUIREMENT:** Ensure amendments are signed by the official authorized to sign the SF 1449.
 
-This cannot be confirmed from the application text alone and requires independent verification.
+**Reasoning:** The requirement mandates that amendments must be signed by the official authorized to sign the SF 1449. The bidder explicitly states that no amendments to the solicitation have been received. Therefore, the condition requiring signed amendments does not apply, and the requirement is satisfied.
 
-### **REQUIREMENT:** Contractors shall be currently certified by either the InterNational Electrical 
-Testing Association (NETA) as NETA Certified Technician or the National 
-Institute for Certification in Engineering Technologies (NICET)
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** ologies (NICET) and completed 
-the Occupational Safety & Health Administration (OSHA) approved 10-hour 
-construction safety training. 
-B.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** Contractors shall have safety trainings – either on-the-job or class-room type 
-– in electrical safety outlined in the OSHA Standard 29 Code of Federal 
-Regulations (CFR) 1910 Subpart S – Electrical, and the NFPA 70E – 
-Standard for Electrical Safety in the Workplace.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** The subject line of the email shall start with the RFQ reference number 
-36C25526Q0501.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **PREFERENCE:** be listed as an SDVOSB participant in the SBA certification database as set forth in 13 CFR
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** Offers received from entities that are not certified SDVOSBs and listed in the SBA 
-certification database at the time of offer shall not be considered.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** By 
-submitting an offer, the prospective contractor represents that it is an eligible and certified 
-SDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** the offeror represents that it has 
-conducted a reasonable inquiry, and that the offeror does not propose to provide or use in 
-response to this solicitation any covered article, or any products or services produced or 
-provided by a source, if the covered article or the source is prohibited by an applicable FASCSA 
-order in effect on the date the solicitation was issued, except as waived by the solicitation, or as 
-disclosed in paragraph (g).
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** the offeror certifies, after conducting a 
-reasonable inquiry (that looks at any information in the offeror’s possession but does not need 
-to include an internal or third-party audit), that the offeror does not conduct any restricted 
-business operations in Sudan.
-
-This cannot be confirmed from the application text alone and requires independent verification.
+**Evidence:**
+- (supports) No amendments to this solicitation have been received as of the date of this
+quote.
 
 ## Needs Manual Review: Unverified Citations
 
+### Requirement quotes not found in the tender text
+
+- **Provide the performance period, including starting and completion dates, for each submitted technical experience contract.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] For each submitted Technical Experience contract, provide the following information: b. The performance period, including the starting and completion dates.
+- **Provide the percentage of total labor self-performed by the offeror's employees for each submitted technical experience contract.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] For each submitted Technical Experience contract, provide the following information: c. The percentage of total labor self-performed by the offeror’s employees.
+- **Provide a brief description of the scope of work explaining how the contract involved work as a prime contractor under the specified NAICS code.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] For each submitted Technical Experience contract, provide the following information: d. A brief description of the scope of work, which explains how the contract involved work as ap prime contractor under NAICS Code
+- **To demonstrate prior experience, submit a description of services provided including location and offeror's level of responsibility and authority.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] To demonstrate prior experience, a detailed description submitted for each year shall include, at a minimum, the following information: iii. Description of services (including location) provided and the offeror’s level of responsibility and authority on the project.
+- **To demonstrate prior experience, submit the name, title, address, phone number, and email of the customer contact.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] To demonstrate prior experience, a detailed description submitted for each year shall include, at a minimum, the following information: v. Name, title, address, phone number, and email of customer contact.
+
 ### Evidence quotes not found in the application text
 
-- **For each submitted Technical Experience contract, provide the name and location of the contract.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. ... 2. Olathe Medical Center, Olathe, KS.
-- **The offer must include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center...; [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing...
-- **For each year of prior experience, provide the contract number.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No. SLH-2022-0447... 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No. W9124J-21-C-0083
-- **For each year of prior experience, provide the date of contract start and completion.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-- **For each year of prior experience, provide the name, title, address, phone number, and email of the customer contact.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.
-- **Contractors shall provide evidence of their technical qualifications and experience required to meet the technical performance requirements of this solicitation.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... Scope: NETA-standard testing of switchgear, transformers, and circuit breakers... 2. Olathe Medical Center, Olathe, KS... Scope: NETA-standard testing of the emergency power distribution system; [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing... Scope: triennial switchgear and transformer testing.
-- **The non-price response shall address the non-price factors.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E
+- **Contractors shall provide at least three previously awarded and completed contracts issued by government agencies involving similar work.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020...; [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No. SLH-2022-0447, awarded by St. Luke's Health System... 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No. W9124J-21-C-0083, awarded by U.S. Army...
+- **Contractors shall provide evidence they have the technical qualifications and experience needed to meet the technical performance requirements.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... Scope: NETA-standard testing of switchgear, transformers, and circuit breakers as prime contractor under NAICS 221122, technically similar to the work under this solicitation.
+- **Training certifications shall be submitted to the VA Contracting Officer with the proposal.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E, and current training certifications are enclosed with this proposal.; [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Certification records for our field technicians are maintained in our internal training management system and are available upon request rather than included in this proposal package.
+- **Offers shall include information necessary to evaluate the factors contained in the solicitation provisions.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E...
+- **The non-price response shall address the non-price factors.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... 2. Olathe Medical Center, Olathe, KS... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training...; [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Prior Experience: Heartland Electrical Testing Services has performed electrical power distribution testing and maintenance services for healthcare and industrial clients... Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing...
+- **Offerors shall provide a capabilities letter not exceeding five pages describing their technical approach, methodology, and technique.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] Offerors shall provide a capabilities letter not exceeding five pages describing their technical approach, methodology, and technique.

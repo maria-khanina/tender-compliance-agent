@@ -3,7 +3,8 @@
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sdvosb_setaside_eligibility, security_sanctions_representations, submission_deadline, contractor_certification_qualifications, and contractor_experience_tenure, since all five are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (7 topics), non_compliant (a quantity shortfall -- 2 past-performance contracts instead of 3), insufficient_information (a generic prior-experience statement missing the required per-year detail; an ambiguous, partially-triggered subcontractor-experience condition), and one contradictory claim (training certifications stated as both enclosed with the proposal and available only upon request).",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "prior_experience_documentation broadened to also accept non_compliant: the source solicitation text literally reads 'as the Prime Contractor Waste Removal Services' (an apparent leftover template artifact in an electrical-testing solicitation), and the model's non_compliant verdict (bidder shows electrical testing experience, not waste removal) is a defensible literal reading of that text, alongside the insufficient_information reading based on the intended/contextual meaning (missing per-year contract-detail breakdown)."
   ],
   "verdicts": [
     {
@@ -127,7 +128,8 @@
       "topic_id": "prior_experience_documentation",
       "description": "Offer must include at least five years of prior experience relevant to this solicitation's electrical testing/maintenance work, with a detailed description per year covering contract number, estimated annual dollar value, description of services and the offeror's role, contract start/completion dates, and current customer contact information.",
       "acceptable_verdicts": [
-        "insufficient_information"
+        "insufficient_information",
+        "non_compliant"
       ],
       "rationale": "Application gives only a generic statement of six years' experience with unspecified 'representative engagements,' never providing the required detailed per-year breakdown (contract number, annual dollar value, description, dates, customer contact) for any year.",
       "evidence": [

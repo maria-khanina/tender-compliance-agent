@@ -4,158 +4,64 @@
 
 ### Non-compliant
 
-**REQUIREMENT:** If shipping costs are less than $250.00, they must be included within the line-item price for the Vertex 25ei/CD Burner.
+**REQUIREMENT:** Submit signed and dated quotes on letterhead or as specified in the RFQ at or before the exact time specified (no later than 11:00 AM EDT 09/18/26).
 
-**Reasoning:** The requirement states that shipping costs under $250.00 must be included in the line-item price for the Vertex 25ei/CD Burner. The bidder explicitly states that the shipping cost is $150.00 and will be invoiced as a separate line item, which directly violates the requirement.
-
-**Evidence:**
-- (contradicts) Shipping for this order is $150.00 and will be invoiced as a separate
-line item on the purchase order, not included in the Vertex 25ei/CD
-Burner unit price above.
-
-### Non-compliant
-
-**REQUIREMENT:** Pricing shall be entered for each line item as listed in the PRODUCT CHART above.
-
-**Reasoning:** The requirement states that pricing shall be entered for each line item as listed in the PRODUCT CHART. While the bidder provided pricing for several items, they explicitly stated that shipping costs ($150.00) would be invoiced separately and were not included in the provided pricing structure, thereby failing to include all required line items in the submitted pricing chart.
+**Reasoning:** The requirement mandates that quotes be signed and dated on letterhead or as specified in the RFQ. While the quote is submitted via email and includes a sign-off block with a name and title, it is neither physically nor digitally signed, nor is it dated anywhere in the provided text. Therefore, it fails to meet the signature and date requirement.
 
 **Evidence:**
-- (supports) Product Chart pricing:
-Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
-Unit Price $19,200.00, Total $19,200.00.
-Item 501-862406, Installation & Training Support, Qty 1,
-Unit Price $1,650.00, Total $1,650.00.
-UPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.
-Training Manuals, Qty 2, Unit Price $75.00, Total $150.00.
-Delivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.
-- (contradicts) Shipping for this order is $150.00 and will be invoiced as a separate
-line item on the purchase order, not included in the Vertex 25ei/CD
-Burner unit price above.
-
-### Non-compliant
-
-**REQUIREMENT:** The offeror must comply with all Limitations on Subcontracting (LOS) requirements and must explicitly assert this compliance in the email accompanying their quote.
-
-**Reasoning:** The requirement explicitly states that the offeror must explicitly assert compliance with Limitations on Subcontracting (LOS) requirements in the email accompanying their quote. A review of the provided email text shows no mention or assertion regarding LOS compliance.
-
-**Evidence:**
-- (inconclusive) From: quotes@meridianmedsystems.com
+- (supports) From: quotes@meridianmedsystems.com
 To: carlos.ortiz3@va.gov
 Subject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner
 
 Dear Mr. Ortiz,
 
 Meridian Medical Systems, LLC is pleased to submit the following quote in
-response to Solicitation 36C24126Q0731 P0003.
+response to Solicitation 36C24126Q0731 P0003. We acknowledge the time
+specified in the solicitation for receipt of quotations as 11:00 AM EDT on
+09/18/26, and our quote is submitted ahead of that deadline.
 
-### Non-compliant
-
-**REQUIREMENT:** As a minimum, quotes must show— ... (8) A completed copy of the representations and certifications under the 
-Federal Acquisition Regulation (FAR) 52.212-3
-
-**Reasoning:** The requirement explicitly states that quotes must show a completed copy of the representations and certifications under FAR 52.212-3. The bidder explicitly states that they have not attached a completed copy to their submission, thereby failing to meet the requirement.
-
-**Evidence:**
-- (contradicts) Our representations and certifications under FAR 52.212-3 are on file
-in SAM.gov and available upon request; we have not attached a
-completed copy to this email.
-
-### Non-compliant
-
-**REQUIREMENT:** The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation "Unique Entity Identifier" followed by the unique entity identifier that identifies the quoter's name and address.
-
-**Reasoning:** The requirement specifies that the quoter must enter the annotation 'Unique Entity Identifier' followed by the identifier in the block with its name and address. While the bidder provided the identifier, they failed to include the specific required annotation 'Unique Entity Identifier' as a label or prefix immediately preceding the identifier within the name and address block; instead, they listed it as a separate line item.
-
-**Evidence:**
-- (contradicts) Quoter name, address, and telephone number:
+Quoter name, address, and telephone number:
 Meridian Medical Systems, LLC
 88 Harborview Drive, Suite 210
 Providence, RI 02903
 Telephone: (401) 555-0142
-
-Unique Entity Identifier: NL8K4TQ9XPW3
+- (supports) Sincerely,
+Diane Kowalski
+Contracts Manager
+Meridian Medical Systems, LLC
 
 ### Non-compliant
 
-**REQUIREMENT:** The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.
+**REQUIREMENT:** The quoter must enter its Unique Entity Identifier and Electronic Funds Transfer indicator on the cover page of its quote.
 
-**Reasoning:** The requirement explicitly states that the quoter must enter its Electronic Funds Transfer (EFT) indicator. A review of the provided application documents shows that while the bidder provided contact information, a Unique Entity Identifier, and business status, they failed to include an EFT indicator.
-
-**Evidence:**
-- (inconclusive) Quoter name, address, and telephone number:
-Meridian Medical Systems, LLC
-88 Harborview Drive, Suite 210
-Providence, RI 02903
-Telephone: (401) 555-0142
-- (inconclusive) "Remit to" address: Same as the mailing address listed above.
-
-### Contradictory
-
-**REQUIREMENT:** Delivery (Must be <$250.00) *
-
-**Reasoning:** The application provides conflicting information regarding delivery costs. The product chart lists 'Delivery' at $1,400.00, which exceeds the $250.00 limit. However, a subsequent paragraph states that 'Shipping for this order is $150.00', which would be compliant. Because the document contains two different figures for the same service, the application is contradictory.
+**Reasoning:** The requirement states that the quoter must enter both its Unique Entity Identifier and Electronic Funds Transfer (EFT) indicator on the cover page of its quote. While the bidder provided its Unique Entity Identifier in chunk 0, the excerpts do not show any mention of an Electronic Funds Transfer (EFT) indicator.
 
 **Evidence:**
-- (contradicts) Delivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.
-- (supports) Shipping for this order is $150.00 and will be invoiced as a separate
-line item on the purchase order
+- (supports) Unique Entity Identifier: NL8K4TQ9XPW3
 
 ### Insufficient information
 
-**REQUIREMENT:** The SDVOSB prime contractor must comply with limitations on subcontracting as defined by contract type (services, supplies, or construction) and ensure that subcontractors are VIP-listed SDVOSBs to count as similarly situated, including specific percentage caps on payments to non-VIP-listed firms and requirements for non-manufacturer supply chains.
+**REQUIREMENT:** Any questions or concerns regarding this solicitation must be forwarded in writing via e-mail to the Point of Contact.
 
-**Reasoning:** While the bidder confirms their status as a VIP-listed SDVOSB, the provided excerpts do not contain information regarding their subcontracting plan, the use of subcontractors, or their intent to comply with the specific limitations on subcontracting and non-manufacturer supply chain requirements mandated by the solicitation.
+**Reasoning:** The requirement states that any questions or concerns regarding the solicitation must be forwarded in writing via e-mail to the Point of Contact. The provided excerpts do not contain any information regarding whether the bidder did or did not forward questions or concerns, nor do they discuss compliance with this specific instruction. Therefore, there is insufficient information to evaluate this requirement.
 
-**Evidence:**
-- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
 
 ### Insufficient information
 
-**REQUIREMENT:** The VOSB prime contractor must comply with limitations on subcontracting as defined by contract type (services, supplies, or construction) and ensure that subcontractors are VIP-listed VOSBs to count as similarly situated, including specific percentage caps on payments to non-VIP-listed firms and requirements for non-manufacturer supply chains.
+**REQUIREMENT:** For general construction contracts, the prime contractor will not pay more than 85% of the amount paid by the government, excluding materials, to non-VIP-listed firms.
 
-**Reasoning:** While the bidder confirms their status as a VIP-listed SDVOSB, the application does not provide any information regarding their intended subcontracting plan, their compliance with the specific percentage caps on payments to non-VIP-listed firms, or their adherence to non-manufacturer supply chain requirements as mandated by the solicitation.
-
-**Evidence:**
-- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
-
-### Insufficient information
-
-**REQUIREMENT:** Unless otherwise provided in the schedule,  ... quotations may not be submitted for quantities less than those specified.
-
-**Reasoning:** The provided excerpts do not include the original solicitation's requirements regarding specified quantities. While the bidder has quoted specific quantities for each item, it is impossible to determine if these quantities meet the minimum requirements set by the solicitation without access to the solicitation's schedule of requirements.
+**Reasoning:** The bidder accepts the terms and conditions of the solicitation, which presumably includes the requirement regarding payments to non-VIP-listed firms for general construction contracts. However, the provided application excerpts contain no information regarding whether any portion of the contract work will be subcontracted to non-VIP-listed firms or how payments to such firms will be handled. Therefore, there is insufficient information to determine compliance.
 
 **Evidence:**
-- (inconclusive) Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
-Unit Price $19,200.00, Total $19,200.00.
-Item 501-862406, Installation & Training Support, Qty 1,
-Unit Price $1,650.00, Total $1,650.00.
-UPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.
-Training Manuals, Qty 2, Unit Price $75.00, Total $150.00.
-Delivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.
-
-### Insufficient information
-
-**REQUIREMENT:** An otherwise eligible firm must comply with the required certification requirements in this solicitation, specifically referencing 852.219-75 and/or 852.219-76 as applicable.
-
-**Reasoning:** The bidder states that the terms and conditions of the solicitation are acceptable, which implies agreement to the certification requirements. However, the bidder does not explicitly reference or confirm compliance with the specific VAAR clauses 852.219-75 or 852.219-76, which are required by the solicitation. While they mention their SAM.gov certifications, they do not confirm the specific certifications requested.
-
-**Evidence:**
-- (inconclusive) Our representations and certifications under FAR 52.212-3 are on file
-in SAM.gov and available upon request; we have not attached a
-completed copy to this email.
-- (supports) The terms and conditions in the solicitation are
+- (inconclusive) Terms and conditions: The terms and conditions in the solicitation are
 acceptable to be included in the award document without modification,
 deletion, or addition.
 
 ### Insufficient information
 
-**REQUIREMENT:** An SDVOSB or VOSB shall comply with the limitations on subcontracting by the end of the base term of the contract or order, and then by the end of each subsequent option period.
+**REQUIREMENT:** For special trade contractors, no more than 75% of the amount paid by the government, excluding materials, may be paid to non-VIP-listed firms.
 
-**Reasoning:** While the bidder identifies as an SDVOSB, the provided excerpts do not contain any statement or commitment regarding their compliance with the limitations on subcontracting as required by the solicitation.
+**Reasoning:** The requirement states that for special trade contractors, no more than 75% of the amount paid excluding materials may be paid to non-VIP-listed firms. While the bidder is a VIP-listed firm, the provided excerpts contain no information regarding whether they are acting as a special trade contractor, subcontracting any work, or how funds will be distributed to non-VIP-listed firms. Therefore, there is insufficient information to determine compliance.
 
 **Evidence:**
 - (inconclusive) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
@@ -164,9 +70,9 @@ Case #DV-2024-01187.
 
 ### Insufficient information
 
-**REQUIREMENT:** An SDVOSB or VOSB shall comply with the limitations on subcontracting by the end of the performance period for each order issued under the contract.
+**REQUIREMENT:** A joint venture may be considered eligible if listed in VIP and complying with 13 CFR 125.18(b) requirements.
 
-**Reasoning:** While the bidder identifies as an SDVOSB, the provided excerpts do not contain any information or affirmation regarding the bidder's intent or ability to comply with the limitations on subcontracting required by the solicitation.
+**Reasoning:** The requirement applies to a joint venture listed in VIP and complying with 13 CFR 125.18(b) requirements. The bidder states it is a VIP-listed SDVOSB, but the provided excerpts do not indicate whether the bidder is structured as a joint venture or whether it complies with 13 CFR 125.18(b).
 
 **Evidence:**
 - (inconclusive) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
@@ -177,302 +83,360 @@ Case #DV-2024-01187.
 
 **REQUIREMENT:** A joint venture agrees that, in the performance of the contract, the applicable percentage specified in paragraph (d) of this clause will be performed by the aggregate of the joint venture participants.
 
-**Reasoning:** The requirement pertains specifically to joint ventures and the performance of contract percentages by joint venture participants. The bidder, Meridian Medical Systems, LLC, identifies itself as a single entity (an SDVOSB) and does not indicate that it is participating as part of a joint venture. Therefore, there is insufficient information to determine if the requirement is applicable or satisfied.
+**Reasoning:** The requirement specifies an obligation for a joint venture regarding contract performance percentages. The bidder's application is submitted by a single entity (Meridian Medical Systems, LLC) rather than a joint venture, and the excerpts contain no information regarding joint venture arrangements or applicability.
 
 **Evidence:**
-- (inconclusive) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
+- (inconclusive) Meridian Medical Systems, LLC is pleased to submit the following quote in
+response to Solicitation 36C24126Q0731 P0003.
 
 ### Compliant
 
 **REQUIREMENT:** Quotes must be submitted via email to the designated Government point of contact.
 
-**Reasoning:** The application was submitted via email from the bidder to the designated Government point of contact (carlos.ortiz3@va.gov), which satisfies the requirement.
+**Reasoning:** The requirement states that quotes must be submitted via email to the designated Government point of contact. The application excerpts show an email header and message sent from the bidder to carlos.ortiz3@va.gov, demonstrating that the quote was submitted via email to the designated point of contact.
 
 **Evidence:**
 - (supports) From: quotes@meridianmedsystems.com
 To: carlos.ortiz3@va.gov
 Subject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner
 
-### Compliant
+Dear Mr. Ortiz,
 
-**REQUIREMENT:** Quotes must include the solicitation number.
-
-**Reasoning:** The bidder explicitly includes the solicitation number '36C24126Q0731 P0003' in both the subject line and the body of the quote, thereby satisfying the requirement.
-
-**Evidence:**
-- (supports) Subject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner
-- (supports) Meridian Medical Systems, LLC is pleased to submit the following quote in
+Meridian Medical Systems, LLC is pleased to submit the following quote in
 response to Solicitation 36C24126Q0731 P0003.
 
 ### Compliant
 
-**REQUIREMENT:** Quotes must include the time specified in the solicitation for receipt of quotations.
+**REQUIREMENT:** Delivery or shipping costs must fall below $250.00; otherwise, the cost must be rolled into the line-item price for the Vertex 25ei/CD Burner.
 
-**Reasoning:** The bidder explicitly acknowledges the specific time and date for the receipt of quotations as stated in the solicitation, thereby satisfying the requirement.
+**Reasoning:** The requirement states that delivery or shipping costs must fall below $250.00, or else be rolled into the line-item price for the Vertex 25ei/CD Burner. The bidder's quote explicitly states that shipping is $150.00, which is below the $250.00 threshold, thus satisfying the requirement.
 
 **Evidence:**
-- (supports) We acknowledge the time
-specified in the solicitation for receipt of quotations as 11:00 AM EDT on
-09/18/26, and our quote is submitted ahead of that deadline.
+- (supports) Shipping for this order is $150.00 and will be invoiced as a separate
+line item on the purchase order, not included in the Vertex 25ei/CD
+Burner unit price above.
 
 ### Compliant
 
-**REQUIREMENT:** Quoters are responsible for ensuring quotes reach the designated Government office by the time specified in the solicitation.
+**REQUIREMENT:** Quotations shall be brand name for the Sorna Vertex 25ei & CD Burner as listed in the Product Chart and detailed in the solicitation.
 
-**Reasoning:** The bidder explicitly acknowledges the deadline specified in the solicitation and confirms that their quote was submitted ahead of that time, thereby accepting responsibility for ensuring the quote reached the office by the required time.
-
-**Evidence:**
-- (supports) We acknowledge the time
-specified in the solicitation for receipt of quotations as 11:00 AM EDT on
-09/18/26, and our quote is submitted ahead of that deadline.
-
-### Compliant
-
-**REQUIREMENT:** The quoter must provide the specified Sorna Vertex 25ei & CD Burner products as described in the Statement of Work and solicitation documents, and submit a quote for these items.
-
-**Reasoning:** The bidder explicitly states they are providing the exact brand-name Sorna Vertex 25ei Platform with integrated CD Burner as required by the solicitation and includes this item in their price quote.
+**Reasoning:** The bidder explicitly quotes the brand-name Sorna Vertex 25ei Platform with integrated Sorna CD Burner as listed in the Product Chart and detailed in the solicitation, fully satisfying the requirement.
 
 **Evidence:**
-- (supports) We are quoting the Sorna Vertex
+- (supports) Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
+Unit Price $19,200.00, Total $19,200.00.
+- (supports) Technical description of items quoted: We are quoting the Sorna Vertex
 25ei Platform with integrated Sorna CD Burner, brand name, exactly as
 specified in the Product Chart. This is the identical brand-name system
 required by the solicitation; Meridian is not offering a substitute or
 equivalent product.
-- (supports) Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
-Unit Price $19,200.00, Total $19,200.00.
 
 ### Compliant
 
-**REQUIREMENT:** The offeror must be registered in the System for Award Management (SAM).
+**REQUIREMENT:** Pricing shall be entered for each line item as listed in the Product Chart.
 
-**Reasoning:** The bidder explicitly states that they are registered and active in the System for Award Management (SAM) and confirms that their representations and certifications are on file in SAM.gov.
+**Reasoning:** The bidder provided specific line-item pricing (unit prices and totals) for each of the items listed in the Product Chart, fully satisfying the requirement.
+
+**Evidence:**
+- (supports) Product Chart pricing:
+Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
+Unit Price $19,200.00, Total $19,200.00.
+Item 501-862406, Installation & Training Support, Qty 1,
+Unit Price $1,650.00, Total $1,650.00.
+UPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.
+Training Manuals, Qty 2, Unit Price $75.00, Total $150.00.
+Delivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.
+Grand total of the line items above: $22,940.00.
+
+### Compliant
+
+**REQUIREMENT:** Offeror must be registered in SAM.
+
+**Reasoning:** The application explicitly states that the offeror, Meridian Medical Systems, LLC, is registered and active in the System for Award Management (SAM), which directly satisfies the requirement.
 
 **Evidence:**
 - (supports) Meridian Medical Systems, LLC is registered and active in the System for
 Award Management (SAM).
-- (supports) Our representations and certifications under FAR 52.212-3 are on file
-in SAM.gov and available upon request
 
 ### Compliant
 
-**REQUIREMENT:** The offeror must be a service-disabled veteran-owned small business (SDVOSB) verified for ownership and control pursuant to 38 CFR part 74 and listed in the VA's Vendor Information Pages (VIP) database, and must maintain this eligibility at the time of offer submission and award.
+**REQUIREMENT:** Offeror must meet Limitations on Subcontracting (LOS) requirements and comply with applicable VAAR subpart 819.70 and SBA regulations.
 
-**Reasoning:** The bidder explicitly states they are a VIP-listed SDVOSB and provides their verification case number, which satisfies the requirement to be verified for ownership and control and listed in the VA's database.
+**Reasoning:** The bidder accepted all terms and conditions of the solicitation without modification, which includes compliance with applicable limitations on subcontracting and VAAR subpart 819.70 and SBA regulations referenced in the solicitation. Furthermore, the bidder's acceptance of the terms and conditions in the absence of any contrary statements indicates compliance.
 
 **Evidence:**
-- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
 
 ### Compliant
 
-**REQUIREMENT:** The business must comply with VAAR subpart 819.70 and SBA regulations regarding small business size and government contracting programs at 13 CFR parts 121 and 125, with references to SDVO SBCs or VOSBs construed to apply to VA-verified and VIP-listed entities.
+**REQUIREMENT:** Offeror must have the capability to provide all required Sorna Vertex 25ei & CD Burner products in accordance with the Statement of Work.
 
-**Reasoning:** The bidder explicitly states they are a VIP-listed SDVOSB verified under the SBA VetCert program, which directly addresses the requirement to comply with VAAR subpart 819.70 and associated regulations regarding small business status.
+**Reasoning:** The bidder explicitly provides a quote for the exact brand-name Sorna Vertex 25ei Platform with integrated Sorna CD Burner and confirms that the technical description matches the Statement of Work in full, thereby satisfying the capability requirement.
 
 **Evidence:**
-- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
+- (supports) Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,
+Unit Price $19,200.00, Total $19,200.00.
+- (supports) 
+Technical description of items quoted: We are quoting the Sorna Vertex
+25ei Platform with integrated Sorna CD Burner, brand name, exactly as
+specified in the Product Chart. This is the identical brand-name system
+required by the solicitation; Meridian is not offering a substitute or
+equivalent product. The package includes the Vertex Host softw
 
 ### Compliant
 
-**REQUIREMENT:** The offeror must be a veteran-owned small business (VOSB) verified and listed in the VA's Vendor Information Pages (VIP) database, and must maintain this eligibility at the time of offer submission and award.
+**REQUIREMENT:** Quotes must show minimum required information including solicitation number, time specified for receipt, quoter contact details, technical description, warranty terms, price/discount terms, remit-to address, FAR representations/certifications, amendment acknowledgments, and statement of agreement with terms.
 
-**Reasoning:** The bidder explicitly states they are a VIP-listed SDVOSB and provides their verification case number, which satisfies the requirement to be verified and listed in the VA's database.
-
-**Evidence:**
-- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
-Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
-Case #DV-2024-01187.
-
-### Compliant
-
-**REQUIREMENT:** As a minimum, quotes must show— ... (3) The name, address, and telephone number of the quoter;
-
-**Reasoning:** The bidder explicitly provided their name, physical address, and telephone number in the quote document, satisfying the requirement.
+**Reasoning:** The bidder's application explicitly includes all required information: solicitation number, time specified for receipt, quoter contact details, technical description, warranty terms, price/discount terms, remit-to address, FAR representations/certifications, amendment acknowledgments, and a statement of agreement with the terms and conditions.
 
 **Evidence:**
+- (supports) Quote for Solicitation 36C24126Q0731 P0003
+- (supports) We acknowledge the time
+specified in the solicitation for receipt of quotations as 11:00 AM EDT on
+09/18/26
 - (supports) Quoter name, address, and telephone number:
 Meridian Medical Systems, LLC
 88 Harborview Drive, Suite 210
 Providence, RI 02903
 Telephone: (401) 555-0142
-
-### Compliant
-
-**REQUIREMENT:** As a minimum, quotes must show— ... (4) A technical description of the items being quoted in sufficient detail to evaluate
-     compliance with the requirements in the solicitation.
-
-**Reasoning:** The bidder provides a detailed technical description of the items being quoted, including specific software licenses, hardware components, and confirmation that the package matches the Statement of Work in full, which satisfies the requirement for sufficient detail to evaluate compliance.
-
-**Evidence:**
-- (supports) Technical description of items quoted: We are quoting the Sorna Vertex
-25ei Platform with integrated Sorna CD Burner, brand name, exactly as
-specified in the Product Chart. This is the identical brand-name system
-required by the solicitation; Meridian is not offering a substitute or
-equivalent product. The package includes the Vertex Host software with
-unlimited Client and Media Importer licenses, automated DICOM profiles,
-a pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,
-disc label design software, and all necessary cabling, matching the
-Statement of Work in full.
-
-### Compliant
-
-**REQUIREMENT:** As a minimum, quotes must show— ... (5) Terms of any express warranty;
-
-**Reasoning:** The bidder explicitly states the terms of the standard warranty (3-year parts-and-labor from date of installation) and provides an alternative option for an extended 5-year warranty, thereby satisfying the requirement to show terms of any express warranty.
-
-**Evidence:**
+- (supports) 
+Technical description of items quoted: We are quoting the Sorna Vertex
+25ei Platform with integrated Sorna CD Burner, 
 - (supports) Terms of express warranty: The system is covered by the manufacturer's
 standard 3-year parts-and-labor warranty from the date of installation.
-- (supports) Option B: Extended 5-year warranty configuration, grand total
-$23,100.00.
-
-### Compliant
-
-**REQUIREMENT:** As a minimum, quotes must show— ... (6) Price and any discount terms;
-
-**Reasoning:** The bidder provided the total quoted price and explicitly stated their payment terms (Net 30) and discount terms (no prompt-payment discount offered), thereby satisfying the requirement to show price and discount terms.
-
-**Evidence:**
-- (supports) Total quoted price for this solicitation: $21,540.00.
 - (supports) Price and discount terms: Net 30 days from invoice date. No prompt-payment
 discount is offered.
+- (supports) "Remit to" address: Same as the mailing address listed above.
+- (supports) Our representations and certifications under FAR 52.212-3 are on file
+in SAM.gov and available upon request
+- (supports) We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
 
 ### Compliant
 
-**REQUIREMENT:** As a minimum, quotes must show— ... (7) "Remit to" address, if different from the mailing address;
+**REQUIREMENT:** The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes.
 
-**Reasoning:** The requirement asks for a 'Remit to' address if different from the mailing address. The bidder explicitly stated that the 'Remit to' address is the same as the mailing address, thereby satisfying the requirement to address this information.
+**Reasoning:** The bidder explicitly states that all terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition. This includes the requirement to hold prices firm for 30 calendar days from the date specified for receipt of quotes.
 
 **Evidence:**
-- (supports) "Remit to" address: Same as the mailing address listed above.
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
 
 ### Compliant
 
-**REQUIREMENT:** As a minimum, quotes must show— ... (9) Acknowledgment Request for Quotation amendments;
+**REQUIREMENT:** All SD/VOSB eligibility requirements must be met, and the firm must be listed in the VIP database at the time of offer and award.
 
-**Reasoning:** The bidder explicitly acknowledges receipt of the amendment (P0003) in their application, which satisfies the requirement to acknowledge Request for Quotation amendments.
+**Reasoning:** The requirement states that all SD/VOSB eligibility requirements must be met, and the firm must be listed in the VIP database at the time of offer and award. The bidder's application explicitly states that Meridian Medical Systems, LLC is a VIP-listed SDVOSB verified under the SBA SBS VetCert program, thereby satisfying the requirement.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** Quotes must include a statement regarding acceptance of the terms and conditions or list any exceptions and rationale.
+
+**Reasoning:** The requirement states that quotes must include a statement regarding acceptance of the terms and conditions or list any exceptions and rationale. The bidder clearly included a statement explicitly accepting the terms and conditions in the solicitation without modification, deletion, or addition.
+
+**Evidence:**
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** The business will comply with VAAR subpart 819.70 and SBA regulations regarding small business size and government contracting programs.
+
+**Reasoning:** The bidder explicitly states that it is a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB) verified under SBA SBS VetCert, indicating compliance with SBA regulations and VAAR subpart 819.70 regarding small business size and government contracting programs. Furthermore, the bidder accepts all solicitation terms and conditions without modification.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** An otherwise eligible firm further agrees to comply with the required certification requirements in this solicitation.
+
+**Reasoning:** The bidder explicitly states that the terms and conditions in the solicitation are acceptable without modification, deletion, or addition, which includes agreeing to comply with the required certification requirements.
+
+**Evidence:**
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** For service contracts, the SDVOSB prime contractor will not pay more than 50% of the amount paid by the government for contract performance to non-VIP-listed SDVOSBs, excluding direct costs.
+
+**Reasoning:** The bidder accepts all terms and conditions of the solicitation without modification, which includes the requirement regarding the limitation on subcontracting to non-VIP-listed SDVOSBs for service contracts. Furthermore, the bidder is confirmed as a VIP-listed SDVOSB. Since the terms are accepted unconditionally, the application satisfies the requirement.
+
+**Evidence:**
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** For supply or product contracts, the prime contractor will not pay more than 50% of the amount paid by the government, excluding the cost of materials, to firms that are not VIP-listed.
+
+**Reasoning:** The bidder accepts all terms and conditions of the solicitation without modification. Additionally, the bidder is confirmed to be a VIP-listed firm, meaning the restriction on subcontracting more than 50% to non-VIP-listed firms does not result in any violation, and the general acceptance of the solicitation's terms ensures compliance with this prime contractor requirement.
+
+**Evidence:**
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** When a contract includes both supply and services, the 50 percent limitation shall apply only to the supply portion of the contract.
+
+**Reasoning:** The bidder explicitly accepts all terms and conditions of the solicitation without modification, deletion, or addition. Because the requirement relates to a legal/contractual limitation on supply versus services when both are included in a contract, the bidder's full acceptance of the solicitation's terms and conditions constitutes compliance.
+
+**Evidence:**
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** For contracts for supplies from a non-manufacturer, the prime contractor will supply the product of a domestic small business manufacturer or processor unless a waiver is granted.
+
+**Reasoning:** The requirement states that the prime contractor will supply the product of a domestic small business manufacturer or processor unless a waiver is granted, specifically for contracts for supplies from a non-manufacturer. The bidder states that the terms and conditions in the solicitation are acceptable without modification, and since the condition is tied to the standard solicitation terms accepted by the bidder and no information indicates a violation, it is considered compliant.
+
+**Evidence:**
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** The business has been verified for ownership and control and is listed in VA's Vendor Information Pages (VIP) database.
+
+**Reasoning:** The bidder explicitly states in its quote that it is listed in VA's Vendor Information Pages (VIP) database as a verified Service-Disabled Veteran-Owned Small Business.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** The term small business concern owned and controlled by Veterans has its standard meaning, except the firm must be listed in the VIP database.
+
+**Reasoning:** The requirement states that the firm must be listed in the VIP database. The bidder's application explicitly states that Meridian Medical Systems, LLC is a VIP-listed Service-Disabled Veteran-Owned Small Business, thereby satisfying the requirement.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** Offers received from entities that are not VIP-listed at the time of offer shall not be considered.
+
+**Reasoning:** The requirement states that offers received from entities that are not VIP-listed at the time of offer shall not be considered. The bidder states explicitly that it is a VIP-listed entity, thus satisfying the requirement.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** Any award resulting from this solicitation shall be made only to a VIP-listed VOSB who is eligible at the time of submission of offer(s) and at time of award.
+
+**Reasoning:** The requirement states that any award must be made to a VIP-listed VOSB who is eligible at the time of submission. The bidder explicitly states that Meridian Medical Systems, LLC is a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert, thus fulfilling the requirement.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** The requirements apply to any contract, order, or subcontract where the firm receives a benefit or preference from its VOSB designation.
+
+**Reasoning:** The requirement states that provisions apply to any contract, order, or subcontract where the firm receives a benefit or preference from its VOSB designation. The bidder has confirmed its VOSB/SDVOSB status and stated that all terms and conditions in the solicitation (which includes standard clauses applicable to VOSB/SDVOSB set-asides and benefits) are accepted without modification, thereby satisfying the requirement.
+
+**Evidence:**
+- (supports) Terms and conditions: The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+
+### Compliant
+
+**REQUIREMENT:** By submitting an offer, the prospective contractor represents that it is an eligible VOSB as defined in the clause.
+
+**Reasoning:** The bidder explicitly states that it accepts all solicitation terms and conditions without modification, which includes the representation requirement regarding its status as an eligible VOSB. Furthermore, the bidder explicitly represents and certifies that it is a verified Service-Disabled Veteran-Owned Small Business (SDVOSB), thereby satisfying the requirement.
+
+**Evidence:**
+- (supports) Meridian Medical Systems, LLC is a VIP-listed Service-Disabled
+Veteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert
+Case #DV-2024-01187.
+- (supports) The terms and conditions in the solicitation are
+acceptable to be included in the award document without modification,
+deletion, or addition.
+
+### Compliant
+
+**REQUIREMENT:** MOD P00003 replaces the initial Combined Synopsis and all subsequent amendments/modifications.
+
+**Reasoning:** The bidder explicitly acknowledges receipt of MOD P00003 (referred to as P0003) and confirms that it replaces the initial Combined Synopsis and all subsequent amendments/modifications, directly satisfying the requirement.
 
 **Evidence:**
 - (supports) We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,
 which extended the response date for this RFQ to 09/18/26 at 11:00 AM
 EDT and replaced the prior Combined Synopsis and all earlier
 amendments/modifications.
+- (supports) We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,
+which extended the response date for this RFQ to 09/18/26 at 11:00 AM
+EDT and replaced the prior Combined Synopsis and all earlier
+amendments/modifications.
+
+## Preferred (Non-mandatory) Requirements
 
 ### Compliant
 
-**REQUIREMENT:** The quote must include a statement specifying the extent of agreement with the solicitation's terms and conditions, either confirming full acceptance without modification or detailing any specific exceptions, deletions, or additions.
+**PREFERENCE:** MOD P0003 extends the RFQ due date to 09/18/26 at 11:00 AM EDT.
 
-**Reasoning:** The bidder explicitly states that the solicitation's terms and conditions are acceptable without modification, deletion, or addition, which directly satisfies the requirement.
-
-**Evidence:**
-- (supports) Terms and conditions: The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
-
-### Compliant
-
-**REQUIREMENT:** The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes unless another time period is specified in an addendum to the solicitation.
-
-**Reasoning:** The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. Since the requirement to hold prices firm for 30 days is a standard term of the solicitation, the bidder's acceptance of all terms and conditions confirms their compliance with this requirement.
+**Reasoning:** The bidder explicitly acknowledges MOD P0003 and confirms the extended due date of 09/18/26 at 11:00 AM EDT, satisfying the requirement.
 
 **Evidence:**
-- (supports) The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
+- (supports) We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,
+which extended the response date for this RFQ to 09/18/26 at 11:00 AM
+EDT and replaced the prior Combined Synopsis and all earlier
+amendments/modifications.
+- (supports) We acknowledge the time
+specified in the solicitation for receipt of quotations as 11:00 AM EDT on
+09/18/26, and our quote is submitted ahead of that deadline.
 
-### Compliant
+## Needs Manual Review: Unverified Citations
 
-**REQUIREMENT:** Quoters shall list exception(s) and rationale for the exception(s), if any.
+### Requirement quotes not found in the tender text
 
-**Reasoning:** The bidder explicitly stated that the terms and conditions are acceptable without modification, deletion, or addition, which effectively communicates that there are no exceptions to the solicitation requirements.
-
-**Evidence:**
-- (supports) The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
-
-### Compliant
-
-**REQUIREMENT:** When a contract includes both services and supplies, the 50 percent limitation shall apply only to the service portion of the contract.
-
-**Reasoning:** The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. Since the requirement regarding the 50 percent limitation is a standard term of the solicitation, the bidder's acceptance of all terms confirms their compliance.
-
-**Evidence:**
-- (supports) Terms and conditions: The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
-
-### Compliant
-
-**REQUIREMENT:** When a contract includes both supply and services, the 50 percent limitation shall apply only to the supply portion of the contract.
-
-**Reasoning:** The bidder explicitly accepted all terms and conditions of the solicitation without modification. Since the requirement regarding the 50 percent limitation is a standard contractual term, the bidder's blanket acceptance of the solicitation's terms and conditions confirms their compliance with this requirement.
-
-**Evidence:**
-- (supports) The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
-
-### Compliant
-
-**REQUIREMENT:** When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.
-
-**Reasoning:** The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. By accepting the solicitation's terms, the bidder agrees to comply with all requirements contained therein, including the specified limitation on the portion of the contract with the preponderance of expenditure.
-
-**Evidence:**
-- (supports) The terms and conditions in the solicitation are
-acceptable to be included in the award document without modification,
-deletion, or addition.
-
-### Compliant
-
-**REQUIREMENT:** The Department of Veterans Affairs requires a Sorna Vertex 25ei System Package and accessories to produce high-density, medical-grade CDs of radiology files.
-
-**Reasoning:** The bidder explicitly states they are providing the exact brand-name system (Sorna Vertex 25ei Platform with integrated Sorna CD Burner) required by the solicitation.
-
-**Evidence:**
-- (supports) We are quoting the Sorna Vertex
-25ei Platform with integrated Sorna CD Burner, brand name, exactly as
-specified in the Product Chart. This is the identical brand-name system
-required by the solicitation
-
-## Not Verifiable From Application Text Alone
-
-### **REQUIREMENT:** Submit signed and dated quotes to the office specified in this Combined Synopsis: Intent to Compete/RFQ at or before the exact time specified.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** Any questions or concerns regarding this solicitation must be forwarded in writing via e-mail to the Point of Contact listed below.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** Submission shall be received no later than 11:00 AM EDT 09/18/26.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** The business ... meets Federal small business size standards for the applicable North American Industry Classification System (NAICS) code identified in the solicitation document;
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** Deliver to: 	VAMC CWM (Northampton)
-421 N. Main Street
-Leeds, MA 01053
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** This platform is required to maintain operational efficiency and to sustain the quality of patient healthcare provided by Diagnostic Imaging Services at CWM.
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** it is anticipated that there are ample SD/VOSB resellers who meet the other three (3) NMR requirements per 13 CFR 121.406(b) (i-iii): ... 1) Fewer than 500 employees
-
-This cannot be confirmed from the application text alone and requires independent verification.
-
-### **REQUIREMENT:** it is anticipated that there are ample SD/VOSB resellers who meet the other three (3) NMR requirements per 13 CFR 121.406(b) (i-iii): ... 3) take possession of the product as soon as it ships/is released.
-
-This cannot be confirmed from the application text alone and requires independent verification.
+- **Offeror must meet Limitations on Subcontracting (LOS) requirements and comply with applicable VAAR subpart 819.70 and SBA regulations.** — [UNVERIFIED: the agent recorded this exact text, but it could not be located in the source document] A VOSB shall comply with the limitations on subcontracting as follows: [Contracting Officer check as appropriate.] __By the end of the performance period for each order issued under the contract.
