@@ -96,7 +96,8 @@
       "topic_id": "buy_american_certificate_completed",
       "description": "Quote must include a completed Buy American Certificate (FAR 52.225-2): certify domestic/foreign end-product status per line item, list foreign end products and whether they exceed 55% domestic content, and separately list domestic end products containing a critical component.",
       "acceptable_verdicts": [
-        "insufficient_information"
+        "insufficient_information",
+        "non_compliant"
       ],
       "rationale": "Application gives only a generic compliance statement; it never fills in the required per-line-item certification (domestic vs. foreign end product, percent domestic content, critical component listing).",
       "evidence": [
@@ -185,7 +186,8 @@
       "topic_id": "nmr_certification_signed",
       "description": "Quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification (small business/non-manufacturer status, sourcing, no alteration of goods), including signature, name, title, date, and business name.",
       "acceptable_verdicts": [
-        "insufficient_information"
+        "insufficient_information",
+        "non_compliant"
       ],
       "rationale": "Application claims an executed NMR certification exists on file internally, but does not include the signed certification in the quote itself, and does not invoke the SAM.gov-current alternative the way it did for FAR 52.212-3 -- unclear whether the actual certification requirement is met.",
       "evidence": [

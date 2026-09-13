@@ -1,0 +1,227 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sdvosb_setaside_eligibility, security_sanctions_representations, submission_deadline, contractor_certification_qualifications, and contractor_experience_tenure, since all five are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
+    "The application deliberately varies its error types: compliant (7 topics), non_compliant (a quantity shortfall -- 2 past-performance contracts instead of 3), insufficient_information (a generic prior-experience statement missing the required per-year detail; an ambiguous, partially-triggered subcontractor-experience condition), and one contradictory claim (training certifications stated as both enclosed with the proposal and available only upon request).",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "offer_content_minimum_elements",
+      "description": "Offer must include the solicitation number, the offeror's name/address/phone number, and the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application header includes the solicitation number, vendor name/address/phone, and UEI.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Solicitation Number: 36C25526Q0501\n\nHeartland Electrical Testing Services, LLC\n4820 Industrial Parkway\nKansas City, MO 64120\n(816) 555-2290\nUnique Entity Identifier: JN6P8QW3RT52",
+          "start_char": 139,
+          "end_char": 317
+        }
+      ]
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions of the solicitation and any amendments.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+          "start_char": 319,
+          "end_char": 472
+        }
+      ]
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states no amendments have been received, satisfying the conditional requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "No amendments to this solicitation have been received as of the date of this\nquote.",
+          "start_char": 474,
+          "end_char": 557
+        }
+      ]
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in the unit price, amount, and grand total for CLIN 0001 (one-year, standalone triennial electrical testing/maintenance/inspection/calibration of the Truman VA electrical power distribution system).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application fills in a unit/extended price for CLIN 0001 and a matching grand total.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,\nand/or Calibration of the Electrical Power Distribution System at Truman VA,\nColumbia, MO: $58,400.00\nGrand Total: $58,400.00",
+          "start_char": 667,
+          "end_char": 868
+        }
+      ]
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- actual SDVOSB certification/database status cannot be confirmed by reading the quote, only by checking the SBA certification database directly.",
+      "evidence": []
+    },
+    {
+      "topic_id": "security_sanctions_representations",
+      "description": "By submitting its offer the offeror makes several standing legal representations/certifications triggered automatically by submission, including that it has conducted a reasonable inquiry and does not propose to use products/sources prohibited by an applicable FASCSA order, and that it does not conduct restricted business operations in Sudan.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- these are standing legal representations triggered automatically by submitting an offer, not something the offeror drafts content around.",
+      "evidence": []
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Questions and quotes are due by 10:00 a.m. central time on 9/15/26, submitted electronically via email to James.horne@va.gov.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": []
+    },
+    {
+      "topic_id": "two_part_proposal_format",
+      "description": "The proposal must be prepared in two parts: a price response (signed SF-1449 plus completed price schedule) and a non-price response (addressing the non-price factors).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application is structured in a Price Response section (signed SF-1449 reference plus price schedule) and a Non-Price Response section addressing the non-price factors, matching the required two-part format.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Price Response:\nSigned SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).",
+          "start_char": 559,
+          "end_char": 649
+        }
+      ]
+    },
+    {
+      "topic_id": "technical_capabilities_letter",
+      "description": "Offer must include a technical capabilities letter, not exceeding five pages, describing the offeror's technical approach, methodology, and technique for carrying out the Performance Work Statement.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes a specific technical approach, methodology, and technique (NETA-standard testing procedures, diagnostic equipment, verification checklist) rather than merely reciting the Performance Work Statement.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Heartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients. Our technical approach follows NETA Maintenance Testing\nSpecifications for infrared scanning, breaker trip testing, ground fault\nprotection testing, and transformer oil sampling, using calibrated\ndiagnostic equipment and a documented verification checklist at each stage\nof the process.",
+          "start_char": 915,
+          "end_char": 1368
+        }
+      ]
+    },
+    {
+      "topic_id": "prior_experience_documentation",
+      "description": "Offer must include at least five years of prior experience relevant to this solicitation's electrical testing/maintenance work, with a detailed description per year covering contract number, estimated annual dollar value, description of services and the offeror's role, contract start/completion dates, and current customer contact information.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application gives only a generic statement of six years' experience with unspecified 'representative engagements,' never providing the required detailed per-year breakdown (contract number, annual dollar value, description, dates, customer contact) for any year.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years. Representative engagements include hospital\nelectrical infrastructure testing contracts in Missouri and Kansas.",
+          "start_char": 1388,
+          "end_char": 1676
+        }
+      ]
+    },
+    {
+      "topic_id": "past_performance_contracts_submission",
+      "description": "Offer must include at least three previously awarded and completed Federal/State/Local government contracts involving similar work, each with contract name/ID, awarding agency, award date/amount, scope description, and a point of contact.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application lists only two previously awarded and completed contracts, short of the three required.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+          "start_char": 1706,
+          "end_char": 2315
+        }
+      ]
+    },
+    {
+      "topic_id": "technical_experience_examples_submission",
+      "description": "Offer must include at least two examples of the offeror's own technical experience with contracts involving technical requirements similar to this solicitation, each with contract name/location, performance period, percentage self-performed, and scope description under NAICS 221122.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides two technical experience examples as prime contractor under NAICS 221122, each with location, performance period, percentage self-performed, and a scope description technically similar to this solicitation.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.\n2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor. Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+          "start_char": 2348,
+          "end_char": 3030
+        }
+      ]
+    },
+    {
+      "topic_id": "subcontractor_technical_experience_submission",
+      "description": "If subcontractors will be used, the offer must include at least two examples of the subcontractors' technical experience with similar contracts, in the same format as the offeror's own technical experience examples.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application mentions a subcontractor performed part of the work in one technical experience example, suggesting the conditional requirement may be triggered, but never provides the subcontractor's own technical experience examples in the required format.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "remainder by a\n   licensed subcontractor.",
+          "start_char": 2814,
+          "end_char": 2855
+        }
+      ]
+    },
+    {
+      "topic_id": "electrical_safety_training_certification_submission",
+      "description": "Offer must include electrical safety training certifications (OSHA 29 CFR 1910 Subpart S and NFPA 70E) submitted with the proposal, or, if unavailable, a written employer certification of having met this requirement submitted with the proposal.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The Electrical Safety Training section first states that current training certifications 'are enclosed with this proposal,' then immediately states that certification records 'are available upon request rather than included in this proposal package' -- a direct contradiction about whether the certifications were actually submitted.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "and current training certifications are enclosed with this\nproposal.",
+          "start_char": 3219,
+          "end_char": 3287
+        },
+        {
+          "document_path": "data/36C25526Q0501/application.txt",
+          "quote": "Certification records for our field technicians are maintained in our\ninternal training management system and are available upon request rather\nthan included in this proposal package.",
+          "start_char": 3289,
+          "end_char": 3472
+        }
+      ]
+    },
+    {
+      "topic_id": "contractor_certification_qualifications",
+      "description": "Contractor must be currently certified as a NETA Certified Technician or via NICET, and have completed OSHA's approved 10-hour construction safety training.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- actual NETA/NICET certification and OSHA-10 completion status cannot be confirmed by reading the quote alone.",
+      "evidence": []
+    },
+    {
+      "topic_id": "contractor_experience_tenure",
+      "description": "Contractor must have technical training and a minimum of five continuous years of work experience in maintenance, inspection, and testing of low and medium voltage electrical power distribution systems in healthcare, industrial, educational, and commercial facilities.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- actual years of technical training and work-experience tenure is a background fact, not something the tender instructs the offeror to write into the quote.",
+      "evidence": []
+    }
+  ]
+}

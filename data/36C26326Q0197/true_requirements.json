@@ -1,0 +1,411 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "This case is a SUPPLIES/services IDIQ acquisition (five-year medical cylinder gas delivery and rental contract across VISN 23), evaluated on a 5-factor best-value tradeoff (Technical, Past Performance, Transition, Veterans Involvement/Limitations on Subcontracting, Price) with a tiered SDVOSB -> Small Business -> Other-than-Small-Business award sequence.",
+    "PIPELINE INPUT NOTE: the real solicitation ('S02+36C26326Q0197.pdf', 189K extracted characters across 75 pages) is far larger than what this fixture measures. Per the same project decision applied to other large real solicitations in this corpus, this fixture's source.document_path points instead at a hand-condensed derivative, '36C26326Q0197_condensed.txt', assembled by concatenating verbatim excerpts of the real document (no paraphrasing or added text, aside from a short paraphrased identification header and bracketed editorial notes marking what was cut) while dropping the sections listed in the notes below. '36C26326Q0197_condensed.txt', not the original PDF/xlsx files, is what must be passed to the pipeline via --requirements.",
+    "Deliberately excluded from the condensed document entirely: Section C (Contract Clauses, ~78K characters of standard FAR/VAAR boilerplate -- 52.212-1 Instructions to Offerors, VAAR 852.219-73 SDVOSB, DEI/Security Prohibitions/FASCSA/Sudan clauses -- already represented verbatim elsewhere in this corpus, e.g. 36C24126Q0704_condensed.txt); Sections E.1, E.2, and E.9 (52.209-7, 52.212-1 Instructions to Offerors, 52.252-1 -- the same standard FAR clauses); the tiered SDVOSB -> Small Business -> Other-than-Small-Business cascading evaluation mechanism (both the Section C clause and the Section E.4 tier-by-tier restatement) -- a government-evaluation-process mechanism, not proposal content, and already represented by a comparable tier cascade elsewhere in this corpus.",
+    "Deliberately excluded from the condensed document: the bulk of the Statement of Work (Sections 2, 3.1-3.9, 4, 7-9.8.1, 9.8.3-13, and 14.2 onward) -- contract-performance and phase-in/phase-out operations detail addressed to the incumbent/incoming contractor after award, not proposal content. Only Section 1 (Scope, for context) and the handful of paragraphs that explicitly require something 'with the proposal' or 'in the proposal' (3.10, 5.2-5.3.1, 6.1-6.2, 9.8.2, 14.1) are kept.",
+    "Deliberately condensed: Section E.4 (52.212-2 Evaluation) restates Factors 1-4 nearly verbatim once per evaluation tier (SDVOSB, Small Business, Other-than-Small-Business) and otherwise describes the Government's own best-value tradeoff methodology -- not proposal content. The condensed document keeps only the non-duplicated factor weighting statement and the Price factor's basis (Attachment B), since Volume Three of the E.3 addendum already states the substantive Technical/Past Performance/Transition/Veterans content once, without the tier repetition.",
+    "Attachments A (Facilities and Addresses, 79 rows), B (Annual Order Estimates, 269 rows), and C (Schedule of Items, 1,331 rows) are large tabular catalogs with no free-text signal beyond their column structure -- the condensed document keeps only the header row and 2 example rows of each, plus a note of the true row count, per the same convention used for the catalog attachment in SHOP-PR-26-002435.",
+    "description is written independently of source.quote as the checklist item a correct extraction should match in meaning, not wording."
+  ],
+  "requirements": [
+    {
+      "topic_id": "sam_registration_active_at_offer",
+      "description": "Offerors must be registered and active in the System for Award Management (SAM) at the time of offer.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offerors shall be registered and active at System for Award Management (SAM) at time of offer.",
+        "spans": [
+          {
+            "start_char": 334,
+            "end_char": 428
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "delivery_frequency_compliance",
+      "description": "The contractor must comply with the delivery frequencies specified per delivery location as outlined in Attachment A.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor must comply with the delivery frequencies specified per delivery location as \noutlined in Attachment A.",
+        "spans": [
+          {
+            "start_char": 1449,
+            "end_char": 1567
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "geographic_facility_or_resources_presence",
+      "description": "The contractor must have a facility and/or resources physically located in the geographic areas in which they will provide supplies.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The Contractor shall have a facility and/or resources physically \nlocated in the geographic areas in which they will provide supplies.",
+        "spans": [
+          {
+            "start_char": 1568,
+            "end_char": 1702
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "cylinder_replacement_cost_in_proposal",
+      "description": "The contractor's proposal must include the cylinder replacement cost for each item listed on Attachment C.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "The contractor’s proposal shall include \n the cylinder replacement cost for each item listed on Attachment C.",
+        "spans": [
+          {
+            "start_char": 3152,
+            "end_char": 3261
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "cylinder_tracking_plan_delivery",
+      "description": "The contractor must submit a cylinder tracking plan with their proposal for cylinders being delivered to and from the ordering activity, covering data-entry method and mechanism, when and how the Government can extract data, what data is stored, access limits, and any Government-network connection requirements. If the contractor's tracking system is impending/not yet fully operational, the proposal must include an implementation timeline coinciding with the phase-in timeline.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "5.2.  The contractor shall submit an innovative plan with their proposal for tracking medical \n gas cylinders being delivered to and from the ordering activity. ... 5.2.1. The cylinder tracking plan shall include, but is not limited to: \na) Method used for data entry and extraction (i.e. web-based portal, Microsoft Excel \nspreadsheet, SharePoint, email, etc.); \nb) Mechanism for data entry (i.e. barcode scanning, handwriting serial numbers, \nphotos, etc.); \nc) How and when Government will be able to extract data; \nd) What type of data will be entered and stored; \ne) Limits on access to Government employees, if applicable; \nf) Any technology, equipment, software, etc. that requires connection to the \nGovernment network, if applicable; and \ng) Any other pertinent information related to the cylinder tracking plan ... 5.2.2. If the contractor has an impending tracking system or one that is not yet fully operational \nbut would like to submit as part of their proposal, the contractor shall include a timeline \nfor implementation which must coincide with the phase-in timeline as described in \nparagraph 4.1.",
+        "spans": [
+          {
+            "start_char": 3263,
+            "end_char": 3423
+          },
+          {
+            "start_char": 3804,
+            "end_char": 4459
+          },
+          {
+            "start_char": 4461,
+            "end_char": 4751
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "cylinder_tracking_plan_facility",
+      "description": "Although not required, if the contractor has a system for tracking medical gas cylinders within an ordering activity's facility after delivery, the contractor must submit a tracking plan with their proposal covering the same items as the delivery-side tracking plan.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "5.3.  Although not required, if the contractor has a system for tracking medical gas cylinders \n within an ordering activity’s facility after the cylinders have been delivered by the \n contractor to the ordering activity, the contractor shall submit a tracking plan with their \n proposal.",
+        "spans": [
+          {
+            "start_char": 4934,
+            "end_char": 5222
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "reporting_capabilities_proposal",
+      "description": "The contractor must submit in their proposal their available on-demand reporting capabilities (usage, cost, and cylinder tracking reports), including how the data is collected, distributed, and viewed.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "6.1. The contractor shall submit in their proposal their available on-demand reporting \n capabilities for the CO, COR and/or ordering activities in relation to usage statistics, cost \n data, cylinder tracking and any other report types that may be beneficial for the \n Government. ... 6.2. The contractor’s reporting capabilities proposal shall include detailed information on how \n the data is collected by the contractor (to ensure accuracy of data), the vehicle to which \n the reports will be distributed (i.e. web portal, email, fax, in-person delivery, etc.) and \n how the data will be viewed by the CO, COR and/or ordering activity (i.e. web portal, \n Excel spreadsheet, Word document, hand-written on paper, etc.).",
+        "spans": [
+          {
+            "start_char": 5338,
+            "end_char": 5618
+          },
+          {
+            "start_char": 6398,
+            "end_char": 6834
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "difficult_to_fill_items_flagged",
+      "description": "The contractor must identify in their proposal any medical gases that can be classified as difficult to fill or likely to be placed on backorder, by highlighting the item in Attachment C and providing a statement justifying the classification.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "9.8.2. The contractor shall identify in their proposal any medical gases that can be classified as \ndifficult to fill or likely to be placed on backorder by highlighting the item in Attachment C \nand by providing a statement justifying the contractor’s classification.",
+        "spans": [
+          {
+            "start_char": 6836,
+            "end_char": 7104
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "project_management_plan_submitted",
+      "description": "The contractor must submit a Project Management Plan (PMP) with their proposal demonstrating understanding of the scope, schedule, and service level requirements, including at minimum a communications and task matrix, an identified individual responsible for deliverables, a preliminary delivery/install/user acceptance schedule, a time estimate per critical task, an outline of progress-tracking processes, and an approach to identifying and resolving potential project problems.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "14.1.  The contractor shall submit a Project Management Plan (PMP) with their proposal that \n clearly demonstrates an understanding of the scope, schedule and service level \n requirements of this contract.  At a minimum, the PMP shall include the following items: \na) Communications and task matrix providing point-of-contact information and \nidentifying and delineating the roles and responsibilities of key contractor personnel \nand resources; \nb) Individual responsible for providing the required contract deliverables and how \nthe contractor will ensure the deliverables are delivered on time; \nc) A preliminary delivery, install, and user acceptance schedule constrained by the \ntimeframes allowed with the contract with consideration of the interdependence of \ntasks in sufficient detail to identify and meet critical schedule deadlines; \nd) Estimate of how much time each critical task is expected to take and when each \nis scheduled to begin and end (time period in workdays or weeks); \ne) Outline of processes used to track and communicate delivery progress, \ninstallation, and document equipment acceptance; and \nf) Description of approach to identify the warning signs of potential project \nproblems and their resolution process.",
+        "spans": [
+          {
+            "start_char": 7130,
+            "end_char": 8370
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_identification_and_solicitation_number",
+      "description": "The quote must have information identifying the offeror and the solicitation number.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Quote Format and Content - The quote must have information identifying the offeror, the \nsolicitation number and the contents as outlined below.",
+        "spans": [
+          {
+            "start_char": 10596,
+            "end_char": 10740
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_attachment_c_completed",
+      "description": "The Price/Delivery Schedule (Attachment C) must be submitted fully completed, containing prices for the established Contract Line-Item Numbers (CLINs).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "i. Price/Delivery Schedule (Attachment C) should be submitted fully \ncompleted. Price Schedule shall contain prices for the established Contract \nLine-Item Numbers (CLINs) set forth in the section.",
+        "spans": [
+          {
+            "start_char": 10973,
+            "end_char": 11170
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_firm_90_days",
+      "description": "The offeror agrees to hold the prices in its offer firm for 90 calendar days from the date specified for receipt of offers.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offeror agrees to hold \nthe prices in its offer firm for 90 calendar days from the date specified for \nreceipt of offers.",
+        "spans": [
+          {
+            "start_char": 11171,
+            "end_char": 11292
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sf1449_completed",
+      "description": "The SF-1449 must be submitted fully completed, with the offeror completing page 1 sections 30a, 30b, and 30c.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a. SF-1449 shall be submitted fully completed. Offers must complete \npage 1 of the SF-1449 by completing sections 30a, 30b, and 30c.",
+        "spans": [
+          {
+            "start_char": 11428,
+            "end_char": 11560
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the contractor must acknowledge all amendments to the solicitation.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b. The contractor shall acknowledge all amendments to the solicitation \nthat may be issued.",
+        "spans": [
+          {
+            "start_char": 11565,
+            "end_char": 11656
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_operational_capability_narrative",
+      "description": "Offeror must provide narrative in as much detail as possible to fully explain the existing operational capability to meet the requirements contained in the Statement of Work.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "a. Operational Capability: Offeror shall provide narrative in as much \ndetail as possible to fully explain the existing operational capability to \nmeet the requirements contained in the Statement of Work.",
+        "spans": [
+          {
+            "start_char": 12020,
+            "end_char": 12224
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_continuity_of_operations",
+      "description": "Offeror must provide procedures or documentation demonstrating the ability to navigate through emergency situations, shortages, and any other form of supply chain interruptions.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "b. Continuity of Operations: Offeror shall provide procedures or \ndocumentation demonstrating the ability to navigate through \nemergency situations, shortages, and any other form of supply chain \ninterruptions.",
+        "spans": [
+          {
+            "start_char": 12228,
+            "end_char": 12438
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_cylinder_management_innovation",
+      "description": "Offeror must demonstrate the innovative use of a cylinder tracking and management system, as part of the Technical Capability narrative.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "c. Cylinder Management: Demonstrate the innovative use of cylinder \ntracking and management system.",
+        "spans": [
+          {
+            "start_char": 12442,
+            "end_char": 12541
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_medical_gas_regulatory_proof",
+      "description": "Offeror must provide proof that all medical gases conform to USP and National Formulary specifications and that the contractor and its medical gas manufacturers/fillers are registered with the FDA.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "d. Provide proof that all medical gases conform to the most recent \nspecifications prescribed in the United States Pharmacopoeia (USP) \nand National Formulary, the contractor, medical gas manufacturers \nand fillers of medical gases utilized in conjunction with this contract \nare registered with the U.S. Food and Drug Administration (FDA), \nand all medical gases shall be manufactured, processed, packaged, \ntransported, and stored to the FDA’s CGMP regulations and Title 21, \nof the Code of Federal Regulations for labeling.",
+        "spans": [
+          {
+            "start_char": 12545,
+            "end_char": 13071
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_reference_provided",
+      "description": "Offerors must provide past performance references for work performed within the past three years relevant to the complexity, size, and scope of this requirement, listing at minimum: contract or project number and title, period of performance, dollar value, brief description/scope, name of agency/facility, and point of contact.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "ii. Past Performance: In response to this factor, offerors shall provide past \nperformance references for work performed within the past three (3) years \nthat is directly relevant to the complexity, size, and scope of this \nrequirement. Offerors, at minimum, shall list: \n \n• Contract or project number and title \n• Period of performance \n• Dollar Value \n• Brief description / Scope \n• Name of Agency / Facility \n• Point of Contact: Include name, title, phone number, and e-\nmail address",
+        "spans": [
+          {
+            "start_char": 13075,
+            "end_char": 13562
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "phase_in_strategy_submitted",
+      "description": "Offerors must provide a phase-in strategy including at minimum a Project Communications Plan, an Implementation Plan, and a Delivery Plan with milestone dates or timelines demonstrating the ability to meet the effective date of the contract or the 60 calendar day requirement.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "iii. Transition: In response to this factor, offerors shall provide their phase-in \nstrategy. The phase-in strategy at a minimum, shall include a Project \nCommunications Plan with list of names, contract information and roles for \nthe contractor staff who will be supporting this contract during the phase-in \nand ongoing project management through contract period of performance, \nan Implementation Plan, and a Delivery Plan that includes milestone dates \nor timelines demonstrating the contractor’s ability to meet the effective date \nof the contract or the sixty (60) calendar days requirement as described \nabove.",
+        "spans": [
+          {
+            "start_char": 13566,
+            "end_char": 14183
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_vosb_certification_status_at_submission",
+      "description": "To receive Veterans Involvement evaluation credit, an offeror must be listed at the time of submission of offers and at time of award as a certified SDVOSB/VOSB in the SBA certification database.",
+      "is_mandatory": false,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Veterans Involvement : Eligible and certified service-disabled Veteran-\nowned small businesses offerors will receive full credit, and offerors \nqualifying as Veteran-owned small businesses will receive partial credit for \nthe certified Service-Disabled Veteran-Owned and Veteran-Owned Small \nBusiness Status evaluation factor.  To receive credit, an offeror must \nbe listed at the time of submission of offers and at time of award, as a \ncertified SDVOSB/VOSB in the SBA certification database on the SBA \nVeteran Small Business Certification Program portal \nat https://veterans.certify.sba.gov/",
+        "spans": [
+          {
+            "start_char": 14390,
+            "end_char": 14985
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
+      "description": "If the offeror is a large business proposing to use certified SDVOSBs or VOSBs as subcontractors and elects to receive evaluation consideration under this factor, the proposal must state the names of the certified SDVOSB/VOSB subcontractors, a description of their services/supplies, and approximate dollar values.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "If an Offeror is a large business and proposes to use certified SDVOSBs or \nVOSBs as subcontractors and elects to receive evaluation consideration \nunder this factor, they must indicate their intention along with stating in their \nproposal the names of the certified SDVOSB and VOSB with whom they \nintend to subcontract, the description of SDVOSB/VOSB services/supplies, \nand approximate dollar values of proposed subcontractors.",
+        "spans": [
+          {
+            "start_char": 14990,
+            "end_char": 15420
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontracting_limitations_breakdown",
+      "description": "In response to the Limitations on Subcontracting factor (when applicable), offerors must submit a breakdown of the work identified in the Statement of Work and Contract Administration tasks, identifying which work will be performed by the prime contractor, any similarly situated entity, and any other subcontractors.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Limitations on Subcontracting: In response to this factor (when applicable) \nOfferors shall submit a breakdown of the work identified in the Statement of \nWork and tasks associated with Contract Administration. The offer shall \nidentify which work will be performed by the prime contractor, any similarly \nsituated entity, and any other subcontractors.",
+        "spans": [
+          {
+            "start_char": 15424,
+            "end_char": 15776
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "vaar_852_219_76_certificate_submitted",
+      "description": "Offerors must submit a completed copy of VAAR 852.219-76 -- VA Notice of Limitations on Subcontracting -- Certificate of Compliance for Supplies and Products with the submission package.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C26326Q0197/36C26326Q0197_condensed.txt",
+        "quote": "Offerors shall submit a completed copy of VAAR 852.219-76 – VA Notice of \nLimitations on Subcontracting – Certificate of Compliance for Supplies and \nProducts with the submission package.",
+        "spans": [
+          {
+            "start_char": 15780,
+            "end_char": 15967
+          }
+        ]
+      }
+    }
+  ]
+}

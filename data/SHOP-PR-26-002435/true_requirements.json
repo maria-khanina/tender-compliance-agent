@@ -257,22 +257,6 @@
       }
     },
     {
-      "topic_id": "nvme_four_dedicated_drives_spec",
-      "description": "Workstation must have four dedicated 1TB Gen4 M.2 NVMe SSDs: one each for the operating system, temporary files, processing, and database(s).",
-      "is_mandatory": true,
-      "is_text_verifiable": true,
-      "source": {
-        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
-        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating\nSystem\n- One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files\n- One (1) 1TB Gen4 M.2 NVMe SSD for Processing\n- One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
-        "spans": [
-          {
-            "start_char": 249,
-            "end_char": 450
-          }
-        ]
-      }
-    },
-    {
       "topic_id": "raid5_eight_ssd_storage_spec",
       "description": "Workstation must have eight 1TB SSDs in RAID 5 for data storage.",
       "is_mandatory": true,
@@ -316,22 +300,6 @@
           {
             "start_char": 568,
             "end_char": 587
-          }
-        ]
-      }
-    },
-    {
-      "topic_id": "hot_swap_usb_expansion_spec",
-      "description": "Workstation must have a 3.5\" hot-swap bay for three drives, a 2.5\" hot-swap bay with four removable trays, a 2.5\" hot-swap bay with eight removable trays, a 10-port USB 2.0 hub (USB-A), and a 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
-      "is_mandatory": true,
-      "is_text_verifiable": true,
-      "source": {
-        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
-        "quote": "One (1) 3.5” Hot Swap Bay for Three (3) Drives\n- One (1) 2.5” Hot Swap Bay with Four (4) Removable\nTrays\n- One (1) 2.5” Hot Swap Bay with Eight (8) Removable\nTrays\n- One (1) 10 Port USB 2.0 Hub (USB-A)\n- One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
-        "spans": [
-          {
-            "start_char": 590,
-            "end_char": 841
           }
         ]
       }
@@ -389,20 +357,240 @@
       }
     },
     {
-      "topic_id": "chassis_dimensions_finish_spec",
-      "description": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm), with 11 open 5.25\" bays, 120mm fans, 8 PCI chassis expansion slots, 0.118in (3.00mm) aluminum thickness, and a powder-coated black finish with black appointments.",
+      "topic_id": "nvme_ssd_operating_system_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for the operating system.",
       "is_mandatory": true,
       "is_text_verifiable": true,
       "source": {
         "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
-        "quote": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm) ... Open 5.25 Bays = 11\n- Fan size(s) = 120mm\n- PCI Chassis Expansion Slots = 8\n- Aluminum Thickness = 0.118 (or 3.00mm)\n- Finish = Powder Coated Black with Black Appointments",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for the Operating System",
+        "spans": [
+          {
+            "start_char": 249,
+            "end_char": 303
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nvme_ssd_temporary_files_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for temporary files.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Temporary Files",
+        "spans": [
+          {
+            "start_char": 306,
+            "end_char": 355
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nvme_ssd_processing_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for processing.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Processing",
+        "spans": [
+          {
+            "start_char": 358,
+            "end_char": 402
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nvme_ssd_database_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for database(s).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 1TB Gen4 M.2 NVMe SSD for Database(s)",
+        "spans": [
+          {
+            "start_char": 405,
+            "end_char": 450
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hot_swap_bay_35_three_drives_spec",
+      "description": "Workstation must have one 3.5\" hot-swap bay for three drives.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 3.5” Hot Swap Bay for Three (3) Drives",
+        "spans": [
+          {
+            "start_char": 590,
+            "end_char": 636
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hot_swap_bay_25_four_trays_spec",
+      "description": "Workstation must have one 2.5\" hot-swap bay with four removable trays.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 2.5” Hot Swap Bay with Four (4) Removable Trays",
+        "spans": [
+          {
+            "start_char": 639,
+            "end_char": 694
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hot_swap_bay_25_eight_trays_spec",
+      "description": "Workstation must have one 2.5\" hot-swap bay with eight removable trays.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 2.5” Hot Swap Bay with Eight (8) Removable Trays",
+        "spans": [
+          {
+            "start_char": 697,
+            "end_char": 753
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "usb_2_0_ten_port_hub_spec",
+      "description": "Workstation must have one 10-port USB 2.0 hub (USB-A).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 10 Port USB 2.0 Hub (USB-A)",
+        "spans": [
+          {
+            "start_char": 756,
+            "end_char": 791
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "usb_3_0_four_port_hub_spec",
+      "description": "Workstation must have one 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "One (1) 4 Port USB 3.0 Hub (2x USB-A, 2x USB-C)",
+        "spans": [
+          {
+            "start_char": 794,
+            "end_char": 841
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_size_spec",
+      "description": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Size: 15 W x 19.06 H x 20.06 D (381mm x\n484mm x 510mm)",
         "spans": [
           {
             "start_char": 1099,
             "end_char": 1153
-          },
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_open_525_bays_spec",
+      "description": "Workstation chassis must have 11 open 5.25\" bays.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Open 5.25 Bays = 11",
+        "spans": [
           {
             "start_char": 1220,
+            "end_char": 1239
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_fan_size_spec",
+      "description": "Workstation chassis must use 120mm fans.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Fan size(s) = 120mm",
+        "spans": [
+          {
+            "start_char": 1242,
+            "end_char": 1261
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_pci_expansion_slots_spec",
+      "description": "Workstation chassis must have 8 PCI chassis expansion slots.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "PCI Chassis Expansion Slots = 8",
+        "spans": [
+          {
+            "start_char": 1264,
+            "end_char": 1295
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_aluminum_thickness_spec",
+      "description": "Workstation chassis must have 0.118in (3.00mm) aluminum thickness.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Aluminum Thickness = 0.118 (or 3.00mm)",
+        "spans": [
+          {
+            "start_char": 1298,
+            "end_char": 1336
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "chassis_finish_spec",
+      "description": "Workstation chassis must have a powder-coated black finish with black appointments.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/SHOP-PR-26-002435/Updated+Talino+Specs.docx",
+        "quote": "Finish = Powder Coated Black with Black Appointments",
+        "spans": [
+          {
+            "start_char": 1339,
             "end_char": 1391
           }
         ]

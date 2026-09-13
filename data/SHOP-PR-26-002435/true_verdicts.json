@@ -211,22 +211,6 @@
       ]
     },
     {
-      "topic_id": "nvme_four_dedicated_drives_spec",
-      "description": "Workstation must have four dedicated 1TB Gen4 M.2 NVMe SSDs: one each for the operating system, temporary files, processing, and database(s).",
-      "acceptable_verdicts": [
-        "insufficient_information"
-      ],
-      "rationale": "Application only generically references 'NVMe solid-state storage as required' without confirming the four dedicated 1TB Gen4 M.2 NVMe drives or their specific roles (OS, temp files, processing, database).",
-      "evidence": [
-        {
-          "document_path": "data/SHOP-PR-26-002435/application.txt",
-          "quote": "- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
-          "start_char": 1411,
-          "end_char": 1535
-        }
-      ]
-    },
-    {
       "topic_id": "raid5_eight_ssd_storage_spec",
       "description": "Workstation must have eight 1TB SSDs in RAID 5 for data storage.",
       "acceptable_verdicts": [
@@ -281,22 +265,6 @@
       ]
     },
     {
-      "topic_id": "hot_swap_usb_expansion_spec",
-      "description": "Workstation must have a 3.5\" hot-swap bay for three drives, a 2.5\" hot-swap bay with four removable trays, a 2.5\" hot-swap bay with eight removable trays, a 10-port USB 2.0 hub (USB-A), and a 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
-      "acceptable_verdicts": [
-        "non_compliant"
-      ],
-      "rationale": "Application never mentions the required hot-swap drive bays at all, and describes only 'two front-panel USB hubs' generically instead of the specific required 10-port USB 2.0 hub and 4-port USB 3.0 hub.",
-      "evidence": [
-        {
-          "document_path": "data/SHOP-PR-26-002435/application.txt",
-          "quote": "- Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
-          "start_char": 1704,
-          "end_char": 1780
-        }
-      ]
-    },
-    {
       "topic_id": "power_supply_spec",
       "description": "Workstation must have a 1700 Watt power supply unit.",
       "acceptable_verdicts": [
@@ -345,12 +313,153 @@
       ]
     },
     {
-      "topic_id": "chassis_dimensions_finish_spec",
-      "description": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm), with 11 open 5.25\" bays, 120mm fans, 8 PCI chassis expansion slots, 0.118in (3.00mm) aluminum thickness, and a powder-coated black finish with black appointments.",
+      "topic_id": "nvme_ssd_operating_system_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for the operating system.",
       "acceptable_verdicts": [
+        "insufficient_information",
         "non_compliant"
       ],
-      "rationale": "Application never mentions chassis dimensions, bay count, fan size, PCI expansion slots, aluminum thickness, or finish at all.",
+      "rationale": "Application describes storage only as 'NVMe solid-state storage as required' plus a separate 8x1TB RAID 5 data array -- neither confirms a dedicated OS drive, and the RAID 5 array architecture is inconsistent with having 4 separately dedicated drives at all.",
+      "evidence": []
+    },
+    {
+      "topic_id": "nvme_ssd_temporary_files_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for temporary files.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions a dedicated temporary-files drive; storage is described generically plus an 8-drive RAID 5 array.",
+      "evidence": []
+    },
+    {
+      "topic_id": "nvme_ssd_processing_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for processing.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions a dedicated processing drive; storage is described generically plus an 8-drive RAID 5 array.",
+      "evidence": []
+    },
+    {
+      "topic_id": "nvme_ssd_database_spec",
+      "description": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for database(s).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions a dedicated database drive; storage is described generically plus an 8-drive RAID 5 array.",
+      "evidence": []
+    },
+    {
+      "topic_id": "hot_swap_bay_35_three_drives_spec",
+      "description": "Workstation must have one 3.5\" hot-swap bay for three drives.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions any hot-swap bay.",
+      "evidence": []
+    },
+    {
+      "topic_id": "hot_swap_bay_25_four_trays_spec",
+      "description": "Workstation must have one 2.5\" hot-swap bay with four removable trays.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions any hot-swap bay.",
+      "evidence": []
+    },
+    {
+      "topic_id": "hot_swap_bay_25_eight_trays_spec",
+      "description": "Workstation must have one 2.5\" hot-swap bay with eight removable trays.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions any hot-swap bay.",
+      "evidence": []
+    },
+    {
+      "topic_id": "usb_2_0_ten_port_hub_spec",
+      "description": "Workstation must have one 10-port USB 2.0 hub (USB-A).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 10-port USB 2.0 hub specifically.",
+      "evidence": []
+    },
+    {
+      "topic_id": "usb_3_0_four_port_hub_spec",
+      "description": "Workstation must have one 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 4-port USB 3.0 hub with this exact port mix.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_size_spec",
+      "description": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions chassis dimensions.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_open_525_bays_spec",
+      "description": "Workstation chassis must have 11 open 5.25\" bays.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions open 5.25\" bay count.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_fan_size_spec",
+      "description": "Workstation chassis must use 120mm fans.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions fan size.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_pci_expansion_slots_spec",
+      "description": "Workstation chassis must have 8 PCI chassis expansion slots.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions PCI chassis expansion slot count.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_aluminum_thickness_spec",
+      "description": "Workstation chassis must have 0.118in (3.00mm) aluminum thickness.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions chassis material thickness.",
+      "evidence": []
+    },
+    {
+      "topic_id": "chassis_finish_spec",
+      "description": "Workstation chassis must have a powder-coated black finish with black appointments.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions chassis finish or color.",
       "evidence": []
     }
   ]

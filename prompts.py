@@ -7,12 +7,19 @@ than the bidder, such as instructions to the contracting officer or
 the government evaluator, descriptions of how the government will
 conduct its evaluation, or obligations that only apply to the
 contractor after contract award rather than to the application
-itself. Only extract text that imposes something checkable on the
-bidder's application. Do not extract a sentence whose only role is to
-define a term used elsewhere (for example "Domestic end product
-means..." in a definitions section) as its own requirement — such
-definitions impose no independent action on the bidder; they only
-help interpret whichever other requirement actually relies on them.
+itself. Judge whether text is a requirement by its meaning, never by
+scanning for words like "must" or "shall": extract it if it states
+something checkable that the bidder's application or offered product
+needs to satisfy, regardless of grammatical mood, sentence form, or
+how neighboring text in the same sentence, list, or section happens
+to be phrased. A plain declarative statement, or one entry in a list
+of specifications where only some other entries contain "must", is
+just as much a requirement as an explicit "shall" clause, as long as
+it describes something checkable. Conversely, text with no checkable
+content of its own is never a requirement no matter how it reads --
+this covers a definition of a term used elsewhere ("X means...") and
+a bare reference to another clause by number and title alone with no
+substantive text attached.
 
 For each requirement, return its exact verbatim text as it appears
 in the chunk below, as two parts:
@@ -37,21 +44,29 @@ Do not extract a sentence whose only role is to introduce or refer to
 a list of other requirements (for example "Offers shall submit the
 following information:") — extract the individual items of that list
 instead, not the sentence that introduces them, UNLESS the items are
-inseparable parts of one form or certification that is filled out or
-signed as a single whole, with no independent pass/fail meaning of
-its own per item (for example, the blank fields of one certification
-block, or the sub-paragraphs of one certificate a bidder signs once).
-In that case extract the whole thing as a single requirement instead
-of one requirement per item.
+inseparable parts of one overall determination with no independent
+pass/fail meaning of its own per item — for example, the blank
+fields of one certification block a bidder signs once, or the
+scenario-by-scenario sub-paragraphs of a single regulatory clause
+that only describe how to compute one overall figure or
+determination differently depending on contract type (a bidder does
+not pass or fail each sub-paragraph separately; only the overall
+determination matters). In that case extract the whole thing as a
+single requirement instead of one requirement per item.
 
 For each requirement, also decide whether it is mandatory. Mark it
 mandatory if the text uses language such as "shall", "must", "is
 required to", or "NO EXCEPTIONS". Mark it not mandatory if the text
 explicitly frames it as encouraged, recommended, or optional, such
-as "is urged to", "is encouraged to", or "preferably". Do not
-extract purely encouraged/optional language as a requirement unless
-it still imposes some concrete, checkable expectation on the
-bidder.
+as "is urged to", "is encouraged to", or "preferably" -- or if its
+applicability is itself conditional on a fact about the bidder that
+may or may not hold (for example "if applicable", "if vendor is an
+FSS contract holder", "in any case an amendment was posted"). Text
+like that still uses "must" or "shall", but the obligation only
+exists for some bidders, so mark it not mandatory rather than
+unconditionally mandatory. Do not extract purely encouraged/optional
+language as a requirement unless it still imposes some concrete,
+checkable expectation on the bidder.
 
 For each requirement, also decide whether it is verifiable from the
 application's text alone: whether a reader could confirm the
@@ -112,6 +127,17 @@ Decide one of the following verdicts:
   information to decide either way.
 - contradictory: the excerpts contain statements that conflict with
   each other regarding this requirement.
+
+If the requirement is explicitly conditional (for example "if
+applicable", "if any", "in any case X was posted") and the excerpts
+never establish whether the triggering condition applies to this
+bidder at all, do not conclude non_compliant merely because the
+excerpts are silent about it -- silence about an unconfirmed
+condition is not evidence that the condition applies. Prefer
+insufficient_information, or compliant if the silence is exactly
+what "the condition never applied" would look like; reserve
+non_compliant for cases where the excerpts show the condition did
+apply and the bidder failed to act on it.
 
 For every excerpt you rely on, quote it verbatim and label whether
 it supports, contradicts, or is inconclusive with respect to the

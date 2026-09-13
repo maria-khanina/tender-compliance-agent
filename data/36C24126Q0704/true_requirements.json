@@ -1,0 +1,573 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "This case is a SERVICES acquisition (one-time water tower inspection, cleaning, and repair for the Manchester VA Medical Center), evaluated on a 5-factor best-value tradeoff (Technical Capability, Experience & Past Performance, Key Personnel Qualifications, Safety & Compliance Plan, Price) with a tiered SDVOSB -> VOSB -> Small Business award sequence -- a structurally different genre from the brand-name(-or-equal) commercial-PRODUCT / LPTA cases elsewhere in this corpus.",
+    "PIPELINE INPUT NOTE: the real solicitation ('36C24126Q0704.docx', 143K extracted characters) is far larger and structurally more complex than any other case in this corpus, dominated by an SCA wage determination and an unusually long run of full-text security/sanctions clauses (FASCSA, Kaspersky, TikTok, Sudan, Iran, DEI, sustainable products) plus a tiered SDVOSB->VOSB->Small Business award-sequence mechanic. Per an explicit project decision to keep this case's difficulty in line with the rest of the corpus, this fixture's source.document_path points instead at a hand-condensed derivative, '36C24126Q0704_condensed.txt', assembled by concatenating verbatim excerpts of the real document (no paraphrasing or added text) while dropping the sections listed in the notes below. This is not a fixture-only simplification: '36C24126Q0704_condensed.txt', not the original .docx files, is what must be passed to the pipeline via --requirements so that the LLM extraction step sees the same reduced scope this fixture measures -- passing the full .docx instead would let the model legitimately extract real requirement-shaped content (the SOW task checklist, personnel-qualification duplicates, individual security representations, the tiered award sequence) that this fixture does not credit, understating precision for reasons that have nothing to do with extraction quality. The original '36C24126Q0704.docx' remains in this directory only for provenance/reference (see note below on the now-removed '36C24126Q0704+0001.docx').",
+    "Deliberately simplified per project decision: the tiered SDVOSB/VOSB/Small Business award-sequence mechanic (Factor 5, Tier Review Process) is dropped from the condensed document entirely (not merely unscored) -- sdvosb_setaside_eligibility captures only the underlying SDVOSB eligibility representation, matching how comparable eligibility facts (e.g. SAM registration) are handled elsewhere in this corpus.",
+    "Deliberately simplified per project decision: Section E.4 (52.240-90) bundles several distinct standing representations triggered automatically by submitting an offer -- covered telecommunications equipment/services, FASCSA orders, Sudan restricted business operations, and Iran sensitive-technology/sanctions representations. The condensed document keeps only the FASCSA and Sudan paragraphs (with a short clause header) and drops the covered-telecommunications and Iran paragraphs and all of the clause's lengthy defined-terms section; security_sanctions_representations is sourced from the two paragraphs that remain, and is_text_verifiable: false throughout since none of these are things the offeror drafts content around -- they are automatic legal consequences of submission.",
+    "Deliberately excluded from the condensed document entirely: Section C's DEI-discrimination (52.222-90), Sustainable Products (52.223-23), Security Prohibitions and Exclusions (52.240-91) clauses, and the Section D.1 Service Contract Act wage determination -- all are contract-performance obligations or pay-rate tables that apply after award, not something the offeror states or represents in its quote, so none is a source for any topic and none should be visible to the extraction step.",
+    "Deliberately excluded from the condensed document entirely: the SOW's 'Contractor shall inspect the site before bidding' clause (B.3.3.1) allocates risk for undiscovered site conditions but does not instruct the offeror to state or submit anything, so there is nothing text-verifiable to check in the quote.",
+    "Deliberately excluded from the condensed document entirely: the Item 1 (a)-(l) lettered inspection/cleaning task list (B.3.3.1) and the Additional Performance Requirements / Deliverables lists (B.3.4-B.3.5) describe contract-performance obligations after award, not offer-time submission content -- the offer-time technical submission is instead governed by Factor 1's 'Provide documentation/methodology' bullets in Section E.2, which is what technical_capability_submission and rov_technical_specifications and structural_defect_capability_evidence are sourced from.",
+    "The condensed document also drops the ADDENDUM to FAR 52.212-1 boilerplate paragraph (it lists no case-specific addenda), Section E.5's incorporated-by-reference FAR citation table, and the repeated Contract Period/POP/NAICS/PSC metadata block that appears four times per CLIN in the real price schedule table (a docx table-extraction artifact) -- the condensed price schedule keeps one instance of each CLIN row and its per-item reference note.",
+    "'36C24126Q0704.docx' (the real, full solicitation) superseded the earlier '36C24126Q0704+0001.docx' in this same case directory -- that file was just a continuation-page excerpt containing only the B.2 price schedule and the D.1 wage determination, both of which are also present in the fuller document; it has since been removed from the directory as redundant. Neither the full .docx nor the removed +0001.docx is used as the pipeline input or as a source for any requirement here; only 36C24126Q0704_condensed.txt is."
+  ],
+  "requirements": [
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "A statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+        "spans": [
+          {
+            "start_char": 4309,
+            "end_char": 4460
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "ACKNOWLEDGMENT OF AMENDMENTS:  The offeror acknowledges receipt of amendments to the Solicitation numbered and dated as follows:\nAMENDMENT NO | DATE",
+        "spans": [
+          {
+            "start_char": 1122,
+            "end_char": 1270
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in unit price, amount, and grand total for CLIN 0001 (inspection & cleaning, firm-fixed job price), CLIN 0002 (80-hour labor repair allowance, hourly rate), and CLIN 0003 (materials & parts allowance, firm-fixed job price), each bid as a separate line item.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "0001 |  | 1.00 | JB | __________________ | __________________ ... 0002 |  | 80.00 | HR | __________________ | __________________ ... 0003 |  | 1.00 | JB | __________________ | __________________ ...  |  |  |  | GRAND TOTAL | __________________",
+        "spans": [
+          {
+            "start_char": 1412,
+            "end_char": 1473
+          },
+          {
+            "start_char": 1526,
+            "end_char": 1588
+          },
+          {
+            "start_char": 1755,
+            "end_char": 1816
+          },
+          {
+            "start_char": 2011,
+            "end_char": 2055
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Pursuant to 38 U.S.C. 8127(e), only certified SDVOSBs listed in the SBA certification database are considered eligible to receive award of a resulting contract. By submitting an offer, the prospective contractor represents that it is an eligible and certified SDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+        "spans": [
+          {
+            "start_char": 12750,
+            "end_char": 13094
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Offers are due September 18, 2026, at 3:00 PM EST.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "RFQ DUE 18 SEP  2026, 3 PM EST.",
+        "spans": [
+          {
+            "start_char": 14218,
+            "end_char": 14249
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "rov_technical_specifications",
+      "description": "Quote must include technical specifications and procedures for ROV (remotely operated vehicle) use in submerged surface inspections.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "• Provide technical specifications and procedures for ROV use in submerged surface inspections.",
+        "spans": [
+          {
+            "start_char": 8448,
+            "end_char": 8543
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "structural_defect_capability_evidence",
+      "description": "Quote must include evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "• Provide evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+        "spans": [
+          {
+            "start_char": 8544,
+            "end_char": 8740
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "references_cpars_requirement",
+      "description": "Quote must include three references and/or three CPARS entries within the past 3 years.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "• Provide three references and/or three CPARS entries within the past 3 years",
+        "spans": [
+          {
+            "start_char": 9221,
+            "end_char": 9298
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "tool_ladder_access_safety_evidence",
+      "description": "Quote must include evidence of safety controls for tools, ladders, cages, and access systems.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "• Provide evidence of safety controls for tools, ladders, cages, and access systems.",
+        "spans": [
+          {
+            "start_char": 10332,
+            "end_char": 10416
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "offer_solicitation_number_stated",
+      "description": "Offer must state the solicitation number.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(1) The solicitation number;",
+        "spans": [
+          {
+            "start_char": 3774,
+            "end_char": 3802
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "offer_offeror_contact_info_stated",
+      "description": "Offer must state the name, address, and telephone number of the Offeror.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(2) The name, address, telephone number of the Offeror;",
+        "spans": [
+          {
+            "start_char": 3807,
+            "end_char": 3862
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "offer_uei_eft_indicator_stated",
+      "description": "Offer must state the Offeror's Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(3) The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator;",
+        "spans": [
+          {
+            "start_char": 3867,
+            "end_char": 3978
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "fascsa_representation",
+      "description": "By submission of its offer, the offeror must represent that it has conducted a reasonable inquiry and does not propose to provide or use any covered article prohibited by an applicable FASCSA order.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(d) FASCSA Representation. By submission of this offer, the offeror represents that it has conducted a reasonable inquiry, and that the offeror does not propose to provide or use in response to this solicitation any covered article, or any products or services produced or provided by a source, if the covered article or the source is prohibited by an applicable FASCSA order in effect on the date the solicitation was issued, except as waived by the solicitation, or as disclosed in paragraph (g).",
+        "spans": [
+          {
+            "start_char": 13210,
+            "end_char": 13708
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sudan_certification",
+      "description": "By submission of its offer, the offeror must certify, after conducting a reasonable inquiry, that it does not conduct any restricted business operations in Sudan.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(e) Sudan certification. By submission of its offer, the offeror certifies, after conducting a reasonable inquiry (that looks at any information in the offeror’s possession but does not need to include an internal or third-party audit), that the offeror does not conduct any restricted business operations in Sudan.",
+        "spans": [
+          {
+            "start_char": 13852,
+            "end_char": 14167
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_standards_compliance_documentation",
+      "description": "Offeror must provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+        "spans": [
+          {
+            "start_char": 8208,
+            "end_char": 8332
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "inspection_cleaning_methodology",
+      "description": "Offeror must provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+        "spans": [
+          {
+            "start_char": 8333,
+            "end_char": 8447
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "work_plans_operational_procedures",
+      "description": "Offeror must provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+        "spans": [
+          {
+            "start_char": 8741,
+            "end_char": 8841
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "osha_10_30_certifications",
+      "description": "Offeror must provide proof of OSHA 10 and OSHA 30 certifications for personnel.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide proof of OSHA 10 and OSHA 30 certifications.",
+        "spans": [
+          {
+            "start_char": 9366,
+            "end_char": 9420
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nh_water_operator_license_copy",
+      "description": "Offeror must provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+        "spans": [
+          {
+            "start_char": 9421,
+            "end_char": 9511
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "nhdes_standing_documentation",
+      "description": "Offeror must provide documentation confirming current standing with NHDES.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation confirming current standing with NHDES.",
+        "spans": [
+          {
+            "start_char": 9512,
+            "end_char": 9575
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_water_tower_contracts",
+      "description": "Offeror must provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+        "spans": [
+          {
+            "start_char": 8904,
+            "end_char": 9017
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_hospital_high_risk_environment",
+      "description": "Offeror must provide evidence of performance in hospital or other high-risk environments.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of performance in hospital or other high-risk environments.",
+        "spans": [
+          {
+            "start_char": 9018,
+            "end_char": 9096
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_quality_records",
+      "description": "Offeror must provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+        "spans": [
+          {
+            "start_char": 9097,
+            "end_char": 9220
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "coating_integrity_training_evidence",
+      "description": "Offeror must provide evidence of coating integrity assessment training.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of coating integrity assessment training.",
+        "spans": [
+          {
+            "start_char": 9707,
+            "end_char": 9767
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "healthcare_environmental_sanitation_training",
+      "description": "Offeror must provide documentation of Healthcare Environmental Sanitation training.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation of Healthcare Environmental Sanitation training.",
+        "spans": [
+          {
+            "start_char": 9768,
+            "end_char": 9840
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "structural_water_tower_inspection_experience",
+      "description": "Offeror must provide evidence of demonstrated experience in structural water tower inspections.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of demonstrated experience in structural water tower inspections.",
+        "spans": [
+          {
+            "start_char": 9841,
+            "end_char": 9925
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sds_management_procedures",
+      "description": "Offeror must provide procedures for SDS (Safety Data Sheet) management.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide procedures for SDS management.",
+        "spans": [
+          {
+            "start_char": 10142,
+            "end_char": 10182
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hospital_infection_control_compliance_documentation",
+      "description": "Offeror must provide documentation demonstrating compliance with hospital Infection Control requirements.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation demonstrating compliance with hospital Infection Control requirements.",
+        "spans": [
+          {
+            "start_char": 10183,
+            "end_char": 10277
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "hazard_communication_methodology",
+      "description": "Offeror must provide a defined hazard communication methodology.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a defined hazard communication methodology.",
+        "spans": [
+          {
+            "start_char": 10278,
+            "end_char": 10331
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "confined_space_entry_certification",
+      "description": "Offeror personnel must provide Confined Space Entry certification.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide Confined Space Entry certification.",
+        "spans": [
+          {
+            "start_char": 9576,
+            "end_char": 9621
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+      "description": "Offeror personnel must provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+        "spans": [
+          {
+            "start_char": 9622,
+            "end_char": 9706
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "confined_space_entry_plan",
+      "description": "Offeror must provide an OSHA-compliant Confined Space Entry plan.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide an OSHA-compliant Confined Space Entry plan.",
+        "spans": [
+          {
+            "start_char": 9983,
+            "end_char": 10037
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "lockout_tagout_procedures",
+      "description": "Offeror must provide equipment-specific Lockout/Tagout procedures.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide equipment-specific Lockout/Tagout procedures.",
+        "spans": [
+          {
+            "start_char": 10038,
+            "end_char": 10093
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "fall_protection_plan",
+      "description": "Offeror must provide a comprehensive fall protection plan.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a comprehensive fall protection plan.",
+        "spans": [
+          {
+            "start_char": 10094,
+            "end_char": 10141
+          }
+        ]
+      }
+    }
+  ]
+}

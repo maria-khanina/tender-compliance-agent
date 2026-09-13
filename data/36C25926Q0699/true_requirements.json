@@ -1,0 +1,290 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "This case is a one-time, firm-fixed-price SERVICES acquisition (de-installation and disposal of two retired GE INNOVA 4100-IQ imaging systems at the Salt Lake City VA), 100% set-aside for SDVOSBs, evaluated on 4 factors (Technical Capability, Price, Past Performance, VAAR 852.219-75 Limitations-on-Subcontracting certificate) -- no tiered award cascade, unlike the other two VA-services cases in this corpus.",
+    "PIPELINE INPUT NOTE: the real solicitation is split across 5 source files (cover synopsis, main Solicitation.docx, Statement of Work.docx, Quality Assurance Surveillance Program.docx, and the VAAR 852.219-75 subcontracting-certificate .docx) plus a Service Contract Act Wage Determination PDF. This fixture's source.document_path points at a hand-condensed derivative, '36C25926Q0699_condensed.txt', assembled by concatenating verbatim excerpts of the real documents (no paraphrasing or added text) -- this condensed file, not the original documents, is what must be passed to the pipeline via --requirements.",
+    "Deliberately excluded from the condensed document entirely: both long FAR/RFO and VAAR incorporated-by-reference clause tables in the Solicitation (bare clause number/title citations with no independent proposal content), the SOW's Hours of Work (5.0) and Coordination/Check-In (7.0) sections (site-access logistics, not proposal content), the SOW's Records Management clause (11.0, generic federal records-handling boilerplate that applies during performance, not to the proposal), and the Wage Determination PDF (645KB SCA labor-rate tables; also not machine-extractable -- the PDF's embedded font has no ToUnicode map, so standard text extraction returns glyph-index garbage, not readable text).",
+    "Deliberately merged into a single topic rather than two: personnel_qualifications_fse spans both SOW 6.1 ('shall be fully qualified') and 6.2 (what 'fully qualified' means) -- neither half has independent pass/fail meaning without the other.",
+    "sdvosb_certification_status, subcontracting_cap_representation, quote_due_date, and quote_submission_channel are is_text_verifiable: false -- SDVOSB database status and actual 50%-subcontracting-cap compliance cannot be confirmed by reading the application text alone (only by checking the SBA database or auditing subcontract payments), and the due date and submission channel are facts about the submission process, not something the application's content addresses.",
+    "Added after a first real pipeline run against this fixture surfaced it as an 'unexplained' predicted requirement the fixture had no counterpart for: quote_submission_channel. Confirms this corpus's usual pattern of process-of-submission requirements (channel/manner/timing) still belonging in true_requirements.json, just marked is_text_verifiable: false, per amendment_acknowledgment/submission_deadline in the water-tower case and quote_due_date above."
+  ],
+  "requirements": [
+    {
+      "topic_id": "rfq_completeness_signature",
+      "description": "The RFQ response must be completed in its entirety and be signed and dated; an incomplete, unsigned, or undated response will not be considered for award.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "This RFQ shall be completed in its entirety, and signed and dated, failure shall not be considered for award.",
+        "spans": [
+          {
+            "start_char": 1506,
+            "end_char": 1615
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_certification_status",
+      "description": "To be eligible for this 100% SDVOSB set-aside, the offeror's service-disabled veteran-owned small business status must be verified and visible in the SBA Small Business Certification database both at the time of quote submission and at award.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If the acquisition is set-aside for SDVOSBs/VOSBs, their socioeconomic status must be verified and visible in the SBA Small Business Certification (SBS):  https://search.certifications.sba.gov/ at the time of quote submission AND award, or will be considered non-responsive, and will NOT be considered for award.",
+        "spans": [
+          {
+            "start_char": 3125,
+            "end_char": 3437
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "gwac_mas_pricing_disclosure",
+      "description": "Offeror must state whether the quoted items are available and priced through an existing Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule (MAS), or VA-wide Acquisition Contract.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "State if quoted items are available and priced through offerors existing Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule (MAS) contract, or VA-wide Acquisition Contract.",
+        "spans": [
+          {
+            "start_char": 2930,
+            "end_char": 3124
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_narrative_sow_demonstration",
+      "description": "Volume I must demonstrate how the offeror's quote meets the Statement of Work and solicitation requirements, including testing plans, lab certifications, and alignment with the Quality Assurance Surveillance Plan (QASP).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall submit its quote demonstrating how it meets the requirements of the Statement of Work (SOW) and solicitation, to include the testing plans and lab certifications, (reference the SOW attachments) and Quality Assurance Surveillance Plan, QASP, (see QASP Attachment F).",
+        "spans": [
+          {
+            "start_char": 4871,
+            "end_char": 5155
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "icra_level_iv_plan",
+      "description": "The technical approach must establish and maintain an Infection Control Risk Assessment (ICRA) Level IV compliant work area around the Radiology room -- dust barriers and protective measures as directed by facility Infection Prevention/Safety staff, plus debris control, cleaning, and containment throughout the work.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Establish and maintain an Infection Control Risk Assessment (ICRA) Level IV compliant work area surrounding the Radiology room, including dust barriers and any required protective measures as directed by the facility Infection Prevention and/or Safety offices.\nImplement appropriate debris control, cleaning, and containment measures throughout de-installation and removal activities.",
+        "spans": [
+          {
+            "start_char": 14596,
+            "end_char": 14980
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "floor_restoration_approach",
+      "description": "The technical approach must address removing anchoring bolts/hardware from the floor, restoring the floor to a flush condition suitable for future construction, and removing all resulting trash and debris.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove all anchoring bolts or similar hardware from the floor related to the GE INNOVA 4100-IQ systems installation.\nRestore the floor surface to a “flush” condition (e.g., filling or covering bolt holes) suitable for subsequent construction or installation activities as directed by the COR.\nRemove all trash and debris generated by the removal activities and leave the area clean and free of dust and debris.",
+        "spans": [
+          {
+            "start_char": 15908,
+            "end_char": 16318
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "deliverables_field_service_report",
+      "description": "The offeror's approach must account for delivering a detailed field service report upon completion, at minimum covering equipment identification, dates/times on site, description of tasks performed, confirmation of the monitor arm's final disposition, and any issues encountered with corrective actions taken.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:\nEquipment identification (e.g., device name, model, serial number, VA EE number if applicable).\nDate(s) and time(s) on site.\nDescription of tasks performed (disassembly, removal, transport, disposal, floor restoration, clean-up, etc.).\nConfirmation of whether the ceiling-mounted monitor arm and monitor were removed or retained and their final disposition.\nAny issues encountered and corrective actions taken.",
+        "spans": [
+          {
+            "start_char": 17535,
+            "end_char": 18026
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "personnel_qualifications_fse",
+      "description": "All Field Service Engineers performing the work must be fully qualified: formally trained (OEM or equivalent) in imaging-system de-installation and related tasks, and with at least two years of field experience maintaining or de-installing comparable imaging systems.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "All Field Service Engineers (FSEs) performing work under this PWS shall be fully qualified and authorized by the contractor to perform de-installation and removal of the GE INNOVA 4100-IQ systems or similar imaging systems. ... “Fully qualified” FSEs shall:\nHave successfully completed formal OEM or equivalent training for imaging system de-installation and related tasks; and\nHave at least two (2) years of field experience with scheduled and unscheduled maintenance or de-installation of comparable imaging systems (except for equipment newly introduced to the market).",
+        "spans": [
+          {
+            "start_char": 18298,
+            "end_char": 18521
+          },
+          {
+            "start_char": 18526,
+            "end_char": 18870
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "safety_ppe_bloodborne_pathogens",
+      "description": "The contractor's approach must comply with the OSHA Bloodborne Pathogens Standard: educating employees on risks, implementing exposure-reduction policies/procedures, providing counseling/treatment mechanisms after potential exposure, and providing/enforcing PPE use.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including:\nEducating employees on risks;\nImplementing policies and procedures to reduce exposure;\nProviding mechanisms for counseling and treatment following potential exposure;\nProviding and enforcing use of personal protective equipment (PPE).",
+        "spans": [
+          {
+            "start_char": 19316,
+            "end_char": 19634
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offeror must complete the pricing schedule (price the base year line item, plus any option year line items) as part of Volume II.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall complete the pricing schedule provided in Section (v) above: Price/Cost Schedule. The offeror shall price the base and all option year line items. The offeror can add more line items as deemed necessary.",
+        "spans": [
+          {
+            "start_char": 5174,
+            "end_char": 5395
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_two_references",
+      "description": "Offeror must provide up to two recent and relevant past performance references, each including contract number, award amount, POC contact information, and a description of the work performed and how well it was performed.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror must provide up to two recent and relevant past performance references attesting to contract performance (including contract numbers, amount of contract award, point of contact with email address, telephone numbers and other relevant information, and a description of product/work performed under the contract and how well they performed).",
+        "spans": [
+          {
+            "start_char": 5426,
+            "end_char": 5773
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_questionnaire_ppq",
+      "description": "Offeror must provide completed Past Performance Questionnaires (PPQ) signed by the point of contact who oversaw performance (or an equal representative), submitted either by the offeror with its proposal or directly by the third party by the proposal deadline.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror shall provide completed Past Performance Questionnaires (PPQ) from prior contracts and it shall be signed by point of contact that oversaw performance or equal representative. See attachment Past Performance Questionnaire. Submissions of the PPQ can be sent directly to the Government POC, jacqueline.obryan@va.gov  from the offeror as part of proposal submission or directly from third party, with the solicitation number in the subject line, by the proposal deadline.",
+        "spans": [
+          {
+            "start_char": 6475,
+            "end_char": 6952
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontracting_certificate_completion",
+      "description": "Offeror must complete VAAR 852.219-75 VA Notice of Limitations on Subcontracting -- Certificate of Compliance for Services and Construction, as Volume IV of the quote.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall complete the provision VAAR 852-219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction.",
+        "spans": [
+          {
+            "start_char": 7083,
+            "end_char": 7241
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontractor_disclosure_statement",
+      "description": "Offeror must list any/all subcontractors it will use (with their size standard under NAICS 541380) and what they will perform, and explain how it will comply with the limitations on subcontracting -- or state that no subcontractors will be used.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror must list any/all subcontractors (and their size standard IAW NAICS 541380 if they will be utilized for this requirement AND what they will be performing. How is your firm going to comply with Limitations on Subcontracting requirements? If no subcontractors will be used, please state “No Subcontractors will be used for this requirement” in the response.",
+        "spans": [
+          {
+            "start_char": 7242,
+            "end_char": 7605
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontracting_cap_representation",
+      "description": "By certifying compliance with the VAAR 852.219-75 clause for this services acquisition, the offeror represents it will not pay more than 50% of the amount paid by the Government to firms that are not certified SDVOSBs/VOSBs.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "(i) [ ] Services. In the case of a contract for services (except construction), the contractor will not pay more than 50% of the amount paid by the government to it to firms that are not certified SDVOSBs listed in the SBA certification database as set forth in 852.219-73 or certified VOSBs listed in the SBA certification database as set forth in 852.219-74. Any work that a similarly situated certified SDVOSB/VOSB subcontractor further subcontracts will count towards the 50% subcontract amount that cannot be exceeded. Other direct costs may be excluded to the extent they are not the principal purpose of the acquisition and small business concerns do not provide the service as set forth in 13 CFR 125.6.",
+        "spans": [
+          {
+            "start_char": 22207,
+            "end_char": 22918
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Quotes are due to the Contract Specialist by 10:00 AM MT, July 7, 2026.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Date and Time offers are due to Charles.morton@va.gov by 10:00 AM MT, July 7, 2026.",
+        "spans": [
+          {
+            "start_char": 12095,
+            "end_char": 12178
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_submission_channel",
+      "description": "Quotes must be submitted by email only (4MB limit); hand-carried and faxed quotes are not accepted.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Quotes shall not be hand carried. Faxed quotes shall not be accepted. Emailed quotes are the only method of submitted quotes (4MB email limit).",
+        "spans": [
+          {
+            "start_char": 1096,
+            "end_char": 1239
+          }
+        ]
+      }
+    }
+  ]
+}
