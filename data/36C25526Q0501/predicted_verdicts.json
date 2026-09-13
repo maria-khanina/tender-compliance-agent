@@ -1,0 +1,934 @@
+[
+  {
+    "requirement_id": "b1e17083-c95e-4e2e-9181-6b5945246c4c",
+    "requirement_text": "Invoices shall be submitted in arrears:\n    a.  Quarterly []\n    b.  Semi-Annually []\n    c.  Other [X]  Monthly, in arrears",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+        "start_char": 319,
+        "end_char": 472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they agree to all terms and conditions of the solicitation, which implies they accept the invoicing requirement. However, the provided excerpts do not contain a specific statement or document confirming the bidder's chosen invoicing frequency (monthly) or explicitly acknowledging the requirement to submit invoices in arrears."
+  },
+  {
+    "requirement_id": "bd22036a-2d08-4643-8b92-c55ead8c2a77",
+    "requirement_text": "The offeror must acknowledge receipt of all solicitation amendments, including the amendment number and date.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "No amendments to this solicitation have been received as of the date of this\nquote.",
+        "start_char": 474,
+        "end_char": 557,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for acknowledgment of all solicitation amendments. The bidder explicitly stated that no amendments were received, which serves as an acknowledgment that there are no amendments to list or provide dates for."
+  },
+  {
+    "requirement_id": "ee676aa0-0fb5-427a-b901-5bfded1a069f",
+    "requirement_text": "For each submitted past performance contract, provide the contract name and contract ID number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 1706,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided both the contract name and the contract ID number for each of the two past performance contracts listed in the application, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "eb389c31-4dfa-47ee-9933-83e378fde584",
+    "requirement_text": "For each submitted past performance contract, provide the name of the contracting agency or organization that awarded the contract.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 1706,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.\n2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor. Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+        "start_char": 2348,
+        "end_char": 3030,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The bidder provided two past performance contracts in section [1] that include the awarding agency. However, in section [2], the bidder lists two additional 'Technical Experience Examples' as past performance, but fails to provide the name of the contracting agency or organization that awarded those specific contracts, thereby failing to meet the requirement for all submitted past performance contracts."
+  },
+  {
+    "requirement_id": "8909a4d4-309a-40cb-889f-676122d2688b",
+    "requirement_text": "For each submitted past performance contract, provide the date of the contract award and the contract award amount in dollars.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000.",
+        "start_char": 1706,
+        "end_char": 1877,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500.",
+        "start_char": 2027,
+        "end_char": 2187,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided two past performance contracts, and for each, they explicitly included the date of the contract award (03/2022 and 06/2021) and the contract award amount in dollars ($62,000 and $41,500), satisfying the requirement."
+  },
+  {
+    "requirement_id": "a2fa4320-2fc6-4447-8744-1e476de5a2d0",
+    "requirement_text": "For each submitted past performance contract, provide a brief description of the contract scope of work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance.",
+        "start_char": 1706,
+        "end_char": 1943,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing.",
+        "start_char": 2027,
+        "end_char": 2240,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided a list of past performance contracts and explicitly included a 'Scope' description for each of the two contracts listed, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "731921c2-2736-4a1b-bad5-fb49584de052",
+    "requirement_text": "For each submitted past performance contract, provide the name, current mailing address, phone number, and email address of at least one point-of-contact at the awarding organization.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.",
+        "start_char": 1706,
+        "end_char": 2026,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 2027,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates that for each past performance contract, the bidder must provide the name, current mailing address, phone number, and email address of at least one point-of-contact. While the bidder provided the name, phone number, and email address for the points-of-contact for both listed contracts, they failed to provide the current mailing address for either point-of-contact."
+  },
+  {
+    "requirement_id": "73f8fdff-9d5a-47f0-8127-3934406446b2",
+    "requirement_text": "For each submitted Technical Experience contract, provide the name and location of the contract.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. ... 2. Olathe Medical Center, Olathe, KS.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided two technical experience examples, both of which explicitly include the name of the facility and its location (city and state), thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "c2f7556d-9b94-4903-86a0-7ba5a9369eca",
+    "requirement_text": "For each submitted Technical Experience contract, provide the performance period, including the starting and completion dates.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 1706,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for the performance period, including starting and completion dates, for each submitted Technical Experience contract. While the bidder provided performance periods for the examples in chunk [2], they listed two additional 'Past Performance Contracts' in chunk [1] that only provide an award date, failing to provide the required completion dates or full performance periods for those specific contracts."
+  },
+  {
+    "requirement_id": "6aacb2ef-ff12-417c-818d-c386eff98eb6",
+    "requirement_text": "For each submitted Technical Experience contract, provide a brief description of the scope of work, explaining how the contract involved work as a prime contractor under the assigned NAICS Code.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.",
+        "start_char": 2502,
+        "end_char": 2683,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+        "start_char": 2856,
+        "end_char": 3030,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided two technical experience examples in chunk 2. For each example, they included a description of the scope of work and explicitly stated that they performed the work as a prime contractor under NAICS 221122, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "6924090e-1db7-43a6-b068-786d75e24221",
+    "requirement_text": "The offer must include the solicitation number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Solicitation Number: 36C25526Q0501",
+        "start_char": 139,
+        "end_char": 173,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly included the solicitation number '36C25526Q0501' in the header of their application, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "f96b20ee-4167-4739-9c6b-c1b9fc715b63",
+    "requirement_text": "The offer must include the name, address, and telephone number of the Offeror.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC\n4820 Industrial Parkway\nKansas City, MO 64120\n(816) 555-2290",
+        "start_char": 175,
+        "end_char": 278,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided their full company name, physical address, and telephone number in the header of their proposal, which satisfies the requirement."
+  },
+  {
+    "requirement_id": "7659eb30-37ef-4fc9-aa3d-1892d555cb8e",
+    "requirement_text": "The offer must include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Technical Capabilities:\nHeartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients. Our technical approach follows NETA Maintenance Testing\nSpecifications for infrared scanning, breaker trip testing, ground fault\nprotection testing, and transformer oil sampling, using calibrated\ndiagnostic equipment and a documented verification checklist at each stage\nof the process.",
+        "start_char": 891,
+        "end_char": 1368,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center...",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing...",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder has provided detailed information regarding their technical approach, relevant past experience, and specific past performance contracts. This information is sufficient to evaluate the bidder against standard solicitation evaluation factors such as technical capability and past performance."
+  },
+  {
+    "requirement_id": "86d3b008-8d90-414d-9fc0-ad6989ea5c6c",
+    "requirement_text": "For each year of prior experience, provide the contract number.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing, Contract No. SLH-2022-0447... 2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No. W9124J-21-C-0083",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder claims to have six years of prior experience, but only provides contract numbers for two specific projects. The requirement mandates providing a contract number for each year of prior experience, which would necessitate six contract numbers in this case."
+  },
+  {
+    "requirement_id": "f709f267-ff79-46a9-ad62-3b94b191d8db",
+    "requirement_text": "For each year of prior experience, provide the estimated annual dollar value of the contract.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement explicitly asks for the estimated annual dollar value for each year of prior experience. The bidder states they have six years of experience but only provides contract values for two specific projects (St. Luke's and Fort Leavenworth). They failed to provide the estimated annual dollar value for each of the six years of experience as required."
+  },
+  {
+    "requirement_id": "f6787a8f-b71f-4d54-9382-3ec3fb826525",
+    "requirement_text": "For each year of prior experience, provide a description of services (including location) and the offeror’s level of responsibility and authority on the project.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.\n2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor. Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+        "start_char": 2348,
+        "end_char": 3030,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement explicitly asks for a description of services for 'each year of prior experience'. The bidder claims to have six years of experience but only provides project descriptions for four specific contracts (two in chunk 2 and two in chunk 1), covering only a small portion of the six-year period. Therefore, the bidder failed to provide the required information for each year of experience."
+  },
+  {
+    "requirement_id": "fa826f83-78e0-4c21-ba45-def90962f54e",
+    "requirement_text": "For each year of prior experience, provide the date of contract start and completion.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 1706,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for the date of contract start and completion for each year of prior experience. While the bidder provided performance periods for some examples in chunk 2, the examples provided in chunk 1 (St. Luke's and Fort Leavenworth) only provide an 'awarded' date and fail to provide a completion date. Because the bidder failed to provide the required completion dates for all listed prior experience, the application is non-compliant."
+  },
+  {
+    "requirement_id": "d77f6563-a1ad-48c3-a52e-f10c416f5035",
+    "requirement_text": "For each year of prior experience, provide the name, title, address, phone number, and email of the customer contact.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance period: 01/2021-03/2021. ... 2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder claims six years of experience and lists specific projects in chunks 1 and 2. However, the requirement mandates providing the name, title, address, phone number, and email of the customer contact for each year of prior experience. The bidder only provided contact information for two contracts (St. Luke's and Fort Leavenworth) and failed to provide any contact information for the Sedgwick County and Olathe Medical Center projects listed in chunk 2."
+  },
+  {
+    "requirement_id": "f1c7d8aa-539b-47c2-a57f-148d2f64a410",
+    "requirement_text": "The offeror must qualify as a small business concern under the size standard corresponding to the NAICS code assigned to the contract.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+        "start_char": 319,
+        "end_char": 472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder states they agree to the terms and conditions of the solicitation, but the provided excerpts do not contain a self-certification or documentation confirming that Heartland Electrical Testing Services, LLC qualifies as a small business concern under the specific NAICS code size standard required for this contract."
+  },
+  {
+    "requirement_id": "e7146dfa-0919-419a-9c25-e7059609179a",
+    "requirement_text": "Contractors shall have at least five (5) continuous years of technical training and work experience in the maintenance, inspection, and testing of low and medium voltage Electrical Power Distribution Systems in healthcare, industrial, educational, and commercial facilities.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients.",
+        "start_char": 915,
+        "end_char": 1081,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states they have over a decade of experience in the relevant field, which exceeds the requirement of at least five continuous years. They also confirm experience in the required facility types (healthcare and industrial)."
+  },
+  {
+    "requirement_id": "dfe4117b-f191-4359-839e-5ad553d05b5f",
+    "requirement_text": "Contractors shall provide at least three (3) previously awarded and completed contracts issued by Federal, State, or Local Government Agencies involving work similar to the requirements of this solicitation.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   SLH-2022-0447, awarded by St. Luke's Health System, awarded 03/2022,\n   contract value $62,000. Scope: annual electrical distribution testing\n   and maintenance. POC: Janet Cole, Facilities Director, (816) 555-7712,\n   janet.cole@stlukeskc.org.\n2. Contract: Fort Leavenworth Commissary Electrical Testing, Contract No.\n   W9124J-21-C-0083, awarded by U.S. Army, awarded 06/2021, contract value\n   $41,500. Scope: triennial switchgear and transformer testing. POC: Mark\n   Reyes, Facility Manager, (913) 555-3301, mark.reyes@army.mil.",
+        "start_char": 1706,
+        "end_char": 2315,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.\n2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor. Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+        "start_char": 2348,
+        "end_char": 3030,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates at least three contracts issued by Federal, State, or Local Government Agencies. The bidder provided four examples, but only one (Fort Leavenworth Commissary, awarded by the U.S. Army) is clearly a government contract. The Sedgwick County Adult Detention Facility is a government facility, but the bidder does not explicitly state it was a contract awarded by a government agency (it could be a subcontract). St. Luke's Hospital and Olathe Medical Center are private entities. Therefore, the bidder has failed to demonstrate three government-awarded contracts."
+  },
+  {
+    "requirement_id": "a8faf11b-0e1c-4b85-916d-655654190a0c",
+    "requirement_text": "Contractors shall provide evidence of their technical qualifications and experience required to meet the technical performance requirements of this solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Technical Experience Examples: 1. Sedgwick County Adult Detention Facility, Wichita, KS... Scope: NETA-standard testing of switchgear, transformers, and circuit breakers... 2. Olathe Medical Center, Olathe, KS... Scope: NETA-standard testing of the emergency power distribution system",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Past Performance Contracts: 1. Contract: St. Luke's Hospital Electrical System Testing... 2. Contract: Fort Leavenworth Commissary Electrical Testing... Scope: triennial switchgear and transformer testing.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided multiple specific examples of past contracts and technical experience that demonstrate their capability to perform NETA-standard electrical testing, which aligns with the technical performance requirements of the solicitation."
+  },
+  {
+    "requirement_id": "10b0c38e-33fe-4d78-a5f3-35383bf5d78f",
+    "requirement_text": "Offerors must submit no less than two (2) examples of their technical experience with contracts that involved technical requirements similar to the requirements of this solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122, technically\n   similar to the work under this solicitation.",
+        "start_char": 2348,
+        "end_char": 2683,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor. Scope: NETA-standard testing of the emergency\n   power distribution system as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+        "start_char": 2684,
+        "end_char": 3030,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for no less than two examples of technical experience with contracts involving similar requirements. The bidder provided two specific examples of NETA-standard testing contracts that they explicitly state are technically similar to the solicitation requirements."
+  },
+  {
+    "requirement_id": "71010335-0de1-4152-84f0-01cc3b1f79e0",
+    "requirement_text": "Contractors shall provide evidence of subcontractors’ technical qualifications and experience needed to meet the technical performance requirements of this solicitation, if applicable.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor.",
+        "start_char": 2762,
+        "end_char": 2855,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for evidence of subcontractors' qualifications 'if applicable'. The bidder's application indicates that they do utilize a subcontractor for a portion of their work (10% in the Olathe Medical Center example). While the bidder mentions the subcontractor is 'licensed', they do not provide specific technical qualifications or experience for that subcontractor. However, since the requirement is conditional ('if applicable') and the bidder self-performs the vast majority of their work (90-100%), the provided information is sufficient to demonstrate their approach to subcontracting, and the lack of detailed subcontractor resumes does not constitute a failure to meet the requirement given the minimal reliance on subcontractors."
+  },
+  {
+    "requirement_id": "72b334ca-3f53-4aed-a078-3cfd7c755be5",
+    "requirement_text": "Training certifications or a written certification from the contractor's employer confirming the training requirement has been met must be submitted to the VA Contracting Officer with the proposal.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "current training certifications are enclosed with this\nproposal.",
+        "start_char": 3223,
+        "end_char": 3287,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Certification records for our field technicians are maintained in our\ninternal training management system and are available upon request rather\nthan included in this proposal package.",
+        "start_char": 3289,
+        "end_char": 3472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The bidder provides two conflicting statements regarding the submission of training certifications. In the same document, they claim that certifications are enclosed with the proposal, but subsequently state that they are not included and are only available upon request."
+  },
+  {
+    "requirement_id": "bbe347e2-98f3-400d-a928-46c8a2be82d0",
+    "requirement_text": "Offeror shall provide at least five (5) years of prior experience as the Prime Contractor for Waste Removal Services.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122",
+        "start_char": 2502,
+        "end_char": 2622,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years.",
+        "start_char": 1388,
+        "end_char": 1564,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that the offeror must have at least five years of experience as a Prime Contractor for 'Waste Removal Services'. The bidder's application documents experience in 'electrical power distribution testing and maintenance services' and 'NETA-standard testing'. There is no evidence provided that the bidder has any experience in Waste Removal Services, let alone five years of experience as a Prime Contractor in that specific field."
+  },
+  {
+    "requirement_id": "e7939d10-58da-44bb-a962-5c5d1494f456",
+    "requirement_text": "For each submitted Technical Experience contract, the offeror must provide the percentage of total labor self-performed by the offeror’s employees.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees.",
+        "start_char": 2348,
+        "end_char": 2501,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor.",
+        "start_char": 2684,
+        "end_char": 2855,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided two technical experience examples and explicitly stated the percentage of labor self-performed by their employees for both contracts (100% and 90% respectively), thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "9256eb43-e8f5-4ac7-940e-8a9f408343f8",
+    "requirement_text": "As a minimum, offers shall \ninclude— ... The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer \n(EFT) indicator",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Unique Entity Identifier: JN6P8QW3RT52",
+        "start_char": 279,
+        "end_char": 317,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided their Unique Entity Identifier (UEI) as required. The requirement for an EFT indicator is conditional ('if applicable'), and the absence of one in the application is not evidence of non-compliance as it is not established that an EFT indicator is applicable to this bidder."
+  },
+  {
+    "requirement_id": "d249e03c-2c7a-4028-a5a4-e904b29f96ed",
+    "requirement_text": "As a minimum, offers shall \ninclude— ... Responses to provisions that require Offeror completion of information, representations, \nand certifications (other than those collected via the System for Award Management (SAM))",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+        "start_char": 319,
+        "end_char": 472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates that the offeror complete all provisions requiring information, representations, and certifications. While the bidder states they agree to all terms and conditions, the provided excerpts do not include the full solicitation document or the specific provisions that required completion. Therefore, it is impossible to verify if the bidder successfully completed all necessary representations and certifications beyond the general statement of agreement."
+  },
+  {
+    "requirement_id": "8ba43a13-734b-4879-8f60-5c213491be6e",
+    "requirement_text": "As a minimum, offers shall \ninclude— ... A statement specifying the extent of agreement with all terms, conditions, and provisions \nincluded in the solicitation and any solicitation amendments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+        "start_char": 319,
+        "end_char": 472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provided a statement confirming their agreement with all terms, conditions, and provisions included in the solicitation and any amendments, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "2f788c82-bfc4-4414-bdcb-1b86ba96556e",
+    "requirement_text": "All questions regarding the solicitation must be submitted via email to James.horne@va.gov no later than 10:00 a.m. central time on 9/15/26.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "From: bids@heartlandelectricaltesting.com\nTo: James.horne@va.gov\nSubject: 36C25526Q0501 - Quote for Electrical Power Distribution Testing",
+        "start_char": 0,
+        "end_char": 137,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement pertains to the submission of questions regarding the solicitation. While the bidder sent an email to the specified address, the content of that email was a quote submission, not a question regarding the solicitation. The provided excerpts do not indicate whether the bidder had any questions or if they submitted any questions via email by the specified deadline."
+  },
+  {
+    "requirement_id": "e2a71fa0-6a73-435a-a91e-35fa86cf6b6a",
+    "requirement_text": "All quotes must be submitted electronically via email to James.horne@va.gov.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "From: bids@heartlandelectricaltesting.com\nTo: James.horne@va.gov",
+        "start_char": 0,
+        "end_char": 64,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that quotes must be submitted electronically via email to James.horne@va.gov. The provided excerpt shows the email header indicating the quote was sent to the specified email address."
+  },
+  {
+    "requirement_id": "09e0c8cf-c228-41df-88a2-e8a49389f52e",
+    "requirement_text": "The proposal shall be prepared in two parts: a price response and a non-price response.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Price Response:\nSigned SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).\n\nPrice Schedule:\nCLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,\nand/or Calibration of the Electrical Power Distribution System at Truman VA,\nColumbia, MO: $58,400.00\nGrand Total: $58,400.00",
+        "start_char": 559,
+        "end_char": 868,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Non-Price Response:\n\nTechnical Capabilities:\nHeartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients.",
+        "start_char": 870,
+        "end_char": 1081,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly structured their proposal into two distinct sections labeled 'Price Response' and 'Non-Price Response', thereby satisfying the requirement to prepare the proposal in two parts."
+  },
+  {
+    "requirement_id": "b2073d5e-198b-4586-942d-138fdb8e954d",
+    "requirement_text": "The non-price response shall address the non-price factors.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Non-Price Response:\n\nTechnical Capabilities:\nHeartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients. Our technical approach follows NETA Maintenance Testing\nSpecifications for infrared scanning, breaker trip testing, ground fault\nprotection testing, and transformer oil sampling, using calibrated\ndiagnostic equipment and a documented verification checklist at each stage\nof the process.",
+        "start_char": 870,
+        "end_char": 1368,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Technical Experience Examples: 1. Sedgwick County Adult Detention Facility... 2. Olathe Medical Center... Electrical Safety Training: Heartland Electrical Testing Services' field technicians have completed electrical safety training in accordance with OSHA 29 CFR 1910 Subpart S and NFPA 70E",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Prior Experience:\nHeartland Electrical Testing Services has performed electrical power\ndistribution testing and maintenance services for healthcare and industrial\nclients for the past six years. Representative engagements include hospital\nelectrical infrastructure testing contracts in Missouri and Kansas.\n\nPast Performance Contracts:\n1. Contract: St. Luke's Hospital Electrical System Testing, Contract No.\n   ",
+        "start_char": 1370,
+        "end_char": 1782,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided a dedicated 'Non-Price Response' section that addresses technical capabilities, technical experience, electrical safety training, and past performance, thereby satisfying the requirement to address non-price factors."
+  },
+  {
+    "requirement_id": "1c596384-5d28-490e-84a0-50985978e35d",
+    "requirement_text": "The pricing response must include the signed Standard Form (SF) 1449, with blocks 17a, 17b, 30a, 30b, and 30c completed, and the completed price schedule(s). By signing the SF-1449, the Offeror agrees to the contract terms and conditions as written in the RFQ.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Signed SF-1449 is enclosed (blocks 17a, 17b, 30a, 30b, and 30c completed).",
+        "start_char": 575,
+        "end_char": 649,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Heartland Electrical Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any amendments.",
+        "start_char": 319,
+        "end_char": 472,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that the signed SF-1449 with the required blocks completed is enclosed and confirms agreement to the solicitation terms and conditions, satisfying the requirement."
+  },
+  {
+    "requirement_id": "d24e4f95-0df9-4447-ae9f-87ced5e53ad9",
+    "requirement_text": "Offer shall provide a letter fully describing their capabilities, not exceeding five pages, that includes a \ndescription of their technical approach, methodology, and technique used to carry out the Performance Work \nStatement.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "Technical Capabilities:\nHeartland Electrical Testing Services has over a decade of experience\nperforming NETA-standard electrical testing and maintenance for hospital and\nindustrial clients. Our technical approach follows NETA Maintenance Testing\nSpecifications for infrared scanning, breaker trip testing, ground fault\nprotection testing, and transformer oil sampling, using calibrated\ndiagnostic equipment and a documented verification checklist at each stage\nof the process.",
+        "start_char": 891,
+        "end_char": 1368,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement mandates a letter fully describing the bidder's capabilities, including a description of their technical approach, methodology, and technique used to carry out the Performance Work Statement. While the bidder provides a brief paragraph under 'Technical Capabilities', it does not constitute a comprehensive letter describing their capabilities and methodology in the context of the specific Performance Work Statement for this solicitation. The provided text is insufficient to meet the requirement of a full description of the approach and methodology for the specific work requested."
+  },
+  {
+    "requirement_id": "6673e0a8-e2ad-4fac-8e20-b2d9a19d270f",
+    "requirement_text": "Offerors shall not list any \nexperience for any of their subcontractors it is considering using; only the offeror’s prior experience will be \nconsidered.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "1. Sedgwick County Adult Detention Facility, Wichita, KS. Performance\n   period: 01/2021-03/2021. 100% of labor self-performed by Heartland\n   employees.",
+        "start_char": 2348,
+        "end_char": 2501,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "2. Olathe Medical Center, Olathe, KS. Performance period: 09/2020-11/2020.\n   90% of labor self-performed by Heartland employees, remainder by a\n   licensed subcontractor.",
+        "start_char": 2684,
+        "end_char": 2855,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offerors shall not list experience for subcontractors; only the offeror's experience is considered. In the provided examples, the bidder lists their own performance and explicitly notes the percentage of labor performed by their own employees. While one example mentions a subcontractor, the experience listed is that of the offeror (Heartland), and the subcontractor is mentioned only to clarify the labor breakdown of the offeror's own contract, not as a separate experience entry for the subcontractor."
+  },
+  {
+    "requirement_id": "88cc1f39-e808-47a6-91f1-e83a2773c70c",
+    "requirement_text": "The Offeror’s Price Quote must include a completed Price Schedule, with the Offeror providing their best pricing for each individual Contract Line Item listed in Section B for all specified pricing periods.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing, Inspection,\nand/or Calibration of the Electrical Power Distribution System at Truman VA,\nColumbia, MO: $58,400.00",
+        "start_char": 667,
+        "end_char": 844,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement mandates that the Offeror provide pricing for each individual Contract Line Item (CLIN) listed in Section B for all specified pricing periods. The bidder only provided a price for CLIN 0001. While the provided excerpt does not explicitly list the full contents of Section B, the singular entry provided suggests a failure to address all required line items or pricing periods if multiple were specified in the solicitation."
+  },
+  {
+    "requirement_id": "f59aa232-16d4-4b0b-ae10-fdeb8f29df5e",
+    "requirement_text": "The Offeror’s Price Quote shall contain the following items: ... Completed Acknowledgement of Amendments if issued.  Ensure amendments are signed by the same \nofficial that has been authorized to sign the SF 1449.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25526Q0501/application.txt",
+        "quote": "No amendments to this solicitation have been received as of the date of this\nquote.",
+        "start_char": 474,
+        "end_char": 557,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the bidder must include a completed Acknowledgement of Amendments if issued. The bidder explicitly stated that no amendments were received, which satisfies the requirement by confirming the condition for submission was not triggered."
+  }
+]

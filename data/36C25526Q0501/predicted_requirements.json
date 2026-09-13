@@ -1,0 +1,1217 @@
+[
+  {
+    "requirement_id": "b1e17083-c95e-4e2e-9181-6b5945246c4c",
+    "text": "Invoices shall be submitted in arrears:\n    a.  Quarterly []\n    b.  Semi-Annually []\n    c.  Other [X]  Monthly, in arrears",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Invoices shall be submitted in arrears:\n    a.  Quarterly []\n    b.  Semi-Annually []\n    c.  Other [X]  Monthly, in arrears",
+        "start_char": 679,
+        "end_char": 803,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f9323528-c204-487a-830d-be8ba32c4d45",
+    "text": "All Invoices from the contractor shall be submitted \nelectronically in accordance with VAAR Clause 852.232-72 Electronic Submission of Payment \nRequests.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "All Invoices from the contractor shall be submitted \nelectronically in accordance with VAAR Clause 852.232-72 Electronic Submission of Payment \nRequests.",
+        "start_char": 839,
+        "end_char": 992,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bd22036a-2d08-4643-8b92-c55ead8c2a77",
+    "text": "The offeror must acknowledge receipt of all solicitation amendments, including the amendment number and date.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The offeror acknowledges receipt of amendments \nto the Solicitation numbered and dated as follows:\nAMENDMENT NO DATE",
+        "start_char": 1026,
+        "end_char": 1142,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ee676aa0-0fb5-427a-b901-5bfded1a069f",
+    "text": "For each submitted past performance contract, provide the contract name and contract ID number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted past performance contract, provide the following \ninformation:",
+        "start_char": 2603,
+        "end_char": 2684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The name of the contract and the contract ID number.",
+        "start_char": 2688,
+        "end_char": 2740,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "eb389c31-4dfa-47ee-9933-83e378fde584",
+    "text": "For each submitted past performance contract, provide the name of the contracting agency or organization that awarded the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted past performance contract, provide the following \ninformation:",
+        "start_char": 2603,
+        "end_char": 2684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The name of the contracting agency or organization the contract \nwas awarded by.",
+        "start_char": 2744,
+        "end_char": 2824,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8909a4d4-309a-40cb-889f-676122d2688b",
+    "text": "For each submitted past performance contract, provide the date of the contract award and the contract award amount in dollars.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted past performance contract, provide the following \ninformation:",
+        "start_char": 2603,
+        "end_char": 2684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The date of the contract award and the contract award amount in \ndollars.",
+        "start_char": 2828,
+        "end_char": 2901,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a2fa4320-2fc6-4447-8744-1e476de5a2d0",
+    "text": "For each submitted past performance contract, provide a brief description of the contract scope of work.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted past performance contract, provide the following \ninformation:",
+        "start_char": 2603,
+        "end_char": 2684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A brief description of the contract scope of work",
+        "start_char": 2905,
+        "end_char": 2954,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "731921c2-2736-4a1b-bad5-fb49584de052",
+    "text": "For each submitted past performance contract, provide the name, current mailing address, phone number, and email address of at least one point-of-contact at the awarding organization.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted past performance contract, provide the following \ninformation:",
+        "start_char": 2603,
+        "end_char": 2684,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Identification of at least one point-of-contact at the organization \nthat awarded the contract, including: the name of the point-of-\ncontact, their current mailing address, phone number and email \naddre",
+        "start_char": 2963,
+        "end_char": 3165,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "73f8fdff-9d5a-47f0-8127-3934406446b2",
+    "text": "For each submitted Technical Experience contract, provide the name and location of the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 3528,
+        "end_char": 3613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The name and location of the contract.",
+        "start_char": 3617,
+        "end_char": 3655,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 4409,
+        "end_char": 4494,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The name and location of the contract.",
+        "start_char": 4498,
+        "end_char": 4536,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c2f7556d-9b94-4903-86a0-7ba5a9369eca",
+    "text": "For each submitted Technical Experience contract, provide the performance period, including the starting and completion dates.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 3528,
+        "end_char": 3613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The performance period, including the starting and completion \ndates.",
+        "start_char": 3659,
+        "end_char": 3728,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 4409,
+        "end_char": 4494,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The performance period, including the starting and completion \ndates.",
+        "start_char": 4540,
+        "end_char": 4609,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6aacb2ef-ff12-417c-818d-c386eff98eb6",
+    "text": "For each submitted Technical Experience contract, provide a brief description of the scope of work, explaining how the contract involved work as a prime contractor under the assigned NAICS Code.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 3528,
+        "end_char": 3613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A brief description of the scope of work, which explains how the \ncontract involved work as a prime contractor under NAICS Code",
+        "start_char": 3809,
+        "end_char": 3936,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 4409,
+        "end_char": 4494,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A brief description of the scope of work, which explains how the \ncontract involved work as ap prime contractor under NAICS Code",
+        "start_char": 4690,
+        "end_char": 4818,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6924090e-1db7-43a6-b068-786d75e24221",
+    "text": "The offer must include the solicitation number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The solicitation number",
+        "start_char": 5832,
+        "end_char": 5855,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f96b20ee-4167-4739-9c6b-c1b9fc715b63",
+    "text": "The offer must include the name, address, and telephone number of the Offeror.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The name, address, telephone number of the Offeror",
+        "start_char": 5865,
+        "end_char": 5915,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7659eb30-37ef-4fc9-aa3d-1892d555cb8e",
+    "text": "The offer must include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Information necessary to evaluate the factors contained in the provision at 52.212-2 or as \ndescribed in the solicitation",
+        "start_char": 6042,
+        "end_char": 6163,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "86d3b008-8d90-414d-9fc0-ad6989ea5c6c",
+    "text": "For each year of prior experience, provide the contract number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "To demonstrate prior experience, a detailed description submitted for each year shall include, \nat a minimum, the following information:",
+        "start_char": 8846,
+        "end_char": 8982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contract number",
+        "start_char": 8988,
+        "end_char": 9003,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f709f267-ff79-46a9-ad62-3b94b191d8db",
+    "text": "For each year of prior experience, provide the estimated annual dollar value of the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "To demonstrate prior experience, a detailed description submitted for each year shall include, \nat a minimum, the following information:",
+        "start_char": 8846,
+        "end_char": 8982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Estimated annual dollar value of contract",
+        "start_char": 9008,
+        "end_char": 9049,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f6787a8f-b71f-4d54-9382-3ec3fb826525",
+    "text": "For each year of prior experience, provide a description of services (including location) and the offeror’s level of responsibility and authority on the project.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "To demonstrate prior experience, a detailed description submitted for each year shall include, \nat a minimum, the following information:",
+        "start_char": 8846,
+        "end_char": 8982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Description of services (including location) provided and the offeror’s level of responsibility and \nauthority on the project.",
+        "start_char": 9055,
+        "end_char": 9181,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fa826f83-78e0-4c21-ba45-def90962f54e",
+    "text": "For each year of prior experience, provide the date of contract start and completion.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "To demonstrate prior experience, a detailed description submitted for each year shall include, \nat a minimum, the following information:",
+        "start_char": 8846,
+        "end_char": 8982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Date of contract start and completion.",
+        "start_char": 9186,
+        "end_char": 9224,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d77f6563-a1ad-48c3-a52e-f10c416f5035",
+    "text": "For each year of prior experience, provide the name, title, address, phone number, and email of the customer contact.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "To demonstrate prior experience, a detailed description submitted for each year shall include, \nat a minimum, the following information:",
+        "start_char": 8846,
+        "end_char": 8982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Name, title, address, phone number, and email of customer contact.",
+        "start_char": 9229,
+        "end_char": 9295,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f1c7d8aa-539b-47c2-a57f-148d2f64a410",
+    "text": "The offeror must qualify as a small business concern under the size standard corresponding to the NAICS code assigned to the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "the concern must qualify as a small business \nconcern under the size standard corresponding to the NAICS code assigned to the contract",
+        "start_char": 11458,
+        "end_char": 11592,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "13c785ca-7281-4cdf-81f0-9449112cdd4a",
+    "text": "Contractors shall be currently certified by either the InterNational Electrical \nTesting Association (NETA) as NETA Certified Technician or the National \nInstitute for Certification in Engineering Technologies (NICET)",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall be currently certified by either the InterNational Electrical \nTesting Association (NETA) as NETA Certified Technician or the National \nInstitute for Certification in Engineering Technologies (NICET)",
+        "start_char": 1677,
+        "end_char": 1894,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "69501b60-f41e-4a47-8cad-d7b02502ac4a",
+    "text": "ologies (NICET) and completed \nthe Occupational Safety & Health Administration (OSHA) approved 10-hour \nconstruction safety training. \nB.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "ologies (NICET) and completed \nthe Occupational Safety & Health Administration (OSHA) approved 10-hour \nconstruction safety training. \nB.",
+        "start_char": 1879,
+        "end_char": 2016,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e7146dfa-0919-419a-9c25-e7059609179a",
+    "text": "Contractors shall have at least five (5) continuous years of technical training and work experience in the maintenance, inspection, and testing of low and medium voltage Electrical Power Distribution Systems in healthcare, industrial, educational, and commercial facilities.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall have technical training and a history of work experience in \nmaintenance, inspection, and testing of the low and medium voltage Electrical \nPower Distribution Systems and its components in healthcare, industrial, \neducational, and commercial facilities for a minimum of five (5) continuous \nyears from the date of this solicitation.",
+        "start_char": 2017,
+        "end_char": 2367,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dfe4117b-f191-4359-839e-5ad553d05b5f",
+    "text": "Contractors shall provide at least three (3) previously awarded and completed contracts issued by Federal, State, or Local Government Agencies involving work similar to the requirements of this solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide at least three (3) previously awarded, and \ncompleted, contracts which were issued by Federal, State, or Local \nGovernment Agencies that involved work similar to the requirements of this \nsolicitation.",
+        "start_char": 2371,
+        "end_char": 2598,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a8faf11b-0e1c-4b85-916d-655654190a0c",
+    "text": "Contractors shall provide evidence of their technical qualifications and experience required to meet the technical performance requirements of this solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide evidence they have the technical qualifications and \nexperience needed to meet the technical performance requirements of this \nsolicitation.",
+        "start_char": 3172,
+        "end_char": 3338,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide evidence they have the technical qualifications and \nexperience needed to meet the technical performance requirements of this \nsolicitation.",
+        "start_char": 3172,
+        "end_char": 3338,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "10b0c38e-33fe-4d78-a5f3-35383bf5d78f",
+    "text": "Offerors must submit no less than two (2) examples of their technical experience with contracts that involved technical requirements similar to the requirements of this solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offerors must submit no less than two (2) examples of their \ntechnical experience with contracts that involved technical requirements \nsimilar to the requirements of this solicitation.",
+        "start_char": 3339,
+        "end_char": 3523,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offerors must submit no less than two (2) \nexamples of their technical experience with contracts that involved technical \nrequirements similar to the requirements of this solicitation.",
+        "start_char": 4220,
+        "end_char": 4404,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "71010335-0de1-4152-84f0-01cc3b1f79e0",
+    "text": "Contractors shall provide evidence of subcontractors’ technical qualifications and experience needed to meet the technical performance requirements of this solicitation, if applicable.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide evidence of subcontractors’ technical qualifications \nand experience needed to meet the technical performance requirements of \nthis solicitation, if applicable.",
+        "start_char": 4033,
+        "end_char": 4219,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "72b334ca-3f53-4aed-a078-3cfd7c755be5",
+    "text": "Training certifications or a written certification from the contractor's employer confirming the training requirement has been met must be submitted to the VA Contracting Officer with the proposal.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Training certifications shall \nbe submitted to the VA Contracting Officer with the proposal for this \nsolicitation.",
+        "start_char": 5175,
+        "end_char": 5290,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "If no training certifications are available, the contractor’s \nemployer shall certify that he/she has met this requirement in writing and \nsubmit it to the VA Contracting Officer with the proposal for this solicitation.",
+        "start_char": 5292,
+        "end_char": 5511,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bbe347e2-98f3-400d-a928-46c8a2be82d0",
+    "text": "Offeror shall provide at least five (5) years of prior experience as the Prime Contractor for Waste Removal Services.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offeror shall provide at least five (5) years of prior experience as the Prime Contractor Waste Removal \nServices.",
+        "start_char": 8519,
+        "end_char": 8633,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e7939d10-58da-44bb-a962-5c5d1494f456",
+    "text": "For each submitted Technical Experience contract, the offeror must provide the percentage of total labor self-performed by the offeror’s employees.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 3528,
+        "end_char": 3613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The percentage of total labor self-performed by the offeror’s \nemployees.",
+        "start_char": 3732,
+        "end_char": 3805,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "For each submitted Technical Experience contract, provide the following \ninformation:",
+        "start_char": 4409,
+        "end_char": 4494,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The percentage of total labor self-performed by the offeror’s \nemployees.",
+        "start_char": 4613,
+        "end_char": 4686,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "803791d6-a07e-43a2-a861-f1a474fce3d5",
+    "text": "Contractors shall have safety trainings – either on-the-job or class-room type \n– in electrical safety outlined in the OSHA Standard 29 Code of Federal \nRegulations (CFR) 1910 Subpart S – Electrical, and the NFPA 70E – \nStandard for Electrical Safety in the Workplace.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall have safety trainings – either on-the-job or class-room type \n– in electrical safety outlined in the OSHA Standard 29 Code of Federal \nRegulations (CFR) 1910 Subpart S – Electrical, and the NFPA 70E – \nStandard for Electrical Safety in the Workplace.",
+        "start_char": 4905,
+        "end_char": 5173,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9256eb43-e8f5-4ac7-940e-8a9f408343f8",
+    "text": "As a minimum, offers shall \ninclude— ... The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer \n(EFT) indicator",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer \n(EFT) indicator",
+        "start_char": 5925,
+        "end_char": 6032,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d249e03c-2c7a-4028-a5a4-e904b29f96ed",
+    "text": "As a minimum, offers shall \ninclude— ... Responses to provisions that require Offeror completion of information, representations, \nand certifications (other than those collected via the System for Award Management (SAM))",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Responses to provisions that require Offeror completion of information, representations, \nand certifications (other than those collected via the System for Award Management (SAM))",
+        "start_char": 6173,
+        "end_char": 6352,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8ba43a13-734b-4879-8f60-5c213491be6e",
+    "text": "As a minimum, offers shall \ninclude— ... A statement specifying the extent of agreement with all terms, conditions, and provisions \nincluded in the solicitation and any solicitation amendments.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—",
+        "start_char": 5787,
+        "end_char": 5823,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A statement specifying the extent of agreement with all terms, conditions, and provisions \nincluded in the solicitation and any solicitation amendments.",
+        "start_char": 6367,
+        "end_char": 6519,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2f788c82-bfc4-4414-bdcb-1b86ba96556e",
+    "text": "All questions regarding the solicitation must be submitted via email to James.horne@va.gov no later than 10:00 a.m. central time on 9/15/26.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "All questions regarding the solicitation must be submitted via email to James.horne@va.gov no later \nthan 10:00 a.m. central time on 9/15/26.",
+        "start_char": 7037,
+        "end_char": 7178,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e2a71fa0-6a73-435a-a91e-35fa86cf6b6a",
+    "text": "All quotes must be submitted electronically via email to James.horne@va.gov.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "All quotes must be submitted electronically, via email to James.horne@va.gov.",
+        "start_char": 7288,
+        "end_char": 7365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "933a637d-f1fe-4b65-80d0-ae2804a18753",
+    "text": "The subject line of the email shall start with the RFQ reference number \n36C25526Q0501.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The subject line of the email shall start with the RFQ reference number \n36C25526Q0501.",
+        "start_char": 7179,
+        "end_char": 7266,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "09e0c8cf-c228-41df-88a2-e8a49389f52e",
+    "text": "The proposal shall be prepared in two parts: a price response and a non-price response.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The proposal shall be prepared in two (2) parts: 1) price response and 2) a non-price response.",
+        "start_char": 7492,
+        "end_char": 7587,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b2073d5e-198b-4586-942d-138fdb8e954d",
+    "text": "The non-price response shall address the non-price factors.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The \nnon-price response shall address the non-price factors.",
+        "start_char": 7703,
+        "end_char": 7763,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1c596384-5d28-490e-84a0-50985978e35d",
+    "text": "The pricing response must include the signed Standard Form (SF) 1449, with blocks 17a, 17b, 30a, 30b, and 30c completed, and the completed price schedule(s). By signing the SF-1449, the Offeror agrees to the contract terms and conditions as written in the RFQ.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The \npricing response shall consist of the signed Standard Form (SF) 1449 and completion of the price schedule(s).",
+        "start_char": 7588,
+        "end_char": 7702,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The Offeror’s Price Quote shall contain the following items:",
+        "start_char": 9967,
+        "end_char": 10027,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Signed SF-1449 (Complete blocks 17a and b, and 30a, b and c). In doing so, the Offeror agrees to the \ncontract terms and conditions as written in the RFQ.",
+        "start_char": 10030,
+        "end_char": 10184,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d24e4f95-0df9-4447-ae9f-87ced5e53ad9",
+    "text": "Offer shall provide a letter fully describing their capabilities, not exceeding five pages, that includes a \ndescription of their technical approach, methodology, and technique used to carry out the Performance Work \nStatement.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offer shall provide a letter fully describing their capabilities, not exceeding five pages, that includes a \ndescription of their technical approach, methodology, and technique used to carry out the Performance Work \nStatement.",
+        "start_char": 7827,
+        "end_char": 8054,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6673e0a8-e2ad-4fac-8e20-b2d9a19d270f",
+    "text": "Offerors shall not list any \nexperience for any of their subcontractors it is considering using; only the offeror’s prior experience will be \nconsidered.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offerors shall not list any \nexperience for any of their subcontractors it is considering using; only the offeror’s prior experience will be \nconsidered.",
+        "start_char": 9750,
+        "end_char": 9903,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "88cc1f39-e808-47a6-91f1-e83a2773c70c",
+    "text": "The Offeror’s Price Quote must include a completed Price Schedule, with the Offeror providing their best pricing for each individual Contract Line Item listed in Section B for all specified pricing periods.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The Offeror’s Price Quote shall contain the following items:",
+        "start_char": 9967,
+        "end_char": 10027,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Completed Price Schedule: Offerors shall provide their best pricing for the Contract Line Items listed in \nSection B (The Cost/Price Schedule).",
+        "start_char": 10187,
+        "end_char": 10330,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The Offeror’s Price Quote shall contain the following items:",
+        "start_char": 9967,
+        "end_char": 10027,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The offeror shall price EACH line item within the pricing periods.",
+        "start_char": 10331,
+        "end_char": 10397,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f59aa232-16d4-4b0b-ae10-fdeb8f29df5e",
+    "text": "The Offeror’s Price Quote shall contain the following items: ... Completed Acknowledgement of Amendments if issued.  Ensure amendments are signed by the same \nofficial that has been authorized to sign the SF 1449.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The Offeror’s Price Quote shall contain the following items:",
+        "start_char": 9967,
+        "end_char": 10027,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Completed Acknowledgement of Amendments if issued.  Ensure amendments are signed by the same \nofficial that has been authorized to sign the SF 1449.",
+        "start_char": 10400,
+        "end_char": 10548,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cebfe7e5-e29d-4eac-a470-51a302d6732e",
+    "text": "be listed as an SDVOSB participant in the SBA certification database as set forth in 13 CFR",
+    "is_mandatory": false,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "be listed as an SDVOSB participant in the SBA certification database as set forth in 13 CFR",
+        "start_char": 11598,
+        "end_char": 11689,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ecb78e1e-cbb1-4838-90ad-648922b28354",
+    "text": "Offers received from entities that are not certified SDVOSBs and listed in the SBA \ncertification database at the time of offer shall not be considered.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offers received from entities that are not certified SDVOSBs and listed in the SBA \ncertification database at the time of offer shall not be considered.",
+        "start_char": 11705,
+        "end_char": 11857,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dec100b3-3d7a-4cc7-b9b1-3876bb9b5bd0",
+    "text": "By \nsubmitting an offer, the prospective contractor represents that it is an eligible and certified \nSDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "By \nsubmitting an offer, the prospective contractor represents that it is an eligible and certified \nSDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+        "start_char": 12491,
+        "end_char": 12676,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5671eb23-c474-4693-a140-7c439724c205",
+    "text": "the offeror represents that it has \nconducted a reasonable inquiry, and that the offeror does not propose to provide or use in \nresponse to this solicitation any covered article, or any products or services produced or \nprovided by a source, if the covered article or the source is prohibited by an applicable FASCSA \norder in effect on the date the solicitation was issued, except as waived by the solicitation, or as \ndisclosed in paragraph (g).",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "the offeror represents that it has \nconducted a reasonable inquiry, and that the offeror does not propose to provide or use in \nresponse to this solicitation any covered article, or any products or services produced or \nprovided by a source, if the covered article or the source is prohibited by an applicable FASCSA \norder in effect on the date the solicitation was issued, except as waived by the solicitation, or as \ndisclosed in paragraph (g).",
+        "start_char": 12849,
+        "end_char": 13296,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "7f5f200b-f8e2-4a45-816e-e1220fd0c806",
+    "text": "the offeror certifies, after conducting a \nreasonable inquiry (that looks at any information in the offeror’s possession but does not need \nto include an internal or third-party audit), that the offeror does not conduct any restricted \nbusiness operations in Sudan.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "the offeror certifies, after conducting a \nreasonable inquiry (that looks at any information in the offeror’s possession but does not need \nto include an internal or third-party audit), that the offeror does not conduct any restricted \nbusiness operations in Sudan.",
+        "start_char": 13494,
+        "end_char": 13759,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

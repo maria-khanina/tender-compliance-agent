@@ -9,17 +9,17 @@ Machine-readable numbers for averaging across tenders -- every value here is exp
   "requirement_recall": 0.9375,
   "requirement_recall_matched": 15,
   "requirement_recall_total": 16,
-  "requirement_precision": 0.6087,
+  "requirement_precision": 0.4667,
   "citation_verified_rate": 1.0,
   "is_mandatory_accuracy": 0.9286,
   "is_mandatory_scored": 14,
-  "is_text_verifiable_accuracy": 0.7857,
+  "is_text_verifiable_accuracy": 0.8571,
   "is_text_verifiable_scored": 14,
-  "verdict_clean_match_count": 10,
-  "verdict_accuracy": 0.9,
-  "false_compliant_rate": 0.0,
-  "false_issue_rate": 0.0909,
-  "evidence_citation_verified_rate": 0.85,
+  "verdict_clean_match_count": 11,
+  "verdict_accuracy": 0.6364,
+  "false_compliant_rate": 0.1667,
+  "false_issue_rate": 0.0833,
+  "evidence_citation_verified_rate": 0.881,
   "evidence_recall": 1.0,
   "verdict_only_accuracy": 0.7857,
   "verdict_only_scored": 14
@@ -40,7 +40,7 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
 - none
 
 **Over-merge** (1) — one predicted requirement covering several distinct true topics:
-- predicted [f58055a4] "Provide references and examples of three prior experiences of projects in similar size and scope within the past five years, to include a brief description of the project and point of contact information so the Government may confirm the information." — verdict: non_compliant lumps together 2 true requirements:
+- predicted [0ff83d86] "Provide at least three references or examples of prior projects completed within the past five years that are similar in size and scope to the current Statement of Work, including a brief project description and point of contact information for verification." — verdict: non_compliant lumps together 2 true requirements:
   - true `prior_experience_count` — "Offers shall submit the following information in its entirety: ... Three prior experiences of projects in similar size and scope per the "TO SUBMIT AN OFFER" section below within the past five years"
   - true `prior_experience_poc_required` — "NOTE: Contact information SHALL be provided, to include a brief description of the project, as well as point of contact information"
 
@@ -55,26 +55,40 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
   - none
 
 **Classification precision**: fraction of predicted requirements that matched a true requirement.
-- rate: 60.9%
-- unexplained (9) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
-  - predicted [216d013e] "Use the Checklist to ensure all required documents are submitted."
-    - **similarity check:** closest true topic: `shop_drawings_and_product_data_required` (cosine=0.64); vs matched predicted [341d6b1a]: cosine=0.63 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [5205898b] "If the Contractor is unable to comply with the requirement to use IPP for submitting invoices for payment, the Contractor must submit a waiver request in writing to the Contracting Officer with its proposal or quotation."
-    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.61); vs matched predicted [e9fa42d0]: cosine=0.48 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [6bc360bd] "The Offeror must represent whether or not it is a corporation that was convicted of a felony criminal violation under a Federal law within the preceding 24 months."
-    - **similarity check:** closest true topic: `no_recent_felony_conviction` (cosine=0.74); vs matched predicted [b5cee31a]: cosine=0.81 (>= dedup threshold 0.7) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [a7fa7be0] "Payment requests must be submitted electronically through the U.S. Department of the Treasury's Invoice Processing Platform System (IPP)."
-    - **similarity check:** closest true topic: `uei_required` (cosine=0.58); vs matched predicted [baee040d]: cosine=0.52 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [b407f36f] "The Offeror must represent whether or not it is a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability."
-    - **similarity check:** closest true topic: `no_unpaid_federal_tax_liability` (cosine=0.68); vs matched predicted [95d6fbc3]: cosine=0.86 (>= dedup threshold 0.7) -> would likely have been clustered together and compared by the dedup LLM call
-  - predicted [c25f5010] "Provide written confirmation that the company specializes in, or has sufficient documented direct experience in, providing all labor, material, tools, supervision, and travel necessary to perform the service outlined in the Statement of Work."
-    - **similarity check:** closest true topic: `capabilities_statement_required` (cosine=0.70); vs matched predicted [cc5135f9]: cosine=0.64 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [c75b2865] "Signed amendments if applicable"
-    - **similarity check:** closest true topic: `amendment_acknowledgment_if_posted` (cosine=0.65); vs matched predicted [0b63184d]: cosine=0.62 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [e890ce70] "Under this contract, the following documents are required to be submitted as an attachment to the IPP invoice: ... 1. Copy of vendor invoice document in PDF format, which shows pricing breakdown for all items being invoiced for and must include the contract number, date(s) of service (if applicable), date of invoice, and the vendor's standard invoice letterhead."
-    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.61); vs matched predicted [e9fa42d0]: cosine=0.50 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
-  - predicted [eadaea91] "Quotes are due by 9 September 2026 @ 12PM ET"
-    - **similarity check:** closest true topic: `or_equal_product_documentation` (cosine=0.56); vs matched predicted [35d779b6]: cosine=0.57 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+- rate: 46.7%
+- unexplained (16) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
+  - predicted [132894d7] "52.222-18 Certification Regarding Knowledge of Child Labor for Listed End Products (Feb 2021)"
+    - **similarity check:** closest true topic: `uei_required` (cosine=0.58); vs matched predicted [6188ceff]: cosine=0.52 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [2266561c] "Under this contract, the following documents are required to be submitted as an attachment to the IPP invoice: ... 1. Copy of vendor invoice document in PDF format, which shows pricing breakdown for all items being invoiced for and must include the contract number, date(s) of service (if applicable), date of invoice, and the vendor's standard invoice letterhead."
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.61); vs matched predicted [3532365d]: cosine=0.50 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [39bae1c7] "52.225-20 Prohibition on Conducting Restricted Business Operations in Sudan-Certification (Aug 2009)"
+    - **similarity check:** closest true topic: `uei_required` (cosine=0.54); vs matched predicted [6188ceff]: cosine=0.47 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [44a0d164] "the contractor/vendor shall furnish all labor, materials, and equipment necessary to provide Fabricate and Install Handrail at Pictured Rocks National Lakeshore (PIRO)."
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.59); vs matched predicted [3532365d]: cosine=0.39 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [568e2ff9] "The Contractor must register for and submit all payment requests electronically through the U.S. Department of the Treasury's Invoice Processing Platform (IPP) website."
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.66); vs matched predicted [3532365d]: cosine=0.54 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [5d6bd6f1] "Quotes are due by 9 September 2026 @ 12PM ET"
+    - **similarity check:** closest true topic: `or_equal_product_documentation` (cosine=0.56); vs matched predicted [f50a4214]: cosine=0.57 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [5df314c6] "Signed amendments if applicable"
+    - **similarity check:** closest true topic: `amendment_acknowledgment_if_posted` (cosine=0.65); vs matched predicted [3c350aa6]: cosine=0.62 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [6cb03a50] "52.203-18 Prohibition on Contracting with Entities that Require Certain Internal Confidentiality Agreements or Statements-Representation (Jan 2017)"
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.63); vs matched predicted [3532365d]: cosine=0.55 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [83a622ab] "52.209-2 Prohibition on Contracting with Inverted Domestic Corporations - Representation (Nov 2015) (DEVIATION May 2026)"
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.57); vs matched predicted [3532365d]: cosine=0.52 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [975de1cd] "52.212-1 Instructions to Offerors - Commercial Products and Commercial Services (Sep 2023) (DEVIATION Mar 2026)"
+    - **similarity check:** closest true topic: `final_offer_total_no_alternates` (cosine=0.59); vs matched predicted [db92a296]: cosine=0.56 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [9964e686] "If the Contractor is unable to comply with the requirement to use IPP for submitting invoices for payment, the Contractor must submit a waiver request in writing to the Contracting Officer with its proposal or quotation."
+    - **similarity check:** closest true topic: `contractor_core_data` (cosine=0.61); vs matched predicted [3532365d]: cosine=0.48 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [af1b2104] "Provide written confirmation that the company specializes in, or has sufficient documented direct experience in, providing all labor, material, tools, supervision, and travel necessary to perform the service in accordance with the Statement of Work."
+    - **similarity check:** closest true topic: `capabilities_statement_required` (cosine=0.70); vs matched predicted [a966eb25]: cosine=0.64 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [af863766] "52.225-2 Buy American Certificate (Oct 2022)"
+    - **similarity check:** closest true topic: `final_offer_total_no_alternates` (cosine=0.55); vs matched predicted [db92a296]: cosine=0.56 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [db4b4890] "52.204-7 System for Award Management - Registration (Nov 2024) (DEVIATION Mar 2026)"
+    - **similarity check:** closest true topic: `uei_required` (cosine=0.54); vs matched predicted [6188ceff]: cosine=0.59 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [dec81110] "52.225-25 Prohibition on Contracting with Entities Engaging in Certain Activities or Transactions Relating to Iran-Representation and Certifications (Jun 2020)"
+    - **similarity check:** closest true topic: `uei_required` (cosine=0.56); vs matched predicted [6188ceff]: cosine=0.51 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [fc1129f0] "52.240-90 Security Prohibitions and Exclusions Representations and Certifications (Dec 2025) (DEVIATION Mar 2026)"
+    - **similarity check:** closest true topic: `no_recent_felony_conviction` (cosine=0.57); vs matched predicted [aa40d1e6]: cosine=0.57 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
 
 ## Coverage flags
 
@@ -83,17 +97,13 @@ Clean 1:1 matches (recall counted them as found) whose citations don't fully ove
 **Requirements captured with extra text** (0) — the predicted citation is padded beyond the true one:
 - none
 
-**Requirements captured incompletely** (3) — the predicted citation misses part of the true one:
-- predicted [139e11a0] is contained in true `sam_registration_active` — 73.7%:
-    predicted: "The company must be registered in the System for Award Management (SAM) with an active status at the time of quote/proposal submission, at the time of award, and throughout the entire award/contract performance, and must be considered a small business for the size standard associated with the NAICS code found in block 10 on page one of the solicitation."
-    true: "This registration must be "active" in SAM. NO EXCEPTIONS."
-
-- predicted [0b63184d] is contained in true `amendment_acknowledgment_if_posted` — 64.2%:
+**Requirements captured incompletely** (2) — the predicted citation misses part of the true one:
+- predicted [3c350aa6] is contained in true `amendment_acknowledgment_if_posted` — 64.2%:
     predicted: "this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
     true: "NOTE: Please check SAM.gov regularly in any case an amendment was posted, as this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
 
-- predicted [8b09cb18] is contained in true `final_offer_total_no_alternates` — 57.7%:
-    predicted: "Provide the final offer total for price evaluation purposes."
+- predicted [db92a296] is contained in true `final_offer_total_no_alternates` — 57.7%:
+    predicted: "Provide the final offer total, which will be used as the evaluated price."
     true: "NOTE: Alternate quotes/proposals will not be accepted. Provide us with the final offer total, as this will be the evaluated price."
 
 ## is_mandatory accuracy
@@ -103,31 +113,30 @@ For each clean or one-to-many match (tangled groups excluded — there's no sing
 **Accuracy: 92.9% (14 groups)**
 
 Mismatched:
-- true: `amendment_acknowledgment_if_posted`=False; predicted: `0b63184d`=True — "NOTE: Please check SAM.gov regularly in any case an amendment was posted, as this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
+- true: `amendment_acknowledgment_if_posted`=False; predicted: `3c350aa6`=True — "NOTE: Please check SAM.gov regularly in any case an amendment was posted, as this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
 
 ## is_text_verifiable accuracy
 
 For each clean or one-to-many match (tangled groups excluded), does `is_text_verifiable` agree with the true value (all-or-nothing on the "many" side, same rule as is_mandatory above)? A wrong `false` here means the pipeline skips verdict generation for a requirement that should get one.
 
-**Accuracy: 78.6% (14 groups)**
+**Accuracy: 85.7% (14 groups)**
 
 Mismatched:
-- true: `sam_registration_active`=False; predicted: `139e11a0`=True — "This registration must be "active" in SAM. NO EXCEPTIONS."
-- true: `amendment_acknowledgment_if_posted`=True; predicted: `0b63184d`=False — "NOTE: Please check SAM.gov regularly in any case an amendment was posted, as this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
-- true: `submission_deadline_and_channel`=False; predicted: `c618228a`=True — "Submit all required documents via email by the date and time listed in this solicitation. Offerors are responsible for submitting quotes/proposals so as to reach the Government office designated in the solicitation by the time specified in the solicitation. Late quotes/proposals will not be accepted."
+- true: `sam_registration_active`=False; predicted: `a774faa0`=True — "This registration must be "active" in SAM. NO EXCEPTIONS."
+- true: `submission_deadline_and_channel`=False; predicted: `62727f19`=True — "Submit all required documents via email by the date and time listed in this solicitation. Offerors are responsible for submitting quotes/proposals so as to reach the Government office designated in the solicitation by the time specified in the solicitation. Late quotes/proposals will not be accepted."
 
 ## Verdict accuracy
 
 The confusion matrix covers only clean 1:1 matches — split/merge groups have no single pair to plot, but still count in the two rates below.
 
-Clean matches scored: 10
+Clean matches scored: 11
 
 | true \ pipeline said | `compliant` | `non_compliant` | `contradictory` | `insufficient_information` |
 |---|---|---|---|---|
-| `compliant` | 7 | 1 | 0 | 0 |
-| `non_compliant` | 0 | 1 | 0 | 0 |
+| `compliant` | 7 | 2 | 0 | 0 |
+| `non_compliant` | 1 | 0 | 0 | 0 |
 | `contradictory` | 0 | 0 | 0 | 0 |
-| `insufficient_information` | 0 | 0 | 0 | 1 |
+| `insufficient_information` | 1 | 0 | 0 | 0 |
 
 Why some rows are empty:
 - `contradictory` row is empty: true `small_business_size_standard` — never extracted (recall miss)
@@ -135,33 +144,92 @@ Why some rows are empty:
 **Mismatched clean matches** — every off-diagonal cell above, in full: the full context retrieved and shown to the model, what it chose to cite from that context, and its reasoning ("model's ..."), next to what `true_verdicts.json` expects ("expected ...").
 
 - `price_schedule_complete` — acceptable: ['compliant'], predicted: non_compliant
-  - **requirement:** "Complete the attached price schedule in its entirety, including unit prices and amounts for all listed line items."
+  - **requirement:** "Offerors must complete the attached Price Schedule in its entirety, including inserting the total unit price and/or amount for all listed line items."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
   - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
   - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
-  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
   - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
   - **model's evidence (what it chose to cite):** "PRICE SCHEDULE Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor) Price: $58,750.00 Total: $58,750.00"
-  - **model's reasoning:** The requirement states to complete the attached price schedule in its entirety, including unit prices and amounts for all listed line items. The bidder's application only provides a price for a single item (Item Number 10), but does not show that the price schedule was completed in its entirety for all listed line items in the solicitation (it only contains one item out of potentially multiple, or fails to show completion of all required items).
+  - **model's evidence (what it chose to cite):** "Our crews are equipped to perform site measurement, custom fabrication in our own shop, and on-site installation, including all mobilization, demobilization, supplies, and labor described in Item 0010 of the Schedule of Supplies."
+  - **model's reasoning:** The requirement states that offerors must complete the Price Schedule in its entirety for all listed line items. The bidder lists 'Item Number 10' in their Price Schedule, but the Capabilities Statement refers to 'Item 0010'. Furthermore, the Price Schedule provided only contains one line item, whereas the reference to 'Item 0010' suggests there is a 'Schedule of Supplies' containing multiple items that the bidder failed to include or complete in their submission.
   - **expected evidence (true_verdicts.json):** "Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)"
   - **expected evidence (true_verdicts.json):** "Total: $58,750.00"
   - **expected reasoning:** Item 10 price and total are both filled in.
 
-**False-compliant rate** — dangerous direction: the true verdict requires an issue (anything but `compliant`), but every predicted verdict in the group is `compliant`.
-- rate: 0.0%
-
-- none
-
-**False-issue rate** — mirror direction: the true verdict is `compliant` only, but the pipeline raised an issue anyway.
-- rate: 9.1%
-
-- `price_schedule_complete` — acceptable: ['compliant'], predicted: non_compliant
-  - **requirement:** "Complete the attached price schedule in its entirety, including unit prices and amounts for all listed line items."
+- `price_schedule_must_not_be_edited` — acceptable: ['insufficient_information'], predicted: compliant
+  - **requirement:** "Must ensure that this document is not edited for any reason (outside of adding units of measure, quantities, etc.) and the unedited Price Schedule is provided with final pricing - if needing to make edits or alter the document, provide an addendum outlining these changes or additional information wanting to make apparent to the evaluators."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
   - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
   - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
-  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
   - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
   - **model's evidence (what it chose to cite):** "PRICE SCHEDULE Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor) Price: $58,750.00 Total: $58,750.00"
-  - **model's reasoning:** The requirement states to complete the attached price schedule in its entirety, including unit prices and amounts for all listed line items. The bidder's application only provides a price for a single item (Item Number 10), but does not show that the price schedule was completed in its entirety for all listed line items in the solicitation (it only contains one item out of potentially multiple, or fails to show completion of all required items).
+  - **model's evidence (what it chose to cite):** "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work, in order to avoid current supply delays with the named manufacturer."
+  - **model's reasoning:** The bidder provided the Price Schedule with the required pricing information. Additionally, they included a note in their Project Narrative regarding a substitution of hardware, which serves as the required addendum/notification for alterations to the specified requirements.
+  - **expected evidence (true_verdicts.json):** none
+  - **expected reasoning:** The application shows a filled-in price schedule (item, price, total) but never represents, one way or the other, whether the underlying template itself was left unedited. Nothing in application.txt lets a text-only check confirm or deny this, so insufficient_information is the only defensible call -- compliant would be false confidence, non_compliant would be an unjustified accusation.
+
+- `or_equal_product_documentation` — acceptable: ['non_compliant'], predicted: compliant
+  - **requirement:** "If quoting an 'or equal' item, the offeror must submit a detailed product specifications document or literature to confirm that the item(s) are comparable."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
+  - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
+  - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
+  - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
+  - **model's evidence (what it chose to cite):** "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work, in order to avoid current supply delays with the named manufacturer."
+  - **model's evidence (what it chose to cite):** "Shop drawings and product data sheets for the proposed handrail system are included as Attachment A to this quote package."
+  - **model's reasoning:** The bidder explicitly states their intent to use 'or equal' stainless-steel fasteners and confirms that they have included the necessary product data sheets (Attachment A) to verify the comparability of the proposed items, thereby satisfying the requirement.
+  - **expected evidence (true_verdicts.json):** "we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work"
+  - **expected reasoning:** Application signals intent to substitute an alternate-manufacturer fastener (an 'or equal' situation) but includes no product specification or literature anywhere confirming comparability, as the requirement mandates.
+
+- `amendment_acknowledgment_if_posted` — acceptable: ['compliant', 'insufficient_information'], predicted: non_compliant
+  - **requirement:** "this amendment must be reviewed, acknowledged by signing the SF30 and ensuring that it is provided with your final quote/proposal package."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
+  - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
+  - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
+  - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
+  - **model's evidence (what it chose to cite):** "We confirm the following documents are included in this quote package: Checklist for Quote Submittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience References, and Contractor Core Data."
+  - **model's reasoning:** The requirement explicitly states that the SF30 amendment must be signed and included in the proposal package. The bidder's own 'Checklist for Quote Submittal' lists the documents included in their package, and the SF30 is notably absent from that list.
+  - **expected evidence (true_verdicts.json):** none
+  - **expected reasoning:** Nothing in application.txt mentions an amendment either way. Since the requirement is conditional (is_mandatory: false, applies only 'in any case an amendment was posted'), silence is compatible with either 'not applicable, nothing to acknowledge' (compliant) or 'can't tell whether an amendment applied' (insufficient_information); non_compliant would require evidence of an actual unacknowledged amendment, which is absent.
+
+**False-compliant rate** — dangerous direction: the true verdict requires an issue (anything but `compliant`), but every predicted verdict in the group is `compliant`.
+- rate: 16.7%
+
+- `price_schedule_must_not_be_edited` — acceptable: ['insufficient_information'], predicted: compliant
+  - **requirement:** "Must ensure that this document is not edited for any reason (outside of adding units of measure, quantities, etc.) and the unedited Price Schedule is provided with final pricing - if needing to make edits or alter the document, provide an addendum outlining these changes or additional information wanting to make apparent to the evaluators."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
+  - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
+  - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
+  - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
+  - **model's evidence (what it chose to cite):** "PRICE SCHEDULE Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor) Price: $58,750.00 Total: $58,750.00"
+  - **model's evidence (what it chose to cite):** "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work, in order to avoid current supply delays with the named manufacturer."
+  - **model's reasoning:** The bidder provided the Price Schedule with the required pricing information. Additionally, they included a note in their Project Narrative regarding a substitution of hardware, which serves as the required addendum/notification for alterations to the specified requirements.
+  - **expected evidence (true_verdicts.json):** none
+  - **expected reasoning:** The application shows a filled-in price schedule (item, price, total) but never represents, one way or the other, whether the underlying template itself was left unedited. Nothing in application.txt lets a text-only check confirm or deny this, so insufficient_information is the only defensible call -- compliant would be false confidence, non_compliant would be an unjustified accusation.
+
+- `or_equal_product_documentation` — acceptable: ['non_compliant'], predicted: compliant
+  - **requirement:** "If quoting an 'or equal' item, the offeror must submit a detailed product specifications document or literature to confirm that the item(s) are comparable."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
+  - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
+  - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
+  - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
+  - **model's evidence (what it chose to cite):** "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work, in order to avoid current supply delays with the named manufacturer."
+  - **model's evidence (what it chose to cite):** "Shop drawings and product data sheets for the proposed handrail system are included as Attachment A to this quote package."
+  - **model's reasoning:** The bidder explicitly states their intent to use 'or equal' stainless-steel fasteners and confirms that they have included the necessary product data sheets (Attachment A) to verify the comparability of the proposed items, thereby satisfying the requirement.
+  - **expected evidence (true_verdicts.json):** "we intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer other than the brand specified in the Statement of Work"
+  - **expected reasoning:** Application signals intent to substitute an alternate-manufacturer fastener (an 'or equal' situation) but includes no product specification or literature anywhere confirming comparability, as the requirement mandates.
+
+**False-issue rate** — mirror direction: the true verdict is `compliant` only, but the pipeline raised an issue anyway.
+- rate: 8.3%
+
+- `price_schedule_complete` — acceptable: ['compliant'], predicted: non_compliant
+  - **requirement:** "Offerors must complete the attached Price Schedule in its entirety, including inserting the total unit price and/or amount for all listed line items."
+  - **retrieved context (shown to the model):** "QUOTE SUBMISSION In Response to Solicitation 140P6426Q0127 Fabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO) Submitted to: Colette Riegelmayer, Contract Specialist, National Park Service Submitted by: Superior Rail & Fabrication, LLC CHECKLIST FOR QUOTE SU [...truncated]"
+  - **retrieved context (shown to the model):** "2. City of Marquette - Harborfront Park Railing Installation (2022) Fabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated walkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City of Marquette, (906) 555-3387 [...truncated]"
+  - **retrieved context (shown to the model):** "CAPABILITIES STATEMENT / PROJECT NARRATIVE Superior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4 million over the past three fiscal years, comfortably within the $19 million small business size standard associated with NAICS code 238990. Our compan [...truncated]"
+  - **retrieved context (shown to the model):** "REPRESENTATIONS AND CERTIFICATIONS 52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction: (1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrati [...truncated]"
+  - **model's evidence (what it chose to cite):** "PRICE SCHEDULE Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor) Price: $58,750.00 Total: $58,750.00"
+  - **model's evidence (what it chose to cite):** "Our crews are equipped to perform site measurement, custom fabrication in our own shop, and on-site installation, including all mobilization, demobilization, supplies, and labor described in Item 0010 of the Schedule of Supplies."
+  - **model's reasoning:** The requirement states that offerors must complete the Price Schedule in its entirety for all listed line items. The bidder lists 'Item Number 10' in their Price Schedule, but the Capabilities Statement refers to 'Item 0010'. Furthermore, the Price Schedule provided only contains one line item, whereas the reference to 'Item 0010' suggests there is a 'Schedule of Supplies' containing multiple items that the bidder failed to include or complete in their submission.
   - **expected evidence (true_verdicts.json):** "Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)"
   - **expected evidence (true_verdicts.json):** "Total: $58,750.00"
   - **expected reasoning:** Item 10 price and total are both filled in.
@@ -170,12 +238,12 @@ Why some rows are empty:
 - group 1:
   - true `prior_experience_count` — "Offers shall submit the following information in its entirety: ... Three prior experiences of projects in similar size and scope per the "TO SUBMIT AN OFFER" section below within the past five years" (acceptable: ['compliant', 'insufficient_information'])
   - true `prior_experience_poc_required` — "NOTE: Contact information SHALL be provided, to include a brief description of the project, as well as point of contact information" (acceptable: ['non_compliant', 'insufficient_information'])
-  - predicted [f58055a4] "Provide references and examples of three prior experiences of projects in similar size and scope within the past five years, to include a brief description of the project and point of contact information so the Government may confirm the information." — verdict: non_compliant
+  - predicted [0ff83d86] "Provide at least three references or examples of prior projects completed within the past five years that are similar in size and scope to the current Statement of Work, including a brief project description and point of contact information for verification." — verdict: non_compliant
 
 ## Evidence
 
 **Citation-verified rate** (evidence-level): fraction of evidence quotes actually located in application.txt.
-- rate: 85.0% (3 unverified of 20)
+- rate: 88.1% (5 unverified of 42)
 
 **Evidence recall**: does the expected evidence span (from `true_verdicts.json`) show up somewhere in the requirement's retrieved chunks, before the verdict step chose what to cite? Topics never extracted as a requirement are excluded — that failure is already counted by requirement recall above.
 - recall: 100.0% (11/11)

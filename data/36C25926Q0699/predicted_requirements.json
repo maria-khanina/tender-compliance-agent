@@ -1,0 +1,1307 @@
+[
+  {
+    "requirement_id": "a259fafd-12f7-45a5-92b2-0307f64dc959",
+    "text": "This solicitation is 100% set-aside for service-disabled veteran owned small businesses (SDVOSB).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Set-aside: 100% Service-Disabled Veteran-Owned Small Business (SDVOSB).",
+        "start_char": 237,
+        "end_char": 308,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "This solicitation is 100% set-aside for service-disabled veteran owned small businesses (SDVOSB).",
+        "start_char": 2136,
+        "end_char": 2233,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c7287d62-864f-4d13-b77f-f7bc6936b7b9",
+    "text": "All questions must be submitted in writing no later than the question cut-off date marked above.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "All questions must be submitted in writing no later than the question cut-off date marked above.",
+        "start_char": 818,
+        "end_char": 914,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8b15c406-1061-4e31-9461-17548457b0b3",
+    "text": "Quotes must be submitted to Charles.morton@va.gov no later than 10:00 am MT, August 7, 2026.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Quotes are to be provided to Charles.morton@va.gov no later than 10:00 am MT, August 7, 2026.",
+        "start_char": 1002,
+        "end_char": 1095,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Date and Time offers are due to Charles.morton@va.gov by 10:00 AM MT, July 7, 2026.",
+        "start_char": 12095,
+        "end_char": 12178,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6c3ea6b4-f62f-4897-8123-ac84bcd3122e",
+    "text": "The RFQ must be completed in its entirety, signed, and dated.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "This RFQ shall be completed in its entirety, and signed and dated",
+        "start_char": 1506,
+        "end_char": 1571,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8be962cc-ef47-4ee2-bbc0-a6c98f06cfbf",
+    "text": "Offerors must state if quoted items are available and priced through existing Government-wide Acquisition Contracts (GWAC), GSA Multiple Award Schedule (MAS), or VA-wide Acquisition Contracts.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "State if quoted items are available and priced through offerors existing Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule (MAS) contract, or VA-wide Acquisition Contract.",
+        "start_char": 2930,
+        "end_char": 3124,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "542f13e0-009a-4302-9d3c-ce26c3a31232",
+    "text": "If the acquisition is set-aside for SDVOSBs/VOSBs, their socioeconomic status must be verified and visible in the SBA Small Business Certification (SBS) database at the time of quote submission and award.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If the acquisition is set-aside for SDVOSBs/VOSBs, their socioeconomic status must be verified and visible in the SBA Small Business Certification (SBS):  https://search.certifications.sba.gov/ at the time of quote submission AND award, or will be considered non-responsive, and will NOT be considered for award.",
+        "start_char": 3125,
+        "end_char": 3437,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "54928325-e6c6-40ad-b840-8d750e2d5293",
+    "text": "All proprietary information must be clearly and properly marked.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "All proprietary information shall be clearly and properly marked.",
+        "start_char": 3766,
+        "end_char": 3831,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5cb868c4-b233-400f-a562-d153cd651270",
+    "text": "Offerors must confine submissions to essential, concise, and sufficient details within the appropriate files, and any non-required annexes or attachments will count against page limitations.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If the Offeror submits annexes, documentation, attachments or the like, not specifically required by this solicitation, such will count against the Offeror’s page limitations unless otherwise indicated in the specific volume instructions below.",
+        "start_char": 3833,
+        "end_char": 4077,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "All information shall be confined to the appropriate file.",
+        "start_char": 4078,
+        "end_char": 4136,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall confine submissions to essential matters, sufficient to define the quote and provide an adequate basis for evaluation.",
+        "start_char": 4138,
+        "end_char": 4274,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offerors are responsible for including sufficient details, in a concise manner, to permit a complete and accurate evaluation of each quote.",
+        "start_char": 4276,
+        "end_char": 4415,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a1c57944-d295-4a4c-86ec-8defa702b616",
+    "text": "The quote must include all required volumes (Technical, Price, Past Performance, and VAAR 852.219-75 compliance) and complete the pricing schedule for base and option years; failure to provide all volumes may result in the offer being considered non-responsive.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Submission of quote shall include the following volumes:",
+        "start_char": 4478,
+        "end_char": 4534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "(I) Technical capability or quality offered to meet the Government requirement",
+        "start_char": 4535,
+        "end_char": 4613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Submission of quote shall include the following volumes:",
+        "start_char": 4478,
+        "end_char": 4534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "(II) Price",
+        "start_char": 4615,
+        "end_char": 4625,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Submission of quote shall include the following volumes:",
+        "start_char": 4478,
+        "end_char": 4534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "(III) Past Performance",
+        "start_char": 4627,
+        "end_char": 4649,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Submission of quote shall include the following volumes:",
+        "start_char": 4478,
+        "end_char": 4534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "(IV) Completion of VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction.",
+        "start_char": 4655,
+        "end_char": 4791,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall submit its quote demonstrating how it meets the requirements of the Statement of Work (SOW) and solicitation, to include the testing plans and lab certifications, (reference the SOW attachments) and Quality Assurance Surveillance Plan, QASP, (see QASP Attachment F).",
+        "start_char": 4871,
+        "end_char": 5155,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall complete the pricing schedule provided in Section (v) above: Price/Cost Schedule.",
+        "start_char": 5174,
+        "end_char": 5273,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall price the base and all option year line items.",
+        "start_char": 5274,
+        "end_char": 5338,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If offeror does not provide all volumes as outlined in RFO 52.212-1 Instructions, the offer may be considered non-responsive.",
+        "start_char": 10970,
+        "end_char": 11095,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If offeror does not provide all volumes as outlined in RFO 52.212-1 Instructions, the offer may be considered non-responsive.",
+        "start_char": 10970,
+        "end_char": 11095,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f3f781bf-674e-434f-819d-d0278adf95a1",
+    "text": "Offerors must provide up to two recent and relevant past performance references, including all required contract details and a signed Past Performance Questionnaire (PPQ) from the overseeing point of contact.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror must provide up to two recent and relevant past performance references attesting to contract performance (including contract numbers, amount of contract award, point of contact with email address, telephone numbers and other relevant information, and a description of product/work performed under the contract and how well they performed).",
+        "start_char": 5426,
+        "end_char": 5773,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Name of offeror being reviewed",
+        "start_char": 6192,
+        "end_char": 6222,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Name of company completing review.",
+        "start_char": 6237,
+        "end_char": 6271,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Description of services performed",
+        "start_char": 6286,
+        "end_char": 6319,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Performance dates",
+        "start_char": 6334,
+        "end_char": 6351,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Total contract value",
+        "start_char": 6366,
+        "end_char": 6386,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Addresses",
+        "start_char": 6401,
+        "end_char": 6410,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Contract numbers",
+        "start_char": 6425,
+        "end_char": 6441,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror shall provide completed Past Performance Questionnaires (PPQ) from prior contracts and it shall be signed by point of contact that oversaw performance or equal representative.",
+        "start_char": 6475,
+        "end_char": 6658,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "444a5da3-2bae-4567-8f6a-025ecdd41415",
+    "text": "The offeror must complete, sign, and return the VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance; failure to do so may result in disqualification.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror shall complete the provision VAAR 852-219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction.",
+        "start_char": 7083,
+        "end_char": 7241,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Factor IV. VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction",
+        "start_char": 8173,
+        "end_char": 8300,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "VAAR 852.219-75 VA Notice of Limitations on Subcontracting – Certificate of Compliance: The Government will review the returned document for completion and signature of offeror.",
+        "start_char": 10666,
+        "end_char": 10843,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If document is not returned, completed and/or signed by offeror it may result in disqualification for consideration of offer.",
+        "start_char": 10844,
+        "end_char": 10969,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The formal certification must be completed, signed and returned with the offeror’s bid, quotation, or proposal.",
+        "start_char": 24840,
+        "end_char": 24951,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "I hereby certify that if awarded the contract, [insert name of offeror] will comply with the limitations on subcontracting specified in this clause and in the resultant contract.",
+        "start_char": 25145,
+        "end_char": 25323,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "I further certify that I am authorized to execute this certification on behalf of [insert name of offeror].",
+        "start_char": 25325,
+        "end_char": 25432,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Printed Name of Signee: ________________________________________",
+        "start_char": 25433,
+        "end_char": 25497,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Printed Title of Signee: _________________________________________",
+        "start_char": 25498,
+        "end_char": 25564,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Signature: ___________________________________________________",
+        "start_char": 25565,
+        "end_char": 25627,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Date: _____________________",
+        "start_char": 25628,
+        "end_char": 25655,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Company Name and Address: ______________________________________\n________________________________________________________________",
+        "start_char": 25656,
+        "end_char": 25785,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0e223f69-91d2-483f-a5d8-3836fb60bdeb",
+    "text": "The offeror must list all subcontractors and their size standards, explain how they will comply with Limitations on Subcontracting requirements, or state that no subcontractors will be used.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offeror must list any/all subcontractors (and their size standard IAW NAICS 541380 if they will be utilized for this requirement AND what they will be performing.",
+        "start_char": 7242,
+        "end_char": 7404,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "How is your firm going to comply with Limitations on Subcontracting requirements?",
+        "start_char": 7405,
+        "end_char": 7486,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If no subcontractors will be used, please state “No Subcontractors will be used for this requirement” in the response.",
+        "start_char": 7487,
+        "end_char": 7605,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4da12eb9-fc11-432d-ba6f-67c5de2f24b4",
+    "text": "Offers that do not meet or exceed the technical capability or quality requirements shall not be selected regardless of price.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offers that do not meet or exceed the technical capability or quality of the service offered to the Government’s requirement as stated in Factor 1, shall not be selected regardless of price.",
+        "start_char": 9215,
+        "end_char": 9405,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "57d83e0a-e277-40ae-a58e-80f99110b630",
+    "text": "The contractor shall provide all labor, materials, and equipment to de-install, remove, and dispose of the specified GE INNOVA 4100-IQ systems in accordance with OEM specifications, safety, and infection control requirements, and provide all required documentation and reports to the COR.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall furnish all labor, tools, materials, equipment, and transportation necessary to fully de-install, remove, transport, and dispose of two (2) GE INNOVA 4100-IQ imaging systems and associated peripheral subcomponents from Radiology (1D44/1D42A in building 1) at the George E Wahlen Veterans Affairs Medical Center, Salt Lake City UT.",
+        "start_char": 12676,
+        "end_char": 13027,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Work shall be performed in accordance with Original Equipment Manufacturer (OEM) specifications and all applicable VA, federal, state, and local requirements.",
+        "start_char": 13028,
+        "end_char": 13186,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall:",
+        "start_char": 13668,
+        "end_char": 13689,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Provide all personnel, supervision, tools, materials, equipment, and transportation required to complete the work described in this PWS.",
+        "start_char": 13693,
+        "end_char": 13829,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall:",
+        "start_char": 13668,
+        "end_char": 13689,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Perform all tasks in accordance with OEM specifications, applicable codes, VA policies, and infection control requirements.",
+        "start_char": 13833,
+        "end_char": 13956,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall:",
+        "start_char": 13668,
+        "end_char": 13689,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Coordinate all on-site activities with the Contracting Officer’s Representative (COR) to minimize disruption to patient care and hospital operations.",
+        "start_char": 13960,
+        "end_char": 14109,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Perform necessary diagnostic checks and visual inspection of both GE INNOVA 4100-IQ systems and related subcomponents to identify any issues that may impact safe removal.",
+        "start_char": 14239,
+        "end_char": 14409,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Confirm all utilities (e.g., power, data, grounding) are safely isolated or otherwise controlled in accordance with facility procedures prior to disassembly.",
+        "start_char": 14410,
+        "end_char": 14567,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Establish and maintain an Infection Control Risk Assessment (ICRA) Level IV compliant work area surrounding the Radiology room, including dust barriers and any required protective measures as directed by the facility Infection Prevention and/or Safety offices.",
+        "start_char": 14596,
+        "end_char": 14856,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Implement appropriate debris control, cleaning, and containment measures throughout de-installation and removal activities.",
+        "start_char": 14857,
+        "end_char": 14980,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Disassemble the GE INNOVA 4100-IQ imaging systems and its peripheral subcomponents in accordance with OEM specifications and good engineering practices.",
+        "start_char": 15003,
+        "end_char": 15155,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Protect adjacent walls, floors, ceilings, and installed clinical equipment from damage during removal.",
+        "start_char": 15156,
+        "end_char": 15258,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove all disassembled components from the Radiology room and transport them out of the facility using routes approved by the COR.",
+        "start_char": 15294,
+        "end_char": 15425,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Load and secure all components for off-site transport in a safe and compliant manner.",
+        "start_char": 15426,
+        "end_char": 15511,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Dispose of all removed components in accordance with all applicable federal, state, local, and VA regulations and policies, including those governing electronic waste, metal scrap, and any hazardous materials, if present.",
+        "start_char": 15524,
+        "end_char": 15745,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Provide documentation, if requested by the COR, verifying proper disposal (e.g., disposal receipt, recycling certificate).",
+        "start_char": 15746,
+        "end_char": 15868,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove all anchoring bolts or similar hardware from the floor related to the GE INNOVA 4100-IQ systems installation.",
+        "start_char": 15908,
+        "end_char": 16024,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Restore the floor surface to a “flush” condition (e.g., filling or covering bolt holes) suitable for subsequent construction or installation activities as directed by the COR.",
+        "start_char": 16025,
+        "end_char": 16200,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove all trash and debris generated by the removal activities and leave the area clean and free of dust and debris.",
+        "start_char": 16201,
+        "end_char": 16318,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "At the direction of the COR or Contracting Officer (CO), the contractor shall instead:",
+        "start_char": 16527,
+        "end_char": 16613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Disassemble and remove the ceiling-mounted monitor arm and monitor in accordance with OEM specifications and facility safety requirements; transport and dispose of them as part of the overall system disposal scope.",
+        "start_char": 16641,
+        "end_char": 16855,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "At the direction of the COR or Contracting Officer (CO), the contractor shall instead:",
+        "start_char": 16527,
+        "end_char": 16613,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Disengage the ceiling-mounted monitor arm and monitor from the GE INNOVA 4100-IQ systems as needed while maintaining them safely in place, ensuring they are left in a secure, stable, and usable condition (or in a condition as directed by the COR).",
+        "start_char": 16885,
+        "end_char": 17132,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall be prepared to execute either option as directed by the COR prior to or during field operations.",
+        "start_char": 17133,
+        "end_char": 17250,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall provide the following deliverables to the COR:",
+        "start_char": 17268,
+        "end_char": 17335,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Confirmation (verbal and noted on the service report) that an ICRA Level IV compliant area was established and maintained for the duration of work.",
+        "start_char": 17363,
+        "end_char": 17510,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:",
+        "start_char": 17535,
+        "end_char": 17615,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Equipment identification (e.g., device name, model, serial number, VA EE number if applicable).",
+        "start_char": 17616,
+        "end_char": 17711,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:",
+        "start_char": 17535,
+        "end_char": 17615,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Date(s) and time(s) on site.",
+        "start_char": 17712,
+        "end_char": 17740,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:",
+        "start_char": 17535,
+        "end_char": 17615,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Description of tasks performed (disassembly, removal, transport, disposal, floor restoration, clean-up, etc.).",
+        "start_char": 17741,
+        "end_char": 17851,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:",
+        "start_char": 17535,
+        "end_char": 17615,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Confirmation of whether the ceiling-mounted monitor arm and monitor were removed or retained and their final disposition.",
+        "start_char": 17852,
+        "end_char": 17973,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "A detailed field service report upon completion of work, including at a minimum:",
+        "start_char": 17535,
+        "end_char": 17615,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Any issues encountered and corrective actions taken.",
+        "start_char": 17974,
+        "end_char": 18026,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The report shall be submitted to Biomedical Engineering and the COR.",
+        "start_char": 18027,
+        "end_char": 18095,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Documentation evidencing compliant disposal of equipment (e.g., manifests, certificates) when requested by the COR.",
+        "start_char": 18137,
+        "end_char": 18252,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with all applicable federal, state, local, and VA safety requirements, including but not limited to OSHA regulations and facility safety policies.",
+        "start_char": 19137,
+        "end_char": 19311,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall implement and maintain an ICRA Level IV work area as described in Section 3.2, including dust control, barrier installation, and housekeeping.",
+        "start_char": 19639,
+        "end_char": 19802,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "At the direction of the facility, the contractor shall immediately correct any identified safety issues.",
+        "start_char": 19807,
+        "end_char": 19911,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove and dispose of all equipment associated with the two GE INNOVA 4100-IQ imaging systems (Serial Numbers: 589832BU5 and 436339BU6, EEs: 57204 and 40402) in a timely fashion.",
+        "start_char": 20282,
+        "end_char": 20460,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Communicate with COR about progress in a timely fashion",
+        "start_char": 20693,
+        "end_char": 20748,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Maintain ICRA Level IV compliant work area",
+        "start_char": 20803,
+        "end_char": 20845,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Remove all anchoring bolts/other hardware and restore floor to a “flush” condition suitable for future construction",
+        "start_char": 21017,
+        "end_char": 21132,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "100% removal of all trash and debris",
+        "start_char": 21232,
+        "end_char": 21268,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Submission of field service report and disposal documentation.",
+        "start_char": 21332,
+        "end_char": 21394,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a42146b2-342a-4f0a-8419-11f62f05798f",
+    "text": "All Field Service Engineers (FSEs) must be fully qualified, having completed formal OEM training and possessing at least two years of relevant field experience; documentation of these qualifications must be provided upon request.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "All Field Service Engineers (FSEs) performing work under this PWS shall be fully qualified and authorized by the contractor to perform de-installation and removal of the GE INNOVA 4100-IQ systems or similar imaging systems.",
+        "start_char": 18298,
+        "end_char": 18521,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "“Fully qualified” FSEs shall:",
+        "start_char": 18526,
+        "end_char": 18555,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Have successfully completed formal OEM or equivalent training for imaging system de-installation and related tasks",
+        "start_char": 18556,
+        "end_char": 18670,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "“Fully qualified” FSEs shall:",
+        "start_char": 18526,
+        "end_char": 18555,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Have at least two (2) years of field experience with scheduled and unscheduled maintenance or de-installation of comparable imaging systems (except for equipment newly introduced to the market).",
+        "start_char": 18676,
+        "end_char": 18870,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Documentation of training and qualifications shall be provided to the COR upon request.",
+        "start_char": 18875,
+        "end_char": 18962,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "805ed20a-95da-4bed-9e2c-5685dee19ab8",
+    "text": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including educating employees, implementing exposure reduction policies, providing counseling/treatment, and enforcing PPE use.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including:",
+        "start_char": 19316,
+        "end_char": 19399,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Educating employees on risks",
+        "start_char": 19400,
+        "end_char": 19428,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including:",
+        "start_char": 19316,
+        "end_char": 19399,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Implementing policies and procedures to reduce exposure",
+        "start_char": 19430,
+        "end_char": 19485,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including:",
+        "start_char": 19316,
+        "end_char": 19399,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Providing mechanisms for counseling and treatment following potential exposure",
+        "start_char": 19487,
+        "end_char": 19565,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including:",
+        "start_char": 19316,
+        "end_char": 19399,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Providing and enforcing use of personal protective equipment (PPE).",
+        "start_char": 19567,
+        "end_char": 19634,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e133fa75-6db3-47fc-b401-023eef7d67e0",
+    "text": "The offeror must certify compliance with limitations on subcontracting (not exceeding 50% for services) and acknowledges that this certification is subject to federal oversight and potential penalties for fraud.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": ") Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that",
+        "start_char": 21797,
+        "end_char": 21859,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "If awarded a contract (see FAR 2.101 definition), it will comply with the limitations on subcontracting requirement as provided in the solicitation and the resultant contract",
+        "start_char": 21865,
+        "end_char": 22039,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "In the case of a contract for services (except construction), the contractor will not pay more than 50% of the amount paid by the government to it to firms that are not certified SDVOSBs listed in the SBA certification database as set forth in 852.219-73 or certified VOSBs listed in the SBA certification database as set forth in 852.219-74.",
+        "start_char": 22225,
+        "end_char": 22567,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Any work that a similarly situated certified SDVOSB/VOSB subcontractor further subcontracts will count towards the 50% subcontract amount that cannot be exceeded.",
+        "start_char": 22568,
+        "end_char": 22730,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror acknowledges that this certification concerns a matter within the jurisdiction of an Agency of the United States.",
+        "start_char": 22922,
+        "end_char": 23047,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror further acknowledges that this certification is subject to Title 18, United States Code, Section 1001, and, as such, a false, fictitious, or fraudulent certification may render the offeror subject to criminal, civil, or administrative penalties, including prosecution.",
+        "start_char": 23047,
+        "end_char": 23327,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "The offeror represents and understands that by submission of its offer and award of a contract it may be required to provide copies of documents or records to VA that VA may review to determine whether the offeror complied with the limitations on subcontracting requirement specified in the contract.",
+        "start_char": 23706,
+        "end_char": 24006,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "provide copies of documents or records to VA that VA may review to determine whether the offeror complied with the limitations on subcontracting requirement specified in the contract",
+        "start_char": 23823,
+        "end_char": 24005,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0c95b065-c83f-4ccb-bbc7-fa45c16b712d",
+    "text": "Quotes must be submitted exclusively via email, with a maximum file size of 4MB; hand-carried or faxed quotes will not be accepted.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Quotes shall not be hand carried.",
+        "start_char": 1096,
+        "end_char": 1129,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Faxed quotes shall not be accepted.",
+        "start_char": 1130,
+        "end_char": 1165,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Emailed quotes are the only method of submitted quotes (4MB email limit).",
+        "start_char": 1166,
+        "end_char": 1239,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "21a7c0ad-9131-4ba5-b641-8558e4dd6850",
+    "text": "Offerors are warned against contacting any VA personnel other than the Contracting Officer and Contract Specialist prior to placement of any award made resulting from this RFQ.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25926Q0699/36C25926Q0699_condensed.txt",
+        "quote": "Offerors are warned against contacting any VA personnel other than the Contracting Officer and Contract Specialist prior to placement of any award made resulting from this RFQ.",
+        "start_char": 3438,
+        "end_char": 3614,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

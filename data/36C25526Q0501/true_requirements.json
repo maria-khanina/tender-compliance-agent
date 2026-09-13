@@ -1,0 +1,290 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "This case is a SERVICES acquisition (one-time triennial maintenance, inspection, and testing of the electrical power distribution system at the Truman VA Medical Center, Columbia, MO), evaluated on PRICE ONLY (52.212-2: 'Technical and past performance, when combined, are not applicable') gated by a non-price qualifications/experience submission that is evaluated for acceptability rather than scored -- a simpler evaluation structure than the 5-factor best-value tradeoff in 36C24126Q0704, though it shares the same SDVOSB-set-aside VA-services genre.",
+    "PIPELINE INPUT NOTE: the real solicitation ('36C25526Q0501+rfq.pdf', 109.9K extracted characters, 44 pages) is dominated by an unusually long run of full-text clauses in Section C (52.212-4 Commercial Products/Services terms running roughly pages 5-9, plus DEI/Sustainable-Products/Security-Prohibitions/SDVOSB/Limitations-on-Subcontracting clauses through page 28) and mixes, within the Statement of Work itself (D.1), genuine proposal-submission instructions (Section 2.C-2.F: what must be provided WITH the offer) with purely post-award performance content (Sections 1.E, 2.G, 3, 4, 5 -- work scheduling, reference materials to have on hand, the technical maintenance/testing procedure itself, and post-visit reporting format). Per an explicit project decision to keep this case's difficulty in line with the rest of the corpus and to make the LLM's visible input match what this fixture actually scores, this fixture's source.document_path points instead at a hand-condensed derivative, '36C25526Q0501_condensed.txt', assembled by concatenating verbatim excerpts of the real document (no paraphrasing or added text; only the price-schedule table's column-wrapped OCR-style line breaks were reflowed into single lines for readability, and inter-page '--- PAGE N ---' markers were stripped) while dropping everything not listed as a requirement source below. '36C25526Q0501_condensed.txt', not the original .pdf, is what must be passed to the pipeline via --requirements -- passing the full .pdf instead would let the model legitimately extract real requirement-shaped content (the post-award maintenance/testing procedure, the reporting format, reference-material access) that this fixture does not credit, understating precision for reasons that have nothing to do with extraction quality. The original '36C25526Q0501+rfq.pdf' remains in this directory only for provenance/reference.",
+    "Deliberately excluded from the condensed document entirely: SOW Section 1.E (work-hours/scheduling coordination with Facilities Management) and 1.D (site-visit scheduling) do not instruct the offeror to state or submit anything, so there is nothing text-verifiable to check in the quote.",
+    "Deliberately excluded from the condensed document entirely: SOW Section 2.G (having reference manuals/standards on hand) is an operational readiness requirement for performing the awarded work, not a proposal-submission item.",
+    "Deliberately excluded from the condensed document entirely: SOW Sections 3 (General Work Items), 4 (Maintenance/testing requirements), and 5 (Reporting) describe, in significant technical detail, how the awarded contractor performs and reports on the maintenance/testing itself after award -- none of it is submitted with the offer.",
+    "Deliberately excluded from the condensed document entirely: Section C's full-text FAR/VAAR clauses (52.212-4 Commercial Products/Services terms, DEI-discrimination 52.222-90, Security Prohibitions and Exclusions 52.240-91, Limitations on Subcontracting 852.219-75, Contracting Officer's Representative, Commercial Advertising, Electronic Submission of Payment Requests, Administrative Contracting Officer) are contract-performance obligations, not something the offeror states or represents at offer time.",
+    "DOCUMENT QUIRK, not fixed here: Attachment I, Part B ('Experience') literally requires '5 years of prior experience as the Prime Contractor Waste Removal Services' and warns against 'General statements claiming experience providing Solid Waste services' -- this is boilerplate copy-pasted from an unrelated waste-removal solicitation template and never updated for this electrical-testing RFQ. prior_experience_documentation's description interprets the evident intent (prior experience relevant to this solicitation's electrical work) rather than the literal contaminated wording, consistent with this corpus's established practice of recording template-contamination quirks rather than silently correcting the source text.",
+    "DOCUMENT QUIRK, not fixed here: Attachment I, Part C ('Certificates/Licenses:') has no body text at all -- the header is immediately followed by 'Attachment II- Factor B - Price/Cost' with nothing filled in. Not modeled as its own topic since SOW 2.F (electrical_safety_training_certification_submission) already covers certificate/license submission for this solicitation's actual trade.",
+    "DOCUMENT QUIRK, not fixed here: SOW Section 2 has a lettering slip -- a second, unrelated paragraph about furnishing tools/equipment/PPE is also labeled 'E.' (duplicating the letter already used for the subcontractor-experience paragraph), immediately after 'F.'. It was dropped from the condensed document along with the rest of the post-award content (see note above), so the duplicate labeling is moot for this fixture.",
+    "E.3 Evaluation states the sole evaluation factor is Price ('Technical and past performance, when combined, are not applicable'), which is in some tension with the Addendum's Attachment I requiring a non-price technical/experience submission -- read together with the Addendum's explicit non-responsiveness consequences ('Failure to provide the Prior Experience document with the proposal will render the entire proposal as non-responsive'), the non-price submissions function as an acceptability/responsiveness gate rather than a scored tradeoff factor, which is how this fixture treats them (is_mandatory: true, but not part of any price/technical scoring topic)."
+  ],
+  "requirements": [
+    {
+      "topic_id": "offer_content_minimum_elements",
+      "description": "Offer must include the solicitation number, the offeror's name/address/phone number, and the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "As a minimum, offers shall \ninclude—\n    (1) The solicitation number;\n    (2) The name, address, telephone number of the Offeror;\n    (3) The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer \n(EFT) indicator;",
+        "spans": [
+          {
+            "start_char": 5787,
+            "end_char": 6033
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A statement specifying the extent of agreement with all terms, conditions, and provisions \nincluded in the solicitation and any solicitation amendments.",
+        "spans": [
+          {
+            "start_char": 6367,
+            "end_char": 6519
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "ACKNOWLEDGMENT OF AMENDMENTS:  The offeror acknowledges receipt of amendments \nto the Solicitation numbered and dated as follows:\nAMENDMENT NO DATE",
+        "spans": [
+          {
+            "start_char": 995,
+            "end_char": 1142
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in the unit price, amount, and grand total for CLIN 0001 (one-year, standalone triennial electrical testing/maintenance/inspection/calibration of the Truman VA electrical power distribution system).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "0001 | NEW ACQUISITION FOR TRIENNIAL ELECTRICAL TESTING MAINTENANCE, TESTING, INSPECTION, AND/OR CALIBRATION OF THE ELECTRICAL POWER DISTRIBUTION SYSTEM LOCATED AT TRUMAN VA, COLUMBIA, MO ONE-YEAR, STANDALONE CONTRACT | 1.00 | JB | __________________ | __________________ ... GRAND TOTAL __________________",
+        "spans": [
+          {
+            "start_char": 1272,
+            "end_char": 1543
+          },
+          {
+            "start_char": 1608,
+            "end_char": 1638
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "(c) Representation. Pursuant to 38 U.S.C. 8127(e), only certified SDVOSBs listed in the SBA \ncertification database are considered eligible to receive award of a resulting contract. By \nsubmitting an offer, the prospective contractor represents that it is an eligible and certified \nSDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+        "spans": [
+          {
+            "start_char": 12309,
+            "end_char": 12676
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "security_sanctions_representations",
+      "description": "By submitting its offer the offeror makes several standing legal representations/certifications triggered automatically by submission, including that it has conducted a reasonable inquiry and does not propose to use products/sources prohibited by an applicable FASCSA order, and that it does not conduct restricted business operations in Sudan.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "(d) FASCSA Representation. By submission of this offer, the offeror represents that it has \nconducted a reasonable inquiry, and that the offeror does not propose to provide or use in \nresponse to this solicitation any covered article, or any products or services produced or \nprovided by a source, if the covered article or the source is prohibited by an applicable FASCSA \norder in effect on the date the solicitation was issued, except as waived by the solicitation, or as \ndisclosed in paragraph (g). ... (e) Sudan certification. By submission of its offer, the offeror certifies, after conducting a \nreasonable inquiry (that looks at any information in the offeror’s possession but does not need \nto include an internal or third-party audit), that the offeror does not conduct any restricted \nbusiness operations in Sudan.",
+        "spans": [
+          {
+            "start_char": 12793,
+            "end_char": 13296
+          },
+          {
+            "start_char": 13441,
+            "end_char": 13759
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Questions and quotes are due by 10:00 a.m. central time on 9/15/26, submitted electronically via email to James.horne@va.gov.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "All questions regarding the solicitation must be submitted via email to James.horne@va.gov no later \nthan 10:00 a.m. central time on 9/15/26. ... Quote Submission: All quotes must be submitted electronically, via email to James.horne@va.gov.",
+        "spans": [
+          {
+            "start_char": 7037,
+            "end_char": 7178
+          },
+          {
+            "start_char": 7270,
+            "end_char": 7365
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "two_part_proposal_format",
+      "description": "The proposal must be prepared in two parts: a price response (signed SF-1449 plus completed price schedule) and a non-price response (addressing the non-price factors).",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "The proposal shall be prepared in two (2) parts: 1) price response and 2) a non-price response. The \npricing response shall consist of the signed Standard Form (SF) 1449 and completion of the price schedule(s). The \nnon-price response shall address the non-price factors.",
+        "spans": [
+          {
+            "start_char": 7492,
+            "end_char": 7763
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_capabilities_letter",
+      "description": "Offer must include a technical capabilities letter, not exceeding five pages, describing the offeror's technical approach, methodology, and technique for carrying out the Performance Work Statement.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offer shall provide a letter fully describing their capabilities, not exceeding five pages, that includes a \ndescription of their technical approach, methodology, and technique used to carry out the Performance Work \nStatement.",
+        "spans": [
+          {
+            "start_char": 7827,
+            "end_char": 8054
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "prior_experience_documentation",
+      "description": "Offer must include at least five years of prior experience relevant to this solicitation's electrical testing/maintenance work, with a detailed description per year covering contract number, estimated annual dollar value, description of services and the offeror's role, contract start/completion dates, and current customer contact information.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Offeror shall provide at least five (5) years of prior experience as the Prime Contractor Waste Removal \nServices. ... i. Contract number\nii. Estimated annual dollar value of contract\niii. Description of services (including location) provided and the offeror’s level of responsibility and \nauthority on the project.\niv. Date of contract start and completion. \nv. Name, title, address, phone number, and email of customer contact.",
+        "spans": [
+          {
+            "start_char": 8519,
+            "end_char": 8633
+          },
+          {
+            "start_char": 8985,
+            "end_char": 9295
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "past_performance_contracts_submission",
+      "description": "Offer must include at least three previously awarded and completed Federal/State/Local government contracts involving similar work, each with contract name/ID, awarding agency, award date/amount, scope description, and a point of contact.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide at least three (3) previously awarded, and \ncompleted, contracts which were issued by Federal, State, or Local \nGovernment Agencies that involved work similar to the requirements of this \nsolicitation.",
+        "spans": [
+          {
+            "start_char": 2371,
+            "end_char": 2598
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_experience_examples_submission",
+      "description": "Offer must include at least two examples of the offeror's own technical experience with contracts involving technical requirements similar to this solicitation, each with contract name/location, performance period, percentage self-performed, and scope description under NAICS 221122.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide evidence they have the technical qualifications and \nexperience needed to meet the technical performance requirements of this \nsolicitation. Offerors must submit no less than two (2) examples of their \ntechnical experience with contracts that involved technical requirements \nsimilar to the requirements of this solicitation.",
+        "spans": [
+          {
+            "start_char": 3172,
+            "end_char": 3523
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontractor_technical_experience_submission",
+      "description": "If subcontractors will be used, the offer must include at least two examples of the subcontractors' technical experience with similar contracts, in the same format as the offeror's own technical experience examples.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Contractors shall provide evidence of subcontractors’ technical qualifications \nand experience needed to meet the technical performance requirements of \nthis solicitation, if applicable. Offerors must submit no less than two (2) \nexamples of their technical experience with contracts that involved technical \nrequirements similar to the requirements of this solicitation.",
+        "spans": [
+          {
+            "start_char": 4033,
+            "end_char": 4404
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "electrical_safety_training_certification_submission",
+      "description": "Offer must include electrical safety training certifications (OSHA 29 CFR 1910 Subpart S and NFPA 70E) submitted with the proposal, or, if unavailable, a written employer certification of having met this requirement submitted with the proposal.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "Training certifications shall \nbe submitted to the VA Contracting Officer with the proposal for this \nsolicitation.  If no training certifications are available, the contractor’s \nemployer shall certify that he/she has met this requirement in writing and \nsubmit it to the VA Contracting Officer with the proposal for this solicitation.",
+        "spans": [
+          {
+            "start_char": 5175,
+            "end_char": 5511
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "contractor_certification_qualifications",
+      "description": "Contractor must be currently certified as a NETA Certified Technician or via NICET, and have completed OSHA's approved 10-hour construction safety training.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "A. Contractors shall be currently certified by either the InterNational Electrical \nTesting Association (NETA) as NETA Certified Technician or the National \nInstitute for Certification in Engineering Technologies (NICET) and completed \nthe Occupational Safety & Health Administration (OSHA) approved 10-hour \nconstruction safety training.",
+        "spans": [
+          {
+            "start_char": 1674,
+            "end_char": 2012
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "contractor_experience_tenure",
+      "description": "Contractor must have technical training and a minimum of five continuous years of work experience in maintenance, inspection, and testing of low and medium voltage electrical power distribution systems in healthcare, industrial, educational, and commercial facilities.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25526Q0501/36C25526Q0501_condensed.txt",
+        "quote": "B. Contractors shall have technical training and a history of work experience in \nmaintenance, inspection, and testing of the low and medium voltage Electrical \nPower Distribution Systems and its components in healthcare, industrial, \neducational, and commercial facilities for a minimum of five (5) continuous \nyears from the date of this solicitation.",
+        "spans": [
+          {
+            "start_char": 2014,
+            "end_char": 2367
+          }
+        ]
+      }
+    }
+  ]
+}

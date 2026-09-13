@@ -1,0 +1,374 @@
+[
+  {
+    "requirement_id": "a259fafd-12f7-45a5-92b2-0307f64dc959",
+    "requirement_text": "This solicitation is 100% set-aside for service-disabled veteran owned small businesses (SDVOSB).",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME IV -- VAAR 852.219-75 CERTIFICATE OF COMPLIANCE\n\nSummit Biomedical Field Services, LLC certifies that if awarded the contract, it will\ncomply with the limitations on subcontracting specified in VAAR 852.219-75 and the\nresultant contract.",
+        "start_char": 3255,
+        "end_char": 3499,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The solicitation requires the bidder to be a service-disabled veteran owned small business (SDVOSB). While the bidder provides a certificate of compliance regarding subcontracting limitations (VAAR 852.219-75), the provided excerpts do not contain any documentation or explicit statement confirming the company's status as an SDVOSB."
+  },
+  {
+    "requirement_id": "c7287d62-864f-4d13-b77f-f7bc6936b7b9",
+    "requirement_text": "All questions must be submitted in writing no later than the question cut-off date marked above.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain technical, pricing, and past performance information, but they do not contain any information regarding the bidder's adherence to the question submission process or the question cut-off date. Therefore, there is insufficient information to determine compliance with this requirement."
+  },
+  {
+    "requirement_id": "8b15c406-1061-4e31-9461-17548457b0b3",
+    "requirement_text": "Quotes must be submitted to Charles.morton@va.gov no later than 10:00 am MT, August 7, 2026.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC hereby submits the following quote in response to\nthe above-referenced solicitation.",
+        "start_char": 172,
+        "end_char": 294,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts confirm that a quote was submitted, but they do not contain information regarding the date, time, or method of submission, nor do they confirm that the submission was sent to the required email address (Charles.morton@va.gov) by the specified deadline (10:00 am MT, August 7, 2026)."
+  },
+  {
+    "requirement_id": "6c3ea6b4-f62f-4897-8123-ac84bcd3122e",
+    "requirement_text": "The RFQ must be completed in its entirety, signed, and dated.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "This RFQ is submitted complete in its entirety, signed\nand dated below by our authorized representative.",
+        "start_char": 295,
+        "end_char": 399,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "While the bidder explicitly states that the RFQ is submitted complete, signed, and dated, the actual RFQ document itself is not provided in the excerpts. The excerpts contain a signed Certificate of Compliance (Volume IV) and a cover letter, but the specific RFQ form mentioned in the requirement is not present for verification."
+  },
+  {
+    "requirement_id": "8be962cc-ef47-4ee2-bbc0-a6c98f06cfbf",
+    "requirement_text": "Offerors must state if quoted items are available and priced through existing Government-wide Acquisition Contracts (GWAC), GSA Multiple Award Schedule (MAS), or VA-wide Acquisition Contracts.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC hereby submits the following quote in response to\nthe above-referenced solicitation. This RFQ is submitted complete in its entirety, signed\nand dated below by our authorized representative.",
+        "start_char": 172,
+        "end_char": 399,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement explicitly mandates that offerors must state if quoted items are available and priced through existing Government-wide Acquisition Contracts (GWAC), GSA Multiple Award Schedule (MAS), or VA-wide Acquisition Contracts. The bidder's application provides technical details, past performance, and pricing, but fails to include any statement regarding the availability or pricing of the items through the specified government contract vehicles."
+  },
+  {
+    "requirement_id": "542f13e0-009a-4302-9d3c-ce26c3a31232",
+    "requirement_text": "If the acquisition is set-aside for SDVOSBs/VOSBs, their socioeconomic status must be verified and visible in the SBA Small Business Certification (SBS) database at the time of quote submission and award.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not contain information regarding the bidder's socioeconomic status or their registration in the SBA Small Business Certification (SBS) database. Furthermore, the excerpts do not specify whether the solicitation is set-aside for SDVOSBs/VOSBs, which is the triggering condition for this requirement. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "54928325-e6c6-40ad-b840-8d750e2d5293",
+    "requirement_text": "All proprietary information must be clearly and properly marked.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC hereby submits the following quote in response to\nthe above-referenced solicitation. This RFQ is submitted complete in its entirety, signed\nand dated below by our authorized representative.",
+        "start_char": 172,
+        "end_char": 399,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME IV -- VAAR 852.219-75 CERTIFICATE OF COMPLIANCE",
+        "start_char": 3255,
+        "end_char": 3309,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The tender application contains technical, price, and past performance information, but there are no markings indicating that any of the information is proprietary. As the bidder has submitted a full proposal without any such markings, they have failed to comply with the requirement to clearly and properly mark proprietary information."
+  },
+  {
+    "requirement_id": "5cb868c4-b233-400f-a562-d153cd651270",
+    "requirement_text": "Offerors must confine submissions to essential, concise, and sufficient details within the appropriate files, and any non-required annexes or attachments will count against page limitations.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC hereby submits the following quote in response to\nthe above-referenced solicitation. This RFQ is submitted complete in its entirety, signed\nand dated below by our authorized representative.",
+        "start_char": 172,
+        "end_char": 399,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's submission is organized into four distinct volumes (Technical Capability, Price, Past Performance, and Certificate of Compliance) and addresses the requirements directly without including extraneous or non-required annexes. The content is concise and focused on the solicitation requirements."
+  },
+  {
+    "requirement_id": "a1c57944-d295-4a4c-86ec-8defa702b616",
+    "requirement_text": "The quote must include all required volumes (Technical, Price, Past Performance, and VAAR 852.219-75 compliance) and complete the pricing schedule for base and option years; failure to provide all volumes may result in the offer being considered non-responsive.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME I -- TECHNICAL CAPABILITY",
+        "start_char": 401,
+        "end_char": 433,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME II -- PRICE",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME III -- PAST PERFORMANCE",
+        "start_char": 2018,
+        "end_char": 2048,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME IV -- VAAR 852.219-75 CERTIFICATE OF COMPLIANCE",
+        "start_char": 3255,
+        "end_char": 3309,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder has provided all four required volumes (Technical, Price, Past Performance, and VAAR 852.219-75 compliance) and has included a pricing schedule for the base year as requested in the solicitation."
+  },
+  {
+    "requirement_id": "f3f781bf-674e-434f-819d-d0278adf95a1",
+    "requirement_text": "Offerors must provide up to two recent and relevant past performance references, including all required contract details and a signed Past Performance Questionnaire (PPQ) from the overseeing point of contact.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Past Performance Questionnaires for the above references will be provided upon request\nfollowing any notice of intent to award.",
+        "start_char": 3126,
+        "end_char": 3253,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement explicitly mandates that offerors provide a signed Past Performance Questionnaire (PPQ) from the overseeing point of contact as part of the application. The bidder explicitly stated they would only provide these upon request after a notice of intent to award, failing to include them in the initial submission."
+  },
+  {
+    "requirement_id": "444a5da3-2bae-4567-8f6a-025ecdd41415",
+    "requirement_text": "The offeror must complete, sign, and return the VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance; failure to do so may result in disqualification.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "VOLUME IV -- VAAR 852.219-75 CERTIFICATE OF COMPLIANCE\n\nSummit Biomedical Field Services, LLC certifies that if awarded the contract, it will\ncomply with the limitations on subcontracting specified in VAAR 852.219-75 and the\nresultant contract.\n\nPrinted Name of Signee: Daniel Reyes\nPrinted Title of Signee: Program Manager\nSignature: /s/ Daniel Reyes\nDate: 06-28-2026",
+        "start_char": 3255,
+        "end_char": 3623,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided a signed and dated copy of the VAAR 852.219-75 Certificate of Compliance in Volume IV of their application, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "0e223f69-91d2-483f-a5d8-3836fb60bdeb",
+    "requirement_text": "The offeror must list all subcontractors and their size standards, explain how they will comply with Limitations on Subcontracting requirements, or state that no subcontractors will be used.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "No subcontractors will be used for this requirement.",
+        "start_char": 3756,
+        "end_char": 3808,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that no subcontractors will be used, which satisfies the requirement to either list subcontractors or state that none will be used."
+  },
+  {
+    "requirement_id": "4da12eb9-fc11-432d-ba6f-67c5de2f24b4",
+    "requirement_text": "Offers that do not meet or exceed the technical capability or quality requirements shall not be selected regardless of price.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "The lead Field Service Engineer assigned to this project, Daniel Reyes, has\n5 years of hands-on field experience de-installing and maintaining GE imaging systems and\nholds current OEM de-installation certification.",
+        "start_char": 1553,
+        "end_char": 1767,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Note on personnel assigned above: Mr. Reyes joined Summit's field service team eight\nmonths ago and is currently completing his OEM de-installation certification training,\nunder the supervision of a senior engineer on all field assignments.",
+        "start_char": 2884,
+        "end_char": 3124,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The application provides contradictory information regarding the technical qualifications of the lead engineer, Daniel Reyes. In Volume I, the bidder claims he holds current OEM de-installation certification, while in Volume III, the bidder states he is currently completing his certification training. Because the technical capability of the personnel is a core requirement, these conflicting statements prevent a determination of compliance."
+  },
+  {
+    "requirement_id": "57d83e0a-e277-40ae-a58e-80f99110b630",
+    "requirement_text": "The contractor shall provide all labor, materials, and equipment to de-install, remove, and dispose of the specified GE INNOVA 4100-IQ systems in accordance with OEM specifications, safety, and infection control requirements, and provide all required documentation and reports to the COR.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "The lead Field Service Engineer assigned to this project, Daniel Reyes, has\n5 years of hands-on field experience de-installing and maintaining GE imaging systems and\nholds current OEM de-installation certification.",
+        "start_char": 1553,
+        "end_char": 1767,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Note on personnel assigned above: Mr. Reyes joined Summit's field service team eight\nmonths ago and is currently completing his OEM de-installation certification training,\nunder the supervision of a senior engineer on all field assignments.",
+        "start_char": 2884,
+        "end_char": 3124,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The bidder provides contradictory information regarding the qualifications of the lead engineer, Daniel Reyes. In the technical capability section, they claim he holds current OEM de-installation certification, but in the past performance section, they state he is currently completing his certification training."
+  },
+  {
+    "requirement_id": "a42146b2-342a-4f0a-8419-11f62f05798f",
+    "requirement_text": "All Field Service Engineers (FSEs) must be fully qualified, having completed formal OEM training and possessing at least two years of relevant field experience; documentation of these qualifications must be provided upon request.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Mr. Reyes joined Summit's field service team eight\nmonths ago and is currently completing his OEM de-installation certification training",
+        "start_char": 2918,
+        "end_char": 3054,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "The lead Field Service Engineer assigned to this project, Daniel Reyes, has 5 years of hands-on field experience de-installing and maintaining GE imaging systems and holds current OEM de-installation certification.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides conflicting information regarding the qualifications of the lead Field Service Engineer, Daniel Reyes. In one section of the application, it is stated that he has 5 years of experience and holds current OEM certification, while another section states he joined the team only eight months ago and is still in the process of completing his OEM training. This contradiction makes it impossible to verify if the requirement for formal OEM training and two years of experience is met."
+  },
+  {
+    "requirement_id": "805ed20a-95da-4bed-9e2c-5685dee19ab8",
+    "requirement_text": "The contractor shall comply with the OSHA Bloodborne Pathogens Standard, including educating employees, implementing exposure reduction policies, providing counseling/treatment, and enforcing PPE use.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Safety: Summit's personnel wear appropriate personal protective equipment on all job sites in accordance with OSHA requirements.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder mentions compliance with OSHA requirements regarding PPE, but the requirement specifically mandates compliance with the OSHA Bloodborne Pathogens Standard, including employee education, exposure reduction policies, and counseling/treatment. The provided excerpts do not address these specific components of the Bloodborne Pathogens Standard."
+  },
+  {
+    "requirement_id": "e133fa75-6db3-47fc-b401-023eef7d67e0",
+    "requirement_text": "The offeror must certify compliance with limitations on subcontracting (not exceeding 50% for services) and acknowledges that this certification is subject to federal oversight and potential penalties for fraud.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC certifies that if awarded the contract, it will\ncomply with the limitations on subcontracting specified in VAAR 852.219-75 and the\nresultant contract.",
+        "start_char": 3311,
+        "end_char": 3499,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "While the bidder explicitly certifies compliance with the limitations on subcontracting as required, the requirement also mandates that the offeror acknowledges that this certification is subject to federal oversight and potential penalties for fraud. The bidder's submission lacks this specific acknowledgment, rendering the application non-compliant with the full scope of the requirement."
+  },
+  {
+    "requirement_id": "0c95b065-c83f-4ccb-bbc7-fa45c16b712d",
+    "requirement_text": "Quotes must be submitted exclusively via email, with a maximum file size of 4MB; hand-carried or faxed quotes will not be accepted.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C25926Q0699/application.txt",
+        "quote": "Summit Biomedical Field Services, LLC hereby submits the following quote in response to\nthe above-referenced solicitation.",
+        "start_char": 172,
+        "end_char": 294,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts confirm that the bidder submitted a quote, but they do not contain any information regarding the method of submission (email) or the file size of the submission. Therefore, there is insufficient information to determine if the bidder complied with the submission requirements."
+  }
+]

@@ -9,16 +9,16 @@ Machine-readable numbers for averaging across tenders -- every value here is exp
   "requirement_recall": 1.0,
   "requirement_recall_matched": 29,
   "requirement_recall_total": 29,
-  "requirement_precision": 0.9796,
+  "requirement_precision": 0.898,
   "citation_verified_rate": 1.0,
   "is_mandatory_accuracy": 0.8148,
   "is_mandatory_scored": 27,
-  "is_text_verifiable_accuracy": 0.8148,
+  "is_text_verifiable_accuracy": 0.8519,
   "is_text_verifiable_scored": 27,
-  "verdict_clean_match_count": 18,
-  "verdict_accuracy": 0.9444,
-  "false_compliant_rate": 0.05,
-  "false_issue_rate": 0.05,
+  "verdict_clean_match_count": 20,
+  "verdict_accuracy": 0.95,
+  "false_compliant_rate": 0.0476,
+  "false_issue_rate": 0.0476,
   "evidence_citation_verified_rate": 0.7407,
   "evidence_recall": 1.0,
   "verdict_only_accuracy": 0.8889,
@@ -35,23 +35,15 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
 **Missed** (0) — no overlapping predicted requirement at all. "chunk check" is a mechanical (no-LLM) re-chunking of the source document: whether this topic's matching text ever appeared whole in one chunk handed to the extraction model, or was split across chunks.
 - none
 
-**Over-split** (5) — one true topic extracted as several separate predicted requirements:
+**Over-split** (3) — one true topic extracted as several separate predicted requirements:
 - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." split into 2 predicted requirements:
   - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
   - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
-- true `authorized_distributor_letter` — "Provide an Authorized Distributor Letter/Memo from the manufacturer." split into 2 predicted requirements:
-  - predicted [0189955d] "Provide an Authorized Distributor Letter/Memo from the manufacturer." — verdict: non_compliant
-  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM." — verdict: compliant
-- true `gray_market_verification` — "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market" split into 2 predicted requirements:
-  - predicted [0f469d7b] "No remanufactures or gray market items will be acceptable." — not verifiable by text
-  - predicted [27168f37] "Offerors shall provide verification that their items are not Gray Market, such as examples provided in the solicitation." — verdict: compliant
-- true `or_equal_submission_requirements` — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification." split into 7 predicted requirements:
-  - predicted [04765bab] "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found." — verdict: non_compliant
+- true `or_equal_submission_requirements` — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification." split into 5 predicted requirements:
   - predicted [127f2b3b] "(3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and" — not verifiable by text
   - predicted [693e3f30] "Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements, and mark any descriptive material to clearly show the modification." — verdict: compliant
   - predicted [a2a86ac8] "To be considered for award, offers of equal products must clearly identify the item by brand name, make, or model number." — verdict: compliant, citation: fuzzy match — worth a second look
   - predicted [c5ad1be1] "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below." — verdict: insufficient_information
-  - predicted [cca36642] "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B)." — verdict: non_compliant
   - predicted [e75d2517] "Offeror quotations and offers of equal products must demonstrate and meet the salient physical, functional, or performance characteristics specified in this solicitation to be considered for award and responsive." — verdict: insufficient_information, citation: fuzzy match — worth a second look
 - true `submission_deadline_and_channel` — "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT. Ensure to reference solicitation number [36C26226Q1367] within subject line of the email. Any offeror quotes received after the prescribed date/time shall be considered non-responsive and will not be considered for award. ... Offers shall be sent by email to Rochelle.Malveaux@va.gov" split into 3 predicted requirements:
   - predicted [70550ba3] "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT." — not verifiable by text
@@ -84,10 +76,18 @@ For each `true_requirements.json` topic, did the pipeline extract something whos
   - none
 
 **Classification precision**: fraction of predicted requirements that matched a true requirement.
-- rate: 98.0%
-- unexplained (1) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
+- rate: 89.8%
+- unexplained (5) — the model recognized these as requirements, but they don't match any true requirement. "closest true topic" is a mechanical (no-LLM) embedding-similarity lookup against every true topic's description; "dedup visibility" checks whether dedup's own cosine pre-filter would have clustered this candidate with whatever predicted requirement DID match that topic -- i.e. whether the dedup LLM call ever had a chance to compare them:
+  - predicted [04765bab] "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or state where in the offeror's overall submission that information can be found."
+    - **similarity check:** closest true topic: `or_equal_submission_requirements` (cosine=0.76); vs matched predicted [693e3f30]: cosine=0.71 (>= dedup threshold 0.7) -> would likely have been clustered together and compared by the dedup LLM call
+  - predicted [0f469d7b] "No remanufactures or gray market items will be acceptable."
+    - **similarity check:** closest true topic: `gray_market_verification` (cosine=0.67); vs matched predicted [27168f37]: cosine=0.62 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM."
+    - **similarity check:** closest true topic: `software_licensing_oem_terms_conformance` (cosine=0.73); vs matched predicted [5e299605]: cosine=0.82 (>= dedup threshold 0.7) -> would likely have been clustered together and compared by the dedup LLM call
   - predicted [460c119c] "The cost of its components mined, produced, or manufactured in the United States exceeds 60 percent of the cost of all its components, except that the percentage will be 65 percent for items delivered in calendar years 2024 through 2028 and 75 percent for items delivered starting in calendar year 2029."
     - **similarity check:** closest true topic: `buy_american_certificate_completed` (cosine=0.60); vs matched predicted [1ce55394]: cosine=0.62 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
+  - predicted [cca36642] "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B)."
+    - **similarity check:** closest true topic: `or_equal_submission_requirements` (cosine=0.71); vs matched predicted [c5ad1be1]: cosine=0.67 (< dedup threshold 0.7) -> dedup's cosine pre-filter would NOT have clustered these -- the dedup LLM call never saw them side by side
 
 ## Coverage flags
 
@@ -111,32 +111,31 @@ Mismatched:
 - true: `fob_destination_manufacturer_part_number`=True; predicted: `6041a2ce`=False, `a6aac6b4`=True — "Items shall be FOB destination. Please specify offered item manufacturer and part number."
 - true: `country_of_origin_disclosure`=True; predicted: `1a6b2fef`=False — "Please include a Country of Origin for the items being offered (see column A)"
 - true: `fss_contract_listing`=False; predicted: `d9433d87`=True — "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable"
-- true: `or_equal_submission_requirements`=True; predicted: `04765bab`=True, `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `cca36642`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
+- true: `or_equal_submission_requirements`=True; predicted: `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
 - true: `salient_char_dropdown_cushion`=True; predicted: `f9ab94a3`=False — "Drop-down cushion that releases from either side for barrier-free access"
 
 ## is_text_verifiable accuracy
 
 For each clean or one-to-many match (tangled groups excluded), does `is_text_verifiable` agree with the true value (all-or-nothing on the "many" side, same rule as is_mandatory above)? A wrong `false` here means the pipeline skips verdict generation for a requirement that should get one.
 
-**Accuracy: 81.5% (27 groups)**
+**Accuracy: 85.2% (27 groups)**
 
 Mismatched:
 - true: `sam_uei_vendor_info`=True; predicted: `e4ac5a3e`=False — "Vendor Information with SAM UEI."
-- true: `gray_market_verification`=True; predicted: `0f469d7b`=False, `27168f37`=True — "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market"
 - true: `fss_contract_listing`=True; predicted: `d9433d87`=False — "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable"
-- true: `or_equal_submission_requirements`=True; predicted: `04765bab`=True, `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `cca36642`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
+- true: `or_equal_submission_requirements`=True; predicted: `127f2b3b`=False, `693e3f30`=True, `a2a86ac8`=True, `c5ad1be1`=True, `e75d2517`=True — "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below. ... (b) To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must— (1) Meet the salient physical, functional, or performance characteristic specified in this solicitation; (2) Clearly identify the item by— (i) Brand name, if any; and (ii) Make or model number; (3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and (4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification."
 - true: `far_52_212_3_reps_and_certs`=True; predicted: `6a1cd3b4`=False — "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, with this solicitation or ensure SAM.gov is updated with current information."
 
 ## Verdict accuracy
 
 The confusion matrix covers only clean 1:1 matches — split/merge groups have no single pair to plot, but still count in the two rates below.
 
-Clean matches scored: 18
+Clean matches scored: 20
 
 | true \ pipeline said | `compliant` | `non_compliant` | `contradictory` | `insufficient_information` |
 |---|---|---|---|---|
-| `compliant` | 2 | 1 | 0 | 0 |
-| `non_compliant` | 0 | 1 | 0 | 0 |
+| `compliant` | 3 | 1 | 0 | 0 |
+| `non_compliant` | 0 | 2 | 0 | 0 |
 | `contradictory` | 0 | 0 | 1 | 0 |
 | `insufficient_information` | 0 | 0 | 0 | 13 |
 
@@ -153,7 +152,7 @@ Clean matches scored: 18
   - **expected reasoning:** Application clearly indicates the offer is an 'equal' product ("We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table"), so the brand-name-product obligation is not triggered; the conditional exception is satisfied.
 
 **False-compliant rate** — dangerous direction: the true verdict requires an issue (anything but `compliant`), but every predicted verdict in the group is `compliant`.
-- rate: 5.0%
+- rate: 4.8%
 
 - group of 1 true topic(s) and 2 predicted requirement(s) (not a 1:1 match, so there is no single correct pairing between them):
   - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." (acceptable: ['non_compliant'])
@@ -170,7 +169,7 @@ Clean matches scored: 18
       - **model's reasoning:** The bidder explicitly states "FOB Destination: Yes" in their quote, which directly satisfies the requirement that items shall be FOB destination.
 
 **False-issue rate** — mirror direction: the true verdict is `compliant` only, but the pipeline raised an issue anyway.
-- rate: 5.0%
+- rate: 4.8%
 
 - `brand_name_required_unless_equal_indicated` — acceptable: ['compliant'], predicted: non_compliant
   - **requirement:** "The offeror shall provide the brand name product referenced in the solicitation."
@@ -187,10 +186,6 @@ Clean matches scored: 18
   - true `fob_destination_manufacturer_part_number` — "Items shall be FOB destination. Please specify offered item manufacturer and part number." (acceptable: ['non_compliant'])
   - predicted [6041a2ce] "Please specify the offered item manufacturer and part number." — verdict: compliant
   - predicted [a6aac6b4] "Items shall be FOB destination." — verdict: compliant
-- group 2:
-  - true `authorized_distributor_letter` — "Provide an Authorized Distributor Letter/Memo from the manufacturer." (acceptable: ['non_compliant'])
-  - predicted [0189955d] "Provide an Authorized Distributor Letter/Memo from the manufacturer." — verdict: non_compliant
-  - predicted [3b7465a8] "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM." — verdict: compliant
 
 ## Evidence
 

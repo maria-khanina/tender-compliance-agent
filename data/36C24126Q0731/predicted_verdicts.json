@@ -1,35 +1,25 @@
 [
   {
-    "requirement_id": "c87a800c-c1a0-4b57-96db-e54fbca82e43",
-    "requirement_text": "Quotes must be submitted via email, signed and dated, on letterhead stationery or with best and final price, to the specified office or Government POC at or before the exact time and date specified.",
+    "requirement_id": "37427a32-a5b8-4e5e-921e-888251d14cc5",
+    "requirement_text": "Quotes must be submitted via email to the designated Government point of contact.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142",
+        "quote": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner",
         "start_char": 0,
-        "end_char": 602,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Sincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
-        "start_char": 3373,
-        "end_char": 3446,
+        "end_char": 151,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The application was submitted via email to the specified Government POC (carlos.ortiz3@va.gov) ahead of the deadline, includes company letterhead details and address, contains the pricing information (best and final price/options), and is signed by the Contracts Manager."
+    "reasoning": "The application was submitted via email from the bidder to the designated Government point of contact (carlos.ortiz3@va.gov), which satisfies the requirement."
   },
   {
-    "requirement_id": "d78f48d4-b837-4fa9-810d-17a7c3e1a8da",
-    "requirement_text": "As a minimum, quotes must show the solicitation number.",
+    "requirement_id": "ba0b3d9e-72ba-4748-8dc9-0d174460bc79",
+    "requirement_text": "Quotes must include the solicitation number.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -53,11 +43,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that quotes must show the solicitation number as a minimum. The bidder's quote explicitly includes the solicitation number (36C24126Q0731 P0003) in both the email subject line and the body text."
+    "reasoning": "The bidder explicitly includes the solicitation number '36C24126Q0731 P0003' in both the subject line and the body of the quote, thereby satisfying the requirement."
   },
   {
-    "requirement_id": "f7289a6d-baac-4866-b0a6-93b01ded9b4f",
-    "requirement_text": "As a minimum, quotes must show the time specified in the solicitation for receipt of quotations.",
+    "requirement_id": "1805a913-4037-40ba-9503-105ac11ef593",
+    "requirement_text": "Quotes must include the time specified in the solicitation for receipt of quotations.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -69,22 +59,76 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      },
+      }
+    ],
+    "reasoning": "The bidder explicitly acknowledges the specific time and date for the receipt of quotations as stated in the solicitation, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "89913c72-2751-44db-b5cc-0fcae052f5a3",
+    "requirement_text": "Quoters are responsible for ensuring quotes reach the designated Government office by the time specified in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
-        "start_char": 897,
-        "end_char": 1124,
+        "quote": "We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.",
+        "start_char": 290,
+        "end_char": 449,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's application explicitly shows the time specified in the solicitation for the receipt of quotations (11:00 AM EDT on 09/18/26), thereby meeting the minimum requirement."
+    "reasoning": "The bidder explicitly acknowledges the deadline specified in the solicitation and confirms that their quote was submitted ahead of that time, thereby accepting responsibility for ensuring the quote reached the office by the required time."
   },
   {
-    "requirement_id": "07b05349-b510-41c9-8657-089b07840fce",
+    "requirement_id": "aaff0ad7-fb96-4735-b4e1-d2cde23bc608",
+    "requirement_text": "The quoter must provide the specified Sorna Vertex 25ei & CD Burner products as described in the Statement of Work and solicitation documents, and submit a quote for these items.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product.",
+        "start_char": 1165,
+        "end_char": 1429,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.",
+        "start_char": 2430,
+        "end_char": 2535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states they are providing the exact brand-name Sorna Vertex 25ei Platform with integrated CD Burner as required by the solicitation and includes this item in their price quote."
+  },
+  {
+    "requirement_id": "18cbb241-ccee-4e74-be80-65085e38b6f0",
+    "requirement_text": "If shipping costs are less than $250.00, they must be included within the line-item price for the Vertex 25ei/CD Burner.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Shipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.",
+        "start_char": 3149,
+        "end_char": 3311,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that shipping costs under $250.00 must be included in the line-item price for the Vertex 25ei/CD Burner. The bidder explicitly states that the shipping cost is $150.00 and will be invoiced as a separate line item, which directly violates the requirement."
+  },
+  {
+    "requirement_id": "61a61862-a2cc-4d8e-9061-63d1dbe79e4f",
     "requirement_text": "Delivery (Must be <$250.00) *",
     "verdict": "contradictory",
     "evidence": [
@@ -100,39 +144,21 @@
       },
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Shipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.",
+        "quote": "Shipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order",
         "start_char": 3149,
-        "end_char": 3311,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement states that delivery must be less than $250.00. The bidder's application contains conflicting statements regarding shipping and delivery costs: one part lists a delivery charge of $1,400.00, while another part states that shipping for the order is $150.00. Both amounts conflict with each other and one exceeds the maximum allowed threshold, while the other is compliant, making the application contradictory."
-  },
-  {
-    "requirement_id": "d82b4485-f86e-4fb5-b05f-adc4407caaba",
-    "requirement_text": "The quotation must be for brand name Sorna Vertex 25ei & CD Burner products as specified in the Product Chart and Statement of Work (SOW) in the combined synopsis solicitation, Intent to Compete/RFQ.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product.",
-        "start_char": 1126,
-        "end_char": 1429,
+        "end_char": 3250,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states that they are quoting the brand name Sorna Vertex 25ei Platform with integrated Sorna CD Burner exactly as specified in the Product Chart and Statement of Work, fulfilling the requirement."
+    "reasoning": "The application provides conflicting information regarding delivery costs. The product chart lists 'Delivery' at $1,400.00, which exceeds the $250.00 limit. However, a subsequent paragraph states that 'Shipping for this order is $150.00', which would be compliant. Because the document contains two different figures for the same service, the application is contradictory."
   },
   {
-    "requirement_id": "cba8ccfe-1239-4736-bae7-a09b45e2a684",
+    "requirement_id": "d29c57db-768a-46f9-b8b1-8d8e5b6ed735",
     "requirement_text": "Pricing shall be entered for each line item as listed in the PRODUCT CHART above.",
-    "verdict": "compliant",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
@@ -143,15 +169,7 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder provides itemized pricing including unit price and total price for the line items listed in the product chart, thus complying with the requirement."
-  },
-  {
-    "requirement_id": "fa8b1cb0-e081-420d-a4a6-ab29b1844306",
-    "requirement_text": "If shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner line-item pricing.",
-    "verdict": "non_compliant",
-    "evidence": [
+      },
       {
         "document_path": "data/36C24126Q0731/application.txt",
         "quote": "Shipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.",
@@ -163,11 +181,11 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The requirement states that if shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner. However, the bidder's quote states that shipping is $150.00 (which is less than $250.00, meaning the condition for rolling it into the price does not apply, or alternatively, the bidder explicitly states it will be invoiced as a separate line item rather than rolled in). Furthermore, the bidder's quoted shipping is $150.00 and is kept separate, directly conflicting with the conditional instruction."
+    "reasoning": "The requirement states that pricing shall be entered for each line item as listed in the PRODUCT CHART. While the bidder provided pricing for several items, they explicitly stated that shipping costs ($150.00) would be invoiced separately and were not included in the provided pricing structure, thereby failing to include all required line items in the submitted pricing chart."
   },
   {
-    "requirement_id": "76c7df8c-a835-47cc-a046-e0f4a18ab107",
-    "requirement_text": "Offeror must be registered in SAM.",
+    "requirement_id": "dda3d4b9-63e8-4d77-b86d-8364318dbbe4",
+    "requirement_text": "The offeror must be registered in the System for Award Management (SAM).",
     "verdict": "compliant",
     "evidence": [
       {
@@ -179,13 +197,23 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Our representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request",
+        "start_char": 2024,
+        "end_char": 2131,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
       }
     ],
-    "reasoning": "The application explicitly states that the offeror is registered and active in the System for Award Management (SAM), which directly satisfies the requirement."
+    "reasoning": "The bidder explicitly states that they are registered and active in the System for Award Management (SAM) and confirms that their representations and certifications are on file in SAM.gov."
   },
   {
-    "requirement_id": "c2254779-a1fd-4d80-8607-75bfa2a2b68c",
-    "requirement_text": "Offeror must be certified and verified as an SD/VOSB in the SBA SBS VIP VetCert database and meet all eligibility requirements at the time of submission and award.",
+    "requirement_id": "bf425bc7-67dd-4fd5-bb0e-aac5b6479ade",
+    "requirement_text": "The offeror must be a service-disabled veteran-owned small business (SDVOSB) verified for ownership and control pursuant to 38 CFR part 74 and listed in the VA's Vendor Information Pages (VIP) database, and must maintain this eligibility at the time of offer submission and award.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -199,11 +227,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in chunk 0 that they are a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB) verified under SBA SBS VetCert Case #DV-2024-01187, which satisfies the requirement to be certified and verified as an SD/VOSB in the SBA SBS VIP VetCert database."
+    "reasoning": "The bidder explicitly states they are a VIP-listed SDVOSB and provides their verification case number, which satisfies the requirement to be verified for ownership and control and listed in the VA's database."
   },
   {
-    "requirement_id": "28de6a12-6b40-4da3-99d0-3e5f3952c053",
-    "requirement_text": "By submitting an offer, the prospective contractor represents that it is an eligible SDVOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+    "requirement_id": "46aa4479-5df6-40ff-b434-ac71407ede10",
+    "requirement_text": "The business must comply with VAAR subpart 819.70 and SBA regulations regarding small business size and government contracting programs at 13 CFR parts 121 and 125, with references to SDVO SBCs or VOSBs construed to apply to VA-verified and VIP-listed entities.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -217,11 +245,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in its offer that it is a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB), which satisfies the representation requirement that it is an eligible SDVOSB."
+    "reasoning": "The bidder explicitly states they are a VIP-listed SDVOSB verified under the SBA VetCert program, which directly addresses the requirement to comply with VAAR subpart 819.70 and associated regulations regarding small business status."
   },
   {
-    "requirement_id": "f9a2a1b4-9d83-4f50-94e0-8597b793aff1",
-    "requirement_text": "An SDVOSB or VOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+    "requirement_id": "0c29f3aa-40e7-4222-adf4-7a5098ad0acf",
+    "requirement_text": "The SDVOSB prime contractor must comply with limitations on subcontracting as defined by contract type (services, supplies, or construction) and ensure that subcontractors are VIP-listed SDVOSBs to count as similarly situated, including specific percentage caps on payments to non-VIP-listed firms and requirements for non-manufacturer supply chains.",
     "verdict": "insufficient_information",
     "evidence": [
       {
@@ -232,50 +260,14 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "inconclusive"
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder states that it is a VIP-listed SDVOSB, which addresses part of the requirement. However, the excerpts do not provide any information regarding whether the bidder meets the NAICS size standard assigned by the prime contractor. Therefore, there is insufficient information to determine full compliance."
+    "reasoning": "While the bidder confirms their status as a VIP-listed SDVOSB, the provided excerpts do not contain information regarding their subcontracting plan, the use of subcontractors, or their intent to comply with the specific limitations on subcontracting and non-manufacturer supply chain requirements mandated by the solicitation."
   },
   {
-    "requirement_id": "525d6599-03db-410d-961a-291013e77aec",
-    "requirement_text": "Any work that a first tier VIP-listed SDVOSB or VOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
-        "start_char": 2209,
-        "end_char": 2350,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The bidder acknowledges acceptance of the solicitation terms and conditions, but the provided excerpts do not mention or contain any specific details regarding subcontracting limits or rules concerning first tier VIP-listed SDVOSB or VOSB subcontractors further subcontracting work. Therefore, there is insufficient information to determine compliance."
-  },
-  {
-    "requirement_id": "a7e551fd-2dd7-485c-bb7d-4bc3cbca03f9",
-    "requirement_text": "A joint venture may be considered eligible as an SDVOSB or VOSB if the joint venture is listed in VIP and complies with the requirements in 13 CFR 125.18(b).",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
-        "start_char": 742,
-        "end_char": 895,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement specifies the eligibility criteria for a joint venture applying as an SDVOSB or VOSB. However, the bidder's application states that Meridian Medical Systems, LLC is an LLC, and provides no indication or statement regarding whether it is a joint venture operating under 13 CFR 125.18(b)."
-  },
-  {
-    "requirement_id": "200de0a3-f84a-4a08-ab43-a778345e68a4",
-    "requirement_text": "By submitting an offer, the prospective contractor represents that it is an eligible VOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+    "requirement_id": "09bcabca-78aa-497c-a79f-fd4c641ec138",
+    "requirement_text": "The offeror must be a veteran-owned small business (VOSB) verified and listed in the VA's Vendor Information Pages (VIP) database, and must maintain this eligibility at the time of offer submission and award.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -289,38 +281,46 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states they are a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB) verified under SBA SBS VetCert, which fulfills the eligibility representation as a VOSB."
+    "reasoning": "The bidder explicitly states they are a VIP-listed SDVOSB and provides their verification case number, which satisfies the requirement to be verified and listed in the VA's database."
   },
   {
-    "requirement_id": "04976f12-cb52-4091-8ca3-c753ab220048",
-    "requirement_text": "Offeror must meet Limitations on Subcontracting (LOS) requirements per the listed clauses and assert compliance in the email accompanying their quote.",
+    "requirement_id": "91784af1-88ad-4d7d-a798-b9d6a856a052",
+    "requirement_text": "The VOSB prime contractor must comply with limitations on subcontracting as defined by contract type (services, supplies, or construction) and ensure that subcontractors are VIP-listed VOSBs to count as similarly situated, including specific percentage caps on payments to non-VIP-listed firms and requirements for non-manufacturer supply chains.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
+        "start_char": 742,
+        "end_char": 895,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "While the bidder confirms their status as a VIP-listed SDVOSB, the application does not provide any information regarding their intended subcontracting plan, their compliance with the specific percentage caps on payments to non-VIP-listed firms, or their adherence to non-manufacturer supply chain requirements as mandated by the solicitation."
+  },
+  {
+    "requirement_id": "d689404a-fd2e-467a-82df-9321165067c7",
+    "requirement_text": "The offeror must comply with all Limitations on Subcontracting (LOS) requirements and must explicitly assert this compliance in the email accompanying their quote.",
     "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Meridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003.",
-        "start_char": 170,
+        "quote": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003.",
+        "start_char": 0,
         "end_char": 289,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
-      },
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Our representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.",
-        "start_char": 2024,
-        "end_char": 2185,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement states that the offeror must meet Limitations on Subcontracting (LOS) requirements and assert compliance in the email accompanying their quote. Reviewing the accompanying email text and the application contents, there is no mention or assertion of compliance with the Limitations on Subcontracting requirements."
+    "reasoning": "The requirement explicitly states that the offeror must explicitly assert compliance with Limitations on Subcontracting (LOS) requirements in the email accompanying their quote. A review of the provided email text shows no mention or assertion regarding LOS compliance."
   },
   {
-    "requirement_id": "d50d202b-e3fa-4742-bc82-3367dc496e26",
+    "requirement_id": "83956f7a-26a5-47cc-aefe-33c06d9c0fee",
     "requirement_text": "As a minimum, quotes must show— ... (3) The name, address, and telephone number of the quoter;",
     "verdict": "compliant",
     "evidence": [
@@ -335,11 +335,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly provides the name, address, and telephone number of the quoter in the tender application, fully satisfying the requirement."
+    "reasoning": "The bidder explicitly provided their name, physical address, and telephone number in the quote document, satisfying the requirement."
   },
   {
-    "requirement_id": "ff3e3dbf-7993-4dfb-9374-9fa6b1aadf34",
-    "requirement_text": "As a minimum, quotes must show— ... (4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation. This may include product literature, or \n     other documents, if necessary.",
+    "requirement_id": "28cff8be-e305-4f65-9aef-7aff575918ae",
+    "requirement_text": "As a minimum, quotes must show— ... (4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -353,10 +353,10 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder provides a detailed technical description of the items quoted, including the specific platform, integrated CD burner, software licenses, operating system, hardware components, and accessories, which fully satisfies the requirement to provide sufficient detail to evaluate compliance."
+    "reasoning": "The bidder provides a detailed technical description of the items being quoted, including specific software licenses, hardware components, and confirmation that the package matches the Statement of Work in full, which satisfies the requirement for sufficient detail to evaluate compliance."
   },
   {
-    "requirement_id": "0dfec19d-b645-415e-85b5-eebafb54df2d",
+    "requirement_id": "d8055ed1-4c6b-493f-8810-01425c24f720",
     "requirement_text": "As a minimum, quotes must show— ... (5) Terms of any express warranty;",
     "verdict": "compliant",
     "evidence": [
@@ -381,10 +381,10 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that quotes must show the terms of any express warranty. The bidder's application explicitly includes the terms of the manufacturer's standard 3-year parts-and-labor warranty as well as an option for an extended 5-year warranty, thereby satisfying the requirement."
+    "reasoning": "The bidder explicitly states the terms of the standard warranty (3-year parts-and-labor from date of installation) and provides an alternative option for an extended 5-year warranty, thereby satisfying the requirement to show terms of any express warranty."
   },
   {
-    "requirement_id": "96f63f2a-dfcd-47d3-8e8b-d6133e6fc26b",
+    "requirement_id": "2745b06c-d572-4bf7-b3ab-7830844cd09f",
     "requirement_text": "As a minimum, quotes must show— ... (6) Price and any discount terms;",
     "verdict": "compliant",
     "evidence": [
@@ -393,16 +393,6 @@
         "quote": "Total quoted price for this solicitation: $21,540.00.",
         "start_char": 2352,
         "end_char": 2405,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Product Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.",
-        "start_char": 2407,
-        "end_char": 2806,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
@@ -419,10 +409,10 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's quote explicitly provides the total quoted price, itemized unit prices and totals in a product chart, and clear discount terms (Net 30 days, no prompt-payment discount), thereby fully satisfying the requirement to show price and any discount terms."
+    "reasoning": "The bidder provided the total quoted price and explicitly stated their payment terms (Net 30) and discount terms (no prompt-payment discount offered), thereby satisfying the requirement to show price and discount terms."
   },
   {
-    "requirement_id": "848f9979-189f-4bf2-ad44-d71aec7d2943",
+    "requirement_id": "3ee40f1c-c21d-4639-a1c0-7954daf44bb0",
     "requirement_text": "As a minimum, quotes must show— ... (7) \"Remit to\" address, if different from the mailing address;",
     "verdict": "compliant",
     "evidence": [
@@ -437,10 +427,28 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement specifies that quotes must show the 'Remit to' address, if different from the mailing address, or otherwise address it. The bidder explicitly provided the 'Remit to' address information by stating it is the same as the mailing address listed."
+    "reasoning": "The requirement asks for a 'Remit to' address if different from the mailing address. The bidder explicitly stated that the 'Remit to' address is the same as the mailing address, thereby satisfying the requirement to address this information."
   },
   {
-    "requirement_id": "7be7631b-a987-43c1-82d6-7abef2860484",
+    "requirement_id": "966c727e-626e-476e-a47d-ede22e77f13d",
+    "requirement_text": "As a minimum, quotes must show— ... (8) A completed copy of the representations and certifications under the \nFederal Acquisition Regulation (FAR) 52.212-3",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Our representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.",
+        "start_char": 2024,
+        "end_char": 2185,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement explicitly states that quotes must show a completed copy of the representations and certifications under FAR 52.212-3. The bidder explicitly states that they have not attached a completed copy to their submission, thereby failing to meet the requirement."
+  },
+  {
+    "requirement_id": "f07a87ec-8d63-4109-9d70-d3546fdbfe6a",
     "requirement_text": "As a minimum, quotes must show— ... (9) Acknowledgment Request for Quotation amendments;",
     "verdict": "compliant",
     "evidence": [
@@ -455,11 +463,11 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that quotes must show acknowledgment of Request for Quotation amendments. The bidder's application explicitly states an acknowledgment of receipt of Amendment/Modification P0003."
+    "reasoning": "The bidder explicitly acknowledges receipt of the amendment (P0003) in their application, which satisfies the requirement to acknowledge Request for Quotation amendments."
   },
   {
-    "requirement_id": "569258d6-1fac-4198-bde4-2377ca7b9092",
-    "requirement_text": "The quote must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation, either stating they are acceptable without modification or detailing any exceptions, deletions, or additions.",
+    "requirement_id": "dd4f3800-2129-45d3-9907-746d1555098b",
+    "requirement_text": "The quote must include a statement specifying the extent of agreement with the solicitation's terms and conditions, either confirming full acceptance without modification or detailing any specific exceptions, deletions, or additions.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -473,17 +481,17 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their application that the terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition, which directly satisfies the requirement."
+    "reasoning": "The bidder explicitly states that the solicitation's terms and conditions are acceptable without modification, deletion, or addition, which directly satisfies the requirement."
   },
   {
-    "requirement_id": "a84214a1-5a44-4121-9947-07d70bad803a",
+    "requirement_id": "49f7e97a-13f5-4959-b74f-044bbf27331b",
     "requirement_text": "The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes unless another time period is specified in an addendum to the solicitation.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
-        "start_char": 2187,
+        "quote": "The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 2209,
         "end_char": 2350,
         "citation_verified": true,
         "match_precision": null,
@@ -491,12 +499,30 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states that the terms and conditions in the solicitation are acceptable without modification, deletion, or addition. Because the requirement to hold prices firm for 30 calendar days is part of the solicitation's standard terms, accepting the terms and conditions without modification constitutes compliance."
+    "reasoning": "The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. Since the requirement to hold prices firm for 30 days is a standard term of the solicitation, the bidder's acceptance of all terms and conditions confirms their compliance with this requirement."
   },
   {
-    "requirement_id": "fa21b6e2-42a3-4a7d-92f9-ccb3762caec5",
+    "requirement_id": "e494633b-1b7c-4c9a-88c8-2a82c333affa",
+    "requirement_text": "Unless otherwise provided in the schedule,  ... quotations may not be submitted for quantities less than those specified.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.",
+        "start_char": 2430,
+        "end_char": 2806,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The provided excerpts do not include the original solicitation's requirements regarding specified quantities. While the bidder has quoted specific quantities for each item, it is impossible to determine if these quantities meet the minimum requirements set by the solicitation without access to the solicitation's schedule of requirements."
+  },
+  {
+    "requirement_id": "a74758cd-12cc-4f4c-aa5e-860615ef0ad0",
     "requirement_text": "The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation \"Unique Entity Identifier\" followed by the unique entity identifier that identifies the quoter's name and address.",
-    "verdict": "compliant",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
@@ -506,20 +532,41 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "supports"
+        "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder included the annotation \"Unique Entity Identifier\" followed by the unique entity identifier right in the block containing its name and address on the cover page (email body acting as cover page/quote opening)."
+    "reasoning": "The requirement specifies that the quoter must enter the annotation 'Unique Entity Identifier' followed by the identifier in the block with its name and address. While the bidder provided the identifier, they failed to include the specific required annotation 'Unique Entity Identifier' as a label or prefix immediately preceding the identifier within the name and address block; instead, they listed it as a separate line item."
   },
   {
-    "requirement_id": "561b185d-5710-4807-a1df-168960fcf5ed",
+    "requirement_id": "18f9c8dc-9b16-44cb-9afd-6a14cdf61822",
     "requirement_text": "The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts do not mention whether an Electronic Funds Transfer (EFT) indicator is applicable or provide the EFT indicator itself. Therefore, there is insufficient information to determine compliance."
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "Quoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142",
+        "start_char": 451,
+        "end_char": 602,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "\"Remit to\" address: Same as the mailing address listed above.",
+        "start_char": 1961,
+        "end_char": 2022,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement explicitly states that the quoter must enter its Electronic Funds Transfer (EFT) indicator. A review of the provided application documents shows that while the bidder provided contact information, a Unique Entity Identifier, and business status, they failed to include an EFT indicator."
   },
   {
-    "requirement_id": "6a28a000-1bbc-47d1-b744-26d7084623a1",
+    "requirement_id": "c71dd4a8-3542-49de-8ade-1446d81bc24a",
     "requirement_text": "Quoters shall list exception(s) and rationale for the exception(s), if any.",
     "verdict": "compliant",
     "evidence": [
@@ -534,54 +581,57 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that quoters shall list exceptions and rationale, if any. The bidder explicitly stated that the terms and conditions in the solicitation are acceptable without modification, deletion, or addition, effectively indicating that they have no exceptions."
+    "reasoning": "The bidder explicitly stated that the terms and conditions are acceptable without modification, deletion, or addition, which effectively communicates that there are no exceptions to the solicitation requirements."
   },
   {
-    "requirement_id": "b6269986-b187-447f-9614-e331c18c2fd6",
-    "requirement_text": "Offers received from entities that are not VIP-listed SDVOSBs at the time of offer shall not be considered.",
-    "verdict": "compliant",
+    "requirement_id": "0d03865b-4659-4d4b-a9a6-ac78c38323e7",
+    "requirement_text": "An otherwise eligible firm must comply with the required certification requirements in this solicitation, specifically referencing 852.219-75 and/or 852.219-76 as applicable.",
+    "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
-        "start_char": 742,
-        "end_char": 895,
+        "quote": "Our representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.",
+        "start_char": 2024,
+        "end_char": 2185,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 2209,
+        "end_char": 2350,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that offers must be from entities that are VIP-listed SDVOSBs at the time of offer. The bidder explicitly states in chunk [0] that they are a VIP-listed Service-Disabled Veteran-Owned Small Business (SDVOSB) verified under SBA SBS VetCert, which directly satisfies the requirement."
+    "reasoning": "The bidder states that the terms and conditions of the solicitation are acceptable, which implies agreement to the certification requirements. However, the bidder does not explicitly reference or confirm compliance with the specific VAAR clauses 852.219-75 or 852.219-76, which are required by the solicitation. While they mention their SAM.gov certifications, they do not confirm the specific certifications requested."
   },
   {
-    "requirement_id": "0e47a629-6377-4360-a9cb-e92537409e5b",
-    "requirement_text": "No more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed SDVOSBs.",
-    "verdict": "insufficient_information",
+    "requirement_id": "fb525d1f-45d4-4f5f-abdc-099585d56a40",
+    "requirement_text": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the service portion of the contract.",
+    "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
-        "start_char": 742,
-        "end_char": 895,
+        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 2187,
+        "end_char": 2350,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "inconclusive"
+        "role": "supports"
       }
     ],
-    "reasoning": "The application states that Meridian Medical Systems, LLC is a VIP-listed SDVOSB, and accepts the terms and conditions of the solicitation. However, the excerpts do not contain any information regarding whether any portion of the contract performance amount (excluding materials) will be paid to firms that are not VIP-listed SDVOSBs, nor do they address the 75% limitation requirement. Therefore, there is insufficient information to determine compliance."
+    "reasoning": "The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. Since the requirement regarding the 50 percent limitation is a standard term of the solicitation, the bidder's acceptance of all terms confirms their compliance."
   },
   {
-    "requirement_id": "e03aa35b-65ac-4c18-8e39-54ca9ddb4689",
-    "requirement_text": "For supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The requirement states that for supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted. The provided excerpts contain pricing information for equipment, installation, training, delivery, and warranty, but do not mention any subcontracts, subcontracted costs, or how the cost of materials is treated with respect to subcontracting. Therefore, there is insufficient information to determine compliance."
-  },
-  {
-    "requirement_id": "c8014a09-df8f-44b6-b822-1c731a7640da",
-    "requirement_text": "In the case of a contract for supplies or products (other than from a non-manufacturer of such supplies), the VOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+    "requirement_id": "0d8db7df-1130-4794-9b5f-baab41412e67",
+    "requirement_text": "When a contract includes both supply and services, the 50 percent limitation shall apply only to the supply portion of the contract.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -593,7 +643,33 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      },
+      }
+    ],
+    "reasoning": "The bidder explicitly accepted all terms and conditions of the solicitation without modification. Since the requirement regarding the 50 percent limitation is a standard contractual term, the bidder's blanket acceptance of the solicitation's terms and conditions confirms their compliance with this requirement."
+  },
+  {
+    "requirement_id": "ddca3a25-5f5a-4054-bbbc-529e6f576297",
+    "requirement_text": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/application.txt",
+        "quote": "The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 2209,
+        "end_char": 2350,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly stated that the terms and conditions of the solicitation are acceptable without modification. By accepting the solicitation's terms, the bidder agrees to comply with all requirements contained therein, including the specified limitation on the portion of the contract with the preponderance of expenditure."
+  },
+  {
+    "requirement_id": "4808634c-61b7-441a-a057-691692cc92ba",
+    "requirement_text": "An SDVOSB or VOSB shall comply with the limitations on subcontracting by the end of the base term of the contract or order, and then by the end of each subsequent option period.",
+    "verdict": "insufficient_information",
+    "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
         "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
@@ -602,70 +678,63 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "supports"
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder accepts all solicitation terms and conditions without modification, which includes compliance with the limitations on subcontracting (the 50% rule for VOSB/SDVOSB prime contractors). Furthermore, the bidder is confirmed to be a VIP-listed VOSB/SDVOSB."
+    "reasoning": "While the bidder identifies as an SDVOSB, the provided excerpts do not contain any statement or commitment regarding their compliance with the limitations on subcontracting as required by the solicitation."
   },
   {
-    "requirement_id": "7b444aa6-52fe-4f12-9772-9b25f1080a81",
-    "requirement_text": "In the case of a contract for supplies from a non-manufacturer, the VOSB prime contractor will supply the product of a domestic small business manufacturer or processor, unless a waiver as described in 13 CFR 121.406(b)(5) has been granted.",
+    "requirement_id": "398c811a-1f7b-4ffb-8d41-b8330ac25042",
+    "requirement_text": "An SDVOSB or VOSB shall comply with the limitations on subcontracting by the end of the performance period for each order issued under the contract.",
     "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
-        "start_char": 2187,
-        "end_char": 2350,
+        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
+        "start_char": 742,
+        "end_char": 895,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder states they accept the terms and conditions of the solicitation and are a VIP-listed SDVOSB. However, the excerpts do not state whether Meridian Medical Systems, LLC is the actual manufacturer of the supplies, whether they are acting as a non-manufacturer supplying a domestic small business manufacturer's product, or whether a waiver has been granted."
+    "reasoning": "While the bidder identifies as an SDVOSB, the provided excerpts do not contain any information or affirmation regarding the bidder's intent or ability to comply with the limitations on subcontracting required by the solicitation."
   },
   {
-    "requirement_id": "342fcecd-d251-4cd7-b458-cc7bd0f4ebc7",
-    "requirement_text": "In the case of a contract for general construction, the VOSB prime contractor will not pay more than 85% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The requirement specifies limitations on the percentage of contract amounts paid to non-VIP-listed VOSB subcontractors for general construction contracts. None of the provided excerpts contain information regarding subcontractors, subcontracting limitations, or the specific breakdown of payments to other firms for contract performance."
-  },
-  {
-    "requirement_id": "176f84f1-647a-44a3-8949-8bc2753a2562",
-    "requirement_text": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+    "requirement_id": "958cc067-d358-4c27-89c4-4284bf2fa13e",
+    "requirement_text": "A joint venture agrees that, in the performance of the contract, the applicable percentage specified in paragraph (d) of this clause will be performed by the aggregate of the joint venture participants.",
     "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
-        "start_char": 2187,
-        "end_char": 2350,
+        "quote": "Meridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.",
+        "start_char": 742,
+        "end_char": 895,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder accepts the terms and conditions of the solicitation and states they are a VIP-listed SDVOSB. However, the application excerpts contain no information regarding subcontracting arrangements or the allocation of payments to non-VIP-listed firms for contract performance."
+    "reasoning": "The requirement pertains specifically to joint ventures and the performance of contract percentages by joint venture participants. The bidder, Meridian Medical Systems, LLC, identifies itself as a single entity (an SDVOSB) and does not indicate that it is participating as part of a joint venture. Therefore, there is insufficient information to determine if the requirement is applicable or satisfied."
   },
   {
-    "requirement_id": "4a8dd950-0366-49ed-adb1-762c0410b722",
-    "requirement_text": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+    "requirement_id": "9b779910-d437-40e5-bf60-9b55ade61022",
+    "requirement_text": "The Department of Veterans Affairs requires a Sorna Vertex 25ei System Package and accessories to produce high-density, medical-grade CDs of radiology files.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/36C24126Q0731/application.txt",
-        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
-        "start_char": 2187,
-        "end_char": 2350,
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation",
+        "start_char": 1165,
+        "end_char": 1367,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement governs how the 50 percent limitation applies to contracts containing both services and supplies, which is a standard statutory/regulatory clause (such as FAR 52.219-14 or similar limitation on subcontracting rules). The bidder explicitly accepts all terms and conditions of the solicitation without modification, deletion, or addition, thereby incorporating this requirement into their tender."
+    "reasoning": "The bidder explicitly states they are providing the exact brand-name system (Sorna Vertex 25ei Platform with integrated Sorna CD Burner) required by the solicitation."
   }
 ]
