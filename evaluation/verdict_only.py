@@ -9,7 +9,7 @@ from evaluation.span_adapters import retrieved_by_requirement
 from schemas import (
     ConditionSpec,
     Requirement,
-    RetrievedEvidenceRecord,
+    RetrievedContextRecord,
     TextSpan,
     Verdict,
 )
@@ -50,14 +50,6 @@ class VerdictOnlyOutcome(BaseModel):
     predicted_verdict: str
     acceptable_verdicts: list[str] | None
     is_correct: bool
-    # primary_verdict is the single distilled/fallback training-target
-    # label (see evaluation/fixtures.py TrueVerdict.primary_verdict) --
-    # matching it is a strictly harder bar than acceptable_verdicts
-    # membership (acceptable_verdicts is often a 2-element set; primary
-    # is exactly one of those). Reported alongside, not instead of, the
-    # acceptable_verdicts-based figure -- they answer different questions
-    # ("is this a defensible verdict" vs "does this match the specific
-    # label SFT trains toward") and should never be quoted interchangeably.
     primary_verdict: str | None = None
     is_correct_vs_primary: bool | None = None
     evidence_quotes: list[str]
@@ -120,9 +112,9 @@ def _evidence_quotes(verdict: Verdict) -> list[str]:
 
 
 def _retrieved_context_by_requirement(
-    retrieved_evidence: list[RetrievedEvidenceRecord],
+    retrieved_context: list[RetrievedContextRecord],
 ) -> dict[str, list[str]]:
-    by_requirement = retrieved_by_requirement(retrieved_evidence)
+    by_requirement = retrieved_by_requirement(retrieved_context)
     context = {}
     for requirement_id, chunks in by_requirement.items():
         context[requirement_id] = [chunk.text for chunk in chunks]
@@ -132,14 +124,14 @@ def _retrieved_context_by_requirement(
 def score_verdicts(
     predicted_verdicts: list[Verdict],
     verdicts_fixture: TrueVerdictsFixture,
-    retrieved_evidence: list[RetrievedEvidenceRecord] | None = None,
+    retrieved_context: list[RetrievedContextRecord] | None = None,
 ) -> VerdictOnlyResult:
     acceptable_by_topic = _acceptable_verdicts_by_topic(verdicts_fixture)
     primary_by_topic = _primary_verdict_by_topic(verdicts_fixture)
     rationale_by_topic = _true_rationale_by_topic(verdicts_fixture)
     true_evidence_by_topic = _true_evidence_by_topic(verdicts_fixture)
     retrieved_context_by_requirement = _retrieved_context_by_requirement(
-        retrieved_evidence or []
+        retrieved_context or []
     )
     outcomes = []
     for verdict in predicted_verdicts:

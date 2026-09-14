@@ -1,0 +1,350 @@
+[
+  {
+    "requirement_id": "bcd513a4-3227-44d5-ba66-011aee22ac41",
+    "requirement_text": "The company must obtain and provide a Unique Entity Identifier (UEI).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Cage Code / Unique Entity Identifier (UEI): HRN4K7Q2XM56",
+        "start_char": 659,
+        "end_char": 715,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the company must obtain and provide a Unique Entity Identifier (UEI). The bidder provides their UEI (HRN4K7Q2XM56) directly in their application under the company overview section, thereby fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "10492f08-b1f7-4982-b13f-f08d02acb097",
+    "requirement_text": "The company must be registered in the System for Award Management (SAM) with an active status, qualify as a small business for the specified NAICS code at the time of quote submission, at award, and throughout contract performance.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Northwoods Fabrication & Erectors, Inc. reported average annual receipts\nof $8.6 million over our three most recently completed fiscal years,\nwell under the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): HRN4K7Q2XM56",
+        "start_char": 426,
+        "end_char": 715,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The application mentions the company's UEI and confirms it qualifies as a small business under the specified NAICS code ($8.6 million receipts against the $19 million standard), but it does not explicitly state that the company is registered in the System for Award Management (SAM) with an active status at the time of quote submission or that it will maintain this status throughout contract performance."
+  },
+  {
+    "requirement_id": "cee41754-7e29-463e-8375-60b00dd51954",
+    "requirement_text": "Quotes are due by 9 September 2026 at 12 PM ET.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not contain any information regarding the quote due date or time (9 September 2026 at 12 PM ET)."
+  },
+  {
+    "requirement_id": "d4eec50a-f230-4ab1-a4b7-ec86e94e611c",
+    "requirement_text": "Questions regarding the solicitation will only be accepted until 1 September 2026 at 12 PM ET.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement sets a deadline for asking questions regarding the solicitation (1 September 2026 at 12 PM ET). The provided excerpts from the bidder's application contain information about company overview, technical approach, pricing, and prior experience, but do not contain any statements regarding whether the bidder asked any questions about the solicitation, nor when such questions might have been submitted. Therefore, there is insufficient information in the text to determine compliance."
+  },
+  {
+    "requirement_id": "7f62e524-1429-40fb-8bbe-31ee123e5094",
+    "requirement_text": "Offers must be submitted via email to the designated contract specialist by the specified date and time.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that offers must be submitted via email to the designated contract specialist by the specified date and time. While the excerpts show that the quote is addressed to Colette Riegelmayer, Contract Specialist, and mentions submitting the enclosed quote, they do not provide any details regarding the method of submission (i.e., whether it was sent via email) or the date and time of submission. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "7b6b3f00-179f-4eaa-aa93-486caf582c9a",
+    "requirement_text": "Quotes must be structured in accordance with and in the order detailed in the solicitation, utilizing the checklist to ensure all required documents are submitted.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided text excerpts do not contain any information regarding whether the quote was structured in accordance with and in the order detailed in the solicitation, nor do they mention the use of a checklist. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "19270fca-5308-4da2-941e-e6b36f89e01f",
+    "requirement_text": "Review and submit signed copies of any applicable solicitation amendments.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "We acknowledge that Amendment 0001 to this solicitation\nexists and confirm that this quote reflects the solicitation as amended.",
+        "start_char": 2791,
+        "end_char": 2919,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement mandates that the bidder review and submit signed copies of any applicable solicitation amendments. While chunk 2 acknowledges that Amendment 0001 exists and applies to the solicitation, the bidder only states that they acknowledge it, without providing or mentioning a signed copy of the amendment."
+  },
+  {
+    "requirement_id": "2cdc4b48-e913-481e-88a2-f2af0a2527d9",
+    "requirement_text": "Complete the attached price schedule in its entirety, including unit prices and total amounts for all line items, without unauthorized edits, and provide the final offer total.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "We have revised the item description on the enclosed Price Schedule to\nspecify \"Type 316 stainless fasteners\" in place of the generic wording,\nto ensure our fabrication shop orders the correct hardware grade; all\nunit and quantity fields remain as issued.",
+        "start_char": 1560,
+        "end_char": 1815,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Note: the alternate bracket configuration in Item 10A above uses a\nbracket manufactured by TrailGuard Systems rather than the brand\nspecified in the Statement of Work.",
+        "start_char": 2047,
+        "end_char": 2214,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement mandates completing the price schedule in its entirety without unauthorized edits. The bidder admits to revising the item description on the Price Schedule, constituting an unauthorized edit, and also proposes a substitution using a different brand for the bracket."
+  },
+  {
+    "requirement_id": "e0e693f1-bbdb-4de1-879f-2fe11069c524",
+    "requirement_text": "If quoting an 'or equal' item, submit detailed product specifications or literature to confirm comparability.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Note: the alternate bracket configuration in Item 10A above uses a\nbracket manufactured by TrailGuard Systems rather than the brand\nspecified in the Statement of Work.",
+        "start_char": 2047,
+        "end_char": 2214,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder proposes an alternate item ('or equal') manufactured by TrailGuard Systems under Alternate Item 10A, which triggers the requirement to submit detailed product specifications or literature to confirm comparability. However, the excerpts do not contain any product specifications or literature for this alternate bracket, rendering the application non-compliant."
+  },
+  {
+    "requirement_id": "f6d5d4f1-c573-489c-b789-25eae7ba0905",
+    "requirement_text": "Provide a detailed capabilities statement, project narrative, or technical questionnaire demonstrating knowledge and experience to successfully meet the statement of work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "chnical Approach:\nNorthwoods has fabricated and installed over 40 handrail and guardrail\nsystems for federal and municipal park facilities across the Upper\nPeninsula since 2011, using in-house CNC plasma cutting and TIG welding\nfor all stainless and galvanized steel components. For this project we\nwill replicate the profile and mounting details called out in the\nStatement of Work drawings, coordinating site staging with the PIRO\nfacilities team to minimize visitor-area disruption during the Memorial\nDay-to-Labor Day peak season",
+        "start_char": 877,
+        "end_char": 1410,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Prior Experience:\n1. Hiawatha National Forest - Trailhead Guardrail Installation (2022).\nFabricated and installed 180 linear feet of galvanized guardrail.\nContract value: $41,200. Point of Contact: Rebecca Sorenson, Facilities\nCoordinator, USDA Forest Service, (906) 555-4471.\n2. Marquette County Road Commission - Overlook Handrail Replacement\n(2021). Fabricated and installed 95 linear feet of aluminum handrail at\na scenic overlook. Contract value: $22,800. Point of Contact: Gary\nThibodeau, Project Engineer, Marquette County Road Commission, (906)\n555-6023.",
+        "start_char": 2216,
+        "end_char": 2778,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided both a technical approach detailing their manufacturing methods and site coordination plans, as well as a prior experience section outlining relevant past projects with references, satisfying the requirement for a capabilities statement and project narrative."
+  },
+  {
+    "requirement_id": "74031a45-7a7e-40ee-b59f-8341294c0436",
+    "requirement_text": "Include all required shop drawings and product data.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts discuss company overview, pricing, prior experience, and technical approach, but contain no mention of whether shop drawings or product data were included in the application."
+  },
+  {
+    "requirement_id": "c42ccbc7-1380-4f28-88a4-239fe7a9861d",
+    "requirement_text": "Provide at least three prior experience references for projects of similar size and scope within the past five years, including brief descriptions and contact information.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Prior Experience:\n1. Hiawatha National Forest - Trailhead Guardrail Installation (2022).\nFabricated and installed 180 linear feet of galvanized guardrail.\nContract value: $41,200. Point of Contact: Rebecca Sorenson, Facilities\nCoordinator, USDA Forest Service, (906) 555-4471.\n2. Marquette County Road Commission - Overlook Handrail Replacement\n(2021). Fabricated and installed 95 linear feet of aluminum handrail at\na scenic overlook. Contract value: $22,800. Point of Contact: Gary\nThibodeau, Project Engineer, Marquette County Road Commission, (906)\n555-6023.",
+        "start_char": 2216,
+        "end_char": 2778,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies providing at least three prior experience references for projects of similar size and scope within the past five years, including brief descriptions and contact information. The bidder's application only provides two references under the prior experience section, thus failing to meet the minimum quantity of three references."
+  },
+  {
+    "requirement_id": "526001ea-eecc-45ec-9646-14bd2cacf426",
+    "requirement_text": "Provide the offeror's company name.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "NORTHWOODS FABRICATION & ERECTORS, INC.",
+        "start_char": 0,
+        "end_char": 39,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Northwoods Fabrication & Erectors, Inc.",
+        "start_char": 3008,
+        "end_char": 3047,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly provides the offeror's company name, Northwoods Fabrication & Erectors, Inc., in both the header and the signature block."
+  },
+  {
+    "requirement_id": "db017c82-939a-435c-9871-e1700cf4784f",
+    "requirement_text": "Provide the offeror's point of contact (POC) name, email, and phone number.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Sincerely,\nTeresa Blackwood\nEstimator\nNorthwoods Fabrication & Erectors, Inc.",
+        "start_char": 2970,
+        "end_char": 3047,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for the offeror's point of contact name, email, and phone number. While the bidder provides a name (Teresa Blackwood), neither her email address nor her phone number is provided anywhere in the application text."
+  },
+  {
+    "requirement_id": "a647393c-bfae-4b1b-a056-b9b8ffef89fc",
+    "requirement_text": "Alternate quotes or proposals will not be accepted.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Alternate Item 10A - Fabricate/Install Handrail, Value-Engineered\nMounting Bracket: $47,900.00\nWe are prepared to perform under either configuration at the\nGovernment's discretion.",
+        "start_char": 1865,
+        "end_char": 2045,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that alternate quotes or proposals will not be accepted. The bidder explicitly submitted an alternate quote for 'Alternate Item 10A' using a different bracket and stated they are prepared to perform under either configuration, which violates the requirement."
+  },
+  {
+    "requirement_id": "41946648-0ae7-435b-9d97-52a15da0848d",
+    "requirement_text": "Provide written confirmation of sufficient documented direct experience in providing all labor, material, tools, supervision, and travel for the SOW.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Prior Experience:\n1. Hiawatha National Forest - Trailhead Guardrail Installation (2022)...\n2. Marquette County Road Commission - Overlook Handrail Replacement (2021)...",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement asks for written confirmation of sufficient documented direct experience in providing all labor, material, tools, supervision, and travel for the SOW. While the bidder lists prior projects involving fabrication and installation, they do not explicitly provide written confirmation that they have experience providing all specified elements (such as tools, supervision, and travel) as requested by the requirement."
+  },
+  {
+    "requirement_id": "c269bd2a-ba9b-4ed5-8672-98ef4e6d246d",
+    "requirement_text": "The contractor must submit payment requests electronically through the Invoice Processing Platform (IPP) system.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The bidder's application is completely silent regarding payment requests and the Invoice Processing Platform (IPP) system. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "dfe1c013-36c8-4e77-9e16-a18b38617563",
+    "requirement_text": "Provide a vendor invoice document in PDF format showing pricing breakdown, contract number, dates of service, invoice date, and vendor letterhead.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Quote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore",
+        "start_char": 83,
+        "end_char": 188,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Price Schedule:\nWe have revised the item description on the enclosed Price Schedule to\nspecify \"Type 316 stainless fasteners\" in place of the generic wording,\nto ensure our fabrication shop orders the correct hardware grade; all\nunit and quantity fields remain as issued.",
+        "start_char": 1544,
+        "end_char": 1815,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for a vendor invoice document in PDF format showing pricing breakdown, contract number, dates of service, invoice date, and vendor letterhead. The provided application excerpts contain a quote/proposal with pricing, company overview, and technical approach, but they do not contain any vendor invoice document showing dates of service, invoice date, or a contract number. Therefore, the application fails to satisfy the requirement."
+  },
+  {
+    "requirement_id": "d6d6d8df-f334-45cc-9993-9b56748b19d5",
+    "requirement_text": "If unable to use IPP for invoices, submit a written waiver request to the Contracting Officer with the proposal.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that if a bidder is unable to use IPP for invoices, they must submit a written waiver request to the Contracting Officer with the proposal. The provided excerpts contain no mention of invoicing methods, IPP, or any waiver request. Since the excerpts are silent on whether the bidder is able or unable to use IPP, there is insufficient information to determine compliance or non-compliance with this conditional requirement."
+  },
+  {
+    "requirement_id": "9fc04293-5c75-4cf6-ac8f-6b9c7af2a77b",
+    "requirement_text": "The Government will not enter into a contract with any corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, unless an agency has considered suspension or debarment and made a determination that it is not necessary to protect the interests of the Government; the offeror must represent whether or not it is such a corporation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "We confirm that Northwoods Fabrication & Erectors, Inc. has no\noutstanding federal tax obligations of any kind as of the date of this\nquote.",
+        "start_char": 733,
+        "end_char": 873,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the offeror must represent whether or not it is a corporation with unpaid Federal tax liabilities. In chunk [0], the bidder explicitly represents that they have no outstanding federal tax obligations, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "d6f76c7f-2e9a-405c-9da5-975c1b4f7b81",
+    "requirement_text": "The Government will not enter into a contract with any corporation that was convicted of a felony criminal violation under any Federal law within the preceding 24 months, unless an agency has considered suspension or debarment and made a determination that this action is not necessary to protect the interests of the Government; the offeror must represent whether or not it is such a corporation.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that the Government will not enter into a contract with a corporation convicted of a felony criminal violation under Federal law within the preceding 24 months unless an agency has made a determination, and that the offeror must represent whether or not it is such a corporation. The bidder's application includes representations about federal tax obligations and company size, but does not contain any representation regarding whether or not the corporation has been convicted of a felony criminal violation under Federal law within the preceding 24 months. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "ce8becf4-d2dd-40ca-8140-b3b6975a2811",
+    "requirement_text": "Item Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor) - Price\nTotal - Price",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/b/application.txt",
+        "quote": "Item 10 - Fabricate/Install Handrail: $52,300.00",
+        "start_char": 1816,
+        "end_char": 1864,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for the price of Item Number 10 (Fabricate/Install Handrail, including mob/demob, supplies, and labor). The bidder provided a clear pricing schedule containing the total price for Item 10 ($52,300.00)."
+  }
+]

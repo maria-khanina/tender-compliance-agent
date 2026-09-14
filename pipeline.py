@@ -39,5 +39,5 @@ def run_pipeline(
         report=final_state["report"],
         requirements=final_state["requirements"],
         verdicts=final_state["verdicts"],
-        retrieved_evidence=final_state["retrieved_evidence"],
+        retrieved_context=final_state["retrieved_context"],
     )

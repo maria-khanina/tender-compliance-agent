@@ -1,20 +1,18 @@
 {
   "label": "baseline-qwen3-8b-awq",
   "model": "Qwen/Qwen3-8B-AWQ",
-  "results": [
-    {
-      "case": "36C24126Q0704",
-      "ok": true,
-      "returncode": 0,
-      "accuracy": 0.71875,
-      "stderr_tail": null
+  "results": {
+    "36C24126Q0704": {
+      "accuracy_vs_acceptable": 0.71875,
+      "accuracy_vs_primary": 0.4375,
+      "scored_vs_acceptable": 32,
+      "scored_vs_primary": 32
     },
-    {
-      "case": "SHOP-PR-26-002435",
-      "ok": true,
-      "returncode": 0,
-      "accuracy": 0.875,
-      "stderr_tail": null
+    "SHOP-PR-26-002435": {
+      "accuracy_vs_acceptable": 0.875,
+      "accuracy_vs_primary": 0.65625,
+      "scored_vs_acceptable": 32,
+      "scored_vs_primary": 32
     }
-  ]
+  }
 }

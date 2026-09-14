@@ -1,0 +1,56 @@
+{
+  "recall": 1.0,
+  "total_gold": 10,
+  "total_found": 10,
+  "rows": [
+    {
+      "topic_id": "amendment_acknowledgment",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "price_schedule_completion_all_periods",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "offsite_disposal_cost_inclusion",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "technical_capability_narrative",
+      "gold_evidence_count": 2,
+      "found_count": 2,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "relevant_experience_submission",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "sf1449_administrative_info_completion",
+      "gold_evidence_count": 2,
+      "found_count": 2,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    },
+    {
+      "topic_id": "subcontracting_certificate_completion",
+      "gold_evidence_count": 2,
+      "found_count": 2,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 3
+    }
+  ]
+}

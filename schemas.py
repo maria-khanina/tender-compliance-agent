@@ -94,13 +94,13 @@ class Verdict(BaseModel):
     reasoning: str
 
 
-class RetrievedEvidenceRecord(BaseModel):
+class RetrievedContextRecord(BaseModel):
     requirement_id: str
-    evidence_chunks: list[Chunk]
+    retrieved_context: list[Chunk]
 
 
 class PipelineResult(BaseModel):
     report: str
     requirements: list[Requirement]
     verdicts: list[Verdict]
-    retrieved_evidence: list[RetrievedEvidenceRecord]
+    retrieved_context: list[RetrievedContextRecord]

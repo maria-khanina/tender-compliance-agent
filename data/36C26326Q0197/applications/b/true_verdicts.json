@@ -1,0 +1,428 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Heartland Cylinder Supply Co.) against the same true_requirements.json as data/36C26326Q0197 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Northern Plains Medical Gases, LLC).",
+    "Error-shape diversity versus the original: geographic_facility_or_resources_presence, cylinder_tracking_plan_facility, price_schedule_attachment_c_completed, and phase_in_strategy_submitted are new non_compliant topics (a single-depot admission, a triggered-but-deferred facility tracking system, an explicitly estimated/non-firm price schedule, and an entire phase-in strategy deferred to after award) rather than the original's total-omission and partial-component failures on other topics; price_firm_90_days is now the contradiction (firm-for-90-days vs subject-to-change-in-30-days) rather than the original's Schedule-of-Items completeness contradiction, which remains the canonical example for that topic; technical_continuity_of_operations reverts to a clean compliant statement since its contradiction shape is already canonical in the original application; cylinder_replacement_cost_in_proposal, cylinder_tracking_plan_delivery, difficult_to_fill_items_flagged, project_management_plan_submitted, sf1449_completed, past_performance_reference_provided, and vaar_852_219_76_certificate_submitted are inverted to compliant (fully addressed) rather than the original's omissions/partial coverage.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_registration_active_at_offer",
+      "description": "Offerors must be registered and active in the System for Award Management (SAM) at the time of offer.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SAM registration status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "delivery_frequency_compliance",
+      "description": "The contractor must comply with the delivery frequencies specified per delivery location as outlined in Attachment A.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly commits to complying with the delivery frequency specified per location in Attachment A.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "We commit to complying with the delivery\nfrequency specified per location in Attachment A.",
+          "start_char": 623,
+          "end_char": 713
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "geographic_facility_or_resources_presence",
+      "description": "The contractor must have a facility and/or resources physically located in the geographic areas in which they will provide supplies.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states operations from a single central depot serving all facility locations, rather than having a facility or resources physically located within each geographic area served.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. operates a single central distribution\ndepot in Omaha, NE, from which we serve all VISN 23 facility locations\nlisted in Attachment A.",
+          "start_char": 459,
+          "end_char": 622
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "cylinder_replacement_cost_in_proposal",
+      "description": "The contractor's proposal must include the cylinder replacement cost for each item listed on Attachment C.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states an itemized cylinder replacement cost schedule per gas type and cylinder size is attached.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. will invoice\nthe replacement cost listed in our attached cylinder replacement cost\nschedule (Exhibit C-1), itemized per gas type and cylinder size.",
+          "start_char": 1375,
+          "end_char": 1552
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "cylinder_tracking_plan_delivery",
+      "description": "The contractor must submit a cylinder tracking plan with their proposal for cylinders being delivered to and from the ordering activity, covering data-entry method and mechanism, when and how the Government can extract data, what data is stored, access limits, and any Government-network connection requirements. If the contractor's tracking system is impending/not yet fully operational, the proposal must include an implementation timeline coinciding with the phase-in timeline.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes a web-based portal tracking plan addressing data-entry method/mechanism, on-demand data access, access limits, and the absence of a Government-network connection requirement -- covering the required elements.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "we will use a\nweb-based portal (method: barcode scanning at pickup and delivery,\nMicrosoft Excel export available) that allows ordering activity POCs\non-demand access to view or extract data related to all cylinders\nmoving in and out of their facility, including access limits for\nGovernment employees and no requirement for connection to the\nGovernment network.",
+          "start_char": 2324,
+          "end_char": 2686
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "cylinder_tracking_plan_facility",
+      "description": "Although not required, if the contractor has a system for tracking medical gas cylinders within an ordering activity's facility after delivery, the contractor must submit a tracking plan with their proposal covering the same items as the delivery-side tracking plan.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application states the contractor currently operates a facility-side cylinder tracking system, triggering the conditional requirement, but states this system will only be made available following award rather than submitting the required plan with the proposal.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "We currently operate a proprietary facility-side cylinder tracking\nsystem for our existing hospital-system clients, which we plan to make\navailable to VISN 23 ordering activities as well following award.",
+          "start_char": 2688,
+          "end_char": 2891
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "reporting_capabilities_proposal",
+      "description": "The contractor must submit in their proposal their available on-demand reporting capabilities (usage, cost, and cylinder tracking reports), including how the data is collected, distributed, and viewed.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application offers reporting capabilities only in general terms and defers the specific report types and data fields to later discussion with the COR, rather than describing the usage/cost/cylinder-tracking reporting content the requirement calls for.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. offers on-demand reporting capabilities\nto support contract administration and will work with the COR to\ndetermine the specific report types and data fields most useful to\neach ordering activity.",
+          "start_char": 2917,
+          "end_char": 3142
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "difficult_to_fill_items_flagged",
+      "description": "The contractor must identify in their proposal any medical gases that can be classified as difficult to fill or likely to be placed on backorder, by highlighting the item in Attachment C and providing a statement justifying the classification.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application identifies a specific item (liquid helium, Item 0047) as difficult to fill and provides a justifying statement about global supply constraints.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "we identify liquid helium (Item\n0047 in Attachment C) as difficult to fill and likely to be placed on\nbackorder, due to ongoing global helium supply constraints affecting\nour upstream suppliers.",
+          "start_char": 3205,
+          "end_char": 3399
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "project_management_plan_submitted",
+      "description": "The contractor must submit a Project Management Plan (PMP) with their proposal demonstrating understanding of the scope, schedule, and service level requirements, including at minimum a communications and task matrix, an identified individual responsible for deliverables, a preliminary delivery/install/user acceptance schedule, a time estimate per critical task, an outline of progress-tracking processes, and an approach to identifying and resolving potential project problems.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application's PMP addresses all six required elements: communications/task matrix, responsible individual, preliminary schedule, time estimates, progress-tracking outline, and problem-identification/resolution approach.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Our Project Management Plan includes a communications and task matrix\nidentifying key contractor personnel and their roles and\nresponsibilities; designates our Operations Manager as the individual\nresponsible for contract deliverables and on-time performance; provides\na preliminary delivery, installation, and user acceptance schedule with\ntask dependencies; estimates the time required for each critical task\nin workdays; outlines our process for tracking and communicating\ndelivery progress and documenting equipment acceptance; and describes\nour approach to identifying early warning signs of potential project\nproblems and our escalation and resolution process.",
+          "start_char": 1579,
+          "end_char": 2245
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_identification_and_solicitation_number",
+      "description": "The quote must have information identifying the offeror and the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "The quote header identifies the offeror and states the solicitation number.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Subject: Quote for Solicitation 36C26326Q0197 - Medical Cylinder Gases IDIQ",
+          "start_char": 71,
+          "end_char": 146
+        },
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co.\n4100 Distribution Parkway\nOmaha, NE 68110\n(402) 555-0261\nUnique Entity Identifier: HCS8Q4RTM392",
+          "start_char": 184,
+          "end_char": 309
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_attachment_c_completed",
+      "description": "The Price/Delivery Schedule (Attachment C) must be submitted fully completed, containing prices for the established Contract Line-Item Numbers (CLINs).",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly describes its Attachment C pricing as estimated and subject to change, rather than a firm completed price schedule as the requirement demands.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "these\nprices are estimated based on current market conditions and are\nsubject to change prior to award.",
+          "start_char": 861,
+          "end_char": 964
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_firm_90_days",
+      "description": "The offeror agrees to hold the prices in its offer firm for 90 calendar days from the date specified for receipt of offers.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states prices are held firm for 90 calendar days, but a separate note states pricing is subject to change with 30 days' notice -- the two statements conflict on whether the price is genuinely fixed for the stated period.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. agrees\nto hold the prices in this offer firm for 90 calendar days from the\ndate specified for receipt of offers.",
+          "start_char": 965,
+          "end_char": 1107
+        },
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "our pricing\nis subject to change with 30 days' notice to the ordering activity.",
+          "start_char": 1167,
+          "end_char": 1246
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sf1449_completed",
+      "description": "The SF-1449 must be submitted fully completed, with the offeror completing page 1 sections 30a, 30b, and 30c.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states the signed SF-1449 with sections 30a, 30b, and 30c completed is enclosed.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "The signed SF-1449 (page 1) is enclosed with sections 30a,\n30b, and 30c completed.",
+          "start_char": 3410,
+          "end_char": 3492
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the contractor must acknowledge all amendments to the solicitation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states no amendments had been issued, addressing the conditional requirement directly.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "No amendments to this solicitation had been issued as of the date of\nthis quote.",
+          "start_char": 3494,
+          "end_char": 3574
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_operational_capability_narrative",
+      "description": "Offeror must provide narrative in as much detail as possible to fully explain the existing operational capability to meet the requirements contained in the Statement of Work.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides a narrative describing nine years of relevant experience and fleet capability to meet the SOW's delivery requirements.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. has served\nhealthcare and industrial clients throughout the Midwest for nine\nyears, with a fleet capable of meeting the delivery frequency and\nvolume requirements of this solicitation's Statement of Work.",
+          "start_char": 3623,
+          "end_char": 3857
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_continuity_of_operations",
+      "description": "Offeror must provide procedures or documentation demonstrating the ability to navigate through emergency situations, shortages, and any other form of supply chain interruptions.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes backup supply agreements with two independent fillers and cross-trained drivers enabling rerouting within 24 hours, with no conflicting statement elsewhere.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "We maintain backup supply agreements with two\nindependent industrial gas fillers and cross-trained delivery drivers\nacross our fleet, enabling us to reroute deliveries within 24 hours of\na disruption at any single point in our supply chain.",
+          "start_char": 3885,
+          "end_char": 4125
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_cylinder_management_innovation",
+      "description": "Offeror must demonstrate the innovative use of a cylinder tracking and management system, as part of the Technical Capability narrative.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application asserts 'innovative cylinder tracking and management practices' without describing what those practices actually are, so the claim of innovation cannot be substantiated from the text.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "We employ innovative cylinder tracking and\nmanagement practices to support efficient contract performance.",
+          "start_char": 4148,
+          "end_char": 4254
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_medical_gas_regulatory_proof",
+      "description": "Offeror must provide proof that all medical gases conform to USP and National Formulary specifications and that the contractor and its medical gas manufacturers/fillers are registered with the FDA.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine USP/National Formulary conformance and FDA registration of manufacturing/filling partners cannot be confirmed from the application's own representation.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "past_performance_reference_provided",
+      "description": "Offerors must provide past performance references for work performed within the past three years relevant to the complexity, size, and scope of this requirement, listing at minimum: contract or project number and title, period of performance, dollar value, brief description/scope, name of agency/facility, and point of contact.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides one past performance reference with contract identification, period of performance, dollar value, description, agency, and point of contact -- all required fields.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Contract/Project: Nebraska Regional Medical Gas Supply Agreement,\nOmaha VA Medical Center. Period of Performance: 2020-2023. Dollar\nValue: $412,000.",
+          "start_char": 4545,
+          "end_char": 4693
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "phase_in_strategy_submitted",
+      "description": "Offerors must provide a phase-in strategy including at minimum a Project Communications Plan, an Implementation Plan, and a Delivery Plan with milestone dates or timelines demonstrating the ability to meet the effective date of the contract or the 60 calendar day requirement.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly defers the entire phase-in strategy, including all three required components, to be developed after contract award rather than submitting it with the proposal.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Our detailed phase-in strategy, including the Project Communications\nPlan, Implementation Plan, and Delivery Plan with milestone dates, will\nbe developed in coordination with the COR after contract award",
+          "start_char": 5007,
+          "end_char": 5210
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sdvosb_vosb_certification_status_at_submission",
+      "description": "To receive Veterans Involvement evaluation credit, an offeror must be listed at the time of submission of offers and at time of award as a certified SDVOSB/VOSB in the SBA certification database.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- whether the offeror is genuinely listed in the SBA certification database cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
+      "description": "If the offeror is a large business proposing to use certified SDVOSBs or VOSBs as subcontractors and elects to receive evaluation consideration under this factor, the proposal must state the names of the certified SDVOSB/VOSB subcontractors, a description of their services/supplies, and approximate dollar values.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "This sub-requirement only applies to a large business electing SDVOSB/VOSB subcontractor credit; the application states all work will be performed with the offeror's own personnel with no subcontractors, so the triggering condition does not apply.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. will perform 100% of the work identified\nin the Statement of Work and Contract Administration with its own\npersonnel and equipment; no subcontractors, similarly situated\nentities, or other performing parties are proposed.",
+          "start_char": 5343,
+          "end_char": 5594
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontracting_limitations_breakdown",
+      "description": "In response to the Limitations on Subcontracting factor (when applicable), offerors must submit a breakdown of the work identified in the Statement of Work and Contract Administration tasks, identifying which work will be performed by the prime contractor, any similarly situated entity, and any other subcontractors.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states 100% of the work will be performed by the prime contractor with no subcontractors, which is itself the required breakdown of who performs the work.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "Heartland Cylinder Supply Co. will perform 100% of the work identified\nin the Statement of Work and Contract Administration with its own\npersonnel and equipment; no subcontractors, similarly situated\nentities, or other performing parties are proposed.",
+          "start_char": 5343,
+          "end_char": 5594
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "vaar_852_219_76_certificate_submitted",
+      "description": "Offerors must submit a completed copy of VAAR 852.219-76 -- VA Notice of Limitations on Subcontracting -- Certificate of Compliance for Supplies and Products with the submission package.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a completed, signed copy of the VAAR 852.219-76 certificate is enclosed as an exhibit.",
+      "evidence": [
+        {
+          "document_path": "data/36C26326Q0197/applications/b/application.txt",
+          "quote": "A\ncompleted copy of this certificate, signed by our authorized\nrepresentative, is enclosed with this quote as Exhibit D.",
+          "start_char": 5665,
+          "end_char": 5785
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    }
+  ]
+}

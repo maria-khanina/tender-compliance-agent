@@ -3,7 +3,7 @@ import pathlib
 
 from pydantic import BaseModel
 
-from schemas import Requirement, RetrievedEvidenceRecord, Verdict
+from schemas import Requirement, RetrievedContextRecord, Verdict
 
 
 class SourceSpan(BaseModel):
@@ -43,10 +43,6 @@ class TrueVerdict(BaseModel):
     acceptable_verdicts: list[str] | None
     rationale: str
     evidence: list[TrueEvidenceSpan]
-    # Additive, SFT-oriented fields (see sft/build_verdict_dataset.py):
-    # a single training-target label per topic, derived from
-    # acceptable_verdicts rather than replacing it. Optional/backward
-    # compatible -- existing fixtures without these keys still load.
     primary_verdict: str | None = None
     primary_verdict_source: str | None = None
 
@@ -80,9 +76,9 @@ def load_predicted_verdicts(path: pathlib.Path) -> list[Verdict]:
     return [Verdict.model_validate(item) for item in payload]
 
 
-def load_retrieved_evidence(
+def load_retrieved_context(
     path: pathlib.Path,
-) -> list[RetrievedEvidenceRecord]:
+) -> list[RetrievedContextRecord]:
     payload = _load_json(path)
     assert isinstance(payload, list)
-    return [RetrievedEvidenceRecord.model_validate(item) for item in payload]
+    return [RetrievedContextRecord.model_validate(item) for item in payload]

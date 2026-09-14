@@ -38,13 +38,13 @@ logger = get_logger(__name__)
 
 
 def _build_evidence_list(
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
     evidence_quotes: list[EvidenceQuote],
 ) -> list[Evidence]:
     evidence_list = []
     for evidence_quote in evidence_quotes:
         source_chunk = find_chunk_by_index(
-            evidence_chunks, evidence_quote.chunk_index
+            context_chunks, evidence_quote.chunk_index
         )
         if source_chunk is None:
             logger.warning(
@@ -71,17 +71,17 @@ def _build_evidence_list(
 
 def _generate_verdict_with_language_model(
     requirement: Requirement,
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
 ) -> Verdict:
-    evidence_text = format_chunks_as_prompt_text(evidence_chunks)
+    context_text = format_chunks_as_prompt_text(context_chunks)
     prompt_text = VERDICT_GENERATION_PROMPT.format(
         requirement_text=requirement.text,
-        evidence_text=evidence_text,
+        context_text=context_text,
     )
     structured_model = get_structured_chat_model(VerdictResult)
     result = invoke_structured(structured_model, prompt_text)
     evidence_list = _build_evidence_list(
-        evidence_chunks, result.evidence_quotes
+        context_chunks, result.evidence_quotes
     )
     return Verdict(
         requirement_id=requirement.requirement_id,
@@ -136,11 +136,11 @@ def _build_deterministic_reasoning(
 
 def _extracted_values_by_condition(
     conditions: list[ConditionSpec],
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
 ) -> list[tuple[ConditionSpec, list[ExtractedValue]]]:
     results = []
     for condition in conditions:
-        results.append((condition, extract_values(evidence_chunks, condition)))
+        results.append((condition, extract_values(context_chunks, condition)))
     return results
 
 
@@ -177,13 +177,13 @@ def _build_deterministic_verdict_parts(
 
 def _generate_verdict_deterministically(
     requirement: Requirement,
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
 ) -> Verdict | None:
     conditions = requirement.conditions
     if not conditions:
         return None
     extracted_values_by_condition = _extracted_values_by_condition(
-        conditions, evidence_chunks
+        conditions, context_chunks
     )
     all_extracted_values = _flatten_extracted_values(
         extracted_values_by_condition
@@ -205,10 +205,10 @@ def _generate_verdict_deterministically(
 
 def generate_verdict(
     requirement: Requirement,
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
 ) -> Verdict:
     deterministic_verdict = _generate_verdict_deterministically(
-        requirement, evidence_chunks
+        requirement, context_chunks
     )
     if deterministic_verdict is not None:
         logger.info(
@@ -218,7 +218,7 @@ def generate_verdict(
         )
         return deterministic_verdict
     verdict = _generate_verdict_with_language_model(
-        requirement, evidence_chunks
+        requirement, context_chunks
     )
     logger.info(
         "Requirement %s: verdict=%s (language model)",

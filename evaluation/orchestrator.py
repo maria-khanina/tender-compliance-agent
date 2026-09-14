@@ -12,7 +12,7 @@ from evaluation.fixtures import (
     TrueVerdictsFixture,
     load_predicted_requirements,
     load_predicted_verdicts,
-    load_retrieved_evidence,
+    load_retrieved_context,
     load_true_requirements,
     load_true_verdicts,
 )
@@ -45,7 +45,7 @@ from evaluation.verdict_metrics import (
     VerdictAccuracyResult,
     compute_verdict_accuracy,
 )
-from schemas import Requirement, RetrievedEvidenceRecord, Verdict
+from schemas import Requirement, RetrievedContextRecord, Verdict
 
 
 __all__ = [
@@ -55,7 +55,7 @@ __all__ = [
     "evaluate",
     "load_predicted_requirements",
     "load_predicted_verdicts",
-    "load_retrieved_evidence",
+    "load_retrieved_context",
     "load_true_requirements",
     "load_true_verdicts",
 ]
@@ -286,9 +286,9 @@ def _predicted_verdict_evidence(
 
 
 def _retrieved_context_by_requirement(
-    retrieved_evidence: list[RetrievedEvidenceRecord],
+    retrieved_context: list[RetrievedContextRecord],
 ) -> dict[str, list[str]]:
-    by_requirement = retrieved_by_requirement(retrieved_evidence)
+    by_requirement = retrieved_by_requirement(retrieved_context)
     context = {}
     for requirement_id, chunks in by_requirement.items():
         context[requirement_id] = [chunk.text for chunk in chunks]
@@ -319,9 +319,9 @@ def _true_evidence_by_topic(
 def _evaluate_evidence_recall(
     verdicts_fixture: TrueVerdictsFixture,
     match_groups: list[MatchGroup],
-    retrieved_evidence: list[RetrievedEvidenceRecord],
+    retrieved_context: list[RetrievedContextRecord],
 ) -> EvidenceRecallResult:
-    by_requirement = retrieved_by_requirement(retrieved_evidence)
+    by_requirement = retrieved_by_requirement(retrieved_context)
     group_by_topic = group_lookup_by_topic(match_groups)
     topics = topics_with_evidence(verdicts_fixture)
     scorable_topics = topics_with_matched_requirement(topics, group_by_topic)
@@ -337,7 +337,7 @@ def evaluate(
     verdicts_fixture: TrueVerdictsFixture,
     predicted_requirements: list[Requirement],
     predicted_verdicts: list[Verdict],
-    retrieved_evidence: list[RetrievedEvidenceRecord],
+    retrieved_context: list[RetrievedContextRecord],
 ) -> EvaluationReport:
     match_groups = build_match_groups_for_requirements(
         requirements_fixture, predicted_requirements
@@ -362,7 +362,7 @@ def evaluate(
         predicted_verdicts
     )
     evidence_recall = _evaluate_evidence_recall(
-        verdicts_fixture, match_groups, retrieved_evidence
+        verdicts_fixture, match_groups, retrieved_context
     )
     return EvaluationReport(
         requirement_recall=recall_result,
@@ -396,7 +396,7 @@ def evaluate(
             verdicts_fixture
         ),
         retrieved_context_by_requirement=_retrieved_context_by_requirement(
-            retrieved_evidence
+            retrieved_context
         ),
         is_mandatory_true_by_topic=_true_is_mandatory_by_topic(
             requirements_fixture

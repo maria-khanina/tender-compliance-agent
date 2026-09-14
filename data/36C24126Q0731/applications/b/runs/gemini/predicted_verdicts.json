@@ -1,0 +1,655 @@
+[
+  {
+    "requirement_id": "4ebb9284-5a9a-496f-a149-ff9289446be9",
+    "requirement_text": "The RFQ due date is extended to 09/18/26 at 11:00 AM EDT.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We acknowledge the time specified\nin the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26.",
+        "start_char": 283,
+        "end_char": 391,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder acknowledges the extended RFQ due date of 09/18/26 at 11:00 AM EDT, satisfying the requirement."
+  },
+  {
+    "requirement_id": "1797118e-f4df-4f8a-92a0-ac3cec0d538b",
+    "requirement_text": "Quotes must be submitted via email to the specified Government point of contact.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "From: sales@coastalimagingsolutions.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei\nPlatform/CD Burner\n\nDear Mr. Ortiz,\n\nCoastal Imaging Solutions, Inc. submits the following quote in response\nto Solicitation 36C24126Q0731 P0003.",
+        "start_char": 0,
+        "end_char": 282,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that quotes must be submitted via email to the specified Government point of contact. The application shows an email header addressed to the government point of contact (carlos.ortiz3@va.gov) from the bidder, confirming submission via email."
+  },
+  {
+    "requirement_id": "e3832d29-016a-4749-bff5-b3e839a1e8a7",
+    "requirement_text": "Delivery costs must be less than $250.00, or else the shipping cost must be rolled into the line-item price.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1, Unit\nPrice $19,990.00, Total $19,990.00 (this unit price includes $140.00 of\nshipping cost, rolled in because shipping does not reach $250.00).",
+        "start_char": 2267,
+        "end_char": 2475,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that delivery costs must be less than $250.00, or else rolled into the line-item price. The bidder's application explicitly states that the shipping cost of $140.00 is rolled into the line-item price because shipping does not reach $250.00, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "285d3bea-5426-4b24-8abc-fe571558a3a3",
+    "requirement_text": "Quotations shall be brand name for Sorna Vertex 25ei & CD Burner as described in the solicitation.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart",
+        "start_char": 806,
+        "end_char": 944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "For the disc-burner component specifically, we propose to substitute a\ncompatible high-speed burner drive from an alternate manufacturer",
+        "start_char": 2775,
+        "end_char": 2911,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The bidder provides conflicting statements regarding the requirement for the brand name Sorna Vertex 25ei and CD Burner. In chunk 0, the bidder explicitly states they are quoting the Sorna Vertex 25ei Platform with integrated Sorna CD Burner matching the brand and model specified. However, in chunk 2, the bidder states they propose to substitute the disc-burner component with a compatible high-speed burner drive from an alternate manufacturer, directly contradicting their earlier statement and failing the brand name requirement."
+  },
+  {
+    "requirement_id": "fdba10b1-3186-40b7-af4c-c081d40d0886",
+    "requirement_text": "Pricing shall be entered for each line item as listed in the product chart.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "UPS 1KVA - Tower, Qty 1, pricing TBD pending vendor confirmation of\ncurrent unit cost.",
+        "start_char": 2572,
+        "end_char": 2658,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that pricing shall be entered for each line item as listed in the product chart. However, the bidder's application lists 'UPS 1KVA - Tower' with 'pricing TBD pending vendor confirmation of current unit cost', meaning pricing was not fully entered for all required line items."
+  },
+  {
+    "requirement_id": "b7ee07c0-3f47-4ef0-bddb-b633709d38cb",
+    "requirement_text": "Offeror must be registered in SAM.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that the offeror must be registered in SAM. While the bidder provides their Unique Entity Identifier (UEI) and representations under FAR 52.212-3, the provided excerpts do not explicitly mention or confirm that the bidder has an active registration in the System for Award Management (SAM). Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "a91ebbd0-9101-4191-8688-47e3e90fbe6f",
+    "requirement_text": "Offeror must be a certified and VIP-listed SDVOSB/VOSB, meeting ownership, control, and size standards, and be eligible at the time of offer and award.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Coastal Imaging\nSolutions, Inc. represents that it is a small business concern, is not\na former employer of the contracting officer, and has no delinquent\nfederal tax liability or felony conviction within the preceding 24\nmonths",
+        "start_char": 1711,
+        "end_char": 1939,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that the offeror must be a certified and VIP-listed SDVOSB/VOSB, meeting ownership, control, and size standards. In the bidder's representations under FAR 52.212-3, Coastal Imaging Solutions, Inc. only represents that it is a 'small business concern' and fails to represent or certify that it is a certified and VIP-listed SDVOSB or VOSB."
+  },
+  {
+    "requirement_id": "ed7c5986-7adf-48a9-97fe-78bc4ca6a952",
+    "requirement_text": "Offeror must meet and assert compliance with Limitations on Subcontracting (LOS) requirements in the accompanying email.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We confirm compliance with the Limitations on Subcontracting clauses\napplicable to this solicitation.",
+        "start_char": 582,
+        "end_char": 683,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states and confirms compliance with the Limitations on Subcontracting clauses in their accompanying email quotation, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "eea40629-250b-46bb-8727-57700384f321",
+    "requirement_text": "Provide all required Sorna Vertex 25ei & CD Burner products in accordance with the Statement of Work.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart",
+        "start_char": 806,
+        "end_char": 944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "For the disc-burner component specifically, we propose to substitute a\ncompatible high-speed burner drive from an alternate manufacturer",
+        "start_char": 2775,
+        "end_char": 2911,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The bidder provides conflicting statements regarding the products offered. In chunk 0, they state they are quoting the Sorna Vertex 25ei Platform with the integrated Sorna CD Burner matching the brand and model specified. However, in chunk 2, they state they propose to substitute a compatible high-speed burner drive from an alternate manufacturer for the disc-burner component. This creates a contradiction as to whether the exact specified Sorna CD Burner is being provided."
+  },
+  {
+    "requirement_id": "75b14e27-5a0d-4b50-8f35-ad434663a9b2",
+    "requirement_text": "Submit signed and dated quotes to the specified office at or before the exact time specified (no later than 11:00 AM EDT 09/18/26).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Sincerely,\nRenata Ferro\nContracts Manager\nCoastal Imaging Solutions, Inc.\nDate: 09/10/2026",
+        "start_char": 3201,
+        "end_char": 3291,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "From: sales@coastalimagingsolutions.com\nTo: carlos.ortiz3@va.gov",
+        "start_char": 0,
+        "end_char": 64,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application includes a signed quote (signed by Contracts Manager Renata Ferro) and is dated 09/10/2026, which is before the deadline of 11:00 AM EDT on 09/18/26. The quote was submitted via email to the specified office/recipient (carlos.ortiz3@va.gov)."
+  },
+  {
+    "requirement_id": "8ba4dc86-d8e9-472d-843b-686df406c37d",
+    "requirement_text": "Quotes must include minimum required information such as solicitation number, receipt time, quoter details, technical description, warranty, price, remit-to address, FAR representations and certifications, amendment acknowledgments, and terms agreement statement.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Coastal Imaging Solutions, Inc. submits the following quote in response to Solicitation 36C24126Q0731 P0003. We acknowledge the time specified in the solicitation for receipt of quotations as 11:00 AM EDT on 09/18/26. Quoter name, address, and telephone number: Coastal Imaging Solutions, Inc. 410 Harbor Commerce Way New Bedford, MA 02740 Telephone: (508) 555-0193. No amendments to this solicitation had been issued as of the date of this quote. Technical description of items quoted: We are quoting the Sorna Vertex 25ei Platform with integrated Sorna CD Burner... Terms of express warranty: The base configuration above is our standard offering and carries the manufacturer's 3-year parts-and-labor warranty.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "\"Remit to\" address: 900 Financial Plaza, Suite 4, Providence, RI 02903 (different from the mailing address above). Representations and Certifications under FAR 52.212-3: Coastal Imaging Solutions, Inc. represents that it is a small business concern... Terms and conditions: The terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition. Total quoted price for this solicitation: $23,410.00.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application includes all the required minimum information items: solicitation number (36C24126Q0731 P0003), receipt time acknowledgment, quoter details (name, address, telephone), technical description, warranty terms, price ($23,410.00), remit-to address, FAR representations and certifications, amendment acknowledgments (stating none issued), and a terms agreement statement."
+  },
+  {
+    "requirement_id": "38a2b6f6-fde6-4089-a442-6206ec07a31e",
+    "requirement_text": "The quoter agrees to hold prices firm for 30 calendar days from the date specified for receipt of quotes.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The application documents do not contain any statement or indication regarding whether the quoter agrees to hold prices firm for 30 calendar days from the date specified for receipt of quotes. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "f948901a-281f-4072-9227-0cc612b0d806",
+    "requirement_text": "All SDVOSB eligibility requirements must be met for quotes to be considered.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Representations and Certifications under FAR 52.212-3: Coastal Imaging\nSolutions, Inc. represents that it is a small business concern, is not\na former employer of the contracting officer, and has no delinquent\nfederal tax liability or felony conviction within the preceding 24\nmonths; a completed copy of these representations is attached to this\nemail as Exhibit A.",
+        "start_char": 1656,
+        "end_char": 2022,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that all SDVOSB (Service-Disabled Veteran-Owned Small Business) eligibility requirements must be met. The bidder's application states that it represents it is a small business concern, but it does not provide any information regarding Service-Disabled Veteran-Owned Small Business (SDVOSB) status or eligibility. Therefore, there is insufficient information to determine whether the SDVOSB eligibility requirements are met."
+  },
+  {
+    "requirement_id": "eab42d22-c5a2-4859-8879-800d14a10474",
+    "requirement_text": "The quoter must enter its Unique Entity Identifier in the block with its name and address on the cover page.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Quoter name, address, and telephone number:\nCoastal Imaging Solutions, Inc.\n410 Harbor Commerce Way\nNew Bedford, MA 02740\nTelephone: (508) 555-0193\n\nUnique Entity Identifier: QF3M8LRT2KV9",
+        "start_char": 393,
+        "end_char": 580,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided their Unique Entity Identifier directly alongside their name and address block in the application, which satisfies the requirement."
+  },
+  {
+    "requirement_id": "692f1b63-25b2-428f-a898-461df497e27b",
+    "requirement_text": "The quoter must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Quoter name, address, and telephone number:\nCoastal Imaging Solutions, Inc.\n410 Harbor Commerce Way\nNew Bedford, MA 02740\nTelephone: (508) 555-0193\n\nUnique Entity Identifier: QF3M8LRT2KV9",
+        "start_char": 393,
+        "end_char": 580,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the quoter must enter its Electronic Funds Transfer (EFT) indicator, if applicable. The excerpts do not indicate that an EFT indicator is applicable to this quoter. Per instructions, silence regarding an unconfirmed conditional requirement is not evidence that the condition applies, making the application compliant by default since the condition was not triggered."
+  },
+  {
+    "requirement_id": "02382b39-1f27-4569-a257-728e5a68d742",
+    "requirement_text": "All quotes must include a statement regarding acceptance of terms and conditions, and list any exceptions and rationales.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 2024,
+        "end_char": 2187,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application includes a clear statement confirming acceptance of the terms and conditions in the solicitation without modification, and explicitly states that there are no exceptions (modification, deletion, or addition)."
+  },
+  {
+    "requirement_id": "6c8f4cd8-f77a-40ee-8ba1-5564c589f455",
+    "requirement_text": "Any questions or concerns regarding the solicitation must be forwarded in writing via email to the Point of Contact.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that any questions or concerns regarding the solicitation must be forwarded in writing via email to the Point of Contact. The provided excerpts contain the bidder's quote and communications, but they do not mention whether the bidder had any questions or concerns regarding the solicitation, nor whether any such questions were forwarded. Therefore, there is insufficient information to determine compliance with this requirement."
+  },
+  {
+    "requirement_id": "e445d079-5d93-4ae8-98a3-f15932a5fc41",
+    "requirement_text": "Limitations on subcontracting percentages apply based on contract type (supplies, services, or combined), excluding material costs and specific direct costs.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We confirm compliance with the Limitations on Subcontracting clauses\napplicable to this solicitation.",
+        "start_char": 582,
+        "end_char": 683,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly confirms compliance with the limitations on subcontracting clauses applicable to the solicitation, which satisfies the requirement."
+  },
+  {
+    "requirement_id": "8bcbf417-045d-42f6-8c72-e99f31c84f48",
+    "requirement_text": "For non-manufacturer supply contracts, the prime contractor will supply the product of a domestic small business manufacturer or processor unless a waiver is granted.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "For the disc-burner component specifically, we propose to substitute a\ncompatible high-speed burner drive from an alternate manufacturer,\nwhich meets or exceeds the write-speed and reliability specifications\nof the drive bundled with the named brand-name unit.",
+        "start_char": 2775,
+        "end_char": 3035,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder mentions substituting a burner drive from an alternate manufacturer. However, the excerpts do not provide sufficient information to determine whether this alternate manufacturer is a domestic small business manufacturer or processor, nor whether a waiver was granted."
+  },
+  {
+    "requirement_id": "0f432020-84e3-4787-9699-9b518645271c",
+    "requirement_text": "In general construction contracts, the prime contractor will not pay more than 85% of the amount paid by the government (excluding materials) to non-VIP-listed firms.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided tender excerpts contain no information regarding general construction contracts, payment thresholds for non-VIP-listed firms, or limitations related to 85% of government-paid amounts. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "bdd60e18-7efb-465e-a21e-9db9ed237700",
+    "requirement_text": "In special trade contractor contracts, no more than 75% of the amount paid by the government (excluding materials) may be paid to non-VIP-listed firms.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We confirm compliance with the Limitations on Subcontracting clauses\napplicable to this solicitation.",
+        "start_char": 582,
+        "end_char": 683,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that in special trade contractor contracts, no more than 75% of the amount paid by the government (excluding materials) may be paid to non-VIP-listed firms. The bidder's application only states a general confirmation of compliance with Limitations on Subcontracting clauses, but provides no specific details, percentages, or figures regarding payments to non-VIP-listed firms versus VIP-listed firms. Therefore, there is insufficient information in the excerpts to determine compliance with this specific requirement."
+  },
+  {
+    "requirement_id": "2dee47f9-dffa-438d-9cf0-c556df81619d",
+    "requirement_text": "An SDVOSB/VOSB must meet the NAICS size standard and be listed in VIP to count as similarly situated.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Representations and Certifications under FAR 52.212-3: Coastal Imaging\nSolutions, Inc. represents that it is a small business concern, is not\na former employer of the contracting officer, and has no delinquent\nfederal tax liability or felony conviction within the preceding 24\nmonths; a completed copy of these representations is attached to this\nemail as Exhibit A.",
+        "start_char": 1656,
+        "end_char": 2022,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that an SDVOSB/VOSB must meet the NAICS size standard and be listed in VIP to count as similarly situated. The provided application excerpts mention that Coastal Imaging Solutions, Inc. represents itself as a 'small business concern' and confirms compliance with Limitations on Subcontracting, but they contain no information regarding whether the bidder is an SDVOSB/VOSB or whether it is listed in the VIP database. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "3cb8fd0d-5375-4f4e-a13b-660240ea82d8",
+    "requirement_text": "Work that a first-tier VIP-listed subcontractor further subcontracts counts towards the maximum allowable subcontract amount percentage.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not contain any information regarding first-tier VIP-listed subcontractors, further subcontracting, or subcontract amount percentages. Therefore, there is insufficient information to determine compliance with the requirement."
+  },
+  {
+    "requirement_id": "65732fc0-29b4-4eee-b0d9-0f134ad266b4",
+    "requirement_text": "Delivery Hours are 0800-1530.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement specifies that delivery hours are 0800-1530. Reviewing the provided excerpts from the bidder's application, there is no mention or confirmation regarding delivery hours or adherence to this schedule. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "cdf7b04f-c6dd-498b-963a-2dee300938f4",
+    "requirement_text": "Acquisition of one (1) Vertex 25ei Optical Media Package is required for the VA Central Western Massachusetts Healthcare System.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Item 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1, Unit\nPrice $19,990.00, Total $19,990.00",
+        "start_char": 2267,
+        "end_char": 2371,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart",
+        "start_char": 767,
+        "end_char": 944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly includes the acquisition of one (1) Vertex 25ei Optical Media Package (Sorna Vertex 25ei Platform w/ Sorna CD Burner, Qty 1) as required."
+  },
+  {
+    "requirement_id": "81ee3c8c-7620-4120-aad0-375dcc2f858e",
+    "requirement_text": "MOD P00003 replaces the initial Combined Synopsis and all subsequent amendments/modifications.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "No amendments to this solicitation had been issued as of the date of\nthis quote.",
+        "start_char": 685,
+        "end_char": 765,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that MOD P00003 replaces the initial Combined Synopsis and all subsequent amendments/modifications. The bidder mentions in chunk 0 that no amendments had been issued as of the date of their quote, but there is no mention in the application regarding MOD P00003 or its replacement of the initial synopsis and amendments. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "4166d1fa-4e1f-445b-b741-2ec8cb8620fa",
+    "requirement_text": "A joint venture agrees that, in the performance of the contract, the applicable percentage specified in paragraph (d) of this clause will be performed by the aggregate of the joint venture participants.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement pertains specifically to joint ventures and the percentage of performance carried out by joint venture participants. The provided excerpts show that the bidder is Coastal Imaging Solutions, Inc., a single corporate entity, rather than a joint venture. There is no mention of a joint venture or compliance with joint venture performance percentages in the text."
+  },
+  {
+    "requirement_id": "b6f5bfae-eb69-49cd-8064-4bf6491f5301",
+    "requirement_text": "Vertex Host software with unlimited Client and Media Importer licenses",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies the Vertex Host software with unlimited Client and Media Importer licenses. The bidder's quote mentions the inclusion of the Vertex Host software package, but does not provide details regarding whether it includes unlimited Client and Media Importer licenses, leaving insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "1f3e9f49-f53f-4ea1-851c-95e2b55b2b13",
+    "requirement_text": "Automated DICOM profiles and local burning capabilities",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly states that they are quoting the system with DICOM auto-routing profiles (satisfying the automated DICOM profiles requirement) and an integrated CD burner / disc labeling software (satisfying the local burning capabilities requirement)."
+  },
+  {
+    "requirement_id": "5e842e9c-f446-4390-a4d6-8f393ff88557",
+    "requirement_text": "Disc Label Design Software and All Necessary Cabling",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their technical description that they are including disc labeling software (along with the required platform and configuration). While the requirement also mentions 'All Necessary Cabling', the inclusion of the complete platform, workstation, and accessories configured per the Statement of Work satisfies the provision of disc label design software as detailed in the quotation."
+  },
+  {
+    "requirement_id": "1a45d0ba-263f-433a-8a0b-aa5a17905358",
+    "requirement_text": "Input Capacity: 2 Bins (50 Discs EA)",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 767,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The application states they are quoting the Sorna Vertex 25ei Platform matching the brand and model specified in the Product Chart, but the provided excerpts do not mention the specific input capacity regarding the number of bins or discs."
+  },
+  {
+    "requirement_id": "afc56988-dacf-4cdd-a7c3-a07ef163bf5f",
+    "requirement_text": "Output Capacity: 10-Disc Drawer and 50-Disc Bin",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 767,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies an output capacity of a 10-Disc Drawer and 50-Disc Bin. The bidder's application mentions quoting the Sorna Vertex 25ei Platform with integrated Sorna CD Burner, but it does not explicitly state the disc drawer or bin capacities to confirm whether the 10-disc drawer and 50-disc bin requirement is met. Therefore, there is insufficient information to decide."
+  },
+  {
+    "requirement_id": "d7367a7f-bdc0-4506-a61e-976d97694455",
+    "requirement_text": "Dual Recorders and High-Resolution Inkjet Printer (Black and Color Cartridges)",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement asks for dual recorders and a high-resolution inkjet printer with black and color cartridges. The bidder's application mentions quoting the Sorna Vertex 25ei Platform with an integrated CD burner and disc labeling software, but it does not provide explicit details confirming whether the configuration includes dual recorders or the specified high-resolution inkjet printer with black and color cartridges."
+  },
+  {
+    "requirement_id": "79d52f9f-43eb-48a7-ba14-6a858b316e62",
+    "requirement_text": "Media types: CD-R, DVD-R, BD-R with white inkjet print media",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The application mentions quoting the Sorna Vertex 25ei Platform with integrated Sorna CD Burner, but the provided text does not contain any information regarding the specific media types supported, such as CD-R, DVD-R, BD-R, or white inkjet print media."
+  },
+  {
+    "requirement_id": "b2a66fe1-4ead-4e47-94da-4cdd67097d72",
+    "requirement_text": "Pre-configured Windows 11 Professional PC",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly confirms they are quoting a Windows 11 Professional workstation, which satisfies the requirement for a pre-configured Windows 11 Professional PC."
+  },
+  {
+    "requirement_id": "c0d9ceb1-62da-441c-a492-80dac392f54b",
+    "requirement_text": "Monitor",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly lists a monitor as part of the technical description of the items quoted, satisfying the requirement to provide or monitor."
+  },
+  {
+    "requirement_id": "e413da39-ed1f-4d0f-b102-50d848bad341",
+    "requirement_text": "Keyboard",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 767,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly lists a keyboard as part of the technical description of items quoted in their submission."
+  },
+  {
+    "requirement_id": "4fdb3e23-96e8-4937-8214-f2e29b7faf79",
+    "requirement_text": "Mouse",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0731/applications/b/application.txt",
+        "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart, together with the Vertex Host\nsoftware package, DICOM auto-routing profiles, a Windows 11\nProfessional workstation, monitor, keyboard, mouse, and disc labeling\nsoftware, configured per the Statement of Work.",
+        "start_char": 806,
+        "end_char": 1153,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly lists a mouse as part of the technical description of items quoted, satisfying the requirement."
+  },
+  {
+    "requirement_id": "cf1bf81f-344e-4fdf-b4f9-4708b5ee31ec",
+    "requirement_text": "Dimensions: 13.7”H x 14.8” W x 20.2” D",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The bidder's application provides a technical description of the Sorna Vertex 25ei Platform and CD burner, but it does not mention the physical dimensions (height, width, and depth) of the offered equipment. Therefore, there is insufficient information to determine compliance with the specified dimension requirement."
+  }
+]

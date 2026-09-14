@@ -15,7 +15,7 @@ from schemas import (
     DocumentInput,
     Requirement,
     RequirementDraft,
-    RetrievedEvidenceRecord,
+    RetrievedContextRecord,
     Verdict,
 )
 from steps.chunking import (
@@ -24,7 +24,7 @@ from steps.chunking import (
 )
 from steps.conditions import extract_conditions
 from steps.deduplication import deduplicate_requirements
-from steps.evidence_retrieval import retrieve_evidence_chunks
+from steps.evidence_retrieval import retrieve_context_chunks
 from steps.report import build_report
 from steps.requirements_extraction import extract_requirements_from_chunk
 from steps.verdicts import generate_verdict
@@ -43,8 +43,8 @@ class PipelineState(TypedDict):
     requirements: list[Requirement]
     application_chunks: list[Chunk]
     verdicts: Annotated[list[Verdict], operator.add]
-    retrieved_evidence: Annotated[
-        list[RetrievedEvidenceRecord], operator.add
+    retrieved_context: Annotated[
+        list[RetrievedContextRecord], operator.add
     ]
     report: str
 
@@ -143,21 +143,21 @@ def route_to_verdicts(state: PipelineState) -> list[Send]:
 
 def generate_verdict_node(
     state: RequirementVerdictInput,
-) -> dict[str, list[Verdict] | list[RetrievedEvidenceRecord]]:
+) -> dict[str, list[Verdict] | list[RetrievedContextRecord]]:
     requirement = state["requirement"]
-    evidence_chunks = retrieve_evidence_chunks(
+    context_chunks = retrieve_context_chunks(
         requirement.text, state["collection_name"]
     )
-    retrieved_evidence_record = RetrievedEvidenceRecord(
+    retrieved_context_record = RetrievedContextRecord(
         requirement_id=requirement.requirement_id,
-        evidence_chunks=evidence_chunks,
+        retrieved_context=context_chunks,
     )
     if not requirement.is_text_verifiable:
-        return {"retrieved_evidence": [retrieved_evidence_record]}
-    verdict = generate_verdict(requirement, evidence_chunks)
+        return {"retrieved_context": [retrieved_context_record]}
+    verdict = generate_verdict(requirement, context_chunks)
     return {
         "verdicts": [verdict],
-        "retrieved_evidence": [retrieved_evidence_record],
+        "retrieved_context": [retrieved_context_record],
     }
 
 

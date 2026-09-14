@@ -1,0 +1,306 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: quote_due_date and submission_format_and_channel, since both are is_text_verifiable: false in true_requirements.json.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "This is a THIRD, independent synthetic application (Nordic Galley Catering AS) against the same true_requirements.json as data/19EN1026Q0383 -- built for SFT/eval training data with deliberately different failure and compliance shapes from both the original application and variant B, including three distinct contradictions per the user's request: sam_registration_proof (registration 'not yet' active vs. 'confirmed active' later), capability_evidence_personnel_equipment_financial (a 4-person/1-vehicle description vs. a 22-person/6-van description later), and risk_management_plan_with_proposal (plan 'enclosed with this proposal' vs. to be 'finalized and submitted' post-award later).",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "Offer must state the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the solicitation number in the cover block.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Solicitation Number: 19EN1026Q0383",
+          "start_char": 421,
+          "end_char": 455
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "offeror_contact_info_stated",
+      "description": "Offer must state the name, address, and telephone number of the offeror.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the offeror's name, address, and telephone number.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Offeror: Nordic Galley Catering AS, Pärnu mnt 158, 11317 Tallinn, Estonia\nTelephone: +372 5044 7712",
+          "start_char": 456,
+          "end_char": 555
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "uei_eft_indicator_stated",
+      "description": "Offer must state the offeror's Unique Entity Identifier (UEI) and, if applicable, its Electronic Funds Transfer (EFT) indicator.",
+      "acceptable_verdicts": [
+        "compliant",
+        "insufficient_information"
+      ],
+      "rationale": "Application states the UEI but never mentions an EFT indicator at all; since the EFT indicator is conditional ('if applicable'), silence alone does not confirm whether it was owed and omitted.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Unique Entity Identifier (UEI): NG61XQ8TVM45",
+          "start_char": 556,
+          "end_char": 600
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions in the solicitation and any amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions of the solicitation and its amendments.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Nordic Galley Catering AS submits this quotation in agreement with all terms,\nconditions, and provisions of the solicitation and its amendments.",
+          "start_char": 180,
+          "end_char": 324
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "signed_dated_offer_submission",
+      "description": "The offer must be signed and dated.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a signature block with printed name, title, signature, and a filled-in date.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Printed Name of Signee: Helen Pärn\nPrinted Title of Signee: Managing Director\nSignature: /s/ Helen Pärn\nDate: 09-18-2026",
+          "start_char": 2898,
+          "end_char": 3018
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sf1449_section1_completion",
+      "description": "Offer must consist of a completed solicitation: the SF-1449 cover page (blocks 12, 17, 19-24, and 30 as appropriate) and Section 1 filled out.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the SF-1449 blocks and Section 1 are completed and enclosed.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+          "start_char": 602,
+          "end_char": 732
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "project_manager_english_liaison",
+      "description": "Offer must name a Project Manager (or other liaison to the U.S. Embassy/Consulate) who understands written and spoken English.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application names a Project Manager who is fluent in written and spoken English.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Project Manager: Ms. Helen Pärn, fluent in written and spoken English, will serve as our\nProject Manager and liaison to the U.S. Embassy/Consulate.",
+          "start_char": 754,
+          "end_char": 901
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "estonia_business_registration_evidence",
+      "description": "Offer must include evidence that the offeror operates an established business with a permanent address and telephone listing in Estonia, in the form of a business registry outtake or a link to the company's registry page.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the business has operated with a permanent Tallinn address since 2014 and provides a link to its Estonian business registry page.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Business Registration: Nordic Galley Catering AS has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2014. Registry\npage: https://ariregister.rik.ee/eng/company/nordic-galley-catering-as",
+          "start_char": 903,
+          "end_char": 1141
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sam_registration_proof",
+      "description": "Offeror must provide proof of SAM registration, including the SAM UEI number.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states it 'is not yet registered' in SAM and that registration 'remains pending activation,' but later separately states its SAM UEI 'is confirmed active in the SAM.gov database' -- the two statements directly conflict on whether SAM registration is actually in place.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "SAM Registration: Nordic Galley Catering AS is not yet registered in the System for\nAward Management; our registration application was submitted this month and remains\npending activation.",
+          "start_char": 1143,
+          "end_char": 1330
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Our SAM UEI, NG61XQ8TVM45, is confirmed active in the SAM.gov database as of the date\nof this quote.",
+          "start_char": 2457,
+          "end_char": 2557
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_references",
+      "description": "Offeror must list clients from the past two years demonstrating relevant prior experience, with contract dates, places of performance, contract value, and contact names/phone/email; if no comparable Estonia experience exists, international experience must be provided instead. References may be contacted directly by the Government about quality, contract compliance, management effectiveness, cooperation, and business integrity.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides two past-performance references, each with contract value, dates, and point-of-contact details.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Reference 1: catering and delivery services for the Latvian Ministry of Defence guest\nresidence in Riga (2023-2025), contract value EUR 55,000, point of contact Ms. Ilze\nBērziņa, +371 6734 2201.",
+          "start_char": 1745,
+          "end_char": 1939
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Reference 2: facilities catering contract for the Estonian Defence Forces Tapa base\n(2022-2024), contract value EUR 61,000, point of contact Mr. Andres Tamm, +372 5289\n1147.",
+          "start_char": 1940,
+          "end_char": 2113
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "capability_evidence_personnel_equipment_financial",
+      "description": "Offeror must provide evidence it can supply the necessary personnel, equipment, and financial resources to perform the work, which may take the form of an annual fiscal report or a link to one.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states it 'operates with a lean team of 4 kitchen and delivery staff and one delivery vehicle,' but later separately describes 'a fleet of 6 refrigerated delivery vans, supported by a 22-person operations team' -- the two staffing/fleet descriptions cannot both be true.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Capability: Nordic Galley Catering AS operates with a lean team of 4 kitchen and\ndelivery staff and one delivery vehicle, keeping overhead costs low. Financial\nstatements are available on request.",
+          "start_char": 1332,
+          "end_char": 1528
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Our fleet of 6 refrigerated delivery vans, supported by a 22-person operations team,\nensures full redundancy for embassy deliveries.",
+          "start_char": 2584,
+          "end_char": 2716
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "local_license_permit_conditional",
+      "description": "If this service requires a special license or permit under local law, the offeror must address its plan to obtain one, or provide a copy if already held.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states it already holds all locally required food handling and health permits, with a copy enclosed.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Licenses and Permits: Nordic Galley Catering AS already holds all locally required food\nhandling and health permits; a copy of our current Terviseamet certificate is enclosed\nwith this quotation.",
+          "start_char": 1530,
+          "end_char": 1725
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "menu_plan_sample_20day",
+      "description": "Per Amendment 0001, the offeror must provide a sample 20-day menu plan together with its offer.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a sample 20-day menu plan is enclosed as an appendix.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "A sample 20-day menu plan is enclosed as Appendix B, rotating between seven main\ndishes to meet the required daily lunch and dinner service.",
+          "start_char": 2126,
+          "end_char": 2266
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "risk_management_plan_with_proposal",
+      "description": "Per Amendment 0001's deliverables table, the Risk Management Plan (covering risk management, mitigation, and quality control/assurance) must be provided as part of the proposal response, and updated/maintained throughout performance -- unlike the table's other deliverables, which are all due only after award.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states the Risk Management Plan 'is enclosed as Appendix C with this proposal,' but later separately states it 'will finalize and submit' the Risk Management Plan 'during the first month of performance' -- the two statements conflict on whether the plan was actually provided with the proposal.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "Our Risk Management Plan, covering risk identification, mitigation, and quality\nassurance procedures, is enclosed as Appendix C with this proposal.",
+          "start_char": 2285,
+          "end_char": 2432
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+          "quote": "We will finalize and submit our Risk Management Plan to the COR during the first month\nof performance, once site-specific risks have been assessed on the ground.",
+          "start_char": 2735,
+          "end_char": 2896
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Quotations are due September 18, 2026, 17:00 local time.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- the due date is a fact about the submission process, not something the application's content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_format_and_channel",
+      "description": "Quotes must be submitted electronically to TallinnGSOProcurement@state.gov in MS-Word 2007/2010, MS-Excel 2007/2010, or Adobe PDF format, with each email under 30MB (split across multiple emails if larger).",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- which channel/format was actually used to submit the quote is a fact about the submission process, not something the application's own content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

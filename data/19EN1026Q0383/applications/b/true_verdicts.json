@@ -1,0 +1,299 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: quote_due_date and submission_format_and_channel, since both are is_text_verifiable: false in true_requirements.json.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "This is a SECOND, independent synthetic application (Tallinn Fresh Kitchen OÜ) against the same true_requirements.json as data/19EN1026Q0383 -- built for SFT/eval training data with deliberately different failure and compliance shapes from the original application, including three distinct contradictions per the user's request: uei_eft_indicator_stated (EFT 'not required' vs. an EFT payment instruction given later), past_performance_references (claims no Estonia experience while citing an Estonia-based reference), and local_license_permit_conditional (claims no permit is required while attaching one anyway).",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "Offer must state the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the solicitation number in the cover block.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Solicitation Number: 19EN1026Q0383",
+          "start_char": 423,
+          "end_char": 457
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "offeror_contact_info_stated",
+      "description": "Offer must state the name, address, and telephone number of the offeror.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the offeror's name, address, and telephone number.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Offeror: Tallinn Fresh Kitchen OÜ, Väike-Ameerika 22, 10129 Tallinn, Estonia\nTelephone: +372 5566 3390",
+          "start_char": 458,
+          "end_char": 560
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_eft_indicator_stated",
+      "description": "Offer must state the offeror's Unique Entity Identifier (UEI) and, if applicable, its Electronic Funds Transfer (EFT) indicator.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states 'EFT Indicator: N/A -- no Electronic Funds Transfer is required for this quote,' but later gives EFT payment instructions (an IBAN for Electronic Funds Transfer) -- the two statements directly conflict on whether EFT applies to this quote.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "EFT Indicator: N/A -- no Electronic Funds Transfer is required for this quote.",
+          "start_char": 606,
+          "end_char": 684
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Please remit payment via Electronic Funds Transfer to IBAN EE38 2200 0011 2033 1234.",
+          "start_char": 2544,
+          "end_char": 2628
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions in the solicitation and any amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions of the solicitation and its amendments.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Tallinn Fresh Kitchen OÜ submits this quotation in agreement with all terms, conditions,\nand provisions of the solicitation and its amendments.",
+          "start_char": 183,
+          "end_char": 326
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "signed_dated_offer_submission",
+      "description": "The offer must be signed and dated.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a signature block with printed name, title, signature, and a filled-in date.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Printed Name of Signee: Priit Kask\nPrinted Title of Signee: General Manager\nSignature: /s/ Priit Kask\nDate: 09-17-2026",
+          "start_char": 2826,
+          "end_char": 2944
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sf1449_section1_completion",
+      "description": "Offer must consist of a completed solicitation: the SF-1449 cover page (blocks 12, 17, 19-24, and 30 as appropriate) and Section 1 filled out.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the SF-1449 blocks and Section 1 are completed and enclosed.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+          "start_char": 686,
+          "end_char": 816
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "project_manager_english_liaison",
+      "description": "Offer must name a Project Manager (or other liaison to the U.S. Embassy/Consulate) who understands written and spoken English.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application names a Project Manager who is fluent in written and spoken English.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Project Manager: Mr. Priit Kask will serve as our Project Manager and liaison to the\nU.S. Embassy/Consulate; he is fully fluent in written and spoken English.",
+          "start_char": 838,
+          "end_char": 996
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "estonia_business_registration_evidence",
+      "description": "Offer must include evidence that the offeror operates an established business with a permanent address and telephone listing in Estonia, in the form of a business registry outtake or a link to the company's registry page.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the business has operated with a permanent Tallinn address since 2016 and provides a link to its Estonian business registry page.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Business Registration: Tallinn Fresh Kitchen OÜ has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2016. Registry\npage: https://ariregister.rik.ee/eng/company/tallinn-fresh-kitchen-ou",
+          "start_char": 998,
+          "end_char": 1234
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sam_registration_proof",
+      "description": "Offeror must provide proof of SAM registration, including the SAM UEI number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states its SAM UEI number in the cover information and points to it as proof of SAM registration -- accepted per the same broadened reading as the base application (UEI issuance implies SAM registration).",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "SAM Registration: proof of SAM registration and our SAM UEI number are provided above\nunder Cover Page Information.",
+          "start_char": 1236,
+          "end_char": 1351
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "past_performance_references",
+      "description": "Offeror must list clients from the past two years demonstrating relevant prior experience, with contract dates, places of performance, contract value, and contact names/phone/email; if no comparable Estonia experience exists, international experience must be provided instead. References may be contacted directly by the Government about quality, contract compliance, management effectiveness, cooperation, and business integrity.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states it has 'not previously performed comparable services in Estonia' and offers only international (Latvia) experience on that basis, but then separately cites an ongoing reference explicitly located within Estonia -- the two statements conflict on whether the offeror has Estonia experience at all.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "We have not previously performed comparable services in Estonia, so we provide our\ninternational experience: catering services for the Netherlands Embassy in Riga, Latvia\n(2023-2024), contract value EUR 38,500, point of contact Mr. Aivars Ozols, Facilities\nOfficer, +371 6721 4408.",
+          "start_char": 1861,
+          "end_char": 2142
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Our ongoing catering contract with a Nordic shipping firm's Tallinn office (2022-2023)\nfurther demonstrates our reliability delivering to secured facilities within Estonia.",
+          "start_char": 2652,
+          "end_char": 2824
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "capability_evidence_personnel_equipment_financial",
+      "description": "Offeror must provide evidence it can supply the necessary personnel, equipment, and financial resources to perform the work, which may take the form of an annual fiscal report or a link to one.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application describes staffing and vehicle capacity but offers only an unaudited internal financial statement 'on request' rather than an annual fiscal report or link, so financial capacity cannot be confirmed from the application text alone.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Capability: Tallinn Fresh Kitchen OÜ employs 9 kitchen and delivery staff and operates\none delivery van. An unaudited internal financial statement is available on request.",
+          "start_char": 1353,
+          "end_char": 1524
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "local_license_permit_conditional",
+      "description": "If this service requires a special license or permit under local law, the offeror must address its plan to obtain one, or provide a copy if already held.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states that this type of service 'does not require any special license or permit under Estonian law,' but immediately after attaches a current Health Board food handling permit -- the two statements conflict on whether a permit is actually required/held.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Licenses and Permits: this type of food-delivery service does not require any special\nlicense or permit under Estonian law, so none is enclosed with this quotation.",
+          "start_char": 1526,
+          "end_char": 1690
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Our current Health Board (Terviseamet) food handling permit, renewed this year, is\nattached to this quotation for the Contracting Officer's reference.",
+          "start_char": 1691,
+          "end_char": 1841
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "menu_plan_sample_20day",
+      "description": "Per Amendment 0001, the offeror must provide a sample 20-day menu plan together with its offer.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states no sample menu plan is included, deferring it to after award -- the requirement is not met with the proposal.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "A sample 20-day menu plan is not included with this quotation; we will develop one\ncollaboratively with the COR after award to match dietary preferences as they become\nknown.",
+          "start_char": 2155,
+          "end_char": 2329
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "risk_management_plan_with_proposal",
+      "description": "Per Amendment 0001's deliverables table, the Risk Management Plan (covering risk management, mitigation, and quality control/assurance) must be provided as part of the proposal response, and updated/maintained throughout performance -- unlike the table's other deliverables, which are all due only after award.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the Risk Management Plan is enclosed as Appendix A with the proposal, addressing risk identification, mitigation, and quality control.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/b/application.txt",
+          "quote": "Our Risk Management Plan is enclosed as Appendix A with this proposal, covering\nidentification of delivery-route risks, mitigation steps, and our quality-control\nchecklist.",
+          "start_char": 2348,
+          "end_char": 2520
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Quotations are due September 18, 2026, 17:00 local time.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- the due date is a fact about the submission process, not something the application's content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_format_and_channel",
+      "description": "Quotes must be submitted electronically to TallinnGSOProcurement@state.gov in MS-Word 2007/2010, MS-Excel 2007/2010, or Adobe PDF format, with each email under 30MB (split across multiple emails if larger).",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- which channel/format was actually used to submit the quote is a fact about the submission process, not something the application's own content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

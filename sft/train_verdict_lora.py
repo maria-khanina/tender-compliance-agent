@@ -1,36 +1,7 @@
-"""LoRA SFT for the verdict-generation step, trained on Qwen/Qwen3-8B
-(QLoRA: base model loaded in 4-bit via bitsandbytes, only the small LoRA
-adapter is trained) and meant to be served afterwards as an adapter on top
-of the AWQ-quantized Qwen/Qwen3-8B-AWQ checkpoint via vLLM's --enable-lora
-(so training memory and serving memory are optimized independently -- we
-never need the full bf16 model in VRAM at once for either step).
-
-Runs in the separate WSL venv at /root/sft/venv (torch/transformers/peft/
-trl/bitsandbytes) -- NOT the main repo's Python environment, which has no
-GPU training stack and shouldn't need one. Reads sft/data/verdicts_*.jsonl,
-built by build_verdict_dataset.py in the main environment.
-
-Anti-overfitting design (this is deliberately more than plain
-loss-based early stopping, given how small this dataset is -- 389 train /
-96 validation examples):
-  1. LoRA itself is the primary regularizer: modest rank (r=16) and a
-     nonzero lora_dropout (0.1) rather than a large rank fit to memorize.
-  2. Checkpoint selection is driven by the actual TASK metric on
-     validation (does the generated verdict label match primary_verdict),
-     not next-token cross-entropy loss -- a lower loss checkpoint is not
-     guaranteed to produce better structured verdicts, and loss is a proxy
-     for the thing we actually care about, not the thing itself.
-  3. Patience-based early stopping (default patience=3 eval rounds, not
-     "stop on the first non-improving eval") -- with only 96 validation
-     examples the accuracy curve is noisy; stopping on the very first dip
-     would very likely stop on noise rather than genuine overfitting.
-  4. A minimum-improvement threshold (min_delta) before a new checkpoint
-     is considered "better", for the same noise-tolerance reason.
-  5. Class-balanced accuracy (macro F1 across the 4 verdict labels) is
-     tracked alongside raw accuracy and logged for every eval round --
-     raw accuracy on an imbalanced validation set (compliant is the
-     plurality class) can look fine while the model has simply collapsed
-     to predicting the majority class; macro F1 would expose that.
+"""QLoRA SFT for the verdict-generation step (Qwen/Qwen3-8B, 4-bit base +
+LoRA adapter -- served later on top of Qwen/Qwen3-8B-AWQ via vLLM
+--enable-lora). Runs in the WSL venv at /root/sft/venv, not the main repo's
+Python env. Reads sft/data/verdicts_*.jsonl from build_verdict_dataset.py.
 """
 import json
 import re
@@ -50,13 +21,6 @@ from trl import SFTConfig, SFTTrainer
 BASE_MODEL = "Qwen/Qwen3-8B"
 DATA_DIR = "sft/data"
 OUTPUT_DIR = "sft/checkpoints/verdict-lora"
-# Real training-example token lengths (Qwen3 tokenizer, tools+messages
-# rendered): p50=1592, p90=1916, p99=2019, max=2046 out of 389 examples --
-# 4096 was pure headroom no example needed and was pushing VRAM to its
-# ceiling (7.4-7.7 / 8.2 GiB) on an already-tight 8B-in-4bit setup, which
-# looked like severe, worsening per-step slowdowns (149s -> 453s) rather
-# than an outright OOM crash -- classic CUDA allocator fragmentation near
-# the memory ceiling. 2304 covers every observed example with margin.
 MAX_SEQ_LEN = 2304
 
 VERDICT_LABELS = [
@@ -132,8 +96,14 @@ def to_chat_example(row: dict) -> dict:
 
 
 def build_datasets() -> tuple[Dataset, list[dict]]:
-    train_rows = [to_chat_example(r) for r in load_jsonl(f"{DATA_DIR}/verdicts_train.jsonl")]
-    val_rows = [to_chat_example(r) for r in load_jsonl(f"{DATA_DIR}/verdicts_validation.jsonl")]
+    train_rows = [
+        to_chat_example(r)
+        for r in load_jsonl(f"{DATA_DIR}/verdicts_train.jsonl")
+    ]
+    val_rows = [
+        to_chat_example(r)
+        for r in load_jsonl(f"{DATA_DIR}/verdicts_validation.jsonl")
+    ]
     train_ds = Dataset.from_list(train_rows)
     return train_ds, val_rows
 
@@ -219,7 +189,10 @@ def evaluate_task_accuracy(model, tokenizer, val_rows: list[dict]) -> dict:
         tp, fp, fn = counts["tp"], counts["fp"], counts["fn"]
         precision = tp / (tp + fp) if (tp + fp) else 0.0
         recall = tp / (tp + fn) if (tp + fn) else 0.0
-        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+        if precision + recall:
+            f1 = 2 * precision * recall / (precision + recall)
+        else:
+            f1 = 0.0
         f1_scores.append(f1)
     macro_f1 = sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
     model.train()
@@ -233,11 +206,6 @@ class TaskMetricEarlyStopping(TrainerCallback):
     patience: int = 3
     min_delta: float = 0.01
     eval_every_n_steps: int = 40
-    # Independent of eval/best-checkpoint saving: a cheap, unconditional
-    # LoRA-adapter snapshot every N steps, so a crash between two eval
-    # rounds (we've lost up to ~40 steps of progress that way already)
-    # only costs up to this many steps instead. The adapter is tiny
-    # (43.6M params) so this is fast and not worth gating on eval quality.
     save_every_n_steps: int = 15
     history_path: str = f"{OUTPUT_DIR}/training_history.json"
     loss_log_path: str = f"{OUTPUT_DIR}/loss_log.jsonl"
@@ -245,28 +213,16 @@ class TaskMetricEarlyStopping(TrainerCallback):
     best_step: int = field(default=-1)
     rounds_without_improvement: int = field(default=0)
     history: list = field(default_factory=list)
-    # A single eval round beating best_metric is not enough to commit it --
-    # with 96 validation examples from one tender, the noise floor on
-    # macro-F1 is roughly the size of our old min_delta (0.01), so a lone
-    # good round could just be sampling noise. Require the improvement to
-    # hold for two consecutive eval rounds before it's trusted and saved.
     pending_metric: float | None = field(default=None)
     pending_step: int | None = field(default=None)
 
     def _persist_history(self) -> None:
-        # Written after EVERY eval round, not just at the end of
-        # trainer.train() -- a crash mid-run (we've had several) should
-        # only cost the eval round in flight, not every eval that already
-        # completed successfully before it.
         import os
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
     def on_log(self, args, state, control, logs=None, **kwargs):
-        # Persist every HF Trainer log line (training loss, lr, etc, per
-        # logging_steps) to its own file -- previously this only existed
-        # inside stdout, mixed in with progress bars, and was lost on crash.
         if logs is None:
             return control
         import os
@@ -366,6 +322,7 @@ def main():
         max_length=MAX_SEQ_LEN,
         bf16=True,
         report_to=[],
+        assistant_only_loss=True,
     )
 
     trainer = SFTTrainer(

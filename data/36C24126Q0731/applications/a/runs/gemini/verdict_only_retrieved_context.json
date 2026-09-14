@@ -1,0 +1,524 @@
+[
+  {
+    "requirement_id": "los_compliance_assertion",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "uei_provided_on_quote",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "eft_indicator_if_applicable",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "quote_signed_and_dated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "solicitation_number_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  },
+  {
+    "requirement_id": "time_specified_for_receipt_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  },
+  {
+    "requirement_id": "quoter_contact_info_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  },
+  {
+    "requirement_id": "technical_description_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  },
+  {
+    "requirement_id": "warranty_terms_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "price_and_discount_terms_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "remit_to_address_stated",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "far_52_212_3_reps_and_certs",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "amendment_acknowledgment",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      }
+    ]
+  },
+  {
+    "requirement_id": "terms_and_conditions_acceptance_statement",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  },
+  {
+    "requirement_id": "product_chart_full_pricing",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "brand_name_no_substitutes",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "shipping_cost_handling",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      }
+    ]
+  },
+  {
+    "requirement_id": "single_best_price_quote",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 2,
+        "text": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.\n\nTotal quoted price for this solicitation: $21,540.00.\n\nProduct Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.\n\nWe are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.\n\nShipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.\n\nPlease contact us with any questions regarding this quote.\n\nSincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+        "start_char": 2187,
+        "end_char": 3446
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianmedsystems.com\nTo: carlos.ortiz3@va.gov\nSubject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei Platform/CD Burner\n\nDear Mr. Ortiz,\n\nMeridian Medical Systems, LLC is pleased to submit the following quote in\nresponse to Solicitation 36C24126Q0731 P0003. We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.\n\nQuoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142\n\nUnique Entity Identifier: NL8K4TQ9XPW3\n\nMeridian Medical Systems, LLC is registered and active in the System for\nAward Management (SAM).\n\nMeridian Medical Systems, LLC is a VIP-listed Service-Disabled\nVeteran-Owned Small Business (SDVOSB), verified under SBA SBS VetCert\nCase #DV-2024-01187.\n\nWe acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+        "start_char": 0,
+        "end_char": 1124
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\36C24126Q0731\\application.txt",
+        "chunk_index": 1,
+        "text": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.\n\nTechnical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.\n\nTerms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.\n\nPrice and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.\n\n\"Remit to\" address: Same as the mailing address listed above.\n\nOur representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.\n\nTerms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+        "start_char": 897,
+        "end_char": 2350
+      }
+    ]
+  }
+]

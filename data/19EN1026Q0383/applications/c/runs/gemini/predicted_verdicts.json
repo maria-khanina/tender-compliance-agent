@@ -1,0 +1,596 @@
+[
+  {
+    "requirement_id": "6a982e45-84f4-4612-a811-76e460bc0193",
+    "requirement_text": "Proposals must be in English",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Nordic Galley Catering AS submits this quotation in agreement with all terms,\nconditions, and provisions of the solicitation and its amendments.",
+        "start_char": 180,
+        "end_char": 324,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The entire tender application is written in English, which directly satisfies the requirement that proposals must be in English."
+  },
+  {
+    "requirement_id": "c21dfde3-9cb2-47b1-8758-a53e79ca1218",
+    "requirement_text": "Incomplete proposals will not be accepted",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 602,
+        "end_char": 732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "A sample 20-day menu plan is enclosed as Appendix B, rotating between seven main dishes to meet the required daily lunch and dinner service.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Our Risk Management Plan, covering risk identification, mitigation, and quality assurance procedures, is enclosed as Appendix C with this proposal.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that incomplete proposals will not be accepted. The excerpts show that the bidder has provided a complete proposal, including the completed SF-1449 form blocks, menu plan, risk management plan, licensing, and pricing/cover page information, with no indication of missing mandatory elements."
+  },
+  {
+    "requirement_id": "fe41a480-addb-470f-bac1-404ab9df8f7e",
+    "requirement_text": "The Contractor shall furnish all managerial, administrative, and direct labor personnel that are necessary to accomplish the work in this contract.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Our fleet of 6 refrigerated delivery vans, supported by a 22-person operations team, ensures full redundancy for embassy deliveries.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Capability: Nordic Galley Catering AS operates with a lean team of 4 kitchen and\ndelivery staff and one delivery vehicle, keeping overhead costs low.",
+        "start_char": 1332,
+        "end_char": 1481,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder states they have a team of operations staff as well as kitchen and delivery personnel to accomplish the work required under the contract, satisfying the requirement to furnish necessary managerial, administrative, and direct labor personnel."
+  },
+  {
+    "requirement_id": "1b11c503-8528-404e-8418-6448ce7c415c",
+    "requirement_text": "Contractor employees shall be on site only for contractual duties and not for other business purposes.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts discuss business registration, SAM registration, company capabilities, past performance, menu plans, risk management, and fleet and staffing, but contain no information regarding whether contractor employees will be restricted to contractual duties on site or if they might engage in other business purposes."
+  },
+  {
+    "requirement_id": "e2529535-82fd-412d-92c5-b645ac7bd8d5",
+    "requirement_text": "The Contractor shall prepare general instructions for the work force.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided text excerpts detail company registration, past performance, menu plans, risk management, and fleet information, but contain no mention of preparing general instructions for the work force. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "814f964c-9dcb-479b-a8bc-4d60e72cacd1",
+    "requirement_text": "The Contractor shall provide drafts to the Contracting Officer's Representative (COR) for review within thirty days after contract award.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "We will finalize and submit our Risk Management Plan to the COR during the first month\nof performance, once site-specific risks have been assessed on the ground.",
+        "start_char": 2735,
+        "end_char": 2896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in the transition note that they will finalize and submit their Risk Management Plan to the COR during the first month of performance (within thirty days after contract award), which satisfies the requirement."
+  },
+  {
+    "requirement_id": "7eb0f899-3fc1-4754-b255-3165a3c71642",
+    "requirement_text": "Contractor shall schedule cooking and delivery requirements to ensure they are done in the specified order and time frame, taking into consideration the hours staff can perform services without burdening security personnel.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not contain any information regarding the contractor's scheduling of cooking and delivery requirements, time frames, or considerations for security personnel hours. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "87f5d986-063d-4f3d-bb33-33e7a7866b4d",
+    "requirement_text": "Contractor will be responsible for providing individually packed lunch and dinner meals for seven people per day (98 meals per week), utilizing its own operation hours for preparation, packaging, and delivery.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "A sample 20-day menu plan is enclosed as Appendix B, rotating between seven main\ndishes to meet the required daily lunch and dinner service.",
+        "start_char": 2126,
+        "end_char": 2266,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application confirms their capability to meet the daily lunch and dinner service requirements utilizing their menu plan and operational setup."
+  },
+  {
+    "requirement_id": "f72f4682-fdde-4935-9ea9-949f2a4072c1",
+    "requirement_text": "Contractor may use own discretion and is encouraged to transport multiple days' meals every trip to minimize daily transportation and deliver to the residence in Tallinn.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement permits the contractor to transport multiple days' meals every trip to minimize daily transportation to the residence in Tallinn. The provided excerpts do not mention anything regarding the frequency of meal transportation, delivery scheduling, or whether the bidder plans to transport multiple days' meals at once. Therefore, there is insufficient information in the application to determine compliance."
+  },
+  {
+    "requirement_id": "6f4bb894-e660-42f5-9214-e04c8b4e93fa",
+    "requirement_text": "Request is to deliver three times a week.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain information regarding the bidder's company details, menu plan, SAM registration, and past performance, but they do not mention delivery frequency or whether deliveries will be made three times a week. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "9838cb82-2b51-40a7-90a0-52602fae93ec",
+    "requirement_text": "Contractor will be responsible for removing used food containers and any uneaten meals from the MSGR and disposing of them at contractor facilities during meal deliveries.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts discuss company registration, team size, past performance, menu plans, risk management, and fleet information, but they contain no mention of removing used food containers, uneaten meals, or waste disposal procedures. Therefore, there is insufficient information to determine compliance with the requirement."
+  },
+  {
+    "requirement_id": "57a63d9b-a02f-4c5a-a37f-8eecf8e3c762",
+    "requirement_text": "This supervisor shall be the focal point for the Contractor and shall be the point of contact with U.S. Government personnel.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Project Manager: Ms. Helen Pärn, fluent in written and spoken English, will serve as our\nProject Manager and liaison to the U.S. Embassy/Consulate.",
+        "start_char": 754,
+        "end_char": 901,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly identifies Ms. Helen Pärn as the Project Manager who will serve as the liaison to the U.S. Embassy/Consulate, which fulfills the requirement of being the focal point and point of contact for U.S. Government personnel."
+  },
+  {
+    "requirement_id": "b4e2399d-0d63-46e5-b6e0-4a62b47eb9b9",
+    "requirement_text": "The supervisor shall have sufficient English language skill to be able to communicate with members of the U.S. Government staff.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Project Manager: Ms. Helen Pärn, fluent in written and spoken English, will serve as our\nProject Manager and liaison to the U.S. Embassy/Consulate.",
+        "start_char": 754,
+        "end_char": 901,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly states that the Project Manager, Ms. Helen Pärn, is fluent in written and spoken English and will serve as the liaison to the U.S. Embassy, which satisfies the requirement for the supervisor to have sufficient English language skills to communicate with U.S. Government staff."
+  },
+  {
+    "requirement_id": "34813215-cdd2-4885-a2b4-f0d7377af074",
+    "requirement_text": "The Contractor shall be responsible for quality control, performing regular surprise inspection visits to the work site coordinated with the COR.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts discuss quality assurance procedures in general terms within the Risk Management section, but do not contain any specific mention of quality control, surprise inspection visits, or coordination with the COR regarding site inspections."
+  },
+  {
+    "requirement_id": "7eca2cb6-1934-467e-8063-71f4aea1fc30",
+    "requirement_text": "Provide as part of proposal response and updated/maintained throughout performance.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states to provide something as part of the proposal response and updated/maintained throughout performance, but the text does not specify what item, plan, or document is actually being referred to. Therefore, there is insufficient information to determine if the bidder has satisfied this requirement."
+  },
+  {
+    "requirement_id": "526dbf7f-d8df-4492-8cfe-c60e561fe126",
+    "requirement_text": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Signature: /s/ Helen Pärn\nDate: 09-18-2026",
+        "start_char": 2976,
+        "end_char": 3018,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Nordic Galley Catering AS submits this quotation in agreement with all terms,\nconditions, and provisions of the solicitation and its amendments. This offer is signed\nand dated below by our authorized representative.",
+        "start_char": 180,
+        "end_char": 395,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application includes an offer submitted to the specified solicitation that is both signed and dated by the authorized representative, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "d30d11e6-450d-42dc-ae00-f735cc165b42",
+    "requirement_text": "As a minimum, offers shall include the solicitation number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "RE: Solicitation 19EN1026Q0383 -- Commercial Cook Services, Marine Security Guard\nResidence, U.S. Embassy Tallinn",
+        "start_char": 65,
+        "end_char": 178,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Solicitation Number: 19EN1026Q0383",
+        "start_char": 421,
+        "end_char": 455,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offers must include the solicitation number as a minimum. The bidder's application explicitly includes the solicitation number '19EN1026Q0383' in both the reference header and the cover page information section, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "bbcdd68c-5599-482f-920f-194325c6bee5",
+    "requirement_text": "As a minimum, offers shall include the name, address, telephone number of the Offeror.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Offeror: Nordic Galley Catering AS, Pärnu mnt 158, 11317 Tallinn, Estonia\nTelephone: +372 5044 7712",
+        "start_char": 456,
+        "end_char": 555,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly includes the required name (Nordic Galley Catering AS), address (Pärnu mnt 158, 11317 Tallinn, Estonia), and telephone number (+372 5044 7712)."
+  },
+  {
+    "requirement_id": "11628b95-c0e4-45e8-aca4-169d6246919a",
+    "requirement_text": "As a minimum, offers shall include the Offeror's Unique Entity Identifier (UEI) and proof of SAM registration.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Unique Entity Identifier (UEI): NG61XQ8TVM45",
+        "start_char": 556,
+        "end_char": 600,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SAM Registration: Nordic Galley Catering AS is not yet registered in the System for\nAward Management; our registration application was submitted this month and remains\npending activation.",
+        "start_char": 1143,
+        "end_char": 1330,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SAM Registration: Nordic Galley Catering AS is not yet registered in the System for\nAward Management; our registration application was submitted this month and remains\npending activation.",
+        "start_char": 1143,
+        "end_char": 1330,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Our SAM UEI, NG61XQ8TVM45, is confirmed active in the SAM.gov database as of the date\nof this quote.",
+        "start_char": 2457,
+        "end_char": 2557,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The tender requires both the Offeror's Unique Entity Identifier (UEI) and proof of SAM registration. The application provides the UEI and states that it is confirmed active in the SAM.gov database (supporting compliance). However, other sections of the proposal simultaneously state that the company is not yet registered in SAM and that the application is only pending activation (contradicting proof of active SAM registration)."
+  },
+  {
+    "requirement_id": "92ffae35-8418-42e0-bad5-0a2eedf85222",
+    "requirement_text": "As a minimum, offers shall include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 602,
+        "end_char": 732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "ple 20-day menu plan is enclosed as Appendix B, rotating between seven main\ndishes to meet the required daily lunch and dinner service.\n\nRISK MANAGEMENT\n\nOur Risk Management Plan, covering risk identification, mitigation, and quality\nassurance procedures, is enclosed as Appendix C with t",
+        "start_char": 2131,
+        "end_char": 2419,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides the necessary information to evaluate factors such as past performance, technical approach, menu plan, and risk management plan, enclosing various appendices and completed forms as required by the solicitation."
+  },
+  {
+    "requirement_id": "a6fa6eaf-cc33-4e2c-9203-d66dd3f56bd4",
+    "requirement_text": "As a minimum, offers shall include responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via SAM).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 602,
+        "end_char": 732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that offers shall include responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via SAM). The bidder explicitly states in chunk [0] that SF-1449 blocks and Section 1 of the solicitation have been completed and enclosed, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "e999a618-fb97-41b9-8459-01c5f5d4b218",
+    "requirement_text": "As a minimum, offers shall include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Nordic Galley Catering AS submits this quotation in agreement with all terms,\nconditions, and provisions of the solicitation and its amendments.",
+        "start_char": 180,
+        "end_char": 324,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their cover page information that they submit the quotation in agreement with all terms, conditions, and provisions of the solicitation and its amendments, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "2c0acb7e-93de-493c-8959-a7f8541e10f7",
+    "requirement_text": "Each offer must consist of a completed solicitation, including the SF-1449 cover page (blocks 12, 17, 19-24, and 30 as appropriate) and Section 1 filled out.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 602,
+        "end_char": 732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly confirms in their application that the SF-1449 cover page (specifying blocks 12, 17, 19-24, and 30) as well as Section 1 of the solicitation have been completed and enclosed, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "a105471e-0db7-43a8-9cdb-400b586ded82",
+    "requirement_text": "Information demonstrating ability to perform, including the name of a Project Manager (or other liaison to the U.S. Embassy/Consulate) who understands written and spoken English.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Project Manager: Ms. Helen Pärn, fluent in written and spoken English, will serve as our\nProject Manager and liaison to the U.S. Embassy/Consulate.",
+        "start_char": 754,
+        "end_char": 901,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly names Ms. Helen Pärn as the Project Manager and liaison to the U.S. Embassy/Consulate, and confirms that she is fluent in written and spoken English, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "aba607bc-93fc-447b-9e1b-7e65b4dfdc54",
+    "requirement_text": "Evidence that the offeror/quoter operates an established business with a permanent address and telephone listing in Estonia, in the form of a business registry outtake or a link to the company's registry page.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Business Registration: Nordic Galley Catering AS has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2014. Registry\npage: https://ariregister.rik.ee/eng/company/nordic-galley-catering-as",
+        "start_char": 903,
+        "end_char": 1141,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides an explicit statement and a link to their company registry page in the Estonian business register, which fully satisfies the requirement to provide evidence of an established business with a permanent address and telephone listing in Estonia via a business registry link."
+  },
+  {
+    "requirement_id": "922b3cf2-bc3c-43e5-bb8c-3cc9a80fbca0",
+    "requirement_text": "List of clients over the past 2 years, demonstrating prior experience with relevant past performance information and references.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Reference 1: catering and delivery services for the Latvian Ministry of Defence guest\nresidence in Riga (2023-2025), contract value EUR 55,000, point of contact Ms. Ilze\nBērziņa, +371 6734 2201.\nReference 2: facilities catering contract for the Estonian Defence Forces Tapa base\n(2022-2024), contract value EUR 61,000, point of contact Mr. Andres Tamm, +372 5289\n1147.",
+        "start_char": 1745,
+        "end_char": 2113,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides a list of clients covering the past 2 years (2022-2025), which includes relevant past performance information (contract types and values) and references with contact details, satisfying the requirement completely."
+  },
+  {
+    "requirement_id": "57e57b97-9b26-4169-9939-e3e8e90a9bf5",
+    "requirement_text": "If the offeror has not performed comparable services in Estonia, then the offeror shall provide its international experience.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Reference 2: facilities catering contract for the Estonian Defence Forces Tapa base (2022-2024), contract value EUR 61,000, point of contact Mr. Andres Tamm, +372 5289 1147.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that if the offeror has not performed comparable services in Estonia, it must provide its international experience. The excerpts show that the bidder has performed comparable services in Estonia (Reference 2: Estonian Defence Forces Tapa base). Therefore, the triggering condition for providing international experience does not apply to this bidder, and the requirement is satisfied."
+  },
+  {
+    "requirement_id": "b8d39b28-720f-4e49-a2ed-609212176da3",
+    "requirement_text": "Evidence that the offeror can provide necessary personnel, equipment, facilities, and financial resources needed to perform the work (may be in the form of an annual fiscal report or link).",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Capability: Nordic Galley Catering AS operates with a lean team of 4 kitchen and\ndelivery staff and one delivery vehicle, keeping overhead costs low. Financial\nstatements are available on request.",
+        "start_char": 1332,
+        "end_char": 1528,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Our fleet of 6 refrigerated delivery vans, supported by a 22-person operations team,\nensures full redundancy for embassy deliveries.",
+        "start_char": 2584,
+        "end_char": 2716,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application contains directly contradictory statements regarding the bidder's personnel and equipment capabilities. In chunk [1], the offeror states they operate with a lean team of 4 staff and 1 delivery vehicle. Conversely, in chunk [2], the application claims a fleet of 6 refrigerated delivery vans and a 22-person operations team. This internal conflict makes it impossible to reliably determine whether the requirement for personnel and equipment resources is satisfied."
+  },
+  {
+    "requirement_id": "44d264e3-5985-4686-99cf-c43df61dbd28",
+    "requirement_text": "If providing this service requires a special license or permit, the offeror shall address its plan to obtain all required local licenses and permits, or provide a copy if already possessed.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Licenses and Permits: Nordic Galley Catering AS already holds all locally required food\nhandling and health permits; a copy of our current Terviseamet certificate is enclosed\nwith this quotation.",
+        "start_char": 1530,
+        "end_char": 1725,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that if a special license or permit is required, the offeror shall address its plan to obtain them or provide a copy if already possessed. The bidder explicitly states they already hold all locally required food handling and health permits and provides a copy of their Terviseamet certificate, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "57fcd0ef-f2ec-4c5f-b590-bbf9b2211f21",
+    "requirement_text": "The Offeror is required to provide a sample 20-day menu plan together with their offer.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "A sample 20-day menu plan is enclosed as Appendix B, rotating between seven main\ndishes to meet the required daily lunch and dinner service.",
+        "start_char": 2126,
+        "end_char": 2266,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that a sample 20-day menu plan is enclosed as Appendix B, which directly satisfies the requirement to provide a sample 20-day menu plan together with the offer."
+  },
+  {
+    "requirement_id": "63edc7e4-df8d-433f-a856-0127afdf7164",
+    "requirement_text": "Ability to comply with the required performance period, taking into consideration all existing commercial and governmental business commitments.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The tender application provides details on past performance, fleet size, staffing, and business registration, but it does not contain any statements addressing the bidder's ability to comply with the required performance period while taking into consideration existing commercial and governmental business commitments. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "9206ed2b-7180-4710-be94-a57eb8fcb4a4",
+    "requirement_text": "Satisfactory record of integrity and business ethics.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The tender application excerpts mention business registration, SAM registration, past performance references, technical approach, and licenses, but they do not contain any specific information addressing a satisfactory record of integrity and business ethics. Therefore, there is insufficient information to determine compliance with this requirement."
+  },
+  {
+    "requirement_id": "dbb8900c-1fe0-4e4d-89ed-5092ccd5dd92",
+    "requirement_text": "Be otherwise qualified and eligible to receive an award under applicable laws and regulations.",
+    "verdict": "contradictory",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "SAM Registration: Nordic Galley Catering AS is not yet registered in the System for\nAward Management; our registration application was submitted this month and remains\npending activation.",
+        "start_char": 1143,
+        "end_char": 1330,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/c/application.txt",
+        "quote": "Our SAM UEI, NG61XQ8TVM45, is confirmed active in the SAM.gov database as of the date\nof this quote.",
+        "start_char": 2457,
+        "end_char": 2557,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application contains directly contradictory statements regarding the bidder's registration status in the System for Award Management (SAM). In chunk [0], the application states that Nordic Galley Catering AS is not yet registered and the application remains pending activation, while chunks [1] and [2] state that the SAM UEI is confirmed active in the SAM.gov database. Because eligibility to receive an award typically requires active SAM registration, these conflicting statements make it impossible to determine compliance conclusively."
+  }
+]

@@ -1,0 +1,701 @@
+[
+  {
+    "requirement_id": "8895a236-691f-4ce3-9972-f50f84e856c2",
+    "requirement_text": "All Labor hours in Section 3.2 is exclusive of section 3.1 and shall be bid as a separate line item.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "CLIN 0001 (Inspection & Cleaning, JB): $41,200.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $88.00/hr,\n$7,040.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB):\n$18,500.00",
+        "start_char": 520,
+        "end_char": 722,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides labor hours as a separate line item (CLIN 0002) apart from the inspection and cleaning (CLIN 0001) and materials (CLIN 0003), satisfying the requirement that all labor hours in Section 3.2 are exclusive of Section 3.1 and bid as a separate line item."
+  },
+  {
+    "requirement_id": "dbfe9e14-fc19-4aef-b876-2bfceaf11cf6",
+    "requirement_text": "All Material allowances in Section 3.3 are exclusive of section 3.1 and 3.2 and shall be bid as a separate line item.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Price Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $41,200.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $88.00/hr,\n$7,040.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB):\n$18,500.00\nGrand Total: $66,740.00",
+        "start_char": 504,
+        "end_char": 746,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that all material allowances in Section 3.3 must be exclusive of Section 3.1 and 3.2 and bid as a separate line item. The provided excerpts show a price schedule with CLINs for inspection/cleaning, labor, and materials/parts, but do not mention Section 3.1, 3.2, or 3.3, nor do they provide enough detail to determine whether the material allowances are correctly exclusive and structured as required."
+  },
+  {
+    "requirement_id": "98628627-7b8f-4f89-a799-d846e5332f4f",
+    "requirement_text": "The offer shall include the solicitation number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Solicitation Number: 36C24126Q0704",
+        "start_char": 147,
+        "end_char": 181,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly includes the solicitation number (36C24126Q0704) at the beginning of the quote, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "4fd41bb3-02bb-4e0c-bccf-136424a22625",
+    "requirement_text": "The offer shall include the name, address, and telephone number of the Offeror.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Cascade Tank Services, LLC\n2245 Riverside Industrial Park\nConcord, NH 03301\n(603) 555-0177",
+        "start_char": 183,
+        "end_char": 273,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application explicitly provides the name, address, and telephone number of the Offeror in the header section of the proposal."
+  },
+  {
+    "requirement_id": "5b7af152-c53e-4ea2-acf7-7ea01402a296",
+    "requirement_text": "The offer shall include the Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Unique Entity Identifier: CTS9K3RXM217",
+        "start_char": 274,
+        "end_char": 312,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the offer shall include the Offeror's Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator. The bidder's application explicitly includes the Unique Entity Identifier ('CTS9K3RXM217'), thereby satisfying the requirement. The EFT indicator is conditional ('if applicable') and not mentioned, but the inclusion of the UEI satisfies the primary condition."
+  },
+  {
+    "requirement_id": "c9b80c5b-7dce-4896-a714-e53cbb8265e3",
+    "requirement_text": "The offer shall include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Price Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $41,200.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $88.00/hr,\n$7,040.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB):\n$18,500.00\nGrand Total: $66,740.00",
+        "start_char": 504,
+        "end_char": 746,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Past Performance:\nWe are pleased to report three CPARS entries from the past three years\ndemonstrating our qualifications for this contract.\n1. City of Nashua Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $112,000. CPARS rating: Very Good.",
+        "start_char": 2557,
+        "end_char": 2825,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder has included a detailed price schedule, technical methodology, past performance CPARS records, safety procedures, and standards compliance information, which together provide the necessary information to evaluate the solicitation's evaluation factors."
+  },
+  {
+    "requirement_id": "ab5e9935-eaab-451c-b167-35ff8f0d60cc",
+    "requirement_text": "The offer shall include responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via SAM).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Representations:\nCascade Tank Services, LLC represents that it has conducted a\nreasonable inquiry and does not propose to provide or use any covered\narticle prohibited by an applicable FASCSA order. Cascade Tank\nServices, LLC further certifies, after conducting a reasonable inquiry,\nthat it does not conduct any restricted business operations in Sudan.",
+        "start_char": 748,
+        "end_char": 1101,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder includes specific representations and certifications regarding FASCSA orders and restricted business operations in Sudan, thereby satisfying the requirement to include responses to provisions requiring information, representations, and certifications."
+  },
+  {
+    "requirement_id": "bf7bf6c8-7c8e-4a62-926e-1f2d7df0a701",
+    "requirement_text": "The offer shall include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Cascade Tank Services, LLC agrees with all terms, conditions, and\nprovisions included in the solicitation.",
+        "start_char": 314,
+        "end_char": 420,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "No amendments to this solicitation had been issued as of the date of\nthis quote.",
+        "start_char": 422,
+        "end_char": 502,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they agree with all terms, conditions, and provisions included in the solicitation, and further notes that no amendments had been issued, fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "244e2384-ef6e-43b9-a030-af5b832054b9",
+    "requirement_text": "The offeror must qualify as a small business under the assigned NAICS code and be a certified SDVOSB listed in the SBA certification database at the time of offer submission and award.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The tender application and accompanying excerpts provide details regarding pricing, safety certifications, past performance, and operational methodologies, but they contain no information or statements concerning the bidder's status as a small business under the assigned NAICS code or its certification status as an SDVOSB in the SBA certification database. Therefore, there is insufficient information to determine compliance with the requirement."
+  },
+  {
+    "requirement_id": "6faea0fc-13e5-4351-87ec-dc4c4509b4df",
+    "requirement_text": "By submission of the offer, the offeror represents that it has conducted a reasonable inquiry and does not propose to provide or use covered articles or sources prohibited by applicable FASCSA orders, unless waived or disclosed.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Cascade Tank Services, LLC represents that it has conducted a\nreasonable inquiry and does not propose to provide or use any covered\narticle prohibited by an applicable FASCSA order.",
+        "start_char": 765,
+        "end_char": 946,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly represents in their application that they have conducted a reasonable inquiry and do not propose to provide or use covered articles or sources prohibited by applicable FASCSA orders, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "7b2ba604-194f-46a3-a351-093562e158a8",
+    "requirement_text": "By submission of its offer, the offeror certifies, after conducting a reasonable inquiry, that it does not conduct any restricted business operations in Sudan.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Cascade Tank\nServices, LLC further certifies, after conducting a reasonable inquiry,\nthat it does not conduct any restricted business operations in Sudan.",
+        "start_char": 947,
+        "end_char": 1101,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly certifies in its application that, after conducting a reasonable inquiry, it does not conduct any restricted business operations in Sudan, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "fcad9d28-a0cf-4a0a-9212-079b76b8c872",
+    "requirement_text": "The Offeror agrees to hold the prices in its offer firm for 60 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Cascade Tank Services, LLC agrees with all terms, conditions, and\nprovisions included in the solicitation.",
+        "start_char": 314,
+        "end_char": 420,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in excerpt 0 that they agree with all terms, conditions, and provisions included in the solicitation, which includes the requirement to hold prices firm for 60 calendar days."
+  },
+  {
+    "requirement_id": "87c2e5aa-7564-4918-961c-a4d01f420449",
+    "requirement_text": "Provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our hazard communication methodology follows a written HazCom program with SDS binders maintained on every service vehicle... All field technicians hold current Confined Space Entry certification and current Lockout/Tagout certification... A comprehensive fall protection plan covering ladder climbs, roof-hatch access, and harness anchor points is included as Attachment C to this quote.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": ", followed by a written verification checklist and a\nsediment-removal and disinfection sequence per AWWA C652. ",
+        "start_char": 1738,
+        "end_char": 1849,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our field technicians hold current OSHA 10 and OSHA 30 certifications... We maintain current standing with NHDES under Public Water System ID NH1234567, confirmed by letter dated March 2026.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our work will be performed in accordance with AWWA C652 (disinfection),\nAWWA D101/M42 (inspection and maintenance of steel tanks), applicable\nNHDES administrative rules for public water systems, OSHA 1910.146\n(permit-required confined spaces), and EPA guidance on potable water\nsystem disinfection byproducts.",
+        "start_char": 1125,
+        "end_char": 1434,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides extensive documentation and explicit statements demonstrating their adherence, understanding, and application of relevant AWWA standards (AWWA C652, AWWA D101/M42), NHDES rules, OSHA regulations (including OSHA 10/30, confined space, lockout/tagout, and fall protection), and EPA guidance."
+  },
+  {
+    "requirement_id": "ec4b169b-0010-48b4-bc11-69ec5b60f4a4",
+    "requirement_text": "Provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our inspection approach begins with a topside visual survey, followed\nby interior drain-down and manual diver-assisted visual inspection of\nthe tank floor, walls, and roof structure. We document coating\ncondition, corrosion, and sediment buildup with photographs at each\nstation, followed by a written verification checklist and a\nsediment-removal and disinfection sequence per AWWA C652.",
+        "start_char": 1460,
+        "end_char": 1848,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our inspectors are trained to identify structural defects, coating\nfailures, corrosion, erosion, sanitation deficiencies, and\ncontamination routes.",
+        "start_char": 2252,
+        "end_char": 2399,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides a detailed inspection and cleaning methodology that includes specific procedures (topside visual survey, interior drain-down, manual diver-assisted inspection), equipment (photographs, verification checklists), and verification steps (sediment-removal and disinfection sequence per AWWA C652, written verification checklists)."
+  },
+  {
+    "requirement_id": "0e7ea4b3-d5fb-42e2-b35f-926d03028c8e",
+    "requirement_text": "Provide technical specifications and procedures for ROV use in submerged surface inspections.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our\nmethodology relies on manual diver-assisted visual inspection; we do\nnot currently utilize ROV (remotely operated vehicle) technology for\nsubmerged surface inspection.",
+        "start_char": 1849,
+        "end_char": 2020,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for technical specifications and procedures for ROV use in submerged surface inspections. The bidder explicitly states that they do not utilize ROV technology, thereby failing to provide the requested specifications and procedures."
+  },
+  {
+    "requirement_id": "1df21cda-6a46-4d57-b625-43c2af01a79f",
+    "requirement_text": "Provide evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our inspectors are trained to identify structural defects, coating\nfailures, corrosion, erosion, sanitation deficiencies, and\ncontamination routes. A sample inspection report from a comparable\nmunicipal tank project is available upon request, illustrating our\ndefect-classification and reporting format.",
+        "start_char": 2252,
+        "end_char": 2555,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that their inspectors are trained to identify all the required items (structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes) and offers a sample inspection report illustrating their defect-classification and reporting format upon request, fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "1aa6bcd6-a4cf-447a-b121-f260d1d714b8",
+    "requirement_text": "Provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Detailed operational procedures and task-sequencing work plans for this\nproject are available upon request and will be finalized in\ncoordination with the COR once the work schedule is confirmed.",
+        "start_char": 2022,
+        "end_char": 2216,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks the bidder to provide complete, technically sound work plans and operational procedures for reviewer evaluation within the tender. However, the bidder explicitly states that these operational procedures and task-sequencing work plans are only available upon request and will be finalized later, failing to provide them in the submitted application."
+  },
+  {
+    "requirement_id": "f7b23cb8-dda6-43c5-b800-794e83e43942",
+    "requirement_text": "Provide documentation of previous performance and demonstrated experience on potable water tower inspection, cleaning, or repair contracts.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We are pleased to report three CPARS entries from the past three years\ndemonstrating our qualifications for this contract.\n1. City of Nashua Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $112,000. CPARS rating: Very Good. Point of\nContact: Diane Marchetti, Water Utility Director, (603) 555-2290.\n2. Town of Bedford Public Works - Standpipe Cleaning & Inspection\n(2022). Contract value: $58,400. CPARS rating: Satisfactory. Point of\nContact: Robert Nguyen, Public Works Superintendent, (603) 555-3318.",
+        "start_char": 2575,
+        "end_char": 3105,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides documentation of previous performance and demonstrated experience detailing specific past contracts related to potable water tower inspection, cleaning, and recoating (City of Nashua Water Works and Town of Bedford Public Works), complete with contract values, ratings, and points of contact."
+  },
+  {
+    "requirement_id": "d8b9790d-066a-4451-8439-0b3c9701be54",
+    "requirement_text": "Provide evidence of performance in hospital or other high-risk environments.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "All of our past water tower work has been at municipal and industrial\nsites; we have not previously performed inspection work at an active\nhospital campus.",
+        "start_char": 3106,
+        "end_char": 3261,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for evidence of performance in hospital or other high-risk environments. The bidder explicitly states in chunk 2 that they have not previously performed inspection work at an active hospital campus and that all past work has been at municipal and industrial sites, thus failing to satisfy the requirement."
+  },
+  {
+    "requirement_id": "c6051a41-adf8-4274-b92e-83ba51746e37",
+    "requirement_text": "Provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We are pleased to report three CPARS entries from the past three years\ndemonstrating our qualifications for this contract.\n1. City of Nashua Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $112,000. CPARS rating: Very Good. Point of\nContact: Diane Marchetti, Water Utility Director, (603) 555-2290.\n2. Town of Bedford Public Works - Standpipe Cleaning & Inspection\n(2022). Contract value: $58,400. CPARS rating: Satisfactory. Point of\nContact: Robert Nguyen, Public Works Superintendent, (603) 555-3318.",
+        "start_char": 2575,
+        "end_char": 3105,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides past performance records in the form of CPARS entries detailing contract quality, timeliness, and customer satisfaction (ratings of Very Good and Satisfactory) along with contact information for verification, which satisfies the requirement for providing records demonstrating past performance."
+  },
+  {
+    "requirement_id": "bf7d5993-698b-4f7f-b6c9-fd9367d5b271",
+    "requirement_text": "Provide three references and/or three CPARS entries within the past 3 years.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We are pleased to report three CPARS entries from the past three years\ndemonstrating our qualifications for this contract.\n1. City of Nashua Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $112,000. CPARS rating: Very Good. Point of\nContact: Diane Marchetti, Water Utility Director, (603) 555-2290.\n2. Town of Bedford Public Works - Standpipe Cleaning & Inspection\n(2022). Contract value: $58,400. CPARS rating: Satisfactory. Point of\nContact: Robert Nguyen, Public Works Superintendent, (603) 555-3318.",
+        "start_char": 2575,
+        "end_char": 3105,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement states that bidders must provide three references and/or three CPARS entries within the past 3 years. The bidder only lists two CPARS entries/references in their submission, thereby failing to meet the requirement of providing three."
+  },
+  {
+    "requirement_id": "2a986e40-c013-4799-9950-228cc87bd966",
+    "requirement_text": "Provide proof of OSHA 10 and OSHA 30 certifications.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our field technicians hold current OSHA 10 and OSHA 30 certifications.",
+        "start_char": 3542,
+        "end_char": 3612,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their application that their field technicians hold current OSHA 10 and OSHA 30 certifications, directly satisfying the requirement."
+  },
+  {
+    "requirement_id": "86c9d739-9a05-42e9-9d07-46e0517526fd",
+    "requirement_text": "Provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our lead technician, Marcus Feld, holds a valid New Hampshire Water\nSystem Operator License; a copy is on file with our safety office and\nhis current license is in the renewal process, with the updated\ncertificate expected within 60 days.",
+        "start_char": 3613,
+        "end_char": 3851,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for a copy of the NH Water System Operator License to be provided. The application states that a copy is on file with their safety office and that the license is currently in the renewal process with the updated certificate expected within 60 days, meaning they did not provide a copy of the valid certified license in the tender application."
+  },
+  {
+    "requirement_id": "5cc79a8c-44e3-424f-82c6-79cc60948803",
+    "requirement_text": "Provide documentation confirming current standing with NHDES.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We maintain current standing with\nNHDES under Public Water System ID NH1234567, confirmed by letter dated\nMarch 2026.",
+        "start_char": 3852,
+        "end_char": 3969,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in chunk 2 that they maintain current standing with NHDES under Public Water System ID NH1234567, confirmed by a letter dated March 2026, thus satisfying the requirement to provide documentation confirming current standing with NHDES."
+  },
+  {
+    "requirement_id": "660389df-53da-4131-b629-b8c346b17bc7",
+    "requirement_text": "Provide Confined Space Entry certification.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "All field technicians hold current Confined Space Entry certification\nand current Lockout/Tagout certification.",
+        "start_char": 4642,
+        "end_char": 4753,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement is to provide Confined Space Entry certification. The bidder's application explicitly states that all field technicians hold current Confined Space Entry certification, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "cccb7a98-b778-4ea5-b5b0-2d576c1d89a9",
+    "requirement_text": "Provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "All field technicians hold current Confined Space Entry certification\nand current Lockout/Tagout certification. We use equipment-specific\nLockout/Tagout procedures for each pump and valve assembly encountered\nduring tank isolation, documented in our standard operating procedures\nbinder.\n\nA comprehensive fall protection plan covering ladder climbs, roof-hatch\naccess, and harness anchor points is included as Attachment C to this\nquote.",
+        "start_char": 4642,
+        "end_char": 5079,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout. While the bidder provides certifications for Lockout/Tagout and mentions a fall protection plan (as well as referencing tool, ladder, and access safety controls), they do not provide or mention certifications specifically for Stairways/Ladders or Fall Protection, leaving the requirement incompletely satisfied."
+  },
+  {
+    "requirement_id": "9de6ba3a-ee6c-4449-86af-2bc2424c3013",
+    "requirement_text": "Provide evidence of coating integrity assessment training.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our lead inspector holds NACE Level 2 Coating Inspector certification,\nand our field technicians have completed coating-integrity assessment\ntraining covering blister, delamination, and holiday-detection\nmethods.",
+        "start_char": 3291,
+        "end_char": 3503,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides evidence of coating integrity assessment training, noting that their field technicians have completed training covering blister, delamination, and holiday-detection methods, and that their lead inspector holds a NACE Level 2 Coating Inspector certification."
+  },
+  {
+    "requirement_id": "a46bf8b0-9572-40d9-87b7-a452d5901c81",
+    "requirement_text": "Provide documentation of Healthcare Environmental Sanitation training.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our technicians have completed\ngeneral infection-control awareness training as part of onboarding;\nformal Healthcare Environmental Sanitation training documentation for\ntwo of our four field technicians is still being finalized with our\ntraining vendor.",
+        "start_char": 4076,
+        "end_char": 4329,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for documentation of Healthcare Environmental Sanitation training. The bidder states that this documentation for two of their four field technicians is still being finalized with their training vendor, meaning they do not currently provide the requested documentation."
+  },
+  {
+    "requirement_id": "a66630b9-fe6d-4190-98f0-ef3eea66e895",
+    "requirement_text": "Provide an OSHA-compliant Confined Space Entry plan.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "All field technicians hold current Confined Space Entry certification\nand current Lockout/Tagout certification. We use equipment-specific\nLockout/Tagout procedures for each pump and valve assembly encountered\nduring tank isolation, documented in our standard operating procedures\nbinder.",
+        "start_char": 4642,
+        "end_char": 4929,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Standards Compliance:\nOur work will be performed in accordance with AWWA C652 (disinfection),\nAWWA D101/M42 (inspection and maintenance of steel tanks), applicable\nNHDES administrative rules for public water systems, OSHA 1910.146\n(permit-required confined spaces), and EPA guidance on potable water\nsystem disinfection byproducts.",
+        "start_char": 1103,
+        "end_char": 1434,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement explicitly asks to provide an OSHA-compliant Confined Space Entry plan. While the bidder mentions that their field technicians hold current Confined Space Entry certification, and references OSHA 1910.146 for standards compliance, they do not provide or attach an actual Confined Space Entry plan in their submission."
+  },
+  {
+    "requirement_id": "ccd3aa66-11c3-447a-ae52-fa1d17701718",
+    "requirement_text": "Provide equipment-specific Lockout/Tagout procedures.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We use equipment-specific\nLockout/Tagout procedures for each pump and valve assembly encountered\nduring tank isolation, documented in our standard operating procedures\nbinder.",
+        "start_char": 4754,
+        "end_char": 4929,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they use equipment-specific Lockout/Tagout procedures for each pump and valve assembly, which are documented in their standard operating procedures binder, thereby fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "72c0a554-6855-4d05-9282-c5f6f3750410",
+    "requirement_text": "Provide a comprehensive fall protection plan.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "A comprehensive fall protection plan covering ladder climbs, roof-hatch\naccess, and harness anchor points is included as Attachment C to this\nquote.",
+        "start_char": 4931,
+        "end_char": 5079,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in chunk 3 that a comprehensive fall protection plan covering ladder climbs, roof-hatch access, and harness anchor points is included as Attachment C to the quote, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "c2f2557f-037c-463e-8f6e-4302b7f9b0a4",
+    "requirement_text": "Provide procedures for SDS management.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our hazard communication methodology follows a written HazCom program\nwith SDS binders maintained on every service vehicle and reviewed with\ncrews before each mobilization; SDS management procedures are\nmaintained in the same binder system, updated whenever a new chemical\nproduct is introduced to a job site.",
+        "start_char": 4331,
+        "end_char": 4640,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides procedures for Safety Data Sheet (SDS) management, noting that SDS management procedures are kept in the binder system on every service vehicle and are updated whenever a new chemical product is introduced."
+  },
+  {
+    "requirement_id": "2867a9bf-3b0e-46f1-aaa8-677c92283542",
+    "requirement_text": "Provide documentation demonstrating compliance with hospital Infection Control requirements.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "We maintain on file current Hospital Infection Control compliance\ndocumentation for all field personnel. Our technicians have completed\ngeneral infection-control awareness training as part of onboarding;\nformal Healthcare Environmental Sanitation training documentation for\ntwo of our four field technicians is still being finalized with our\ntraining vendor.",
+        "start_char": 3971,
+        "end_char": 4329,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "All of our past water tower work has been at municipal and industrial\nsites; we have not previously performed inspection work at an active\nhospital campus.",
+        "start_char": 3106,
+        "end_char": 3261,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement asks for documentation demonstrating compliance with hospital Infection Control requirements. While the bidder states they maintain hospital infection control compliance documentation on file and that technicians completed general awareness training, they explicitly note that formal Healthcare Environmental Sanitation training documentation for half of their field technicians is still being finalized. Furthermore, they admit they have not previously performed work at an active hospital campus, meaning full documentation demonstrating active compliance is incomplete."
+  },
+  {
+    "requirement_id": "f424f626-4478-4dea-990c-51ce408f06b4",
+    "requirement_text": "Provide a defined hazard communication methodology.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Our hazard communication methodology follows a written HazCom program\nwith SDS binders maintained on every service vehicle and reviewed with\ncrews before each mobilization; SDS management procedures are\nmaintained in the same binder system, updated whenever a new chemical\nproduct is introduced to a job site.",
+        "start_char": 4331,
+        "end_char": 4640,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly details their hazard communication methodology, which includes a written HazCom program, SDS binders on every service vehicle, regular reviews before mobilization, and updated SDS management procedures."
+  },
+  {
+    "requirement_id": "f4d6066a-9bf4-4496-abfb-ca2400993a3f",
+    "requirement_text": "Provide evidence of safety controls for tools, ladders, cages, and access systems.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/b/application.txt",
+        "quote": "Tool, ladder, and access safety controls include daily pre-use\ninspection of harnesses and lanyards, caged ladder access with\nfall-arrest anchor points at the tank roof hatch, and a two-person rule\nfor all confined-space entries.",
+        "start_char": 5081,
+        "end_char": 5310,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides evidence of safety controls for tools, ladders, cages, and access systems by detailing daily pre-use inspections and caged ladder access with fall-arrest anchor points."
+  }
+]

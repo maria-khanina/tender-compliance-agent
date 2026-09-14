@@ -118,7 +118,7 @@ def _select_chunks_above_threshold(
     return [chunk for chunk, _ in top_matches]
 
 
-def retrieve_evidence_chunks(
+def retrieve_context_chunks(
     requirement_text: str,
     collection_name: str,
     top_k: int = EVIDENCE_RETRIEVAL_TOP_K,
@@ -139,15 +139,15 @@ def retrieve_evidence_chunks(
     )
     combined_chunks = ranked_chunks + neighbor_chunks
     unique_chunks = _deduplicate_chunks(combined_chunks)
-    evidence_chunks = _select_within_budget(
+    context_chunks = _select_within_budget(
         unique_chunks,
         minimum_chunk_count,
         maximum_chunk_count,
         maximum_total_tokens,
     )
     logger.debug(
-        "Retrieved %d evidence chunk(s) for requirement text %r",
-        len(evidence_chunks),
+        "Retrieved %d context chunk(s) for requirement text %r",
+        len(context_chunks),
         requirement_text[:80],
     )
-    return evidence_chunks
+    return context_chunks

@@ -1,0 +1,522 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: buy_american_taa_general_compliance and submission_deadline_and_channel, since both are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
+    "The application deliberately varies its error types across the four verdict labels and, within non_compliant, across different failure shapes: a missing field (part number), a timing violation (distributor letter deferred to after award), a total omission (business size), and an unsubstantiated claim (or-equal without matching characteristics or literature).",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_uei_vendor_info",
+      "description": "Quote packet must include vendor information along with the SAM Unique Entity Identifier (UEI).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Vendor name, address, and SAM UEI are all provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Summit Diagnostic Equipment, LLC\n4420 Corbin Street\nDallas, TX 75247\nSAM UEI: QK7M2XH9RT84",
+          "start_char": 315,
+          "end_char": 405
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "terms_concurrence_statement",
+      "description": "Quote packet must state concurrence or non-concurrence with the solicitation's terms, conditions, and provisions.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states concurrence with the solicitation's terms.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Terms and Conditions: Summit Diagnostic Equipment, LLC concurs with all\nterms, conditions, and provisions of this solicitation.",
+          "start_char": 407,
+          "end_char": 534
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "fob_destination_manufacturer_part_number",
+      "description": "Items shall be FOB destination; quote must specify the offered item's manufacturer and part number.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application names the manufacturer and confirms FOB destination, but never states a manufacturer part number for the SonoRest CV-200.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Item offered: SonoRest CV-200 Cardiac Imaging Table, manufactured by Apex\nMedical Positioning Corp. FOB Destination: Yes.",
+          "start_char": 536,
+          "end_char": 657
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "authorized_distributor_letter",
+      "description": "Quote packet must include an Authorized Distributor Letter/Memo from the manufacturer.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "The requirement is to include the letter with the quote packet; the application explicitly defers it to after contract award, which is too late.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Authorized Distributor status: Summit Diagnostic Equipment, LLC is an\nauthorized reseller of Apex Medical Positioning Corp. products. The formal\nAuthorized Distributor Letter will be provided upon request after contract\naward.",
+          "start_char": 659,
+          "end_char": 885
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "country_of_origin_disclosure",
+      "description": "Quote must include a Country of Origin for the items being offered.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The application states the item is manufactured in Malaysia in one place and, a few lines later, that all components are made in the USA -- a direct contradiction about the same item's country of origin.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Country of Origin: The SonoRest CV-200 is manufactured in Kuala Lumpur,\nMalaysia.",
+          "start_char": 887,
+          "end_char": 968
+        },
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "All components of the SonoRest CV-200 are proudly Made in the USA,\nsupporting full compliance with the Buy American Act.",
+          "start_char": 1138,
+          "end_char": 1258
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "buy_american_certificate_completed",
+      "description": "Quote must include a completed Buy American Certificate (FAR 52.225-2): certify domestic/foreign end-product status per line item, list foreign end products and whether they exceed 55% domestic content, and separately list domestic end products containing a critical component.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application gives only a generic compliance statement; it never fills in the required per-line-item certification (domestic vs. foreign end product, percent domestic content, critical component listing).",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Buy American Certification: Summit Diagnostic Equipment, LLC certifies full\ncompliance with the Buy American Act and Trade Agreements Act for all items\nin this quote.",
+          "start_char": 970,
+          "end_char": 1136
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "gray_market_verification",
+      "description": "Quote must include verification that the offered items are not gray market goods.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states authorized-reseller status and explicitly denies gray market sourcing.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Gray Market Verification: Summit Diagnostic Equipment, LLC is an authorized\nreseller of Apex Medical Positioning Corp. equipment, confirmed via the\nattached authorization documentation, and does not source or distribute\nany gray market goods.",
+          "start_char": 1260,
+          "end_char": 1502
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "business_size_designation",
+      "description": "Quote must indicate whether the offered items are manufactured by a small or large business.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application never states whether the offered items are manufactured by a small or large business.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "fss_contract_listing",
+      "description": "If the offeror holds an FSS contract listing the items, the quote must list the contract number and expiration date.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "The requirement only applies to FSS contract holders; the application explicitly states it does not hold one, which satisfies the conditional requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "FSS Contract Status: Summit Diagnostic Equipment, LLC does not currently\nhold a Federal Supply Schedule (FSS) contract.",
+          "start_char": 1504,
+          "end_char": 1623
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "or_equal_submission_requirements",
+      "description": "If offering an equivalent product, the quote must show how it meets the salient characteristics in Attachment B (by filling columns F-K of Attachment A or stating where in the submission that information appears), clearly identify the item by brand name and make/model number, include descriptive literature, and clearly describe and mark any planned modifications.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application identifies the equal product by brand and model, but never addresses how it meets any of the specific salient characteristics in Attachment B (load capacity, height range, tilt angles, safety standards, etc.), includes no descriptive literature, and describes no modifications -- an unsubstantiated equivalence claim.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Or-Equal Submission: We are offering the SonoRest CV-200 as an equal to\nthe MPI Echo Bed Cardiac Imaging Table (EB924). The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1625,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of FAR 52.212-3 Offeror Representations and Certifications, unless the offeror's SAM.gov record is already current.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "The requirement is satisfied either by including a completed copy or by having a current SAM.gov record; the application explicitly invokes the latter.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "FAR 52.212-3 Representations and Certifications: Summit Diagnostic\nEquipment, LLC's representations and certifications under FAR 52.212-3 are\ncurrent and up to date in SAM.gov.",
+          "start_char": 1846,
+          "end_char": 2022
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "nmr_certification_signed",
+      "description": "Quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification (small business/non-manufacturer status, sourcing, no alteration of goods), including signature, name, title, date, and business name.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application claims an executed NMR certification exists on file internally, but does not include the signed certification in the quote itself, and does not invoke the SAM.gov-current alternative the way it did for FAR 52.212-3 -- unclear whether the actual certification requirement is met.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Non-Manufacturing Rule Certification: Summit Diagnostic Equipment, LLC\nmaintains an executed Non-Manufacturing Rule certification on file with\nour corporate compliance department.",
+          "start_char": 2024,
+          "end_char": 2203
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "buy_american_taa_general_compliance",
+      "description": "Offered product must comply with the Buy American Act, the Trade Agreements Act, and other relevant FAR/agency regulations.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- actual legal compliance with BAA/TAA cannot be confirmed by reading the quote, only by reviewing the certified content and, ultimately, the product itself.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 9:00am PT on 08/27/26.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "salient_char_electric_locking_casters",
+      "description": "Offered echocardiography examination table must have electric locking casters.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_height_adjustment",
+      "description": "Offered echocardiography examination table must have an adjustable height range (e.g., 24\"-34\" on many models) for optimal sonographer access.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_hand_control_storage_loops",
+      "description": "Offered echocardiography examination table must have 4 flexible hand control storage loops.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_patient_surface_footprint",
+      "description": "Offered echocardiography examination table must have a patient surface footprint of 30\"W x 83\"L.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_ada_entry_height",
+      "description": "Offered echocardiography examination table must have an ADA-compliant low-entry height (entry heights from 17\" to 19\", or 19\"-37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_trendelenburg_positioning",
+      "description": "Offered echocardiography examination table must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_open_apical_window",
+      "description": "Offered echocardiography examination table must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_patient_weight_capacity",
+      "description": "Offered echocardiography examination table must have an appropriate patient weight and bariatric-rated load capacity (up to 750 lbs on standard models, up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_rapid_release_drop_sections",
+      "description": "Offered echocardiography examination table must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_adjustable_back_support",
+      "description": "Offered echocardiography examination table must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants).",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_drop_section_size",
+      "description": "Offered echocardiography examination table must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "salient_char_dropdown_cushion",
+      "description": "Offered echocardiography examination table must have a drop-down cushion that releases from either side for barrier-free access.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "The SonoRest CV-200 is a\ncomparable cardiac imaging table suitable for echocardiography procedures.",
+          "start_char": 1745,
+          "end_char": 1844
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "delivery_timeframe_30_days_aro",
+      "description": "Delivery timeframe shall be 30 days ARO (after receipt of order).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly commits to the 30-day ARO delivery timeframe.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "Delivery: Summit Diagnostic Equipment, LLC can meet the 30-day ARO delivery\ntimeframe to VA Greater Los Angeles Healthcare System.",
+          "start_char": 2205,
+          "end_char": 2335
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "software_licensing_oem_terms_conformance",
+      "description": "All software licensing, warranty, and service associated with the medical equipment must be in accordance with the OEM's terms and conditions.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions software licensing, warranty, or service terms at all, so conformance with the OEM's terms and conditions cannot be confirmed.",
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "brand_name_required_unless_equal_indicated",
+      "description": "Unless the offeror clearly indicates in its offer that the product being offered is an 'equal' product, the offeror shall provide the brand name product referenced in the solicitation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application clearly indicates the offer is an 'equal' product (\"We are offering the SonoRest CV-200 as an equal to the MPI Echo Bed Cardiac Imaging Table\"), so the brand-name-product obligation is not triggered; the conditional exception is satisfied.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/applications/a/application.txt",
+          "quote": "We are offering the SonoRest CV-200 as an equal to\nthe MPI Echo Bed Cardiac Imaging Table (EB924).",
+          "start_char": 1646,
+          "end_char": 1744
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    }
+  ]
+}

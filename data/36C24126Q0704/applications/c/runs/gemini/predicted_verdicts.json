@@ -1,0 +1,463 @@
+[
+  {
+    "requirement_id": "16251f07-c1a2-452c-8120-70f955dd70af",
+    "requirement_text": "All Labor hours in Section 3.2 is exclusive of section 3.1 and shall be bid as a separate line item.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not contain any references to Section 3.1 or Section 3.2, nor do they provide details regarding whether labor hours are bid as a separate line item exclusive of section 3.1. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "cf4f247b-82a7-4c9d-ad07-eec9f548ce3c",
+    "requirement_text": "All Material allowances in Section 3.3 are exclusive of section 3.1 and 3.2 and shall be bid as a separate line item.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Price Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $39,800.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $92.00/hr,\n$7,360.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB):\n$17,900.00\nGrand Total: $65,060.00",
+        "start_char": 499,
+        "end_char": 741,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that all Material allowances in Section 3.3 must be exclusive of Sections 3.1 and 3.2 and bid as a separate line item. While the price schedule includes a line item for materials and parts (CLIN 0003), the provided text does not mention Section 3.1, 3.2, or 3.3, nor does it provide enough information to determine whether the material allowances are appropriately exclusive of those sections. Therefore, there is insufficient information to evaluate compliance."
+  },
+  {
+    "requirement_id": "459c3100-9eef-45ff-8eea-583815b307e7",
+    "requirement_text": "As a minimum, offers shall include the solicitation number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Solicitation Number: 36C24126Q0704",
+        "start_char": 150,
+        "end_char": 184,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offers shall include the solicitation number as a minimum. The bidder's application explicitly includes the solicitation number '36C24126Q0704' in the header/subject section, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "d6896d92-d74c-4fff-9474-9672fc517a73",
+    "requirement_text": "As a minimum, offers shall include the name, address, and telephone number of the Offeror.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Bedrock Tank Maintenance, LLC\n1180 Quarry Road\nConcord, NH 03301\n(603) 555-0294",
+        "start_char": 186,
+        "end_char": 265,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The application provides the company name, address, and telephone number as required."
+  },
+  {
+    "requirement_id": "0c2b5d64-7594-4261-b834-3f56edd6194e",
+    "requirement_text": "As a minimum, offers shall include the Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Unique Entity Identifier: BTM4Q7RXM216",
+        "start_char": 266,
+        "end_char": 304,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offers shall include the Offeror's Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator. The bidder's application explicitly includes their Unique Entity Identifier (BTM4Q7RXM216). The EFT indicator is conditional (\"if applicable\"), and silence regarding it does not render the bid non-compliant since the primary identifier was provided."
+  },
+  {
+    "requirement_id": "79159e06-7d64-4888-b753-d2e635b3c2b8",
+    "requirement_text": "As a minimum, offers shall include information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Price Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $39,800.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $92.00/hr,\n$7,360.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB):\n$17,900.00\nGrand Total: $65,060.00",
+        "start_char": 499,
+        "end_char": 741,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Inspection Methodology:\nOur inspection approach uses a remotely operated vehicle (ROV) for\nsubmerged surface inspection, followed by interior drain-down and\nmanual verification of the tank floor, walls, and roof structure,\ndocumented with photographs at each station and a written verification\nchecklist.\n\nDetailed work plans and operational procedures for this project are\nincluded as Attachment B to this quote.",
+        "start_char": 1319,
+        "end_char": 1732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Past Performance:\n1. City of Concord Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $98,000. CPARS rating: Very Good. Point of\nContact: Sandra Hollis, Water Utility Director, (603) 555-4471.\n2. Town of Bow Public Works - Standpipe Cleaning & Inspection (2022).\nContract value: $52,300. CPARS rating: Satisfactory. Point of Contact:\nKevin Marsh, Public Works Superintendent, (603) 555-2287.\n3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2014,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder includes pricing details, technical specifications, inspection methodology, past performance references, and necessary compliance documentation needed to evaluate the offer under standard solicitation evaluation factors."
+  },
+  {
+    "requirement_id": "9eb195a8-f9e6-46d3-9e3b-669d32a7d56e",
+    "requirement_text": "As a minimum, offers shall include responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via the System for Award Management (SAM)).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Representations:\nBedrock Tank Maintenance, LLC represents that it has conducted a\nreasonable inquiry and does not propose to provide or use any covered\narticle prohibited by an applicable FASCSA order. Bedrock Tank\nMaintenance, LLC further certifies, after conducting a reasonable\ninquiry, that it does not conduct any restricted business operations\nin Sudan.",
+        "start_char": 743,
+        "end_char": 1102,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that offers must include responses to provisions requiring Offeror completion of information, representations, and certifications (other than those collected via SAM). The bidder has explicitly included a section containing representations and certifications regarding FASCSA orders and business operations in Sudan, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "10f901ee-7eae-40ee-a1e7-400a698481d6",
+    "requirement_text": "As a minimum, offers shall include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Bedrock Tank Maintenance, LLC agrees with all terms, conditions, and\nprovisions included in the solicitation.\n\nNo amendments to this solicitation had been issued as of the date of\nthis quote.",
+        "start_char": 306,
+        "end_char": 497,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provided a statement in their quote stating that they agree with all terms, conditions, and provisions included in the solicitation, and addressed the status of any solicitation amendments, fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "10a0cd3e-73f6-496b-936f-f661b827f9b3",
+    "requirement_text": "The Offeror agrees to hold the prices in its offer firm for 60 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Bedrock Tank Maintenance, LLC agrees with all terms, conditions, and\nprovisions included in the solicitation.",
+        "start_char": 306,
+        "end_char": 415,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their proposal that they agree with all terms, conditions, and provisions included in the solicitation. This blanket agreement covers the requirement to hold prices firm for the specified 60-day period."
+  },
+  {
+    "requirement_id": "f961b60f-85ec-4879-ae27-b022f1aadeec",
+    "requirement_text": "Offerors are responsible for submitting offers and any modifications or revisions to the Government office designated in the solicitation by the time specified in the solicitation.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "From: proposals@bedrocktankmaintenance.com\nTo: contractingofficer@va.gov\nSubject: Quote for RFQ 36C24126Q0704 - Water Tower Inspection & Maintenance",
+        "start_char": 0,
+        "end_char": 148,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that offerors are responsible for submitting offers to the Government office designated in the solicitation. The email header in chunk [0] shows that the bidder submitted their quote directly to the designated government email address (contractingofficer@va.gov), thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "98acc3b3-1c1e-4ac0-9d32-e30e7d10de09",
+    "requirement_text": "Offerors may withdraw their offers by written notice to the Government received at any time before award.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that offerors may withdraw their offers by written notice to the Government received at any time before award. The provided excerpts contain details about the bidder's quote, pricing, safety standards, past performance, and compliance, but they do not mention any terms, policies, or statements regarding the bidder's right or procedure to withdraw their offer. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "685b9947-180b-4463-86ba-dab84a4d42bd",
+    "requirement_text": "The concern must qualify as a small business concern and be a certified SDVOSB listed in the SBA certification database at the time of submission of offer(s) and at the time of award, and the prospective contractor must represent this eligibility upon submission.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that the concern must qualify as a small business concern, be a certified SDVOSB listed in the SBA certification database at the time of submission and award, and represent this eligibility upon submission. The provided excerpts contain pricing, past performance, technical methodologies, and safety certifications, but they do not mention whether Bedrock Tank Maintenance, LLC is a small business concern or a certified SDVOSB, nor do they include any representation regarding SDVOSB status. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "3a747b44-922d-45ab-afca-c134d4c83e4a",
+    "requirement_text": "The offeror represents that it has conducted a reasonable inquiry and does not propose to provide or use any covered article or prohibited source subject to an FASCSA order, except as waived or disclosed.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Bedrock Tank Maintenance, LLC represents that it has conducted a\nreasonable inquiry and does not propose to provide or use any covered\narticle prohibited by an applicable FASCSA order.",
+        "start_char": 760,
+        "end_char": 944,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly represents in its proposal that it has conducted a reasonable inquiry and does not propose to provide or use any covered article or prohibited source subject to an FASCSA order, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "d81a32e7-6848-452f-8895-76e9a51bc4c2",
+    "requirement_text": "The offeror certifies, after conducting a reasonable inquiry, that the offeror does not conduct any restricted business operations in Sudan.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Bedrock Tank\nMaintenance, LLC further certifies, after conducting a reasonable\ninquiry, that it does not conduct any restricted business operations\nin Sudan.",
+        "start_char": 945,
+        "end_char": 1102,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides a certification in their application stating that, after conducting a reasonable inquiry, they do not conduct any restricted business operations in Sudan, which directly satisfies the requirement."
+  },
+  {
+    "requirement_id": "89a1625f-2c8b-4e81-b50b-49d5be328b8f",
+    "requirement_text": "Provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our work will be performed in accordance with AWWA C652, AWWA D101/M42,\napplicable NHDES administrative rules, OSHA 1910.146, and EPA guidance\non potable water system disinfection byproducts.",
+        "start_char": 1126,
+        "end_char": 1317,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly demonstrates understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements by stating their work will be performed in accordance with AWWA C652, AWWA D101/M42, applicable NHDES administrative rules, OSHA 1910.146, and relevant EPA guidance."
+  },
+  {
+    "requirement_id": "404a1444-2ea8-4dec-a30b-3a5e9a761c44",
+    "requirement_text": "Provide complete, technically sound work plans and operational procedures including detailed inspection and cleaning methodology, equipment, verification steps, and technical specifications for ROV use in submerged surface inspections.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Inspection Methodology:\nOur inspection approach uses a remotely operated vehicle (ROV) for\nsubmerged surface inspection, followed by interior drain-down and\nmanual verification of the tank floor, walls, and roof structure,\ndocumented with photographs at each station and a written verification\nchecklist.\n\nDetailed work plans and operational procedures for this project are\nincluded as Attachment B to this quote.",
+        "start_char": 1319,
+        "end_char": 1732,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides an inspection methodology utilizing an ROV for submerged surface inspections, incorporates verification steps and photographic documentation, and explicitly states that detailed work plans and operational procedures are included as Attachment B, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "4fe5498a-673b-4d93-838c-9b779563096b",
+    "requirement_text": "Provide evidence of demonstrated experience in structural water tower inspections, including capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our inspectors are trained to identify structural defects, coating\nfailures, corrosion, erosion, sanitation deficiencies, and\ncontamination routes. A sample inspection report from a comparable\nmunicipal tank project is included as Attachment C.",
+        "start_char": 1768,
+        "end_char": 2012,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "1. City of Concord Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $98,000. CPARS rating: Very Good. Point of\nContact: Sandra Hollis, Water Utility Director, (603) 555-4471.\n2. Town of Bow Public Works - Standpipe Cleaning & Inspection (2022).\nContract value: $52,300. CPARS rating: Satisfactory. Point of Contact:\nKevin Marsh, Public Works Superintendent, (603) 555-2287.\n3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2032,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly demonstrates experience in structural water tower inspections, explicitly lists capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, and provides a sample inspection report as well as past performance records meeting all criteria."
+  },
+  {
+    "requirement_id": "f64bbc2e-59c4-4605-9e2b-6a032469edc0",
+    "requirement_text": "Provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Past Performance:\n1. City of Concord Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $98,000. CPARS rating: Very Good. Point of\nContact: Sandra Hollis, Water Utility Director, (603) 555-4471.\n2. Town of Bow Public Works - Standpipe Cleaning & Inspection (2022).\nContract value: $52,300. CPARS rating: Satisfactory. Point of Contact:\nKevin Marsh, Public Works Superintendent, (603) 555-2287.\n3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2014,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provided detailed documentation of previous performance on potable water tower inspection, cleaning, and repair contracts, including contract descriptions, values, CPARS ratings, and points of contact."
+  },
+  {
+    "requirement_id": "db9a2b1a-dbec-4015-b4f7-5958f2687cb2",
+    "requirement_text": "Provide evidence of performance in hospital or other high-risk environments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2432,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our field personnel have completed Healthcare Environmental Sanitation\ntraining and hold current Hospital Infection Control compliance\ndocumentation.",
+        "start_char": 3123,
+        "end_char": 3272,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides explicit past performance evidence in a hospital environment, specifically listing an elevated tank inspection project for New Hampshire Hospital in 2021 with relevant contract details and client contact information. Additionally, they note that their personnel have completed specialized healthcare environmental sanitation training and hold hospital infection control compliance documentation, fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "a66995c1-c6fe-4126-a297-4bbd750d89f7",
+    "requirement_text": "Provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "1. City of Concord Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $98,000. CPARS rating: Very Good. Point of\nContact: Sandra Hollis, Water Utility Director, (603) 555-4471.\n2. Town of Bow Public Works - Standpipe Cleaning & Inspection (2022).\nContract value: $52,300. CPARS rating: Satisfactory. Point of Contact:\nKevin Marsh, Public Works Superintendent, (603) 555-2287.\n3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2032,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides past performance records (CPARS ratings and points of contact) covering multiple completed contracts, which demonstrate contract quality, timeliness, and customer satisfaction."
+  },
+  {
+    "requirement_id": "ecacecf7-eae9-4836-9db2-ca52853d5447",
+    "requirement_text": "Provide three references and/or three CPARS entries within the past 3 years.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "1. City of Concord Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $98,000. CPARS rating: Very Good. Point of\nContact: Sandra Hollis, Water Utility Director, (603) 555-4471.\n2. Town of Bow Public Works - Standpipe Cleaning & Inspection (2022).\nContract value: $52,300. CPARS rating: Satisfactory. Point of Contact:\nKevin Marsh, Public Works Superintendent, (603) 555-2287.\n3. New Hampshire Hospital - Elevated Tank Inspection (2021), including\none hospital campus water system. Contract value: $71,400. CPARS\nrating: Very Good. Point of Contact: Elaine Boucher, Facilities\nDirector, (603) 555-6690.",
+        "start_char": 2032,
+        "end_char": 2657,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides three past performance references along with CPARS entries for all three projects, dated within the past 3 years (2023, 2022, and 2021). This fully satisfies the requirement to provide three references and/or three CPARS entries within the past 3 years."
+  },
+  {
+    "requirement_id": "6fd0b452-d30b-4363-9519-5b031ddc21b9",
+    "requirement_text": "Provide required personnel certifications and documentation, including proof of OSHA 10 and OSHA 30, NH Water System Operator License, NHDES current standing confirmation, Confined Space Entry, Fall Protection, Stairways/Ladders, Lockout/Tagout, coating integrity assessment training, and Healthcare Environmental Sanitation training.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our field technicians hold current OSHA 10 and OSHA 30 certifications.\nOur lead technician, Daniel Whitcomb, holds a valid New Hampshire Water\nSystem Operator License; a copy is enclosed with this quote.\n\nWe maintain current standing with NHDES, confirmed by a standing\nletter dated March 2026 on file with our safety office.\n\nOur field personnel have completed Healthcare Environmental Sanitation\ntraining and hold current Hospital Infection Control compliance\ndocumentation.",
+        "start_char": 2796,
+        "end_char": 3272,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "All field technicians hold current Confined Space Entry certification\nand current Lockout/Tagout certification. A written, OSHA-compliant\nConfined Space Entry plan and equipment-specific Lockout/Tagout\nprocedures are included as Attachment D.\n\nA comprehensive fall protection plan covering ladder climbs, roof-hatch\naccess, and harness anchor points is included as Attachment E.",
+        "start_char": 3467,
+        "end_char": 3845,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Coating Integrity Training:\nOur lead inspector holds NACE Level 2 Coating Inspector certification.",
+        "start_char": 2659,
+        "end_char": 2757,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly addresses and provides evidence of meeting all the requested personnel certifications and documentation requirements, including OSHA 10 and OSHA 30, NH Water System Operator License, NHDES current standing confirmation, Confined Space Entry, Fall Protection, Stairways/Ladders, Lockout/Tagout, coating integrity assessment training, and Healthcare Environmental Sanitation training."
+  },
+  {
+    "requirement_id": "38065faf-8bbe-4990-9c0b-c68fe18ad3ed",
+    "requirement_text": "Provide comprehensive safety plans and procedures, including an OSHA-compliant Confined Space Entry plan, equipment-specific Lockout/Tagout procedures, a comprehensive fall protection plan, SDS management procedures, hospital Infection Control compliance documentation, a defined hazard communication methodology, and evidence of safety controls for tools, ladders, cages, and access systems.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "A written, OSHA-compliant\nConfined Space Entry plan and equipment-specific Lockout/Tagout\nprocedures are included as Attachment D.\n\nA comprehensive fall protection plan covering ladder climbs, roof-hatch\naccess, and harness anchor points is included as Attachment E.\n\nTool, ladder, and access safety controls include daily pre-use\ninspection of harnesses and lanyards, caged ladder access with\nfall-arrest anchor points, and a two-person rule for all\nconfined-space entries.",
+        "start_char": 3579,
+        "end_char": 4053,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our hazard communication methodology follows a written HazCom program\nwith SDS binders maintained on every service vehicle; SDS management\nprocedures are documented in the same binder system.",
+        "start_char": 3274,
+        "end_char": 3465,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/36C24126Q0704/applications/c/application.txt",
+        "quote": "Our field personnel have completed Healthcare Environmental Sanitation\ntraining and hold current Hospital Infection Control compliance\ndocumentation.",
+        "start_char": 3123,
+        "end_char": 3272,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly includes an OSHA-compliant Confined Space Entry plan, equipment-specific Lockout/Tagout procedures, a comprehensive fall protection plan, SDS management procedures in a written HazCom program, hospital Infection Control compliance documentation, a defined hazard communication methodology, and safety controls for tools, ladders, cages, and access systems."
+  }
+]

@@ -1,0 +1,803 @@
+[
+  {
+    "requirement_id": "96505bb4-5e85-4824-b1dc-60720e74b473",
+    "text": "file size must not exceed 30MB per email (split into separate emails if larger)",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "file size must not exceed 30MB per email (split into separate emails if larger)",
+        "start_char": 638,
+        "end_char": 717,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2271ec16-5aae-4e25-a0d1-066e096a2f13",
+    "text": "Proposals must be in English",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Proposals must be in English",
+        "start_char": 719,
+        "end_char": 747,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "146cd98a-7a12-4884-8b93-bf1b399cb36f",
+    "text": "Incomplete proposals will not be accepted.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "incomplete proposals will not be accepted",
+        "start_char": 749,
+        "end_char": 790,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2680130f-4498-4e68-a22b-ace9196802c5",
+    "text": "Contractor will utilize its own facilities for the preparation, provide individually packed meals of food and deliver them to the residence.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor will utilize its own facilities for the preparation, \nprovide individually packed meals of food and deliver them to the residence.",
+        "start_char": 1393,
+        "end_char": 1534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cafd1ce8-b35f-46d7-ba1c-055a787a8f8e",
+    "text": "Contractor will be responsible for removing used food containers and any uneaten meals from the residence/MSGR and disposing of them at contractor facilities during meal deliveries.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor \nwill be responsible for removing used food containers and any uneaten meals from the \nresidence and disposing of them at contractor facilities during meal deliveries.",
+        "start_char": 1535,
+        "end_char": 1713,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor will be responsible for removing used food containers and any uneaten \nmeals from the MSGR and disposing of them at contractor facilities during meal \ndeliveries.",
+        "start_char": 3233,
+        "end_char": 3406,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5032c98b-4329-462b-9204-d2e5e80c83e6",
+    "text": "The Contractor shall furnish all managerial, administrative, and direct labor personnel that are necessary to accomplish the work in this contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall furnish all managerial, administrative, and direct labor personnel \nthat are necessary to accomplish the work in this contract.",
+        "start_char": 1798,
+        "end_char": 1946,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "09085a8b-97c1-43f7-80aa-b09b848f6c00",
+    "text": "Contractor employees shall be on site only for contractual duties and not for other business purposes.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor employees shall be \non site only for contractual duties and not for other business purposes.",
+        "start_char": 1947,
+        "end_char": 2050,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d0680587-e4e6-4142-97d8-806f0831802f",
+    "text": "The Contractor shall prepare general instructions for the work force and provide drafts to the COR for review within thirty days after contract award.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall prepare general instructions for the work force.",
+        "start_char": 2084,
+        "end_char": 2153,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor \nshall provide drafts to the Contracting Officer's Representative (COR) for review within \nthirty days after contract award.",
+        "start_char": 2155,
+        "end_char": 2294,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1bdca98a-2092-4273-b05b-95ab60e7699e",
+    "text": "Contractor shall schedule cooking and delivery requirements to ensure that these are done in the order and time frame specified, taking into consideration staff hours and security personnel.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor shall schedule cooking and delivery requirements to ensure that these \nare done in the order and time frame specified.",
+        "start_char": 2439,
+        "end_char": 2568,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall maintain schedules.",
+        "start_char": 3713,
+        "end_char": 3753,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9472f3e9-673c-4cfa-b657-c9b1cf3e5999",
+    "text": "Contractor will be responsible for providing individually packed lunch and dinner meals daily for seven people (98 meals per week).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor will be responsible for providing individually packed lunch and dinner \nmeals for seven people per day (98 meals per week).",
+        "start_char": 2641,
+        "end_char": 2775,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor will utilize its own operation hours for preparation, packaging, and \ndelivery of food to ensure that (1) lunch and (1) dinner meal is available daily for \nseven people.",
+        "start_char": 2924,
+        "end_char": 3104,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dcbc7b98-98fe-423b-bd2d-1176e46427f5",
+    "text": "Contractor may use its own discretion on when to transport meals (with delivery three times a week and encouragement to transport multiple days' meals per trip) to ensure daily availability.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor will use own discretion on when to transport meals to the residence in \nTallinn.",
+        "start_char": 2783,
+        "end_char": 2874,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Request is to deliver three times a week.",
+        "start_char": 2875,
+        "end_char": 2916,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Contractor is encouraged to transport multiple day’s meals every trip to minimize \ndaily transportation of meals.",
+        "start_char": 3112,
+        "end_char": 3225,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "55431190-ca47-4011-959d-4b36588f5cba",
+    "text": "The Contractor shall provide a supervisor who understands written and spoken English to act as the focal point and point of contact with U.S. Government personnel.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "This supervisor shall be the focal point for the Contractor and shall be the point of \ncontact with U.S. Government personnel.",
+        "start_char": 3446,
+        "end_char": 3572,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The supervisor shall have sufficient English \nlanguage skill to be able to communicate with members of the U.S. Government staff.",
+        "start_char": 3574,
+        "end_char": 3703,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "66a8fcc2-8e90-4897-9e78-2508af093748",
+    "text": "The schedules shall take into consideration the hours that the staff can effectively perform their services without placing a burden on the security personnel of the Post.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The schedules shall take into \nconsideration the hours that the staff can effectively perform their services without \nplacing a burden on the security personnel of the Post.",
+        "start_char": 3755,
+        "end_char": 3928,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "391c1df6-d948-40ed-a69e-d0aeb7b99141",
+    "text": "The Contractor shall be responsible for quality control.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall be responsible for quality control.",
+        "start_char": 3938,
+        "end_char": 3994,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "317cdec4-199a-42d8-b3f2-59203b476415",
+    "text": "The Contractor shall perform surprise inspection visits to the work site on a regular basis and coordinate these visits with the COR.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall \nperform inspection visits to the work site on a regular basis.",
+        "start_char": 3996,
+        "end_char": 4080,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Contractor shall \ncoordinate these visits with the COR.",
+        "start_char": 4082,
+        "end_char": 4141,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "These visits shall be surprise inspections to those \nworking on the contract.",
+        "start_char": 4143,
+        "end_char": 4220,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b40344d2-6fb3-4f1b-9743-662f0564e41d",
+    "text": "Provide items as part of proposal response and updated/maintained throughout performance.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Provide as part of proposal \nresponse and \nupdated/maintained throughout \nperformance",
+        "start_char": 4479,
+        "end_char": 4564,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f732039f-6e4a-4a4b-b2ae-9a5e066ca3b2",
+    "text": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation.",
+        "start_char": 4710,
+        "end_char": 4845,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5d267269-88d8-46c3-940d-b05454235f3f",
+    "text": "As a minimum, offers shall include the solicitation number, offeror contact details, UEI, evaluation information, completed representations/certifications, agreement statement, and completed SF-1449 cover page and Section 1.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(1) The solicitation number;",
+        "start_char": 4883,
+        "end_char": 4911,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(2) The name, address, telephone number of the Offeror;",
+        "start_char": 4913,
+        "end_char": 4968,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(3) The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic \nFunds Transfer (EFT) indicator;",
+        "start_char": 4970,
+        "end_char": 5082,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(4) Information necessary to evaluate the factors contained in the provision at \n52.212-2 or as described in the solicitation;",
+        "start_char": 5084,
+        "end_char": 5210,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(5) Responses to provisions that require Offeror completion of information, \nrepresentations, and certifications (other than those collected via the System for \nAward Management (SAM)); and",
+        "start_char": 5212,
+        "end_char": 5401,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "As a minimum, offers shall include--",
+        "start_char": 4846,
+        "end_char": 4882,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "(6) A statement specifying the extent of agreement with all terms, conditions, and \nprovisions included in the solicitation and any solicitation amendments.",
+        "start_char": 5403,
+        "end_char": 5559,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "A completed solicitation, in which the SF-1449 cover page (blocks 12, 17, 19-24, and 30 as \nappropriate), and Section 1 has been filled out.",
+        "start_char": 5796,
+        "end_char": 5936,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a3c32a93-2b5a-42fb-adc3-3f3734d9837f",
+    "text": "Information demonstrating the offeror's/quoter's ability to perform, including the name of a Project Manager who understands written and spoken English.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "2. Information demonstrating the offeror’s/quoter’s ability to perform, including: ",
+        "start_char": 5942,
+        "end_char": 6025,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "a. Name of a Project Manager (or other liaison to the U.S. Embassy/Consulate) who \nunderstands written and spoken English;",
+        "start_char": 6028,
+        "end_char": 6150,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "964cf712-11ff-47d8-9af6-08f101567871",
+    "text": "Evidence that the offeror operates an established business with a permanent address and telephone listing in Estonia, provided via business registry outtake or link.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "2. Information demonstrating the offeror’s/quoter’s ability to perform, including: ",
+        "start_char": 5942,
+        "end_char": 6025,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "b. Evidence that the offeror/quoter operates an established business with a permanent \naddress and telephone listing in Estonia. This shall be in the form of business registry \nouttake or a link to the company’s registry page. ",
+        "start_char": 6154,
+        "end_char": 6381,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e8eb438f-85dc-4dc3-b3b4-6de9c9c691bc",
+    "text": "The offeror shall provide proof of SAM registration to include the SAM UEI number.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "2. Information demonstrating the offeror’s/quoter’s ability to perform, including: ",
+        "start_char": 5942,
+        "end_char": 6025,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "c. The offeror shall provide proof of SAM registration to include the SAM UEI number ",
+        "start_char": 6384,
+        "end_char": 6469,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2da1c6ac-4888-4ab3-965c-62fa22cb0314",
+    "text": "List of clients over the past 2 years demonstrating prior experience with relevant past performance information and references.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "List of clients over the past ____2___ years, demonstrating prior experience with relevant past \nperformance information and references (provide dates of contracts, places of performance, \nvalue of contracts, contact names, telephone number and email addresses).",
+        "start_char": 6475,
+        "end_char": 6737,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d7ac0328-85e1-42a8-ba58-07f67991a46b",
+    "text": "If the offeror has not performed comparable services in Estonia, then the offeror shall provide its international experience.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "If the offeror has not performed comparable services in Estonia, then the offeror shall provide its \ninternational experience.",
+        "start_char": 6742,
+        "end_char": 6868,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4021f4f7-d262-4051-a2ae-30ab62074af3",
+    "text": "Evidence that the offeror can provide necessary personnel, financial resources, equipment, and facilities needed to perform the work.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Evidence that the offeror/quoter can provide the necessary personnel, equipment, and \nfinancial resources needed to perform the work; This may be in the form of an annual fiscal \nreport, and it is sufficient to provide the link to the annual report.",
+        "start_char": 7851,
+        "end_char": 8100,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Adequate financial resources or the ability to obtain them;",
+        "start_char": 9314,
+        "end_char": 9373,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Necessary equipment and facilities or the ability to obtain them;",
+        "start_char": 9664,
+        "end_char": 9729,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9f24c602-9a22-4931-af88-ed0d07f81a31",
+    "text": "The offeror shall address its plan to obtain all licenses and permits required by local law, or provide a copy if already possessed.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "If providing this service requires special license or permit, then the offeror shall address its \nplan to obtain all licenses and permits required by local law.",
+        "start_char": 8107,
+        "end_char": 8267,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "If offeror already possesses the \nlocally required licenses and permits, a copy shall be provided.",
+        "start_char": 8268,
+        "end_char": 8366,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "11dcd5b3-218b-4ed0-b3eb-4c7fdcd52db7",
+    "text": "The Offeror is required to provide a sample 20-day menu plan together with their offer.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "The Offeror is required to provide a sample 20-day menu plan together with their offer.",
+        "start_char": 8393,
+        "end_char": 8480,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "52e640d6-359b-42dc-afa7-fe7371ff8756",
+    "text": "Ability to comply with the required performance period, taking into consideration existing business commitments.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Ability to comply with the required performance period, taking into consideration \nall existing commercial and governmental business commitments;",
+        "start_char": 9377,
+        "end_char": 9522,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d04dd84f-fa5b-4f5d-a237-c5f6afb33978",
+    "text": "Satisfactory record of integrity and business ethics.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Satisfactory record of integrity and business ethics;",
+        "start_char": 9526,
+        "end_char": 9579,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "55619b15-8526-4fce-8618-93699ddc5aca",
+    "text": "Necessary organization, experience, and skills or the ability to obtain them.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Necessary organization, experience, and skills or the ability to obtain them;",
+        "start_char": 9583,
+        "end_char": 9660,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "39061e79-280d-43ed-827a-5460e83345a7",
+    "text": "Be otherwise qualified and eligible to receive an award under applicable laws and regulations.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "Be otherwise qualified and eligible to receive an award under applicable laws and \nregulations.",
+        "start_char": 9737,
+        "end_char": 9832,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f35f4c7f-4fae-4da0-95ef-94d96146f9b0",
+    "text": "All food is to be delivered to the MSGR at Toom-Kuninga 20A, Tallinn.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "All food is to be delivered to the MSGR at Toom-Kuninga 20A, Tallinn.",
+        "start_char": 4259,
+        "end_char": 4328,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

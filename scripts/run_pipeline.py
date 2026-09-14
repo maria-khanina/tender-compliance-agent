@@ -61,25 +61,25 @@ def main() -> None:
         verdicts_path = output_path.with_name(
             output_path.stem + "_verdicts.json"
         )
-        retrieved_evidence_path = output_path.with_name(
-            output_path.stem + "_retrieved_evidence.json"
+        retrieved_context_path = output_path.with_name(
+            output_path.stem + "_retrieved_context.json"
         )
-        return requirements_path, verdicts_path, retrieved_evidence_path
+        return requirements_path, verdicts_path, retrieved_context_path
 
     def write_outputs(
         output_path: pathlib.Path,
         result: PipelineResult,
         paths: tuple[pathlib.Path, pathlib.Path, pathlib.Path],
     ) -> None:
-        requirements_path, verdicts_path, retrieved_evidence_path = paths
+        requirements_path, verdicts_path, retrieved_context_path = paths
         output_path.write_text(result.report, encoding="utf-8")
         _write_json_list(requirements_path, result.requirements)
         _write_json_list(verdicts_path, result.verdicts)
-        _write_json_list(retrieved_evidence_path, result.retrieved_evidence)
+        _write_json_list(retrieved_context_path, result.retrieved_context)
         print(f"Report written to {output_path}")
         print(f"Requirements written to {requirements_path}")
         print(f"Verdicts written to {verdicts_path}")
-        print(f"Retrieved evidence written to {retrieved_evidence_path}")
+        print(f"Retrieved context written to {retrieved_context_path}")
 
     arguments = _parse_arguments()
     result = run_or_exit(arguments.requirements, arguments.application)

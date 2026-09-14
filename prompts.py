@@ -117,7 +117,7 @@ Requirement:
 {requirement_text}
 
 Relevant excerpts from the bidder's application:
-{evidence_text}
+{context_text}
 
 Decide one of the following verdicts:
 - compliant: the application clearly satisfies the requirement.
@@ -167,5 +167,5 @@ every numeric value that corresponds to the field "{field_name}"
 field, extract all of them, even if they conflict with each other.
 
 Excerpts:
-{evidence_text}
+{context_text}
 """

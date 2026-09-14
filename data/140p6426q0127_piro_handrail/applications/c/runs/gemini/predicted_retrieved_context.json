@@ -1,0 +1,495 @@
+[
+  {
+    "requirement_id": "98c5b2c9-9ecd-4203-8472-7679dc686c11",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "f487145e-54ed-49ea-9966-3bdcd4333307",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "60faa893-cf3b-4f6f-84b9-4f0a7b76ca0e",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "ccb13e23-f628-4df2-b9e3-450df7ac3cf6",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "8d76a27b-9e94-49ba-b484-e11d7d433a7c",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "33dc85b7-e15c-48c6-b931-3f7254a8b0b3",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "9412aa95-11b8-493f-8512-cda0d6f56812",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "6f621da5-61ae-4b9a-b287-abdf7f1a1d34",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "5071ba74-bf49-424c-a2be-ff313497fa81",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "03cd2ce7-141f-45ee-a284-0c091e85a4ce",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "cba387ba-fb1f-4562-a2ad-45b47ad9d1ba",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "5343f4e1-8fac-4edc-ab92-ea0d5a439493",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "fda987f9-e38b-4b6d-a72d-12b1eb38c0d4",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "91029718-a323-47c0-a14e-bd6ea4ab020c",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      }
+    ]
+  },
+  {
+    "requirement_id": "79645554-91e9-46a2-804f-6537a0d06592",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "98fe4153-4e44-4c5d-8fc6-d784a43eb66f",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  },
+  {
+    "requirement_id": "8a9eab5c-7aa6-4398-9630-38c7dd72a455",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 2,
+        "text": "Amendment: We acknowledge receipt of Amendment 0001 to this\nsolicitation, dated 08-05-2026. The signed SF30 acknowledging this\namendment is enclosed and provided with this final quote package.\n\nFinancial Note: Please note that our current fabrication shop backlog\nmeans work on any newly awarded contract, including this one, cannot\nbegin until at least 45 days after award, consistent with our present\nproduction schedule.\n\nContractor Core Data:\nCompany Name: Copper State Handrail Co.\nCage Code / UEI: CSH3Q8RTN417\nPoint of Contact: Brian Holt, Estimator\nPOC Email/Phone: b.holt@copperstatehandrail.com / (906) 555-7734\n\nThis quote presents a single final offer total of $61,400.00, as this\nis the price to be evaluated; no alternate quotes or competing prices\nare submitted.\n\nWe appreciate your consideration of this quote.\n\nSincerely,\nBrian Holt\nEstimator\nCopper State Handrail Co.",
+        "start_char": 2686,
+        "end_char": 3571
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 0,
+        "text": "COPPER STATE HANDRAIL CO.\n2814 Forge Street, Escanaba, MI 49829\n\nQuote submitted for RFQ 140P6426Q0127 - Fabricate and Install Handrail,\nPictured Rocks National Lakeshore\n\nAttn: Colette Riegelmayer, Contract Specialist, National Park Service\n\nDear Ms. Riegelmayer,\n\nCopper State Handrail Co. submits the enclosed quote for the\nabove-referenced handrail project.\n\nCompany Overview:\nCopper State Handrail Co. reported average annual receipts of $6.2\nmillion over our three most recently completed fiscal years, well\nunder the $19 million small business size standard associated with\nNAICS code 238990.\nCage Code / Unique Entity Identifier (UEI): CSH3Q8RTN417\n\nCertifications:\nCopper State Handrail Co. is not a corporation that has any unpaid\nfederal tax liability that has been assessed and for which all\njudicial and administrative remedies have been exhausted or have\nlapsed. Copper State Handrail Co. has not been convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\nCapabilities Statement / Project Narrative:\nCopper State Handrail Co. specializes in steel and aluminum handrail\nfabrication for federal and municipal facilities. Our crew can\nmobilize and begin fabrication within 10 business days of award,\ncompleting installation well within any reasonable schedule the\nGovernment requires.\n\nWe will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.",
+        "start_char": 0,
+        "end_char": 1481
+      },
+      {
+        "document_source": "application",
+        "document_path": "data/140p6426q0127_piro_handrail/applications/c/application.txt",
+        "chunk_index": 1,
+        "text": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work; this is not an \"or equal\"\nsubmission.\n\nShop drawings and product data for the proposed handrail system are\nincluded as Attachment A to this quote package.\n\nPrice Schedule:\nThe enclosed Price Schedule is provided exactly as issued, with only\nthe unit price, amount, and grand total fields completed; no other\nportion of the document has been edited.\nItem Number 10: Fabricate/Install Handrail (includes mob/demob,\nsupplies, labor)\nPrice: $61,400.00\nTotal: $61,400.00\n\nPrior Experience References:\n1. Munising Falls Interpretive Center - Boardwalk Handrail (2023).\nFabricated and installed 210 linear feet of galvanized steel handrail.\nContract value: $54,000. Point of Contact: Lisa Prentiss, Facility\nManager, National Park Service, (906) 555-1187.\n2. City of Escanaba - Ludington Park Overlook Railing (2022).\nFabricated and installed 130 linear feet of aluminum guardrail. Contract\nvalue: $37,200. Point of Contact: Ray Whitcomb, Public Works Director,\nCity of Escanaba, (906) 555-4420.\n3. Delta County Road Commission - Bridge Approach Handrail (2021).\nFabricated and installed 95 linear feet of galvanized handrail. Contract\nvalue: $28,600. Point of Contact: Nancy Aldrich, County Engineer, Delta\nCounty Road Commission, (906) 555-2891.",
+        "start_char": 1337,
+        "end_char": 2684
+      }
+    ]
+  }
+]

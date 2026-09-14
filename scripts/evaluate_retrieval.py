@@ -14,13 +14,23 @@ def _parse_arguments() -> argparse.Namespace:
         description=(
             "Evaluate the retrieval step in isolation: for every "
             "is_text_verifiable topic in true_requirements.json, run "
-            "retrieve_evidence_chunks against the indexed application and "
+            "retrieve_context_chunks against the indexed application and "
             "check whether true_verdicts.json's own evidence quotes for "
             "that topic actually land in the retrieved context -- bypasses "
             "extraction and verdict generation entirely."
         )
     )
     parser.add_argument("--case-dir", required=True)
+    parser.add_argument(
+        "--variant",
+        default="a",
+        help=(
+            "Application variant directory name under applications/ "
+            "(e.g. 'a', 'b', 'c'). Defaults to 'a', the case's canonical "
+            "application."
+        ),
+    )
+    parser.add_argument("--run-label", default="gemini")
     parser.add_argument("--report-output")
     return parser.parse_args()
 
@@ -31,25 +41,32 @@ def main() -> None:
     from evaluation.fixtures import load_true_requirements, load_true_verdicts
     from evaluation.verdict_only import build_synthetic_requirements
     from steps.chunking import split_application_document
-    from steps.evidence_retrieval import retrieve_evidence_chunks
+    from steps.evidence_retrieval import retrieve_context_chunks
+    from case_layout import application_path as case_application_path
+    from case_layout import run_dir, true_verdicts_path
 
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
+    variant = arguments.variant
 
     requirements_fixture = load_true_requirements(
         case_dir / "true_requirements.json"
     )
-    verdicts_fixture = load_true_verdicts(case_dir / "true_verdicts.json")
+    verdicts_fixture = load_true_verdicts(
+        true_verdicts_path(case_dir, variant)
+    )
     gold_evidence_by_topic = {
         v.topic_id: [e.quote for e in v.evidence] for v in verdicts_fixture.verdicts
     }
 
-    application_path = case_dir / "application.txt"
+    application_path = case_application_path(case_dir, variant)
     application_text = application_path.read_text(encoding="utf-8")
     application_chunks = split_application_document(
-        application_text, str(application_path)
+        application_text, application_path.as_posix()
     )
-    collection_name = case_collection_name(f"retrieval_only_{case_dir.name}")
+    collection_name = case_collection_name(
+        f"retrieval_only_{case_dir.name}_{variant}"
+    )
     index_chunks(collection_name, application_chunks)
 
     synthetic_requirements = build_synthetic_requirements(requirements_fixture)
@@ -63,14 +80,18 @@ def main() -> None:
         gold_quotes = gold_evidence_by_topic.get(requirement.requirement_id, [])
         if not gold_quotes:
             continue
-        evidence_chunks = retrieve_evidence_chunks(
+        context_chunks = retrieve_context_chunks(
             requirement.text, collection_name
         )
-        retrieved_texts = [c.text for c in evidence_chunks]
+        retrieved_texts = [c.text for c in context_chunks]
         found = []
         missed = []
         for quote in gold_quotes:
-            hit = any(quote.strip() and quote.strip() in text for text in retrieved_texts)
+            stripped_quote = quote.strip()
+            hit = any(
+                stripped_quote and stripped_quote in text
+                for text in retrieved_texts
+            )
             (found if hit else missed).append(quote)
         total_gold += len(gold_quotes)
         total_found += len(found)
@@ -121,11 +142,17 @@ def main() -> None:
     else:
         print(report_text)
 
-    summary_path = case_dir / "retrieval_only_summary.json"
+    artifacts_dir = run_dir(case_dir, variant, arguments.run_label)
+    artifacts_dir.mkdir(parents=True, exist_ok=True)
+    summary_path = artifacts_dir / "retrieval_only_summary.json"
+    summary = {
+        "recall": recall,
+        "total_gold": total_gold,
+        "total_found": total_found,
+        "rows": rows,
+    }
     summary_path.write_text(
-        json.dumps({"recall": recall, "total_gold": total_gold,
-                     "total_found": total_found, "rows": rows},
-                    indent=2, ensure_ascii=False),
+        json.dumps(summary, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
 
