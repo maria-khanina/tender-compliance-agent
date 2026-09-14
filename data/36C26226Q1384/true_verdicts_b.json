@@ -1,0 +1,440 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Precision Dental Supply Corp., offering the AquaLine 4H-Pro) against the same true_requirements.json as data/36C26226Q1384 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (DentaFlow Systems, LLC, offering the HydroClear Pro 4H).",
+    "Error-shape diversity versus the original: authorized_distributor_letter, gray_market_verification, small_or_large_business_designation, equal_product_identification_and_literature, detachable_waterline_system, seamless_integration_with_dental_units, nmr_certification_signed, and subject_line_references_solicitation_number are inverted to compliant (the original's contradictions/omissions/typo are not repeated); includes_two_8oz_autoclavable_bottles is a new, differently-shaped non_compliant (a 16oz-single-bottle substitution rather than a total omission); fully_autoclavable_sterility is a new contradiction (spec claim vs. attached sterilization-chart excerpt) replacing the original's distributor/gray-market contradictions, which remain the canonical examples for those two topics; fss_contract_listing is a new insufficient_information (vague GSA-program mention with no specific contract number) rather than the original's clean 'does not hold' compliant answer.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_uei_vendor_information",
+      "description": "Quote must include vendor information together with the SAM Unique Entity Identifier (UEI).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Vendor name, address, and SAM UEI are all provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "SAM UEI: PDS9K4RTM217.",
+          "start_char": 401,
+          "end_char": 423
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "concurrence_with_terms",
+      "description": "Quote must state concurrence or non-concurrence with the solicitation's terms, conditions, and provisions.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states concurrence with all terms, conditions, and provisions without exception.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Precision Dental Supply Corp. concurs with all terms, conditions, and\nprovisions of this solicitation without exception.",
+          "start_char": 425,
+          "end_char": 545
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fob_destination_manufacturer_part_number",
+      "description": "Items must be quoted FOB destination, and the quote must specify the offered item's manufacturer and part number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states FOB Destination and gives manufacturer and part number.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Manufacturer: Clarion Dental\nTechnologies. Part Number: CDT-4H-810.",
+          "start_char": 585,
+          "end_char": 652
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "authorized_distributor_letter",
+      "description": "Quote must include an Authorized Distributor Letter/Memo from the manufacturer.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a signed Authorized Distributor Letter is attached as Exhibit A, rather than leaving the status ambiguous.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The signed Authorized\nDistributor Letter is attached to this quote as Exhibit A.",
+          "start_char": 768,
+          "end_char": 848
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "gray_market_verification",
+      "description": "Quote must verify the offered items are not Gray Market goods (i.e. not sourced through unauthorized channels).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states all units are sourced through the manufacturer's authorized distribution channel and none through secondary or gray-market channels.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "All units for this order are sourced directly\nthrough Clarion Dental Technologies' authorized North American\ndistribution channel; no units are obtained through secondary or\ngrey-market distribution channels of any kind.",
+          "start_char": 877,
+          "end_char": 1097
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "buy_american_certificate",
+      "description": "Product must comply with the Buy American Act and Trade Agreements Act, and the quote must certify -- per the Buy American Certificate (FAR 52.225-2) -- whether each end product is a domestic or foreign end product, and whether foreign end products exceed 55% domestic content.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application certifies the offered item as a domestic end product with no foreign end products included.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Precision Dental Supply Corp.\ncertifies that the offered AquaLine 4H-Pro is a domestic end product; no\nforeign end products are included under this line item.",
+          "start_char": 1191,
+          "end_char": 1349
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "country_of_origin_specified",
+      "description": "Quote must include a Country of Origin for the items being offered.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a specific country and city of origin.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "United States (Rochester, NY).",
+          "start_char": 1118,
+          "end_char": 1148
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "small_or_large_business_designation",
+      "description": "Quote must indicate whether the offered items are manufactured by a small or large business.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states it is a small business under the applicable NAICS code.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Precision Dental Supply Corp. is a small business as defined under the\napplicable NAICS code.",
+          "start_char": 1351,
+          "end_char": 1444
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fss_contract_listing",
+      "description": "If the vendor holds an FSS contract listing the offered items, the quote must list the FSS contract number and expiration date.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application vaguely states participation in 'various GSA schedule programs' without naming a specific FSS contract number or confirming the offered item is listed on it.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Precision Dental Supply Corp. participates in\nvarious GSA schedule programs for dental supplies.",
+          "start_char": 1467,
+          "end_char": 1563
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "attachment_a_columns_completed",
+      "description": "Quote must fill out columns F-K of Attachment A (equivalent brand, nomenclature, part number, description matching the salient characteristics, country of origin, and quantity).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application fills out all Attachment A columns F-K (equivalent brand, nomenclature, part number, description, country of origin, quantity).",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Equivalent Brand: AquaLine",
+          "start_char": 1592,
+          "end_char": 1618
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "equal_product_identification_and_literature",
+      "description": "If offering an equal product, the quote must clearly identify it by brand name and make/model number, include descriptive literature (illustrations, drawings, or a clear reference to previously furnished data), and clearly describe any modifications needed to conform to the solicitation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application identifies the offered product by brand/make/model and states descriptive literature (technical data sheet and sterilization compatibility chart) is attached as Exhibit B.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Descriptive literature for the AquaLine 4H-Pro is attached to this quote\nas Exhibit B, including the manufacturer's technical data sheet and\nsterilization compatibility chart.",
+          "start_char": 2062,
+          "end_char": 2237
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "air_driven_high_speed_sterile_pathway",
+      "description": "Must be air driven high speed (4-hole) with sterile irrigation through a sterile pathway.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Technical description states the system is air-driven, high speed (4-hole), with a sterile irrigation pathway.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The AquaLine 4H-Pro is an air-driven, high speed\n(4-hole) system fitting Midwest 4-hole handpieces, using autoclavable\ntubing for a sterile delivery pathway.",
+          "start_char": 2262,
+          "end_char": 2419
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "detachable_waterline_system",
+      "description": "Must have a detachable waterline system.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Technical description states the waterline system detaches fully from the handpiece body for independent sterilization.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The waterline system detaches fully from the handpiece body for\nindependent sterilization.",
+          "start_char": 2591,
+          "end_char": 2681
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fits_midwest_4_hole_handpieces",
+      "description": "Must fit Midwest 4 hole handpieces.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Technical description states the system fits Midwest 4-hole handpieces.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "fitting Midwest 4-hole handpieces",
+          "start_char": 2327,
+          "end_char": 2360
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "includes_two_8oz_autoclavable_bottles",
+      "description": "Must include (2) 8 ounce autoclavable bottles.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states the kit includes one 16 ounce bottle in place of the required two 8 ounce autoclavable bottles.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The kit includes one 16 ounce\nautoclavable bottle rather than the standard two-bottle configuration,\nproviding equivalent total irrigation capacity in a single reservoir.",
+          "start_char": 2420,
+          "end_char": 2590
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "autoclavable_tubing_sterile_pathway",
+      "description": "Must use autoclavable tubing for sterile delivery pathway, eliminating possible waterline contamination.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Technical description states autoclavable tubing is used for the sterile delivery pathway.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "using autoclavable\ntubing for a sterile delivery pathway.",
+          "start_char": 2362,
+          "end_char": 2419
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fully_autoclavable_sterility",
+      "description": "Must be fully autoclavable ensuring sterility between uses.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The technical description states the full unit is fully autoclavable to ensure sterility between uses, but the attached Sterilization Compatibility Chart excerpt states the handpiece connector housing is not autoclavable and should only be wiped with disinfectant -- the two statements conflict.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The full unit is described as fully\nautoclavable to ensure sterility between uses",
+          "start_char": 2682,
+          "end_char": 2763
+        },
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "the\nhandpiece connector housing is not autoclavable and should be cleaned\nwith hospital-grade disinfectant wipes only",
+          "start_char": 3209,
+          "end_char": 3326
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "seamless_integration_with_dental_units",
+      "description": "Must be seamlessly integrated with most dental units providing sterile water pathway.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the product integrates seamlessly with Midwest, DentalEZ, and A-dec delivery systems without adapters, covering most dental units in use.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "The AquaLine\n4H-Pro integrates seamlessly with Midwest, DentalEZ, and A-dec delivery\nsystems without adapters, covering the majority of dental units in use\ntoday.",
+          "start_char": 2985,
+          "end_char": 3147
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "easy_irrigation_control",
+      "description": "Must have easy irrigation control with instant on/off functionality and no footprint.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states irrigation is controlled with a simple instant on/off mechanism and no added footprint.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Irrigation is controlled with\na simple instant on/off mechanism and no added footprint.",
+          "start_char": 2897,
+          "end_char": 2984
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "high_speed_cutting_power",
+      "description": "Must be designed to provide high-speed cutting power rivaling electric handpieces while maintaining precision and responsiveness.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the system is designed to provide high-speed cutting power rivaling electric handpieces while maintaining precision and responsiveness.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "it is designed to\nprovide high-speed cutting power rivaling electric handpieces while\nmaintaining precision and responsiveness.",
+          "start_char": 2769,
+          "end_char": 2896
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "nmr_certification_signed",
+      "description": "Quote must include the Non-Manufacturing Rule (NMR) certification, signed, dated, and identifying the business.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a signed NMR certification with signature, name, title, and date.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Signature: /s/ Karen Lindqvist\nName: Karen Lindqvist\nTitle: Vice President of Contracts\nDate: 08-12-2026",
+          "start_char": 3731,
+          "end_char": 3835
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of the FAR 52.212-3 representations and certifications, or the offeror must ensure SAM.gov is updated with current information.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states representations and certifications under FAR 52.212-3 are current in SAM.gov.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Precision Dental Supply Corp.'s representations and certifications\nunder FAR 52.212-3 are current and up to date in SAM.gov as of the date\nof this quote.",
+          "start_char": 3837,
+          "end_char": 3990
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subject_line_references_solicitation_number",
+      "description": "The email subject line must reference the solicitation number 36C26226Q1384.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "The email subject line correctly references solicitation number 36C26226Q1384.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1384_appB/application.txt",
+          "quote": "Subject: Quote for RFQ 36C26226Q1384 - AquaSept Handpieces or Equal",
+          "start_char": 67,
+          "end_char": 134
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 10:00am PT on Friday, August 28th, 2026.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission (channel and timing), not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

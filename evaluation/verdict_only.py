@@ -50,6 +50,16 @@ class VerdictOnlyOutcome(BaseModel):
     predicted_verdict: str
     acceptable_verdicts: list[str] | None
     is_correct: bool
+    # primary_verdict is the single distilled/fallback training-target
+    # label (see evaluation/fixtures.py TrueVerdict.primary_verdict) --
+    # matching it is a strictly harder bar than acceptable_verdicts
+    # membership (acceptable_verdicts is often a 2-element set; primary
+    # is exactly one of those). Reported alongside, not instead of, the
+    # acceptable_verdicts-based figure -- they answer different questions
+    # ("is this a defensible verdict" vs "does this match the specific
+    # label SFT trains toward") and should never be quoted interchangeably.
+    primary_verdict: str | None = None
+    is_correct_vs_primary: bool | None = None
     evidence_quotes: list[str]
     reasoning: str
     true_rationale: str
@@ -60,6 +70,8 @@ class VerdictOnlyOutcome(BaseModel):
 class VerdictOnlyResult(BaseModel):
     accuracy: float
     scored_topic_count: int
+    accuracy_vs_primary: float | None = None
+    scored_topic_count_vs_primary: int = 0
     outcomes: list[VerdictOnlyOutcome]
     mismatches: list[VerdictOnlyOutcome]
 
@@ -71,6 +83,15 @@ def _acceptable_verdicts_by_topic(
     for verdict in fixture.verdicts:
         acceptable[verdict.topic_id] = verdict.acceptable_verdicts
     return acceptable
+
+
+def _primary_verdict_by_topic(
+    fixture: TrueVerdictsFixture,
+) -> dict[str, str | None]:
+    primary = {}
+    for verdict in fixture.verdicts:
+        primary[verdict.topic_id] = verdict.primary_verdict
+    return primary
 
 
 def _true_rationale_by_topic(fixture: TrueVerdictsFixture) -> dict[str, str]:
@@ -114,6 +135,7 @@ def score_verdicts(
     retrieved_evidence: list[RetrievedEvidenceRecord] | None = None,
 ) -> VerdictOnlyResult:
     acceptable_by_topic = _acceptable_verdicts_by_topic(verdicts_fixture)
+    primary_by_topic = _primary_verdict_by_topic(verdicts_fixture)
     rationale_by_topic = _true_rationale_by_topic(verdicts_fixture)
     true_evidence_by_topic = _true_evidence_by_topic(verdicts_fixture)
     retrieved_context_by_requirement = _retrieved_context_by_requirement(
@@ -125,12 +147,18 @@ def score_verdicts(
         acceptable = acceptable_by_topic.get(topic_id)
         if acceptable is None:
             continue
+        primary = primary_by_topic.get(topic_id)
         outcomes.append(VerdictOnlyOutcome(
             topic_id=topic_id,
             requirement_text=verdict.requirement_text,
             predicted_verdict=verdict.verdict.value,
             acceptable_verdicts=acceptable,
             is_correct=verdict.verdict.value in acceptable,
+            primary_verdict=primary,
+            is_correct_vs_primary=(
+                verdict.verdict.value == primary
+                if primary is not None else None
+            ),
             evidence_quotes=_evidence_quotes(verdict),
             reasoning=verdict.reasoning,
             true_rationale=rationale_by_topic.get(topic_id, ""),
@@ -143,9 +171,17 @@ def score_verdicts(
     total = len(outcomes)
     correct = total - len(mismatches)
     accuracy = correct / total if total > 0 else 0.0
+    primary_scored = [o for o in outcomes if o.is_correct_vs_primary is not None]
+    accuracy_vs_primary = (
+        sum(1 for o in primary_scored if o.is_correct_vs_primary)
+        / len(primary_scored)
+        if primary_scored else None
+    )
     return VerdictOnlyResult(
         accuracy=accuracy,
         scored_topic_count=total,
+        accuracy_vs_primary=accuracy_vs_primary,
+        scored_topic_count_vs_primary=len(primary_scored),
         outcomes=outcomes,
         mismatches=mismatches,
     )
@@ -211,9 +247,19 @@ def render_verdict_only_report(result: VerdictOnlyResult) -> str:
     lines.append("")
     correct = result.scored_topic_count - len(result.mismatches)
     lines.append(
-        f"**Accuracy: {result.accuracy * 100:.1f}% "
-        f"({correct}/{result.scored_topic_count})**"
+        f"**Accuracy vs acceptable_verdicts (any listed verdict counts): "
+        f"{result.accuracy * 100:.1f}% ({correct}/{result.scored_topic_count})**"
     )
+    if result.accuracy_vs_primary is not None:
+        primary_correct = round(
+            result.accuracy_vs_primary * result.scored_topic_count_vs_primary
+        )
+        lines.append(
+            f"**Accuracy vs primary_verdict (single distilled/fallback "
+            f"label, the SFT training target -- a strictly harder bar): "
+            f"{result.accuracy_vs_primary * 100:.1f}% "
+            f"({primary_correct}/{result.scored_topic_count_vs_primary})**"
+        )
     lines.append("")
     if not result.mismatches:
         lines.append("- none")

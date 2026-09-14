@@ -4,7 +4,8 @@
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sdvosb_setaside_eligibility, security_sanctions_representations, and submission_deadline, since all three are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (6 topics), non_compliant across different failure shapes -- a quantity shortfall (2 CPARS entries instead of 3), total omissions (ROV specs, structural-defect evidence, specialized personnel training, tool/ladder safety evidence), and a timing violation (fall protection plan deferred to after submission) -- insufficient_information (a technical submission missing one of three required elements; a safety-procedures section covering only one of three required elements), and one contradictory claim (a technician's OSHA-30 certification stated as both currently held and still in progress).",
     "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
-    "sds_management_procedures broadened to also accept insufficient_information: the applications one-sentence assertion (\"follow standard SDS management procedures\") can reasonably be read either as describing the procedure or as merely asserting compliance without describing what the procedure actually involves."
+    "sds_management_procedures broadened to also accept insufficient_information: the applications one-sentence assertion (\"follow standard SDS management procedures\") can reasonably be read either as describing the procedure or as merely asserting compliance without describing what the procedure actually involves.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -21,7 +22,9 @@
           "start_char": 308,
           "end_char": 417
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "amendment_acknowledgment",
@@ -30,7 +33,9 @@
         "compliant"
       ],
       "rationale": "The solicitation's own amendment table is blank (no amendments have been issued), so there is nothing for the offeror to acknowledge; the conditional requirement is not triggered.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "price_schedule_completion",
@@ -46,21 +51,27 @@
           "start_char": 593,
           "end_char": 819
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sdvosb_setaside_eligibility",
       "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual SDVOSB certification/database status cannot be confirmed by reading the quote, only by checking the SBA certification database directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "submission_deadline",
       "description": "Offers are due September 18, 2026, at 3:00 PM EST.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "rov_technical_specifications",
@@ -69,7 +80,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions ROV (remotely operated vehicle) technology, technical specifications, or procedures for submerged surface inspections at all.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "structural_defect_capability_evidence",
@@ -78,7 +91,9 @@
         "non_compliant"
       ],
       "rationale": "Application never provides evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, or contamination routes.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "references_cpars_requirement",
@@ -94,7 +109,9 @@
           "start_char": 1532,
           "end_char": 1585
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "tool_ladder_access_safety_evidence",
@@ -103,7 +120,9 @@
         "non_compliant"
       ],
       "rationale": "Application never provides evidence of safety controls for tools, ladders, cages, or access systems.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "offer_solicitation_number_stated",
@@ -119,7 +138,9 @@
           "start_char": 149,
           "end_char": 183
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "offer_offeror_contact_info_stated",
@@ -135,7 +156,9 @@
           "start_char": 185,
           "end_char": 267
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "offer_uei_eft_indicator_stated",
@@ -151,7 +174,9 @@
           "start_char": 268,
           "end_char": 306
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fascsa_representation",
@@ -161,7 +186,9 @@
         "non_compliant"
       ],
       "rationale": "Application never makes this representation; only a generic 'agrees with all terms and conditions' statement is present, which does not itself constitute the specific FASCSA representation the clause requires.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "sudan_certification",
@@ -171,7 +198,9 @@
         "non_compliant"
       ],
       "rationale": "Application never makes this certification.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "technical_standards_compliance_documentation",
@@ -188,7 +217,9 @@
           "start_char": 841,
           "end_char": 1026
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "inspection_cleaning_methodology",
@@ -205,7 +236,9 @@
           "start_char": 1027,
           "end_char": 1233
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "work_plans_operational_procedures",
@@ -215,7 +248,9 @@
         "non_compliant"
       ],
       "rationale": "Application never provides a distinct work plan or operational procedures document beyond the general technical-approach narrative.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "osha_10_30_certifications",
@@ -237,7 +272,9 @@
           "start_char": 2248,
           "end_char": 2364
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "nh_water_operator_license_copy",
@@ -254,7 +291,9 @@
           "start_char": 1692,
           "end_char": 1743
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "nhdes_standing_documentation",
@@ -264,7 +303,9 @@
         "non_compliant"
       ],
       "rationale": "Application never addresses NHDES standing documentation for personnel; NHDES is mentioned only as a regulatory framework the company will follow.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "past_performance_water_tower_contracts",
@@ -280,7 +321,9 @@
           "start_char": 1327,
           "end_char": 1486
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "past_performance_hospital_high_risk_environment",
@@ -296,7 +339,9 @@
           "start_char": 1488,
           "end_char": 1530
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "past_performance_quality_records",
@@ -313,7 +358,9 @@
           "start_char": 1532,
           "end_char": 1585
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "coating_integrity_training_evidence",
@@ -323,7 +370,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions coating integrity assessment training.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "healthcare_environmental_sanitation_training",
@@ -333,7 +382,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions Healthcare Environmental Sanitation training.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "structural_water_tower_inspection_experience",
@@ -343,7 +394,9 @@
         "non_compliant"
       ],
       "rationale": "Application claims general water tower inspection experience but never specifically addresses structural inspection experience.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sds_management_procedures",
@@ -360,7 +413,9 @@
           "start_char": 2137,
           "end_char": 2230
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "hospital_infection_control_compliance_documentation",
@@ -370,7 +425,9 @@
         "non_compliant"
       ],
       "rationale": "Application never addresses hospital Infection Control requirements beyond having performed one hospital-campus contract.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "hazard_communication_methodology",
@@ -380,7 +437,9 @@
         "non_compliant"
       ],
       "rationale": "Application mentions following SDS management procedures but never describes a defined hazard communication methodology (e.g. labeling, training program) beyond that.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "confined_space_entry_certification",
@@ -396,7 +455,9 @@
           "start_char": 1745,
           "end_char": 1803
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
@@ -413,7 +474,9 @@
           "start_char": 1808,
           "end_char": 1866
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "confined_space_entry_plan",
@@ -430,7 +493,9 @@
           "start_char": 1906,
           "end_char": 1959
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "lockout_tagout_procedures",
@@ -447,7 +512,9 @@
           "start_char": 1964,
           "end_char": 2012
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fall_protection_plan",
@@ -464,7 +531,9 @@
           "start_char": 2013,
           "end_char": 2136
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     }
   ]
 }

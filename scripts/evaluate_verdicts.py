@@ -19,6 +19,16 @@ def _parse_arguments() -> argparse.Namespace:
         )
     )
     parser.add_argument("--case-dir", required=True)
+    parser.add_argument(
+        "--variant",
+        default="",
+        help=(
+            "Application variant suffix (e.g. 'b' for application_b.txt / "
+            "true_verdicts_b.json). true_requirements.json is always shared "
+            "and never suffixed. Omit for the case's default application.txt "
+            "/ true_verdicts.json."
+        ),
+    )
     parser.add_argument("--report-output")
     return parser.parse_args()
 
@@ -39,15 +49,18 @@ def main() -> None:
 
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
+    suffix = f"_{arguments.variant}" if arguments.variant else ""
 
     requirements_fixture = load_true_requirements(
         case_dir / "true_requirements.json"
     )
-    verdicts_fixture = load_true_verdicts(case_dir / "true_verdicts.json")
+    verdicts_fixture = load_true_verdicts(
+        case_dir / f"true_verdicts{suffix}.json"
+    )
 
-    collection_name = case_collection_name(case_dir.name)
+    collection_name = case_collection_name(f"{case_dir.name}{suffix}")
 
-    application_path = case_dir / "application.txt"
+    application_path = case_dir / f"application{suffix}.txt"
     application_text = application_path.read_text(encoding="utf-8")
     application_chunks = split_application_document(
         application_text, str(application_path)
@@ -73,7 +86,7 @@ def main() -> None:
             generate_verdict(requirement, evidence_chunks)
         )
 
-    verdicts_artifact_path = case_dir / "verdict_only_verdicts.json"
+    verdicts_artifact_path = case_dir / f"verdict_only_verdicts{suffix}.json"
     serializable_verdicts = [
         verdict.model_dump(mode="json") for verdict in predicted_verdicts
     ]
@@ -84,7 +97,7 @@ def main() -> None:
     print(f"Verdict-only raw verdicts written to {verdicts_artifact_path}")
 
     retrieved_evidence_artifact_path = (
-        case_dir / "verdict_only_retrieved_evidence.json"
+        case_dir / f"verdict_only_retrieved_evidence{suffix}.json"
     )
     serializable_retrieved_evidence = [
         record.model_dump(mode="json") for record in retrieved_evidence

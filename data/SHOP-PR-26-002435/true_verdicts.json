@@ -4,7 +4,8 @@
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sam_registration_active, pra_national_security_cooperation, kaspersky_telecom_prohibition_compliance, and submission_deadline_and_channel, since all four are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (11 topics), non_compliant across different failure shapes -- a missing field (part number/SKU), a wrong value (quote validity date, RAM capacity, warranty length), and a total omission (hot-swap bays, chassis dimensions) -- insufficient_information (vague/generic statements for pricing-inclusiveness and NVMe drive roles), and one contradictory claim (GPU model stated two different ways in the same quote).",
     "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
-    "unique_entity_identifier_annotation broadened to also accept insufficient_information: the bundled UEI+EFT-indicator requirement is conditional for the EFT half (if applicable), so silence about EFT alone should not force non_compliant per the conditional-silence verdict rule -- the model instead treated the absence as a definite failure, an instructive miss but the fixture stays at insufficient_information, not non_compliant, to keep the conditional-silence principle intact."
+    "unique_entity_identifier_annotation broadened to also accept insufficient_information: the bundled UEI+EFT-indicator requirement is conditional for the EFT half (if applicable), so silence about EFT alone should not force non_compliant per the conditional-silence verdict rule -- the model instead treated the absence as a definite failure, an instructive miss but the fixture stays at insufficient_information, not non_compliant, to keep the conditional-silence principle intact.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -21,7 +22,9 @@
           "start_char": 640,
           "end_char": 1063
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "item_identification_completeness",
@@ -37,7 +40,9 @@
           "start_char": 417,
           "end_char": 471
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "oem_new_no_gray_market_certification",
@@ -53,7 +58,9 @@
           "start_char": 640,
           "end_char": 1063
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "pricing_inclusive_of_all_charges",
@@ -69,7 +76,9 @@
           "start_char": 2167,
           "end_char": 2228
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "exceptions_conditions_disclosure",
@@ -85,7 +94,9 @@
           "start_char": 473,
           "end_char": 554
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "quote_validity_through_sept30",
@@ -101,7 +112,9 @@
           "start_char": 556,
           "end_char": 638
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "unique_entity_identifier_annotation",
@@ -118,7 +131,9 @@
           "start_char": 293,
           "end_char": 364
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "authorized_reseller_distributor_evidence",
@@ -134,35 +149,45 @@
           "start_char": 1065,
           "end_char": 1263
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sam_registration_active",
       "description": "Vendor must be an eligible, active registrant in the System for Award Management (SAM); the FBI may verify SAM registration and other award eligibility information prior to award.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual SAM registration status cannot be confirmed by reading the quote, only by checking SAM.gov directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "pra_national_security_cooperation",
       "description": "The prospective awardee must timely provide all information requested by the FBI to complete the mandatory Procurement Risk Assessment (PRA), including acquisition-risk, ownership/control, key-management, source, product, supply-chain, and subcontractor information, and must not present an unacceptable national-security risk.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- the PRA/national-security cooperation obligation applies post-selection and is not something the initial quote text can establish.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "kaspersky_telecom_prohibition_compliance",
       "description": "Offered products and services must comply with the prohibition on Kaspersky Lab-covered hardware/software/services (FAR 52.204-23).",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual compliance with the Kaspersky/telecom prohibition clauses cannot be confirmed by reading the quote.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "submission_deadline_and_channel",
       "description": "Complete quotations must be submitted to rtiggle@fbi.gov no later than September 17, 2026, at 12:00 PM Eastern Time; late quotations will not be considered.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "cpu_processor_spec",
@@ -178,7 +203,9 @@
           "start_char": 1324,
           "end_char": 1375
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "liquid_cooling_spec",
@@ -194,7 +221,9 @@
           "start_char": 1324,
           "end_char": 1375
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "ram_capacity_spec",
@@ -210,7 +239,9 @@
           "start_char": 1376,
           "end_char": 1410
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "raid5_eight_ssd_storage_spec",
@@ -226,7 +257,9 @@
           "start_char": 1536,
           "end_char": 1597
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "gpu_spec",
@@ -248,7 +281,9 @@
           "start_char": 2039,
           "end_char": 2086
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "raid_card_spec",
@@ -264,7 +299,9 @@
           "start_char": 1665,
           "end_char": 1703
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "power_supply_spec",
@@ -280,7 +317,9 @@
           "start_char": 1781,
           "end_char": 1825
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "operating_system_spec",
@@ -296,7 +335,9 @@
           "start_char": 1826,
           "end_char": 1877
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "warranty_spec",
@@ -312,7 +353,9 @@
           "start_char": 1878,
           "end_char": 1955
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "nvme_ssd_operating_system_spec",
@@ -322,7 +365,9 @@
         "non_compliant"
       ],
       "rationale": "Application describes storage only as 'NVMe solid-state storage as required' plus a separate 8x1TB RAID 5 data array -- neither confirms a dedicated OS drive, and the RAID 5 array architecture is inconsistent with having 4 separately dedicated drives at all.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "nvme_ssd_temporary_files_spec",
@@ -332,7 +377,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions a dedicated temporary-files drive; storage is described generically plus an 8-drive RAID 5 array.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "nvme_ssd_processing_spec",
@@ -342,7 +389,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions a dedicated processing drive; storage is described generically plus an 8-drive RAID 5 array.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "nvme_ssd_database_spec",
@@ -352,7 +401,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions a dedicated database drive; storage is described generically plus an 8-drive RAID 5 array.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "hot_swap_bay_35_three_drives_spec",
@@ -362,7 +413,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions any hot-swap bay.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "hot_swap_bay_25_four_trays_spec",
@@ -372,7 +425,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions any hot-swap bay.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "hot_swap_bay_25_eight_trays_spec",
@@ -382,7 +437,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions any hot-swap bay.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "usb_2_0_ten_port_hub_spec",
@@ -392,7 +449,9 @@
         "non_compliant"
       ],
       "rationale": "Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 10-port USB 2.0 hub specifically.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "usb_3_0_four_port_hub_spec",
@@ -402,7 +461,9 @@
         "non_compliant"
       ],
       "rationale": "Application only says 'two front-panel USB hubs for high-speed peripheral connectivity', without confirming a 4-port USB 3.0 hub with this exact port mix.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_size_spec",
@@ -412,7 +473,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions chassis dimensions.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_open_525_bays_spec",
@@ -422,7 +485,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions open 5.25\" bay count.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_fan_size_spec",
@@ -432,7 +497,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions fan size.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_pci_expansion_slots_spec",
@@ -442,7 +509,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions PCI chassis expansion slot count.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_aluminum_thickness_spec",
@@ -452,7 +521,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions chassis material thickness.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "chassis_finish_spec",
@@ -462,7 +533,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions chassis finish or color.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     }
   ]
 }

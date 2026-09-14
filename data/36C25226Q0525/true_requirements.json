@@ -1,0 +1,193 @@
+{
+  "notes": [
+    "Recall/precision checklist for evaluating extraction quality, not an exact-match target -- a correct extraction phrases each requirement differently from source.quote below.",
+    "source.spans marks source-document offsets a requirement originates from; source.quote is those spans' text, joined with ' ... ' when there is more than one span.",
+    "This case is a one-time-scope-but-multi-period, firm-fixed-price SERVICES acquisition (grease trap cleaning + lift-station pumping at the Tomah VA Medical Center, Base Period + 4 Option Periods), 100% set-aside for SDVOSBs, evaluated on 3 factors (Price, Technical Capability, Relevant Experience) using FAR 52.212-1 as tailored for Simplified Acquisition Procedures -- no tiered award cascade.",
+    "PIPELINE INPUT NOTE: this fixture's source.document_path points at '36C25226Q0525_condensed.txt', a hand-condensed derivative of the real solicitation assembled by concatenating verbatim excerpts (no paraphrasing or added text). The condensed document already collapses the Price Schedule's 5 near-identical CLIN-pair repetitions (Base + 4 Option Periods, differing only by item number and dates) down to one representative instance plus a bracketed note describing the pattern -- this note itself is not a source for any topic here.",
+    "relevant_experience_submission is is_mandatory: false -- the solicitation phrases it as 'Submit information, if any,' making submission conditional on whether the offeror actually has qualifying past contracts, the same pattern as an 'if applicable' clause elsewhere in this corpus.",
+    "sdvosb_certification_status and subcontracting_cap_representation are is_text_verifiable: false -- SDVOSB database status and actual 50%-subcontracting-cap compliance cannot be confirmed by reading the application text alone. quote_due_date is also is_text_verifiable: false -- the due date is a fact about the submission process, not something the application's content addresses.",
+    "sf1449_administrative_info_completion covers only items (1) and (3) of the Addendum's Administrative Information list -- item (2), acknowledgment of amendments, is already its own topic (amendment_acknowledgment) and would be double-counted if repeated here."
+  ],
+  "requirements": [
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "The offeror must acknowledge receipt of Amendment 0001 (and any other issued amendments) by number and date.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "ACKNOWLEDGMENT OF AMENDMENTS:  The offeror acknowledges receipt of amendments to \nthe Solicitation numbered and dated as follows:",
+        "spans": [
+          {
+            "start_char": 633,
+            "end_char": 762
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Per Amendment 0001, quotes are due 08-14-2026 at 1:00 PM CDT (extended from the original date).",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Per Amendment 0001, the hour and date for receipt of offers is EXTENDED to 08-14-2026, 1:00 PM CDT.",
+        "spans": [
+          {
+            "start_char": 416,
+            "end_char": 515
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "price_schedule_completion_all_periods",
+      "description": "Offeror must provide firm-fixed pricing for every line item in the Price Schedule for the Base Period and all four Option Periods; leaving the schedule incomplete or proposing additional/variable fees may make the whole quote unacceptable.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Factor 1 – Price: The Contractor must provide firm-fixed pricing for all line items listed in the Price \nSchedule for the Base Period and all four (4) Option Periods. If the Price Schedule is not completed \nentirely, or the offeror indicates additional/variable pricing fees, the entire quote may be considered \nunacceptable, and the offeror could be ineligible for award.",
+        "spans": [
+          {
+            "start_char": 12529,
+            "end_char": 12901
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "offsite_disposal_cost_inclusion",
+      "description": "Since the VA provides no onsite disposal/receiving facility for grease-trap waste, the contractor must transport the waste offsite and include all transportation and disposal costs in its price.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The Tomah VA does not provide an approved onsite disposal or receiving facility for \ngrease-trap waste. The contractor is responsible for transporting the waste to an \noffsite location. Please refer to the Performance Work Statement (Section B.3) in the \nsolicitation.",
+        "spans": [
+          {
+            "start_char": 3799,
+            "end_char": 4067
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "technical_capability_narrative",
+      "description": "Offeror must describe its technical approach to performing the grease trap cleaning services, identify what work the prime contractor vs. any subcontractors will perform, and demonstrate that the proposed approach is consistent with the applicable subcontracting-limitations requirements.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Factor 2 – Technical Capability: The Offeror shall describe its technical approach to performing the \nrequired grease trap cleaning services. The quotation shall identify the work to be performed by the \nprime contractor and any proposed subcontractors, including their respective roles and \nresponsibilities. The Offeror shall demonstrate that its proposed approach is consistent with the \napplicable limitations on subcontracting requirements for this SDVOSB set-aside.",
+        "spans": [
+          {
+            "start_char": 12904,
+            "end_char": 13375
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "relevant_experience_submission",
+      "description": "If the offeror has relevant past contracts for similar services (particularly at a VA facility), it must submit the contract number, size/scope, total years of experience providing such services, and when the services were provided.",
+      "is_mandatory": false,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Factor 3 – Relevant Experience: Submit information, if any, of contracts providing services similar \nto the requirements of this Contract, particularly if that experience is at a VA facility. Information \nshall include the contract number, size/scope of each contract, the total number of years of experience \nproviding such services, and when those services were provided.",
+        "spans": [
+          {
+            "start_char": 13377,
+            "end_char": 13750
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sf1449_administrative_info_completion",
+      "description": "Offeror must provide SF 1449 (first page) with blocks 17a, 30a, 30b, and 30c completed, and its contractor information on page 2.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "A. Administrative Information: The Contractor shall provide the following information in its quote: \n1. SF 1449 (first page) with completed blocks 17a, 30a, 30b, and 30c. \n2. Acknowledgement of Amendments (if any) on page 2. \n3. Contractor information on page 2.",
+        "spans": [
+          {
+            "start_char": 11396,
+            "end_char": 11658
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontracting_certificate_completion",
+      "description": "Offeror must complete, sign, and return the VAAR 852.219-75 certificate of compliance with the quote; the Government will not consider offers that omit it.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "4. Complete certification for Clause 852.219-75 VA Notice of Limitations on Subcontracting—\nCertificate of Compliance for Services and Construction (for SDVOSB/VOSB set-asides or \nwhen using SDVOSB and VOSB small business evaluation factors under clause 852-215-70), \nif included in Section C. ... (d) Offeror completed certification/fill-in required. The formal certification must be completed, signed \nand returned with the offeror’s bid, quotation, or proposal. The Government will not consider offers for \naward from offerors that do not provide the certification, and all such responses will be deemed ineligible \nfor evaluation and award.",
+        "spans": [
+          {
+            "start_char": 11660,
+            "end_char": 11953
+          },
+          {
+            "start_char": 8960,
+            "end_char": 9306
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "subcontracting_cap_representation",
+      "description": "By certifying compliance with VAAR 852.219-75 for this services acquisition, the offeror represents it will not pay more than 50% of the amount paid by the Government to firms that are not certified SDVOSBs/VOSBs.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "(i) [X] Services. In the case of a contract for services (except construction), the contractor will not pay \nmore than 50% of the amount paid by the government to it to firms that are not certified SDVOSBs listed \nin the SBA certification database as set forth in 852.219–73 or certified VOSBs listed in the SBA \ncertification database as set forth in 852.219–74. Any work that a similarly situated certified \nSDVOSB/VOSB subcontractor further subcontracts will count towards the 50% subcontract amount that \ncannot be exceeded. Other direct costs may be excluded to the extent they are not the principal purpose of \nthe acquisition and small business concerns do not provide the service as set forth in 13 CFR 125.6.",
+        "spans": [
+          {
+            "start_char": 5077,
+            "end_char": 5794
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "small_business_program_representations",
+      "description": "Offeror must complete the representations required by Provision 52.219-1 Small Business Program Representations.",
+      "is_mandatory": true,
+      "is_text_verifiable": true,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "5. Complete representations for Provisions 52.219-1 Small Business Program \nRepresentations (for any type of small business set-aside) – (Included in Section E).",
+        "spans": [
+          {
+            "start_char": 11955,
+            "end_char": 12116
+          }
+        ]
+      }
+    },
+    {
+      "topic_id": "sdvosb_certification_status",
+      "description": "To be eligible for this 100% SDVOSB set-aside, the offeror must be listed as a certified SDVOSB on the SBA's Small Business Search website at the time quotes are considered.",
+      "is_mandatory": true,
+      "is_text_verifiable": false,
+      "source": {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "SDVOSB Set-aside: This procurement is 100% set aside for Service-Disabled Veteran-Owned Small \nBusinesses (SDVOSBs). All SDVOSBs submitting quotes must be listed as certified by the Small \nBusiness Administration on its Small Business Search website, available at SBA: Small Business \nSearch, to have their quotes considered, in accordance with VAAR 819.7003.",
+        "spans": [
+          {
+            "start_char": 10525,
+            "end_char": 10884
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -22,7 +22,8 @@
     "description is copied verbatim from the matching topic_id in",
     "true_requirements.json so this file can be read alone;",
     "true_requirements.json is the source of truth if the two diverge.",
-    "amendment_acknowledgment_if_posted broadened to also accept non_compliant after a real pipeline run: the application includes an explicit 'documents included in this quote package' checklist that omits signed amendments/SF30 acknowledgments, and the model reasonably read that enumerated omission as closer to affirmative evidence than plain silence would be."
+    "amendment_acknowledgment_if_posted broadened to also accept non_compliant after a real pipeline run: the application includes an explicit 'documents included in this quote package' checklist that omits signed amendments/SF30 acknowledgments, and the model reasonably read that enumerated omission as closer to affirmative evidence than plain silence would be.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -46,7 +47,9 @@
           "start_char": 4697,
           "end_char": 4764
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "uei_required",
@@ -62,14 +65,18 @@
           "start_char": 604,
           "end_char": 648
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sam_registration_active",
       "description": "SAM registration must be active at quote close, at award, and throughout contract performance, no exceptions.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- whether a SAM registration is genuinely active can only be confirmed by checking SAM.gov, not by reading the application. Scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "no_unpaid_federal_tax_liability",
@@ -85,7 +92,9 @@
           "start_char": 1261,
           "end_char": 1323
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "no_recent_felony_conviction",
@@ -101,7 +110,9 @@
           "start_char": 1608,
           "end_char": 1729
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "price_schedule_complete",
@@ -123,7 +134,9 @@
           "start_char": 4524,
           "end_char": 4541
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "price_schedule_must_not_be_edited",
@@ -132,7 +145,9 @@
         "insufficient_information"
       ],
       "rationale": "The application shows a filled-in price schedule (item, price, total) but never represents, one way or the other, whether the underlying template itself was left unedited. Nothing in application.txt lets a text-only check confirm or deny this, so insufficient_information is the only defensible call -- compliant would be false confidence, non_compliant would be an unjustified accusation.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "or_equal_product_documentation",
@@ -148,7 +163,9 @@
           "start_char": 3414,
           "end_char": 3561
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "capabilities_statement_required",
@@ -164,7 +181,9 @@
           "start_char": 2779,
           "end_char": 3020
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "shop_drawings_and_product_data_required",
@@ -180,7 +199,9 @@
           "start_char": 3251,
           "end_char": 3350
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "prior_experience_count",
@@ -209,7 +230,9 @@
           "start_char": 4229,
           "end_char": 4407
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "prior_experience_poc_required",
@@ -238,7 +261,9 @@
           "start_char": 4229,
           "end_char": 4407
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "amendment_acknowledgment_if_posted",
@@ -249,14 +274,18 @@
         "non_compliant"
       ],
       "rationale": "Nothing in application.txt mentions an amendment either way. Since the requirement is conditional (is_mandatory: false, applies only 'in any case an amendment was posted'), silence is compatible with either 'not applicable, nothing to acknowledge' (compliant) or 'can't tell whether an amendment applied' (insufficient_information); non_compliant would require evidence of an actual unacknowledged amendment, which is absent.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "submission_deadline_and_channel",
       "description": "Must submit all required documents via email so as to reach the government office by the specified deadline; late submissions will not be accepted.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false -- this is about the process of submission (channel and timing), which application.txt (a capabilities-statement-style document) has no natural way to represent one way or the other. Deliberately not scored for verdict accuracy: the interesting failure mode here is the pipeline wrongly marking this is_text_verifiable: true and then guessing a verdict from silence, which the is_text_verifiable accuracy metric in true_requirements.json catches directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "contractor_core_data",
@@ -296,7 +325,9 @@
           "start_char": 700,
           "end_char": 766
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "final_offer_total_no_alternates",
@@ -312,7 +343,9 @@
           "start_char": 4524,
           "end_char": 4541
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     }
   ]
 }

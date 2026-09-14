@@ -1,0 +1,1308 @@
+[
+  {
+    "requirement_id": "statement_of_agreement_with_terms",
+    "requirement_text": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in their application that they 'agree with all terms, conditions, and provisions included in the solicitation.' This directly satisfies the requirement, which asks for a statement specifying the extent of agreement with all terms, conditions, and provisions. There is no ambiguity or contradiction in this statement, and it clearly meets the requirement. No further information is needed, as the requirement is not conditional and the bidder has provided a clear affirmative response."
+  },
+  {
+    "requirement_id": "amendment_acknowledgment",
+    "requirement_text": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1309,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1868,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement states that if solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date. The excerpts from the bidder's application do not mention any solicitation amendments, nor do they provide any indication that such amendments were issued or received. The bidder's application includes a general agreement with the solicitation terms, but this does not confirm whether any amendments were involved. Since the condition (amendments being issued) is not confirmed, and the bidder's response does not address it, the information is insufficient to determine compliance. Silence about an unconfirmed condition does not imply non-compliance, so the verdict is 'insufficient_information'."
+  },
+  {
+    "requirement_id": "price_schedule_completion",
+    "requirement_text": "Offer must fill in unit price, amount, and grand total for CLIN 0001 (inspection & cleaning, firm-fixed job price), CLIN 0002 (80-hour labor repair allowance, hourly rate), and CLIN 0003 (materials & parts allowance, firm-fixed job price), each bid as a separate line item.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Price Schedule:\nCLIN 0001 (Inspection & Cleaning, JB): $38,500.00\nCLIN 0002 (Maintenance/Repair Services - Labor, 80 HR): $95.00/hr, $7,600.00\nCLIN 0003 (Maintenance/Repair Services - Materials & Parts, JB): $20,000.00\nGrand Total: $66,100.00",
+        "start_char": 577,
+        "end_char": 819,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application provides the required unit price, amount, and grand total for each of the three CLINs (CLIN 0001, CLIN 0002, and CLIN 0003) as separate line items. The requirement was to offer these details for each CLIN, and the bidder has clearly provided them in the Price Schedule section. The structure and content of the Price Schedule align with the requirement, and there is no indication of missing or conflicting information. Therefore, the application is compliant with the requirement."
+  },
+  {
+    "requirement_id": "rov_technical_specifications",
+    "requirement_text": "Quote must include technical specifications and procedures for ROV (remotely operated vehicle) use in submerged surface inspections.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage.",
+        "start_char": 1027,
+        "end_char": 1233,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 1234,
+        "end_char": 1307,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1868,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement asks for technical specifications and procedures for ROV (remotely operated vehicle) use in submerged surface inspections. None of the excerpts from the bidder's application mention ROVs, their use, or any technical specifications related to them. While the application discusses inspection methodologies, safety plans, and personnel qualifications, these do not address the specific requirement for ROV use. The absence of any mention of ROVs means there is insufficient information to determine compliance. The bidder may or may not have included this information in other parts of their full application, but based on the excerpts provided, it is not present."
+  },
+  {
+    "requirement_id": "structural_defect_capability_evidence",
+    "requirement_text": "Quote must include evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage.",
+        "start_char": 1027,
+        "end_char": 1233,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 1234,
+        "end_char": 1307,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1327,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement asks for evidence that the bidder can identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work. While the bidder mentions past performance in water tower inspection and cleaning, it does not explicitly state that these past projects involved identifying the specific issues listed in the requirement. The technical approach section mentions visual inspection and sediment removal, but does not detail how structural defects, coating failures, corrosion, erosion, sanitation deficiencies, or contamination routes were identified in prior work. The attached CPARS entries are referenced but not provided, so their content is unknown. The personnel qualifications are relevant but do not directly address the requirement. Therefore, the excerpts do not contain enough information to determine compliance."
+  },
+  {
+    "requirement_id": "references_cpars_requirement",
+    "requirement_text": "Quote must include three references and/or three CPARS entries within the past 3 years.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1327,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement is to include **three references and/or three CPARS entries within the past 3 years**. The bidder mentions having performed work for **three New Hampshire municipal water districts** over the past **four years**, and states that **two CPARS entries** are attached. This means the bidder has **only two CPARS entries** and has only **three references** (which may or may not be CPARS entries). Since the requirement is to provide **three** of either, and the bidder only provides **two CPARS entries**, the application **clearly fails** to satisfy the requirement. The mention of 'three New Hampshire municipal water districts' does not equate to three references or CPARS entries, and the number of CPARS entries is insufficient."
+  },
+  {
+    "requirement_id": "tool_ladder_access_safety_evidence",
+    "requirement_text": "Quote must include evidence of safety controls for tools, ladders, cages, and access systems.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1881,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1745,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application clearly demonstrates compliance with the requirement to include evidence of safety controls for tools, ladders, cages, and access systems. The application mentions Confined Space Entry plans, Lockout/Tagout procedures, and Fall Protection plans, which directly address the safety controls for access systems and tools. Additionally, the mention of SDS management procedures for chemicals used on VA sites implies adherence to safety protocols for all materials and equipment. The application also references specific certifications and training for the lead technician, which further supports the safety controls. There is no contradiction or insufficient information regarding the requirement, and the application provides sufficient detail to confirm compliance."
+  },
+  {
+    "requirement_id": "offer_solicitation_number_stated",
+    "requirement_text": "Offer must state the solicitation number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Solicitation Number: 36C24126Q0704",
+        "start_char": 149,
+        "end_char": 183,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly states the solicitation number as '36C24126Q0704', which directly satisfies the requirement that the offer must state the solicitation number. There is no ambiguity or contradiction in this statement, and it is clearly presented in the subject line and body of the email. Therefore, the application is compliant with the requirement."
+  },
+  {
+    "requirement_id": "offer_offeror_contact_info_stated",
+    "requirement_text": "Offer must state the name, address, and telephone number of the Offeror.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC\n118 Industrial Drive\nNashua, NH 03060\n(603) 555-0148",
+        "start_char": 185,
+        "end_char": 267,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application clearly provides the name, address, and telephone number of the Offeror (Granite State Tank Works, LLC) in the header of the email. This directly satisfies the requirement that the offer must state these details. There is no ambiguity or omission in this information, and it is explicitly provided in the first section of the application."
+  },
+  {
+    "requirement_id": "offer_uei_eft_indicator_stated",
+    "requirement_text": "Offer must state the Offeror's Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Unique Entity Identifier: RT8K4NQ2VF39",
+        "start_char": 268,
+        "end_char": 306,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly provides the Unique Entity Identifier (UEI) as 'RT8K4NQ2VF39', which directly satisfies the requirement. The requirement also mentions the EFT indicator if applicable, but there is no mention of EFT in the excerpts. Since the UEI is provided and the EFT condition is not triggered (no indication that EFT is required or applicable), the application is compliant."
+  },
+  {
+    "requirement_id": "fascsa_representation",
+    "requirement_text": "By submission of its offer, the offeror must represent that it has conducted a reasonable inquiry and does not propose to provide or use any covered article prohibited by an applicable FASCSA order.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has reviewed the AWWA C652, D101, D102, and M42 standards along with NHDES administrative rules and will perform all work in accordance with these requirements.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our inspection and cleaning methodology includes tank draining coordination with Facility Services, interior/exterior visual inspection, sediment removal, and a written verification checklist at each stage. We are confident our approach will satisfy the Government's requirements.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1868,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement mandates that the offeror represent that it has conducted a reasonable inquiry and does not propose to provide or use any covered article prohibited by an applicable FASCSA order. However, none of the excerpts from the bidder's application explicitly address FASCSA, prohibited articles, or any inquiry into compliance with such orders. While the bidder mentions adherence to standards and safety procedures, these do not equate to a representation about FASCSA compliance. The application does not provide any direct statement or evidence that the bidder has conducted the required inquiry or that it does not propose to use prohibited articles. Therefore, there is insufficient information to determine compliance with the requirement."
+  },
+  {
+    "requirement_id": "sudan_certification",
+    "requirement_text": "By submission of its offer, the offeror must certify, after conducting a reasonable inquiry, that it does not conduct any restricted business operations in Sudan.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.",
+        "start_char": 419,
+        "end_char": 575,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License.",
+        "start_char": 1587,
+        "end_char": 1744,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization.",
+        "start_char": 1868,
+        "end_char": 2012,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement mandates that the bidder certifies, after conducting a reasonable inquiry, that it does not conduct any restricted business operations in Sudan. However, none of the excerpts from the bidder's application explicitly address Sudan or any restricted business operations in that country. While the bidder certifies compliance with other requirements (e.g., SBA certification, safety plans, personnel qualifications), there is no mention of Sudan or any inquiry into the bidder's operations in that country. Therefore, the information provided is insufficient to determine whether the requirement was satisfied."
+  },
+  {
+    "requirement_id": "technical_standards_compliance_documentation",
+    "requirement_text": "Offeror must provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1327,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1602,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1881,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2248,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.",
+        "start_char": 419,
+        "end_char": 575,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Technical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements.",
+        "start_char": 821,
+        "end_char": 1026,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides evidence of OSHA compliance through certifications and procedures, and references AWWA and NHDES standards. However, there is no explicit mention of EPA or OSHA requirements being applied in practice or documented for this specific tender. The application also lacks documentation of EPA compliance or any mention of how the bidder applies all four sets of requirements (AWWA, NHDES, OSHA, and EPA) in this particular context. While the bidder has demonstrated understanding of some of the requirements, the lack of explicit documentation or mention of EPA compliance and the incomplete status of OSHA-30 certification (which may be relevant to OSHA compliance) leads to insufficient information to determine full compliance with the requirement."
+  },
+  {
+    "requirement_id": "inspection_cleaning_methodology",
+    "requirement_text": "Offeror must provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage.",
+        "start_char": 1027,
+        "end_char": 1233,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1868,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder's application mentions a 'written verification checklist at each stage' and 'Confined Space Entry plan' and 'Lockout/Tagout procedures', which partially address the requirement for a detailed inspection and cleaning methodology, including verification steps. However, the application does not explicitly describe the full methodology, equipment used, or provide a detailed step-by-step procedure. While some elements of the requirement are addressed, the application lacks sufficient detail to confirm full compliance. Additionally, the mention of OSHA-30 certification being 'in progress' introduces uncertainty about the completeness of the qualifications. Therefore, the information provided is insufficient to determine full compliance."
+  },
+  {
+    "requirement_id": "work_plans_operational_procedures",
+    "requirement_text": "Offeror must provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1327,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1602,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1881,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Technical Approach:\nGranite State Tank Works has reviewed the AWWA C652, D101, D102, and M42\nstandards along with NHDES administrative rules and will perform all work\nin accordance with these requirements. Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage. We are confident our approach will\nsatisfy the Government's requirements.",
+        "start_char": 821,
+        "end_char": 1307,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement is that the Offeror must provide complete, technically sound work plans and operational procedures for reviewer evaluation. The bidder's application includes references to technical standards (AWWA C652, D101, D102, M42, NHDES administrative rules), and mentions a technical approach that includes a written verification checklist. This supports the requirement. However, the application does not explicitly state that complete work plans and operational procedures have been provided for review. The Safety Plan mentions submitting a Confined Space Entry plan and Lockout/Tagout procedures prior to mobilization, but it does not confirm that these documents are included in the tender application for evaluation. Additionally, the OSHA-30 certification is still in progress, which may affect the completeness of the personnel qualifications. Therefore, while some elements of the requirement are addressed, the application does not clearly state that all required work plans and operational procedures have been provided for review. As a result, the information is insufficient to determine compliance."
+  },
+  {
+    "requirement_id": "osha_10_30_certifications",
+    "requirement_text": "Offeror must provide proof of OSHA 10 and OSHA 30 certifications for personnel.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License.",
+        "start_char": 1602,
+        "end_char": 1744,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2248,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The application states that James Boudreau holds current OSHA-10 and OSHA-30 certifications, which appears to satisfy the requirement. However, it also notes that his OSHA-30 certification is 'currently in progress' and 'expected to be completed prior to mobilization.' This creates ambiguity: is the certification already completed, or is it still pending? The requirement does not specify whether the certification must be current at the time of submission or at the time of mobilization. Since the application does not clarify whether the certification is already completed or will be completed before mobilization, and the requirement does not specify the timing of the certification, there is insufficient information to determine compliance. Therefore, the verdict is 'insufficient_information.'"
+  },
+  {
+    "requirement_id": "nh_water_operator_license_copy",
+    "requirement_text": "Offeror must provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License.",
+        "start_char": 1602,
+        "end_char": 1744,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement is for the offeror to provide a copy of the NH Water System Operator License (certified Water Works Operator). The bidder's application explicitly states that their lead technician, James Boudreau, holds a valid New Hampshire Water System Operator License. This directly satisfies the requirement. There is no ambiguity or contradiction in this statement, and it is clear that the condition (the need for the license) has been met."
+  },
+  {
+    "requirement_id": "nhdes_standing_documentation",
+    "requirement_text": "Offeror must provide documentation confirming current standing with NHDES.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC certifies it is an eligible, certified\nService-Disabled Veteran-Owned Small Business listed in the SBA certification\ndatabase.",
+        "start_char": 419,
+        "end_char": 575,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Past Performance:\nGranite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1309,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1868,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is for the bidder to provide documentation confirming current standing with NHDES. The excerpts do not explicitly mention NHDES or any documentation related to it. While the bidder mentions compliance with administrative rules and standards, this does not equate to providing NHDES-specific documentation. The absence of direct reference to NHDES standing means the information is insufficient to determine compliance. The bidder may or may not have the required documentation, but it is not clearly stated."
+  },
+  {
+    "requirement_id": "past_performance_water_tower_contracts",
+    "requirement_text": "Offeror must provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1532,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they have performed water tower inspection and cleaning contracts for three New Hampshire municipal water districts over the past four years, including a hospital campus water system. This directly satisfies the requirement to provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts. The mention of attached CPARS (Contract Performance Assessment Report) entries further supports that documentation is available, even though the actual documents are not included in the excerpts. The requirement is not conditional and the bidder has clearly fulfilled it."
+  },
+  {
+    "requirement_id": "past_performance_hospital_high_risk_environment",
+    "requirement_text": "Offeror must provide evidence of performance in hospital or other high-risk environments.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1532,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides explicit evidence of performance in a hospital campus water system, which qualifies as a high-risk environment. The mention of 'hospital campus water system' directly satisfies the requirement for performance in such environments. The attached CPARS entries further substantiate this claim. There is no contradiction or ambiguity regarding this requirement, and the evidence is clear and directly relevant."
+  },
+  {
+    "requirement_id": "past_performance_quality_records",
+    "requirement_text": "Offeror must provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system. Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1327,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1602,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed. Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 1881,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder provides evidence of past performance, safety certifications, and a safety plan, which address some of the required elements (safety compliance, responsiveness, and possibly timeliness and customer satisfaction). However, the requirement explicitly asks for 'records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.' While the bidder mentions past contracts and safety measures, there is no explicit mention of records related to **contract quality**, **timeliness**, **customer satisfaction**, or **responsiveness**. The OSHA-30 certification is still in progress, which may affect the completeness of the safety compliance record. Therefore, the information provided is insufficient to determine full compliance with the requirement."
+  },
+  {
+    "requirement_id": "coating_integrity_training_evidence",
+    "requirement_text": "Offeror must provide evidence of coating integrity assessment training.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1745,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is for the offeror to provide evidence of 'coating integrity assessment training'. The bidder's application mentions Confined Space Entry certification, Fall Protection, and Lockout/Tagout training, which are safety-related but not specifically related to coating integrity assessment. There is no mention of any training related to coating integrity assessment, nor is there any evidence that such training was completed or provided. The OSHA-30 certification is mentioned as being in progress, but this is not equivalent to coating integrity assessment training. Therefore, the application does not clearly satisfy the requirement, nor does it clearly fail to do so. The information provided is insufficient to determine compliance."
+  },
+  {
+    "requirement_id": "healthcare_environmental_sanitation_training",
+    "requirement_text": "Offeror must provide documentation of Healthcare Environmental Sanitation training.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Key Personnel:\nOur lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1587,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is for the bidder to provide documentation of Healthcare Environmental Sanitation training. The excerpts do not mention this specific training at all. While the application references various certifications and training (e.g., OSHA-10, OSHA-30, Confined Space Entry, Fall Protection, Lockout/Tagout), none of these are explicitly identified as Healthcare Environmental Sanitation training. The absence of direct mention of this specific training means the information is insufficient to determine compliance. The bidder may or may not have the required documentation, but it is not clearly stated."
+  },
+  {
+    "requirement_id": "structural_water_tower_inspection_experience",
+    "requirement_text": "Offeror must provide evidence of demonstrated experience in structural water tower inspections.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1532,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides clear evidence of demonstrated experience in structural water tower inspections by stating they have performed such contracts for three New Hampshire municipal water districts over the past four years, including a hospital campus water system. The attachment of two CPARS (Contract Performance Assessment Report) entries further supports this claim, indicating that the bidder has a documented history of fulfilling such contracts. This directly satisfies the requirement that the offeror must provide evidence of demonstrated experience in structural water tower inspections."
+  },
+  {
+    "requirement_id": "sds_management_procedures",
+    "requirement_text": "Offeror must provide procedures for SDS (Safety Data Sheet) management.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that their technicians follow standard SDS management procedures for all chemicals used on VA sites. This directly satisfies the requirement that the offeror must provide procedures for SDS (Safety Data Sheet) management. There is no contradiction or ambiguity in this statement, and it clearly demonstrates compliance with the specified requirement."
+  },
+  {
+    "requirement_id": "hospital_infection_control_compliance_documentation",
+    "requirement_text": "Offeror must provide documentation demonstrating compliance with hospital Infection Control requirements.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works has performed water tower inspection and cleaning\ncontracts for three New Hampshire municipal water districts over the past\nfour years, including one hospital campus water system.",
+        "start_char": 1327,
+        "end_char": 1531,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Attached are two\nCPARS entries from the past 3 years.",
+        "start_char": 1532,
+        "end_char": 1585,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1602,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1881,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2248,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is for the bidder to provide documentation demonstrating compliance with hospital Infection Control requirements. The excerpts from the bidder's application do not explicitly mention hospital Infection Control requirements or provide documentation that directly addresses them. While the application includes information about OSHA certifications, confined space entry plans, and SDS management procedures, these are not specifically tied to hospital infection control standards. The mention of a hospital campus water system in the past performance is not sufficient to demonstrate compliance with infection control requirements. The application also lacks any direct reference to hospital infection control protocols, documentation, or specific compliance with such standards. Therefore, the information provided is insufficient to determine whether the requirement is satisfied."
+  },
+  {
+    "requirement_id": "hazard_communication_methodology",
+    "requirement_text": "Offeror must provide a defined hazard communication methodology.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our inspection and cleaning\nmethodology includes tank draining coordination with Facility Services,\ninterior/exterior visual inspection, sediment removal, and a written\nverification checklist at each stage.",
+        "start_char": 1027,
+        "end_char": 1233,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is for the offeror to provide a 'defined hazard communication methodology.' While the bidder mentions following 'standard SDS management procedures' for chemicals, this is not explicitly stated as a 'defined hazard communication methodology.' The technical approach section describes inspection and cleaning procedures but does not clearly define a hazard communication methodology. The mention of SDS management is relevant but not sufficient to confirm compliance with the specific requirement. There is no direct mention of a defined methodology, nor is there a clear contradiction. Therefore, the information provided is insufficient to determine compliance."
+  },
+  {
+    "requirement_id": "confined_space_entry_certification",
+    "requirement_text": "Offeror personnel must provide Confined Space Entry certification.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr.\nBoudreau also holds Confined Space Entry certification",
+        "start_char": 1745,
+        "end_char": 1803,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Safety Plan:\nGranite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization.",
+        "start_char": 1868,
+        "end_char": 2012,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application explicitly states that Mr. Boudreau holds a Confined Space Entry certification, which directly satisfies the requirement. Additionally, the Safety Plan section confirms that a Confined Space Entry plan will be submitted, further supporting compliance. While the application mentions that Mr. Boudreau's OSHA-30 certification is in progress, this does not affect the Confined Space Entry certification requirement. The application does not contradict the requirement, and all relevant information clearly supports compliance."
+  },
+  {
+    "requirement_id": "fall_protection_stairways_ladders_lockout_certifications",
+    "requirement_text": "Offeror personnel must provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1745,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1881,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder's application clearly states that Mr. Boudreau has completed Fall Protection and Lockout/Tagout training, and that the company will submit site-specific plans for Confined Space Entry and Lockout/Tagout prior to mobilization. These directly satisfy the requirement for certifications in Fall Protection, Stairways/Ladders, and Lockout/Tagout. While the mention of SDS management procedures is relevant to safety, it does not directly address the specific certifications required. The absence of explicit mention of Stairways/Ladders certification is not a disqualifying factor, as the requirement does not specify that all three categories must be explicitly named in the application. The application's silence on Stairways/Ladders is not evidence of non-compliance, as the requirement does not state that this category is conditional or optional."
+  },
+  {
+    "requirement_id": "confined_space_entry_plan",
+    "requirement_text": "Offeror must provide an OSHA-compliant Confined Space Entry plan.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization.",
+        "start_char": 1881,
+        "end_char": 2012,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our lead technician, James Boudreau, holds current OSHA-10 and OSHA-30\ncertifications and a valid New Hampshire Water System Operator License. Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1602,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Personnel Note: Mr. Boudreau's OSHA-30 certification is currently in\nprogress and is expected to be completed prior to mobilization.",
+        "start_char": 2232,
+        "end_char": 2364,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they will submit a site-specific Confined Space Entry plan and Lockout/Tagout procedures prior to mobilization, which directly satisfies the requirement. Additionally, the lead technician holds Confined Space Entry certification and has completed relevant training. While the OSHA-30 certification is still in progress, the requirement does not specify that the certification must be completed before the tender is submitted, only that it is expected to be completed prior to mobilization. Therefore, the application is compliant."
+  },
+  {
+    "requirement_id": "lockout_tagout_procedures",
+    "requirement_text": "Offeror must provide equipment-specific Lockout/Tagout procedures.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization.",
+        "start_char": 1881,
+        "end_char": 2012,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr.\nBoudreau also holds Confined Space Entry certification and has completed\nFall Protection and Lockout/Tagout training.",
+        "start_char": 1745,
+        "end_char": 1866,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they will submit site-specific Lockout/Tagout procedures prior to mobilization, which directly satisfies the requirement. Additionally, the lead technician has completed Lockout/Tagout training, further supporting compliance. There is no contradiction or ambiguity in these statements, and the requirement is not conditional in a way that remains unconfirmed."
+  },
+  {
+    "requirement_id": "fall_protection_plan",
+    "requirement_text": "Offeror must provide a comprehensive fall protection plan.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works will submit a site-specific Confined Space Entry\nplan and Lockout/Tagout procedures prior to mobilization. A fall protection\nplan is available and will be finalized in coordination with the COR\nonce the work schedule is confirmed.",
+        "start_char": 1881,
+        "end_char": 2136,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Granite State Tank Works, LLC agrees with all terms, conditions, and provisions\nincluded in the solicitation.",
+        "start_char": 308,
+        "end_char": 417,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Our technicians follow standard SDS\nmanagement procedures for all chemicals used on VA sites.",
+        "start_char": 2137,
+        "end_char": 2230,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\36C24126Q0704\\application.txt",
+        "quote": "Mr. Boudreau also holds Fall Protection and Lockout/Tagout training.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder mentions that a fall protection plan is available and will be finalized in coordination with the COR once the work schedule is confirmed. This indicates that the plan is not yet finalized, and its availability is conditional on the work schedule. The mention of Fall Protection training for Mr. Boudreau supports the capability to implement such a plan. However, the requirement is for a 'comprehensive fall protection plan,' and the application does not confirm that such a plan has been provided or is currently in place. The lack of explicit confirmation that the plan is available and finalized, despite being 'available,' creates ambiguity. Therefore, the information provided is insufficient to determine compliance definitively."
+  }
+]

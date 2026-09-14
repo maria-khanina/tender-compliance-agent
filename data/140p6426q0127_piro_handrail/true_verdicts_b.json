@@ -1,0 +1,278 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Northwoods Fabrication & Erectors, Inc.) against the same true_requirements.json as data/140p6426q0127_piro_handrail -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Superior Rail & Fabrication, LLC), not to duplicate it.",
+    "Error-shape diversity versus the original application: price_schedule_must_not_be_edited is now an explicit admitted edit (non_compliant) rather than silence (insufficient_information); or_equal_product_documentation is now a contradiction between a no-substitution claim and an alternate-brand price line, rather than an undocumented substitution; shop_drawings is a total omission (non_compliant) rather than an asserted inclusion (compliant); prior_experience_count is a quantity shortfall (non_compliant) rather than a vague-third-reference case; amendment_acknowledgment_if_posted now has the condition genuinely triggered and partially addressed (insufficient_information) rather than never triggered (compliant); final_offer_total_no_alternates is an explicit alternate-pricing violation (non_compliant) rather than compliant; contractor_core_data is missing POC fields (insufficient_information) rather than fully complete; no_recent_felony_conviction is a total silence (insufficient_information) rather than an explicit representation.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "small_business_size_standard",
+      "description": "Must be a small business under NAICS 238990 with a size standard of $19M average annual revenue.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a single, consistent average annual receipts figure ($8.6M) clearly under the $19M size standard for NAICS 238990, with no conflicting figure elsewhere in the application.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Northwoods Fabrication & Erectors, Inc. reported average annual receipts\nof $8.6 million over our three most recently completed fiscal years,\nwell under the $19 million small business size standard associated with\nNAICS code 238990.",
+          "start_char": 426,
+          "end_char": 658
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_required",
+      "description": "Company must obtain and provide a Unique Entity Identifier (UEI).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "UEI is explicitly stated (combined with Cage Code on one line).",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Cage Code / Unique Entity Identifier (UEI): HRN4K7Q2XM56",
+          "start_char": 659,
+          "end_char": 715
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sam_registration_active",
+      "description": "SAM registration must be active at quote close, at award, and throughout contract performance, no exceptions.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- whether SAM registration is genuinely active cannot be confirmed from the application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "no_unpaid_federal_tax_liability",
+      "description": "Company must not have any unpaid Federal tax liability that has been assessed and for which all remedies have been exhausted (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application affirmatively represents no outstanding federal tax obligations, in the bidder's own words rather than the clause's template phrasing -- still a clear, unambiguous representation.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "We confirm that Northwoods Fabrication & Erectors, Inc. has no\noutstanding federal tax obligations of any kind as of the date of this\nquote.",
+          "start_char": 733,
+          "end_char": 873
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "no_recent_felony_conviction",
+      "description": "Company must not have been convicted of a Federal felony criminal violation within the preceding 24 months (narrow exceptions apply only if the awarding agency has already considered and waived suspension/debarment); attested via self-representation in the application.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application's Certifications section addresses federal tax liability but never mentions felony convictions at all -- silent on this specific mandatory representation, neither confirming nor denying it.",
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_complete",
+      "description": "Offeror must complete the attached Price Schedule in its entirety, unedited except for units/quantities, no alternates.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Item 10 price and total are filled in ($52,300.00).",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Item 10 - Fabricate/Install Handrail: $52,300.00",
+          "start_char": 1816,
+          "end_char": 1864
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_must_not_be_edited",
+      "description": "The Price Schedule template must not be edited except to add units of measure/quantities; if changes are needed, an addendum explaining them must be provided alongside the unedited schedule.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly admits editing the Price Schedule item description beyond units/quantities (changing the wording to specify a fastener grade), and provides no addendum explaining the change alongside an unedited copy as the requirement demands.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "We have revised the item description on the enclosed Price Schedule to\nspecify \"Type 316 stainless fasteners\" in place of the generic wording,\nto ensure our fabrication shop orders the correct hardware grade; all\nunit and quantity fields remain as issued.",
+          "start_char": 1560,
+          "end_char": 1815
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "or_equal_product_documentation",
+      "description": "If quoting an \"or equal\" item, must submit detailed product specification/literature confirming comparability.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The Technical Approach section states the bidder will supply the exact brand-name hardware specified with no substitutions, but the Price Schedule note for Alternate Item 10A states that configuration uses a different manufacturer's bracket than the one specified -- the two statements directly conflict on whether any substitution is being offered.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "We will supply the exact handrail hardware and fasteners specified by\nbrand name in the Statement of Work, with no substitutions.",
+          "start_char": 1413,
+          "end_char": 1542
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Note: the alternate bracket configuration in Item 10A above uses a\nbracket manufactured by TrailGuard Systems rather than the brand\nspecified in the Statement of Work.",
+          "start_char": 2047,
+          "end_char": 2214
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "capabilities_statement_required",
+      "description": "Must provide a detailed capabilities statement or project narrative demonstrating how the company will successfully meet the needs of the statement of work.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a specific Technical Approach narrative describing fabrication methods, equipment, relevant experience volume, and a concrete site-staging consideration -- a detailed capabilities statement demonstrating how the work will be completed.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Northwoods has fabricated and installed over 40 handrail and guardrail\nsystems for federal and municipal park facilities across the Upper\nPeninsula since 2011, using in-house CNC plasma cutting and TIG welding\nfor all stainless and galvanized steel components.",
+          "start_char": 895,
+          "end_char": 1155
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "shop_drawings_and_product_data_required",
+      "description": "Must include all required shop drawings and product data as part of the technical submission.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions shop drawings or product data anywhere, and includes no attachment reference for them.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "prior_experience_count",
+      "description": "Must provide at least 3 prior experience references for projects similar in size and scope, completed within the past 5 years.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application lists only 2 prior experience references, short of the 3 required.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "1. Hiawatha National Forest - Trailhead Guardrail Installation (2022).",
+          "start_char": 2234,
+          "end_char": 2304
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "2. Marquette County Road Commission - Overlook Handrail Replacement\n(2021).",
+          "start_char": 2493,
+          "end_char": 2568
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "prior_experience_poc_required",
+      "description": "Each prior experience reference must include a project description and point-of-contact information.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Both references given include a project description and complete point-of-contact information (name, title, organization, phone).",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Point of Contact: Rebecca Sorenson, Facilities\nCoordinator, USDA Forest Service, (906) 555-4471.",
+          "start_char": 2396,
+          "end_char": 2492
+        },
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Point of Contact: Gary\nThibodeau, Project Engineer, Marquette County Road Commission, (906)\n555-6023.",
+          "start_char": 2677,
+          "end_char": 2778
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment_if_posted",
+      "description": "If SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and provide it with the final quote/proposal package.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application acknowledges that Amendment 0001 exists and states the quote reflects the solicitation as amended, but never confirms the specific required mechanism -- signing the SF30 and including it with the final package -- so the substance is addressed while the required form of acknowledgment is not confirmed either way.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Amendment: We acknowledge that Amendment 0001 to this solicitation\nexists and confirm that this quote reflects the solicitation as amended.",
+          "start_char": 2780,
+          "end_char": 2919
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Must submit all required documents via email so as to reach the government office by the specified deadline; late submissions will not be accepted.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- this concerns the process of submission (channel and timing), which application.txt as received content cannot confirm one way or the other.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "contractor_core_data",
+      "description": "Must provide contractor core data: company name, Cage Code / UEI, point of contact, and POC email/phone.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application gives company name and Cage Code/UEI, but never states a point-of-contact name or a POC email/phone under the Contractor Core Data checklist -- the closing signature gives a name and title but not in that capacity, and no phone or email accompanies it. Two of the four required elements are missing.",
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "final_offer_total_no_alternates",
+      "description": "Must provide a single final offer total, as this is the price that will be evaluated; alternate quotes/proposals will not be accepted.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application provides two priced configurations (Item 10 and Alternate Item 10A) rather than a single final offer total, and explicitly states it is prepared to perform under either -- exactly the alternate-quote situation the requirement prohibits.",
+      "evidence": [
+        {
+          "document_path": "data/140p6426q0127_piro_handrail_appB/application.txt",
+          "quote": "Alternate Item 10A - Fabricate/Install Handrail, Value-Engineered\nMounting Bracket: $47,900.00",
+          "start_char": 1865,
+          "end_char": 1959
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    }
+  ]
+}

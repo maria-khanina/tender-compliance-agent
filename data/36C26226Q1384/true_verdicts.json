@@ -3,7 +3,8 @@
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: submission_deadline_and_channel, since it is is_text_verifiable: false in true_requirements.json and never gets a verdict from a correctly-behaving pipeline.",
     "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
-    "authorized_distributor_letter and gray_market_verification broadened to also accept non_compliant: authorized_distributor_letter's requirement is literally to 'provide a letter/memo from the manufacturer', and no such document was attached (only prose assertions), a defensible literal reading distinct from the contradiction reading. gray_market_verification -- being an authorized distributor and sourcing overflow units through a secondary distribution network are not strictly logically incompatible (only concerning together), so a non_compliant call naming the secondary-market sourcing itself as the problem is as defensible as calling the two statements contradictory."
+    "authorized_distributor_letter and gray_market_verification broadened to also accept non_compliant: authorized_distributor_letter's requirement is literally to 'provide a letter/memo from the manufacturer', and no such document was attached (only prose assertions), a defensible literal reading distinct from the contradiction reading. gray_market_verification -- being an authorized distributor and sourcing overflow units through a secondary distribution network are not strictly logically incompatible (only concerning together), so a non_compliant call naming the secondary-market sourcing itself as the problem is as defensible as calling the two statements contradictory.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -20,7 +21,9 @@
           "start_char": 303,
           "end_char": 412
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "concurrence_with_terms",
@@ -36,7 +39,9 @@
           "start_char": 414,
           "end_char": 522
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fob_destination_manufacturer_part_number",
@@ -52,7 +57,9 @@
           "start_char": 524,
           "end_char": 618
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "authorized_distributor_letter",
@@ -75,7 +82,9 @@
           "start_char": 830,
           "end_char": 1098
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "gray_market_verification",
@@ -98,7 +107,9 @@
           "start_char": 830,
           "end_char": 1098
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "buy_american_certificate",
@@ -114,7 +125,9 @@
           "start_char": 1203,
           "end_char": 1488
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "country_of_origin_specified",
@@ -130,7 +143,9 @@
           "start_char": 1156,
           "end_char": 1201
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "small_or_large_business_designation",
@@ -140,7 +155,9 @@
         "insufficient_information"
       ],
       "rationale": "Application never states whether the item's manufacturer is a small or large business anywhere in the quote. This is a 'must indicate X' procedural instruction (like los_compliance_assertion in 36C24126Q0731), so silence is arguably a failure to follow the instruction (non_compliant) as much as it is a lack of information (insufficient_information) -- both are defensible.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fss_contract_listing",
@@ -156,7 +173,9 @@
           "start_char": 1490,
           "end_char": 1559
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "attachment_a_columns_completed",
@@ -172,7 +191,9 @@
           "start_char": 1561,
           "end_char": 2023
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "equal_product_identification_and_literature",
@@ -188,7 +209,9 @@
           "start_char": 1588,
           "end_char": 1720
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "air_driven_high_speed_sterile_pathway",
@@ -204,7 +227,9 @@
           "start_char": 2048,
           "end_char": 2206
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "detachable_waterline_system",
@@ -220,7 +245,9 @@
           "start_char": 2529,
           "end_char": 2686
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fits_midwest_4_hole_handpieces",
@@ -236,7 +263,9 @@
           "start_char": 2115,
           "end_char": 2148
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "includes_two_8oz_autoclavable_bottles",
@@ -252,7 +281,9 @@
           "start_char": 2211,
           "end_char": 2243
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "autoclavable_tubing_sterile_pathway",
@@ -268,7 +299,9 @@
           "start_char": 2150,
           "end_char": 2206
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fully_autoclavable_sterility",
@@ -284,7 +317,9 @@
           "start_char": 2245,
           "end_char": 2307
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "seamless_integration_with_dental_units",
@@ -294,7 +329,9 @@
         "non_compliant"
       ],
       "rationale": "Application never addresses integration with dental units or a sterile water pathway at the unit level. The RFQ states elsewhere that offers must 'demonstrate meeting the salient... characteristic... otherwise it will be considered non-responsive', so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "easy_irrigation_control",
@@ -310,7 +347,9 @@
           "start_char": 2441,
           "end_char": 2528
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "high_speed_cutting_power",
@@ -326,7 +365,9 @@
           "start_char": 2313,
           "end_char": 2440
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "nmr_certification_signed",
@@ -342,7 +383,9 @@
           "start_char": 3023,
           "end_char": 3068
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "far_52_212_3_reps_and_certs",
@@ -358,7 +401,9 @@
           "start_char": 3070,
           "end_char": 3210
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "subject_line_references_solicitation_number",
@@ -374,14 +419,18 @@
           "start_char": 66,
           "end_char": 132
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "submission_deadline_and_channel",
       "description": "Quote must be emailed to the government POC and received no later than 10:00am PT on Friday, August 28th, 2026.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     }
   ]
 }

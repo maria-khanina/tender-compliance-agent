@@ -1,0 +1,610 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Cascade Tank Services, LLC) against the same true_requirements.json as data/36C24126Q0704 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Granite State Tank Works, LLC).",
+    "The original application left most post-split individual items (rov specs, structural defect evidence, references, tool/ladder safety, fascsa/sudan reps, technical standards docs, methodology, work plans, coating/healthcare training, structural experience, infection control docs, hazcom, fall-protection/lockout certs and plans) entirely unaddressed, mostly scoring insufficient_information/non_compliant. This application inverts that: most items are explicitly and specifically addressed (compliant), while two explicit, different-shaped contradictions are planted (a claimed-vs-itemized CPARS count mismatch; an 'all personnel' compliance claim contradicted by an admitted partial-coverage training gap), two explicit self-admitted failures are planted (no ROV capability; license renewal in progress) rather than silence-based ones, one honest capability-gap admission is planted (no prior hospital experience) as a genuine non_compliant that is not simply omission, and confined_space_entry_plan is the sole remaining total omission, kept deliberately rare rather than the dominant pattern.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Cascade Tank Services, LLC agrees with all terms, conditions, and\nprovisions included in the solicitation.",
+          "start_char": 314,
+          "end_char": 420
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states no amendments had been issued, addressing the conditional requirement directly rather than by silence.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "No amendments to this solicitation had been issued as of the date of\nthis quote.",
+          "start_char": 422,
+          "end_char": 502
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in unit price, amount, and grand total for CLIN 0001 (inspection & cleaning, firm-fixed job price), CLIN 0002 (80-hour labor repair allowance, hourly rate), and CLIN 0003 (materials & parts allowance, firm-fixed job price), each bid as a separate line item.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "All three CLINs are priced with a grand total that correctly sums them ($41,200 + $7,040 + $18,500 = $66,740).",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "CLIN 0001 (Inspection & Cleaning, JB): $41,200.00",
+          "start_char": 520,
+          "end_char": 569
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- SDVOSB certification/database status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Offers are due September 18, 2026, at 3:00 PM EST.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission timing, not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "rov_technical_specifications",
+      "description": "Quote must include technical specifications and procedures for ROV (remotely operated vehicle) use in submerged surface inspections.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states the methodology relies on manual diver-assisted inspection and that ROV technology is not currently used -- a direct, admitted failure to meet the ROV requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our\nmethodology relies on manual diver-assisted visual inspection; we do\nnot currently utilize ROV (remotely operated vehicle) technology for\nsubmerged surface inspection.",
+          "start_char": 1849,
+          "end_char": 2020
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "structural_defect_capability_evidence",
+      "description": "Quote must include evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes training to identify the specific defect categories listed and references a sample inspection report illustrating the reporting format.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our inspectors are trained to identify structural defects, coating\nfailures, corrosion, erosion, sanitation deficiencies, and\ncontamination routes.",
+          "start_char": 2252,
+          "end_char": 2399
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "references_cpars_requirement",
+      "description": "Quote must include three references and/or three CPARS entries within the past 3 years.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application claims three CPARS entries from the past three years, but the Past Performance section itemizes only two specific contracts by name -- the claimed count and the actual itemized list conflict.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "We are pleased to report three CPARS entries from the past three years\ndemonstrating our qualifications for this contract.",
+          "start_char": 2575,
+          "end_char": 2697
+        },
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "2. Town of Bedford Public Works - Standpipe Cleaning & Inspection\n(2022). Contract value: $58,400. CPARS rating: Satisfactory. Point of\nContact: Robert Nguyen, Public Works Superintendent, (603) 555-3318.",
+          "start_char": 2901,
+          "end_char": 3105
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "tool_ladder_access_safety_evidence",
+      "description": "Quote must include evidence of safety controls for tools, ladders, cages, and access systems.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes daily harness/lanyard inspection, caged ladder access with fall-arrest anchors, and a two-person confined-space entry rule.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Tool, ladder, and access safety controls include daily pre-use\ninspection of harnesses and lanyards, caged ladder access with\nfall-arrest anchor points at the tank roof hatch, and a two-person rule\nfor all confined-space entries.",
+          "start_char": 5081,
+          "end_char": 5310
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "offer_solicitation_number_stated",
+      "description": "Offer must state the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Solicitation number is explicitly stated in the header.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Solicitation Number: 36C24126Q0704",
+          "start_char": 147,
+          "end_char": 181
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "offer_offeror_contact_info_stated",
+      "description": "Offer must state the name, address, and telephone number of the Offeror.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Name, address, and telephone number are all provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Cascade Tank Services, LLC\n2245 Riverside Industrial Park\nConcord, NH 03301\n(603) 555-0177",
+          "start_char": 183,
+          "end_char": 273
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "offer_uei_eft_indicator_stated",
+      "description": "Offer must state the Offeror's Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "UEI is stated, but the application never mentions an EFT indicator at all, so it is unconfirmed whether one applies and was omitted, or none applies.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Unique Entity Identifier: CTS9K3RXM217",
+          "start_char": 274,
+          "end_char": 312
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fascsa_representation",
+      "description": "By submission of its offer, the offeror must represent that it has conducted a reasonable inquiry and does not propose to provide or use any covered article prohibited by an applicable FASCSA order.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly represents that a reasonable inquiry was conducted and no covered article prohibited by FASCSA is proposed.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Cascade Tank Services, LLC represents that it has conducted a\nreasonable inquiry and does not propose to provide or use any covered\narticle prohibited by an applicable FASCSA order.",
+          "start_char": 765,
+          "end_char": 946
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sudan_certification",
+      "description": "By submission of its offer, the offeror must certify, after conducting a reasonable inquiry, that it does not conduct any restricted business operations in Sudan.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly certifies, after reasonable inquiry, no restricted business operations in Sudan.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Cascade Tank\nServices, LLC further certifies, after conducting a reasonable inquiry,\nthat it does not conduct any restricted business operations in Sudan.",
+          "start_char": 947,
+          "end_char": 1101
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_standards_compliance_documentation",
+      "description": "Offeror must provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application names specific applicable AWWA, NHDES, OSHA, and EPA standards and how work will follow them.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our work will be performed in accordance with AWWA C652 (disinfection),\nAWWA D101/M42 (inspection and maintenance of steel tanks), applicable\nNHDES administrative rules for public water systems, OSHA 1910.146\n(permit-required confined spaces), and EPA guidance on potable water\nsystem disinfection byproducts.",
+          "start_char": 1125,
+          "end_char": 1434
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "inspection_cleaning_methodology",
+      "description": "Offeror must provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes a detailed, sequenced inspection and cleaning methodology with documentation and verification steps.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our inspection approach begins with a topside visual survey, followed\nby interior drain-down and manual diver-assisted visual inspection of\nthe tank floor, walls, and roof structure.",
+          "start_char": 1460,
+          "end_char": 1642
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "work_plans_operational_procedures",
+      "description": "Offeror must provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application defers detailed operational procedures and work plans to a later date ('available upon request... finalized in coordination with the COR'), rather than including them with the quote for evaluation now.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Detailed operational procedures and task-sequencing work plans for this\nproject are available upon request and will be finalized in\ncoordination with the COR once the work schedule is confirmed.",
+          "start_char": 2022,
+          "end_char": 2216
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "osha_10_30_certifications",
+      "description": "Offeror must provide proof of OSHA 10 and OSHA 30 certifications for personnel.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states field technicians hold current OSHA 10 and OSHA 30 certifications, with no conflicting statement elsewhere.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our field technicians hold current OSHA 10 and OSHA 30 certifications.",
+          "start_char": 3542,
+          "end_char": 3612
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "nh_water_operator_license_copy",
+      "description": "Offeror must provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states the license is still in the renewal process with the updated certificate expected within 60 days -- an admitted current gap, not a copy of a currently valid license.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "his current license is in the renewal process, with the updated\ncertificate expected within 60 days.",
+          "start_char": 3751,
+          "end_char": 3851
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "nhdes_standing_documentation",
+      "description": "Offeror must provide documentation confirming current standing with NHDES.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application cites a specific Public Water System ID and a dated confirmation letter for current NHDES standing.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "We maintain current standing with\nNHDES under Public Water System ID NH1234567, confirmed by letter dated\nMarch 2026.",
+          "start_char": 3852,
+          "end_char": 3969
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_water_tower_contracts",
+      "description": "Offeror must provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application lists two named prior water tower/standpipe inspection contracts with contract values and points of contact.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "1. City of Nashua Water Works - Elevated Tank Inspection & Recoating\n(2023). Contract value: $112,000. CPARS rating: Very Good. Point of\nContact: Diane Marchetti, Water Utility Director, (603) 555-2290.",
+          "start_char": 2698,
+          "end_char": 2900
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_hospital_high_risk_environment",
+      "description": "Offeror must provide evidence of performance in hospital or other high-risk environments.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states all past water tower work has been at municipal and industrial sites and that the company has not previously performed inspection work at an active hospital campus.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "All of our past water tower work has been at municipal and industrial\nsites; we have not previously performed inspection work at an active\nhospital campus.",
+          "start_char": 3106,
+          "end_char": 3261
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_quality_records",
+      "description": "Offeror must provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides CPARS ratings (Very Good, Satisfactory) for its listed past contracts, demonstrating quality/timeliness records.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "CPARS rating: Very Good.",
+          "start_char": 2801,
+          "end_char": 2825
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "coating_integrity_training_evidence",
+      "description": "Offeror must provide evidence of coating integrity assessment training.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application cites the lead inspector's NACE Level 2 Coating Inspector certification and field-technician training in specific coating-failure detection methods.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our lead inspector holds NACE Level 2 Coating Inspector certification,\nand our field technicians have completed coating-integrity assessment\ntraining covering blister, delamination, and holiday-detection\nmethods.",
+          "start_char": 3291,
+          "end_char": 3503
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "healthcare_environmental_sanitation_training",
+      "description": "Offeror must provide documentation of Healthcare Environmental Sanitation training.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application describes general infection-control awareness training during onboarding but explicitly states formal Healthcare Environmental Sanitation training documentation is still being finalized for half the field technicians -- the specific named training is not confirmed as complete.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our technicians have completed\ngeneral infection-control awareness training as part of onboarding;\nformal Healthcare Environmental Sanitation training documentation for\ntwo of our four field technicians is still being finalized with our\ntraining vendor.",
+          "start_char": 4076,
+          "end_char": 4329
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "structural_water_tower_inspection_experience",
+      "description": "Offeror must provide evidence of demonstrated experience in structural water tower inspections.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application demonstrates structural water tower inspection experience through the two named past contracts and the described structural/defect assessment approach.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "A sample inspection report from a comparable\nmunicipal tank project is available upon request, illustrating our\ndefect-classification and reporting format.",
+          "start_char": 2400,
+          "end_char": 2555
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sds_management_procedures",
+      "description": "Offeror must provide procedures for SDS (Safety Data Sheet) management.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes SDS binders maintained on every service vehicle, updated when new chemical products are introduced.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "SDS management procedures are\nmaintained in the same binder system, updated whenever a new chemical\nproduct is introduced to a job site.",
+          "start_char": 4504,
+          "end_char": 4640
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "hospital_infection_control_compliance_documentation",
+      "description": "Offeror must provide documentation demonstrating compliance with hospital Infection Control requirements.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application claims current Hospital Infection Control compliance documentation is on file for all field personnel, but later states formal training documentation for two of the four field technicians is still being finalized -- the 'all personnel' claim conflicts with the admitted partial coverage.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "We maintain on file current Hospital Infection Control compliance\ndocumentation for all field personnel.",
+          "start_char": 3971,
+          "end_char": 4075
+        },
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "formal Healthcare Environmental Sanitation training documentation for\ntwo of our four field technicians is still being finalized with our\ntraining vendor.",
+          "start_char": 4175,
+          "end_char": 4329
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "hazard_communication_methodology",
+      "description": "Offeror must provide a defined hazard communication methodology.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes a written HazCom program with SDS binders reviewed with crews before mobilization.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "Our hazard communication methodology follows a written HazCom program\nwith SDS binders maintained on every service vehicle and reviewed with\ncrews before each mobilization",
+          "start_char": 4331,
+          "end_char": 4502
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "confined_space_entry_certification",
+      "description": "Offeror personnel must provide Confined Space Entry certification.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states all field technicians hold current Confined Space Entry certification.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "All field technicians hold current Confined Space Entry certification\nand current Lockout/Tagout certification.",
+          "start_char": 4642,
+          "end_char": 4753
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+      "description": "Offeror personnel must provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application confirms Lockout/Tagout certification and describes fall-protection equipment use, but never confirms a Stairways/Ladders certification specifically, so one of the three combined certifications is unaddressed.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "current Lockout/Tagout certification.",
+          "start_char": 4716,
+          "end_char": 4753
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "confined_space_entry_plan",
+      "description": "Offeror must provide an OSHA-compliant Confined Space Entry plan.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application never includes or references a written, OSHA-compliant Confined Space Entry plan -- only personnel certification is mentioned, not a plan document.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "lockout_tagout_procedures",
+      "description": "Offeror must provide equipment-specific Lockout/Tagout procedures.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes equipment-specific Lockout/Tagout procedures for each pump and valve assembly, documented in an SOP binder.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "We use equipment-specific\nLockout/Tagout procedures for each pump and valve assembly encountered\nduring tank isolation, documented in our standard operating procedures\nbinder.",
+          "start_char": 4754,
+          "end_char": 4929
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fall_protection_plan",
+      "description": "Offeror must provide a comprehensive fall protection plan.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a comprehensive fall protection plan covering ladder climbs, roof-hatch access, and harness anchor points is included as an attachment.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0704_appB/application.txt",
+          "quote": "A comprehensive fall protection plan covering ladder climbs, roof-hatch\naccess, and harness anchor points is included as Attachment C to this\nquote.",
+          "start_char": 4931,
+          "end_char": 5079
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    }
+  ]
+}

@@ -4,7 +4,8 @@
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sdvosb_setaside_eligibility, security_sanctions_representations, submission_deadline, contractor_certification_qualifications, and contractor_experience_tenure, since all five are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (7 topics), non_compliant (a quantity shortfall -- 2 past-performance contracts instead of 3), insufficient_information (a generic prior-experience statement missing the required per-year detail; an ambiguous, partially-triggered subcontractor-experience condition), and one contradictory claim (training certifications stated as both enclosed with the proposal and available only upon request).",
     "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
-    "prior_experience_documentation broadened to also accept non_compliant: the source solicitation text literally reads 'as the Prime Contractor Waste Removal Services' (an apparent leftover template artifact in an electrical-testing solicitation), and the model's non_compliant verdict (bidder shows electrical testing experience, not waste removal) is a defensible literal reading of that text, alongside the insufficient_information reading based on the intended/contextual meaning (missing per-year contract-detail breakdown)."
+    "prior_experience_documentation broadened to also accept non_compliant: the source solicitation text literally reads 'as the Prime Contractor Waste Removal Services' (an apparent leftover template artifact in an electrical-testing solicitation), and the model's non_compliant verdict (bidder shows electrical testing experience, not waste removal) is a defensible literal reading of that text, alongside the insufficient_information reading based on the intended/contextual meaning (missing per-year contract-detail breakdown).",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -21,7 +22,9 @@
           "start_char": 139,
           "end_char": 317
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "statement_of_agreement_with_terms",
@@ -37,7 +40,9 @@
           "start_char": 319,
           "end_char": 472
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "amendment_acknowledgment",
@@ -53,7 +58,9 @@
           "start_char": 474,
           "end_char": 557
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "price_schedule_completion",
@@ -69,28 +76,36 @@
           "start_char": 667,
           "end_char": 868
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sdvosb_setaside_eligibility",
       "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual SDVOSB certification/database status cannot be confirmed by reading the quote, only by checking the SBA certification database directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "security_sanctions_representations",
       "description": "By submitting its offer the offeror makes several standing legal representations/certifications triggered automatically by submission, including that it has conducted a reasonable inquiry and does not propose to use products/sources prohibited by an applicable FASCSA order, and that it does not conduct restricted business operations in Sudan.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- these are standing legal representations triggered automatically by submitting an offer, not something the offeror drafts content around.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "submission_deadline",
       "description": "Questions and quotes are due by 10:00 a.m. central time on 9/15/26, submitted electronically via email to James.horne@va.gov.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "two_part_proposal_format",
@@ -106,7 +121,9 @@
           "start_char": 559,
           "end_char": 649
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "technical_capabilities_letter",
@@ -122,7 +139,9 @@
           "start_char": 915,
           "end_char": 1368
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "prior_experience_documentation",
@@ -139,7 +158,9 @@
           "start_char": 1388,
           "end_char": 1676
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "past_performance_contracts_submission",
@@ -155,7 +176,9 @@
           "start_char": 1706,
           "end_char": 2315
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "technical_experience_examples_submission",
@@ -171,7 +194,9 @@
           "start_char": 2348,
           "end_char": 3030
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "subcontractor_technical_experience_submission",
@@ -187,7 +212,9 @@
           "start_char": 2814,
           "end_char": 2855
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "electrical_safety_training_certification_submission",
@@ -209,21 +236,27 @@
           "start_char": 3289,
           "end_char": 3472
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "contractor_certification_qualifications",
       "description": "Contractor must be currently certified as a NETA Certified Technician or via NICET, and have completed OSHA's approved 10-hour construction safety training.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual NETA/NICET certification and OSHA-10 completion status cannot be confirmed by reading the quote alone.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "contractor_experience_tenure",
       "description": "Contractor must have technical training and a minimum of five continuous years of work experience in maintenance, inspection, and testing of low and medium voltage electrical power distribution systems in healthcare, industrial, educational, and commercial facilities.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual years of technical training and work-experience tenure is a background fact, not something the tender instructs the offeror to write into the quote.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     }
   ]
 }
