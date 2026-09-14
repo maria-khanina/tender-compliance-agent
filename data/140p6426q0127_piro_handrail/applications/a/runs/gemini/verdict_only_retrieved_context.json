@@ -1,0 +1,520 @@
+[
+  {
+    "requirement_id": "small_business_size_standard",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "uei_required",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "no_unpaid_federal_tax_liability",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "no_recent_felony_conviction",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "price_schedule_complete",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      }
+    ]
+  },
+  {
+    "requirement_id": "price_schedule_must_not_be_edited",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      }
+    ]
+  },
+  {
+    "requirement_id": "or_equal_product_documentation",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "capabilities_statement_required",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "shop_drawings_and_product_data_required",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "prior_experience_count",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      }
+    ]
+  },
+  {
+    "requirement_id": "prior_experience_poc_required",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      }
+    ]
+  },
+  {
+    "requirement_id": "amendment_acknowledgment_if_posted",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      }
+    ]
+  },
+  {
+    "requirement_id": "contractor_core_data",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      }
+    ]
+  },
+  {
+    "requirement_id": "final_offer_total_no_alternates",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 0,
+        "text": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)\n\nSubmitted to: Colette Riegelmayer, Contract Specialist, National Park Service\nSubmitted by: Superior Rail & Fabrication, LLC\n\nCHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.\n\nCONTRACTOR CORE DATA\n\nCompany Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142\n\nREGISTRATION AND ELIGIBILITY\n\nSuperior Rail & Fabrication, LLC is a small business under NAICS code 238990. Our\ncompany's registration in the System for Award Management (SAM) is active and will remain\nactive through quote submission, award, and the entire period of contract performance. Our\nUnique Entity Identifier is provided above.\n\nREPRESENTATIONS AND CERTIFICATIONS",
+        "start_char": 0,
+        "end_char": 1140
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 3,
+        "text": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.\n\nPRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00\n\nFINANCIAL AND BONDING INFORMATION\n\nFor purposes of confirming our financial capacity, we note that in fiscal year 2024 Superior\nRail & Fabrication, LLC's average annual revenue for size-standard purposes was $21.8\nmillion, computed across our fabrication and installation divisions.\n\nWe look forward to the opportunity to support Pictured Rocks National Lakeshore on this\nproject.\n\nRespectfully submitted,\nJohn Castellano\nProject Manager\nSuperior Rail & Fabrication, LLC",
+        "start_char": 3946,
+        "end_char": 5013
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 2,
+        "text": "CAPABILITIES STATEMENT / PROJECT NARRATIVE\n\nSuperior Rail & Fabrication, LLC has maintained average annual gross revenue of $12.4\nmillion over the past three fiscal years, comfortably within the $19 million small business\nsize standard associated with NAICS code 238990.\n\nOur company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.\n\nFor portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.\n\nPRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 2507,
+        "end_char": 3944
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\140p6426q0127_piro_handrail\\application.txt",
+        "chunk_index": 1,
+        "text": "REPRESENTATIONS AND CERTIFICATIONS\n\n52.209-11 Representation Regarding Delinquent Tax Liability or Felony Conviction:\n(1) Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.\n(2) Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.\n\n52.225-20 / 52.225-25 Restricted Business Operations - Certification:\nSuperior Rail & Fabrication, LLC certifies that it does not conduct restricted business\noperations in Sudan and does not engage in any activities or transactions relating to Iran that\nwould be prohibited under the applicable FAR clauses.\n\n52.222-18 Certification Regarding Knowledge of Child Labor:\nSuperior Rail & Fabrication, LLC certifies that, to the best of its knowledge, none of the end\nproducts to be delivered under this contract were produced by forced or indentured child labor.\n\n52.225-2 Buy American Certificate:\nSuperior Rail & Fabrication, LLC certifies that all end products to be delivered under this\ncontract are domestic end products as defined in FAR 52.225-1, Buy American-Supplies.\n\nCAPABILITIES STATEMENT / PROJECT NARRATIVE",
+        "start_char": 1106,
+        "end_char": 2549
+      }
+    ]
+  }
+]

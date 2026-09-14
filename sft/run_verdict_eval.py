@@ -11,22 +11,28 @@ Usage:
       --model Qwen/Qwen3-8B-AWQ  # (served with the LoRA adapter loaded)
 """
 import argparse
+import glob
 import json
 import os
 import pathlib
 import subprocess
 import sys
 
-sys.path.insert(0, r"C:\Users\Grani\Desktop\lapka\maria.khanina\NLP\agents\tender_agent")
-os.chdir(r"C:\Users\Grani\Desktop\lapka\maria.khanina\NLP\agents\tender_agent")
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+os.chdir(PROJECT_ROOT)
 
 SPLIT_CONFIG = json.load(open("sft/split.json", encoding="utf-8"))
+DEFAULT_VARIANT = "a"
 
 
 def cases_for(selection: list[str]) -> list[str]:
+    from case_layout import true_verdicts_path
+
     all_cases = sorted(
-        os.path.basename(d) for d in __import__("glob").glob("data/*")
-        if os.path.isdir(d) and os.path.exists(os.path.join(d, "true_verdicts.json"))
+        os.path.basename(d) for d in glob.glob("data/*")
+        if os.path.isdir(d)
+        and true_verdicts_path(pathlib.Path(d), DEFAULT_VARIANT).exists()
     )
     test = set(SPLIT_CONFIG["test"])
     val = set(SPLIT_CONFIG["validation"])
@@ -37,7 +43,9 @@ def cases_for(selection: list[str]) -> list[str]:
         elif s in ("val", "validation"):
             chosen.extend(sorted(val))
         elif s == "train":
-            chosen.extend(sorted(c for c in all_cases if c not in test and c not in val))
+            chosen.extend(
+                sorted(c for c in all_cases if c not in test and c not in val)
+            )
         elif s == "all":
             chosen.extend(all_cases)
         else:
@@ -52,7 +60,9 @@ def cases_for(selection: list[str]) -> list[str]:
 
 
 def run_one_case(case: str, label: str, base_url: str, model: str) -> dict:
-    case_dir = f"data/{case}"
+    from case_layout import run_dir, true_verdicts_path
+
+    case_dir = pathlib.Path(f"data/{case}")
     out_dir = f"sft/eval_runs/{label}"
     os.makedirs(out_dir, exist_ok=True)
     report_path = f"{out_dir}/{case}.md"
@@ -66,7 +76,9 @@ def run_one_case(case: str, label: str, base_url: str, model: str) -> dict:
     result = subprocess.run(
         [
             sys.executable, "scripts/evaluate_verdicts.py",
-            "--case-dir", case_dir,
+            "--case-dir", str(case_dir),
+            "--variant", DEFAULT_VARIANT,
+            "--run-label", label,
             "--report-output", report_path,
         ],
         env=env,
@@ -76,17 +88,21 @@ def run_one_case(case: str, label: str, base_url: str, model: str) -> dict:
     ok = result.returncode == 0
     accuracy = None
     if ok:
-        verdicts_path = pathlib.Path(case_dir) / "verdict_only_verdicts.json"
-        # accuracy is embedded in the printed report; re-derive from the
-        # saved artifact + fixture directly so we don't need to parse markdown
-        from evaluation.fixtures import load_true_verdicts
-        from evaluation.verdict_only import build_synthetic_requirements, score_verdicts
-        from evaluation.fixtures import load_true_requirements, load_retrieved_evidence, load_predicted_verdicts
+        artifacts_dir = run_dir(case_dir, DEFAULT_VARIANT, label)
+        verdicts_path = artifacts_dir / "verdict_only_verdicts.json"
+        from evaluation.fixtures import (
+            load_predicted_verdicts,
+            load_retrieved_context,
+            load_true_verdicts,
+        )
+        from evaluation.verdict_only import score_verdicts
         try:
-            true_verdicts = load_true_verdicts(pathlib.Path(case_dir) / "true_verdicts.json")
+            true_verdicts = load_true_verdicts(
+                true_verdicts_path(case_dir, DEFAULT_VARIANT)
+            )
             predicted = load_predicted_verdicts(verdicts_path)
-            retrieved = load_retrieved_evidence(
-                pathlib.Path(case_dir) / "verdict_only_retrieved_evidence.json"
+            retrieved = load_retrieved_context(
+                artifacts_dir / "verdict_only_retrieved_context.json"
             )
             scored = score_verdicts(predicted, true_verdicts, retrieved)
             accuracy = scored.accuracy
@@ -131,7 +147,10 @@ def main():
             if r["ok"] and r["accuracy"] is not None:
                 results.append(r)
                 done_cases.add(r["case"])
-        print(f"Resuming: {len(done_cases)} case(s) already succeeded, skipping them.")
+        print(
+            f"Resuming: {len(done_cases)} case(s) already succeeded, "
+            "skipping them."
+        )
 
     print(f"Running verdict eval (label={args.label}) on: {cases}")
 
@@ -142,20 +161,26 @@ def main():
         print(f"  -> {case} ...", flush=True)
         r = run_one_case(case, args.label, args.base_url, args.model)
         results.append(r)
-        status = f"accuracy={r['accuracy']:.3f}" if r["accuracy"] is not None else "FAILED"
+        if r["accuracy"] is not None:
+            status = f"accuracy={r['accuracy']:.3f}"
+        else:
+            status = "FAILED"
         print(f"     {status}", flush=True)
         if not r["ok"]:
             print(f"     stderr tail:\n{r['stderr_tail']}", flush=True)
-        # Persist after every case, not just at the end -- a vLLM crash
-        # mid-run should only cost the in-flight case's result, not every
-        # case that already finished successfully before it.
         with open(summary_path, "w", encoding="utf-8") as f:
-            json.dump({"label": args.label, "model": args.model, "results": results}, f, indent=2)
+            json.dump(
+                {"label": args.label, "model": args.model, "results": results},
+                f, indent=2,
+            )
 
     ok_results = [r for r in results if r["ok"] and r["accuracy"] is not None]
     if ok_results:
         avg = sum(r["accuracy"] for r in ok_results) / len(ok_results)
-        print(f"\nAverage accuracy across {len(ok_results)}/{len(results)} cases: {avg:.3f}")
+        print(
+            f"\nAverage accuracy across {len(ok_results)}/{len(results)} "
+            f"cases: {avg:.3f}"
+        )
     else:
         print("\nNo successful runs.")
 

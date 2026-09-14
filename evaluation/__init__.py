@@ -7,7 +7,7 @@ from evaluation.fixtures import (
     TrueVerdictsFixture,
     load_predicted_requirements,
     load_predicted_verdicts,
-    load_retrieved_evidence,
+    load_retrieved_context,
     load_true_requirements,
     load_true_verdicts,
 )
@@ -27,7 +27,7 @@ __all__ = [
     "evaluate",
     "load_predicted_requirements",
     "load_predicted_verdicts",
-    "load_retrieved_evidence",
+    "load_retrieved_context",
     "load_true_requirements",
     "load_true_verdicts",
     "render_report_as_markdown",

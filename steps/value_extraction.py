@@ -25,12 +25,12 @@ logger = get_logger(__name__)
 
 
 def _extract_value_from_candidate(
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
     candidate: ExtractedValueCandidate,
     condition: ConditionSpec,
 ) -> ExtractedValue | None:
     source_chunk = find_chunk_by_index(
-        evidence_chunks, candidate.chunk_index
+        context_chunks, candidate.chunk_index
     )
     if source_chunk is None:
         logger.warning(
@@ -51,14 +51,14 @@ def _extract_value_from_candidate(
 
 
 def _extract_values_from_candidates(
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
     candidates: list[ExtractedValueCandidate],
     condition: ConditionSpec,
 ) -> list[ExtractedValue]:
     extracted_values = []
     for candidate in candidates:
         value = _extract_value_from_candidate(
-            evidence_chunks, candidate, condition
+            context_chunks, candidate, condition
         )
         if value is not None:
             extracted_values.append(value)
@@ -66,26 +66,26 @@ def _extract_values_from_candidates(
 
 
 def extract_values(
-    evidence_chunks: list[Chunk],
+    context_chunks: list[Chunk],
     condition: ConditionSpec,
 ) -> list[ExtractedValue]:
-    evidence_text = format_chunks_as_prompt_text(evidence_chunks)
+    context_text = format_chunks_as_prompt_text(context_chunks)
     prompt_text = VALUE_EXTRACTION_PROMPT.format(
         field_name=condition.field_name,
         unit=condition.unit,
-        evidence_text=evidence_text,
+        context_text=context_text,
     )
     structured_model = get_structured_chat_model(
         ExtractedValueCandidateList
     )
     result = invoke_structured(structured_model, prompt_text)
     extracted_values = _extract_values_from_candidates(
-        evidence_chunks, result.candidates, condition
+        context_chunks, result.candidates, condition
     )
     logger.info(
-        "Extracted %d value(s) for field %s from %d evidence chunk(s)",
+        "Extracted %d value(s) for field %s from %d context chunk(s)",
         len(extracted_values),
         condition.field_name,
-        len(evidence_chunks),
+        len(context_chunks),
     )
     return extracted_values

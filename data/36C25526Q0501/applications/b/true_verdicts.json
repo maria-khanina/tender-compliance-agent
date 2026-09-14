@@ -1,0 +1,260 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Precision Power Testing & Diagnostics, LLC) against the same true_requirements.json as data/36C25526Q0501 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Heartland Electrical Testing Services, LLC).",
+    "Error-shape diversity versus the original: amendment_acknowledgment is now a contradiction (claims no amendments, then cites one) rather than a clean compliant no-amendment statement; two_part_proposal_format and technical_capabilities_letter are explicit self-admitted structural/length violations (new failure topics for this tender, not previously exercised); past_performance_contracts_submission is now compliant rather than the original's non_compliant (three fully-detailed contracts instead of two); prior_experience_documentation repeats the same missing-per-year-detail gap as the original application, just with a higher claimed year-count (8 vs 6) -- a bare year-count claim was initially, incorrectly, scored compliant here on an audit pass and has been corrected back to insufficient_information/non_compliant for consistency with the original; subcontractor_technical_experience_submission is now a clean triggered-but-unaddressed violation rather than an ambiguous partial case; electrical_safety_training_certification_submission is now a total omission rather than the original's include-then-contradict pattern, since that contradiction shape is already the canonical example for this exact topic in the original application.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "offer_content_minimum_elements",
+      "description": "Offer must include the solicitation number, the offeror's name/address/phone number, and the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Solicitation number, offeror name/address/phone, and UEI are all stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Solicitation Number: 36C25526Q0501\n\nPrecision Power Testing & Diagnostics, LLC\n7710 Enterprise Court\nColumbia, MO 65202\n(573) 555-4410\nUnique Entity Identifier: PPT4X7QN2K88",
+          "start_char": 139,
+          "end_char": 312
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Precision Power Testing & Diagnostics, LLC agrees to the extent of all\nterms, conditions, and provisions included in the solicitation and any\namendments.",
+          "start_char": 314,
+          "end_char": 467
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states early on that no amendments have been received, but later references 'Amendment 0001's revised pricing instructions' as the basis for the Price Schedule -- the two statements directly conflict on whether an amendment exists.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "No amendments to this solicitation have been received as of the date of\nthis quote.",
+          "start_char": 469,
+          "end_char": 552
+        },
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Per Amendment 0001's revised pricing instructions, our\nPrice Schedule reflects the updated CLIN structure.",
+          "start_char": 726,
+          "end_char": 832
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in the unit price, amount, and grand total for CLIN 0001 (one-year, standalone triennial electrical testing/maintenance/inspection/calibration of the Truman VA electrical power distribution system).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "CLIN 0001 unit price and grand total are both filled in and match.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing,\nInspection, and/or Calibration of the Electrical Power Distribution\nSystem at Truman VA, Columbia, MO: $61,750.00\nGrand Total: $61,750.00",
+          "start_char": 850,
+          "end_char": 1051
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SDVOSB/size-standard status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "security_sanctions_representations",
+      "description": "By submitting its offer the offeror makes several standing legal representations/certifications triggered automatically by submission, including that it has conducted a reasonable inquiry and does not propose to use products/sources prohibited by an applicable FASCSA order, and that it does not conduct restricted business operations in Sudan.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- these are automatic legal representations triggered by submission, not something the text can confirm.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Questions and quotes are due by 10:00 a.m. central time on 9/15/26, submitted electronically via email to James.horne@va.gov.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission, not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "two_part_proposal_format",
+      "description": "The proposal must be prepared in two parts: a price response (signed SF-1449 plus completed price schedule) and a non-price response (addressing the non-price factors).",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly combines the price response and non-price response into one section 'for the Contracting Officer's convenience' rather than preparing them as two separate parts.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Price Response and Non-Price Response combined below for the\nContracting Officer's convenience:",
+          "start_char": 554,
+          "end_char": 649
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_capabilities_letter",
+      "description": "Offer must include a technical capabilities letter, not exceeding five pages, describing the offeror's technical approach, methodology, and technique for carrying out the Performance Work Statement.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly describes its own technical capabilities letter as 8 pages, exceeding the 5-page limit the requirement sets.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "This comprehensive 8-page technical capabilities letter describes our\napproach in full:",
+          "start_char": 1053,
+          "end_char": 1140
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "prior_experience_documentation",
+      "description": "Offer must include at least five years of prior experience relevant to this solicitation's electrical testing/maintenance work, with a detailed description per year covering contract number, estimated annual dollar value, description of services and the offeror's role, contract start/completion dates, and current customer contact information.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application states eight continuous years of relevant prior experience, exceeding the 5-year minimum, but -- like the original application's version of this same gap -- never provides the required detailed per-year breakdown (contract number, annual dollar value, description, dates, customer contact) for any year; a bare year-count claim does not satisfy a requirement that specifically demands per-year detail.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Precision Power Testing & Diagnostics has performed electrical power\ndistribution testing and maintenance services for healthcare, federal,\nand industrial clients continuously for the past eight years.",
+          "start_char": 1447,
+          "end_char": 1648
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_contracts_submission",
+      "description": "Offer must include at least three previously awarded and completed Federal/State/Local government contracts involving similar work, each with contract name/ID, awarding agency, award date/amount, scope description, and a point of contact.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application lists three previously awarded and completed government contracts with contract numbers, dates, values, scope, and points of contact.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "1. Contract: Boone Hospital Center Electrical System Testing, Contract\n   No. BHC-2023-0219, awarded by Boone Hospital Center, awarded\n   05/2023, contract value $54,000. Scope: annual electrical\n   distribution testing and maintenance. POC: Angela Brooks, Facilities\n   Director, (573) 555-8820, angela.brooks@boonehealth.org.\n2. Contract: Whiteman Air Force Base Substation Testing, Contract No.\n   FA4600-21-C-0091, awarded by U.S. Air Force, awarded 04/2021,\n   contract value $73,200. Scope: triennial switchgear and transformer\n   testing. POC: Lt. Col. David Ruiz, Facility Manager, (660) 555-2214,\n   david.ruiz@us.af.mil.\n3. Contract: Jefferson City Housing Authority Electrical Testing,\n   Contract No. JCHA-2020-0057, awarded by Jefferson City Housing\n   Authority, awarded 02/2020, contract value $28,900. Scope: annual\n   electrical distribution testing. POC: Renee Osei, Maintenance\n   Supervisor, (573) 555-6644, renee.osei@jcha.org.",
+          "start_char": 1678,
+          "end_char": 2626
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_experience_examples_submission",
+      "description": "Offer must include at least two examples of the offeror's own technical experience with contracts involving technical requirements similar to this solicitation, each with contract name/location, performance period, percentage self-performed, and scope description under NAICS 221122.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application gives two technical experience examples, but the second is described only vaguely ('generally comparable in scope') without confirming it meets the same-NAICS/technically-similar substantiation the first example provides -- one of the two examples is not clearly established.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "1. Fitzsimons Federal Campus, Aurora, CO. Performance period:\n   03/2022-06/2022. 100% of labor self-performed by Precision\n   employees. Scope: NETA-standard testing of switchgear, transformers,\n   and circuit breakers as prime contractor under NAICS 221122,\n   technically similar to the work under this solicitation.",
+          "start_char": 2659,
+          "end_char": 2978
+        },
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "A regional medical center electrical testing engagement completed in\n   2021, generally comparable in scope to this solicitation.",
+          "start_char": 2982,
+          "end_char": 3111
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontractor_technical_experience_submission",
+      "description": "If subcontractors will be used, the offer must include at least two examples of the subcontractors' technical experience with similar contracts, in the same format as the offeror's own technical experience examples.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states a subcontractor (ThermoScan Diagnostics) will be used for part of the scope, triggering the requirement, but provides no technical experience examples for that subcontractor at all.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/applications/b/application.txt",
+          "quote": "Our proposal includes a subcontracted infrared thermography\nsub-consultant, ThermoScan Diagnostics, for approximately 15% of the\ntesting scope.",
+          "start_char": 3113,
+          "end_char": 3256
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "electrical_safety_training_certification_submission",
+      "description": "Offer must include electrical safety training certifications (OSHA 29 CFR 1910 Subpart S and NFPA 70E) submitted with the proposal, or, if unavailable, a written employer certification of having met this requirement submitted with the proposal.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application never mentions electrical safety training or certifications anywhere.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "contractor_certification_qualifications",
+      "description": "Contractor must be currently certified as a NETA Certified Technician or via NICET, and have completed OSHA's approved 10-hour construction safety training.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine NETA/NICET certification and tenure status cannot be confirmed from application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "contractor_experience_tenure",
+      "description": "Contractor must have technical training and a minimum of five continuous years of work experience in maintenance, inspection, and testing of low and medium voltage electrical power distribution systems in healthcare, industrial, educational, and commercial facilities.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine minimum continuous work-experience tenure cannot be confirmed from application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

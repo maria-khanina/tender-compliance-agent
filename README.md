@@ -171,8 +171,8 @@ already-completed stages.
 ```
 python scripts/run_pipeline.py \
     --requirements data/140p6426q0127_piro_handrail/tender.txt \
-    --application data/140p6426q0127_piro_handrail/application.txt \
-    --output data/140p6426q0127_piro_handrail/predicted.md
+    --application data/140p6426q0127_piro_handrail/applications/a/application.txt \
+    --output data/140p6426q0127_piro_handrail/applications/a/runs/gemini/predicted.md
 ```
 
 `--requirements` and `--application` each take one or more file paths
@@ -183,20 +183,22 @@ main solicitation plus separate attachments:
 python scripts/run_pipeline.py \
     --requirements data/36C26226Q1384/RFQ.docx \
                    data/36C26226Q1384/AttachmentB.docx \
-    --application data/36C26226Q1384/application.txt \
-    --output data/36C26226Q1384/predicted.md
+    --application data/36C26226Q1384/applications/a/application.txt \
+    --output data/36C26226Q1384/applications/a/runs/gemini/predicted.md
 ```
 
-Point `--output` inside the case's own directory, next to
-`true_requirements.json`/`true_verdicts.json` — keeps a
-run's output paired with the fixtures it should be checked against,
-instead of scattered in the project root. Besides the Markdown
-report, this writes three underlying JSON files next to it, named to
-mirror the `true_*.json` fixtures for easy comparison:
+Point `--output` under the application variant's own
+`applications/<variant>/runs/<run-label>/` directory (see
+`case_layout.py`) — keeps a run's output paired with the fixtures it
+should be checked against and separated from any other run-label's
+results for the same variant, instead of scattered in the project
+root or overwriting a previous run. Besides the Markdown report, this
+writes three underlying JSON files next to it, named to mirror the
+`true_*.json` fixtures for easy comparison:
 `predicted_requirements.json` (the deduplicated `Requirement` list),
 `predicted_verdicts.json` (the `Verdict` list), and
-`predicted_retrieved_evidence.json` (per requirement, the full set of
-application chunks `retrieve_evidence_chunks` handed to the verdict
+`predicted_retrieved_context.json` (per requirement, the full set of
+application chunks `retrieve_context_chunks` handed to the verdict
 step *before* it chose what to cite — the artifact needed to tell
 apart "retrieval never surfaced the evidence" from "it saw the
 evidence and didn't act on it," see `NOTES.md`). Application chunks
@@ -248,6 +250,12 @@ fixture files, named after the tender's solicitation number.
 python scripts/evaluate.py --case-dir data/140p6426q0127_piro_handrail
 ```
 
+`--variant` (default `a`, the case's canonical application) and
+`--run-label` (default `gemini`) select which
+`applications/<variant>/runs/<run-label>/predicted_*.json` to
+evaluate; pass them explicitly to evaluate a `b`/`c` variant or a
+differently-labeled run (e.g. an SFT model's own run-label).
+
 Compares a case directory's `predicted_*.json` (from `run_pipeline.py`)
 against its `true_*.json` fixtures and prints a Markdown report. The
 report opens with a "Summary metrics" section — a fenced JSON block
@@ -273,13 +281,12 @@ matrix (rendered as a table over the four verdict labels, with a note
 explaining any all-zero row -- usually a true topic that was never
 extracted or never got a verdict) plus false-compliant/false-issue
 rates (each entry includes the requirement text, cited evidence, and
-the model's reasoning), and evidence recall (whether `predicted_retrieved_evidence.json` actually
+the model's reasoning), and evidence recall (whether `predicted_retrieved_context.json` actually
 contained the evidence `true_verdicts.json` says it should have — the
 artifact needed to diagnose retrieval-vs-model failures, see
 `NOTES.md`). Pass `--report-output <path>` to write the report to a
-file instead of stdout, or `--output-prefix` if the run used something
-other than `predicted` for `run_pipeline.py --output`'s stem. The
-matching/metrics logic lives in `evaluation/matching.py`,
+file instead of stdout. The matching/metrics logic lives in
+`evaluation/matching.py`,
 `evaluation/requirement_metrics.py`, `evaluation/verdict_metrics.py`
 and `evaluation/evidence_metrics.py`, orchestrated by
 `evaluation/orchestrator.py` and rendered by `evaluation/rendering.py`;
@@ -295,7 +302,8 @@ step by itself:
 python scripts/evaluate_verdicts.py --case-dir data/140p6426q0127_piro_handrail
 ```
 
-This builds a synthetic `Requirement` directly from each
+Same `--variant`/`--run-label` arguments as `scripts/evaluate.py`
+above. This builds a synthetic `Requirement` directly from each
 `true_requirements.json` entry (its own description, citation, and
 `is_mandatory`/`is_text_verifiable` flags — no extraction involved),
 runs real evidence retrieval and verdict generation against
@@ -317,14 +325,16 @@ To compare metrics across every evaluated case at once:
 python scripts/aggregate_metrics.py --data-dir data --output data/metrics_summary.md
 ```
 
-Scans every subdirectory of `--data-dir` that has a
-`true_requirements.json`, re-runs `evaluate()` (and, where a
-`verdict_only_verdicts.json` artifact exists, the verdict-only
-scoring) on each case that has already been run, and writes one
-Markdown table — one row per tender plus a **mean** row averaging
-each column over the cases where that metric applies (`n=` shows how
-many). Cases with no `predicted_requirements.json` yet are listed as
-skipped rather than silently dropped. Reuses
+Same `--variant`/`--run-label` arguments (defaults `a`/`gemini`),
+applied across every case at once. Scans every subdirectory of
+`--data-dir` that has a `true_requirements.json`, re-runs `evaluate()`
+(and, where a `verdict_only_verdicts.json` artifact exists under that
+variant/run-label, the verdict-only scoring) on each case that has
+already been run, and writes one Markdown table — one row per tender
+plus a **mean** row averaging each column over the cases where that
+metric applies (`n=` shows how many). Cases with no
+`predicted_requirements.json` yet for that variant/run-label are
+listed as skipped rather than silently dropped. Reuses
 `evaluation.build_summary_metrics`, the same function that renders
 each case's own "Summary metrics" JSON block, so the two never drift
 apart.

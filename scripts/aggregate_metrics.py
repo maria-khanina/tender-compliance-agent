@@ -17,7 +17,8 @@ def _parse_arguments() -> argparse.Namespace:
         )
     )
     parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--output-prefix", default="predicted")
+    parser.add_argument("--variant", default="a")
+    parser.add_argument("--run-label", default="gemini")
     parser.add_argument("--output")
     return parser.parse_args()
 
@@ -42,12 +43,13 @@ def main() -> None:
         evaluate,
         load_predicted_requirements,
         load_predicted_verdicts,
-        load_retrieved_evidence,
+        load_retrieved_context,
         load_true_requirements,
         load_true_verdicts,
     )
     from evaluation.verdict_only import score_verdicts
-    from schemas import RetrievedEvidenceRecord
+    from schemas import RetrievedContextRecord
+    from case_layout import run_dir, true_verdicts_path
 
     def find_case_dirs(data_dir: pathlib.Path) -> list[pathlib.Path]:
         case_dirs = []
@@ -59,56 +61,56 @@ def main() -> None:
             case_dirs.append(path)
         return case_dirs
 
-    def compute_verdict_only_result(case_dir: pathlib.Path):
-        verdicts_artifact_path = case_dir / "verdict_only_verdicts.json"
+    def compute_verdict_only_result(artifacts_dir: pathlib.Path, verdicts_fixture):
+        verdicts_artifact_path = artifacts_dir / "verdict_only_verdicts.json"
         if not verdicts_artifact_path.exists():
             return None
-        verdicts_fixture = load_true_verdicts(
-            case_dir / "true_verdicts.json"
-        )
         verdict_only_predicted = load_predicted_verdicts(
             verdicts_artifact_path
         )
-        retrieved_evidence_path = (
-            case_dir / "verdict_only_retrieved_evidence.json"
+        retrieved_context_path = (
+            artifacts_dir / "verdict_only_retrieved_context.json"
         )
-        retrieved_evidence: list[RetrievedEvidenceRecord] = []
-        if retrieved_evidence_path.exists():
-            retrieved_evidence = load_retrieved_evidence(
-                retrieved_evidence_path
+        retrieved_context: list[RetrievedContextRecord] = []
+        if retrieved_context_path.exists():
+            retrieved_context = load_retrieved_context(
+                retrieved_context_path
             )
         return score_verdicts(
-            verdict_only_predicted, verdicts_fixture, retrieved_evidence
+            verdict_only_predicted, verdicts_fixture, retrieved_context
         )
 
     def metrics_for_case(
         case_dir: pathlib.Path,
-        output_prefix: str,
+        variant: str,
+        run_label: str,
     ) -> dict[str, float | int | None] | None:
-        prefix = output_prefix
-        predicted_requirements_path = case_dir / f"{prefix}_requirements.json"
+        artifacts_dir = run_dir(case_dir, variant, run_label)
+        predicted_requirements_path = artifacts_dir / "predicted_requirements.json"
         if not predicted_requirements_path.exists():
             return None
         requirements_fixture = load_true_requirements(
             case_dir / "true_requirements.json"
         )
         verdicts_fixture = load_true_verdicts(
-            case_dir / "true_verdicts.json"
+            true_verdicts_path(case_dir, variant)
         )
         predicted_requirements = load_predicted_requirements(
             predicted_requirements_path
         )
         predicted_verdicts = load_predicted_verdicts(
-            case_dir / f"{prefix}_verdicts.json"
+            artifacts_dir / "predicted_verdicts.json"
         )
-        retrieved_evidence = load_retrieved_evidence(
-            case_dir / f"{prefix}_retrieved_evidence.json"
+        retrieved_context = load_retrieved_context(
+            artifacts_dir / "predicted_retrieved_context.json"
         )
         report = evaluate(
             requirements_fixture, verdicts_fixture, predicted_requirements,
-            predicted_verdicts, retrieved_evidence,
+            predicted_verdicts, retrieved_context,
         )
-        verdict_only_result = compute_verdict_only_result(case_dir)
+        verdict_only_result = compute_verdict_only_result(
+            artifacts_dir, verdicts_fixture
+        )
         return build_summary_metrics(
             report,
             verdict_only_accuracy=(
@@ -171,7 +173,9 @@ def main() -> None:
     rows = []
     skipped = []
     for case_dir in find_case_dirs(data_dir):
-        metrics = metrics_for_case(case_dir, arguments.output_prefix)
+        metrics = metrics_for_case(
+            case_dir, arguments.variant, arguments.run_label
+        )
         if metrics is None:
             skipped.append(case_dir.name)
             continue
@@ -182,7 +186,8 @@ def main() -> None:
     if skipped:
         table_text += (
             "\nSkipped (no "
-            f"`{arguments.output_prefix}_requirements.json` yet): "
+            f"`applications/{arguments.variant}/runs/{arguments.run_label}/"
+            "predicted_requirements.json` yet): "
             + ", ".join(skipped) + "\n"
         )
 

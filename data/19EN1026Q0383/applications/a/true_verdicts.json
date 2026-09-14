@@ -1,0 +1,277 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: quote_due_date and submission_format_and_channel, since both are is_text_verifiable: false in true_requirements.json.",
+    "The application deliberately varies its error types: compliant (8 topics), non_compliant across three shapes -- a requirement omitted entirely (SAM registration), a new amendment-added deliverable overlooked (20-day menu plan), and a deliverable explicitly deferred past the proposal deadline despite being marked 'provide as part of proposal response' (Risk Management Plan) -- insufficient_information for two shapes (a conditional item left unaddressed by silence; a 'list of clients' answered with only one reference), and one contradictory claim (holding all required local permits vs. a specific required permit still pending review).",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "Two acceptable_verdicts lists were broadened after a first real pipeline run: sam_registration_proof now also accepts compliant -- since April 2022, UEI numbers are issued exclusively through SAM.gov registration, so a bare UEI number is genuine (if indirect) evidence of SAM registration, a defensible real-world reading the model applied. past_performance_references now also accepts non_compliant -- the model read the requirement's plural 'list of clients' literally and concluded a single reference does not satisfy it, a stricter but defensible reading than insufficient_information.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "Offer must state the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the solicitation number in the cover block.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Solicitation Number: 19EN1026Q0383",
+          "start_char": 484,
+          "end_char": 518
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "offeror_contact_info_stated",
+      "description": "Offer must state the name, address, and telephone number of the offeror.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the offeror's name, address, and telephone number.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Offeror: Baltic Table Catering OÜ, Sepapaja 6, 15551 Tallinn, Estonia\nTelephone: +372 5511 2280",
+          "start_char": 519,
+          "end_char": 614
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_eft_indicator_stated",
+      "description": "Offer must state the offeror's Unique Entity Identifier (UEI) and, if applicable, its Electronic Funds Transfer (EFT) indicator.",
+      "acceptable_verdicts": [
+        "compliant",
+        "insufficient_information"
+      ],
+      "rationale": "Application states the UEI, but never mentions an EFT indicator at all; since the EFT indicator is conditional ('if applicable'), silence alone does not confirm whether it was owed and omitted.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Unique Entity Identifier (UEI): EK7Q4TPX9RM2",
+          "start_char": 615,
+          "end_char": 659
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions in the solicitation and any amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions of the solicitation and its amendments.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Baltic Table Catering OÜ hereby submits the following quotation in response to\nSolicitation 19EN1026Q0383, in agreement with all terms, conditions, and provisions\nincluded in the solicitation and its amendments.",
+          "start_char": 176,
+          "end_char": 387
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "signed_dated_offer_submission",
+      "description": "The offer must be signed and dated.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a signature block with a printed name, title, signature, and filled-in date.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Signature: /s/ Kadri Laine\nDate: 09-16-2026",
+          "start_char": 2666,
+          "end_char": 2709
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sf1449_section1_completion",
+      "description": "Offer must consist of a completed solicitation: the SF-1449 cover page (blocks 12, 17, 19-24, and 30 as appropriate) and Section 1 filled out.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the SF-1449 blocks and Section 1 are completed and enclosed.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+          "start_char": 661,
+          "end_char": 791
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "project_manager_english_liaison",
+      "description": "Offer must name a Project Manager (or other liaison to the U.S. Embassy/Consulate) who understands written and spoken English.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application names a Project Manager who is fluent in written and spoken English.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Project Manager: Our Project Manager and liaison to the U.S. Embassy/Consulate is\nKadri Laine, who is fully fluent in written and spoken English and will serve as the\nsingle point of contact for all contract communications.",
+          "start_char": 813,
+          "end_char": 1036
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "estonia_business_registration_evidence",
+      "description": "Offer must include evidence that the offeror operates an established business with a permanent address and telephone listing in Estonia, in the form of a business registry outtake or a link to the company's registry page.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the business has operated with a permanent Tallinn address since 2019 and provides a link to its Estonian business registry page.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Business Registration: Baltic Table Catering OÜ has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2019. A link to\nour registry page is provided: https://ariregister.rik.ee/eng/company/baltic-table-catering-ou",
+          "start_char": 1038,
+          "end_char": 1300
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "sam_registration_proof",
+      "description": "Offeror must provide proof of SAM registration, including the SAM UEI number.",
+      "acceptable_verdicts": [
+        "non_compliant",
+        "compliant"
+      ],
+      "rationale": "Application never mentions SAM registration or a SAM UEI number at all -- the requirement is omitted entirely.",
+      "evidence": [],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "past_performance_references",
+      "description": "Offeror must list clients from the past two years demonstrating relevant prior experience, with contract dates, places of performance, contract value, and contact names/phone/email; if no comparable Estonia experience exists, international experience must be provided instead. References may be contacted directly by the Government about quality, contract compliance, management effectiveness, cooperation, and business integrity.",
+      "acceptable_verdicts": [
+        "insufficient_information",
+        "non_compliant"
+      ],
+      "rationale": "Application provides only a single past-performance reference (Embassy of Finland, 2024-2025) with full contract details, but the requirement asks for a list of clients demonstrating prior experience -- a single reference falls short of a 'list', so it cannot be confirmed the full extent of relevant experience was disclosed.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Reference: Contract with the Embassy of Finland in Tallinn, 2024-2025, catering and\ndelivery services, contract value EUR 42,000, point of contact Ms. Liina Saar,\nAdministrative Officer, liina.saar@formin.fi, +372 5522 7710.",
+          "start_char": 1818,
+          "end_char": 2042
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "capability_evidence_personnel_equipment_financial",
+      "description": "Offeror must provide evidence it can supply the necessary personnel, equipment, and financial resources to perform the work, which may take the form of an annual fiscal report or a link to one.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes staffing and vehicle capacity and provides a link to its audited annual report.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Capability: Baltic Table Catering OÜ has 14 full-time kitchen and delivery staff, two\ndelivery vehicles, and audited annual financial statements. A link to our most recent\nannual report is provided: https://balticatering.ee/reports/2025-annual-report.pdf",
+          "start_char": 1302,
+          "end_char": 1556
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "local_license_permit_conditional",
+      "description": "If this service requires a special license or permit under local law, the offeror must address its plan to obtain one, or provide a copy if already held.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application first states it already holds all locally required food handling and health inspection permits with a copy enclosed, but later admits a specific required health inspection permit is still pending review -- the two statements directly conflict on whether the required permits are actually in hand.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Licenses and Permits: Baltic Table Catering OÜ already holds all locally required food\nhandling and health inspection permits for its kitchen facility; a copy of our current\nHealth Board (Terviseamet) permit is enclosed with this quotation.",
+          "start_char": 1558,
+          "end_char": 1798
+        },
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "Our current Health Board permit covers general food handling; we have separately\nsubmitted an application for the specific health inspection permit required for\nembassy-adjacent delivery routes, which is still pending review as of this quotation.",
+          "start_char": 2341,
+          "end_char": 2587
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "menu_plan_sample_20day",
+      "description": "Per Amendment 0001, the offeror must provide a sample 20-day menu plan together with its offer.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application never provides a sample 20-day menu plan -- the requirement is omitted entirely.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "risk_management_plan_with_proposal",
+      "description": "Per Amendment 0001's deliverables table, the Risk Management Plan (covering risk management, mitigation, and quality control/assurance) must be provided as part of the proposal response, and updated/maintained throughout performance -- unlike the table's other deliverables, which are all due only after award.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly defers the Risk Management Plan to shortly after contract award, rather than providing it as part of the proposal response as required.",
+      "evidence": [
+        {
+          "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+          "quote": "A detailed Risk Management Plan covering risk identification, mitigation strategies, and\nour quality control and assurance procedures will be finalized and provided to the COR\nshortly after contract award, once the transition schedule is confirmed.",
+          "start_char": 2061,
+          "end_char": 2309
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Quotations are due September 18, 2026, 17:00 local time.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- the due date is a fact about the submission process, not something the application's content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_format_and_channel",
+      "description": "Quotes must be submitted electronically to TallinnGSOProcurement@state.gov in MS-Word 2007/2010, MS-Excel 2007/2010, or Adobe PDF format, with each email under 30MB (split across multiple emails if larger).",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- which channel/format was actually used to submit the quote is a fact about the submission process, not something the application's own content addresses.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

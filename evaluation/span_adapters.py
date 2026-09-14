@@ -14,7 +14,7 @@ from evaluation.matching import (
     build_match_groups,
     find_overlapping_pairs,
 )
-from schemas import Chunk, Requirement, RetrievedEvidenceRecord
+from schemas import Chunk, Requirement, RetrievedContextRecord
 
 
 def _spans_from_source(node_id: str, source: TrueSource) -> list[SpanRef]:
@@ -168,11 +168,11 @@ def _has_evidence_overlap(
 
 
 def retrieved_by_requirement(
-    retrieved_evidence: list[RetrievedEvidenceRecord],
+    retrieved_context: list[RetrievedContextRecord],
 ) -> dict[str, list[Chunk]]:
     by_requirement = {}
-    for record in retrieved_evidence:
-        by_requirement[record.requirement_id] = record.evidence_chunks
+    for record in retrieved_context:
+        by_requirement[record.requirement_id] = record.retrieved_context
     return by_requirement
 
 

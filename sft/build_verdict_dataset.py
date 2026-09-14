@@ -1,36 +1,19 @@
 """Build the verdict-generation SFT dataset (JSONL) from every case's
-fixtures. Reuses the real pipeline's own retrieval step
-(steps.evidence_retrieval.retrieve_evidence_chunks) so the training prompt's
-evidence_text matches the distribution the model will see at inference time
--- it does NOT reuse the fixture's own evidence quotes as the "context",
-only as the target answer's citations.
-
-Indexes into Qdrant under a distinct "sft_" prefix (never the plain
-case-name collection the real pipeline/evaluate_verdicts.py uses) so this
-never collides with a concurrent session evaluating the same case.
-
-Discovers every (application*.txt, true_verdicts*.json) pair in a case dir
--- not just the canonical application.txt/true_verdicts.json -- so
-additional synthetic applications added by other sessions are picked up
-automatically on re-run.
+fixtures. Uses the real retrieval step for context (not the fixture's own
+evidence quotes) so the prompt matches inference-time distribution; gold
+evidence quotes are only used for the target's citations. Indexes under a
+"sft_" Qdrant prefix to avoid colliding with concurrent sessions. Discovers
+every application*/true_verdicts* variant pair per case, not just canonical.
 """
 import glob
 import json
 import os
 import pathlib
-import re
 import sys
 
-sys.path.insert(0, r"C:\Users\Grani\Desktop\lapka\maria.khanina\NLP\agents\tender_agent")
-os.chdir(r"C:\Users\Grani\Desktop\lapka\maria.khanina\NLP\agents\tender_agent")
-
-from backends.vectorstore import index_chunks
-from evaluation.fixtures import load_true_requirements, load_true_verdicts
-from prompts import VERDICT_GENERATION_PROMPT
-from schemas import EvidenceRole
-from steps.chunking import split_application_document
-from steps.evidence_retrieval import retrieve_evidence_chunks
-from steps.text_matching import find_chunk_by_index, format_chunks_as_prompt_text
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+os.chdir(PROJECT_ROOT)
 
 SPLIT_CONFIG = json.load(open("sft/split.json", encoding="utf-8"))
 TEST_CASES = set(SPLIT_CONFIG["test"])
@@ -47,23 +30,24 @@ def split_for_case(case_name: str) -> str:
 
 def discover_variants(case_dir: str) -> list[tuple[str, str, str]]:
     """Return (variant_label, application_path, true_verdicts_path)."""
+    from case_layout import application_path as case_application_path
+    from case_layout import discover_variants as discover_case_variants
+    from case_layout import true_verdicts_path as case_true_verdicts_path
+
+    case_path = pathlib.Path(case_dir)
     variants = []
-    canonical_app = os.path.join(case_dir, "application.txt")
-    canonical_verd = os.path.join(case_dir, "true_verdicts.json")
-    if os.path.exists(canonical_app) and os.path.exists(canonical_verd):
-        variants.append(("canonical", canonical_app, canonical_verd))
-    for verd_path in sorted(glob.glob(os.path.join(case_dir, "true_verdicts_*.json"))):
-        m = re.search(r"true_verdicts_([A-Za-z0-9]+)\.json$", verd_path)
-        if not m:
-            continue
-        suffix = m.group(1)
-        app_path = os.path.join(case_dir, f"application_{suffix}.txt")
-        if os.path.exists(app_path):
-            variants.append((suffix, app_path, verd_path))
+    for variant in discover_case_variants(case_path):
+        variants.append((
+            variant,
+            case_application_path(case_path, variant).as_posix(),
+            str(case_true_verdicts_path(case_path, variant)),
+        ))
     return variants
 
 
 def infer_role(primary_verdict: str) -> str:
+    from schemas import EvidenceRole
+
     if primary_verdict == "compliant":
         return EvidenceRole.SUPPORTS.value
     if primary_verdict == "non_compliant":
@@ -96,6 +80,13 @@ def map_evidence_to_chunks(fixture_evidence, retrieved_chunks, role: str):
 
 
 def build_examples_for_case(case_dir: str) -> list[dict]:
+    from backends.vectorstore import index_chunks
+    from evaluation.fixtures import load_true_requirements, load_true_verdicts
+    from prompts import VERDICT_GENERATION_PROMPT
+    from steps.chunking import split_application_document
+    from steps.evidence_retrieval import retrieve_context_chunks
+    from steps.text_matching import format_chunks_as_prompt_text
+
     case_name = os.path.basename(case_dir)
     req_path = os.path.join(case_dir, "true_requirements.json")
     if not os.path.exists(req_path):
@@ -110,7 +101,9 @@ def build_examples_for_case(case_dir: str) -> list[dict]:
     for variant, app_path, verd_path in discover_variants(case_dir):
         verdicts_fixture = load_true_verdicts(pathlib.Path(verd_path))
         application_text = open(app_path, encoding="utf-8").read()
-        application_chunks = split_application_document(application_text, app_path)
+        application_chunks = split_application_document(
+            application_text, app_path
+        )
         collection_name = f"sft_{case_name}_{variant}"
         index_chunks(collection_name, application_chunks)
 
@@ -120,13 +113,13 @@ def build_examples_for_case(case_dir: str) -> list[dict]:
             requirement_text = description_by_topic.get(v.topic_id)
             if requirement_text is None:
                 continue
-            retrieved_chunks = retrieve_evidence_chunks(
+            retrieved_chunks = retrieve_context_chunks(
                 requirement_text, collection_name
             )
-            evidence_text = format_chunks_as_prompt_text(retrieved_chunks)
+            context_text = format_chunks_as_prompt_text(retrieved_chunks)
             prompt_text = VERDICT_GENERATION_PROMPT.format(
                 requirement_text=requirement_text,
-                evidence_text=evidence_text,
+                context_text=context_text,
             )
             role = infer_role(v.primary_verdict)
             evidence_quotes, unmatched = map_evidence_to_chunks(
@@ -156,7 +149,8 @@ def build_examples_for_case(case_dir: str) -> list[dict]:
 def main():
     case_dirs = sorted(
         d for d in glob.glob("data/*")
-        if os.path.isdir(d) and os.path.exists(os.path.join(d, "true_requirements.json"))
+        if os.path.isdir(d)
+        and os.path.exists(os.path.join(d, "true_requirements.json"))
     )
     all_examples = []
     for case_dir in case_dirs:

@@ -1,0 +1,674 @@
+[
+  {
+    "requirement_id": "brand_name_only_no_alternates",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "item_identification_completeness",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "oem_new_no_gray_market_certification",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "pricing_inclusive_of_all_charges",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "exceptions_conditions_disclosure",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "quote_validity_through_sept30",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "unique_entity_identifier_annotation",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "authorized_reseller_distributor_evidence",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      }
+    ]
+  },
+  {
+    "requirement_id": "cpu_processor_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "liquid_cooling_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "ram_capacity_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "raid5_eight_ssd_storage_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "gpu_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "raid_card_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "power_supply_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "operating_system_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "warranty_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "nvme_ssd_operating_system_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "nvme_ssd_temporary_files_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "nvme_ssd_processing_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "nvme_ssd_database_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "hot_swap_bay_35_three_drives_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "hot_swap_bay_25_four_trays_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "hot_swap_bay_25_eight_trays_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "usb_2_0_ten_port_hub_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "usb_3_0_four_port_hub_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_size_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_open_525_bays_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_fan_size_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_pci_expansion_slots_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_aluminum_thickness_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  },
+  {
+    "requirement_id": "chassis_finish_spec",
+    "retrieved_context": [
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 1,
+        "text": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.\n\nConfiguration furnished per unit (all 15 units identical):\n- Processor: Intel Core Ultra 9 285K, liquid-cooled\n- Memory: 128GB DDR5 system memory\n- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads\n- Data storage array: Eight (8) 1TB SSDs configured in RAID 5\n- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card\n- RAID controller: ARC-1883i RAID Card\n- Expansion: two front-panel USB hubs for high-speed peripheral connectivity\n- Power: One (1) 1700 Watt Power Supply Unit\n- Operating System: Microsoft Windows 11 Pro 64-bit\n- Warranty: One (1) year manufacturer warranty, extendable at additional cost\n\nGraphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.\n\nUnit Price: $17,733.33\nExtended Price (15 units): $266,000.00\n\nDelivery: 30 calendar days after receipt of order. FOB Destination.\n\nPlease let us know if you require any additional information.\n\nSincerely,\nDenise Okafor\nContracts Manager\nMeridian Forensic Solutions, LLC",
+        "start_char": 1065,
+        "end_char": 2437
+      },
+      {
+        "document_source": "application",
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "chunk_index": 0,
+        "text": "From: quotes@meridianforensic.com\nTo: rtiggle@fbi.gov\nSubject: Quote for RFQ SHOP-PR-26-002435 - Sumuri Talino Workstations\n\nDear Mr. Tiggle,\n\nMeridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.\n\nVendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171\n\nItem Offered:\nSUMURI TALINO Intel Workstation, Qty 15.\n\nWe take no exceptions, conditions, or assumptions to any requirement of this RFQ.\n\nQuote Validity: This quote remains valid for 30 days from the date of this letter.\n\nCertifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.\n\nAuthorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 0,
+        "end_char": 1263
+      }
+    ]
+  }
+]

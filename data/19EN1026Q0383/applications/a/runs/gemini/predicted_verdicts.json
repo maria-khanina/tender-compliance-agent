@@ -1,0 +1,503 @@
+[
+  {
+    "requirement_id": "2271ec16-5aae-4e25-a0d1-066e096a2f13",
+    "requirement_text": "Proposals must be in English",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "RE: Solicitation 19EN1026Q0383 -- Commercial Cook Services, Marine Security Guard\nResidence, U.S. Embassy Tallinn",
+        "start_char": 61,
+        "end_char": 174,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ hereby submits the following quotation in response to\nSolicitation 19EN1026Q0383, in agreement with all terms, conditions, and provisions\nincluded in the solicitation and its amendments.",
+        "start_char": 176,
+        "end_char": 387,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The entire proposal is written clearly in English, fulfilling the requirement that proposals must be in English."
+  },
+  {
+    "requirement_id": "146cd98a-7a12-4884-8b93-bf1b399cb36f",
+    "requirement_text": "Incomplete proposals will not be accepted.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 661,
+        "end_char": 791,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "A link to our most recent\nannual report is provided: https://balticatering.ee/reports/2025-annual-report.pdf",
+        "start_char": 1448,
+        "end_char": 1556,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "a copy of our current\nHealth Board (Terviseamet) permit is enclosed with this quotation.",
+        "start_char": 1710,
+        "end_char": 1798,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that incomplete proposals will not be accepted. The provided excerpts show that the bidder has completed the necessary sections and blocks of the solicitation, provided required documentation such as permits and annual report links, and submitted a complete quotation, satisfying the completeness requirement."
+  },
+  {
+    "requirement_id": "2680130f-4498-4e68-a22b-ace9196802c5",
+    "requirement_text": "Contractor will utilize its own facilities for the preparation, provide individually packed meals of food and deliver them to the residence.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ already holds all locally required food\nhandling and health inspection permits for its kitchen facility; a copy of our current\nHealth Board (Terviseamet) permit is enclosed with this quotation.",
+        "start_char": 1580,
+        "end_char": 1798,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application confirms that it has its own kitchen facility with all required permits and mentions staff and delivery capabilities, satisfying the requirement to utilize its own facilities for preparation, provide individually packed meals, and deliver them to the residence."
+  },
+  {
+    "requirement_id": "cafd1ce8-b35f-46d7-ba1c-055a787a8f8e",
+    "requirement_text": "Contractor will be responsible for removing used food containers and any uneaten meals from the residence/MSGR and disposing of them at contractor facilities during meal deliveries.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain information about the bidder's company background, licenses, past performance, and point of contact, but they do not mention anything regarding the removal and disposal of used food containers and uneaten meals during meal deliveries. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "5032c98b-4329-462b-9204-d2e5e80c83e6",
+    "requirement_text": "The Contractor shall furnish all managerial, administrative, and direct labor personnel that are necessary to accomplish the work in this contract.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ has 14 full-time kitchen and delivery staff, two\ndelivery vehicles, and audited annual financial statements.",
+        "start_char": 1314,
+        "end_char": 1447,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Project Manager: Our Project Manager and liaison to the U.S. Embassy/Consulate is\nKadri Laine, who is fully fluent in written and spoken English and will serve as the\nsingle point of contact for all contract communications.",
+        "start_char": 813,
+        "end_char": 1036,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides evidence that it has the necessary managerial and direct labor personnel to accomplish the work, specifically listing a Project Manager and 14 full-time kitchen and delivery staff."
+  },
+  {
+    "requirement_id": "09085a8b-97c1-43f7-80aa-b09b848f6c00",
+    "requirement_text": "Contractor employees shall be on site only for contractual duties and not for other business purposes.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain information about the bidder's company background, staff size, licenses, past performance, and risk management plan, but they do not mention any policies or statements regarding whether contractor employees will be on site strictly for contractual duties and not for other business purposes. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "d0680587-e4e6-4142-97d8-806f0831802f",
+    "requirement_text": "The Contractor shall prepare general instructions for the work force and provide drafts to the COR for review within thirty days after contract award.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts do not mention the preparation of general instructions for the work force or providing drafts to the COR within thirty days after contract award. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "1bdca98a-2092-4273-b05b-95ab60e7699e",
+    "requirement_text": "Contractor shall schedule cooking and delivery requirements to ensure that these are done in the order and time frame specified, taking into consideration staff hours and security personnel.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain information regarding staffing, delivery vehicles, past performance, and risk management, but they do not contain any mention of scheduling cooking and delivery requirements to ensure they are done in the specified order and time frame while considering staff hours and security personnel. Therefore, there is insufficient information in the text to determine compliance."
+  },
+  {
+    "requirement_id": "9472f3e9-673c-4cfa-b657-c9b1cf3e5999",
+    "requirement_text": "Contractor will be responsible for providing individually packed lunch and dinner meals daily for seven people (98 meals per week).",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The application mentions catering and delivery services and provides details about staff, vehicles, and general capabilities, but it does not contain any information addressing the specific requirement to provide individually packed lunch and dinner meals daily for seven people (98 meals per week)."
+  },
+  {
+    "requirement_id": "dcbc7b98-98fe-423b-bd2d-1176e46427f5",
+    "requirement_text": "Contractor may use its own discretion on when to transport meals (with delivery three times a week and encouragement to transport multiple days' meals per trip) to ensure daily availability.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided text excerpts do not mention anything regarding the scheduling, frequency, or transportation of meals, nor do they discuss delivery logistics (such as three times a week or transporting multiple days' meals per trip). Therefore, there is insufficient information in the application to assess compliance with this requirement."
+  },
+  {
+    "requirement_id": "55431190-ca47-4011-959d-4b36588f5cba",
+    "requirement_text": "The Contractor shall provide a supervisor who understands written and spoken English to act as the focal point and point of contact with U.S. Government personnel.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Project Manager: Our Project Manager and liaison to the U.S. Embassy/Consulate is\nKadri Laine, who is fully fluent in written and spoken English and will serve as the\nsingle point of contact for all contract communications.",
+        "start_char": 813,
+        "end_char": 1036,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides a Project Manager, Kadri Laine, who acts as the liaison and point of contact for the U.S. Embassy and is fully fluent in written and spoken English, thereby satisfying the requirement."
+  },
+  {
+    "requirement_id": "66a8fcc2-8e90-4897-9e78-2508af093748",
+    "requirement_text": "The schedules shall take into consideration the hours that the staff can effectively perform their services without placing a burden on the security personnel of the Post.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts contain information regarding company background, staffing, licensing, past performance, and point of contact details, but they do not mention work schedules or how staff hours take into consideration the security personnel of the Post. Therefore, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "391c1df6-d948-40ed-a69e-d0aeb7b99141",
+    "requirement_text": "The Contractor shall be responsible for quality control.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "A detailed Risk Management Plan covering risk identification, mitigation strategies, and\nour quality control and assurance procedures will be finalized and provided to the COR\nshortly after contract award, once the transition schedule is confirmed.",
+        "start_char": 2061,
+        "end_char": 2309,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the Contractor shall be responsible for quality control. The bidder's application explicitly mentions that their quality control and assurance procedures will be finalized and provided as part of their Risk Management Plan after contract award, thereby acknowledging and accepting responsibility for quality control."
+  },
+  {
+    "requirement_id": "317cdec4-199a-42d8-b3f2-59203b476415",
+    "requirement_text": "The Contractor shall perform surprise inspection visits to the work site on a regular basis and coordinate these visits with the COR.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The requirement states that the Contractor shall perform surprise inspection visits to the work site on a regular basis and coordinate these visits with the COR. Reviewing the provided excerpts from the bidder's application, there is no mention of surprise inspection visits, quality control inspections, or coordination with the COR regarding site visits, other than a general mention that a Risk Management Plan will be provided after contract award. Therefore, there is insufficient information in the application to determine compliance with this specific requirement."
+  },
+  {
+    "requirement_id": "b40344d2-6fb3-4f1b-9743-662f0564e41d",
+    "requirement_text": "Provide items as part of proposal response and updated/maintained throughout performance.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The excerpts describe the bidder's capabilities, licenses, past performance, risk management, and administrative information, but they do not mention whether the bidder has provided the specific items as part of the proposal response or how those items will be updated and maintained throughout performance as required by the solicitation."
+  },
+  {
+    "requirement_id": "f732039f-6e4a-4a4b-b2ae-9a5e066ca3b2",
+    "requirement_text": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ hereby submits the following quotation in response to\nSolicitation 19EN1026Q0383, in agreement with all terms, conditions, and provisions\nincluded in the solicitation and its amendments. This offer is signed and dated below by\nour authorized representative.",
+        "start_char": 176,
+        "end_char": 458,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Printed Name of Signee: Kadri Laine\nPrinted Title of Signee: General Manager\nSignature: /s/ Kadri Laine\nDate: 09-16-2026",
+        "start_char": 2589,
+        "end_char": 2709,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states to submit signed and dated offers to the office specified in the solicitation at or before the exact time specified. The bidder's application includes an explicit statement that the offer is submitted in response to the solicitation, and concludes with a valid signature and date by an authorized representative."
+  },
+  {
+    "requirement_id": "5d267269-88d8-46c3-940d-b05454235f3f",
+    "requirement_text": "As a minimum, offers shall include the solicitation number, offeror contact details, UEI, evaluation information, completed representations/certifications, agreement statement, and completed SF-1449 cover page and Section 1.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Solicitation Number: 19EN1026Q0383\nOfferor: Baltic Table Catering OÜ, Sepapaja 6, 15551 Tallinn, Estonia\nTelephone: +372 5511 2280\nUnique Entity Identifier (UEI): EK7Q4TPX9RM2",
+        "start_char": 484,
+        "end_char": 659,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ hereby submits the following quotation in response to\nSolicitation 19EN1026Q0383, in agreement with all terms, conditions, and provisions\nincluded in the solicitation and its amendments.",
+        "start_char": 176,
+        "end_char": 387,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "SF-1449 blocks 12, 17, 19-24, and 30, and Section 1 of the solicitation, have been\ncompleted and are enclosed with this quotation.",
+        "start_char": 661,
+        "end_char": 791,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application successfully includes all required minimum components: the solicitation number, offeror contact details, UEI, agreement statement, and confirmation that the completed SF-1449 cover page and Section 1 are enclosed. Furthermore, the application contains technical approach and past performance information covering evaluation information, and representations/certifications are implicitly or explicitly addressed by agreeing to all terms and conditions."
+  },
+  {
+    "requirement_id": "a3c32a93-2b5a-42fb-adc3-3f3734d9837f",
+    "requirement_text": "Information demonstrating the offeror's/quoter's ability to perform, including the name of a Project Manager who understands written and spoken English.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Project Manager: Our Project Manager and liaison to the U.S. Embassy/Consulate is\nKadri Laine, who is fully fluent in written and spoken English and will serve as the\nsingle point of contact for all contract communications.",
+        "start_char": 813,
+        "end_char": 1036,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides the name of the Project Manager (Kadri Laine) and confirms that she is fully fluent in written and spoken English, thereby fully satisfying the requirement."
+  },
+  {
+    "requirement_id": "964cf712-11ff-47d8-9af6-08f101567871",
+    "requirement_text": "Evidence that the offeror operates an established business with a permanent address and telephone listing in Estonia, provided via business registry outtake or link.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Business Registration: Baltic Table Catering OÜ has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2019. A link to\nour registry page is provided: https://ariregister.rik.ee/eng/company/baltic-table-catering-ou",
+        "start_char": 1038,
+        "end_char": 1300,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly states that they operate an established business in Tallinn, Estonia, with a permanent address and telephone listing, and provides a direct link to their business registry page as required."
+  },
+  {
+    "requirement_id": "e8eb438f-85dc-4dc3-b3b4-6de9c9c691bc",
+    "requirement_text": "The offeror shall provide proof of SAM registration to include the SAM UEI number.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Unique Entity Identifier (UEI): EK7Q4TPX9RM2",
+        "start_char": 615,
+        "end_char": 659,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides their Unique Entity Identifier (UEI) number in the application under the cover page information, which fulfills the requirement to provide proof of SAM registration to include the SAM UEI number."
+  },
+  {
+    "requirement_id": "2da1c6ac-4888-4ab3-965c-62fa22cb0314",
+    "requirement_text": "List of clients over the past 2 years demonstrating prior experience with relevant past performance information and references.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Reference: Contract with the Embassy of Finland in Tallinn, 2024-2025, catering and\ndelivery services, contract value EUR 42,000, point of contact Ms. Liina Saar,\nAdministrative Officer, liina.saar@formin.fi, +372 5522 7710.",
+        "start_char": 1818,
+        "end_char": 2042,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement asks for a list of clients over the past 2 years demonstrating prior experience with relevant past performance information and references. The bidder provides only a single reference (the Embassy of Finland), which does not fulfill the plural requirement to provide a 'list of clients' (multiple clients)."
+  },
+  {
+    "requirement_id": "d7ac0328-85e1-42a8-ba58-07f67991a46b",
+    "requirement_text": "If the offeror has not performed comparable services in Estonia, then the offeror shall provide its international experience.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Reference: Contract with the Embassy of Finland in Tallinn, 2024-2025, catering and\ndelivery services, contract value EUR 42,000, point of contact Ms. Liina Saar,\nAdministrative Officer, liina.saar@formin.fi, +372 5522 7710.",
+        "start_char": 1818,
+        "end_char": 2042,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that if the offeror has not performed comparable services in Estonia, it must provide international experience. The excerpts show that the bidder performed comparable catering services in Estonia (Reference: Contract with the Embassy of Finland in Tallinn). Therefore, the conditional requirement to provide international experience does not apply, and the condition is satisfied."
+  },
+  {
+    "requirement_id": "4021f4f7-d262-4051-a2ae-30ab62074af3",
+    "requirement_text": "Evidence that the offeror can provide necessary personnel, financial resources, equipment, and facilities needed to perform the work.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ has 14 full-time kitchen and delivery staff, two\ndelivery vehicles, and audited annual financial statements. A link to our most recent\nannual report is provided: https://balticatering.ee/reports/2025-annual-report.pdf",
+        "start_char": 1314,
+        "end_char": 1556,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly provides evidence that they possess the necessary personnel (14 full-time kitchen and delivery staff), equipment (two delivery vehicles), and financial resources (audited annual financial statements and annual report link) required to perform the work."
+  },
+  {
+    "requirement_id": "9f24c602-9a22-4931-af88-ed0d07f81a31",
+    "requirement_text": "The offeror shall address its plan to obtain all licenses and permits required by local law, or provide a copy if already possessed.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Licenses and Permits: Baltic Table Catering OÜ already holds all locally required food\nhandling and health inspection permits for its kitchen facility; a copy of our current\nHealth Board (Terviseamet) permit is enclosed with this quotation.",
+        "start_char": 1558,
+        "end_char": 1798,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement states that the offeror shall address its plan to obtain all licenses and permits required by local law, or provide a copy if already possessed. The bidder explicitly states that it already holds all locally required permits and has enclosed a copy of its current Health Board permit, thus satisfying the requirement."
+  },
+  {
+    "requirement_id": "11dcd5b3-218b-4ed0-b3eb-4c7fdcd52db7",
+    "requirement_text": "The Offeror is required to provide a sample 20-day menu plan together with their offer.",
+    "verdict": "non_compliant",
+    "evidence": [],
+    "reasoning": "The requirement states that the Offeror must provide a sample 20-day menu plan together with their offer. A review of all provided excerpts from the bidder's application shows details about company personnel, financial statements, licenses, past performance, risk management, and cover page information, but contains no mention or inclusion of a 20-day menu plan. Therefore, the bidder has failed to satisfy the requirement."
+  },
+  {
+    "requirement_id": "52e640d6-359b-42dc-afa7-fe7371ff8756",
+    "requirement_text": "Ability to comply with the required performance period, taking into consideration existing business commitments.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts mention staff, vehicles, and general capabilities, but do not contain any statements regarding the bidder's ability to comply with the required performance period or how it takes existing business commitments into consideration."
+  },
+  {
+    "requirement_id": "d04dd84f-fa5b-4f5d-a237-c5f6afb33978",
+    "requirement_text": "Satisfactory record of integrity and business ethics.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Reference: Contract with the Embassy of Finland in Tallinn, 2024-2025, catering and\ndelivery services, contract value EUR 42,000, point of contact Ms. Liina Saar,\nAdministrative Officer, liina.saar@formin.fi, +372 5522 7710.",
+        "start_char": 1818,
+        "end_char": 2042,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement asks for a satisfactory record of integrity and business ethics. While the bidder provides past performance references and business registration details, the provided text does not contain any specific statements or disclosures addressing the company's record of integrity and business ethics. Therefore, there is insufficient information to evaluate this requirement."
+  },
+  {
+    "requirement_id": "55619b15-8526-4fce-8618-93699ddc5aca",
+    "requirement_text": "Necessary organization, experience, and skills or the ability to obtain them.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Capability: Baltic Table Catering OÜ has 14 full-time kitchen and delivery staff, two\ndelivery vehicles, and audited annual financial statements.",
+        "start_char": 1302,
+        "end_char": 1447,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Reference: Contract with the Embassy of Finland in Tallinn, 2024-2025, catering and\ndelivery services, contract value EUR 42,000",
+        "start_char": 1818,
+        "end_char": 1946,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Business Registration: Baltic Table Catering OÜ has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2019.",
+        "start_char": 1038,
+        "end_char": 1195,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder demonstrates the necessary organization, experience, and skills by detailing their permanent business operations since 2019, permanent staff of 14 full-time employees, delivery vehicles, and relevant past performance, such as a catering contract with the Embassy of Finland."
+  },
+  {
+    "requirement_id": "39061e79-280d-43ed-827a-5460e83345a7",
+    "requirement_text": "Be otherwise qualified and eligible to receive an award under applicable laws and regulations.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Baltic Table Catering OÜ already holds all locally required food\nhandling and health inspection permits for its kitchen facility; a copy of our current\nHealth Board (Terviseamet) permit is enclosed with this quotation.",
+        "start_char": 1580,
+        "end_char": 1798,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data/19EN1026Q0383/applications/a/application.txt",
+        "quote": "Business Registration: Baltic Table Catering OÜ has operated as an established\nbusiness with a permanent address and telephone listing in Tallinn since 2019.",
+        "start_char": 1038,
+        "end_char": 1195,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder provides documentation showing it is a legally established business operating since 2019, holds all necessary locally required food handling and health inspection permits, and has submitted an agreement with all terms and conditions of the solicitation. There is no evidence of legal disqualification or ineligibility under applicable laws and regulations."
+  }
+]

@@ -1,0 +1,374 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
+    "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sam_registration_required, sdvosb_certification_required, uei_must_be_preexisting, los_requirements_met, and submission_deadline_and_channel, since all five are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_registration_required",
+      "description": "Offeror must be registered in the System for Award Management (SAM).",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- whether SAM registration is genuinely active can only be confirmed by checking SAM.gov, not by reading the quote. Scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "sdvosb_certification_required",
+      "description": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- VIP/VetCert status can only be confirmed against SBA's VIP database, not by reading the quote. Scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "los_requirements_met",
+      "description": "Offeror must actually meet the Limitations on Subcontracting (LOS) requirements in the LOS clauses.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- whether the offeror's actual subcontracting arrangements satisfy the LOS limits cannot be confirmed by reading the quote email, only by an independent review during contract performance.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "los_compliance_assertion",
+      "description": "Offeror must assert compliance with the LOS clauses in the email accompanying the quote.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "The requirement is a checkable procedural instruction: the email must contain an assertion of LOS compliance. The application is a complete email and never mentions LOS compliance at all -- the required assertion is verifiably absent, which is a clear failure to follow the instruction, not a case of insufficient information.",
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_provided_on_quote",
+      "description": "Quoter must enter its Unique Entity Identifier (UEI), annotated as such, in the name-and-address block on the cover page of the quote.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "UEI is entered in the cover block, annotated as required.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Unique Entity Identifier: NL8K4TQ9XPW3",
+          "start_char": 604,
+          "end_char": 642
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "eft_indicator_if_applicable",
+      "description": "If applicable, the quoter must also enter its Electronic Funds Transfer (EFT) indicator in the name-and-address block on the cover page of the quote.",
+      "acceptable_verdicts": [
+        "compliant",
+        "insufficient_information"
+      ],
+      "rationale": "The application never mentions an EFT indicator. Since the requirement is conditional ('if applicable'), text alone cannot distinguish 'not applicable to this quoter' from 'applicable but omitted' -- both compliant (nothing was owed) and insufficient_information (can't tell) are defensible; non_compliant would wrongly assume it was owed.",
+      "evidence": [],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_signed_and_dated",
+      "description": "The quote submitted to the government office must be signed and dated.",
+      "acceptable_verdicts": [
+        "non_compliant",
+        "insufficient_information"
+      ],
+      "rationale": "The quote closes with a typed name ('Sincerely, Diane Kowalski, Contracts Manager'), arguably satisfying 'signed', but no date appears anywhere in the quote content. non_compliant (the date is verifiably missing) and insufficient_information (the transcript may simply omit email metadata that carried a date) are both defensible; compliant is not.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Sincerely,\nDiane Kowalski\nContracts Manager\nMeridian Medical Systems, LLC",
+          "start_char": 3373,
+          "end_char": 3446
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "The quote must show the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Solicitation number is stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "response to Solicitation 36C24126Q0731 P0003.",
+          "start_char": 244,
+          "end_char": 289
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "time_specified_for_receipt_stated",
+      "description": "The quote must show the time specified in the solicitation for receipt of quotations.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Time specified for receipt is stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "We acknowledge the time\nspecified in the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26, and our quote is submitted ahead of that deadline.",
+          "start_char": 290,
+          "end_char": 449
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quoter_contact_info_stated",
+      "description": "The quote must show the name, address, and telephone number of the quoter.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Quoter name, address, and phone number are stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Quoter name, address, and telephone number:\nMeridian Medical Systems, LLC\n88 Harborview Drive, Suite 210\nProvidence, RI 02903\nTelephone: (401) 555-0142",
+          "start_char": 451,
+          "end_char": 602
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_description_stated",
+      "description": "The quote must show a technical description of the items being quoted in sufficient detail to evaluate compliance with the solicitation's requirements.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "A technical description of the quoted items is provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product. The package includes the Vertex Host software with\nunlimited Client and Media Importer licenses, automated DICOM profiles,\na pre-configured Windows 11 Professional PC, monitor, keyboard, mouse,\ndisc label design software, and all necessary cabling, matching the\nStatement of Work in full.",
+          "start_char": 1126,
+          "end_char": 1718
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "warranty_terms_stated",
+      "description": "The quote must show the terms of any express warranty.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Warranty terms are stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Terms of express warranty: The system is covered by the manufacturer's\nstandard 3-year parts-and-labor warranty from the date of installation.",
+          "start_char": 1720,
+          "end_char": 1862
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_and_discount_terms_stated",
+      "description": "The quote must show price and any discount terms.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Price and discount terms are stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Price and discount terms: Net 30 days from invoice date. No prompt-payment\ndiscount is offered.",
+          "start_char": 1864,
+          "end_char": 1959
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "remit_to_address_stated",
+      "description": "The quote must show a remit-to address, if different from the mailing address.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "A remit-to address is stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "\"Remit to\" address: Same as the mailing address listed above.",
+          "start_char": 1961,
+          "end_char": 2022
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of the representations and certifications under FAR 52.212-3.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states the FAR 52.212-3 representations and certifications are not attached, only available on request.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Our representations and certifications under FAR 52.212-3 are on file\nin SAM.gov and available upon request; we have not attached a\ncompleted copy to this email.",
+          "start_char": 2024,
+          "end_char": 2185
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "Quote must acknowledge receipt of amendments to the request for quotation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly acknowledges receipt of Amendment P0003.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "We acknowledge receipt of Amendment/Modification P0003 dated 08/25/26,\nwhich extended the response date for this RFQ to 09/18/26 at 11:00 AM\nEDT and replaced the prior Combined Synopsis and all earlier\namendments/modifications.",
+          "start_char": 897,
+          "end_char": 1124
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "terms_and_conditions_acceptance_statement",
+      "description": "Quote must include one of the two prescribed statements about the solicitation's terms and conditions -- full acceptance without modification, or acceptance with listed exceptions and their rationale.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application uses the exact full-acceptance statement wording.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Terms and conditions: The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+          "start_char": 2187,
+          "end_char": 2350
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "product_chart_full_pricing",
+      "description": "Quote must enter pricing for every line item listed in the Product Chart.",
+      "acceptable_verdicts": [
+        "contradictory",
+        "non_compliant"
+      ],
+      "rationale": "All five Product Chart line items are priced, but the quote states two different grand totals for the same quote: $21,540.00 up front and $22,940.00 from the itemized breakdown -- a direct numeric contradiction. non_compliant is also acceptable if a pipeline flags the mismatched total as a completeness/accuracy failure instead of naming it a contradiction.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Total quoted price for this solicitation: $21,540.00.",
+          "start_char": 2352,
+          "end_char": 2405
+        },
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Product Chart pricing:\nItem 951-707100, Vertex 25ei Platform w/ Sorna CD Burner, Qty 1,\nUnit Price $19,200.00, Total $19,200.00.\nItem 501-862406, Installation & Training Support, Qty 1,\nUnit Price $1,650.00, Total $1,650.00.\nUPS 1KVA - Tower, Qty 1, Unit Price $540.00, Total $540.00.\nTraining Manuals, Qty 2, Unit Price $75.00, Total $150.00.\nDelivery, Qty 1, Unit Price $1,400.00, Total $1,400.00.\nGrand total of the line items above: $22,940.00.",
+          "start_char": 2407,
+          "end_char": 2855
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "brand_name_no_substitutes",
+      "description": "Quote must be for the Sorna Vertex 25ei Platform/CD Burner by brand name; no substitute or equivalent products may be offered.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states the exact brand-name product is quoted, no substitute.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, brand name, exactly as\nspecified in the Product Chart. This is the identical brand-name system\nrequired by the solicitation; Meridian is not offering a substitute or\nequivalent product.",
+          "start_char": 1165,
+          "end_char": 1429
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
+    },
+    {
+      "topic_id": "shipping_cost_handling",
+      "description": "If shipping does not reach $250.00, its cost must be rolled into the Vertex 25ei/CD Burner line-item price rather than billed separately.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Shipping is $150.00 (under the $250.00 threshold) but is billed as a separate line item instead of being rolled into the unit price, contradicting the requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "Shipping for this order is $150.00 and will be invoiced as a separate\nline item on the purchase order, not included in the Vertex 25ei/CD\nBurner unit price above.",
+          "start_char": 3149,
+          "end_char": 3311
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "single_best_price_quote",
+      "description": "Quoters are requested to submit one quote presenting their best price, rather than multiple alternative quotes.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application offers two priced options instead of one best price.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731/applications/a/application.txt",
+          "quote": "We are also pleased to offer an alternative configuration for your\nconsideration:\nOption A (as priced above): Standard configuration, grand total\n$22,940.00.\nOption B: Extended 5-year warranty configuration, grand total\n$23,100.00.\nPlease let us know which option you would prefer to award.",
+          "start_char": 2857,
+          "end_char": 3147
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_must_be_preexisting",
+      "description": "The UEI must already exist in SAM at the time of competition, not be newly registered during the solicitation period.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 11:00 AM EDT on 09/18/26.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

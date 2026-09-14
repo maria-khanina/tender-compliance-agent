@@ -21,14 +21,14 @@ def _parse_arguments() -> argparse.Namespace:
     parser.add_argument("--case-dir", required=True)
     parser.add_argument(
         "--variant",
-        default="",
+        default="a",
         help=(
-            "Application variant suffix (e.g. 'b' for application_b.txt / "
-            "true_verdicts_b.json). true_requirements.json is always shared "
-            "and never suffixed. Omit for the case's default application.txt "
-            "/ true_verdicts.json."
+            "Application variant directory name under applications/ "
+            "(e.g. 'a', 'b', 'c'). Defaults to 'a', the case's canonical "
+            "application."
         ),
     )
+    parser.add_argument("--run-label", default="gemini")
     parser.add_argument("--report-output")
     return parser.parse_args()
 
@@ -42,28 +42,31 @@ def main() -> None:
         render_verdict_only_report,
         score_verdicts,
     )
-    from schemas import RetrievedEvidenceRecord, Verdict
+    from schemas import RetrievedContextRecord, Verdict
     from steps.chunking import split_application_document
-    from steps.evidence_retrieval import retrieve_evidence_chunks
+    from steps.evidence_retrieval import retrieve_context_chunks
     from steps.verdicts import generate_verdict
+    from case_layout import application_path as case_application_path
+    from case_layout import run_dir, true_verdicts_path
 
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
-    suffix = f"_{arguments.variant}" if arguments.variant else ""
+    variant = arguments.variant
+    run_label = arguments.run_label
 
     requirements_fixture = load_true_requirements(
         case_dir / "true_requirements.json"
     )
     verdicts_fixture = load_true_verdicts(
-        case_dir / f"true_verdicts{suffix}.json"
+        true_verdicts_path(case_dir, variant)
     )
 
-    collection_name = case_collection_name(f"{case_dir.name}{suffix}")
+    collection_name = case_collection_name(f"{case_dir.name}_{variant}")
 
-    application_path = case_dir / f"application{suffix}.txt"
+    application_path = case_application_path(case_dir, variant)
     application_text = application_path.read_text(encoding="utf-8")
     application_chunks = split_application_document(
-        application_text, str(application_path)
+        application_text, application_path.as_posix()
     )
     index_chunks(collection_name, application_chunks)
 
@@ -71,22 +74,25 @@ def main() -> None:
         requirements_fixture
     )
     predicted_verdicts: list[Verdict] = []
-    retrieved_evidence: list[RetrievedEvidenceRecord] = []
+    retrieved_context: list[RetrievedContextRecord] = []
     for requirement in synthetic_requirements:
         if not requirement.is_text_verifiable:
             continue
-        evidence_chunks = retrieve_evidence_chunks(
+        context_chunks = retrieve_context_chunks(
             requirement.text, collection_name
         )
-        retrieved_evidence.append(RetrievedEvidenceRecord(
+        retrieved_context.append(RetrievedContextRecord(
             requirement_id=requirement.requirement_id,
-            evidence_chunks=evidence_chunks,
+            retrieved_context=context_chunks,
         ))
         predicted_verdicts.append(
-            generate_verdict(requirement, evidence_chunks)
+            generate_verdict(requirement, context_chunks)
         )
 
-    verdicts_artifact_path = case_dir / f"verdict_only_verdicts{suffix}.json"
+    artifacts_dir = run_dir(case_dir, variant, run_label)
+    artifacts_dir.mkdir(parents=True, exist_ok=True)
+
+    verdicts_artifact_path = artifacts_dir / "verdict_only_verdicts.json"
     serializable_verdicts = [
         verdict.model_dump(mode="json") for verdict in predicted_verdicts
     ]
@@ -96,25 +102,25 @@ def main() -> None:
     )
     print(f"Verdict-only raw verdicts written to {verdicts_artifact_path}")
 
-    retrieved_evidence_artifact_path = (
-        case_dir / f"verdict_only_retrieved_evidence{suffix}.json"
+    retrieved_context_artifact_path = (
+        artifacts_dir / "verdict_only_retrieved_context.json"
     )
-    serializable_retrieved_evidence = [
-        record.model_dump(mode="json") for record in retrieved_evidence
+    serializable_retrieved_context = [
+        record.model_dump(mode="json") for record in retrieved_context
     ]
-    retrieved_evidence_artifact_path.write_text(
+    retrieved_context_artifact_path.write_text(
         json.dumps(
-            serializable_retrieved_evidence, indent=2, ensure_ascii=False
+            serializable_retrieved_context, indent=2, ensure_ascii=False
         ),
         encoding="utf-8",
     )
     print(
-        f"Verdict-only retrieved evidence written to "
-        f"{retrieved_evidence_artifact_path}"
+        f"Verdict-only retrieved context written to "
+        f"{retrieved_context_artifact_path}"
     )
 
     result = score_verdicts(
-        predicted_verdicts, verdicts_fixture, retrieved_evidence
+        predicted_verdicts, verdicts_fixture, retrieved_context
     )
     report_text = render_verdict_only_report(result)
     if arguments.report_output:
