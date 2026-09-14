@@ -1,0 +1,260 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a THIRD, independent synthetic application (Apex Grid Testing Services, LLC) against the same true_requirements.json as data/36C25526Q0501 -- built specifically to add another contradictory example of a fresh shape (a standard-edition conflict: NFPA 70E 2021 edition claimed in Technical Capabilities versus 2018 edition claimed in a later Personnel Note for the same technicians' certifications), distinct from application.txt's include-then-defer-to-request contradiction and application_b.txt's amendment-existence contradiction on this tender.",
+    "Most other topics are given straightforward compliant treatment in this variant since the goal of this pass is specifically to add contradictory-class density and format diversity, not to re-exercise every failure shape again.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "offer_content_minimum_elements",
+      "description": "Offer must include the solicitation number, the offeror's name/address/phone number, and the offeror's Unique Entity Identifier (UEI) and EFT indicator if applicable.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Solicitation number, offeror name/address/phone are all stated.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Solicitation Number: 36C25526Q0501",
+          "start_char": 128,
+          "end_char": 162
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "description": "Offer must include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states agreement with all terms, conditions, and provisions.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Apex Grid Testing Services, LLC agrees to the extent of all terms,\nconditions, and provisions included in the solicitation and any\namendments.",
+          "start_char": 294,
+          "end_char": 436
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "If solicitation amendments are issued, the offeror must acknowledge receipt of each amendment by number and date.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states no amendments had been received, addressing the conditional requirement directly.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "No amendments to this solicitation have been received as of the date of\nthis quote.",
+          "start_char": 438,
+          "end_char": 521
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offer must fill in the unit price, amount, and grand total for CLIN 0001 (one-year, standalone triennial electrical testing/maintenance/inspection/calibration of the Truman VA electrical power distribution system).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "CLIN 0001 unit price and grand total are both filled in and match.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "CLIN 0001 - Triennial Electrical Testing, Maintenance, Testing,\nInspection, and/or Calibration of the Electrical Power Distribution\nSystem at Truman VA, Columbia, MO: $59,900.00",
+          "start_char": 631,
+          "end_char": 808
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sdvosb_setaside_eligibility",
+      "description": "To be eligible for award of this SDVOSB set-aside, the offeror must be a small business under the assigned NAICS code and a certified SDVOSB listed in the SBA certification database; by submitting an offer the offeror represents it is an eligible, certified SDVOSB.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SDVOSB/size-standard status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "security_sanctions_representations",
+      "description": "By submitting its offer the offeror makes several standing legal representations/certifications triggered automatically by submission, including that it has conducted a reasonable inquiry and does not propose to use products/sources prohibited by an applicable FASCSA order, and that it does not conduct restricted business operations in Sudan.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- these are automatic legal representations triggered by submission, not something the text can confirm.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "submission_deadline",
+      "description": "Questions and quotes are due by 10:00 a.m. central time on 9/15/26, submitted electronically via email to James.horne@va.gov.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission, not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "two_part_proposal_format",
+      "description": "The proposal must be prepared in two parts: a price response (signed SF-1449 plus completed price schedule) and a non-price response (addressing the non-price factors).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application is clearly organized into a Price Response and a separate Non-Price Response section.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Price Response:\nSigned SF-1449 is enclosed",
+          "start_char": 523,
+          "end_char": 565
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_capabilities_letter",
+      "description": "Offer must include a technical capabilities letter, not exceeding five pages, describing the offeror's technical approach, methodology, and technique for carrying out the Performance Work Statement.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes a technical capabilities section describing NETA-standard testing methodology and experience.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Apex Grid Testing Services has over a decade of experience performing\nNETA-standard electrical testing and maintenance for hospital and\nindustrial clients.",
+          "start_char": 879,
+          "end_char": 1034
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "prior_experience_documentation",
+      "description": "Offer must include at least five years of prior experience relevant to this solicitation's electrical testing/maintenance work, with a detailed description per year covering contract number, estimated annual dollar value, description of services and the offeror's role, contract start/completion dates, and current customer contact information.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states seven years of relevant prior experience, exceeding the 5-year minimum.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Apex Grid Testing Services has performed electrical power distribution\ntesting and maintenance services for healthcare and industrial clients\nfor the past seven years.",
+          "start_char": 1293,
+          "end_char": 1460
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_contracts_submission",
+      "description": "Offer must include at least three previously awarded and completed Federal/State/Local government contracts involving similar work, each with contract name/ID, awarding agency, award date/amount, scope description, and a point of contact.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application lists three previously awarded and completed government/commercial contracts with contract numbers, dates, values, scope, and points of contact.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "Contract: Springfield Public Utilities Substation Testing, Contract",
+          "start_char": 2107,
+          "end_char": 2174
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_experience_examples_submission",
+      "description": "Offer must include at least two examples of the offeror's own technical experience with contracts involving technical requirements similar to this solicitation, each with contract name/location, performance period, percentage self-performed, and scope description under NAICS 221122.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application gives two technical experience examples with performance periods, labor percentage, scope, NAICS code, and technical similarity to this solicitation.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "1. Mercy Hospital Springfield, Springfield, MO.",
+          "start_char": 2459,
+          "end_char": 2506
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontractor_technical_experience_submission",
+      "description": "If subcontractors will be used, the offer must include at least two examples of the subcontractors' technical experience with similar contracts, in the same format as the offeror's own technical experience examples.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "This sub-requirement only applies if subcontractors will be used; the application states no subcontractors will be used, so the triggering condition does not apply.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "No subcontractors will be used for this requirement.",
+          "start_char": 3275,
+          "end_char": 3327
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "electrical_safety_training_certification_submission",
+      "description": "Offer must include electrical safety training certifications (OSHA 29 CFR 1910 Subpart S and NFPA 70E) submitted with the proposal, or, if unavailable, a written employer certification of having met this requirement submitted with the proposal.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The Technical Capabilities section states field technicians are certified under the 2021 edition of NFPA 70E, but a later Personnel Note states the same technicians' certifications were issued and are currently maintained under the 2018 edition -- the two stated standard editions for the same certification conflict.",
+      "evidence": [
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "certified under the 2021 edition of NFPA 70E",
+          "start_char": 1159,
+          "end_char": 1203
+        },
+        {
+          "document_path": "data/36C25526Q0501/application_c.txt",
+          "quote": "our field technicians' NFPA 70E electrical safety\ntraining certifications were issued and are currently maintained under\nthe 2018 edition of the standard.",
+          "start_char": 3119,
+          "end_char": 3273
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "contractor_certification_qualifications",
+      "description": "Contractor must be currently certified as a NETA Certified Technician or via NICET, and have completed OSHA's approved 10-hour construction safety training.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine NETA/NICET certification and tenure status cannot be confirmed from application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "contractor_experience_tenure",
+      "description": "Contractor must have technical training and a minimum of five continuous years of work experience in maintenance, inspection, and testing of low and medium voltage electrical power distribution systems in healthcare, industrial, educational, and commercial facilities.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine minimum continuous work-experience tenure cannot be confirmed from application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

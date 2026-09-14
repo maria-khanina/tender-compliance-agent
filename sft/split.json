@@ -1,0 +1,13 @@
+{
+  "notes": [
+    "Split is by TENDER, not by topic -- topics from the same tender share document style/vocabulary, so splitting at topic granularity would leak that context across train/val/test and make validation/test scores overly optimistic.",
+    "test = SHOP-PR-26-002435 (36 scored topics, the largest single tender -- chosen for the lowest-variance held-out signal). Never touched during training or hyperparameter/early-stopping decisions.",
+    "validation = 36C24126Q0704 (34 scored topics, second largest). Used only for checkpoint selection (early stopping) during SFT, never trained on.",
+    "train = the remaining 8 tenders (135 scored topics as of 2026-09-13). New tenders and new synthetic applications (e.g. true_verdicts_b.json/_c.json siblings being added by concurrent sessions) should default into train unless a case is deliberately promoted to val/test -- this keeps the val/test tenders fixed and comparable across experiments.",
+    "Class balance check (primary_verdict) as of 2026-09-13: train {contradictory: 8, compliant: 68, insufficient_information: 30, non_compliant: 29}; val {compliant: 9, non_compliant: 14, insufficient_information: 8, contradictory: 1}; test {compliant: 11, non_compliant: 4, insufficient_information: 16, contradictory: 1}. The rare 'contradictory' class has at least 1 example in val and test, and the bulk (8/10) in train -- acceptable, not starved.",
+    "Topics with primary_verdict: null (is_text_verifiable: false) are excluded from all three splits -- they never get a verdict from a correctly-behaving pipeline and are not scored today either."
+  ],
+  "test": ["SHOP-PR-26-002435"],
+  "validation": ["36C24126Q0704"],
+  "train_default": true
+}

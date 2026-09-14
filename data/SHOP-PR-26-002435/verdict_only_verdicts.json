@@ -2,7 +2,7 @@
   {
     "requirement_id": "brand_name_only_no_alternates",
     "requirement_text": "Only the exact brand-name products, models, and configurations identified in the RFQ and Attachment 1 are acceptable; alternate, substitute, equivalent, or “or equal” products will not be considered and will be rated Technically Unacceptable.",
-    "verdict": "contradictory",
+    "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
@@ -16,16 +16,56 @@
       },
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.",
+        "start_char": 897,
+        "end_char": 1063,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 656,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1093,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical): [list of components]",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
         "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
         "start_char": 1957,
         "end_char": 2165,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder claims to take no exceptions to the RFQ requirements, which mandate the exact brand-name products and configurations. However, the bidder provides conflicting information regarding the graphics card, noting a discrepancy between their 'standard build sheet' and the card listed in their cover summary, which suggests a deviation from the required configuration."
+    "reasoning": "The bidder explicitly states that they are providing the exact brand-name SUMURI TALINO workstations as required by the RFQ. They confirm that the products are new, genuine OEM, and factory-new, and that they are not using any gray-market or used equipment. The bidder is also an authorized SUMURI reseller, which adds credibility to their claim of providing genuine products. The configuration details provided match the required specifications, and the bidder takes no exceptions to the RFQ requirements. While there is a minor discrepancy in the graphics card description (RTX A4000 vs. RTX PRO 4000), this is clarified as a standard build sheet difference and does not contradict the requirement for exact brand-name products. Therefore, the application clearly satisfies the requirement."
   },
   {
     "requirement_id": "item_identification_completeness",
@@ -40,77 +80,173 @@
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
-      },
-      {
-        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Unit Price: $17,733.33\nExtended Price (15 units): $266,000.00",
-        "start_char": 2167,
-        "end_char": 2228,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The application fails to meet the requirement for several reasons: 1) It does not provide a manufacturer part number or SKU for the workstation. 2) The extended price calculation is mathematically incorrect ($17,733.33 * 15 = $265,999.95, not $266,000.00). 3) There is a contradiction regarding the graphics card specification between the configuration list and the note provided, creating ambiguity about the exact product being offered."
-  },
-  {
-    "requirement_id": "oem_new_no_gray_market_certification",
-    "requirement_text": "Quote must state that the products are the exact required brand-name, new, genuine OEM products eligible for OEM warranty/support, and certify they are factory-new (no gray-market, used, refurbished, recertified, reconditioned, demo, open-box, or previously placed-in-service items).",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.",
-        "start_char": 656,
-        "end_char": 1063,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
         "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly includes a certification statement that covers all aspects of the requirement, including the brand-name, new/genuine OEM status, eligibility for warranty, and a comprehensive list of exclusions for non-new items."
-  },
-  {
-    "requirement_id": "pricing_inclusive_of_all_charges",
-    "requirement_text": "The quoted firm-fixed price must include all shipping, handling, warranty/support, and other charges.",
-    "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Meridian Forensic Solutions, LLC is pleased to submit the following firm-fixed-price\nquote in response to RFQ SHOP-PR-26-002435.",
-        "start_char": 143,
-        "end_char": 271,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
       },
-      {
-        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Unit Price: $17,733.33\nExtended Price (15 units): $266,000.00",
-        "start_char": 2167,
-        "end_char": 2228,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "While the bidder provides a firm-fixed-price quote, the application does not explicitly state that this price includes all shipping, handling, and other associated charges. Although 'FOB Destination' is mentioned, which typically implies shipping costs are handled by the seller, the requirement specifically mandates that the price must include all shipping, handling, warranty/support, and other charges, which is not explicitly confirmed in the provided text."
-  },
-  {
-    "requirement_id": "exceptions_conditions_disclosure",
-    "requirement_text": "If the vendor takes any exception, condition, or assumption to a material RFQ requirement, it must be stated in the quote.",
-    "verdict": "contradictory",
-    "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
         "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
         "start_char": 473,
         "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller.",
+        "start_char": 1065,
+        "end_char": 1159,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical):",
+        "start_char": 1265,
+        "end_char": 1323,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Processor: Intel Core Ultra 9 285K, liquid-cooled",
+        "start_char": 1324,
+        "end_char": 1375,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Memory: 128GB DDR5 system memory",
+        "start_char": 1376,
+        "end_char": 1410,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1411,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1536,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card",
+        "start_char": 1598,
+        "end_char": 1664,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- RAID controller: ARC-1883i RAID Card",
+        "start_char": 1665,
+        "end_char": 1703,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1704,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Power: One (1) 1700 Watt Power Supply Unit",
+        "start_char": 1781,
+        "end_char": 1825,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Operating System: Microsoft Windows 11 Pro 64-bit",
+        "start_char": 1826,
+        "end_char": 1877,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Warranty: One (1) year manufacturer warranty, extendable at additional cost",
+        "start_char": 1878,
+        "end_char": 1955,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Unit Price: $17,733.33",
+        "start_char": 2167,
+        "end_char": 2189,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Extended Price (15 units): $266,000.00",
+        "start_char": 2190,
+        "end_char": 2228,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Delivery: 30 calendar days after receipt of order. FOB Destination.",
+        "start_char": 2230,
+        "end_char": 2297,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
@@ -127,7 +263,121 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder explicitly states in the cover letter that they take no exceptions, conditions, or assumptions to the RFQ requirements. However, they subsequently provide a note regarding the graphics card that indicates a discrepancy between their standard build sheet and the offered product, which constitutes an assumption or condition regarding the technical specifications of the equipment being quoted."
+    "reasoning": "The bidder provides detailed information about the manufacturer (SUMURI), product/model (TALINO Intel Workstation), configuration (processor, memory, storage, graphics, etc.), quantity (15 units), warranty (1 year), delivery schedule (30 calendar days), unit price ($17,733.33), and extended price ($266,000.00). However, the bidder fails to clearly identify the **exact manufacturer part number or SKU** for the quoted items. The graphics card note introduces a contradiction: the configuration lists an NVIDIA RTX PRO 4000 Blackwell 24GB card, but the cover summary lists an NVIDIA RTX A4000 16GB card. This inconsistency undermines the clarity and completeness of the quote, making it non-compliant with the requirement that each quoted item must identify the exact manufacturer part number or SKU."
+  },
+  {
+    "requirement_id": "oem_new_no_gray_market_certification",
+    "requirement_text": "Quote must state that the products are the exact required brand-name, new, genuine OEM products eligible for OEM warranty/support, and certify they are factory-new (no gray-market, used, refurbished, recertified, reconditioned, demo, open-box, or previously placed-in-service items).",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new. The quote does not include any gray-market, used, refurbished,\nrecertified, reconditioned, demo, open-box, previously owned, or previously\nplaced-in-service products.",
+        "start_char": 640,
+        "end_char": 1063,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder explicitly certifies that the products are the exact brand-name SUMURI products, new, genuine OEM products eligible for OEM warranty/support, and factory-new. They also explicitly state that the quote does not include any gray-market, used, refurbished, or previously placed-in-service items. The authorized reseller status further supports the claim that the products are genuine OEM products. These statements directly satisfy the requirement without contradiction or ambiguity."
+  },
+  {
+    "requirement_id": "pricing_inclusive_of_all_charges",
+    "requirement_text": "The quoted firm-fixed price must include all shipping, handling, warranty/support, and other charges.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Unit Price: $17,733.33",
+        "start_char": 2167,
+        "end_char": 2189,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Extended Price (15 units): $266,000.00",
+        "start_char": 2190,
+        "end_char": 2228,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Delivery: 30 calendar days after receipt of order. FOB Destination.",
+        "start_char": 2230,
+        "end_char": 2297,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO workstations are the exact brand-name SUMURI products required by this RFQ, are new, genuine OEM products eligible for the required OEM warranty/support, and are factory-new.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "The quote does not include any gray-market, used, refurbished, recertified, reconditioned, demo, open-box, previously owned, or previously placed-in-service products.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder's application clearly satisfies the requirement that the quoted firm-fixed price must include all shipping, handling, warranty/support, and other charges. The unit price and extended price are provided, and the delivery terms specify FOB Destination, which implies that the buyer is responsible for shipping costs. The certification section confirms that the products are new, genuine OEM products eligible for warranty/support, and that the quote does not include any gray-market or used products. While the application does not explicitly mention handling or other charges, the use of FOB Destination and the inclusion of warranty/support in the certification implies that these are included in the firm-fixed price. There is no contradiction or ambiguity in the information provided, and the requirement is fully satisfied."
+  },
+  {
+    "requirement_id": "exceptions_conditions_disclosure",
+    "requirement_text": "If the vendor takes any exception, condition, or assumption to a material RFQ requirement, it must be stated in the quote.",
+    "verdict": "compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller.",
+        "start_char": 1065,
+        "end_char": 1159,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder explicitly states in the quote that they take no exceptions, conditions, or assumptions to any requirement of the RFQ. This directly satisfies the requirement. The mention of authorized reseller status is not relevant to the specific requirement about exceptions, conditions, or assumptions, and thus does not contradict or conflict with the requirement. There is no indication that the bidder has taken any exceptions, conditions, or assumptions, and the silence on other aspects does not imply non-compliance."
   },
   {
     "requirement_id": "quote_validity_through_sept30",
@@ -143,9 +393,19 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Delivery: 30 calendar days after receipt of order. FOB Destination.",
+        "start_char": 2230,
+        "end_char": 2297,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement specifies that quotes must remain valid through September 30, 2026. The bidder explicitly states that their quote is only valid for 30 days from the date of the letter, which does not meet the required duration."
+    "reasoning": "The requirement specifies that quotes must remain valid through September 30, 2026. The bidder's quote validity is stated as '30 days from the date of this letter,' which is clearly insufficient to meet the requirement. The 30-day validity period does not extend to the required date of September 30, 2026. The delivery time of '30 calendar days after receipt of order' is unrelated to the quote validity period and does not address the requirement. Therefore, the application clearly fails to satisfy the requirement."
   },
   {
     "requirement_id": "unique_entity_identifier_annotation",
@@ -154,16 +414,16 @@
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Vendor Information:\nMeridian Forensic Solutions, LLC\nUnique Entity Identifier: HF3K9QZ8YL72\n2210 Rutherford Court, Suite 400\nHerndon, VA 20171",
-        "start_char": 273,
-        "end_char": 415,
+        "quote": "Unique Entity Identifier: HF3K9QZ8YL72",
+        "start_char": 326,
+        "end_char": 364,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder included the required annotation 'Unique Entity Identifier' followed by their UEI number within the block containing their name and address on the cover page of their offer."
+    "reasoning": "The bidder's application includes the required annotation 'Unique Entity Identifier' followed by its UEI (HF3K9QZ8YL72) in the vendor information section on the cover page. This directly satisfies the requirement as stated in the tender document. There is no ambiguity or contradiction in this part of the application."
   },
   {
     "requirement_id": "authorized_reseller_distributor_evidence",
@@ -172,9 +432,29 @@
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support",
+        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
         "start_char": 656,
-        "end_char": 874,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1093,
+        "end_char": 1263,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
@@ -191,12 +471,12 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly confirms they are an authorized reseller of the required brand-name products and provides certification regarding the authenticity and warranty eligibility of the items, satisfying all components of the requirement."
+    "reasoning": "The bidder's application clearly satisfies the requirement. The bidder certifies that the products are exact brand-name SUMURI products, new, genuine OEM products, and eligible for OEM warranty/support. They also confirm that they are an authorized SUMURI reseller, which aligns with the requirement that the Government may require evidence of OEM or reseller authorization. The application does not mention any gray-market, used, or refurbished products, and the bidder explicitly states they take no exceptions to the RFQ requirements. These statements directly support compliance with the requirement."
   },
   {
     "requirement_id": "cpu_processor_spec",
     "requirement_text": "Workstation must have an Intel Core Ultra 9 285K processor (3.7 GHz, 5.7 GHz Boost, 8P-16E cores, 24 threads).",
-    "verdict": "compliant",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
@@ -207,14 +487,24 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Graphics card note: please also see our cover summary, where the offered graphics card is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration above reflects our standard TALINO build sheet.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder explicitly lists the Intel Core Ultra 9 285K processor in their configuration, which matches the specific processor model required by the tender."
+    "reasoning": "The bidder's application states that the workstation is equipped with an Intel Core Ultra 9 285K processor, which matches the requirement. However, the graphics card note indicates that the configuration listed in the main body of the application (which includes the Intel Core Ultra 9 285K) may not be the actual configuration offered. The note refers to a different graphics card (RTX A4000 16GB) in the cover summary, suggesting that the configuration described in the main body may not be accurate or complete. This creates a contradiction and raises concerns about the accuracy of the entire configuration. Since the requirement is specific to the processor, and the processor is explicitly listed, the application is compliant in that aspect. However, the contradiction in the graphics card note introduces ambiguity and potential non-compliance with the requirement if the configuration is not fully accurate. Therefore, the application is non_compliant due to the conflicting information."
   },
   {
     "requirement_id": "liquid_cooling_spec",
     "requirement_text": "Workstation must have liquid cooling for the CPU.",
-    "verdict": "compliant",
+    "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
@@ -225,9 +515,39 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Graphics card note: please also see our cover summary, where the offered graphics card is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration above reflects our standard TALINO build sheet.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder explicitly states in their configuration list that the processor is liquid-cooled, which directly satisfies the requirement for the workstation to have liquid cooling for the CPU."
+    "reasoning": "The bidder's application states that the processor is 'Intel Core Ultra 9 285K, liquid-cooled,' which appears to satisfy the requirement for liquid cooling. However, the requirement is for 'liquid cooling for the CPU,' and the quoted processor is not explicitly identified as a SUMURI product. The bidder also mentions that the graphics card is listed as an NVIDIA RTX A4000 16GB in the cover summary, but this is not directly relevant to the CPU cooling requirement. The application does not explicitly confirm that the liquid-cooled processor is a SUMURI product, which is a key part of the requirement. Therefore, there is insufficient information to definitively conclude compliance."
   },
   {
     "requirement_id": "ram_capacity_spec",
@@ -243,27 +563,39 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement specifies 192GB of DDR5 4800 MHz RAM, but the bidder's application explicitly states the configuration includes 128GB of DDR5 system memory."
-  },
-  {
-    "requirement_id": "nvme_four_dedicated_drives_spec",
-    "requirement_text": "Workstation must have four dedicated 1TB Gen4 M.2 NVMe SSDs: one each for the operating system, temporary files, processing, and database(s).",
-    "verdict": "non_compliant",
-    "evidence": [
+      },
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
-        "start_char": 1538,
-        "end_char": 1597,
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "contradicts"
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement specifies four dedicated 1TB Gen4 M.2 NVMe SSDs for specific purposes (OS, temp, processing, database). The bidder proposes a configuration of eight 1TB SSDs in a RAID 5 array, which does not meet the requirement for four dedicated, separate drives for the specified functions."
+    "reasoning": "The bidder's application explicitly states that the workstations are equipped with '128GB DDR5 system memory', which is significantly less than the required '192GB of DDR5 4800 MHz RAM'. This directly contradicts the requirement. While the bidder claims to be an authorized SUMURI reseller and certifies that the products are genuine OEM, these statements do not address the specific RAM requirement. The application also states that it takes 'no exceptions, conditions, or assumptions to any requirement of this RFQ', which implies that the bidder believes the configuration meets all requirements, including the RAM specification. However, the actual configuration does not meet the requirement, making the application non-compliant."
   },
   {
     "requirement_id": "raid5_eight_ssd_storage_spec",
@@ -279,14 +611,34 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their configuration that the workstation includes eight 1TB SSDs configured in RAID 5, which directly meets the requirement."
+    "reasoning": "The bidder's application explicitly states that the data storage array consists of eight (8) 1TB SSDs configured in RAID 5, which directly satisfies the requirement. Additionally, the bidder certifies that the workstations are the exact brand-name SUMURI products required by the RFQ, and that they are new, genuine OEM products. The bidder also states that they take no exceptions or assumptions to any requirement of the RFQ, which further supports the conclusion that the application is compliant."
   },
   {
     "requirement_id": "gpu_spec",
     "requirement_text": "Workstation must have an NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card.",
-    "verdict": "contradictory",
+    "verdict": "insufficient_information",
     "evidence": [
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
@@ -300,16 +652,16 @@
       },
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
-        "start_char": 1957,
-        "end_char": 2165,
-        "citation_verified": true,
+        "quote": "please also see our cover summary, where the offered graphics card is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration above reflects our standard TALINO build sheet.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
       }
     ],
-    "reasoning": "The bidder's application provides conflicting information regarding the graphics card. While the configuration list specifies the required NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7, a subsequent note explicitly states that the offered card is an NVIDIA RTX A4000 16GB, which does not meet the requirement."
+    "reasoning": "The bidder's application contains conflicting information regarding the graphics card. On one hand, the configuration list explicitly states an 'NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card', which matches the requirement. However, the cover summary mentions an 'NVIDIA RTX A4000 16GB card', which is a different model and does not meet the requirement. This contradiction creates ambiguity about whether the actual product offered meets the requirement. Since the bidder is not clarifying this discrepancy, the information provided is insufficient to determine compliance definitively."
   },
   {
     "requirement_id": "raid_card_spec",
@@ -325,27 +677,19 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly lists the 'ARC-1883i RAID Card' under the RAID controller section of their workstation configuration, which directly satisfies the requirement."
-  },
-  {
-    "requirement_id": "hot_swap_usb_expansion_spec",
-    "requirement_text": "Workstation must have a 3.5\" hot-swap bay for three drives, a 2.5\" hot-swap bay with four removable trays, a 2.5\" hot-swap bay with eight removable trays, a 10-port USB 2.0 hub (USB-A), and a 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
-    "verdict": "insufficient_information",
-    "evidence": [
+      },
       {
         "document_path": "data\\SHOP-PR-26-002435\\application.txt",
-        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
-        "start_char": 1706,
-        "end_char": 1780,
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ",
+        "start_char": 640,
+        "end_char": 796,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "inconclusive"
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder's application lists 'two front-panel USB hubs' but does not specify the port counts, USB versions, or connector types (USB-A/USB-C) required by the specification. Furthermore, the application does not mention the specific hot-swap bay configurations (3.5\" for three drives, 2.5\" for four trays, and 2.5\" for eight trays) required by the tender."
+    "reasoning": "The bidder explicitly states that the workstation includes an ARC-1883i RAID card in the configuration furnished per unit. This directly satisfies the requirement. Additionally, the certification confirms that the workstations are the exact brand-name SUMURI products required by the RFQ, reinforcing the compliance. There is no contradiction or ambiguity regarding the presence of the required RAID card."
   },
   {
     "requirement_id": "power_supply_spec",
@@ -361,9 +705,29 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their configuration list that each workstation includes a 1700 Watt Power Supply Unit, which directly meets the requirement."
+    "reasoning": "The bidder explicitly states that each workstation is equipped with a 'One (1) 1700 Watt Power Supply Unit' in the configuration section. This directly satisfies the requirement. Additionally, the bidder confirms that the quoted workstations are the exact brand-name SUMURI products required by the RFQ, and they take no exceptions to any requirement. There is no contradiction or ambiguity regarding the power supply unit specification. The mention of the graphics card in the configuration is noted as a discrepancy between the build sheet and the cover summary, but this does not affect the power supply requirement. Therefore, the application is compliant with the requirement."
   },
   {
     "requirement_id": "operating_system_spec",
@@ -379,9 +743,29 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their configuration list that the operating system provided is 'Microsoft Windows 11 Pro 64-bit', which directly matches the requirement."
+    "reasoning": "The bidder explicitly states that the operating system is 'Microsoft Windows 11 Pro 64-bit', which directly satisfies the requirement. The statement 'We take no exceptions, conditions, or assumptions to any requirement of this RFQ' reinforces that the bidder is fully compliant with all stated requirements. While the 'Item Offered' line is inconclusive on its own, the rest of the application clearly meets the requirement. There is no contradiction or ambiguity regarding the operating system specification."
   },
   {
     "requirement_id": "warranty_spec",
@@ -397,13 +781,335 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The requirement specifies a three-year standard warranty. The bidder explicitly states in their configuration details that the workstation comes with a one-year manufacturer warranty, which fails to meet the three-year requirement."
+    "reasoning": "The bidder's application explicitly states that the warranty provided is a one-year manufacturer warranty, which is explicitly less than the required three-year standard warranty. The statement that the warranty is 'extendable at additional cost' does not satisfy the requirement for a three-year standard warranty. The bidder also claims to take no exceptions to any requirement, which implies they believe their offer meets the requirement, but this is contradicted by the warranty detail. There is no mention of a three-year warranty in the configuration or any other part of the application, making the offer non-compliant with the stated requirement."
   },
   {
-    "requirement_id": "chassis_dimensions_finish_spec",
-    "requirement_text": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm), with 11 open 5.25\" bays, 120mm fans, 8 PCI chassis expansion slots, 0.118in (3.00mm) aluminum thickness, and a powder-coated black finish with black appointments.",
+    "requirement_id": "nvme_ssd_operating_system_spec",
+    "requirement_text": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for the operating system.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1413,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1538,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation must have **one dedicated 1TB Gen4 M.2 NVMe SSD for the operating system**. However, the bidder's application describes a **data storage array of eight (8) 1TB SSDs configured in RAID 5**, which implies multiple SSDs used for data storage, not a single dedicated SSD for the operating system. Additionally, the storage is described as **NVMe solid-state storage**, but it is not specified as a **dedicated 1TB Gen4 M.2 NVMe SSD** for the operating system. The configuration does not meet the specific requirement of a **single dedicated 1TB Gen4 M.2 NVMe SSD** for the OS, making the application non-compliant."
+  },
+  {
+    "requirement_id": "nvme_ssd_temporary_files_spec",
+    "requirement_text": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for temporary files.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1413,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1538,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement specifies a **dedicated 1TB Gen4 M.2 NVMe SSD for temporary files**. The bidder's application describes a **data storage array of eight 1TB SSDs configured in RAID 5**, which implies multiple SSDs used in a RAID configuration. This does not satisfy the requirement for a **single dedicated 1TB Gen4 M.2 NVMe SSD**. Additionally, the storage is described as **NVMe solid-state storage**, but it is not specified as a **dedicated** single drive for temporary files. The RAID configuration and the use of multiple drives contradict the requirement for a **dedicated** single SSD."
+  },
+  {
+    "requirement_id": "nvme_ssd_processing_spec",
+    "requirement_text": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for processing.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1413,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1538,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation must have **one dedicated 1TB Gen4 M.2 NVMe SSD** for processing. The bidder's application states that the storage is **NVMe solid-state storage** as required, which is **inconclusive** because it does not specify the number, capacity, or interface (Gen4 M.2) of the SSD. However, the bidder then states that the **data storage array consists of eight (8) 1TB SSDs configured in RAID 5**, which **contradicts** the requirement for a **single dedicated 1TB Gen4 M.2 NVMe SSD**. The bidder also claims to have no exceptions to the RFQ requirements, which **supports** the idea that they believe their configuration meets the requirement. Since the configuration provided does not meet the specific requirement of a **single dedicated 1TB Gen4 M.2 NVMe SSD**, the application is **non_compliant**."
+  },
+  {
+    "requirement_id": "nvme_ssd_database_spec",
+    "requirement_text": "Workstation must have one dedicated 1TB Gen4 M.2 NVMe SSD for database(s).",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1413,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1538,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The requirement specifies a **dedicated 1TB Gen4 M.2 NVMe SSD for database(s)**. The bidder's application states that the storage is **NVMe solid-state storage** as required for the workstation's workloads, which is **inconclusive** as it does not specify the exact model or capacity. However, the bidder also states that the **data storage array consists of eight (8) 1TB SSDs configured in RAID 5**, which **contradicts** the requirement for a **dedicated 1TB Gen4 M.2 NVMe SSD**. The bidder claims to have no exceptions to the RFQ requirements, but the configuration provided does not meet the specific requirement. Therefore, the application is **non_compliant**."
+  },
+  {
+    "requirement_id": "hot_swap_bay_35_three_drives_spec",
+    "requirement_text": "Workstation must have one 3.5\" hot-swap bay for three drives.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical):\n- Storage: NVMe solid-state storage as required for the workstation's forensic imaging, processing, and database workloads",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1538,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation must have one 3.5\" hot-swap bay for three drives. The bidder's application describes a configuration with eight 1TB SSDs in a RAID 5 array, which implies a fixed storage configuration without a hot-swap bay. The mention of 'NVMe solid-state storage' and a 'data storage array' does not provide any indication of a 3.5\" hot-swap bay. The absence of any mention of a hot-swap bay or a 3.5\" drive bay in the configuration details clearly contradicts the requirement. Therefore, the application is non-compliant."
+  },
+  {
+    "requirement_id": "hot_swap_bay_25_four_trays_spec",
+    "requirement_text": "Workstation must have one 2.5\" hot-swap bay with four removable trays.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical): ... Storage: NVMe solid-state storage as required for the workstation's forensic imaging, processing, and database workloads ... Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "contradicts"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation must have one 2.5\" hot-swap bay with four removable trays. The bidder's application does not mention any hot-swap bays or removable trays. The storage configuration described (eight 1TB SSDs in RAID 5) does not indicate the presence of a hot-swap bay or removable trays. The absence of this specific hardware feature directly contradicts the requirement. While the bidder claims to be an authorized SUMURI reseller and offers TALINO workstations, the configuration details provided do not satisfy the explicit hardware requirement. Therefore, the application is non-compliant."
+  },
+  {
+    "requirement_id": "hot_swap_bay_25_eight_trays_spec",
+    "requirement_text": "Workstation must have one 2.5\" hot-swap bay with eight removable trays.",
+    "verdict": "non_compliant",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical): ... Storage: NVMe solid-state storage as required for the workstation's forensic imaging, processing, and database workloads ... Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation must have one 2.5\" hot-swap bay with eight removable trays. The bidder's application describes a data storage array of eight (8) 1TB SSDs configured in RAID 5, but this does not explicitly state that these SSDs are in a 2.5\" hot-swap bay with eight removable trays. The configuration details do not mention a hot-swap bay or removable trays, and the mention of RAID 5 does not inherently imply a hot-swap configuration. The application also fails to clarify whether the storage array is part of a hot-swap bay or if the workstation includes such a feature. Therefore, the application does not clearly satisfy the requirement, and the information provided is insufficient to confirm compliance."
+  },
+  {
+    "requirement_id": "usb_2_0_ten_port_hub_spec",
+    "requirement_text": "Workstation must have one 10-port USB 2.0 hub (USB-A).",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1706,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      }
+    ],
+    "reasoning": "The bidder mentions 'two front-panel USB hubs for high-speed peripheral connectivity' in the configuration section. However, this statement does not explicitly specify the type of USB ports (e.g., USB-A, USB-C) or the version (USB 2.0). While the mention of 'USB hubs' might suggest the presence of USB ports, it does not confirm that the hubs are 10-port USB 2.0 hubs (USB-A). Therefore, the information provided is insufficient to determine compliance with the specific requirement."
+  },
+  {
+    "requirement_id": "usb_3_0_four_port_hub_spec",
+    "requirement_text": "Workstation must have one 4-port USB 3.0 hub (2x USB-A, 2x USB-C).",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1706,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller.",
+        "start_char": 1065,
+        "end_char": 1159,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The bidder mentions 'two front-panel USB hubs for high-speed peripheral connectivity', which may imply the presence of USB hubs, but it does not explicitly state the number of ports, the USB version (3.0), or the specific configuration (2x USB-A and 2x USB-C). The requirement is specific and detailed, and the application does not provide enough information to confirm compliance. The mention of 'two front-panel USB hubs' could be interpreted as satisfying the requirement, but without confirmation of the exact port types and version, it remains insufficient. The bidder also certifies that the products are genuine OEM, which may imply compliance, but this does not directly address the USB hub specification. Therefore, the information provided is insufficient to determine compliance."
+  },
+  {
+    "requirement_id": "chassis_size_spec",
+    "requirement_text": "Workstation chassis must be 15W x 19.06H x 20.06D inches (381mm x 484mm x 510mm).",
     "verdict": "insufficient_information",
     "evidence": [
       {
@@ -415,8 +1121,408 @@
         "match_precision": null,
         "used_for_matching": true,
         "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Power: One (1) 1700 Watt Power Supply Unit",
+        "start_char": 1781,
+        "end_char": 1825,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
+        "start_char": 1957,
+        "end_char": 2165,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller.",
+        "start_char": 1065,
+        "end_char": 1159,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
       }
     ],
-    "reasoning": "The bidder's application lists the internal components of the workstation (processor, memory, storage, etc.) but does not provide the physical specifications of the chassis (dimensions, number of bays, fan size, expansion slots, material thickness, or finish) required by the tender."
+    "reasoning": "The bidder's application does not provide any explicit information about the physical dimensions of the workstation chassis. While the configuration details include the power supply, processor, memory, storage, and other components, none of these details mention the chassis size. The mention of the graphics card and the TALINO build sheet does not clarify the physical dimensions. The bidder also refers to an 'authorized reseller' status and a 'SUMURI TALINO Intel Workstation,' but this does not confirm compliance with the specific size requirement. Therefore, there is insufficient information to determine whether the requirement is satisfied."
+  },
+  {
+    "requirement_id": "chassis_open_525_bays_spec",
+    "requirement_text": "Workstation chassis must have 11 open 5.25\" bays.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical):",
+        "start_char": 1265,
+        "end_char": 1323,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1704,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation chassis must have 11 open 5.25\" bays. However, the excerpts provided do not mention the number of 5.25\" bays in the workstation chassis. The only relevant information about expansion is the presence of two front-panel USB hubs, which is unrelated to the number of 5.25\" bays. There is no mention of the chassis design, bay count, or any technical specifications related to the chassis. Therefore, there is insufficient information to determine whether the requirement is satisfied."
+  },
+  {
+    "requirement_id": "chassis_fan_size_spec",
+    "requirement_text": "Workstation chassis must use 120mm fans.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Configuration furnished per unit (all 15 units identical):",
+        "start_char": 1265,
+        "end_char": 1323,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Processor: Intel Core Ultra 9 285K, liquid-cooled",
+        "start_char": 1324,
+        "end_char": 1375,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Memory: 128GB DDR5 system memory",
+        "start_char": 1376,
+        "end_char": 1410,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Storage: NVMe solid-state storage as required for the workstation's forensic\n  imaging, processing, and database workloads",
+        "start_char": 1411,
+        "end_char": 1535,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Data storage array: Eight (8) 1TB SSDs configured in RAID 5",
+        "start_char": 1536,
+        "end_char": 1597,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Graphics: NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 graphics card",
+        "start_char": 1598,
+        "end_char": 1664,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- RAID controller: ARC-1883i RAID Card",
+        "start_char": 1665,
+        "end_char": 1703,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1704,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Power: One (1) 1700 Watt Power Supply Unit",
+        "start_char": 1781,
+        "end_char": 1825,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Operating System: Microsoft Windows 11 Pro 64-bit",
+        "start_char": 1826,
+        "end_char": 1877,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "- Warranty: One (1) year manufacturer warranty, extendable at additional cost",
+        "start_char": 1878,
+        "end_char": 1955,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Graphics card note: please also see our cover summary, where the offered graphics\ncard is listed as an NVIDIA RTX A4000 16GB card; the workstation configuration\nabove reflects our standard TALINO build sheet.",
+        "start_char": 1957,
+        "end_char": 2165,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 656,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement is that the workstation chassis must use 120mm fans. However, none of the excerpts from the bidder's application mention anything about the size of the fans used in the workstation chassis. The configuration details provided focus on components like the processor, memory, storage, graphics card, and power supply, but there is no mention of fan size or cooling system specifications. The only reference to cooling is the use of a liquid-cooled processor, which is not the same as 120mm fans. Since the requirement is not addressed in the application, and there is no information to confirm or deny compliance, the verdict is 'insufficient_information'."
+  },
+  {
+    "requirement_id": "chassis_pci_expansion_slots_spec",
+    "requirement_text": "Workstation chassis must have 8 PCI chassis expansion slots.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Expansion: two front-panel USB hubs for high-speed peripheral connectivity",
+        "start_char": 1706,
+        "end_char": 1780,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation chassis must have 8 PCI chassis expansion slots. The bidder's application does not explicitly mention the number of PCI expansion slots. While the application lists several components and features, none of them directly reference PCI expansion slots or their quantity. The mention of 'expansion' refers to USB hubs, not PCI slots. The bidder also references a 'standard TALINO build sheet' but does not provide details about the chassis or expansion capabilities. Since the requirement is specific and the application lacks direct information about the number of PCI slots, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "chassis_aluminum_thickness_spec",
+    "requirement_text": "Workstation chassis must have 0.118in (3.00mm) aluminum thickness.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "\nConfiguration furnished per unit (all 15 units identical):\n- ",
+        "start_char": 1264,
+        "end_char": 1326,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "We take no exceptions, conditions, or assumptions to any requirement of this RFQ.",
+        "start_char": 473,
+        "end_char": 554,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation chassis must have a thickness of 0.118in (3.00mm) of aluminum. However, none of the excerpts from the bidder's application mention the thickness of the workstation chassis. The configuration details provided focus on components like the processor, memory, storage, graphics card, and warranty, but none reference the chassis material or thickness. The bidder is an authorized SUMURI reseller and certifies that the workstations are genuine OEM products, but this does not confirm compliance with the specific thickness requirement. Since the requirement is not addressed in the application, there is insufficient information to determine compliance."
+  },
+  {
+    "requirement_id": "chassis_finish_spec",
+    "requirement_text": "Workstation chassis must have a powder-coated black finish with black appointments.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Authorized Reseller Status: Meridian Forensic Solutions, LLC is an authorized\nSUMURI reseller. A copy of our current SUMURI authorized-reseller certificate is\nenclosed as Attachment A to this quote.",
+        "start_char": 1065,
+        "end_char": 1263,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Item Offered:\nSUMURI TALINO Intel Workstation, Qty 15.",
+        "start_char": 417,
+        "end_char": 471,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      },
+      {
+        "document_path": "data\\SHOP-PR-26-002435\\application.txt",
+        "quote": "Certifications: Meridian Forensic Solutions, LLC certifies that the quoted TALINO\nworkstations are the exact brand-name SUMURI products required by this RFQ, are\nnew, genuine OEM products eligible for the required OEM warranty/support, and are\nfactory-new.",
+        "start_char": 640,
+        "end_char": 896,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The requirement specifies that the workstation chassis must have a powder-coated black finish with black appointments. However, none of the excerpts from the bidder's application explicitly mention the color or finish of the workstation chassis. While the bidder is an authorized SUMURI reseller and certifies that the workstations are genuine OEM products, this does not confirm the specific finish or color of the chassis. The absence of any mention of the chassis color or finish means there is insufficient information to determine compliance with the requirement."
   }
 ]

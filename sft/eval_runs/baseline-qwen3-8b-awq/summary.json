@@ -1,0 +1,20 @@
+{
+  "label": "baseline-qwen3-8b-awq",
+  "model": "Qwen/Qwen3-8B-AWQ",
+  "results": [
+    {
+      "case": "36C24126Q0704",
+      "ok": true,
+      "returncode": 0,
+      "accuracy": 0.71875,
+      "stderr_tail": null
+    },
+    {
+      "case": "SHOP-PR-26-002435",
+      "ok": true,
+      "returncode": 0,
+      "accuracy": 0.875,
+      "stderr_tail": null
+    }
+  ]
+}

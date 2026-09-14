@@ -16,6 +16,16 @@ def _parse_arguments() -> argparse.Namespace:
         )
     )
     parser.add_argument("--case-dir", required=True)
+    parser.add_argument(
+        "--variant",
+        default="",
+        help=(
+            "Application variant suffix (e.g. 'b' for true_verdicts_b.json / "
+            "verdict_only_verdicts_b.json). true_requirements.json is always "
+            "shared and never suffixed. Omit for the case's default "
+            "true_verdicts.json."
+        ),
+    )
     parser.add_argument("--output-prefix", default="predicted")
     parser.add_argument("--report-output")
     return parser.parse_args()
@@ -44,6 +54,7 @@ def main() -> None:
     def load_case_data(
         case_dir: pathlib.Path,
         prefix: str,
+        suffix: str,
     ) -> tuple[
         TrueRequirementsFixture,
         TrueVerdictsFixture,
@@ -55,7 +66,7 @@ def main() -> None:
             case_dir / "true_requirements.json"
         )
         verdicts_fixture = load_true_verdicts(
-            case_dir / "true_verdicts.json"
+            case_dir / f"true_verdicts{suffix}.json"
         )
         predicted_requirements = load_predicted_requirements(
             case_dir / f"{prefix}_requirements.json"
@@ -82,18 +93,20 @@ def main() -> None:
         else:
             print(report_text)
 
-    def compute_verdict_only_result(case_dir: pathlib.Path):
-        verdicts_artifact_path = case_dir / "verdict_only_verdicts.json"
+    def compute_verdict_only_result(case_dir: pathlib.Path, suffix: str):
+        verdicts_artifact_path = (
+            case_dir / f"verdict_only_verdicts{suffix}.json"
+        )
         if not verdicts_artifact_path.exists():
             return None
         verdicts_fixture = load_true_verdicts(
-            case_dir / "true_verdicts.json"
+            case_dir / f"true_verdicts{suffix}.json"
         )
         verdict_only_predicted = load_predicted_verdicts(
             verdicts_artifact_path
         )
         retrieved_evidence_path = (
-            case_dir / "verdict_only_retrieved_evidence.json"
+            case_dir / f"verdict_only_retrieved_evidence{suffix}.json"
         )
         retrieved_evidence: list[RetrievedEvidenceRecord] = []
         if retrieved_evidence_path.exists():
@@ -121,10 +134,11 @@ def main() -> None:
 
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
-    case_data = load_case_data(case_dir, arguments.output_prefix)
+    suffix = f"_{arguments.variant}" if arguments.variant else ""
+    case_data = load_case_data(case_dir, arguments.output_prefix, suffix)
     requirements_fixture, _, predicted_requirements, _, _ = case_data
     report: EvaluationReport = evaluate(*case_data)
-    verdict_only_result = compute_verdict_only_result(case_dir)
+    verdict_only_result = compute_verdict_only_result(case_dir, suffix)
     missed_chunk_diagnostics = compute_missed_chunk_diagnostics(
         requirements_fixture, report
     )

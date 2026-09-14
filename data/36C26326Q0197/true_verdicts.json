@@ -4,7 +4,8 @@
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sam_registration_active_at_offer, technical_medical_gas_regulatory_proof, and sdvosb_vosb_certification_status_at_submission, since all three are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types: compliant (11 topics), non_compliant across different failure shapes -- total omissions (cylinder replacement cost, difficult-to-fill flagging) and an explicit but mistaken self-exemption (VAAR 852.219-76 certificate declined based on a misreading of which sentence the requirement's 'when applicable' qualifier attaches to) -- insufficient_information (a tracking plan missing 2 of 7 required elements, a PMP missing 1 of 6 elements, a past performance reference missing the dollar value field, a phase-in strategy missing the Delivery Plan component, and silence on SF-1449 form completion), and two contradictory claims of different shapes: a completeness claim contradicted by a later walk-back (the Schedule of Items described as fully priced in one section but as having pending/unpriced items in another), and a factual capability conflict (an exclusive single-supplier sourcing claim in one section versus a two-independent-supplier backup claim in another).",
     "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
-    "Three acceptable_verdicts lists were broadened after a first real pipeline run: cylinder_replacement_cost_in_proposal now also accepts contradictory, and price_schedule_attachment_c_completed now also accepts non_compliant -- both topics sit next to the deliberately engineered pending-four-items pricing inconsistency, and the model consistently connected that same fact pattern to these neighboring topics in a defensible way. quote_identification_and_solicitation_number now also accepts insufficient_information -- the source text bundles offeror/solicitation-number identification together with a requirement that the quote be 'complete, self-sufficient', and the model reasonably read the admitted four-pending-item gap as violating that completeness clause, even though the offeror-identification part itself is satisfied."
+    "Three acceptable_verdicts lists were broadened after a first real pipeline run: cylinder_replacement_cost_in_proposal now also accepts contradictory, and price_schedule_attachment_c_completed now also accepts non_compliant -- both topics sit next to the deliberately engineered pending-four-items pricing inconsistency, and the model consistently connected that same fact pattern to these neighboring topics in a defensible way. quote_identification_and_solicitation_number now also accepts insufficient_information -- the source text bundles offeror/solicitation-number identification together with a requirement that the quote be 'complete, self-sufficient', and the model reasonably read the admitted four-pending-item gap as violating that completeness clause, even though the offeror-identification part itself is satisfied.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -12,7 +13,9 @@
       "description": "Offerors must be registered and active in the System for Award Management (SAM) at the time of offer.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual SAM registration/active status cannot be confirmed by reading the application text, only by checking SAM.gov directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "delivery_frequency_compliance",
@@ -28,7 +31,9 @@
           "start_char": 864,
           "end_char": 984
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "geographic_facility_or_resources_presence",
@@ -44,7 +49,9 @@
           "start_char": 638,
           "end_char": 863
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "cylinder_replacement_cost_in_proposal",
@@ -54,7 +61,9 @@
         "contradictory"
       ],
       "rationale": "Application never mentions a cylinder replacement cost for lost or damaged contractor-owned cylinders; the price schedule section addresses only per-item pricing and the 90-day firm-price term.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "cylinder_tracking_plan_delivery",
@@ -70,7 +79,9 @@
           "start_char": 2108,
           "end_char": 2453
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "cylinder_tracking_plan_facility",
@@ -86,7 +97,9 @@
           "start_char": 2455,
           "end_char": 2664
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "reporting_capabilities_proposal",
@@ -102,7 +115,9 @@
           "start_char": 2690,
           "end_char": 3151
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "difficult_to_fill_items_flagged",
@@ -111,7 +126,9 @@
         "non_compliant"
       ],
       "rationale": "Application never identifies or flags any medical gases as difficult to fill or likely to be placed on backorder, and never references highlighting any item in Attachment C for this purpose.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "project_management_plan_submitted",
@@ -127,7 +144,9 @@
           "start_char": 1536,
           "end_char": 2087
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "quote_identification_and_solicitation_number",
@@ -144,7 +163,9 @@
           "start_char": 67,
           "end_char": 142
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "price_schedule_attachment_c_completed",
@@ -167,7 +188,9 @@
           "start_char": 5702,
           "end_char": 5901
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "price_firm_90_days",
@@ -183,7 +206,9 @@
           "start_char": 1367,
           "end_char": 1509
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "sf1449_completed",
@@ -192,7 +217,9 @@
         "insufficient_information"
       ],
       "rationale": "Application never mentions the SF-1449 form or confirms that page 1 sections 30a-30c were completed; a cover-letter-style quote of this kind is silent on the administrative form itself, which may be completed as a separate attachment not reproduced in this text.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "amendment_acknowledgment",
@@ -208,7 +235,9 @@
           "start_char": 5620,
           "end_char": 5700
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "technical_operational_capability_narrative",
@@ -224,7 +253,9 @@
           "start_char": 3176,
           "end_char": 3496
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "technical_continuity_of_operations",
@@ -246,7 +277,9 @@
           "start_char": 3498,
           "end_char": 3758
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "technical_cylinder_management_innovation",
@@ -262,14 +295,18 @@
           "start_char": 3760,
           "end_char": 3972
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "technical_medical_gas_regulatory_proof",
       "description": "Offeror must provide proof that all medical gases conform to USP and National Formulary specifications and that the contractor and its medical gas manufacturers/fillers are registered with the FDA.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- whether the gases genuinely conform to USP/National Formulary specifications and whether the manufacturers/fillers are genuinely FDA-registered cannot be confirmed by reading the application's own representation of those facts.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "past_performance_reference_provided",
@@ -285,7 +322,9 @@
           "start_char": 4263,
           "end_char": 4654
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "phase_in_strategy_submitted",
@@ -301,14 +340,18 @@
           "start_char": 4688,
           "end_char": 5102
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "sdvosb_vosb_certification_status_at_submission",
       "description": "To receive Veterans Involvement evaluation credit, an offeror must be listed at the time of submission of offers and at time of award as a certified SDVOSB/VOSB in the SBA certification database.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- whether the offeror is genuinely listed in the SBA certification database cannot be confirmed by reading the application's own certification statement, only by checking the SBA database directly.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
@@ -324,7 +367,9 @@
           "start_char": 5158,
           "end_char": 5409
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "subcontracting_limitations_breakdown",
@@ -340,7 +385,9 @@
           "start_char": 5158,
           "end_char": 5409
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "vaar_852_219_76_certificate_submitted",
@@ -356,7 +403,9 @@
           "start_char": 5410,
           "end_char": 5618
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     }
   ]
 }

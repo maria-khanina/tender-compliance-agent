@@ -3,7 +3,8 @@
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: buy_american_taa_general_compliance and submission_deadline_and_channel, since both are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
     "The application deliberately varies its error types across the four verdict labels and, within non_compliant, across different failure shapes: a missing field (part number), a timing violation (distributor letter deferred to after award), a total omission (business size), and an unsubstantiated claim (or-equal without matching characteristics or literature).",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -20,7 +21,9 @@
           "start_char": 315,
           "end_char": 405
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "terms_concurrence_statement",
@@ -36,7 +39,9 @@
           "start_char": 407,
           "end_char": 534
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fob_destination_manufacturer_part_number",
@@ -52,7 +57,9 @@
           "start_char": 536,
           "end_char": 657
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "authorized_distributor_letter",
@@ -68,7 +75,9 @@
           "start_char": 659,
           "end_char": 885
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "country_of_origin_disclosure",
@@ -90,7 +99,9 @@
           "start_char": 1138,
           "end_char": 1258
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "buy_american_certificate_completed",
@@ -107,7 +118,9 @@
           "start_char": 970,
           "end_char": 1136
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "gray_market_verification",
@@ -123,7 +136,9 @@
           "start_char": 1260,
           "end_char": 1502
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "business_size_designation",
@@ -132,7 +147,9 @@
         "non_compliant"
       ],
       "rationale": "Application never states whether the offered items are manufactured by a small or large business.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "fss_contract_listing",
@@ -148,7 +165,9 @@
           "start_char": 1504,
           "end_char": 1623
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "or_equal_submission_requirements",
@@ -164,7 +183,9 @@
           "start_char": 1625,
           "end_char": 1844
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "far_52_212_3_reps_and_certs",
@@ -180,7 +201,9 @@
           "start_char": 1846,
           "end_char": 2022
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "nmr_certification_signed",
@@ -197,21 +220,27 @@
           "start_char": 2024,
           "end_char": 2203
         }
-      ]
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "buy_american_taa_general_compliance",
       "description": "Offered product must comply with the Buy American Act, the Trade Agreements Act, and other relevant FAR/agency regulations.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- actual legal compliance with BAA/TAA cannot be confirmed by reading the quote, only by reviewing the certified content and, ultimately, the product itself.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "submission_deadline_and_channel",
       "description": "Quote must be emailed to the government POC and received no later than 9:00am PT on 08/27/26.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "salient_char_electric_locking_casters",
@@ -221,7 +250,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_height_adjustment",
@@ -231,7 +262,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_hand_control_storage_loops",
@@ -241,7 +274,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_patient_surface_footprint",
@@ -251,7 +286,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_ada_entry_height",
@@ -261,7 +298,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_trendelenburg_positioning",
@@ -271,7 +310,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_open_apical_window",
@@ -281,7 +322,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_patient_weight_capacity",
@@ -291,7 +334,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_rapid_release_drop_sections",
@@ -301,7 +346,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_adjustable_back_support",
@@ -311,7 +358,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_drop_section_size",
@@ -321,7 +370,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "salient_char_dropdown_cushion",
@@ -331,7 +382,9 @@
         "non_compliant"
       ],
       "rationale": "Application never itemizes this salient characteristic (or any other) for the offered SonoRest CV-200 -- it only states the item is 'a comparable cardiac imaging table suitable for echocardiography procedures.' The RFQ requires 'clear, compelling and convincing evidence that equal-to items meet all the salient characteristics,' so treating an unaddressed characteristic as non_compliant is also defensible, not just insufficient_information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "delivery_timeframe_30_days_aro",
@@ -347,7 +400,9 @@
           "start_char": 2205,
           "end_char": 2335
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "software_licensing_oem_terms_conformance",
@@ -357,7 +412,9 @@
         "non_compliant"
       ],
       "rationale": "Application never mentions software licensing, warranty, or service terms at all, so conformance with the OEM's terms and conditions cannot be confirmed.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "brand_name_required_unless_equal_indicated",
@@ -373,7 +430,9 @@
           "start_char": 1646,
           "end_char": 1744
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     }
   ]
 }

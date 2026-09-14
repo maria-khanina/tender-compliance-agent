@@ -43,6 +43,12 @@ class TrueVerdict(BaseModel):
     acceptable_verdicts: list[str] | None
     rationale: str
     evidence: list[TrueEvidenceSpan]
+    # Additive, SFT-oriented fields (see sft/build_verdict_dataset.py):
+    # a single training-target label per topic, derived from
+    # acceptable_verdicts rather than replacing it. Optional/backward
+    # compatible -- existing fixtures without these keys still load.
+    primary_verdict: str | None = None
+    primary_verdict_source: str | None = None
 
 
 class TrueVerdictsFixture(BaseModel):

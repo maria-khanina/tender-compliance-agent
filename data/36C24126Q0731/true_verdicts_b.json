@@ -1,0 +1,379 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Coastal Imaging Solutions, Inc.) against the same true_requirements.json as data/36C24126Q0731 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Meridian Medical Systems, LLC).",
+    "Error-shape diversity versus the original: quote_signed_and_dated, far_52_212_3_reps_and_certs, product_chart_full_pricing's overall completeness route, brand_name_no_substitutes, shipping_cost_handling, and single_best_price_quote are mostly inverted from the original's failure pattern to compliant, while two new failures are introduced in different places (an unpriced UPS line item; an explicit burner-drive substitution) and a new warranty-duration contradiction (3-year base vs 2-year component) replaces the original's pricing-option contradiction.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_registration_required",
+      "description": "Offeror must be registered in the System for Award Management (SAM).",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SAM registration status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "sdvosb_certification_required",
+      "description": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SDVOSB VIP-listing status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "los_requirements_met",
+      "description": "Offeror must actually meet the Limitations on Subcontracting (LOS) requirements in the LOS clauses.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- actual LOS compliance cannot be confirmed from the assertion alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "los_compliance_assertion",
+      "description": "Offeror must assert compliance with the LOS clauses in the email accompanying the quote.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly asserts compliance with the LOS clauses in the email.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "We confirm compliance with the Limitations on Subcontracting clauses\napplicable to this solicitation.",
+          "start_char": 582,
+          "end_char": 683
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_provided_on_quote",
+      "description": "Quoter must enter its Unique Entity Identifier (UEI), annotated as such, in the name-and-address block on the cover page of the quote.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "UEI is explicitly entered and annotated as such.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Unique Entity Identifier: QF3M8LRT2KV9",
+          "start_char": 542,
+          "end_char": 580
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "eft_indicator_if_applicable",
+      "description": "If applicable, the quoter must also enter its Electronic Funds Transfer (EFT) indicator in the name-and-address block on the cover page of the quote.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application never mentions an EFT indicator at all, so it is unconfirmed whether one applies and was omitted, or none applies.",
+      "evidence": [],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quote_signed_and_dated",
+      "description": "The quote submitted to the government office must be signed and dated.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application is signed by name and includes an explicit date.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Renata Ferro\nContracts Manager\nCoastal Imaging Solutions, Inc.\nDate: 09/10/2026",
+          "start_char": 3212,
+          "end_char": 3291
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "uei_must_be_preexisting",
+      "description": "The UEI must already exist in SAM at the time of competition, not be newly registered during the solicitation period.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- whether the UEI pre-existed in SAM at time of competition cannot be confirmed from the application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "solicitation_number_stated",
+      "description": "The quote must show the solicitation number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Solicitation number is stated in the subject line.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Subject: Quote for Solicitation 36C24126Q0731 P0003 - Sorna Vertex 25ei\nPlatform/CD Burner",
+          "start_char": 65,
+          "end_char": 155
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "time_specified_for_receipt_stated",
+      "description": "The quote must show the time specified in the solicitation for receipt of quotations.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states the 11:00 AM EDT on 09/18/26 receipt time.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "We acknowledge the time specified\nin the solicitation for receipt of quotations as 11:00 AM EDT on\n09/18/26.",
+          "start_char": 283,
+          "end_char": 391
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "quoter_contact_info_stated",
+      "description": "The quote must show the name, address, and telephone number of the quoter.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Name, address, and telephone number are all provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Coastal Imaging Solutions, Inc.\n410 Harbor Commerce Way\nNew Bedford, MA 02740\nTelephone: (508) 555-0193",
+          "start_char": 437,
+          "end_char": 540
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_description_stated",
+      "description": "The quote must show a technical description of the items being quoted in sufficient detail to evaluate compliance with the solicitation's requirements.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes the quoted platform, software, and configuration in sufficient detail.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Technical description of items quoted: We are quoting the Sorna Vertex\n25ei Platform with integrated Sorna CD Burner, matching the brand and\nmodel specified in the Product Chart",
+          "start_char": 767,
+          "end_char": 944
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "warranty_terms_stated",
+      "description": "The quote must show the terms of any express warranty.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states the base configuration carries a 3-year warranty, but then states the burner drive specifically carries only a 2-year warranty under the manufacturer's schedule -- the two stated warranty durations for the same overall system conflict without reconciling which governs.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "carries the manufacturer's 3-year parts-and-labor\nwarranty.",
+          "start_char": 1240,
+          "end_char": 1299
+        },
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "coverage is limited to a\n2-year parts-and-labor warranty per the manufacturer's component\nschedule.",
+          "start_char": 1335,
+          "end_char": 1434
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_and_discount_terms_stated",
+      "description": "The quote must show price and any discount terms.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states Net 30 payment terms and a 1% early-payment discount.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "Net 30 days from invoice date. A 1% discount\napplies if paid within 10 days.",
+          "start_char": 1462,
+          "end_char": 1538
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "remit_to_address_stated",
+      "description": "The quote must show a remit-to address, if different from the mailing address.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides an explicit remit-to address different from the mailing address.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "900 Financial Plaza, Suite 4, Providence, RI 02903",
+          "start_char": 1560,
+          "end_char": 1610
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of the representations and certifications under FAR 52.212-3.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a completed copy of the FAR 52.212-3 representations and certifications is attached to the email as Exhibit A.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "a completed copy of these representations is attached to this\nemail as Exhibit A.",
+          "start_char": 1941,
+          "end_char": 2022
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "amendment_acknowledgment",
+      "description": "Quote must acknowledge receipt of amendments to the request for quotation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states no amendments had been issued, addressing the requirement directly.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "No amendments to this solicitation had been issued as of the date of\nthis quote.",
+          "start_char": 685,
+          "end_char": 765
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "terms_and_conditions_acceptance_statement",
+      "description": "Quote must include one of the two prescribed statements about the solicitation's terms and conditions -- full acceptance without modification, or acceptance with listed exceptions and their rationale.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application includes the prescribed acceptance statement about the solicitation's terms and conditions.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "The terms and conditions in the solicitation are\nacceptable to be included in the award document without modification,\ndeletion, or addition.",
+          "start_char": 2046,
+          "end_char": 2187
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "product_chart_full_pricing",
+      "description": "Quote must enter pricing for every line item listed in the Product Chart.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly leaves the UPS 1KVA - Tower line item unpriced, pending vendor confirmation, rather than entering pricing for every line item.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "UPS 1KVA - Tower, Qty 1, pricing TBD pending vendor confirmation of\ncurrent unit cost.",
+          "start_char": 2572,
+          "end_char": 2658
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "brand_name_no_substitutes",
+      "description": "Quote must be for the Sorna Vertex 25ei Platform/CD Burner by brand name; no substitute or equivalent products may be offered.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application proposes substituting a compatible burner drive from an alternate manufacturer for the disc-burner component, rather than quoting the named brand exclusively as required.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "we propose to substitute a\ncompatible high-speed burner drive from an alternate manufacturer,\nwhich meets or exceeds the write-speed and reliability specifications\nof the drive bundled with the named brand-name unit.",
+          "start_char": 2819,
+          "end_char": 3035
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "shipping_cost_handling",
+      "description": "If shipping does not reach $250.00, its cost must be rolled into the Vertex 25ei/CD Burner line-item price rather than billed separately.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states shipping of $140.00 (below the $250.00 threshold) is rolled into the Vertex 25ei/CD Burner unit price rather than billed as a separate line item, matching the requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "this unit price includes $140.00 of\nshipping cost, rolled in because shipping does not reach $250.00",
+          "start_char": 2373,
+          "end_char": 2473
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "single_best_price_quote",
+      "description": "Quoters are requested to submit one quote presenting their best price, rather than multiple alternative quotes.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly presents a single best and final price with no alternate configurations offered.",
+      "evidence": [
+        {
+          "document_path": "data/36C24126Q0731_appB/application.txt",
+          "quote": "This quote presents our single best and final price; we are not\noffering any alternate configurations.",
+          "start_char": 3037,
+          "end_char": 3139
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 11:00 AM EDT on 09/18/26.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission (channel and timing), not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

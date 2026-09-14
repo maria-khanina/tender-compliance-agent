@@ -1,0 +1,140 @@
+{
+  "recall": 1.0,
+  "total_gold": 20,
+  "total_found": 20,
+  "rows": [
+    {
+      "topic_id": "statement_of_agreement_with_terms",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "references_cpars_requirement",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "offer_solicitation_number_stated",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "offer_offeror_contact_info_stated",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "offer_uei_eft_indicator_stated",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "technical_standards_compliance_documentation",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "inspection_cleaning_methodology",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "osha_10_30_certifications",
+      "gold_evidence_count": 2,
+      "found_count": 2,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "nh_water_operator_license_copy",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "past_performance_water_tower_contracts",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "past_performance_hospital_high_risk_environment",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "past_performance_quality_records",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "sds_management_procedures",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "confined_space_entry_certification",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "confined_space_entry_plan",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "lockout_tagout_procedures",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    },
+    {
+      "topic_id": "fall_protection_plan",
+      "gold_evidence_count": 1,
+      "found_count": 1,
+      "missed_quotes": [],
+      "retrieved_chunk_count": 2
+    }
+  ]
+}

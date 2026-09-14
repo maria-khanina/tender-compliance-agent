@@ -2,7 +2,8 @@
   "notes": [
     "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id. evaluate_verdicts.py still records the exact verdict produced for the confusion matrix -- this list only controls what counts as correct.",
     "A null acceptable_verdicts marks a topic this file does not score for verdict accuracy: sam_registration_required, sdvosb_certification_required, uei_must_be_preexisting, los_requirements_met, and submission_deadline_and_channel, since all five are is_text_verifiable: false in true_requirements.json and never get a verdict from a correctly-behaving pipeline.",
-    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge."
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone; true_requirements.json is the source of truth if the two diverge.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
   ],
   "verdicts": [
     {
@@ -10,21 +11,27 @@
       "description": "Offeror must be registered in the System for Award Management (SAM).",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- whether SAM registration is genuinely active can only be confirmed by checking SAM.gov, not by reading the quote. Scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "sdvosb_certification_required",
       "description": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- VIP/VetCert status can only be confirmed against SBA's VIP database, not by reading the quote. Scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "los_requirements_met",
       "description": "Offeror must actually meet the Limitations on Subcontracting (LOS) requirements in the LOS clauses.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- whether the offeror's actual subcontracting arrangements satisfy the LOS limits cannot be confirmed by reading the quote email, only by an independent review during contract performance.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "los_compliance_assertion",
@@ -33,7 +40,9 @@
         "non_compliant"
       ],
       "rationale": "The requirement is a checkable procedural instruction: the email must contain an assertion of LOS compliance. The application is a complete email and never mentions LOS compliance at all -- the required assertion is verifiably absent, which is a clear failure to follow the instruction, not a case of insufficient information.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "uei_provided_on_quote",
@@ -49,7 +58,9 @@
           "start_char": 604,
           "end_char": 642
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "eft_indicator_if_applicable",
@@ -59,7 +70,9 @@
         "insufficient_information"
       ],
       "rationale": "The application never mentions an EFT indicator. Since the requirement is conditional ('if applicable'), text alone cannot distinguish 'not applicable to this quoter' from 'applicable but omitted' -- both compliant (nothing was owed) and insufficient_information (can't tell) are defensible; non_compliant would wrongly assume it was owed.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "quote_signed_and_dated",
@@ -69,7 +82,9 @@
         "insufficient_information"
       ],
       "rationale": "The quote closes with a typed name ('Sincerely, Diane Kowalski, Contracts Manager'), arguably satisfying 'signed', but no date appears anywhere in the quote content. non_compliant (the date is verifiably missing) and insufficient_information (the transcript may simply omit email metadata that carried a date) are both defensible; compliant is not.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "solicitation_number_stated",
@@ -85,7 +100,9 @@
           "start_char": 244,
           "end_char": 289
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "time_specified_for_receipt_stated",
@@ -101,7 +118,9 @@
           "start_char": 290,
           "end_char": 449
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "quoter_contact_info_stated",
@@ -117,7 +136,9 @@
           "start_char": 451,
           "end_char": 602
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "technical_description_stated",
@@ -133,7 +154,9 @@
           "start_char": 1126,
           "end_char": 1718
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "warranty_terms_stated",
@@ -149,7 +172,9 @@
           "start_char": 1720,
           "end_char": 1862
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "price_and_discount_terms_stated",
@@ -165,7 +190,9 @@
           "start_char": 1864,
           "end_char": 1959
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "remit_to_address_stated",
@@ -181,7 +208,9 @@
           "start_char": 1961,
           "end_char": 2022
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "far_52_212_3_reps_and_certs",
@@ -197,7 +226,9 @@
           "start_char": 2024,
           "end_char": 2185
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "amendment_acknowledgment",
@@ -213,7 +244,9 @@
           "start_char": 897,
           "end_char": 1124
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "terms_and_conditions_acceptance_statement",
@@ -229,7 +262,9 @@
           "start_char": 2187,
           "end_char": 2350
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "product_chart_full_pricing",
@@ -252,7 +287,9 @@
           "start_char": 2407,
           "end_char": 2855
         }
-      ]
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "brand_name_no_substitutes",
@@ -268,7 +305,9 @@
           "start_char": 1165,
           "end_char": 1429
         }
-      ]
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "pipeline_prediction"
     },
     {
       "topic_id": "shipping_cost_handling",
@@ -284,7 +323,9 @@
           "start_char": 3149,
           "end_char": 3311
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "single_best_price_quote",
@@ -300,21 +341,27 @@
           "start_char": 2857,
           "end_char": 3147
         }
-      ]
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "uei_must_be_preexisting",
       "description": "The UEI must already exist in SAM at the time of competition, not be newly registered during the solicitation period.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     },
     {
       "topic_id": "submission_deadline_and_channel",
       "description": "Quote must be emailed to the government POC and received no later than 11:00 AM EDT on 09/18/26.",
       "acceptable_verdicts": null,
       "rationale": "is_text_verifiable: false in true_requirements.json -- scored via the is_text_verifiable accuracy metric, not verdict accuracy.",
-      "evidence": []
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
     }
   ]
 }

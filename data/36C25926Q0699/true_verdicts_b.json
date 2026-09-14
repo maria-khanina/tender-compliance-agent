@@ -1,0 +1,287 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a SECOND, independent synthetic application (Continental Imaging Decommission Services, Inc.) against the same true_requirements.json as data/36C25926Q0699 -- built to add SFT/eval training data with deliberately different failure and compliance shapes from the original application (Summit Biomedical Field Services, LLC).",
+    "Error-shape diversity versus the original: rfq_completeness_signature is now an explicit missing-date gap rather than an ambiguous compliant/insufficient case; personnel_qualifications_fse is now a clean quantitative shortfall (18 months stated) rather than a claimed-vs-actual-tenure contradiction, since that contradiction shape is already the canonical example for this exact topic in the original application; gwac_mas_pricing_disclosure, deliverables_field_service_report, safety_ppe_bloodborne_pathogens, and past_performance_questionnaire_ppq are inverted to compliant rather than the original's non_compliant/insufficient; subcontractor_disclosure_statement is a new contradiction (a named subcontractor mentioned mid-document versus a closing 'no subcontractors' statement) not exercised in the original.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "rfq_completeness_signature",
+      "description": "The RFQ response must be completed in its entirety and be signed and dated; an incomplete, unsigned, or undated response will not be considered for award.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application is signed with a printed name and signature block but no date appears anywhere in the document -- an explicit, unambiguous gap in the signed-and-dated requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Signature: /s/ Priya Desai",
+          "start_char": 3999,
+          "end_char": 4025
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "sdvosb_certification_status",
+      "description": "To be eligible for this 100% SDVOSB set-aside, the offeror's service-disabled veteran-owned small business status must be verified and visible in the SBA Small Business Certification database both at the time of quote submission and at award.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine SBA certification database status cannot be confirmed from application text.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "gwac_mas_pricing_disclosure",
+      "description": "Offeror must state whether the quoted items are available and priced through an existing Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule (MAS), or VA-wide Acquisition Contract.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states the quoted items are not available under any GWAC, MAS, or VA-wide contract and are offered open-market.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "The items and services quoted are not currently available or priced\nunder any Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule\n(MAS), or VA-wide Acquisition Contract; this quote is submitted as an open-market offer.",
+          "start_char": 487,
+          "end_char": 726
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "technical_narrative_sow_demonstration",
+      "description": "Volume I must demonstrate how the offeror's quote meets the Statement of Work and solicitation requirements, including testing plans, lab certifications, and alignment with the Quality Assurance Surveillance Plan (QASP).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Volume I addresses the Statement of Work requirements section by section (contract vehicle, infection control, floor area, reporting, personnel, safety).",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental demonstrates the following approach to meeting the requirements of the\nStatement of Work (SOW) and this solicitation.",
+          "start_char": 338,
+          "end_char": 467
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "icra_level_iv_plan",
+      "description": "The technical approach must establish and maintain an Infection Control Risk Assessment (ICRA) Level IV compliant work area around the Radiology room -- dust barriers and protective measures as directed by facility Infection Prevention/Safety staff, plus debris control, cleaning, and containment throughout the work.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application describes an ICRA Level IV compliant work area with dust barriers and continuous debris control, cleaning, and containment.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental will establish and maintain a full Infection Control Risk\nAssessment (ICRA) Level IV compliant work area surrounding the Radiology suite for the\nduration of the project",
+          "start_char": 747,
+          "end_char": 927
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "floor_restoration_approach",
+      "description": "The technical approach must address removing anchoring bolts/hardware from the floor, restoring the floor to a flush condition suitable for future construction, and removing all resulting trash and debris.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application addresses removing anchoring bolts/hardware and removing resulting trash and debris, but never confirms the floor is restored to a flush condition suitable for future construction -- one of the three required elements is unaddressed.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental will remove all anchoring\nbolts and other hardware associated with the GE INNOVA 4100-IQ installation from the\nfloor, and will remove all resulting trash and debris from the site.",
+          "start_char": 1207,
+          "end_char": 1398
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "deliverables_field_service_report",
+      "description": "The offeror's approach must account for delivering a detailed field service report upon completion, at minimum covering equipment identification, dates/times on site, description of tasks performed, confirmation of the monitor arm's final disposition, and any issues encountered with corrective actions taken.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application's field service report description covers equipment identification, dates/times on site, task description, monitor arm disposition, and issues/corrective actions -- all five required elements.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental will submit a detailed field\nservice report to Biomedical Engineering and the COR identifying the equipment removed\n(device name and model), the dates and times on site, a description of the tasks\nperformed, confirmation of the monitor arm's final disposition, and a description of any\nissues encountered along with the corrective actions taken.",
+          "start_char": 1447,
+          "end_char": 1804
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "personnel_qualifications_fse",
+      "description": "All Field Service Engineers performing the work must be fully qualified: formally trained (OEM or equivalent) in imaging-system de-installation and related tasks, and with at least two years of field experience maintaining or de-installing comparable imaging systems.",
+      "acceptable_verdicts": [
+        "non_compliant"
+      ],
+      "rationale": "Application explicitly states the lead Field Service Engineer has only 18 months of field experience, short of the 2-year minimum the requirement sets.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Priya Desai, has\n18 months of hands-on field experience de-installing and maintaining GE imaging systems",
+          "start_char": 1875,
+          "end_char": 1979
+        }
+      ],
+      "primary_verdict": "non_compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "safety_ppe_bloodborne_pathogens",
+      "description": "The contractor's approach must comply with the OSHA Bloodborne Pathogens Standard: educating employees on risks, implementing exposure-reduction policies/procedures, providing counseling/treatment mechanisms after potential exposure, and providing/enforcing PPE use.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application addresses all four required Bloodborne Pathogens Standard elements: employee education on risks, exposure-reduction procedures, post-exposure counseling/treatment referral, and PPE enforcement.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental's Bloodborne Pathogens Exposure Control Plan educates employees on\nbloodborne pathogen risks during equipment removal, implements exposure-reduction\nprocedures including engineering and work-practice controls, provides post-exposure\ncounseling and treatment referral through our occupational health provider, and requires\nand enforces PPE use by all field personnel on every job site.",
+          "start_char": 2037,
+          "end_char": 2433
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "price_schedule_completion",
+      "description": "Offeror must complete the pricing schedule (price the base year line item, plus any option year line items) as part of Volume II.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Base year CLIN is priced with a matching total price.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "CLIN 0001 (Base Year, GE INNOVA 4100IQ Systems Removal, 1 EA): $22,900.00",
+          "start_char": 2455,
+          "end_char": 2528
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_two_references",
+      "description": "Offeror must provide up to two recent and relevant past performance references, each including contract number, award amount, POC contact information, and a description of the work performed and how well it was performed.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application provides two references, each with contract number, award amount, POC contact information, and a description of work performed and quality.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Contract Number: 36C26119F0088",
+          "start_char": 3022,
+          "end_char": 3052
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "past_performance_questionnaire_ppq",
+      "description": "Offeror must provide completed Past Performance Questionnaires (PPQ) signed by the point of contact who oversaw performance (or an equal representative), submitted either by the offeror with its proposal or directly by the third party by the proposal deadline.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states completed Past Performance Questionnaires for both references are attached as Exhibit B, signed by each point of contact.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Completed Past Performance Questionnaires for both references above are attached to\nthis quote as Exhibit B, signed by each point of contact.",
+          "start_char": 3350,
+          "end_char": 3491
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontracting_certificate_completion",
+      "description": "Offeror must complete VAAR 852.219-75 VA Notice of Limitations on Subcontracting -- Certificate of Compliance for Services and Construction, as Volume IV of the quote.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Volume IV includes the VAAR 852.219-75 certification with signee name, title, signature, and company information.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Continental Imaging Decommission Services, Inc. certifies that if awarded the contract,\nit will comply with the limitations on subcontracting specified in VAAR 852.219-75 and\nthe resultant contract.",
+          "start_char": 3722,
+          "end_char": 3920
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontractor_disclosure_statement",
+      "description": "Offeror must list any/all subcontractors it will use (with their size standard under NAICS 541380) and what they will perform, and explain how it will comply with the limitations on subcontracting -- or state that no subcontractors will be used.",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "Application states in the Past Performance section that a named subcontractor (Redline Environmental Services) will handle debris disposal, but the closing line of the quote states no subcontractors will be used -- the two statements directly conflict.",
+      "evidence": [
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "Our subcontractor, Redline Environmental Services, will handle disposal of removed\nhardware and debris under this contract, coordinated by our lead Field Service Engineer.",
+          "start_char": 3493,
+          "end_char": 3664
+        },
+        {
+          "document_path": "data/36C25926Q0699_appB/application.txt",
+          "quote": "No subcontractors will be used for this requirement.",
+          "start_char": 4156,
+          "end_char": 4208
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "subcontracting_cap_representation",
+      "description": "By certifying compliance with the VAAR 852.219-75 clause for this services acquisition, the offeror represents it will not pay more than 50% of the amount paid by the Government to firms that are not certified SDVOSBs/VOSBs.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- the 50% subcontracting cap representation is an automatic consequence of certifying VAAR 852.219-75, not something the text independently confirms.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "quote_due_date",
+      "description": "Quotes are due to the Contract Specialist by 10:00 AM MT, July 7, 2026.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission timing, not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "quote_submission_channel",
+      "description": "Quotes must be submitted by email only (4MB limit); hand-carried and faxed quotes are not accepted.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission (channel), not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    }
+  ]
+}

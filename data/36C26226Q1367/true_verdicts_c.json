@@ -1,0 +1,521 @@
+{
+  "notes": [
+    "acceptable_verdicts is a list, not a single value: any verdict in it counts as correct for this topic_id.",
+    "This is a THIRD, independent synthetic application (Sterling Medical Furnishings, LLC, offering the EchoFlex 5000) against the same true_requirements.json as data/36C26226Q1367 -- built specifically to add another contradictory example of a fresh shape (a weight-capacity conflict: the salient-characteristics summary states 750 lb bariatric-rated capacity, but the attached technical data sheet excerpt states a 500 lb maximum rated dynamic load for the same table's frame/lift mechanism), distinct from application.txt's distributor/gray-market contradictions and application_b.txt's apical-cutout-dimension contradiction on this tender.",
+    "Most other salient characteristics and administrative topics are given straightforward compliant treatment in this variant since the goal of this pass is specifically to add contradictory-class density and format diversity, not to re-exercise every failure shape again.",
+    "description is copied verbatim from the matching topic_id in true_requirements.json so this file can be read alone.",
+    "primary_verdict / primary_verdict_source (added by SFT data-prep pass): a single training-target label per topic, additive -- acceptable_verdicts is unchanged and remains the source of truth for verdict-accuracy scoring. primary_verdict is the pipeline's own correct prediction where one exists (source: pipeline_prediction), else acceptable_verdicts[0] (source: acceptable_verdicts_first). null for topics with acceptable_verdicts: null (excluded from SFT training, same as they're excluded from verdict scoring)."
+  ],
+  "verdicts": [
+    {
+      "topic_id": "sam_uei_vendor_info",
+      "description": "Quote packet must include vendor information along with the SAM Unique Entity Identifier (UEI).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Vendor name, address, and SAM UEI are all provided.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "SAM UEI: SMF6Q2XT9RN7",
+          "start_char": 472,
+          "end_char": 493
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "terms_concurrence_statement",
+      "description": "Quote packet must state concurrence or non-concurrence with the solicitation's terms, conditions, and provisions.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states concurrence with all terms, conditions, and provisions.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC concurs with all\nterms, conditions, and provisions of this solicitation.",
+          "start_char": 517,
+          "end_char": 623
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fob_destination_manufacturer_part_number",
+      "description": "Items shall be FOB destination; quote must specify the offered item's manufacturer and part number.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states FOB Destination and gives manufacturer and part number.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Halcyon Medical Systems Corp., Part Number HMS-EF5000.",
+          "start_char": 692,
+          "end_char": 746
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "authorized_distributor_letter",
+      "description": "Quote packet must include an Authorized Distributor Letter/Memo from the manufacturer.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states a signed Authorized Distributor Letter is attached as Exhibit A.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "The\nsigned Authorized Distributor Letter is attached to this quote as\nExhibit A.",
+          "start_char": 908,
+          "end_char": 988
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "buy_american_taa_general_compliance",
+      "description": "Offered product must comply with the Buy American Act, the Trade Agreements Act, and other relevant FAR/agency regulations.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- genuine Buy American Act/TAA compliance cannot be confirmed from application text alone.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "country_of_origin_disclosure",
+      "description": "Quote must include a Country of Origin for the items being offered.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "A single, consistent country of origin is stated for the offered item.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "The EchoFlex 5000 is manufactured in Louisville,\nKentucky, USA.",
+          "start_char": 1009,
+          "end_char": 1072
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "buy_american_certificate_completed",
+      "description": "Quote must include a completed Buy American Certificate (FAR 52.225-2): certify domestic/foreign end-product status per line item, list foreign end products and whether they exceed 55% domestic content, and separately list domestic end products containing a critical component.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application certifies the item as a domestic end product with no foreign end products included.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "The EchoFlex 5000 is certified\nas a domestic end product; no foreign end products are included in this\nquote.",
+          "start_char": 1115,
+          "end_char": 1224
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "gray_market_verification",
+      "description": "Quote must include verification that the offered items are not gray market goods.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states it is an authorized distributor and does not source or distribute gray market goods.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC is an\nauthorized distributor and does not source or distribute any gray\nmarket goods.",
+          "start_char": 1252,
+          "end_char": 1371
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "business_size_designation",
+      "description": "Quote must indicate whether the offered items are manufactured by a small or large business.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application explicitly states it is a small business under the applicable NAICS code.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC is a small business\nunder the applicable NAICS code.",
+          "start_char": 1388,
+          "end_char": 1474
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "fss_contract_listing",
+      "description": "If the offeror holds an FSS contract listing the items, the quote must list the contract number and expiration date.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "This sub-requirement only applies if the vendor holds an FSS contract; the application states it does not hold one, so the triggering condition does not apply.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC does not\ncurrently hold a Federal Supply Schedule (FSS) contract for this item.",
+          "start_char": 1497,
+          "end_char": 1610
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "or_equal_submission_requirements",
+      "description": "If offering an equivalent product, the quote must show how it meets the salient characteristics in Attachment B (by filling columns F-K of Attachment A or stating where in the submission that information appears), clearly identify the item by brand name and make/model number, include descriptive literature, and clearly describe and mark any planned modifications.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application identifies the offered item by brand/make/model, states columns F-K of Attachment A were completed, and references descriptive literature (Exhibit B).",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Columns F-K of\nAttachment A have been completed and are included with this\nsubmission, cross-referenced to the EchoFlex 5000 technical data sheet\n(attached as Exhibit B).",
+          "start_char": 1730,
+          "end_char": 1900
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "far_52_212_3_reps_and_certs",
+      "description": "Quote must include a completed copy of FAR 52.212-3 Offeror Representations and Certifications, unless the offeror's SAM.gov record is already current.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states representations and certifications under FAR 52.212-3 are current in SAM.gov.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical\nFurnishings, LLC's representations and certifications under FAR\n52.212-3 are current and up to date in SAM.gov.",
+          "start_char": 3094,
+          "end_char": 3222
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "nmr_certification_signed",
+      "description": "Quote must include the completed and signed Non-Manufacturing Rule (NMR) Certification (small business/non-manufacturer status, sourcing, no alteration of goods), including signature, name, title, date, and business name.",
+      "acceptable_verdicts": [
+        "insufficient_information"
+      ],
+      "rationale": "Application states an executed NMR certification is maintained on file internally, but never confirms it includes the required signature, name, title, and date within the submission itself.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC\nmaintains an executed Non-Manufacturing Rule certification on file with\nour corporate compliance department.",
+          "start_char": 3262,
+          "end_char": 3404
+        }
+      ],
+      "primary_verdict": "insufficient_information",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "submission_deadline_and_channel",
+      "description": "Quote must be emailed to the government POC and received no later than 9:00am PT on 08/27/26.",
+      "acceptable_verdicts": null,
+      "rationale": "is_text_verifiable: false -- concerns the process of submission (channel and timing), not application content.",
+      "evidence": [],
+      "primary_verdict": null,
+      "primary_verdict_source": null
+    },
+    {
+      "topic_id": "salient_char_electric_locking_casters",
+      "description": "Offered echocardiography examination table must have electric locking casters.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states electric locking casters standard on all four wheels.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Electric locking casters standard on all four wheels.",
+          "start_char": 1960,
+          "end_char": 2013
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_height_adjustment",
+      "description": "Offered echocardiography examination table must have an adjustable height range (e.g., 24\"-34\" on many models) for optimal sonographer access.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states a 24 to 34 inch powered height adjustment range.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "24\" to 34\" powered height adjustment.",
+          "start_char": 2030,
+          "end_char": 2067
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_hand_control_storage_loops",
+      "description": "Offered echocardiography examination table must have 4 flexible hand control storage loops.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states 4 flexible hand control storage loops.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "4 flexible hand control storage loops.",
+          "start_char": 2092,
+          "end_char": 2130
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_patient_surface_footprint",
+      "description": "Offered echocardiography examination table must have a patient surface footprint of 30\"W x 83\"L.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states a 30 inch by 83 inch patient surface footprint, matching the requirement.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Patient surface footprint: 30\"W x 83\"L.",
+          "start_char": 2133,
+          "end_char": 2172
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_ada_entry_height",
+      "description": "Offered echocardiography examination table must have an ADA-compliant low-entry height (entry heights from 17\" to 19\", or 19\"-37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states an ADA-compliant entry height of 18 to 20 inches, within the requirement's example range.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "ADA-compliant low-entry height, 18\" to 20\".",
+          "start_char": 2189,
+          "end_char": 2232
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_trendelenburg_positioning",
+      "description": "Offered echocardiography examination table must feature Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt for specific imaging angles.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states Trendelenburg and Reverse Trendelenburg positioning with adjustable tilt.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Trendelenburg and Reverse Trendelenburg with adjustable\n  tilt.",
+          "start_char": 2248,
+          "end_char": 2311
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_open_apical_window",
+      "description": "Offered echocardiography examination table must feature an open apical window with a large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states a 9.5 inch by 15.75 inch apical cutout, matching the requirement's example dimensions.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Open apical window, 9.5\"W x 15.75\"L cardiac scanning\n  cutout.",
+          "start_char": 2329,
+          "end_char": 2391
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_patient_weight_capacity",
+      "description": "Offered echocardiography examination table must have an appropriate patient weight and bariatric-rated load capacity (up to 750 lbs on standard models, up to 1,250 lbs with a 500 lb powered lift on bariatric-rated versions).",
+      "acceptable_verdicts": [
+        "contradictory"
+      ],
+      "rationale": "The salient characteristics summary states a 750 lb standard patient and bariatric-rated load capacity, but the attached technical data sheet excerpt states the maximum rated dynamic load for the base frame and lift mechanism is 500 lbs -- the two capacity figures for the same table conflict.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Weight capacity: 750 lb standard patient and bariatric-rated load\n  capacity.",
+          "start_char": 2394,
+          "end_char": 2471
+        },
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Maximum rated dynamic load for the EF5000 base frame and lift\nmechanism is 500 lbs; exceeding this rating during patient transfer or\npositioning may void the mechanical warranty.",
+          "start_char": 2864,
+          "end_char": 3042
+        }
+      ],
+      "primary_verdict": "contradictory",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_rapid_release_drop_sections",
+      "description": "Offered echocardiography examination table must include dual rapid release imaging drop sections or walk-away models for left, right, or multi-access scanning.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states dual rapid-release imaging drop sections for left, right, and multi-access scanning.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Dual rapid-release imaging drop sections for left,\n  right, and multi-access scanning.",
+          "start_char": 2489,
+          "end_char": 2575
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_adjustable_back_support",
+      "description": "Offered echocardiography examination table must feature an electrically adjustable patient back support / Fowler backrest (positionable from 0° to at least 65° or up to 80° depending on variants).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states the electrically adjustable Fowler backrest ranges 0 to 70 degrees, exceeding the required at-least-65-degree range.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Electrically adjustable Fowler backrest, 0 to 70 degrees.",
+          "start_char": 2588,
+          "end_char": 2645
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_drop_section_size",
+      "description": "Offered echocardiography examination table must feature a standard 14\" x 14\" drop section to reduce repositioning during exams.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states a standard 14 inch by 14 inch drop section, matching the requirement exactly.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Standard 14\" x 14\" drop section.",
+          "start_char": 2667,
+          "end_char": 2699
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "salient_char_dropdown_cushion",
+      "description": "Offered echocardiography examination table must have a drop-down cushion that releases from either side for barrier-free access.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Spec sheet states the drop-down cushion releases from either side for barrier-free access.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Drop-down cushion releases from either side for barrier-free\n  access.",
+          "start_char": 2711,
+          "end_char": 2781
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "delivery_timeframe_30_days_aro",
+      "description": "Delivery timeframe shall be 30 days ARO (after receipt of order).",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states it can meet the 30-day ARO delivery timeframe.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC can meet the 30-day ARO\ndelivery timeframe to VA Greater Los Angeles Healthcare System.",
+          "start_char": 3611,
+          "end_char": 3732
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "software_licensing_oem_terms_conformance",
+      "description": "All software licensing, warranty, and service associated with the medical equipment must be in accordance with the OEM's terms and conditions.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application states software licensing, warranty, and service will be provided per the OEM's terms and conditions.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "All software licensing, warranty, and service\nassociated with the EchoFlex 5000 will be provided in accordance with\nHalcyon Medical Systems Corp.'s OEM terms and conditions.",
+          "start_char": 3426,
+          "end_char": 3599
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    },
+    {
+      "topic_id": "brand_name_required_unless_equal_indicated",
+      "description": "Unless the offeror clearly indicates in its offer that the product being offered is an 'equal' product, the offeror shall provide the brand name product referenced in the solicitation.",
+      "acceptable_verdicts": [
+        "compliant"
+      ],
+      "rationale": "Application clearly indicates the product is offered as an 'equal' to the named brand-name item.",
+      "evidence": [
+        {
+          "document_path": "data/36C26226Q1367/application_c.txt",
+          "quote": "Sterling Medical Furnishings, LLC submits the following quote in response to\nSolicitation 36C26226Q1367, offering an \"equal\" product to the MPI Echo Bed\nCardiac Imaging Table (EB924).",
+          "start_char": 182,
+          "end_char": 365
+        }
+      ],
+      "primary_verdict": "compliant",
+      "primary_verdict_source": "acceptable_verdicts_first"
+    }
+  ]
+}
