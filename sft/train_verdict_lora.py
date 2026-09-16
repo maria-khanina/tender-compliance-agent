@@ -1,26 +1,27 @@
-"""QLoRA SFT for the verdict-generation step (Qwen/Qwen3-8B, 4-bit base +
-LoRA adapter -- served later on top of Qwen/Qwen3-8B-AWQ via vLLM
---enable-lora). Runs in the WSL venv at /root/sft/venv, not the main repo's
-Python env. Reads sft/data/verdicts_*.jsonl from build_verdict_dataset.py.
-"""
 import json
+import pathlib
 import re
+import sys
 from dataclasses import dataclass, field
 
 import torch
 from datasets import Dataset
-from peft import LoraConfig, get_peft_model
+from peft import LoraConfig
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     BitsAndBytesConfig,
     TrainerCallback,
 )
-from trl import SFTConfig, SFTTrainer
+from trl import SFTConfig, SFTTrainer  # type: ignore[reportPrivateImportUsage]
 
-BASE_MODEL = "Qwen/Qwen3-8B"
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+BASE_MODEL = "Qwen/Qwen3-4B"
 DATA_DIR = "sft/data"
-OUTPUT_DIR = "sft/checkpoints/verdict-lora"
+RUN_DIR = "sft/runs/qwen3-4b-v1"
+OUTPUT_DIR = f"{RUN_DIR}/sft_checkpoints"
 MAX_SEQ_LEN = 2304
 
 VERDICT_LABELS = [
@@ -70,10 +71,6 @@ def load_jsonl(path: str) -> list[dict]:
 
 
 def to_chat_example(row: dict) -> dict:
-    """One row -> {messages, tools} in the shape trl's SFTTrainer /
-    tokenizer.apply_chat_template expects, with the assistant turn as a
-    tool call so training-time formatting matches how vLLM will actually
-    present/expect this model's output at inference time."""
     completion = row["completion"]
     tool_call = {
         "id": "call_1",
@@ -109,6 +106,8 @@ def build_datasets() -> tuple[Dataset, list[dict]]:
 
 
 def load_model_and_tokenizer():
+    from sft.peft_utils import wrap_with_lora
+
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
@@ -132,17 +131,12 @@ def load_model_and_tokenizer():
         ],
         task_type="CAUSAL_LM",
     )
-    model = get_peft_model(model, lora_config)
+    model = wrap_with_lora(model, lora_config)
     model.print_trainable_parameters()
     return model, tokenizer
 
 
 def extract_verdict_label(generated_text: str) -> str | None:
-    """Best-effort parse of the model's tool-call arguments back to a
-    verdict label -- used only for the validation task-metric, not for
-    training. Handles both a clean JSON tool-call and a bare JSON object,
-    since exact tool-call formatting can vary until the format is verified
-    against a real generation."""
     match = re.search(r'"verdict"\s*:\s*"(\w+)"', generated_text)
     if match and match.group(1) in VERDICT_LABELS:
         return match.group(1)
@@ -161,6 +155,7 @@ def evaluate_task_accuracy(model, tokenizer, val_rows: list[dict]) -> dict:
             tools=row["tools"],
             add_generation_prompt=True,
             tokenize=False,
+            enable_thinking=False,
         )
         inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
         output_ids = model.generate(
@@ -207,18 +202,16 @@ class TaskMetricEarlyStopping(TrainerCallback):
     min_delta: float = 0.01
     eval_every_n_steps: int = 40
     save_every_n_steps: int = 15
-    history_path: str = f"{OUTPUT_DIR}/training_history.json"
-    loss_log_path: str = f"{OUTPUT_DIR}/loss_log.jsonl"
+    history_path: str = f"{RUN_DIR}/sft_training_history.json"
+    loss_log_path: str = f"{RUN_DIR}/sft_loss_log.jsonl"
     best_metric: float = field(default=-1.0)
     best_step: int = field(default=-1)
     rounds_without_improvement: int = field(default=0)
     history: list = field(default_factory=list)
-    pending_metric: float | None = field(default=None)
-    pending_step: int | None = field(default=None)
 
     def _persist_history(self) -> None:
         import os
-        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        os.makedirs(RUN_DIR, exist_ok=True)
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
@@ -226,7 +219,7 @@ class TaskMetricEarlyStopping(TrainerCallback):
         if logs is None:
             return control
         import os
-        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        os.makedirs(RUN_DIR, exist_ok=True)
         with open(self.loss_log_path, "a", encoding="utf-8") as f:
             f.write(json.dumps({"step": state.global_step, **logs}) + "\n")
         return control
@@ -239,7 +232,7 @@ class TaskMetricEarlyStopping(TrainerCallback):
         is_periodic_save_step = (
             self.save_every_n_steps and step % self.save_every_n_steps == 0
         )
-        if is_periodic_save_step and not is_eval_step:
+        if is_periodic_save_step:
             control.should_save = True
             print(f"[checkpoint] periodic save at step {step}")
         if not is_eval_step:
@@ -255,32 +248,12 @@ class TaskMetricEarlyStopping(TrainerCallback):
         )
         metric = result["macro_f1"]
         if metric > self.best_metric + self.min_delta:
-            is_confirmation = (
-                self.pending_metric is not None
-                and step - self.pending_step == self.eval_every_n_steps
-            )
-            if is_confirmation:
-                self.best_metric = metric
-                self.best_step = step
-                self.rounds_without_improvement = 0
-                control.should_save = True
-                self.pending_metric = None
-                self.pending_step = None
-                print(
-                    f"[task-eval] confirmed new best macro_f1={metric:.3f} "
-                    f"(improved for 2 consecutive rounds) -- checkpoint saved"
-                )
-            else:
-                self.pending_metric = metric
-                self.pending_step = step
-                self.rounds_without_improvement = 0
-                print(
-                    f"[task-eval] possible improvement macro_f1={metric:.3f} "
-                    f"-- not yet saved, awaiting confirmation next round"
-                )
+            self.best_metric = metric
+            self.best_step = step
+            self.rounds_without_improvement = 0
+            control.should_save = True
+            print(f"[task-eval] new best macro_f1={metric:.3f} at step {step}")
         else:
-            self.pending_metric = None
-            self.pending_step = None
             self.rounds_without_improvement += 1
             print(
                 f"[task-eval] no improvement "
@@ -297,6 +270,8 @@ class TaskMetricEarlyStopping(TrainerCallback):
 
 
 def main():
+    from sft.peft_utils import as_peft_model
+
     train_ds, val_rows = build_datasets()
     print(f"train examples: {len(train_ds)}, validation examples: {len(val_rows)}")
 
@@ -316,6 +291,7 @@ def main():
         gradient_accumulation_steps=8,
         gradient_checkpointing=True,
         learning_rate=1e-4,
+        weight_decay=0.01,
         num_train_epochs=6,
         logging_steps=10,
         save_strategy="no",
@@ -335,13 +311,11 @@ def main():
     trainer.train()
 
     final_dir = f"{OUTPUT_DIR}/final"
-    trainer.model.save_pretrained(final_dir)
+    as_peft_model(trainer.model).save_pretrained(final_dir)
     tokenizer.save_pretrained(final_dir)
     print(f"Saved LoRA adapter to {final_dir}")
     print(f"Best step: {early_stopping.best_step}, "
           f"best macro_f1: {early_stopping.best_metric:.3f}")
-    with open(f"{OUTPUT_DIR}/training_history.json", "w", encoding="utf-8") as f:
-        json.dump(early_stopping.history, f, indent=2)
 
 
 if __name__ == "__main__":

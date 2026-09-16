@@ -114,6 +114,7 @@ def test_disabling_the_new_adapter_changes_the_policys_output(
         bf16=False,
         gradient_checkpointing=False,
     )
+    assert trainer.model is not None
     lora_param_name = next(
         name for name, _ in trainer.model.named_parameters() if "lora_B" in name
     )

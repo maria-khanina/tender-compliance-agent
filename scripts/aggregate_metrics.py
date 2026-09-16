@@ -133,10 +133,11 @@ def main() -> None:
     def mean_row(rows: list[dict[str, float | int | None]]) -> dict[str, str]:
         cells: dict[str, str] = {"case": "**mean**"}
         for key, _label in TABLE_COLUMNS:
-            values = [
-                row[key] for row in rows
-                if isinstance(row.get(key), (int, float))
-            ]
+            values: list[float | int] = []
+            for row in rows:
+                value = row.get(key)
+                if isinstance(value, (int, float)):
+                    values.append(value)
             if not values:
                 cells[key] = "—"
                 continue
