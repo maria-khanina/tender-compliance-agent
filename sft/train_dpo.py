@@ -1,30 +1,9 @@
-"""DPO for the verdict-generation step, continuing from the merged SFT
-checkpoint (see merge_sft_adapter.py). Reads sft/data/dpo_train.jsonl
-built by build_dpo_dataset.py.
-
-Architecture (see the "DPO planning" discussion this was built from):
-- The merged SFT weights (base + old LoRA, already flattened into plain
-  weights by merge_sft_adapter.py) are loaded as the base model here and
-  never modified directly.
-- A brand-new LoRA adapter is attached on top via `peft_config` passed
-  straight into DPOTrainer, NOT pre-wrapped with get_peft_model. This
-  matters: DPOTrainer raises if you hand it an already-PEFT-wrapped
-  model together with a peft_config (see trl's dpo_trainer.py -- "please
-  first merge and unload the existing adapter"). Passed this way,
-  DPOTrainer wraps the model itself and, seeing `ref_model=None` and
-  `is_peft_model(self.model) == True`, never loads a second copy of the
-  weights for the reference -- it recovers the reference behavior by
-  disabling the new adapter for that forward pass. That disabled state
-  is exactly the merged SFT model, i.e. exactly the frozen reference we
-  want, at no extra VRAM cost.
-- This gives a DPO adapter that can be compared against the SFT-only
-  adapter by simply swapping which adapter vLLM loads at eval time --
-  no separate "did DPO help" ambiguity from retraining SFT itself.
-
-Runs in the WSL venv at /root/sft/venv, same as train_verdict_lora.py.
-"""
 import json
+import math
 import os
+import pathlib
+import sys
+from dataclasses import dataclass, field
 
 import torch
 from datasets import Dataset
@@ -35,18 +14,27 @@ from transformers import (
     BitsAndBytesConfig,
     TrainerCallback,
 )
-from trl import DPOConfig, DPOTrainer
+import trl.trainer.dpo_trainer as _dpo_trainer_module
+from trl import DPOConfig, DPOTrainer  # type: ignore[reportPrivateImportUsage]
 
-from sft.train_verdict_lora import TOOL_SCHEMA
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+_dpo_trainer_module.entropy_from_logits = (
+    lambda logits, chunk_size=128: torch.zeros(logits.shape[:-1], device=logits.device)
+)
 
-MERGED_MODEL_DIR = "sft/checkpoints/verdict-lora-merged"
-DATA_PATH = "sft/data/dpo_train.jsonl"
-OUTPUT_DIR = "sft/checkpoints/verdict-dpo-lora"
+RUN_DIR = "sft/runs/qwen3-4b-v1"
+MERGED_MODEL_DIR = f"{RUN_DIR}/merged"
+DATA_PATH = f"{RUN_DIR}/dpo_train.jsonl"
+VAL_DATA_PATH = "sft/data/verdicts_validation.jsonl"
+OUTPUT_DIR = f"{RUN_DIR}/dpo_checkpoints"
 MAX_SEQ_LEN = 2304
 
-# Same beta as trl's own DPOConfig default: a mid-range value, deliberately
-# not tuned for this proof-of-concept -- see the DPO options discussion.
 DPO_BETA = 0.1
+
+PER_DEVICE_TRAIN_BATCH_SIZE = 1
+GRADIENT_ACCUMULATION_STEPS = 8
+NUM_TRAIN_EPOCHS = 1
 
 
 def load_jsonl(path: str) -> list[dict]:
@@ -75,11 +63,8 @@ def _tool_call_message(completion: dict) -> dict:
 
 
 def to_dpo_chat_example(row: dict) -> dict:
-    """One dpo_train.jsonl row -> the {prompt, chosen, rejected, tools}
-    conversational shape trl's DPOTrainer expects (see
-    trl.trainer.dpo_trainer's tokenize_fn: prompt/chosen/rejected are each
-    a list of chat messages, tools is passed straight through as an
-    apply_chat_template kwarg)."""
+    from sft.train_verdict_lora import TOOL_SCHEMA
+
     return {
         "prompt": [{"role": "user", "content": row["prompt"]}],
         "chosen": [_tool_call_message(row["chosen"])],
@@ -113,8 +98,6 @@ def load_model_and_tokenizer():
 
 
 def build_lora_config() -> LoraConfig:
-    # Same shape as the SFT adapter (sft/train_verdict_lora.py) -- a new,
-    # independent adapter, not a continuation of the SFT one.
     return LoraConfig(
         r=16,
         lora_alpha=32,
@@ -127,12 +110,47 @@ def build_lora_config() -> LoraConfig:
     )
 
 
-class LossLogger(TrainerCallback):
-    """Minimal loss_log.jsonl writer, same convention as
-    train_verdict_lora.py's TaskMetricEarlyStopping.on_log, without the
-    task-metric eval loop -- that would need a live inference server for
-    the validation split, out of scope for this proof-of-concept."""
+@dataclass
+class BestCheckpointTracker(TrainerCallback):
+    tokenizer: object
+    val_rows: list[dict]
+    eval_every_n_steps: int
+    history_path: str = f"{RUN_DIR}/dpo_training_history.json"
+    best_metric: float = field(default=-1.0)
+    best_step: int = field(default=-1)
+    history: list = field(default_factory=list)
 
+    def _persist_history(self) -> None:
+        os.makedirs(RUN_DIR, exist_ok=True)
+        with open(self.history_path, "w", encoding="utf-8") as f:
+            json.dump(self.history, f, indent=2)
+
+    def on_step_end(self, args, state, control, model=None, **kwargs):
+        from sft.train_verdict_lora import evaluate_task_accuracy
+
+        step = state.global_step
+        if step == 0 or step % self.eval_every_n_steps != 0:
+            return control
+        result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
+        result["step"] = step
+        self.history.append(result)
+        self._persist_history()
+        print(
+            f"[dpo-eval] step={step} accuracy={result['task_accuracy']:.3f} "
+            f"macro_f1={result['macro_f1']:.3f} (n={result['n']})"
+        )
+        if result["macro_f1"] > self.best_metric:
+            self.best_metric = result["macro_f1"]
+            self.best_step = step
+            control.should_save = True
+            print(
+                f"[dpo-eval] new best macro_f1={result['macro_f1']:.3f} "
+                "-- checkpoint saved"
+            )
+        return control
+
+
+class LossLogger(TrainerCallback):
     def __init__(self, path: str):
         self.path = path
 
@@ -154,24 +172,21 @@ def build_trainer(
     bf16: bool = True,
     gradient_checkpointing: bool = True,
 ) -> DPOTrainer:
-    """lora_config/output_dir/bf16/gradient_checkpointing are overridable
-    so tests can wire this same function up with a tiny CPU stand-in
-    model (whose module names don't match build_lora_config()'s Qwen
-    target_modules, and whose host may not support bf16) and a
-    throwaway output dir, without touching sft/checkpoints/verdict-dpo-lora."""
     dpo_config = DPOConfig(
         output_dir=output_dir or OUTPUT_DIR,
-        per_device_train_batch_size=1,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=PER_DEVICE_TRAIN_BATCH_SIZE,
+        gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
         gradient_checkpointing=gradient_checkpointing,
         learning_rate=5e-6,
-        num_train_epochs=1,
+        weight_decay=0.01,
+        num_train_epochs=NUM_TRAIN_EPOCHS,
         beta=DPO_BETA,
         logging_steps=5,
         save_strategy="no",
         max_length=MAX_SEQ_LEN,
         bf16=bf16,
         report_to=[],
+        use_liger_kernel=False,
     )
     return DPOTrainer(
         model=model,
@@ -184,18 +199,41 @@ def build_trainer(
 
 
 def main():
+    from sft.peft_utils import as_peft_model
+    from sft.train_verdict_lora import load_jsonl as load_jsonl_sft
+    from sft.train_verdict_lora import to_chat_example
+
     train_ds = build_dataset()
-    print(f"DPO train examples: {len(train_ds)}")
+    val_rows = [to_chat_example(r) for r in load_jsonl_sft(VAL_DATA_PATH)]
+    print(f"DPO train examples: {len(train_ds)}, validation examples: {len(val_rows)}")
 
     model, tokenizer = load_model_and_tokenizer()
+
+    total_steps = math.ceil(
+        len(train_ds) / (PER_DEVICE_TRAIN_BATCH_SIZE * GRADIENT_ACCUMULATION_STEPS)
+    ) * NUM_TRAIN_EPOCHS
+    eval_every_n_steps = max(5, total_steps // 8)
+    print(f"total DPO steps ~= {total_steps}, eval every {eval_every_n_steps} steps")
+
+    checkpoint_tracker = BestCheckpointTracker(
+        tokenizer=tokenizer,
+        val_rows=val_rows,
+        eval_every_n_steps=eval_every_n_steps,
+    )
+
     trainer = build_trainer(model, tokenizer, train_ds)
-    trainer.add_callback(LossLogger(f"{OUTPUT_DIR}/loss_log.jsonl"))
+    trainer.add_callback(LossLogger(f"{RUN_DIR}/dpo_loss_log.jsonl"))
+    trainer.add_callback(checkpoint_tracker)
     trainer.train()
 
     final_dir = f"{OUTPUT_DIR}/final"
-    trainer.model.save_pretrained(final_dir)
+    as_peft_model(trainer.model).save_pretrained(final_dir)
     tokenizer.save_pretrained(final_dir)
     print(f"Saved DPO LoRA adapter to {final_dir}")
+    print(
+        f"Best step: {checkpoint_tracker.best_step}, "
+        f"best macro_f1: {checkpoint_tracker.best_metric:.3f}"
+    )
 
 
 if __name__ == "__main__":
