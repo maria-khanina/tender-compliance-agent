@@ -17,28 +17,46 @@ from transformers import (
 import trl.trainer.dpo_trainer as _dpo_trainer_module
 from trl import DPOConfig, DPOTrainer  # type: ignore[reportPrivateImportUsage]
 
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
-_dpo_trainer_module.entropy_from_logits = (
-    lambda logits, chunk_size=128: torch.zeros(logits.shape[:-1], device=logits.device)
+from sft.schemas import (
+    ChatExample,
+    DpoChatExample,
+    EvalHistoryEntry,
+    PreferencePair,
+    VerdictCompletion,
+)
+from sft.training_config import (
+    DPO_BETA,
+    DPO_EVAL_EVERY_N_STEPS,
+    DPO_GRADIENT_ACCUMULATION_STEPS,
+    DPO_LEARNING_RATE,
+    DPO_LOGGING_STEPS,
+    DPO_MAX_SEQ_LEN,
+    DPO_NUM_TRAIN_EPOCHS,
+    DPO_PER_DEVICE_TRAIN_BATCH_SIZE,
+    DPO_RUN_DIR,
+    DPO_TRAIN_DATA_PATH,
+    DPO_WEIGHT_DECAY,
+    LORA_ALPHA,
+    LORA_DROPOUT,
+    LORA_RANK,
+    LORA_TARGET_MODULES,
+    MERGED_MODEL_DIR,
+    VAL_DATA_PATH,
 )
 
-RUN_DIR = "sft/runs/qwen3-4b-v1"
-MERGED_MODEL_DIR = f"{RUN_DIR}/merged"
-DATA_PATH = f"{RUN_DIR}/dpo_train.jsonl"
-VAL_DATA_PATH = "sft/data/verdicts_validation.jsonl"
-OUTPUT_DIR = f"{RUN_DIR}/dpo_checkpoints"
-MAX_SEQ_LEN = 2304
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+_dpo_trainer_module.entropy_from_logits = (  # type: ignore[reportPrivateImportUsage]
+    lambda logits, chunk_size=128: torch.zeros(
+        logits.shape[:-1], device=logits.device
+    )
+)
 
-DPO_BETA = 0.1
-
-PER_DEVICE_TRAIN_BATCH_SIZE = 1
-GRADIENT_ACCUMULATION_STEPS = 8
-NUM_TRAIN_EPOCHS = 1
+OUTPUT_DIR = f"{DPO_RUN_DIR}/dpo_checkpoints"
 
 
-def load_jsonl(path: str) -> list[dict]:
-    rows = []
+def load_jsonl(path: str) -> list[PreferencePair]:
+    rows: list[PreferencePair] = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -47,7 +65,7 @@ def load_jsonl(path: str) -> list[dict]:
     return rows
 
 
-def _tool_call_message(completion: dict) -> dict:
+def _tool_call_message(completion: VerdictCompletion) -> dict[str, object]:
     return {
         "role": "assistant",
         "content": None,
@@ -62,7 +80,7 @@ def _tool_call_message(completion: dict) -> dict:
     }
 
 
-def to_dpo_chat_example(row: dict) -> dict:
+def to_dpo_chat_example(row: PreferencePair) -> DpoChatExample:
     from sft.train_verdict_lora import TOOL_SCHEMA
 
     return {
@@ -76,8 +94,8 @@ def to_dpo_chat_example(row: dict) -> dict:
 
 
 def build_dataset() -> Dataset:
-    rows = [to_dpo_chat_example(r) for r in load_jsonl(DATA_PATH)]
-    return Dataset.from_list(rows)
+    rows = [to_dpo_chat_example(r) for r in load_jsonl(DPO_TRAIN_DATA_PATH)]
+    return Dataset.from_list(rows)  # type: ignore[reportArgumentType]
 
 
 def load_model_and_tokenizer():
@@ -99,13 +117,10 @@ def load_model_and_tokenizer():
 
 def build_lora_config() -> LoraConfig:
     return LoraConfig(
-        r=16,
-        lora_alpha=32,
-        lora_dropout=0.1,
-        target_modules=[
-            "q_proj", "k_proj", "v_proj", "o_proj",
-            "gate_proj", "up_proj", "down_proj",
-        ],
+        r=LORA_RANK,
+        lora_alpha=LORA_ALPHA,
+        lora_dropout=LORA_DROPOUT,
+        target_modules=LORA_TARGET_MODULES,
         task_type="CAUSAL_LM",
     )
 
@@ -113,15 +128,15 @@ def build_lora_config() -> LoraConfig:
 @dataclass
 class BestCheckpointTracker(TrainerCallback):
     tokenizer: object
-    val_rows: list[dict]
+    val_rows: list[ChatExample]
     eval_every_n_steps: int
-    history_path: str = f"{RUN_DIR}/dpo_training_history.json"
+    history_path: str = f"{DPO_RUN_DIR}/dpo_training_history.json"
     best_metric: float = field(default=-1.0)
     best_step: int = field(default=-1)
-    history: list = field(default_factory=list)
+    history: list[EvalHistoryEntry] = field(default_factory=list)
 
     def _persist_history(self) -> None:
-        os.makedirs(RUN_DIR, exist_ok=True)
+        os.makedirs(DPO_RUN_DIR, exist_ok=True)
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
@@ -131,8 +146,8 @@ class BestCheckpointTracker(TrainerCallback):
         step = state.global_step
         if step == 0 or step % self.eval_every_n_steps != 0:
             return control
-        result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
-        result["step"] = step
+        eval_result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
+        result: EvalHistoryEntry = {**eval_result, "step": step}
         self.history.append(result)
         self._persist_history()
         print(
@@ -174,16 +189,16 @@ def build_trainer(
 ) -> DPOTrainer:
     dpo_config = DPOConfig(
         output_dir=output_dir or OUTPUT_DIR,
-        per_device_train_batch_size=PER_DEVICE_TRAIN_BATCH_SIZE,
-        gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
+        per_device_train_batch_size=DPO_PER_DEVICE_TRAIN_BATCH_SIZE,
+        gradient_accumulation_steps=DPO_GRADIENT_ACCUMULATION_STEPS,
         gradient_checkpointing=gradient_checkpointing,
-        learning_rate=5e-6,
-        weight_decay=0.01,
-        num_train_epochs=NUM_TRAIN_EPOCHS,
+        learning_rate=DPO_LEARNING_RATE,
+        weight_decay=DPO_WEIGHT_DECAY,
+        num_train_epochs=DPO_NUM_TRAIN_EPOCHS,
         beta=DPO_BETA,
-        logging_steps=5,
+        logging_steps=DPO_LOGGING_STEPS,
         save_strategy="no",
-        max_length=MAX_SEQ_LEN,
+        max_length=DPO_MAX_SEQ_LEN,
         bf16=bf16,
         report_to=[],
         use_liger_kernel=False,
@@ -210,19 +225,22 @@ def main():
     model, tokenizer = load_model_and_tokenizer()
 
     total_steps = math.ceil(
-        len(train_ds) / (PER_DEVICE_TRAIN_BATCH_SIZE * GRADIENT_ACCUMULATION_STEPS)
-    ) * NUM_TRAIN_EPOCHS
-    eval_every_n_steps = max(5, total_steps // 8)
-    print(f"total DPO steps ~= {total_steps}, eval every {eval_every_n_steps} steps")
+        len(train_ds)
+        / (DPO_PER_DEVICE_TRAIN_BATCH_SIZE * DPO_GRADIENT_ACCUMULATION_STEPS)
+    ) * DPO_NUM_TRAIN_EPOCHS
+    print(
+        f"total DPO steps ~= {total_steps}, "
+        f"eval every {DPO_EVAL_EVERY_N_STEPS} steps"
+    )
 
     checkpoint_tracker = BestCheckpointTracker(
         tokenizer=tokenizer,
         val_rows=val_rows,
-        eval_every_n_steps=eval_every_n_steps,
+        eval_every_n_steps=DPO_EVAL_EVERY_N_STEPS,
     )
 
     trainer = build_trainer(model, tokenizer, train_ds)
-    trainer.add_callback(LossLogger(f"{RUN_DIR}/dpo_loss_log.jsonl"))
+    trainer.add_callback(LossLogger(f"{DPO_RUN_DIR}/dpo_loss_log.jsonl"))
     trainer.add_callback(checkpoint_tracker)
     trainer.train()
 

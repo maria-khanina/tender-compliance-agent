@@ -1,8 +1,10 @@
 import json
+import os
 import pathlib
 import re
 import sys
 from dataclasses import dataclass, field
+from typing import TypedDict, cast
 
 import torch
 from datasets import Dataset
@@ -15,16 +17,42 @@ from transformers import (
 )
 from trl import SFTConfig, SFTTrainer  # type: ignore[reportPrivateImportUsage]
 
+from sft.schemas import (
+    ChatExample,
+    EvalHistoryEntry,
+    TaskEvalResult,
+    TrainingRow,
+    VerdictLabel,
+)
+from sft.training_config import (
+    BASE_MODEL,
+    EVAL_MAX_NEW_TOKENS,
+    LORA_ALPHA,
+    LORA_DROPOUT,
+    LORA_RANK,
+    LORA_TARGET_MODULES,
+    SFT_EARLY_STOP_MIN_DELTA,
+    SFT_EARLY_STOP_PATIENCE,
+    SFT_EVAL_EVERY_N_STEPS,
+    SFT_GRADIENT_ACCUMULATION_STEPS,
+    SFT_LEARNING_RATE,
+    SFT_LOGGING_STEPS,
+    SFT_MAX_SEQ_LEN,
+    SFT_NUM_TRAIN_EPOCHS,
+    SFT_PER_DEVICE_TRAIN_BATCH_SIZE,
+    SFT_RUN_DIR,
+    SFT_SAVE_EVERY_N_STEPS,
+    SFT_WEIGHT_DECAY,
+    TRAIN_DATA_PATH,
+    VAL_DATA_PATH,
+)
+
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-BASE_MODEL = "Qwen/Qwen3-4B"
-DATA_DIR = "sft/data"
-RUN_DIR = "sft/runs/qwen3-4b-v1"
-OUTPUT_DIR = f"{RUN_DIR}/sft_checkpoints"
-MAX_SEQ_LEN = 2304
+OUTPUT_DIR = f"{SFT_RUN_DIR}/sft_checkpoints"
 
-VERDICT_LABELS = [
+VERDICT_LABELS: list[VerdictLabel] = [
     "compliant", "non_compliant", "insufficient_information", "contradictory",
 ]
 
@@ -60,8 +88,8 @@ TOOL_SCHEMA = {
 }
 
 
-def load_jsonl(path: str) -> list[dict]:
-    rows = []
+def load_jsonl(path: str) -> list[TrainingRow]:
+    rows: list[TrainingRow] = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -70,7 +98,7 @@ def load_jsonl(path: str) -> list[dict]:
     return rows
 
 
-def to_chat_example(row: dict) -> dict:
+def to_chat_example(row: TrainingRow) -> ChatExample:
     completion = row["completion"]
     tool_call = {
         "id": "call_1",
@@ -92,16 +120,10 @@ def to_chat_example(row: dict) -> dict:
     }
 
 
-def build_datasets() -> tuple[Dataset, list[dict]]:
-    train_rows = [
-        to_chat_example(r)
-        for r in load_jsonl(f"{DATA_DIR}/verdicts_train.jsonl")
-    ]
-    val_rows = [
-        to_chat_example(r)
-        for r in load_jsonl(f"{DATA_DIR}/verdicts_validation.jsonl")
-    ]
-    train_ds = Dataset.from_list(train_rows)
+def build_datasets() -> tuple[Dataset, list[ChatExample]]:
+    train_rows = [to_chat_example(r) for r in load_jsonl(TRAIN_DATA_PATH)]
+    val_rows = [to_chat_example(r) for r in load_jsonl(VAL_DATA_PATH)]
+    train_ds = Dataset.from_list(train_rows)  # type: ignore[reportArgumentType]
     return train_ds, val_rows
 
 
@@ -122,13 +144,10 @@ def load_model_and_tokenizer():
         torch_dtype=torch.bfloat16,
     )
     lora_config = LoraConfig(
-        r=16,
-        lora_alpha=32,
-        lora_dropout=0.1,
-        target_modules=[
-            "q_proj", "k_proj", "v_proj", "o_proj",
-            "gate_proj", "up_proj", "down_proj",
-        ],
+        r=LORA_RANK,
+        lora_alpha=LORA_ALPHA,
+        lora_dropout=LORA_DROPOUT,
+        target_modules=LORA_TARGET_MODULES,
         task_type="CAUSAL_LM",
     )
     model = wrap_with_lora(model, lora_config)
@@ -136,60 +155,95 @@ def load_model_and_tokenizer():
     return model, tokenizer
 
 
-def extract_verdict_label(generated_text: str) -> str | None:
+class ClassCounts(TypedDict):
+    true_positives: int
+    false_positives: int
+    false_negatives: int
+
+
+def extract_verdict_label(generated_text: str) -> VerdictLabel | None:
     match = re.search(r'"verdict"\s*:\s*"(\w+)"', generated_text)
     if match and match.group(1) in VERDICT_LABELS:
-        return match.group(1)
+        return cast(VerdictLabel, match.group(1))
     return None
 
 
+def predict_verdict_label(model, tokenizer, row: ChatExample) -> VerdictLabel | None:
+    prompt_messages = [row["messages"][0]]
+    input_text = tokenizer.apply_chat_template(
+        prompt_messages,
+        tools=row["tools"],
+        add_generation_prompt=True,
+        tokenize=False,
+        enable_thinking=False,
+    )
+    inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+    output_ids = model.generate(
+        **inputs,
+        max_new_tokens=EVAL_MAX_NEW_TOKENS,
+        do_sample=False,
+        pad_token_id=tokenizer.eos_token_id,
+    )
+    generated = tokenizer.decode(
+        output_ids[0][inputs["input_ids"].shape[1]:],
+        skip_special_tokens=True,
+    )
+    return extract_verdict_label(generated)
+
+
+def empty_class_counts() -> dict[VerdictLabel, ClassCounts]:
+    return {
+        label: {"true_positives": 0, "false_positives": 0, "false_negatives": 0}
+        for label in VERDICT_LABELS
+    }
+
+
+def update_class_counts(
+    per_class: dict[VerdictLabel, ClassCounts],
+    true_label: VerdictLabel,
+    predicted_label: VerdictLabel | None,
+) -> bool:
+    if predicted_label == true_label:
+        per_class[true_label]["true_positives"] += 1
+        return True
+    per_class[true_label]["false_negatives"] += 1
+    if predicted_label in per_class:
+        per_class[predicted_label]["false_positives"] += 1
+    return False
+
+
+def macro_f1_from_class_counts(per_class: dict[VerdictLabel, ClassCounts]) -> float:
+    f1_scores = []
+    for counts in per_class.values():
+        true_positives = counts["true_positives"]
+        false_positives = counts["false_positives"]
+        false_negatives = counts["false_negatives"]
+        predicted_positive = true_positives + false_positives
+        actual_positive = true_positives + false_negatives
+        precision = true_positives / predicted_positive if predicted_positive else 0.0
+        recall = true_positives / actual_positive if actual_positive else 0.0
+        f1 = (
+            2 * precision * recall / (precision + recall)
+            if (precision + recall) else 0.0
+        )
+        f1_scores.append(f1)
+    return sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
+
+
 @torch.no_grad()
-def evaluate_task_accuracy(model, tokenizer, val_rows: list[dict]) -> dict:
+def evaluate_task_accuracy(
+    model, tokenizer, val_rows: list[ChatExample]
+) -> TaskEvalResult:
     model.eval()
     correct = 0
-    per_class = {label: {"tp": 0, "fp": 0, "fn": 0} for label in VERDICT_LABELS}
+    per_class = empty_class_counts()
     for row in val_rows:
-        prompt_messages = [row["messages"][0]]
-        input_text = tokenizer.apply_chat_template(
-            prompt_messages,
-            tools=row["tools"],
-            add_generation_prompt=True,
-            tokenize=False,
-            enable_thinking=False,
-        )
-        inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
-        output_ids = model.generate(
-            **inputs,
-            max_new_tokens=512,
-            do_sample=False,
-            pad_token_id=tokenizer.eos_token_id,
-        )
-        generated = tokenizer.decode(
-            output_ids[0][inputs["input_ids"].shape[1]:],
-            skip_special_tokens=True,
-        )
-        predicted = extract_verdict_label(generated)
-        true_label = row["true_verdict"]
-        if predicted == true_label:
+        predicted_label = predict_verdict_label(model, tokenizer, row)
+        if update_class_counts(per_class, row["true_verdict"], predicted_label):
             correct += 1
-            per_class[true_label]["tp"] += 1
-        else:
-            per_class[true_label]["fn"] += 1
-            if predicted in per_class:
-                per_class[predicted]["fp"] += 1
 
     accuracy = correct / len(val_rows) if val_rows else 0.0
-    f1_scores = []
-    for label, counts in per_class.items():
-        tp, fp, fn = counts["tp"], counts["fp"], counts["fn"]
-        precision = tp / (tp + fp) if (tp + fp) else 0.0
-        recall = tp / (tp + fn) if (tp + fn) else 0.0
-        if precision + recall:
-            f1 = 2 * precision * recall / (precision + recall)
-        else:
-            f1 = 0.0
-        f1_scores.append(f1)
-    macro_f1 = sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
+    macro_f1 = macro_f1_from_class_counts(per_class)
     model.train()
     return {"task_accuracy": accuracy, "macro_f1": macro_f1, "n": len(val_rows)}
 
@@ -197,29 +251,27 @@ def evaluate_task_accuracy(model, tokenizer, val_rows: list[dict]) -> dict:
 @dataclass
 class TaskMetricEarlyStopping(TrainerCallback):
     tokenizer: object
-    val_rows: list[dict]
+    val_rows: list[ChatExample]
     patience: int = 3
     min_delta: float = 0.01
-    eval_every_n_steps: int = 40
-    save_every_n_steps: int = 15
-    history_path: str = f"{RUN_DIR}/sft_training_history.json"
-    loss_log_path: str = f"{RUN_DIR}/sft_loss_log.jsonl"
+    eval_every_n_steps: int = SFT_EVAL_EVERY_N_STEPS
+    save_every_n_steps: int = SFT_SAVE_EVERY_N_STEPS
+    history_path: str = f"{SFT_RUN_DIR}/sft_training_history.json"
+    loss_log_path: str = f"{SFT_RUN_DIR}/sft_loss_log.jsonl"
     best_metric: float = field(default=-1.0)
     best_step: int = field(default=-1)
     rounds_without_improvement: int = field(default=0)
-    history: list = field(default_factory=list)
+    history: list[EvalHistoryEntry] = field(default_factory=list)
 
     def _persist_history(self) -> None:
-        import os
-        os.makedirs(RUN_DIR, exist_ok=True)
+        os.makedirs(SFT_RUN_DIR, exist_ok=True)
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
     def on_log(self, args, state, control, logs=None, **kwargs):
         if logs is None:
             return control
-        import os
-        os.makedirs(RUN_DIR, exist_ok=True)
+        os.makedirs(SFT_RUN_DIR, exist_ok=True)
         with open(self.loss_log_path, "a", encoding="utf-8") as f:
             f.write(json.dumps({"step": state.global_step, **logs}) + "\n")
         return control
@@ -237,8 +289,8 @@ class TaskMetricEarlyStopping(TrainerCallback):
             print(f"[checkpoint] periodic save at step {step}")
         if not is_eval_step:
             return control
-        result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
-        result["step"] = state.global_step
+        eval_result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
+        result: EvalHistoryEntry = {**eval_result, "step": state.global_step}
         self.history.append(result)
         self._persist_history()
         print(
@@ -280,22 +332,22 @@ def main():
     early_stopping = TaskMetricEarlyStopping(
         tokenizer=tokenizer,
         val_rows=val_rows,
-        patience=3,
-        min_delta=0.01,
-        eval_every_n_steps=40,
+        patience=SFT_EARLY_STOP_PATIENCE,
+        min_delta=SFT_EARLY_STOP_MIN_DELTA,
+        eval_every_n_steps=SFT_EVAL_EVERY_N_STEPS,
     )
 
     sft_config = SFTConfig(
         output_dir=OUTPUT_DIR,
-        per_device_train_batch_size=1,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=SFT_PER_DEVICE_TRAIN_BATCH_SIZE,
+        gradient_accumulation_steps=SFT_GRADIENT_ACCUMULATION_STEPS,
         gradient_checkpointing=True,
-        learning_rate=1e-4,
-        weight_decay=0.01,
-        num_train_epochs=6,
-        logging_steps=10,
+        learning_rate=SFT_LEARNING_RATE,
+        weight_decay=SFT_WEIGHT_DECAY,
+        num_train_epochs=SFT_NUM_TRAIN_EPOCHS,
+        logging_steps=SFT_LOGGING_STEPS,
         save_strategy="no",
-        max_length=MAX_SEQ_LEN,
+        max_length=SFT_MAX_SEQ_LEN,
         bf16=True,
         report_to=[],
         assistant_only_loss=True,

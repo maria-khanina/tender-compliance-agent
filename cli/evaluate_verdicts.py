@@ -33,6 +33,46 @@ def _parse_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _generate_predictions(synthetic_requirements, collection_name):
+    from schemas import RetrievedContextRecord, Verdict
+    from steps.evidence_retrieval import retrieve_context_chunks
+    from steps.verdicts import generate_verdict
+
+    predicted_verdicts: list[Verdict] = []
+    retrieved_context: list[RetrievedContextRecord] = []
+    for requirement in synthetic_requirements:
+        if not requirement.is_text_verifiable:
+            continue
+        context_chunks = retrieve_context_chunks(
+            requirement.text, collection_name
+        )
+        retrieved_context.append(RetrievedContextRecord(
+            requirement_id=requirement.requirement_id,
+            retrieved_context=context_chunks,
+        ))
+        predicted_verdicts.append(
+            generate_verdict(requirement, context_chunks)
+        )
+    return predicted_verdicts, retrieved_context
+
+
+def _write_json_artifact(path: pathlib.Path, records: list, label: str) -> None:
+    serialized = [record.model_dump(mode="json") for record in records]
+    path.write_text(
+        json.dumps(serialized, indent=2, ensure_ascii=False), encoding="utf-8",
+    )
+    print(f"{label} written to {path}")
+
+
+def _write_report(arguments: argparse.Namespace, report_text: str) -> None:
+    if arguments.report_output:
+        report_output_path = pathlib.Path(arguments.report_output)
+        report_output_path.write_text(report_text, encoding="utf-8")
+        print(f"Verdict-only evaluation report written to {report_output_path}")
+    else:
+        print(report_text)
+
+
 def main() -> None:
     _add_project_root_to_path()
     from backends.vectorstore import case_collection_name, index_chunks
@@ -42,17 +82,13 @@ def main() -> None:
         render_verdict_only_report,
         score_verdicts,
     )
-    from schemas import RetrievedContextRecord, Verdict
     from steps.chunking import split_application_document
-    from steps.evidence_retrieval import retrieve_context_chunks
-    from steps.verdicts import generate_verdict
     from case_layout import application_path as case_application_path
     from case_layout import run_dir, true_verdicts_path
 
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
     variant = arguments.variant
-    run_label = arguments.run_label
 
     requirements_fixture = load_true_requirements(
         case_dir / "true_requirements.json"
@@ -70,65 +106,28 @@ def main() -> None:
     )
     index_chunks(collection_name, application_chunks)
 
-    synthetic_requirements = build_synthetic_requirements(
-        requirements_fixture
+    synthetic_requirements = build_synthetic_requirements(requirements_fixture)
+    predicted_verdicts, retrieved_context = _generate_predictions(
+        synthetic_requirements, collection_name
     )
-    predicted_verdicts: list[Verdict] = []
-    retrieved_context: list[RetrievedContextRecord] = []
-    for requirement in synthetic_requirements:
-        if not requirement.is_text_verifiable:
-            continue
-        context_chunks = retrieve_context_chunks(
-            requirement.text, collection_name
-        )
-        retrieved_context.append(RetrievedContextRecord(
-            requirement_id=requirement.requirement_id,
-            retrieved_context=context_chunks,
-        ))
-        predicted_verdicts.append(
-            generate_verdict(requirement, context_chunks)
-        )
 
-    artifacts_dir = run_dir(case_dir, variant, run_label)
+    artifacts_dir = run_dir(case_dir, variant, arguments.run_label)
     artifacts_dir.mkdir(parents=True, exist_ok=True)
-
-    verdicts_artifact_path = artifacts_dir / "verdict_only_verdicts.json"
-    serializable_verdicts = [
-        verdict.model_dump(mode="json") for verdict in predicted_verdicts
-    ]
-    verdicts_artifact_path.write_text(
-        json.dumps(serializable_verdicts, indent=2, ensure_ascii=False),
-        encoding="utf-8",
+    _write_json_artifact(
+        artifacts_dir / "verdict_only_verdicts.json",
+        predicted_verdicts,
+        "Verdict-only raw verdicts",
     )
-    print(f"Verdict-only raw verdicts written to {verdicts_artifact_path}")
-
-    retrieved_context_artifact_path = (
-        artifacts_dir / "verdict_only_retrieved_context.json"
-    )
-    serializable_retrieved_context = [
-        record.model_dump(mode="json") for record in retrieved_context
-    ]
-    retrieved_context_artifact_path.write_text(
-        json.dumps(
-            serializable_retrieved_context, indent=2, ensure_ascii=False
-        ),
-        encoding="utf-8",
-    )
-    print(
-        f"Verdict-only retrieved context written to "
-        f"{retrieved_context_artifact_path}"
+    _write_json_artifact(
+        artifacts_dir / "verdict_only_retrieved_context.json",
+        retrieved_context,
+        "Verdict-only retrieved context",
     )
 
     result = score_verdicts(
         predicted_verdicts, verdicts_fixture, retrieved_context
     )
-    report_text = render_verdict_only_report(result)
-    if arguments.report_output:
-        report_output_path = pathlib.Path(arguments.report_output)
-        report_output_path.write_text(report_text, encoding="utf-8")
-        print(f"Verdict-only evaluation report written to {report_output_path}")
-    else:
-        print(report_text)
+    _write_report(arguments, render_verdict_only_report(result))
 
 
 if __name__ == "__main__":

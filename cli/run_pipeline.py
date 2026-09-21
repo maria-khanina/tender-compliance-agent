@@ -1,0 +1,97 @@
+import argparse
+import json
+import pathlib
+import sys
+from collections.abc import Sequence
+from typing import TYPE_CHECKING
+
+from pydantic import BaseModel
+
+if TYPE_CHECKING:
+    from schemas import PipelineResult
+
+
+def _add_project_root_to_path() -> None:
+    project_root = pathlib.Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(project_root))
+
+
+def _parse_arguments() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Run the tender compliance pipeline."
+    )
+    parser.add_argument("--requirements", required=True, nargs="+")
+    parser.add_argument("--application", required=True, nargs="+")
+    parser.add_argument("--output", required=True)
+    return parser.parse_args()
+
+
+def _write_json_list(
+    path: pathlib.Path,
+    items: Sequence[BaseModel],
+) -> None:
+    serializable_items = [item.model_dump(mode="json") for item in items]
+    path.write_text(
+        json.dumps(serializable_items, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
+def _run_or_exit(
+    requirements_paths: list[str], application_paths: list[str]
+) -> "PipelineResult":
+    from logging_config import get_logger
+    from pipeline import run_pipeline
+
+    logger = get_logger(__name__)
+    try:
+        return run_pipeline(requirements_paths, application_paths)
+    except Exception as pipeline_error:
+        logger.error("Pipeline run failed: %s", pipeline_error)
+        sys.exit(1)
+
+
+def _output_paths(
+    output_path: pathlib.Path,
+) -> tuple[pathlib.Path, pathlib.Path, pathlib.Path]:
+    requirements_path = output_path.with_name(
+        output_path.stem + "_requirements.json"
+    )
+    verdicts_path = output_path.with_name(
+        output_path.stem + "_verdicts.json"
+    )
+    retrieved_context_path = output_path.with_name(
+        output_path.stem + "_retrieved_context.json"
+    )
+    return requirements_path, verdicts_path, retrieved_context_path
+
+
+def _write_outputs(
+    output_path: pathlib.Path,
+    result: "PipelineResult",
+    paths: tuple[pathlib.Path, pathlib.Path, pathlib.Path],
+) -> None:
+    requirements_path, verdicts_path, retrieved_context_path = paths
+    output_path.write_text(result.report, encoding="utf-8")
+    _write_json_list(requirements_path, result.requirements)
+    _write_json_list(verdicts_path, result.verdicts)
+    _write_json_list(retrieved_context_path, result.retrieved_context)
+    print(f"Report written to {output_path}")
+    print(f"Requirements written to {requirements_path}")
+    print(f"Verdicts written to {verdicts_path}")
+    print(f"Retrieved context written to {retrieved_context_path}")
+
+
+def main() -> None:
+    _add_project_root_to_path()
+    from logging_config import configure_logging
+
+    configure_logging()
+    arguments = _parse_arguments()
+    result = _run_or_exit(arguments.requirements, arguments.application)
+    output_path = pathlib.Path(arguments.output)
+    _write_outputs(output_path, result, _output_paths(output_path))
+
+
+if __name__ == "__main__":
+    main()
