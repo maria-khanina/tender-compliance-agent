@@ -43,11 +43,11 @@ def tiny_preference_dataset() -> Dataset:
     # rather than only ever accumulating partial gradients.
     rows = [
         {
-            "prompt": f"Requirement {i}: is it met?",
+            "prompt": f"Requirement {row_index}: is it met?",
             "chosen": " compliant",
             "rejected": " non_compliant",
         }
-        for i in range(8)
+        for row_index in range(8)
     ]
     return Dataset.from_list(rows)
 

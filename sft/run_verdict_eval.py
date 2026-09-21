@@ -1,4 +1,4 @@
-"""Run scripts/evaluate_verdicts.py across a set of cases against a given
+"""Run cli/evaluate_verdicts.py across a set of cases against a given
 LLM endpoint, WITHOUT touching the shared .env file -- provider/base_url/
 model/api_key are passed as environment variable overrides to a
 subprocess, which take precedence over .env (pydantic-settings) for that
@@ -75,7 +75,7 @@ def run_one_case(case: str, label: str, base_url: str, model: str) -> dict:
 
     result = subprocess.run(
         [
-            sys.executable, "scripts/evaluate_verdicts.py",
+            sys.executable, "cli/evaluate_verdicts.py",
             "--case-dir", str(case_dir),
             "--variant", DEFAULT_VARIANT,
             "--run-label", label,

@@ -19,22 +19,25 @@ import json
 import os
 import re
 import time
+from typing import cast
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-RUN_DIR = "sft/runs/qwen3-4b-v1"
-MERGED_MODEL_DIR = f"{RUN_DIR}/merged"
-DATA_DIR = "sft/data"
-OUTPUT_PATH = f"{RUN_DIR}/dpo_train.jsonl"
+from sft.schemas import PreferencePair, TrainingRow, VerdictCompletion
+from sft.train_verdict_lora import TOOL_SCHEMA, VERDICT_LABELS
+from sft.training_config import (
+    DPO_TRAIN_DATA_PATH,
+    MERGED_MODEL_DIR,
+    MINING_MAX_NEW_TOKENS,
+    MINING_SAMPLES_PER_PROMPT,
+    MINING_TEMPERATURE,
+    TRAIN_DATA_PATH,
+)
 
-VERDICT_LABELS = [
-    "compliant", "non_compliant", "insufficient_information", "contradictory",
-]
 
-
-def load_jsonl(path):
-    rows = []
+def load_jsonl(path: str) -> list[TrainingRow]:
+    rows: list[TrainingRow] = []
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -43,12 +46,14 @@ def load_jsonl(path):
     return rows
 
 
-def extract_tool_call_json(generated_text: str) -> dict | None:
+def extract_tool_call_json(generated_text: str) -> VerdictCompletion | None:
     """Parses the <tool_call>{...}</tool_call> block (or a bare JSON
     object, in case the model drops the tags) into {"name", "arguments"}
     or, if arguments parses as a dict with a "verdict" key, directly into
     the completion dict shape {verdict, evidence_quotes, reasoning}."""
-    match = re.search(r"<tool_call>\s*(\{.*?\})\s*</tool_call>", generated_text, re.DOTALL)
+    match = re.search(
+        r"<tool_call>\s*(\{.*?\})\s*</tool_call>", generated_text, re.DOTALL
+    )
     raw = match.group(1) if match else generated_text.strip()
     try:
         obj = json.loads(raw)
@@ -66,48 +71,129 @@ def extract_tool_call_json(generated_text: str) -> dict | None:
         return None
     if "evidence_quotes" not in obj or "reasoning" not in obj:
         return None
-    return obj
+    return cast(VerdictCompletion, obj)
 
 
-def build_preference_rows(row: dict, sampled_completions: list[dict]) -> list[dict]:
+def build_preference_rows(
+    row: TrainingRow, sampled_completions: list[VerdictCompletion]
+) -> list[PreferencePair]:
     true_verdict = row["completion"]["verdict"]
-    pairs = []
-    seen = set()
+    pairs: list[PreferencePair] = []
+    seen_verdicts: set[str] = set()
     for completion in sampled_completions:
         wrong_verdict = completion["verdict"]
-        if wrong_verdict == true_verdict or wrong_verdict in seen:
+        if wrong_verdict == true_verdict or wrong_verdict in seen_verdicts:
             continue
-        seen.add(wrong_verdict)
+        seen_verdicts.add(wrong_verdict)
         pairs.append({
-            "case": row["case"], "variant": row["variant"], "topic_id": row["topic_id"],
-            "prompt": row["prompt"], "chosen": row["completion"], "rejected": completion,
+            "case": row["case"],
+            "variant": row["variant"],
+            "topic_id": row["topic_id"],
+            "prompt": row["prompt"],
+            "chosen": row["completion"],
+            "rejected": completion,
         })
     return pairs
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--samples-per-prompt", type=int, default=8)
-    parser.add_argument("--max-new-tokens", type=int, default=300)
-    parser.add_argument("--temperature", type=float, default=0.8)
-    args = parser.parse_args()
-
-    bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True, bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_use_double_quant=True,
+def build_bnb_config() -> BitsAndBytesConfig:
+    return BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_use_double_quant=True,
     )
+
+
+def load_model_and_tokenizer():
     tokenizer = AutoTokenizer.from_pretrained(MERGED_MODEL_DIR)
     tokenizer.padding_side = "left"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
-        MERGED_MODEL_DIR, quantization_config=bnb_config,
-        device_map="auto", torch_dtype=torch.bfloat16,
+        MERGED_MODEL_DIR,
+        quantization_config=build_bnb_config(),
+        device_map="auto",
+        torch_dtype=torch.bfloat16,
     )
     model.eval()
+    return model, tokenizer
 
-    from sft.train_verdict_lora import TOOL_SCHEMA
-    train_rows = load_jsonl(f"{DATA_DIR}/verdicts_train.jsonl")
+
+def load_already_done_keys(output_path: str) -> set[tuple[str, str, str]]:
+    already_done: set[tuple[str, str, str]] = set()
+    if not os.path.exists(output_path):
+        return already_done
+    for line in open(output_path, encoding="utf-8"):
+        line = line.strip()
+        if line:
+            pair = json.loads(line)
+            already_done.add((pair["case"], pair["variant"], pair["topic_id"]))
+    return already_done
+
+
+def sample_completions_for_row(
+    row: TrainingRow, model, tokenizer, args: argparse.Namespace
+) -> list[VerdictCompletion]:
+    input_text = tokenizer.apply_chat_template(
+        [{"role": "user", "content": row["prompt"]}],
+        tools=[TOOL_SCHEMA],
+        add_generation_prompt=True,
+        tokenize=False,
+        enable_thinking=False,
+    )
+    inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+    with torch.no_grad():
+        output_ids = model.generate(  # type: ignore[reportAttributeAccessIssue]
+            **inputs,
+            max_new_tokens=args.max_new_tokens,
+            do_sample=True,
+            temperature=args.temperature,
+            num_return_sequences=args.samples_per_prompt,
+            pad_token_id=tokenizer.pad_token_id,
+        )
+    completions: list[VerdictCompletion] = []
+    for seq in output_ids:
+        generated = tokenizer.decode(
+            seq[inputs["input_ids"].shape[1]:], skip_special_tokens=True
+        )
+        parsed = extract_tool_call_json(generated)
+        if parsed is not None:
+            completions.append(parsed)
+    del inputs, output_ids
+    torch.cuda.empty_cache()
+    return completions
+
+
+def report_progress(
+    row_index: int, total_rows: int, pairs_written: int, start_time: float
+) -> None:
+    elapsed = time.time() - start_time
+    rate = (row_index + 1) / elapsed
+    rows_left = total_rows - (row_index + 1)
+    eta_minutes = rows_left / rate / 60 if rate > 0 else float("nan")
+    print(
+        f"  {row_index + 1}/{total_rows} rows, {pairs_written} pairs so far, "
+        f"{elapsed / 60:.1f}min elapsed, ETA {eta_minutes:.0f}min",
+        flush=True,
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--samples-per-prompt", type=int, default=MINING_SAMPLES_PER_PROMPT
+    )
+    parser.add_argument(
+        "--max-new-tokens", type=int, default=MINING_MAX_NEW_TOKENS
+    )
+    parser.add_argument(
+        "--temperature", type=float, default=MINING_TEMPERATURE
+    )
+    args = parser.parse_args()
+
+    model, tokenizer = load_model_and_tokenizer()
+    train_rows = load_jsonl(TRAIN_DATA_PATH)
     print(f"{len(train_rows)} train rows loaded", flush=True)
 
     # Resume support: a prior interrupted run's rows are already flushed to
@@ -115,45 +201,17 @@ def main():
     # can just skip whatever row keys are already there and append instead
     # of overwriting -- this run OOM'd cold at row 250/431 after ~94min,
     # losing that work to a restart-from-scratch would be wasteful.
-    already_done = set()
-    if os.path.exists(OUTPUT_PATH):
-        for line in open(OUTPUT_PATH, encoding="utf-8"):
-            line = line.strip()
-            if line:
-                p = json.loads(line)
-                already_done.add((p["case"], p["variant"], p["topic_id"]))
-        print(f"{len(already_done)} rows already done, resuming", flush=True)
+    already_done = load_already_done_keys(DPO_TRAIN_DATA_PATH)
+    print(f"{len(already_done)} rows already done, resuming", flush=True)
 
     pairs_written = 0
     skipped_no_negative = 0
-    t0 = time.time()
-    with open(OUTPUT_PATH, "a", encoding="utf-8") as out_f:
-        for i, row in enumerate(train_rows):
+    start_time = time.time()
+    with open(DPO_TRAIN_DATA_PATH, "a", encoding="utf-8") as out_f:
+        for row_index, row in enumerate(train_rows):
             if (row["case"], row["variant"], row["topic_id"]) in already_done:
                 continue
-            input_text = tokenizer.apply_chat_template(
-                [{"role": "user", "content": row["prompt"]}],
-                tools=[TOOL_SCHEMA], add_generation_prompt=True,
-                tokenize=False, enable_thinking=False,
-            )
-            inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
-            with torch.no_grad():
-                output_ids = model.generate(
-                    **inputs, max_new_tokens=args.max_new_tokens, do_sample=True,
-                    temperature=args.temperature, num_return_sequences=args.samples_per_prompt,
-                    pad_token_id=tokenizer.pad_token_id,
-                )
-            completions = []
-            for seq in output_ids:
-                generated = tokenizer.decode(
-                    seq[inputs["input_ids"].shape[1]:], skip_special_tokens=True
-                )
-                parsed = extract_tool_call_json(generated)
-                if parsed is not None:
-                    completions.append(parsed)
-            del inputs, output_ids
-            torch.cuda.empty_cache()
-
+            completions = sample_completions_for_row(row, model, tokenizer, args)
             row_pairs = build_preference_rows(row, completions)
             if not row_pairs:
                 skipped_no_negative += 1
@@ -162,18 +220,14 @@ def main():
                     out_f.write(json.dumps(pair, ensure_ascii=False) + "\n")
                 pairs_written += len(row_pairs)
             out_f.flush()
+            if (row_index + 1) % 10 == 0:
+                report_progress(row_index, len(train_rows), pairs_written, start_time)
 
-            if (i + 1) % 10 == 0:
-                elapsed = time.time() - t0
-                rate = (i + 1) / elapsed
-                eta_min = (len(train_rows) - (i + 1)) / rate / 60 if rate > 0 else float("nan")
-                print(
-                    f"  {i+1}/{len(train_rows)} rows, {pairs_written} pairs so far, "
-                    f"{elapsed/60:.1f}min elapsed, ETA {eta_min:.0f}min", flush=True,
-                )
-
-    print(f"\n{pairs_written} preference pairs -> {OUTPUT_PATH}", flush=True)
-    print(f"{skipped_no_negative} rows skipped (model agreed with gold on every sample)", flush=True)
+    print(f"\n{pairs_written} preference pairs -> {DPO_TRAIN_DATA_PATH}", flush=True)
+    print(
+        f"{skipped_no_negative} rows skipped (model agreed with gold on every sample)",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":

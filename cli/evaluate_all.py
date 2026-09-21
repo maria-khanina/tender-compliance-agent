@@ -1,12 +1,12 @@
 """Run all three evaluation stages for a case and print/save a combined
-picture: full-pipeline (extraction + verdict, scripts/evaluate.py),
-verdict-only (scripts/evaluate_verdicts.py), and retrieval-only
-(scripts/evaluate_retrieval.py). This is what "запусти evaluation" should
+picture: full-pipeline (extraction + verdict, cli/evaluate.py),
+verdict-only (cli/evaluate_verdicts.py), and retrieval-only
+(cli/evaluate_retrieval.py). This is what "запусти evaluation" should
 mean -- one command, the whole picture, not three separately-remembered
 invocations.
 
 Usage:
-  python scripts/evaluate_all.py --case-dir data/36C24126Q0704
+  python cli/evaluate_all.py --case-dir data/36C24126Q0704
 
 Each stage writes its own report as usual (evaluation_report.md,
 verdict_only_report.md, retrieval_only_report.md under
@@ -71,15 +71,15 @@ def main() -> None:
 
     stages = [
         (
-            "pipeline", "scripts/evaluate.py",
+            "pipeline", "cli/evaluate.py",
             str(report_dir / "evaluation_report.md"),
         ),
         (
-            "verdict", "scripts/evaluate_verdicts.py",
+            "verdict", "cli/evaluate_verdicts.py",
             str(report_dir / "verdict_only_report.md"),
         ),
         (
-            "retrieval", "scripts/evaluate_retrieval.py",
+            "retrieval", "cli/evaluate_retrieval.py",
             str(report_dir / "retrieval_only_report.md"),
         ),
     ]
