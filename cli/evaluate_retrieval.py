@@ -2,6 +2,18 @@ import argparse
 import json
 import pathlib
 import sys
+from typing import TYPE_CHECKING, TypedDict
+
+if TYPE_CHECKING:
+    from schemas import Requirement
+
+
+class RetrievalRow(TypedDict):
+    topic_id: str
+    gold_evidence_count: int
+    found_count: int
+    missed_quotes: list[str]
+    retrieved_chunk_count: int
 
 
 def _add_project_root_to_path() -> None:
@@ -10,6 +22,8 @@ def _add_project_root_to_path() -> None:
 
 
 def _parse_arguments() -> argparse.Namespace:
+    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate the retrieval step in isolation: for every "
@@ -23,25 +37,29 @@ def _parse_arguments() -> argparse.Namespace:
     parser.add_argument("--case-dir", required=True)
     parser.add_argument(
         "--variant",
-        default="a",
+        default=DEFAULT_APPLICATION_VARIANT,
         help=(
             "Application variant directory name under applications/ "
             "(e.g. 'a', 'b', 'c'). Defaults to 'a', the case's canonical "
             "application."
         ),
     )
-    parser.add_argument("--run-label", default="gemini")
+    parser.add_argument("--run-label", default=DEFAULT_RUN_LABEL)
     parser.add_argument("--report-output")
     return parser.parse_args()
 
 
-def _score_requirement_retrieval(requirement, gold_quotes, collection_name):
+def _score_requirement_retrieval(
+    requirement: "Requirement",
+    gold_quotes: list[str],
+    collection_name: str,
+) -> RetrievalRow:
     from steps.evidence_retrieval import retrieve_context_chunks
 
     context_chunks = retrieve_context_chunks(requirement.text, collection_name)
     retrieved_texts = [chunk.text for chunk in context_chunks]
-    found = []
-    missed = []
+    found: list[str] = []
+    missed: list[str] = []
     for quote in gold_quotes:
         stripped_quote = quote.strip()
         hit = any(
@@ -57,8 +75,12 @@ def _score_requirement_retrieval(requirement, gold_quotes, collection_name):
     }
 
 
-def _score_retrieval(synthetic_requirements, gold_evidence_by_topic, collection_name):
-    rows = []
+def _score_retrieval(
+    synthetic_requirements: list["Requirement"],
+    gold_evidence_by_topic: dict[str, list[str]],
+    collection_name: str,
+) -> tuple[list[RetrievalRow], int, int]:
+    rows: list[RetrievalRow] = []
     for requirement in synthetic_requirements:
         if not requirement.is_text_verifiable:
             continue
@@ -73,7 +95,13 @@ def _score_retrieval(synthetic_requirements, gold_evidence_by_topic, collection_
     return rows, total_gold, total_found
 
 
-def _render_retrieval_report(rows, total_gold, total_found) -> str:
+def _render_retrieval_report(
+    rows: list[RetrievalRow],
+    total_gold: int,
+    total_found: int,
+) -> str:
+    from config import CLI_QUOTE_PREVIEW_CHARACTER_COUNT
+
     recall = total_found / total_gold if total_gold else None
     incomplete = [row for row in rows if row["missed_quotes"]]
 
@@ -103,13 +131,20 @@ def _render_retrieval_report(rows, total_gold, total_found) -> str:
             f"found, {row['retrieved_chunk_count']} chunks retrieved"
         )
         for quote in row["missed_quotes"]:
-            report_lines.append(f"  - **missed:** \"{quote[:200]}\"")
+            preview = quote[:CLI_QUOTE_PREVIEW_CHARACTER_COUNT]
+            report_lines.append(f"  - **missed:** \"{preview}\"")
     return "\n".join(report_lines)
 
 
 def _write_outputs(
-    arguments, case_dir, variant, report_text, rows, total_gold, total_found
-):
+    arguments: argparse.Namespace,
+    case_dir: pathlib.Path,
+    variant: str,
+    report_text: str,
+    rows: list[RetrievalRow],
+    total_gold: int,
+    total_found: int,
+) -> None:
     from case_layout import run_dir
 
     if arguments.report_output:
@@ -138,6 +173,7 @@ def _write_outputs(
 def main() -> None:
     _add_project_root_to_path()
     from backends.vectorstore import case_collection_name, index_chunks
+    from config import RETRIEVAL_ONLY_EVAL_COLLECTION_PREFIX
     from evaluation.fixtures import load_true_requirements, load_true_verdicts
     from evaluation.verdict_only import build_synthetic_requirements
     from steps.chunking import split_application_document
@@ -164,7 +200,7 @@ def main() -> None:
         application_text, application_path.as_posix()
     )
     collection_name = case_collection_name(
-        f"retrieval_only_{case_dir.name}_{variant}"
+        f"{RETRIEVAL_ONLY_EVAL_COLLECTION_PREFIX}{case_dir.name}_{variant}"
     )
     index_chunks(collection_name, application_chunks)
 

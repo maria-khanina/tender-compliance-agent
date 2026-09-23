@@ -34,6 +34,7 @@ def _verdict(topic_id: str, label: VerdictLabel) -> Verdict:
         verdict=label,
         evidence=[],
         reasoning="",
+        condition_holds=True,
     )
 
 

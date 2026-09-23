@@ -5,9 +5,10 @@ training scripts actually work with, in one place instead of at every
 call site.
 """
 from peft import LoraConfig, PeftModel, get_peft_model
+from transformers import PreTrainedModel
 
 
-def wrap_with_lora(model, lora_config: LoraConfig) -> PeftModel:
+def wrap_with_lora(model: PreTrainedModel, lora_config: LoraConfig) -> PeftModel:
     wrapped = get_peft_model(model, lora_config)
     assert isinstance(wrapped, PeftModel)
     return wrapped

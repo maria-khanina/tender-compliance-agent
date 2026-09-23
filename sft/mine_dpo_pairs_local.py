@@ -22,7 +22,14 @@ import time
 from typing import cast
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from peft import PeftModel
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig,
+    PreTrainedModel,
+    PreTrainedTokenizerBase,
+)
 
 from sft.schemas import PreferencePair, TrainingRow, VerdictCompletion
 from sft.train_verdict_lora import TOOL_SCHEMA, VERDICT_LABELS
@@ -133,16 +140,24 @@ def load_already_done_keys(output_path: str) -> set[tuple[str, str, str]]:
 
 
 def sample_completions_for_row(
-    row: TrainingRow, model, tokenizer, args: argparse.Namespace
+    row: TrainingRow,
+    model: PreTrainedModel | PeftModel,
+    tokenizer: PreTrainedTokenizerBase,
+    args: argparse.Namespace,
 ) -> list[VerdictCompletion]:
-    input_text = tokenizer.apply_chat_template(
-        [{"role": "user", "content": row["prompt"]}],
-        tools=[TOOL_SCHEMA],
-        add_generation_prompt=True,
-        tokenize=False,
-        enable_thinking=False,
+    input_text = cast(
+        str,
+        tokenizer.apply_chat_template(  # type: ignore[reportArgumentType]
+            [{"role": "user", "content": row["prompt"]}],
+            tools=[TOOL_SCHEMA],
+            add_generation_prompt=True,
+            tokenize=False,
+            enable_thinking=False,
+        ),
     )
-    inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+    inputs = tokenizer(input_text, return_tensors="pt").to(
+        cast(torch.device, model.device)
+    )
     with torch.no_grad():
         output_ids = model.generate(  # type: ignore[reportAttributeAccessIssue]
             **inputs,
@@ -154,8 +169,11 @@ def sample_completions_for_row(
         )
     completions: list[VerdictCompletion] = []
     for seq in output_ids:
-        generated = tokenizer.decode(
-            seq[inputs["input_ids"].shape[1]:], skip_special_tokens=True
+        generated = cast(
+            str,
+            tokenizer.decode(
+                seq[inputs["input_ids"].shape[1]:], skip_special_tokens=True
+            ),
         )
         parsed = extract_tool_call_json(generated)
         if parsed is not None:

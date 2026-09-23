@@ -1,6 +1,11 @@
 import argparse
 import pathlib
 import sys
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from evaluation.fixtures import TrueRequirementsFixture
+    from evaluation.orchestrator import EvaluationReport
 
 
 def _add_project_root_to_path() -> None:
@@ -9,6 +14,8 @@ def _add_project_root_to_path() -> None:
 
 
 def _parse_arguments() -> argparse.Namespace:
+    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate a pipeline run's predicted_*.json output (under "
@@ -19,14 +26,14 @@ def _parse_arguments() -> argparse.Namespace:
     parser.add_argument("--case-dir", required=True)
     parser.add_argument(
         "--variant",
-        default="a",
+        default=DEFAULT_APPLICATION_VARIANT,
         help=(
             "Application variant directory name under applications/ "
             "(e.g. 'a', 'b', 'c'). Defaults to 'a', the case's canonical "
             "application."
         ),
     )
-    parser.add_argument("--run-label", default="gemini")
+    parser.add_argument("--run-label", default=DEFAULT_RUN_LABEL)
     parser.add_argument("--report-output")
     return parser.parse_args()
 
@@ -99,7 +106,10 @@ def _compute_verdict_only_result(
     )
 
 
-def _compute_missed_chunk_diagnostics(requirements_fixture, report) -> dict[str, str]:
+def _compute_missed_chunk_diagnostics(
+    requirements_fixture: "TrueRequirementsFixture",
+    report: "EvaluationReport",
+) -> dict[str, str]:
     from evaluation.chunk_diagnostics import describe_missed_topic_chunk_coverage
 
     topics_by_id = {

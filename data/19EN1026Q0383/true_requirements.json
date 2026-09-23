@@ -188,7 +188,7 @@
     {
       "topic_id": "local_license_permit_conditional",
       "description": "If this service requires a special license or permit under local law, the offeror must address its plan to obtain one, or provide a copy if already held.",
-      "is_mandatory": false,
+      "is_mandatory": true,
       "is_text_verifiable": true,
       "source": {
         "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
@@ -197,6 +197,16 @@
           {
             "start_char": 8104,
             "end_char": 8366
+          }
+        ]
+      },
+      "applicability_condition": {
+        "document_path": "data/19EN1026Q0383/19EN1026Q0383_condensed.txt",
+        "quote": "If providing this service requires special license or permit,",
+        "spans": [
+          {
+            "start_char": 8107,
+            "end_char": 8168
           }
         ]
       }

@@ -24,7 +24,7 @@ from steps.chunking import (
 )
 from steps.conditions import extract_conditions
 from steps.deduplication import deduplicate_requirements
-from steps.evidence_retrieval import retrieve_context_chunks
+from steps.evidence_retrieval import retrieve_context_chunks_for_requirement
 from steps.report import build_report
 from steps.requirements_extraction import extract_requirements_from_chunk
 from steps.verdicts import generate_verdict
@@ -145,8 +145,8 @@ def generate_verdict_node(
     state: RequirementVerdictInput,
 ) -> dict[str, list[Verdict] | list[RetrievedContextRecord]]:
     requirement = state["requirement"]
-    context_chunks = retrieve_context_chunks(
-        requirement.text, state["collection_name"]
+    context_chunks = retrieve_context_chunks_for_requirement(
+        requirement, state["collection_name"]
     )
     retrieved_context_record = RetrievedContextRecord(
         requirement_id=requirement.requirement_id,
@@ -173,7 +173,7 @@ def _get_checkpointer() -> SqliteSaver:
     return SqliteSaver(connection)
 
 
-def _register_nodes(builder: StateGraph) -> None:
+def _register_nodes(builder: StateGraph[PipelineState]) -> None:
     builder.add_node("split_requirements_node", split_requirements_node)
     builder.add_node(
         "extract_requirements_node", extract_requirements_node
@@ -187,7 +187,7 @@ def _register_nodes(builder: StateGraph) -> None:
     builder.add_node("build_report_node", build_report_node)
 
 
-def _register_edges(builder: StateGraph) -> None:
+def _register_edges(builder: StateGraph[PipelineState]) -> None:
     builder.add_edge(START, "split_requirements_node")
     builder.add_conditional_edges(
         "split_requirements_node",
@@ -212,7 +212,7 @@ def _register_edges(builder: StateGraph) -> None:
     builder.add_edge("build_report_node", END)
 
 
-def build_graph() -> CompiledStateGraph:
+def build_graph() -> CompiledStateGraph[PipelineState]:
     builder = StateGraph(PipelineState)
     _register_nodes(builder)
     _register_edges(builder)

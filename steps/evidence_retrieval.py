@@ -9,7 +9,7 @@ from config import (
     EVIDENCE_SIMILARITY_THRESHOLD,
 )
 from logging_config import get_logger
-from schemas import Chunk
+from schemas import Chunk, Requirement
 
 
 logger = get_logger(__name__)
@@ -151,3 +151,17 @@ def retrieve_context_chunks(
         requirement_text[:80],
     )
     return context_chunks
+
+
+def retrieve_context_chunks_for_requirement(
+    requirement: Requirement,
+    collection_name: str,
+) -> list[Chunk]:
+    context_chunks = retrieve_context_chunks(requirement.text, collection_name)
+    condition_citation = requirement.applicability_condition_citation
+    if condition_citation is None:
+        return context_chunks
+    condition_chunks = retrieve_context_chunks(
+        condition_citation.quote, collection_name
+    )
+    return _deduplicate_chunks(context_chunks + condition_chunks)

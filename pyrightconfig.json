@@ -2,5 +2,7 @@
   "include": ["."],
   "exclude": ["**/__pycache__", ".pytest_cache"],
   "typeCheckingMode": "standard",
-  "pythonVersion": "3.11"
+  "pythonVersion": "3.11",
+  "reportMissingParameterType": "error",
+  "reportMissingTypeArgument": "error"
 }

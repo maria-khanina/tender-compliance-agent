@@ -1,9 +1,10 @@
 import uuid
+from typing import cast
 
 from langchain_core.runnables import RunnableConfig
 
 from backends.vectorstore import case_collection_name, delete_collection
-from graph import build_graph
+from graph import PipelineState, build_graph
 from logging_config import get_logger
 from schemas import PipelineResult
 from steps.ingestion import load_document_texts
@@ -24,11 +25,11 @@ def run_pipeline(
     run_config: RunnableConfig = {
         "configurable": {"thread_id": thread_id}
     }
-    initial_state = {
+    initial_state = cast(PipelineState, {
         "collection_name": collection_name,
         "requirements_documents": requirements_documents,
         "application_documents": application_documents,
-    }
+    })
     logger.info("Starting pipeline run %s", thread_id)
     try:
         final_state = compiled_graph.invoke(initial_state, run_config)

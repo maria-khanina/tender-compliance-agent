@@ -5,11 +5,18 @@ import json
 import os
 import pathlib
 import sys
-from typing import TypedDict
+from collections.abc import Callable
+from typing import TypedDict, cast
 
 import torch
 from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig,
+    PreTrainedModel,
+    PreTrainedTokenizerBase,
+)
 
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
@@ -82,27 +89,38 @@ def load_dpo(adapter_dir: str):
 
 @torch.no_grad()
 def generate_predictions(
-    model, tokenizer, rows: list[TrainingRow]
+    model: PreTrainedModel | PeftModel,
+    tokenizer: PreTrainedTokenizerBase,
+    rows: list[TrainingRow],
 ) -> list[VerdictCompletion | None]:
     model.eval()
     predictions: list[VerdictCompletion | None] = []
     for row in rows:
-        input_text = tokenizer.apply_chat_template(
-            [{"role": "user", "content": row["prompt"]}],
-            tools=[TOOL_SCHEMA],
-            add_generation_prompt=True,
-            tokenize=False,
-            enable_thinking=False,
+        input_text = cast(
+            str,
+            tokenizer.apply_chat_template(  # type: ignore[reportArgumentType]
+                [{"role": "user", "content": row["prompt"]}],
+                tools=[TOOL_SCHEMA],
+                add_generation_prompt=True,
+                tokenize=False,
+                enable_thinking=False,
+            ),
         )
-        inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+        inputs = tokenizer(input_text, return_tensors="pt").to(
+            cast(torch.device, model.device)
+        )
         output_ids = model.generate(  # type: ignore[reportAttributeAccessIssue]
             **inputs,
             max_new_tokens=EVAL_MAX_NEW_TOKENS,
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id,
         )
-        generated = tokenizer.decode(
-            output_ids[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True,
+        generated = cast(
+            str,
+            tokenizer.decode(
+                output_ids[0][inputs["input_ids"].shape[1]:],
+                skip_special_tokens=True,
+            ),
         )
         predictions.append(extract_tool_call_json(generated))
     return predictions
@@ -250,7 +268,9 @@ def default_output_dir() -> str:
 
 
 def evaluate_config(
-    label: str, loader, val_rows: list[TrainingRow]
+    label: str,
+    loader: Callable[[], tuple[PreTrainedModel | PeftModel, PreTrainedTokenizerBase]],
+    val_rows: list[TrainingRow],
 ) -> tuple[ScoreResult, list[VerdictCompletion | None]]:
     print(f"\nLoading {label}...")
     model, tokenizer = loader()

@@ -20,10 +20,12 @@ import sys
 
 
 def _parse_arguments() -> argparse.Namespace:
+    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--case-dir", required=True)
-    parser.add_argument("--variant", default="a")
-    parser.add_argument("--run-label", default="gemini")
+    parser.add_argument("--variant", default=DEFAULT_APPLICATION_VARIANT)
+    parser.add_argument("--run-label", default=DEFAULT_RUN_LABEL)
     parser.add_argument(
         "--report-dir",
         help="Directory to write the three *_report.md files into "
@@ -60,6 +62,7 @@ def _run(
 def main() -> None:
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
     from case_layout import run_dir
+    from config import CLI_STDERR_TAIL_CHARACTER_COUNT
 
     args = _parse_arguments()
     case_dir = args.case_dir
@@ -95,7 +98,7 @@ def main() -> None:
         status = "ok" if ok else "FAILED"
         print(f"[{name}] {status} -> {report_path}")
         if not ok:
-            print(output[-2000:])
+            print(output[-CLI_STDERR_TAIL_CHARACTER_COUNT:])
         else:
             for line in output.splitlines():
                 stripped = line.strip()
