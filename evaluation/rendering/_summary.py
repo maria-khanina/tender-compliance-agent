@@ -49,6 +49,15 @@ def build_summary_metrics(
         "is_text_verifiable_scored": (
             report.is_text_verifiable_accuracy.scored_topic_count
         ),
+        "condition_detection_recall": round(
+            report.applicability_condition_detection.detection_recall, 4
+        ),
+        "condition_holds_accuracy": round(
+            report.condition_holds_accuracy.accuracy, 4
+        ),
+        "condition_holds_scored": (
+            report.condition_holds_accuracy.scored_topic_count
+        ),
         "verdict_clean_match_count": (
             report.verdict_accuracy.clean_match_count
         ),

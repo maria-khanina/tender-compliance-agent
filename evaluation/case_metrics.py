@@ -11,7 +11,8 @@ from evaluation import (
     load_true_requirements,
     load_true_verdicts,
 )
-from evaluation.verdict_only import score_verdicts
+from evaluation.fixtures import TrueVerdictsFixture
+from evaluation.verdict_only import VerdictOnlyResult, score_verdicts
 from schemas import RetrievedContextRecord
 from case_layout import run_dir, true_verdicts_path
 
@@ -27,7 +28,10 @@ def find_case_dirs(data_dir: pathlib.Path) -> list[pathlib.Path]:
     return case_dirs
 
 
-def compute_verdict_only_result(artifacts_dir: pathlib.Path, verdicts_fixture):
+def compute_verdict_only_result(
+    artifacts_dir: pathlib.Path,
+    verdicts_fixture: TrueVerdictsFixture,
+) -> VerdictOnlyResult | None:
     verdicts_artifact_path = artifacts_dir / "verdict_only_verdicts.json"
     if not verdicts_artifact_path.exists():
         return None

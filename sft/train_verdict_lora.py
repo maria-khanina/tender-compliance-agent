@@ -8,12 +8,18 @@ from typing import TypedDict, cast
 
 import torch
 from datasets import Dataset
-from peft import LoraConfig
+from peft import LoraConfig, PeftModel
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
+    BatchEncoding,
     BitsAndBytesConfig,
+    PreTrainedModel,
+    PreTrainedTokenizerBase,
     TrainerCallback,
+    TrainerControl,
+    TrainerState,
+    TrainingArguments,
 )
 from trl import SFTConfig, SFTTrainer  # type: ignore[reportPrivateImportUsage]
 
@@ -168,25 +174,34 @@ def extract_verdict_label(generated_text: str) -> VerdictLabel | None:
     return None
 
 
-def predict_verdict_label(model, tokenizer, row: ChatExample) -> VerdictLabel | None:
+def predict_verdict_label(
+    model: PreTrainedModel | PeftModel,
+    tokenizer: PreTrainedTokenizerBase,
+    row: ChatExample,
+) -> VerdictLabel | None:
     prompt_messages = [row["messages"][0]]
-    input_text = tokenizer.apply_chat_template(
-        prompt_messages,
-        tools=row["tools"],
+    raw_inputs = tokenizer.apply_chat_template(
+        prompt_messages,  # type: ignore[reportArgumentType]
+        tools=row["tools"],  # type: ignore[reportArgumentType]
         add_generation_prompt=True,
-        tokenize=False,
+        tokenize=True,
+        return_tensors="pt",
+        return_dict=True,
         enable_thinking=False,
     )
-    inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
-    output_ids = model.generate(
+    inputs = cast(BatchEncoding, raw_inputs).to(cast(torch.device, model.device))
+    output_ids = model.generate(  # type: ignore[reportAttributeAccessIssue]
         **inputs,
         max_new_tokens=EVAL_MAX_NEW_TOKENS,
         do_sample=False,
         pad_token_id=tokenizer.eos_token_id,
     )
-    generated = tokenizer.decode(
-        output_ids[0][inputs["input_ids"].shape[1]:],
-        skip_special_tokens=True,
+    generated = cast(
+        str,
+        tokenizer.decode(
+            output_ids[0][inputs["input_ids"].shape[1]:],
+            skip_special_tokens=True,
+        ),
     )
     return extract_verdict_label(generated)
 
@@ -232,7 +247,9 @@ def macro_f1_from_class_counts(per_class: dict[VerdictLabel, ClassCounts]) -> fl
 
 @torch.no_grad()
 def evaluate_task_accuracy(
-    model, tokenizer, val_rows: list[ChatExample]
+    model: PreTrainedModel | PeftModel,
+    tokenizer: PreTrainedTokenizerBase,
+    val_rows: list[ChatExample],
 ) -> TaskEvalResult:
     model.eval()
     correct = 0
@@ -250,7 +267,7 @@ def evaluate_task_accuracy(
 
 @dataclass
 class TaskMetricEarlyStopping(TrainerCallback):
-    tokenizer: object
+    tokenizer: PreTrainedTokenizerBase
     val_rows: list[ChatExample]
     patience: int = 3
     min_delta: float = 0.01
@@ -268,7 +285,14 @@ class TaskMetricEarlyStopping(TrainerCallback):
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
-    def on_log(self, args, state, control, logs=None, **kwargs):
+    def on_log(  # type: ignore[reportIncompatibleMethodOverride]
+        self,
+        args: TrainingArguments,
+        state: TrainerState,
+        control: TrainerControl,
+        logs: dict[str, float] | None = None,
+        **kwargs: object,
+    ) -> TrainerControl:
         if logs is None:
             return control
         os.makedirs(SFT_RUN_DIR, exist_ok=True)
@@ -276,7 +300,14 @@ class TaskMetricEarlyStopping(TrainerCallback):
             f.write(json.dumps({"step": state.global_step, **logs}) + "\n")
         return control
 
-    def on_step_end(self, args, state, control, model=None, **kwargs):
+    def on_step_end(  # type: ignore[reportIncompatibleMethodOverride]
+        self,
+        args: TrainingArguments,
+        state: TrainerState,
+        control: TrainerControl,
+        model: PreTrainedModel | PeftModel | None = None,
+        **kwargs: object,
+    ) -> TrainerControl:
         step = state.global_step
         if step == 0:
             return control
@@ -289,6 +320,7 @@ class TaskMetricEarlyStopping(TrainerCallback):
             print(f"[checkpoint] periodic save at step {step}")
         if not is_eval_step:
             return control
+        assert model is not None, "Trainer always passes model to on_step_end"
         eval_result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
         result: EvalHistoryEntry = {**eval_result, "step": state.global_step}
         self.history.append(result)

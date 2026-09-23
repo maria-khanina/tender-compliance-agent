@@ -7,12 +7,17 @@ from dataclasses import dataclass, field
 
 import torch
 from datasets import Dataset
-from peft import LoraConfig
+from peft import LoraConfig, PeftModel
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     BitsAndBytesConfig,
+    PreTrainedModel,
+    PreTrainedTokenizerBase,
     TrainerCallback,
+    TrainerControl,
+    TrainerState,
+    TrainingArguments,
 )
 import trl.trainer.dpo_trainer as _dpo_trainer_module
 from trl import DPOConfig, DPOTrainer  # type: ignore[reportPrivateImportUsage]
@@ -127,7 +132,7 @@ def build_lora_config() -> LoraConfig:
 
 @dataclass
 class BestCheckpointTracker(TrainerCallback):
-    tokenizer: object
+    tokenizer: PreTrainedTokenizerBase
     val_rows: list[ChatExample]
     eval_every_n_steps: int
     history_path: str = f"{DPO_RUN_DIR}/dpo_training_history.json"
@@ -140,12 +145,20 @@ class BestCheckpointTracker(TrainerCallback):
         with open(self.history_path, "w", encoding="utf-8") as f:
             json.dump(self.history, f, indent=2)
 
-    def on_step_end(self, args, state, control, model=None, **kwargs):
+    def on_step_end(  # type: ignore[reportIncompatibleMethodOverride]
+        self,
+        args: TrainingArguments,
+        state: TrainerState,
+        control: TrainerControl,
+        model: PreTrainedModel | PeftModel | None = None,
+        **kwargs: object,
+    ) -> TrainerControl:
         from sft.train_verdict_lora import evaluate_task_accuracy
 
         step = state.global_step
         if step == 0 or step % self.eval_every_n_steps != 0:
             return control
+        assert model is not None, "Trainer always passes model to on_step_end"
         eval_result = evaluate_task_accuracy(model, self.tokenizer, self.val_rows)
         result: EvalHistoryEntry = {**eval_result, "step": step}
         self.history.append(result)
@@ -169,7 +182,14 @@ class LossLogger(TrainerCallback):
     def __init__(self, path: str):
         self.path = path
 
-    def on_log(self, args, state, control, logs=None, **kwargs):
+    def on_log(  # type: ignore[reportIncompatibleMethodOverride]
+        self,
+        args: TrainingArguments,
+        state: TrainerState,
+        control: TrainerControl,
+        logs: dict[str, float] | None = None,
+        **kwargs: object,
+    ) -> TrainerControl:
         if logs is None:
             return control
         os.makedirs(os.path.dirname(self.path), exist_ok=True)
@@ -179,8 +199,8 @@ class LossLogger(TrainerCallback):
 
 
 def build_trainer(
-    model,
-    tokenizer,
+    model: PreTrainedModel | PeftModel,
+    tokenizer: PreTrainedTokenizerBase,
     train_dataset: Dataset,
     lora_config: LoraConfig | None = None,
     output_dir: str | None = None,

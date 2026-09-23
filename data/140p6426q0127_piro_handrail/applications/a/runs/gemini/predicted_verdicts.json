@@ -1,35 +1,36 @@
 [
   {
-    "requirement_id": "21e353ca-d630-4a7b-a413-4a19a031588a",
-    "requirement_text": "The company must obtain and provide a Unique Entity Identifier (UEI).",
+    "requirement_id": "22e41a33-444a-48a5-bff8-4b5513e3db28",
+    "requirement_text": "To be considered for award your company must obtain a Unique Entity Identifier (UEI).",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
         "quote": "Unique Entity Identifier (UEI): SRF7X92LM814",
-        "start_char": 604,
-        "end_char": 648,
-        "citation_verified": true,
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Our\nUnique Entity Identifier is provided above.",
-        "start_char": 1057,
-        "end_char": 1104,
-        "citation_verified": true,
+        "quote": "Our Unique Entity Identifier is provided above.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The requirement states that the company must obtain and provide a Unique Entity Identifier (UEI). In the Contractor Core Data section of the application, the bidder explicitly lists their Unique Entity Identifier (UEI) as SRF7X92LM814, thereby satisfying the requirement."
+    "reasoning": "The requirement states that the company must obtain a Unique Entity Identifier (UEI). The bidder's application explicitly provides their Unique Entity Identifier (UEI) as SRF7X92LM814 under the Contractor Core Data and Registration and Eligibility sections, thereby satisfying the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "d73e9d83-ec46-4ab4-911d-4150e842b90e",
-    "requirement_text": "The company must be registered in the System for Award Management (SAM) with an active status, qualify as a small business for the specified NAICS code, and maintain this status at the time of quote close, award, and throughout contract performance.",
+    "requirement_id": "6740179b-72d7-4fb5-81bc-6ca6b5645a37",
+    "requirement_text": "Your company must be registered in the System for Award Management (SAM) with an active status at the time of quote submission, award, and throughout contract performance, and be considered a small business for the size standard associated with the specified NAICS code.",
     "verdict": "contradictory",
     "evidence": [
       {
@@ -63,97 +64,83 @@
         "role": "contradicts"
       }
     ],
-    "reasoning": "The application contains contradictory statements regarding the bidder's size standard compliance. In the registration section and capabilities statement, the bidder claims average annual gross revenues of $12.4 million, which is within the $19 million small business size standard for NAICS code 238990. However, in the financial and bonding information section, the bidder states that its average annual revenue for size-standard purposes was $21.8 million in fiscal year 2024, which exceeds the $19 million limit and contradicts its claim of qualifying as a small business."
+    "reasoning": "The application contains contradictory information regarding whether the bidder qualifies as a small business for the specified NAICS code. In chunk 0 and chunk 2, the bidder states it is a small business with an average annual gross revenue of $12.4 million, which is within the $19 million size standard. However, in chunk 3 under financial and bonding information, the bidder states that its average annual revenue for size-standard purposes was $21.8 million in fiscal year 2024, which exceeds the $19 million size standard limit.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "cf9f1bc1-5c2e-40f9-8619-2f60f010380a",
-    "requirement_text": "Quotes are due by 9 September 2026 at 12 PM ET.",
+    "requirement_id": "19ff2dbf-2c73-4556-b78b-4feceb65b400",
+    "requirement_text": "Quotes are due by 9 September 2026 at 12PM ET.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The application excerpts do not contain any mention of the quote submission deadline (9 September 2026 at 12 PM ET) or the specific date and time when the quote was submitted. Therefore, there is insufficient information to determine compliance with this requirement."
+    "reasoning": "The provided text excerpts do not mention the submission date or time of the quote, nor do they state when the quote was submitted relative to the 9 September 2026 at 12PM ET deadline.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "e8130a06-690a-4a5d-a070-3c5617628c94",
-    "requirement_text": "Questions regarding the solicitation will only be accepted until 1 September 2026 at 12 PM ET.",
+    "requirement_id": "779ca850-a2af-452f-8ec4-1c2b00bc0400",
+    "requirement_text": "Questions regarding this solicitation will only be accepted until 1 September 2026 at 12PM ET.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided excerpts from the bidder's application contain details about quote submittal, registration, representations and certifications, capabilities, prior experience, pricing, and financial information. However, there is no mention whatsoever of questions regarding the solicitation or any deadlines for submitting questions. Therefore, there is insufficient information to determine compliance with this requirement."
+    "reasoning": "The requirement pertains to a deadline for submitting questions regarding the solicitation. The provided excerpts from the bidder's application contain information about quote submission, company details, capabilities, and pricing, but do not mention any questions asked regarding the solicitation or whether they adhered to the question submission deadline.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "01e71e4d-9a5e-412c-9909-e18f124a7140",
-    "requirement_text": "Offers must be submitted via email to the designated contract specialist by the specified date and time.",
+    "requirement_id": "befbfdce-0da5-424c-afc0-2a458c42fbad",
+    "requirement_text": "Offers must be submitted via email to the designated contract specialist by the date and time listed in the solicitation.",
     "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The requirement states that offers must be submitted via email to the designated contract specialist by the specified date and time. While the excerpts show that the quote was submitted to Colette Riegelmayer (Contract Specialist), they do not contain any information regarding the method of submission (i.e., whether it was sent via email) or the date and time of submission. Therefore, there is insufficient information to determine compliance."
+    "reasoning": "The provided text contains the bidder's quote submission details, price schedule, and capabilities, but it does not mention how or when the offer was submitted (e.g., whether it was emailed to the contract specialist by the specified date and time). Therefore, there is insufficient information in the excerpts to determine compliance with this requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "53dc841e-e256-4398-bef4-1faf426b9a24",
-    "requirement_text": "Quotes must follow the submission requirements, details, order, and checklist provided in the solicitation sections.",
+    "requirement_id": "fa367038-e776-4230-b4d4-136f797ea932",
+    "requirement_text": "Quotes must be in accordance with and in the order detailed in the solicitation section.",
+    "verdict": "insufficient_information",
+    "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
+        "quote": "QUOTE SUBMISSION\nIn Response to Solicitation 140P6426Q0127\nFabricate and Install Handrail - Pictured Rocks National Lakeshore (PIRO)",
+        "start_char": 0,
+        "end_char": 132,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "inconclusive"
+      }
+    ],
+    "reasoning": "The excerpts show the bidder's quote submission and structure, but do not provide the text of the solicitation section detailing the required order and format, making it impossible to determine whether the quote strictly follows that required order.",
+    "condition_holds": true
+  },
+  {
+    "requirement_id": "2973adbe-f3fa-4b80-93cf-e91e6944cd57",
+    "requirement_text": "Signed amendments (SF30) must be reviewed, acknowledged, and provided with the final quote/proposal package.",
+    "verdict": "compliant",
+    "evidence": [],
+    "reasoning": "The requirement mandates that signed amendments (SF30) must be reviewed, acknowledged, and provided if applicable. The provided excerpts do not mention any amendments being issued for this solicitation, meaning the condition that amendments exist is not shown to apply. Since silence about an unconfirmed condition is not evidence of non-compliance, and no amendments are indicated in the quote submittal checklist, the requirement is considered satisfied.",
+    "condition_holds": false
+  },
+  {
+    "requirement_id": "22acb654-8569-423d-bd53-8d891171c6d0",
+    "requirement_text": "Complete the attached price schedule in its entirety without unauthorized editing (aside from adding units of measure or quantities) and insert total unit prices and/or amounts for all line items.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "CHECKLIST FOR QUOTE SUBMITTAL\n\nWe confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
-        "start_char": 260,
-        "end_char": 516,
+        "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
+        "start_char": 4409,
+        "end_char": 4541,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly provides a checklist and includes the required sections such as Contractor Core Data, Price Schedule, Capabilities Statement/Project Narrative, and Prior Experience References, thereby following the submission requirements and checklist provided in the solicitation."
+    "reasoning": "The bidder provided the completed price schedule with unit prices and total amounts for the line item without unauthorized editing.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "d162a6af-8689-4e6d-99ec-bc828bee15b6",
-    "requirement_text": "Signed amendments, including SF30 acknowledgments obtained by checking SAM.gov regularly, must be provided with the final quote package.",
-    "verdict": "non_compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
-        "start_char": 291,
-        "end_char": 516,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "contradicts"
-      }
-    ],
-    "reasoning": "The requirement states that signed amendments, including SF30 acknowledgments obtained by checking SAM.gov regularly, must be provided with the final quote package. In chunk 0, the bidder lists the contents of their quote package, and signed amendments/SF30 acknowledgments are notably absent from the checklist and confirmation of included documents, indicating failure to provide them."
-  },
-  {
-    "requirement_id": "0d3ce0da-d3df-40a8-8b9e-a9531dc8a6a7",
-    "requirement_text": "Complete the attached price schedule in its entirety, including unit prices and amounts for all line items, ensuring the document is unedited unless an addendum is provided, and include the final offer total as the evaluated price.",
+    "requirement_id": "3a422a28-e4d9-424c-aa24-dbc11b1a9db3",
+    "requirement_text": "If quoting an or-equal item, submit a detailed product specifications document/literature to confirm the items are comparable.",
     "verdict": "insufficient_information",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
-        "start_char": 291,
-        "end_char": 516,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      },
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "PRICE SCHEDULE\n\nItem Number 10: Fabricate/Install Handrail (includes mob/demob, supplies, labor)\nPrice: $58,750.00\nTotal: $58,750.00",
-        "start_char": null,
-        "end_char": null,
-        "citation_verified": false,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The excerpts mention that a Price Schedule was included and provide a partial line item for Item Number 10 with a total price, but they do not provide the complete price schedule, nor do they show whether the document was unedited in its entirety as required."
-  },
-  {
-    "requirement_id": "3575ce40-3d0d-48c4-b8ef-fa8d0348a128",
-    "requirement_text": "If quoting an 'or equal' item, submit detailed product specifications or literature to confirm comparability.",
-    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
@@ -166,13 +153,24 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states an intention to quote and substitute an 'or equal' item for portions of the handrail hardware (stainless-steel fasteners from an alternate manufacturer). However, the application fails to provide detailed product specifications or literature to confirm comparability for this substituted item, violating the stated requirement."
+    "reasoning": "The bidder states an intention to substitute equivalent items for hardware (\"equivalent stainless-steel fasteners from an alternate manufacturer\"), which establishes that the condition of quoting an or-equal item applies. However, the excerpts mention that shop drawings and product data sheets are included for the proposed handrail system as Attachment A, but they do not provide specific literature or confirmation for these substituted fasteners to verify if they meet the detailed product specifications requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "5a3c7965-1bec-40e6-af10-a33f3fe506f1",
-    "requirement_text": "Provide a detailed capabilities statement, technical questionnaire, or project narrative demonstrating knowledge and experience in the products and statement of work.",
+    "requirement_id": "0f783275-188d-4311-8a4a-f6883746ac37",
+    "requirement_text": "Provide a detailed capabilities statement, technical questionnaire, or project narrative demonstrating experience and capability to successfully meet the needs of the Statement of Work.",
     "verdict": "compliant",
     "evidence": [
+      {
+        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
+        "quote": "We confirm the following documents are included in this quote package: Checklist for Quote\nSubmittal, Price Schedule, Detailed Capabilities Statement / Project Narrative, Prior Experience\nReferences, and Contractor Core Data.",
+        "start_char": 291,
+        "end_char": 516,
+        "citation_verified": true,
+        "match_precision": null,
+        "used_for_matching": true,
+        "role": "supports"
+      },
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
         "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies. Shop drawings and product data sheets for the proposed handrail system\nare included as Attachment A to this quote package.",
@@ -184,11 +182,12 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder provides a dedicated section titled 'Capabilities Statement / Project Narrative' that outlines their specialization in fabricating and installing handrail systems, details their approach to the statement of work (site measurement, custom fabrication, and on-site installation), and references attached shop drawings and product data sheets, fully satisfying the requirement."
+    "reasoning": "The bidder provides a detailed capabilities statement and project narrative that specifically outlines their experience and capability in fabricating and installing handrail systems for federal, state, and municipal facilities, which fully satisfies the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "6c177665-8667-4271-b3d3-01de1e3ef723",
-    "requirement_text": "Include all required shop drawings and product data.",
+    "requirement_id": "dc645b85-c53c-4094-bd44-7833d0af798b",
+    "requirement_text": "Include all required shop drawings and product data with the quote.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -202,17 +201,18 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly states in their capabilities statement/project narrative that shop drawings and product data sheets for the proposed handrail system are included as Attachment A, thereby satisfying the requirement."
+    "reasoning": "The bidder explicitly states in their project narrative that the required shop drawings and product data sheets for the proposed handrail system are included as Attachment A to the quote package, thereby satisfying the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "4d05a7d4-db69-4a57-893e-ff9a92798d24",
-    "requirement_text": "Provide prior experience references (preferably a minimum of 3) for projects of similar size, scope, and quality completed within the past five years, including brief descriptions and point of contact information.",
+    "requirement_id": "6a9222af-eb59-44bb-8284-4f0002fb3655",
+    "requirement_text": "Provide three prior experience references and examples of similar size and scope within the past five years, including project descriptions and point of contact information to verify performance quality.",
     "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
-        "start_char": 3662,
+        "quote": "PRIOR EXPERIENCE REFERENCES\n\n1. Isle Royale National Park - Boardwalk Handrail Replacement (2023)\nFabricated and installed 340 linear feet of galvanized steel handrail along the visitor\nboardwalk. Contract value: $86,000. Point of Contact: Maria Alvarez, Facility Manager,\nNational Park Service, (906) 555-2210.",
+        "start_char": 3633,
         "end_char": 3944,
         "citation_verified": true,
         "match_precision": null,
@@ -221,54 +221,27 @@
       },
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.",
+        "quote": "2. City of Marquette - Harborfront Park Railing Installation (2022)\nFabricated and installed aluminum guardrail and handrail systems along a 210-foot elevated\nwalkway. Contract value: $64,500. Point of Contact: Daniel Ruiz, Public Works Director, City\nof Marquette, (906) 555-3387.\n\n3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
         "start_char": 3946,
-        "end_char": 4227,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      },
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "3. We have also completed various municipal handrail and railing projects throughout the\nUpper Peninsula over the years, consistently meeting client specifications and timelines.",
-        "start_char": 4229,
         "end_char": 4407,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
-        "role": "inconclusive"
-      }
-    ],
-    "reasoning": "The requirement asks for prior experience references (preferably a minimum of 3) for projects of similar size, scope, and quality completed within the past five years, including brief descriptions and point of contact information. The bidder only provides 2 distinct references with descriptions and points of contact. The third reference mentioned is a vague statement without specific descriptions or point of contact information, thus failing to meet the minimum of 3 complete references."
-  },
-  {
-    "requirement_id": "c179e557-c197-413a-8cd7-101a92bb350b",
-    "requirement_text": "Provide the offeror's company name.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Company Name: Superior Rail & Fabrication, LLC",
-        "start_char": 540,
-        "end_char": 586,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's application explicitly states the company name as Superior Rail & Fabrication, LLC, thereby fully satisfying the requirement."
+    "reasoning": "The requirement asks for three prior experience references and examples of similar size and scope within the past five years. The bidder has only provided two detailed references (Isle Royale National Park in 2023 and City of Marquette in 2022), while reference number 3 is vague and lacks specific project descriptions, values, and point of contact information. Therefore, the bidder fails to provide the required three prior experience references.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "83a49546-0618-41de-85d3-108b7e4c5d98",
-    "requirement_text": "Provide the offeror's point of contact name, email, and phone number.",
+    "requirement_id": "44861cd9-0092-482d-9a3d-4e0998046362",
+    "requirement_text": "Provide company name, CAGE code, UEI, and offeror's point of contact name, email, and phone number.",
     "verdict": "compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Point of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
-        "start_char": 649,
+        "quote": "Company Name: Superior Rail & Fabrication, LLC\nCage Code: 7RTK9\nUnique Entity Identifier (UEI): SRF7X92LM814\nPoint of Contact: John Castellano, Project Manager\nPOC Email/Phone: j.castellano@superiorrailfab.com / (231) 555-0142",
+        "start_char": 540,
         "end_char": 766,
         "citation_verified": true,
         "match_precision": null,
@@ -276,75 +249,28 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder's application explicitly provides the offeror's point of contact name (John Castellano), email (j.castellano@superiorrailfab.com), and phone number ((231) 555-0142), thereby fully satisfying the requirement."
+    "reasoning": "The bidder's application explicitly provides the company name, CAGE code, UEI, and the offeror's point of contact name, email, and phone number under the Contractor Core Data section, fully satisfying the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "85a5d7f8-dce4-4872-819d-249ad69788c8",
-    "requirement_text": "Provide written confirmation of specialization or documented direct experience in providing all labor, material, tools, supervision, and travel for the service.",
+    "requirement_id": "2f126933-f720-4c63-b3ae-0eda9f732733",
+    "requirement_text": "The Contractor must use the IPP website to register, access, and use IPP for submitting requests for payment.",
+    "verdict": "insufficient_information",
+    "evidence": [],
+    "reasoning": "The provided excerpts from the bidder's application contain details regarding company structure, past performance, pricing, and representations and certifications, but they do not mention anything about the IPP website, IPP registration, or using IPP for submitting requests for payment. Therefore, there is insufficient information to determine compliance with the requirement.",
+    "condition_holds": true
+  },
+  {
+    "requirement_id": "478e6ab5-d6a7-433e-83b4-61bdd40e0449",
+    "requirement_text": "If unable to comply with using IPP for invoices, the Contractor must submit a waiver request in writing to the Contracting Officer with its proposal or quotation.",
     "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Our company specializes in the fabrication and installation of steel, aluminum, and\nstainless-steel handrail systems for federal, state, and municipal facilities, including\ncompliance with applicable ADA and local building code requirements. Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies.",
-        "start_char": 2779,
-        "end_char": 3250,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder provides written confirmation of specialization and documented direct experience in providing all labor, material, tools, supervision, and travel for the service, explicitly detailing their in-house capabilities and crews equipped for all project requirements."
-  },
-  {
-    "requirement_id": "20b82603-90b9-4062-8832-856ac1013b9c",
-    "requirement_text": "Offerors are urged and expected to inspect the site and satisfy themselves regarding general and local conditions affecting contract performance.",
-    "verdict": "insufficient_information",
     "evidence": [],
-    "reasoning": "The provided excerpts do not contain any statements regarding whether the offeror inspected the site or satisfied themselves regarding general and local conditions affecting contract performance. Therefore, there is insufficient information to determine compliance."
+    "reasoning": "The requirement only applies if the bidder is unable to comply with using IPP for submitting invoices. The bidder's proposal is silent regarding IPP invoicing, and silence on an unconfirmed condition does not establish that the condition applies. Therefore, the conditional requirement to submit a written waiver request does not apply, and the proposal is considered compliant by default.",
+    "condition_holds": false
   },
   {
-    "requirement_id": "f49d216a-3c8b-4c12-a6ef-af668f523ec5",
-    "requirement_text": "Payment requests must be submitted electronically through the U.S. Department of the Treasury's Invoice Processing Platform (IPP) website.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The provided excerpts from the bidder's application contain information regarding quote submittal, registration, representations and certifications, capabilities, and pricing, but they do not mention anything about electronic payment requests or the U.S. Department of the Treasury's Invoice Processing Platform (IPP). Therefore, there is insufficient information to determine whether the bidder complies with this requirement."
-  },
-  {
-    "requirement_id": "45482ed2-22cd-4ce8-a1d9-6a818262fb5c",
-    "requirement_text": "Attach a copy of the vendor invoice in PDF format to the IPP invoice, showing pricing breakdown, contract number, dates of service, invoice date, and vendor letterhead.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The application excerpts do not contain any information regarding whether a copy of the vendor invoice in PDF format was attached to the IPP invoice, as the provided text consists of quote submission checklists, contractor core data, pricing schedules, capabilities statements, and representations/certifications."
-  },
-  {
-    "requirement_id": "b80cbcb9-7176-4a28-91d7-9335c10ce147",
-    "requirement_text": "If unable to use IPP for submitting invoices, submit a written waiver request to the Contracting Officer with the proposal or quotation.",
-    "verdict": "insufficient_information",
-    "evidence": [],
-    "reasoning": "The requirement states that if the bidder is unable to use IPP for submitting invoices, they must submit a written waiver request to the Contracting Officer with the proposal. The provided excerpts contain no mention of the Invoice Processing Platform (IPP), whether the bidder is able or unable to use IPP, or any waiver request. Because the excerpts are completely silent on this conditional requirement and there is no indication whether the condition applies, there is insufficient information to determine compliance."
-  },
-  {
-    "requirement_id": "111b9452-2cd9-4f8c-90bc-c84b097c3825",
-    "requirement_text": "Independently, and not as an agent of the Government, the contractor/vendor shall furnish all labor, materials, equipment, mobilization, and demobilization necessary to fabricate and install a handrail at Pictured Rocks National Lakeshore (PIRO).",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Our crews are equipped\nto perform site measurement, custom fabrication in our own shop, and on-site installation,\nincluding all mobilization, demobilization, supplies, and labor described in Item 0010 of the\nSchedule of Supplies.",
-        "start_char": 3021,
-        "end_char": 3250,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly confirms in their project narrative that their crews will furnish all labor, materials, equipment, mobilization, and demobilization necessary to fabricate and install the handrail as required."
-  },
-  {
-    "requirement_id": "66934451-c2d3-485f-bf22-f0e821be83ae",
-    "requirement_text": "The Government will not enter into a contract with any corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, unless an agency has considered suspension or debarment and made a determination that it is not necessary to protect the interests of the Government.",
+    "requirement_id": "d70c2d3a-c880-4029-9f43-c2c5d5954f95",
+    "requirement_text": "The offeror must represent whether or not it is a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, as prohibited by appropriations acts unless the agency has considered suspension or debarment and determined it is not necessary.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -358,11 +284,12 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly certified that it is not a corporation with any unpaid Federal tax liability that has been assessed and meets all conditions of the requirement."
+    "reasoning": "The bidder explicitly represents and certifies in its application under FAR 52.209-11 that it is not a corporation with any unpaid Federal tax liability meeting the described criteria, which directly satisfies the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "44d4eab3-0dd5-41a0-a1cf-4d0407cc1989",
-    "requirement_text": "The Government will not enter into a contract with any corporation that was convicted of a felony criminal violation under any Federal law within the preceding 24 months, unless an agency has considered suspension or debarment of the corporation and made a determination that this action is not necessary to protect the interests of the Government.",
+    "requirement_id": "cf5de94f-a549-4baa-9fdd-9557b75ab78e",
+    "requirement_text": "The offeror must represent whether or not it is a corporation that was convicted of a felony criminal violation under any Federal law within the preceding 24 months, as prohibited by appropriations acts unless the agency has considered suspension or debarment and determined it is not necessary.",
     "verdict": "compliant",
     "evidence": [
       {
@@ -376,42 +303,26 @@
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly certifies in its representations and certifications that it is not a corporation convicted of a felony criminal violation under Federal law within the preceding 24 months, directly satisfying the requirement."
+    "reasoning": "The bidder explicitly represents and certifies in its application that it is not a corporation convicted of a felony criminal violation under any Federal law within the preceding 24 months, fully satisfying the requirement.",
+    "condition_holds": true
   },
   {
-    "requirement_id": "adb13844-cec1-437c-aca4-1999086dafea",
-    "requirement_text": "The Offeror must represent whether or not it is a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability.",
-    "verdict": "compliant",
+    "requirement_id": "ed525e97-5721-4d84-b045-5b35ff496fa7",
+    "requirement_text": "provide an addendum outlining\nthese changes or additional information wanting to make apparent to the evaluators.",
+    "verdict": "non_compliant",
     "evidence": [
       {
         "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Superior Rail & Fabrication, LLC is not a corporation that has any unpaid Federal tax\nliability that has been assessed, for which all judicial and administrative remedies have been\nexhausted or have lapsed, and that is not being paid in a timely manner pursuant to an\nagreement with the authority responsible for collecting the tax liability.",
-        "start_char": 1228,
-        "end_char": 1570,
+        "quote": "For portions of the handrail hardware, we intend to substitute equivalent stainless-steel\nfasteners from an alternate manufacturer other than the brand specified in the Statement of\nWork, in order to avoid current supply delays with the named manufacturer.",
+        "start_char": 3375,
+        "end_char": 3631,
         "citation_verified": true,
         "match_precision": null,
         "used_for_matching": true,
         "role": "supports"
       }
     ],
-    "reasoning": "The bidder explicitly represents and certifies that it does not have any unpaid Federal tax liability matching the description in the requirement, thereby fully satisfying the representation condition."
-  },
-  {
-    "requirement_id": "2734d1a7-4426-4df5-a878-4b520ef54593",
-    "requirement_text": "The Offeror must represent whether or not it is a corporation that was convicted of a felony criminal violation under a Federal law within the preceding 24 months.",
-    "verdict": "compliant",
-    "evidence": [
-      {
-        "document_path": "data/140p6426q0127_piro_handrail/applications/a/application.txt",
-        "quote": "Superior Rail & Fabrication, LLC is not a corporation that was convicted of a felony\ncriminal violation under a Federal law within the preceding 24 months.",
-        "start_char": 1575,
-        "end_char": 1730,
-        "citation_verified": true,
-        "match_precision": null,
-        "used_for_matching": true,
-        "role": "supports"
-      }
-    ],
-    "reasoning": "The bidder explicitly represents in its representations and certifications that it is not a corporation convicted of a felony criminal violation under a Federal law within the preceding 24 months, thus fully satisfying the requirement."
+    "reasoning": "The bidder states in chunk 2 that they intend to substitute equivalent stainless-steel fasteners from an alternate manufacturer, which means they are making edits or altering the document/specifications. Therefore, the condition applies. However, the bidder fails to provide an addendum outlining these changes or additional information making this apparent to the evaluators, rendering the application non_compliant with the requirement.",
+    "condition_holds": true
   }
 ]

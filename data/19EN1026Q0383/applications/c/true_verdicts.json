@@ -240,7 +240,8 @@
         }
       ],
       "primary_verdict": "compliant",
-      "primary_verdict_source": "pipeline_prediction"
+      "primary_verdict_source": "pipeline_prediction",
+      "condition_holds": true
     },
     {
       "topic_id": "menu_plan_sample_20day",

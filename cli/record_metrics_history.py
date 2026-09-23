@@ -12,6 +12,8 @@ def _add_project_root_to_path() -> None:
 
 
 def _parse_arguments() -> argparse.Namespace:
+    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+
     parser = argparse.ArgumentParser(
         description=(
             "Append one row per case to a JSONL history log of summary "
@@ -21,8 +23,8 @@ def _parse_arguments() -> argparse.Namespace:
         )
     )
     parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--variant", default="a")
-    parser.add_argument("--run-label", default="gemini")
+    parser.add_argument("--variant", default=DEFAULT_APPLICATION_VARIANT)
+    parser.add_argument("--run-label", default=DEFAULT_RUN_LABEL)
     parser.add_argument(
         "--history-file", default="data/metrics_history.jsonl"
     )

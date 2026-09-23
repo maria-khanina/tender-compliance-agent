@@ -13,20 +13,28 @@ model, DPO on the real 8B checkpoint would need roughly double the VRAM
 we actually have.
 """
 import math
+from pathlib import Path
 
 import pytest
 from accelerate.utils import is_peft_model
 from datasets import Dataset
 from peft import LoraConfig
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    PreTrainedModel,
+    PreTrainedTokenizerBase,
+)
 
 from sft.train_dpo import build_trainer
+
+TinyModelAndTokenizer = tuple[PreTrainedModel, PreTrainedTokenizerBase]
 
 TINY_MODEL = "hf-internal-testing/tiny-random-gpt2"
 
 
 @pytest.fixture()
-def tiny_model_and_tokenizer():
+def tiny_model_and_tokenizer() -> TinyModelAndTokenizer:
     # Function-scoped, not module-scoped: build_trainer() peft-wraps
     # `model` in place, so sharing one instance across tests would stack
     # a second adapter onto the first test's already-wrapped model.
@@ -53,7 +61,9 @@ def tiny_preference_dataset() -> Dataset:
 
 
 def test_dpo_trainer_runs_and_produces_finite_loss(
-    tiny_model_and_tokenizer, tiny_preference_dataset, tmp_path
+    tiny_model_and_tokenizer: TinyModelAndTokenizer,
+    tiny_preference_dataset: Dataset,
+    tmp_path: Path,
 ):
     model, tokenizer = tiny_model_and_tokenizer
     lora_config = LoraConfig(
@@ -93,7 +103,9 @@ def test_dpo_trainer_runs_and_produces_finite_loss(
 
 
 def test_disabling_the_new_adapter_changes_the_policys_output(
-    tiny_model_and_tokenizer, tiny_preference_dataset, tmp_path
+    tiny_model_and_tokenizer: TinyModelAndTokenizer,
+    tiny_preference_dataset: Dataset,
+    tmp_path: Path,
 ):
     """Confirms the disable-adapter reference path is actually wired to
     a *different* forward pass than the trainable policy -- i.e. training

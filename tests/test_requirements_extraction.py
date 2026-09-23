@@ -29,6 +29,7 @@ def test_draft_text_uses_verified_source_not_model_text() -> None:
         ),
         is_mandatory=True,
         is_text_verifiable=True,
+        applicability_condition_quote=None,
     )
     draft = _build_requirement_draft(chunk, candidate)
     assert draft.citations[0].citation_verified is True
@@ -43,6 +44,7 @@ def test_draft_text_falls_back_to_model_text_when_unverified() -> None:
         quote="completely different sentence that is nowhere in the chunk",
         is_mandatory=True,
         is_text_verifiable=True,
+        applicability_condition_quote=None,
     )
     draft = _build_requirement_draft(chunk, candidate)
     assert draft.citations[0].citation_verified is False
@@ -62,6 +64,7 @@ def test_lead_in_quote_is_marked_not_used_for_matching() -> None:
         quote="has unpaid taxes.",
         is_mandatory=True,
         is_text_verifiable=True,
+        applicability_condition_quote=None,
     )
     draft = _build_requirement_draft(chunk, candidate)
     assert len(draft.citations) == 2
@@ -80,7 +83,32 @@ def test_no_lead_in_quote_produces_single_citation() -> None:
         quote="A single self-contained requirement.",
         is_mandatory=True,
         is_text_verifiable=True,
+        applicability_condition_quote=None,
     )
     draft = _build_requirement_draft(chunk, candidate)
     assert len(draft.citations) == 1
     assert draft.citations[0].used_for_matching is True
+    assert draft.applicability_condition_citation is None
+
+
+def test_applicability_condition_quote_is_located_and_not_used_for_matching() -> None:
+    chunk = _build_test_chunk(
+        "If offering an equal product, it must match the salient "
+        "characteristics in Attachment B."
+    )
+    candidate = ExtractedRequirementCandidate(
+        lead_in_quote=None,
+        quote=(
+            "If offering an equal product, it must match the salient "
+            "characteristics in Attachment B."
+        ),
+        is_mandatory=True,
+        is_text_verifiable=True,
+        applicability_condition_quote="If offering an equal product,",
+    )
+    draft = _build_requirement_draft(chunk, candidate)
+    condition = draft.applicability_condition_citation
+    assert condition is not None
+    assert condition.quote == "If offering an equal product,"
+    assert condition.used_for_matching is False
+    assert condition.citation_verified is True

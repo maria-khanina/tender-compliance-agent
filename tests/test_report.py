@@ -56,6 +56,7 @@ def _build_verdict(
         verdict=verdict_label,
         evidence=[evidence],
         reasoning="because",
+        condition_holds=True,
     )
 
 

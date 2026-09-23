@@ -146,7 +146,8 @@
         }
       ],
       "primary_verdict": "compliant",
-      "primary_verdict_source": "acceptable_verdicts_first"
+      "primary_verdict_source": "acceptable_verdicts_first",
+      "condition_holds": false
     },
     {
       "topic_id": "capabilities_statement_required",
@@ -266,7 +267,8 @@
         }
       ],
       "primary_verdict": "compliant",
-      "primary_verdict_source": "acceptable_verdicts_first"
+      "primary_verdict_source": "acceptable_verdicts_first",
+      "condition_holds": true
     },
     {
       "topic_id": "submission_deadline_and_channel",

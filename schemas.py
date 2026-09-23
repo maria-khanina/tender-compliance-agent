@@ -73,6 +73,7 @@ class RequirementDraft(BaseModel):
     is_mandatory: bool
     is_text_verifiable: bool
     citations: list[TextSpan]
+    applicability_condition_citation: TextSpan | None = None
 
 
 class Requirement(RequirementDraft):
@@ -92,6 +93,7 @@ class Verdict(BaseModel):
     verdict: VerdictLabel
     evidence: list[Evidence]
     reasoning: str
+    condition_holds: bool
 
 
 class RetrievedContextRecord(BaseModel):

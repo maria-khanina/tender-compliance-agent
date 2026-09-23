@@ -195,6 +195,16 @@
             "end_char": 13077
           }
         ]
+      },
+      "applicability_condition": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "if quoting an \"or equal\" item,",
+        "spans": [
+          {
+            "start_char": 12916,
+            "end_char": 12946
+          }
+        ]
       }
     },
     {
@@ -269,7 +279,7 @@
     {
       "topic_id": "amendment_acknowledgment_if_posted",
       "description": "If SAM.gov shows a posted amendment, the offeror must acknowledge it by signing the SF30 and provide it with the final quote/proposal package.",
-      "is_mandatory": false,
+      "is_mandatory": true,
       "is_text_verifiable": true,
       "source": {
         "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
@@ -278,6 +288,16 @@
           {
             "start_char": 11303,
             "end_char": 11518
+          }
+        ]
+      },
+      "applicability_condition": {
+        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
+        "quote": "in any case an amendment was posted",
+        "spans": [
+          {
+            "start_char": 11340,
+            "end_char": 11375
           }
         ]
       }

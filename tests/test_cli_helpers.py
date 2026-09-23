@@ -1,7 +1,7 @@
 import pathlib
 
 from cli.aggregate_metrics import _format_cell, _mean_row, _render_table
-from cli.evaluate_retrieval import _render_retrieval_report
+from cli.evaluate_retrieval import RetrievalRow, _render_retrieval_report
 from cli.run_pipeline import _output_paths
 
 
@@ -52,7 +52,7 @@ def test_render_table_empty_rows_has_no_mean_row():
 
 
 def test_render_retrieval_report_reports_full_recall():
-    rows = [{
+    rows: list[RetrievalRow] = [{
         "topic_id": "topic_a",
         "gold_evidence_count": 2,
         "found_count": 2,
@@ -65,7 +65,7 @@ def test_render_retrieval_report_reports_full_recall():
 
 
 def test_render_retrieval_report_lists_missed_quotes():
-    rows = [{
+    rows: list[RetrievalRow] = [{
         "topic_id": "topic_a",
         "gold_evidence_count": 2,
         "found_count": 1,
@@ -78,7 +78,8 @@ def test_render_retrieval_report_lists_missed_quotes():
 
 
 def test_render_retrieval_report_handles_no_gold_evidence():
-    report = _render_retrieval_report([], total_gold=0, total_found=0)
+    empty_rows: list[RetrievalRow] = []
+    report = _render_retrieval_report(empty_rows, total_gold=0, total_found=0)
     assert "No topics with gold evidence to score." in report
 
 

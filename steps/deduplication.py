@@ -118,6 +118,17 @@ def _merge_citations(
     return citations
 
 
+def _merge_applicability_condition(
+    drafts: list[RequirementDraft],
+    indices: list[int],
+) -> TextSpan | None:
+    for draft_index in indices:
+        condition = drafts[draft_index].applicability_condition_citation
+        if condition is not None:
+            return condition
+    return None
+
+
 def _resolve_group(
     drafts: list[RequirementDraft],
     cluster_indices: list[int],
@@ -127,12 +138,16 @@ def _resolve_group(
     for member_position in group.member_indices:
         group_draft_indices.append(cluster_indices[member_position])
     merged_citations = _merge_citations(drafts, group_draft_indices)
+    merged_condition = _merge_applicability_condition(
+        drafts, group_draft_indices
+    )
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
         text=group.canonical_text,
         is_mandatory=group.is_mandatory,
         is_text_verifiable=group.is_text_verifiable,
         citations=merged_citations,
+        applicability_condition_citation=merged_condition,
     )
 
 

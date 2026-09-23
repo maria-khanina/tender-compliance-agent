@@ -2,6 +2,13 @@ import argparse
 import json
 import pathlib
 import sys
+from collections.abc import Sequence
+from typing import TYPE_CHECKING
+
+from pydantic import BaseModel
+
+if TYPE_CHECKING:
+    from schemas import Requirement, RetrievedContextRecord, Verdict
 
 
 def _add_project_root_to_path() -> None:
@@ -10,6 +17,8 @@ def _add_project_root_to_path() -> None:
 
 
 def _parse_arguments() -> argparse.Namespace:
+    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate the verdict-generation step in isolation: run it "
@@ -21,19 +30,22 @@ def _parse_arguments() -> argparse.Namespace:
     parser.add_argument("--case-dir", required=True)
     parser.add_argument(
         "--variant",
-        default="a",
+        default=DEFAULT_APPLICATION_VARIANT,
         help=(
             "Application variant directory name under applications/ "
             "(e.g. 'a', 'b', 'c'). Defaults to 'a', the case's canonical "
             "application."
         ),
     )
-    parser.add_argument("--run-label", default="gemini")
+    parser.add_argument("--run-label", default=DEFAULT_RUN_LABEL)
     parser.add_argument("--report-output")
     return parser.parse_args()
 
 
-def _generate_predictions(synthetic_requirements, collection_name):
+def _generate_predictions(
+    synthetic_requirements: list["Requirement"],
+    collection_name: str,
+) -> tuple[list["Verdict"], list["RetrievedContextRecord"]]:
     from schemas import RetrievedContextRecord, Verdict
     from steps.evidence_retrieval import retrieve_context_chunks
     from steps.verdicts import generate_verdict
@@ -56,7 +68,11 @@ def _generate_predictions(synthetic_requirements, collection_name):
     return predicted_verdicts, retrieved_context
 
 
-def _write_json_artifact(path: pathlib.Path, records: list, label: str) -> None:
+def _write_json_artifact(
+    path: pathlib.Path,
+    records: Sequence[BaseModel],
+    label: str,
+) -> None:
     serialized = [record.model_dump(mode="json") for record in records]
     path.write_text(
         json.dumps(serialized, indent=2, ensure_ascii=False), encoding="utf-8",
