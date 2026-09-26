@@ -95,22 +95,16 @@ Chunk text:
 """
 
 DEDUP_GROUPING_PROMPT = """\
-Below is a numbered list of requirement candidates extracted from
-different, possibly overlapping parts of the same tender document.
-Some candidates may be exact or partial duplicates of each other,
-describing the same underlying requirement. Others may look
-superficially similar but describe genuinely different
-requirements.
+Below is a numbered list of requirement candidates. Some may express
+the same underlying requirement in different words. Others may look
+superficially similar but describe genuinely different requirements.
 
 Group the candidates into non-overlapping groups such that every
 candidate in a group expresses the same underlying requirement. A
 group may contain a single candidate if it has no duplicates. For
 each group, provide a single canonical requirement text that
 captures the full requirement, drawing on all candidates in the
-group, and state whether the merged requirement is mandatory
-(true if any candidate in the group is phrased as mandatory) and
-whether it is verifiable from the application's text alone (false
-if any candidate in the group is marked not verifiable from text).
+group.
 
 Candidates:
 {numbered_candidates}
