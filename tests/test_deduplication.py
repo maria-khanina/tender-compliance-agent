@@ -7,12 +7,17 @@ from steps.deduplication import (
 )
 
 
-def _draft(requirement_id: str, text: str) -> RequirementDraft:
+def _draft(
+    requirement_id: str,
+    text: str,
+    is_mandatory: bool = True,
+    is_text_verifiable: bool = True,
+) -> RequirementDraft:
     return RequirementDraft(
         requirement_id=requirement_id,
         text=text,
-        is_mandatory=True,
-        is_text_verifiable=True,
+        is_mandatory=is_mandatory,
+        is_text_verifiable=is_text_verifiable,
         citations=[TextSpan(
             document_path="tender.txt",
             quote=text,
@@ -21,6 +26,30 @@ def _draft(requirement_id: str, text: str) -> RequirementDraft:
             citation_verified=True,
         )],
     )
+
+
+def test_resolve_group_is_mandatory_is_true_if_any_member_is_mandatory() -> None:
+    drafts = [
+        _draft("draft_a", "text a", is_mandatory=False),
+        _draft("draft_b", "text b", is_mandatory=True),
+    ]
+    group = RequirementGroup(member_indices=[0, 1], canonical_text="merged")
+
+    resolved = _resolve_group(drafts, [0, 1], group)
+
+    assert resolved.is_mandatory is True
+
+
+def test_resolve_group_is_text_verifiable_is_false_if_any_member_is_not() -> None:
+    drafts = [
+        _draft("draft_a", "text a", is_text_verifiable=True),
+        _draft("draft_b", "text b", is_text_verifiable=False),
+    ]
+    group = RequirementGroup(member_indices=[0, 1], canonical_text="merged")
+
+    resolved = _resolve_group(drafts, [0, 1], group)
+
+    assert resolved.is_text_verifiable is False
 
 
 def test_resolve_group_never_reuses_a_draft_id_across_groups() -> None:
@@ -40,14 +69,10 @@ def test_resolve_group_never_reuses_a_draft_id_across_groups() -> None:
     first_group = RequirementGroup(
         member_indices=[0],
         canonical_text="first canonical text",
-        is_mandatory=True,
-        is_text_verifiable=True,
     )
     second_group = RequirementGroup(
         member_indices=[0, 1, 2],
         canonical_text="second canonical text",
-        is_mandatory=True,
-        is_text_verifiable=True,
     )
 
     first_resolved = _resolve_group(drafts, cluster_indices, first_group)

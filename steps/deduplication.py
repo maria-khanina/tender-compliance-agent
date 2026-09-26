@@ -19,8 +19,6 @@ logger = get_logger(__name__)
 class RequirementGroup(BaseModel):
     member_indices: list[int]
     canonical_text: str
-    is_mandatory: bool
-    is_text_verifiable: bool
 
 
 class RequirementGroupList(BaseModel):
@@ -118,6 +116,16 @@ def _merge_citations(
     return citations
 
 
+def _merged_is_mandatory(drafts: list[RequirementDraft], indices: list[int]) -> bool:
+    return any(drafts[draft_index].is_mandatory for draft_index in indices)
+
+
+def _merged_is_text_verifiable(
+    drafts: list[RequirementDraft], indices: list[int]
+) -> bool:
+    return all(drafts[draft_index].is_text_verifiable for draft_index in indices)
+
+
 def _resolve_group(
     drafts: list[RequirementDraft],
     cluster_indices: list[int],
@@ -130,8 +138,10 @@ def _resolve_group(
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
         text=group.canonical_text,
-        is_mandatory=group.is_mandatory,
-        is_text_verifiable=group.is_text_verifiable,
+        is_mandatory=_merged_is_mandatory(drafts, group_draft_indices),
+        is_text_verifiable=_merged_is_text_verifiable(
+            drafts, group_draft_indices
+        ),
         citations=merged_citations,
     )
 
