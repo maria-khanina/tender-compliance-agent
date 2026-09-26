@@ -1,21 +1,27 @@
 import argparse
 import pathlib
-import sys
-from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from evaluation.fixtures import TrueRequirementsFixture
-    from evaluation.orchestrator import EvaluationReport
-
-
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+from case_layout import run_dir, true_verdicts_path
+from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+from evaluation import (
+    EvaluationReport,
+    evaluate,
+    load_predicted_requirements,
+    load_predicted_verdicts,
+    load_retrieved_context,
+    load_true_requirements,
+    load_true_verdicts,
+    render_report_as_markdown,
+)
+from evaluation.chunk_diagnostics import describe_missed_topic_chunk_coverage
+from evaluation.fixtures import TrueRequirementsFixture
+from evaluation.span_adapters import group_lookup_by_topic
+from evaluation.unexplained_diagnostics import annotate_unexplained_requirements
+from evaluation.verdict_only import render_verdict_only_report, score_verdicts
+from schemas import RetrievedContextRecord
 
 
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate a pipeline run's predicted_*.json output (under "
@@ -39,15 +45,6 @@ def _parse_arguments() -> argparse.Namespace:
 
 
 def _load_case_data(case_dir: pathlib.Path, variant: str, run_label: str):
-    from evaluation import (
-        load_predicted_requirements,
-        load_predicted_verdicts,
-        load_retrieved_context,
-        load_true_requirements,
-        load_true_verdicts,
-    )
-    from case_layout import run_dir, true_verdicts_path
-
     artifacts_dir = run_dir(case_dir, variant, run_label)
     requirements_fixture = load_true_requirements(
         case_dir / "true_requirements.json"
@@ -82,15 +79,6 @@ def _output_report(report_text: str, report_output_arg: str | None) -> None:
 def _compute_verdict_only_result(
     case_dir: pathlib.Path, variant: str, run_label: str
 ):
-    from evaluation import (
-        load_predicted_verdicts,
-        load_retrieved_context,
-        load_true_verdicts,
-    )
-    from evaluation.verdict_only import score_verdicts
-    from schemas import RetrievedContextRecord
-    from case_layout import run_dir, true_verdicts_path
-
     artifacts_dir = run_dir(case_dir, variant, run_label)
     verdicts_artifact_path = artifacts_dir / "verdict_only_verdicts.json"
     if not verdicts_artifact_path.exists():
@@ -107,11 +95,9 @@ def _compute_verdict_only_result(
 
 
 def _compute_missed_chunk_diagnostics(
-    requirements_fixture: "TrueRequirementsFixture",
-    report: "EvaluationReport",
+    requirements_fixture: TrueRequirementsFixture,
+    report: EvaluationReport,
 ) -> dict[str, str]:
-    from evaluation.chunk_diagnostics import describe_missed_topic_chunk_coverage
-
     topics_by_id = {
         topic.topic_id: topic for topic in requirements_fixture.requirements
     }
@@ -125,12 +111,6 @@ def _compute_missed_chunk_diagnostics(
 
 
 def main() -> None:
-    _add_project_root_to_path()
-    from evaluation import EvaluationReport, evaluate, render_report_as_markdown
-    from evaluation.span_adapters import group_lookup_by_topic
-    from evaluation.unexplained_diagnostics import annotate_unexplained_requirements
-    from evaluation.verdict_only import render_verdict_only_report
-
     arguments = _parse_arguments()
     case_dir = pathlib.Path(arguments.case_dir)
     case_data = _load_case_data(

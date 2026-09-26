@@ -224,8 +224,7 @@
         }
       ],
       "primary_verdict": "contradictory",
-      "primary_verdict_source": "acceptable_verdicts_first",
-      "condition_holds": true
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "menu_plan_sample_20day",

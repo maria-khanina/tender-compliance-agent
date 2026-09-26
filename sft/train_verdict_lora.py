@@ -1,8 +1,6 @@
 import json
 import os
-import pathlib
 import re
-import sys
 from dataclasses import dataclass, field
 from typing import TypedDict, cast
 
@@ -23,7 +21,7 @@ from transformers import (
 )
 from trl import SFTConfig, SFTTrainer  # type: ignore[reportPrivateImportUsage]
 
-from sft.schemas import (
+from sft.training_schemas import (
     ChatExample,
     EvalHistoryEntry,
     TaskEvalResult,
@@ -52,9 +50,6 @@ from sft.training_config import (
     TRAIN_DATA_PATH,
     VAL_DATA_PATH,
 )
-
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
 
 OUTPUT_DIR = f"{SFT_RUN_DIR}/sft_checkpoints"
 

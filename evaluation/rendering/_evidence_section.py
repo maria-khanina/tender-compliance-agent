@@ -1,24 +1,25 @@
-"""Evidence citation-verification and recall report section."""
+"""Evidence hallucination-rate and context-recall report section."""
 from evaluation.orchestrator import EvaluationReport
 from evaluation.rendering._common import collapse_whitespace, percent, true_line
 
 
 def render_evidence_section(report: EvaluationReport) -> list[str]:
-    citation_result = report.evidence_citation_verified
-    recall_result = report.evidence_recall
+    hallucination_result = report.evidence_hallucination
+    recall_result = report.context_recall
     lines = ["## Evidence", ""]
     lines.append(
-        "**Citation-verified rate** (evidence-level): fraction of evidence "
-        "quotes actually located in application.txt."
+        "**Evidence hallucination rate**: fraction of the model's cited "
+        "evidence quotes that were NOT actually located in application.txt "
+        "(the model asserted a quote that isn't really there)."
     )
     lines.append(
-        f"- rate: {percent(citation_result.citation_verified_rate)} "
-        f"({citation_result.unverified_evidence_count} unverified of "
-        f"{citation_result.total_evidence_count})"
+        f"- rate: {percent(hallucination_result.hallucination_rate)} "
+        f"({hallucination_result.hallucinated_evidence_count} hallucinated "
+        f"of {hallucination_result.total_evidence_count})"
     )
     lines.append("")
     lines.append(
-        "**Evidence recall**: does the expected evidence span (from "
+        "**Context recall**: does the expected evidence span (from "
         "`true_verdicts.json`) show up somewhere in the requirement's "
         "retrieved chunks, before the verdict step chose what to cite? "
         "Topics never extracted as a requirement are excluded — that "

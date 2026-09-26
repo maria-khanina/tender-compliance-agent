@@ -33,7 +33,6 @@ class VerdictAccuracyResult(BaseModel):
     false_issue_groups: list[MatchGroup]
     unscored_groups: list[MatchGroup]
     not_verifiable_groups: list[MatchGroup]
-    not_applicable_groups: list[MatchGroup]
     mismatched_clean_groups: list[MatchGroup]
 
 
@@ -120,25 +119,12 @@ def _has_acceptable_verdicts_for_all_topics(
     return True
 
 
-def _is_applicable_group(
-    group: MatchGroup,
-    true_condition_holds_by_topic: Mapping[str, bool],
-) -> bool:
-    for topic_id in group.true_topic_ids:
-        if not true_condition_holds_by_topic.get(topic_id, True):
-            return False
-    return True
-
-
 def _is_scorable_group(
     group: MatchGroup,
     acceptable_verdicts_by_topic: Mapping[str, list[str] | None],
     predicted_verdict_by_requirement: Mapping[str, str],
-    true_condition_holds_by_topic: Mapping[str, bool],
 ) -> bool:
     if group.shape in ("unmatched_true", "unmatched_predicted"):
-        return False
-    if not _is_applicable_group(group, true_condition_holds_by_topic):
         return False
     if not _has_acceptable_verdicts_for_all_topics(
         group, acceptable_verdicts_by_topic
@@ -153,11 +139,8 @@ def _is_not_verifiable_group(
     group: MatchGroup,
     acceptable_verdicts_by_topic: Mapping[str, list[str] | None],
     predicted_verdict_by_requirement: Mapping[str, str],
-    true_condition_holds_by_topic: Mapping[str, bool],
 ) -> bool:
     if group.shape in ("unmatched_true", "unmatched_predicted"):
-        return False
-    if not _is_applicable_group(group, true_condition_holds_by_topic):
         return False
     if not _has_acceptable_verdicts_for_all_topics(
         group, acceptable_verdicts_by_topic
@@ -168,26 +151,16 @@ def _is_not_verifiable_group(
     )
 
 
-def _is_not_applicable_group(
-    group: MatchGroup,
-    true_condition_holds_by_topic: Mapping[str, bool],
-) -> bool:
-    if group.shape in ("unmatched_true", "unmatched_predicted"):
-        return False
-    return not _is_applicable_group(group, true_condition_holds_by_topic)
-
-
 def _scorable_groups(
     groups: list[MatchGroup],
     acceptable_verdicts_by_topic: Mapping[str, list[str] | None],
     predicted_verdict_by_requirement: Mapping[str, str],
-    true_condition_holds_by_topic: Mapping[str, bool],
 ) -> list[MatchGroup]:
     scorable = []
     for group in groups:
         if _is_scorable_group(
             group, acceptable_verdicts_by_topic,
-            predicted_verdict_by_requirement, true_condition_holds_by_topic,
+            predicted_verdict_by_requirement,
         ):
             scorable.append(group)
     return scorable
@@ -197,27 +170,15 @@ def _not_verifiable_groups(
     groups: list[MatchGroup],
     acceptable_verdicts_by_topic: Mapping[str, list[str] | None],
     predicted_verdict_by_requirement: Mapping[str, str],
-    true_condition_holds_by_topic: Mapping[str, bool],
 ) -> list[MatchGroup]:
     not_verifiable = []
     for group in groups:
         if _is_not_verifiable_group(
             group, acceptable_verdicts_by_topic,
-            predicted_verdict_by_requirement, true_condition_holds_by_topic,
+            predicted_verdict_by_requirement,
         ):
             not_verifiable.append(group)
     return not_verifiable
-
-
-def _not_applicable_groups(
-    groups: list[MatchGroup],
-    true_condition_holds_by_topic: Mapping[str, bool],
-) -> list[MatchGroup]:
-    not_applicable = []
-    for group in groups:
-        if _is_not_applicable_group(group, true_condition_holds_by_topic):
-            not_applicable.append(group)
-    return not_applicable
 
 
 def _predicted_verdicts_for_group(
@@ -320,7 +281,6 @@ def _build_verdict_accuracy_result(
     scorable_groups: list[MatchGroup],
     accumulator: _VerdictAccumulator,
     not_verifiable_groups: list[MatchGroup],
-    not_applicable_groups: list[MatchGroup],
 ) -> VerdictAccuracyResult:
     total_groups = len(scorable_groups)
     false_compliant_rate = _safe_ratio(
@@ -341,7 +301,6 @@ def _build_verdict_accuracy_result(
         false_issue_groups=accumulator.false_issue_groups,
         unscored_groups=accumulator.unscored_groups,
         not_verifiable_groups=not_verifiable_groups,
-        not_applicable_groups=not_applicable_groups,
         mismatched_clean_groups=accumulator.mismatched_clean_groups,
     )
 
@@ -350,18 +309,15 @@ def compute_verdict_accuracy(
     groups: list[MatchGroup],
     acceptable_verdicts_by_topic: Mapping[str, list[str] | None],
     predicted_verdict_by_requirement: Mapping[str, str],
-    true_condition_holds_by_topic: Mapping[str, bool],
 ) -> VerdictAccuracyResult:
-    condition_holds = true_condition_holds_by_topic
     scorable_groups = _scorable_groups(
         groups, acceptable_verdicts_by_topic,
-        predicted_verdict_by_requirement, condition_holds,
+        predicted_verdict_by_requirement,
     )
     not_verifiable = _not_verifiable_groups(
         groups, acceptable_verdicts_by_topic,
-        predicted_verdict_by_requirement, condition_holds,
+        predicted_verdict_by_requirement,
     )
-    not_applicable = _not_applicable_groups(groups, condition_holds)
     accumulator = _VerdictAccumulator()
     for group in scorable_groups:
         _score_group(
@@ -369,5 +325,5 @@ def compute_verdict_accuracy(
             predicted_verdict_by_requirement, accumulator,
         )
     return _build_verdict_accuracy_result(
-        scorable_groups, accumulator, not_verifiable, not_applicable
+        scorable_groups, accumulator, not_verifiable
     )

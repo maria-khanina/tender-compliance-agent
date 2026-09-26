@@ -45,20 +45,6 @@ class IsTextVerifiableResult(BaseModel):
     mismatched_groups: list[MatchGroup]
 
 
-class ApplicabilityConditionDetectionResult(BaseModel):
-    detection_recall: float
-    true_condition_topic_count: int
-    detected_topic_count: int
-    missed_condition_topic_ids: list[str]
-    false_condition_requirement_ids: list[str]
-
-
-class ConditionHoldsResult(BaseModel):
-    accuracy: float
-    scored_topic_count: int
-    mismatched_groups: list[MatchGroup]
-
-
 def _groups_by_shape(groups: list[MatchGroup]) -> dict[str, list[MatchGroup]]:
     grouped: dict[str, list[MatchGroup]] = {}
     for group in groups:
@@ -287,107 +273,6 @@ def compute_is_mandatory_accuracy(
         scored_count - len(mismatched_groups), scored_count
     )
     return IsMandatoryResult(
-        accuracy=accuracy,
-        scored_topic_count=scored_count,
-        mismatched_groups=mismatched_groups,
-    )
-
-
-def _condition_spans_overlap(
-    true_span: SpanRef,
-    predicted_span: SpanRef,
-    minimum_overlap_ratio: float,
-) -> bool:
-    if true_span.document_path != predicted_span.document_path:
-        return False
-    overlap = overlap_length(true_span, predicted_span)
-    true_length = true_span.end_char - true_span.start_char
-    if true_length <= 0:
-        return False
-    return (overlap / true_length) >= minimum_overlap_ratio
-
-
-def _clean_groups(groups: list[MatchGroup]) -> list[MatchGroup]:
-    return [group for group in groups if group.shape == "clean"]
-
-
-def compute_applicability_condition_detection(
-    groups: list[MatchGroup],
-    true_condition_spans_by_topic: dict[str, SpanRef],
-    predicted_condition_spans_by_requirement: dict[str, SpanRef],
-    minimum_overlap_ratio: float,
-) -> ApplicabilityConditionDetectionResult:
-    missed: list[str] = []
-    detected_count = 0
-    false_condition: list[str] = []
-    for group in _clean_groups(groups):
-        topic_id = group.true_topic_ids[0]
-        requirement_id = group.predicted_node_ids[0]
-        true_span = true_condition_spans_by_topic.get(topic_id)
-        predicted_span = predicted_condition_spans_by_requirement.get(
-            requirement_id
-        )
-        if true_span is None:
-            if predicted_span is not None:
-                false_condition.append(requirement_id)
-            continue
-        if predicted_span is not None and _condition_spans_overlap(
-            true_span, predicted_span, minimum_overlap_ratio
-        ):
-            detected_count += 1
-        else:
-            missed.append(topic_id)
-    true_condition_topic_count = detected_count + len(missed)
-    detection_recall = _safe_ratio(detected_count, true_condition_topic_count)
-    return ApplicabilityConditionDetectionResult(
-        detection_recall=detection_recall,
-        true_condition_topic_count=true_condition_topic_count,
-        detected_topic_count=detected_count,
-        missed_condition_topic_ids=missed,
-        false_condition_requirement_ids=false_condition,
-    )
-
-
-def _all_topics_have_true_condition(
-    group: MatchGroup,
-    true_condition_holds_by_topic: dict[str, bool],
-) -> bool:
-    for topic_id in group.true_topic_ids:
-        if topic_id not in true_condition_holds_by_topic:
-            return False
-    return True
-
-
-def _groups_with_true_condition(
-    groups: list[MatchGroup],
-    true_condition_holds_by_topic: dict[str, bool],
-) -> list[MatchGroup]:
-    scorable = []
-    for group in _scorable_flag_groups(groups):
-        if _all_topics_have_true_condition(
-            group, true_condition_holds_by_topic
-        ):
-            scorable.append(group)
-    return scorable
-
-
-def compute_condition_holds_accuracy(
-    groups: list[MatchGroup],
-    true_condition_holds_by_topic: dict[str, bool],
-    predicted_condition_holds_by_requirement: dict[str, bool],
-) -> ConditionHoldsResult:
-    scorable_groups = _groups_with_true_condition(
-        groups, true_condition_holds_by_topic
-    )
-    mismatched_groups = _mismatched_flag_groups(
-        scorable_groups, true_condition_holds_by_topic,
-        predicted_condition_holds_by_requirement,
-    )
-    scored_count = len(scorable_groups)
-    accuracy = _safe_ratio(
-        scored_count - len(mismatched_groups), scored_count
-    )
-    return ConditionHoldsResult(
         accuracy=accuracy,
         scored_topic_count=scored_count,
         mismatched_groups=mismatched_groups,

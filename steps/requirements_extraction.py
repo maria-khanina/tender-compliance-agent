@@ -14,7 +14,6 @@ class ExtractedRequirementCandidate(BaseModel):
     quote: str
     is_mandatory: bool
     is_text_verifiable: bool
-    applicability_condition_quote: str | None
 
 
 class RequirementCandidateList(BaseModel):
@@ -59,16 +58,6 @@ def _locate_lead_in_citation(
     return citation, text
 
 
-def _locate_condition_citation(
-    chunk: Chunk,
-    condition_quote: str | None,
-) -> TextSpan | None:
-    if not condition_quote:
-        return None
-    citation = locate_quote_in_chunk(chunk, condition_quote)
-    return citation.model_copy(update={"used_for_matching": False})
-
-
 def _build_requirement_draft(
     chunk: Chunk,
     candidate: ExtractedRequirementCandidate,
@@ -85,16 +74,12 @@ def _build_requirement_draft(
         lead_in_citation, lead_in_text = lead_in
         citations = [lead_in_citation, main_citation]
         requirement_text = f"{lead_in_text} ... {main_text}"
-    condition_citation = _locate_condition_citation(
-        chunk, candidate.applicability_condition_quote
-    )
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
         text=requirement_text,
         is_mandatory=candidate.is_mandatory,
         is_text_verifiable=candidate.is_text_verifiable,
         citations=citations,
-        applicability_condition_citation=condition_citation,
     )
 
 

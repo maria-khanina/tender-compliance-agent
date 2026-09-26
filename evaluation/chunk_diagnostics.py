@@ -28,6 +28,46 @@ def _chunk_indices_overlapping_span(
     return overlapping
 
 
+def _chunk_indices_fully_containing_span(
+    chunks: list[Chunk],
+    start_char: int,
+    end_char: int,
+) -> list[int]:
+    containing = []
+    for chunk in chunks:
+        if chunk.start_char <= start_char and end_char <= chunk.end_char:
+            containing.append(chunk.chunk_index)
+    return containing
+
+
+def _describe_span_coverage(
+    chunks: list[Chunk],
+    start_char: int,
+    end_char: int,
+) -> str:
+    containing_indices = _chunk_indices_fully_containing_span(
+        chunks, start_char, end_char
+    )
+    if containing_indices:
+        return (
+            f"[{start_char}:{end_char}] whole, in chunk(s) "
+            f"{containing_indices} -- the model saw this text intact"
+        )
+    overlapping_indices = _chunk_indices_overlapping_span(
+        chunks, start_char, end_char
+    )
+    if not overlapping_indices:
+        return (
+            f"[{start_char}:{end_char}] overlaps no chunk "
+            "-- offset may be stale"
+        )
+    return (
+        f"[{start_char}:{end_char}] SPLIT across chunks "
+        f"{overlapping_indices} -- the model may never have seen this "
+        "requirement's full text in one call"
+    )
+
+
 def describe_missed_topic_chunk_coverage(topic: TrueRequirement) -> str:
     """Mechanically check whether a missed true topic's matching span(s)
     were ever presented to the extraction LLM whole, in a single chunk,
@@ -45,25 +85,8 @@ def describe_missed_topic_chunk_coverage(topic: TrueRequirement) -> str:
     if not matching_spans:
         matching_spans = topic.source.spans
 
-    descriptions = []
-    for span in matching_spans:
-        indices = _chunk_indices_overlapping_span(
-            chunks, span.start_char, span.end_char
-        )
-        if not indices:
-            descriptions.append(
-                f"[{span.start_char}:{span.end_char}] overlaps no chunk "
-                "-- offset may be stale"
-            )
-        elif len(indices) == 1:
-            descriptions.append(
-                f"[{span.start_char}:{span.end_char}] whole, in chunk "
-                f"{indices[0]} -- the model saw this text intact"
-            )
-        else:
-            descriptions.append(
-                f"[{span.start_char}:{span.end_char}] SPLIT across chunks "
-                f"{indices} -- the model may never have seen this "
-                "requirement's full text in one call"
-            )
+    descriptions = [
+        _describe_span_coverage(chunks, span.start_char, span.end_char)
+        for span in matching_spans
+    ]
     return "; ".join(descriptions)

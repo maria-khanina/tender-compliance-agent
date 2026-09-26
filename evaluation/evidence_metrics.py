@@ -7,13 +7,13 @@ def _safe_ratio(numerator: int, denominator: int) -> float:
     return numerator / denominator
 
 
-class EvidenceResult(BaseModel):
-    citation_verified_rate: float
-    unverified_evidence_count: int
+class EvidenceHallucinationResult(BaseModel):
+    hallucination_rate: float
+    hallucinated_evidence_count: int
     total_evidence_count: int
 
 
-class EvidenceRecallResult(BaseModel):
+class ContextRecallResult(BaseModel):
     recall: float
     matched_topic_count: int
     total_topic_count: int
@@ -28,15 +28,15 @@ def _count_unverified(citation_verified_flags: list[bool]) -> int:
     return unverified_count
 
 
-def compute_evidence_citation_verified_rate(
+def compute_evidence_hallucination_rate(
     citation_verified_flags: list[bool],
-) -> EvidenceResult:
+) -> EvidenceHallucinationResult:
     total = len(citation_verified_flags)
-    unverified_count = _count_unverified(citation_verified_flags)
-    rate = _safe_ratio(total - unverified_count, total)
-    return EvidenceResult(
-        citation_verified_rate=rate,
-        unverified_evidence_count=unverified_count,
+    hallucinated_count = _count_unverified(citation_verified_flags)
+    rate = _safe_ratio(hallucinated_count, total)
+    return EvidenceHallucinationResult(
+        hallucination_rate=rate,
+        hallucinated_evidence_count=hallucinated_count,
         total_evidence_count=total,
     )
 
@@ -52,15 +52,15 @@ def _missed_topic_ids(
     return missed
 
 
-def compute_evidence_recall(
+def compute_context_recall(
     true_topic_ids: list[str],
     matched_topic_ids: set[str],
-) -> EvidenceRecallResult:
+) -> ContextRecallResult:
     missed = _missed_topic_ids(true_topic_ids, matched_topic_ids)
     total = len(true_topic_ids)
     matched_count = total - len(missed)
     recall = _safe_ratio(matched_count, total)
-    return EvidenceRecallResult(
+    return ContextRecallResult(
         recall=recall,
         matched_topic_count=matched_count,
         total_topic_count=total,

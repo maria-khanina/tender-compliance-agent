@@ -9,20 +9,28 @@ import glob
 import json
 import os
 import pathlib
-import sys
-from typing import TYPE_CHECKING, cast
+from typing import cast
+
+from backends.vectorstore import index_chunks
+from case_layout import application_path as case_application_path
+from case_layout import discover_variants as discover_case_variants
+from case_layout import true_verdicts_path as case_true_verdicts_path
+from evaluation.fixtures import (
+    TrueEvidenceSpan,
+    load_true_requirements,
+    load_true_verdicts,
+)
+from prompts import VERDICT_GENERATION_PROMPT
+from schemas import Chunk, EvidenceRole
+from sft.training_schemas import EvidenceQuote
+from sft.training_schemas import EvidenceRole as SftEvidenceRole
+from sft.training_config import SFT_DATASET_COLLECTION_PREFIX
+from steps.chunking import split_application_document
+from steps.evidence_retrieval import retrieve_context_chunks
+from steps.text_matching import format_chunks_as_prompt_text
 
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
 os.chdir(PROJECT_ROOT)
-
-from sft.training_config import SFT_DATASET_COLLECTION_PREFIX  # noqa: E402
-
-if TYPE_CHECKING:
-    from evaluation.fixtures import TrueEvidenceSpan
-    from schemas import Chunk
-    from sft.schemas import EvidenceQuote
-    from sft.schemas import EvidenceRole as SftEvidenceRole
 
 SPLIT_CONFIG = json.load(open("sft/split.json", encoding="utf-8"))
 TEST_CASES = set(SPLIT_CONFIG["test"])
@@ -39,10 +47,6 @@ def split_for_case(case_name: str) -> str:
 
 def discover_variants(case_dir: str) -> list[tuple[str, str, str]]:
     """Return (variant_label, application_path, true_verdicts_path)."""
-    from case_layout import application_path as case_application_path
-    from case_layout import discover_variants as discover_case_variants
-    from case_layout import true_verdicts_path as case_true_verdicts_path
-
     case_path = pathlib.Path(case_dir)
     variants = []
     for variant in discover_case_variants(case_path):
@@ -54,26 +58,24 @@ def discover_variants(case_dir: str) -> list[tuple[str, str, str]]:
     return variants
 
 
-def infer_role(primary_verdict: str) -> "SftEvidenceRole":
-    from schemas import EvidenceRole
-
+def infer_role(primary_verdict: str) -> SftEvidenceRole:
     if primary_verdict == "compliant":
-        return cast("SftEvidenceRole", EvidenceRole.SUPPORTS.value)
+        return cast(SftEvidenceRole, EvidenceRole.SUPPORTS.value)
     if primary_verdict == "non_compliant":
-        return cast("SftEvidenceRole", EvidenceRole.CONTRADICTS.value)
-    return cast("SftEvidenceRole", EvidenceRole.INCONCLUSIVE.value)
+        return cast(SftEvidenceRole, EvidenceRole.CONTRADICTS.value)
+    return cast(SftEvidenceRole, EvidenceRole.INCONCLUSIVE.value)
 
 
 def map_evidence_to_chunks(
-    fixture_evidence: list["TrueEvidenceSpan"],
-    retrieved_chunks: list["Chunk"],
-    role: "SftEvidenceRole",
-) -> tuple[list["EvidenceQuote"], int]:
+    fixture_evidence: list[TrueEvidenceSpan],
+    retrieved_chunks: list[Chunk],
+    role: SftEvidenceRole,
+) -> tuple[list[EvidenceQuote], int]:
     """Best-effort: locate each fixture evidence quote inside the actually
     retrieved chunks, so the target completion cites a real chunk_index the
     model could have produced. Silently drops quotes retrieval didn't
     surface -- known simplification, see module docstring."""
-    quotes: list["EvidenceQuote"] = []
+    quotes: list[EvidenceQuote] = []
     unmatched = 0
     for ev in fixture_evidence:
         needle = ev.quote.strip()
@@ -93,13 +95,6 @@ def map_evidence_to_chunks(
 
 
 def build_examples_for_case(case_dir: str) -> list[dict[str, object]]:
-    from backends.vectorstore import index_chunks
-    from evaluation.fixtures import load_true_requirements, load_true_verdicts
-    from prompts import VERDICT_GENERATION_PROMPT
-    from steps.chunking import split_application_document
-    from steps.evidence_retrieval import retrieve_context_chunks
-    from steps.text_matching import format_chunks_as_prompt_text
-
     case_name = os.path.basename(case_dir)
     req_path = os.path.join(case_dir, "true_requirements.json")
     if not os.path.exists(req_path):

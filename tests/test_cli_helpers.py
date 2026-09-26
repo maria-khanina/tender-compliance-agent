@@ -11,7 +11,7 @@ def test_format_cell_renders_none_as_em_dash():
 
 def test_format_cell_renders_count_fields_as_plain_integers():
     assert _format_cell(12, "is_mandatory_scored") == "12"
-    assert _format_cell(7, "evidence_recall_n_count") == "7"
+    assert _format_cell(7, "context_recall_n_count") == "7"
 
 
 def test_format_cell_renders_ratio_fields_as_percent():

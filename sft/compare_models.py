@@ -23,7 +23,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 os.chdir(PROJECT_ROOT)
 
 from sft.mine_dpo_pairs_local import extract_tool_call_json  # noqa: E402
-from sft.schemas import (  # noqa: E402
+from sft.training_schemas import (  # noqa: E402
     ClassMetrics,
     ScoreResult,
     TrainingRow,

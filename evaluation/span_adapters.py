@@ -14,7 +14,7 @@ from evaluation.matching import (
     build_match_groups,
     find_overlapping_pairs,
 )
-from schemas import Chunk, Requirement, RetrievedContextRecord, Verdict
+from schemas import Chunk, Requirement, RetrievedContextRecord
 
 
 def _spans_from_source(node_id: str, source: TrueSource) -> list[SpanRef]:
@@ -108,70 +108,6 @@ def build_match_groups_for_requirements(
     return build_match_groups(
         true_topic_ids, predicted_requirement_ids, edges
     )
-
-
-def true_condition_spans_by_topic(
-    fixture: TrueRequirementsFixture,
-) -> dict[str, SpanRef]:
-    spans_by_topic = {}
-    for requirement in fixture.requirements:
-        condition = requirement.applicability_condition
-        if condition is None:
-            continue
-        matching_spans = [
-            span for span in condition.spans if span.used_for_matching
-        ]
-        if not matching_spans:
-            continue
-        first_span = matching_spans[0]
-        spans_by_topic[requirement.topic_id] = SpanRef(
-            node_id=requirement.topic_id,
-            document_path=condition.document_path,
-            start_char=first_span.start_char,
-            end_char=first_span.end_char,
-        )
-    return spans_by_topic
-
-
-def predicted_condition_spans_by_requirement(
-    requirements: list[Requirement],
-) -> dict[str, SpanRef]:
-    spans_by_requirement = {}
-    for requirement in requirements:
-        citation = requirement.applicability_condition_citation
-        if citation is None:
-            continue
-        if citation.start_char is None or citation.end_char is None:
-            continue
-        spans_by_requirement[requirement.requirement_id] = SpanRef(
-            node_id=requirement.requirement_id,
-            document_path=citation.document_path,
-            start_char=citation.start_char,
-            end_char=citation.end_char,
-        )
-    return spans_by_requirement
-
-
-def true_condition_holds_by_topic(
-    fixture: TrueVerdictsFixture,
-) -> dict[str, bool]:
-    condition_holds_by_topic = {}
-    for verdict in fixture.verdicts:
-        if verdict.condition_holds is not None:
-            condition_holds_by_topic[verdict.topic_id] = verdict.condition_holds
-    return condition_holds_by_topic
-
-
-def predicted_condition_holds_by_requirement(
-    verdicts: list[Verdict],
-) -> dict[str, bool]:
-    condition_holds_by_requirement = {}
-    for verdict in verdicts:
-        if verdict.condition_holds is not None:
-            condition_holds_by_requirement[verdict.requirement_id] = (
-                verdict.condition_holds
-            )
-    return condition_holds_by_requirement
 
 
 def group_lookup_by_topic(

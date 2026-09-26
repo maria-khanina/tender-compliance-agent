@@ -18,10 +18,15 @@ import pathlib
 import subprocess
 import sys
 
+from case_layout import run_dir
+from config import (
+    CLI_STDERR_TAIL_CHARACTER_COUNT,
+    DEFAULT_APPLICATION_VARIANT,
+    DEFAULT_RUN_LABEL,
+)
+
 
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--case-dir", required=True)
     parser.add_argument("--variant", default=DEFAULT_APPLICATION_VARIANT)
@@ -60,10 +65,6 @@ def _run(
 
 
 def main() -> None:
-    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
-    from case_layout import run_dir
-    from config import CLI_STDERR_TAIL_CHARACTER_COUNT
-
     args = _parse_arguments()
     case_dir = args.case_dir
     report_dir = (

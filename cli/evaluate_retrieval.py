@@ -1,11 +1,19 @@
 import argparse
 import json
 import pathlib
-import sys
-from typing import TYPE_CHECKING, TypedDict
+from typing import TypedDict
 
-if TYPE_CHECKING:
-    from schemas import Requirement
+from case_layout import application_path as case_application_path
+from case_layout import run_dir, true_verdicts_path
+from config import (
+    CLI_QUOTE_PREVIEW_CHARACTER_COUNT,
+    DEFAULT_APPLICATION_VARIANT,
+    DEFAULT_RUN_LABEL,
+    RETRIEVAL_ONLY_EVAL_COLLECTION_PREFIX,
+)
+from evaluation.fixtures import load_true_requirements, load_true_verdicts
+from evaluation.verdict_only import build_synthetic_requirements
+from schemas import Requirement
 
 
 class RetrievalRow(TypedDict):
@@ -16,14 +24,7 @@ class RetrievalRow(TypedDict):
     retrieved_chunk_count: int
 
 
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
-
-
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate the retrieval step in isolation: for every "
@@ -50,7 +51,7 @@ def _parse_arguments() -> argparse.Namespace:
 
 
 def _score_requirement_retrieval(
-    requirement: "Requirement",
+    requirement: Requirement,
     gold_quotes: list[str],
     collection_name: str,
 ) -> RetrievalRow:
@@ -76,7 +77,7 @@ def _score_requirement_retrieval(
 
 
 def _score_retrieval(
-    synthetic_requirements: list["Requirement"],
+    synthetic_requirements: list[Requirement],
     gold_evidence_by_topic: dict[str, list[str]],
     collection_name: str,
 ) -> tuple[list[RetrievalRow], int, int]:
@@ -100,8 +101,6 @@ def _render_retrieval_report(
     total_gold: int,
     total_found: int,
 ) -> str:
-    from config import CLI_QUOTE_PREVIEW_CHARACTER_COUNT
-
     recall = total_found / total_gold if total_gold else None
     incomplete = [row for row in rows if row["missed_quotes"]]
 
@@ -145,8 +144,6 @@ def _write_outputs(
     total_gold: int,
     total_found: int,
 ) -> None:
-    from case_layout import run_dir
-
     if arguments.report_output:
         pathlib.Path(arguments.report_output).write_text(
             report_text, encoding="utf-8"
@@ -171,16 +168,10 @@ def _write_outputs(
 
 
 def main() -> None:
-    _add_project_root_to_path()
-    from backends.vectorstore import case_collection_name, index_chunks
-    from config import RETRIEVAL_ONLY_EVAL_COLLECTION_PREFIX
-    from evaluation.fixtures import load_true_requirements, load_true_verdicts
-    from evaluation.verdict_only import build_synthetic_requirements
-    from steps.chunking import split_application_document
-    from case_layout import application_path as case_application_path
-    from case_layout import true_verdicts_path
-
     arguments = _parse_arguments()
+    from backends.vectorstore import case_collection_name, index_chunks
+    from steps.chunking import split_application_document
+
     case_dir = pathlib.Path(arguments.case_dir)
     variant = arguments.variant
 

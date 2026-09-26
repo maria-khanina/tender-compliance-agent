@@ -24,7 +24,7 @@ from steps.chunking import (
 )
 from steps.conditions import extract_conditions
 from steps.deduplication import deduplicate_requirements
-from steps.evidence_retrieval import retrieve_context_chunks_for_requirement
+from steps.evidence_retrieval import retrieve_context_chunks
 from steps.report import build_report
 from steps.requirements_extraction import extract_requirements_from_chunk
 from steps.verdicts import generate_verdict
@@ -145,8 +145,8 @@ def generate_verdict_node(
     state: RequirementVerdictInput,
 ) -> dict[str, list[Verdict] | list[RetrievedContextRecord]]:
     requirement = state["requirement"]
-    context_chunks = retrieve_context_chunks_for_requirement(
-        requirement, state["collection_name"]
+    context_chunks = retrieve_context_chunks(
+        requirement.text, state["collection_name"]
     )
     retrieved_context_record = RetrievedContextRecord(
         requirement_id=requirement.requirement_id,

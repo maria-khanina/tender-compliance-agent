@@ -1,14 +1,11 @@
 from pydantic import BaseModel
 
-from config import (
-    EVALUATION_CONDITION_MATCH_MINIMUM_OVERLAP_RATIO,
-    EVALUATION_COVERAGE_FLAG_THRESHOLD,
-)
+from config import EVALUATION_COVERAGE_FLAG_THRESHOLD
 from evaluation.evidence_metrics import (
-    EvidenceRecallResult,
-    EvidenceResult,
-    compute_evidence_citation_verified_rate,
-    compute_evidence_recall,
+    ContextRecallResult,
+    EvidenceHallucinationResult,
+    compute_context_recall,
+    compute_evidence_hallucination_rate,
 )
 from evaluation.fixtures import (
     TrueRequirementsFixture,
@@ -21,15 +18,11 @@ from evaluation.fixtures import (
 )
 from evaluation.matching import MatchGroup
 from evaluation.requirement_metrics import (
-    ApplicabilityConditionDetectionResult,
-    ConditionHoldsResult,
     CoverageFlag,
     IsMandatoryResult,
     IsTextVerifiableResult,
     PrecisionResult,
     RecallResult,
-    compute_applicability_condition_detection,
-    compute_condition_holds_accuracy,
     compute_coverage_flags,
     compute_is_mandatory_accuracy,
     compute_is_text_verifiable_accuracy,
@@ -41,15 +34,11 @@ from evaluation.span_adapters import (
     citation_verified_by_requirement,
     group_lookup_by_topic,
     matched_evidence_topic_ids,
-    predicted_condition_holds_by_requirement,
-    predicted_condition_spans_by_requirement,
     predicted_requirement_spans,
     retrieved_by_requirement,
     topic_ids_with_evidence,
     topics_with_evidence,
     topics_with_matched_requirement,
-    true_condition_holds_by_topic,
-    true_condition_spans_by_topic,
     true_requirement_spans,
 )
 from evaluation.verdict_metrics import (
@@ -78,11 +67,9 @@ class EvaluationReport(BaseModel):
     coverage_flags: list[CoverageFlag]
     is_mandatory_accuracy: IsMandatoryResult
     is_text_verifiable_accuracy: IsTextVerifiableResult
-    applicability_condition_detection: ApplicabilityConditionDetectionResult
-    condition_holds_accuracy: ConditionHoldsResult
     verdict_accuracy: VerdictAccuracyResult
-    evidence_citation_verified: EvidenceResult
-    evidence_recall: EvidenceRecallResult
+    evidence_hallucination: EvidenceHallucinationResult
+    context_recall: ContextRecallResult
     match_groups: list[MatchGroup]
     true_quotes_by_topic: dict[str, str]
     predicted_texts: dict[str, str]
@@ -98,8 +85,6 @@ class EvaluationReport(BaseModel):
     is_mandatory_predicted_by_requirement: dict[str, bool]
     is_text_verifiable_true_by_topic: dict[str, bool]
     is_text_verifiable_predicted_by_requirement: dict[str, bool]
-    condition_holds_true_by_topic: dict[str, bool]
-    condition_holds_predicted_by_requirement: dict[str, bool]
 
 
 def _compute_precision_result(
@@ -191,35 +176,6 @@ def _compute_is_text_verifiable_result(
     )
 
 
-def _compute_applicability_condition_detection_result(
-    requirements_fixture: TrueRequirementsFixture,
-    predicted_requirements: list[Requirement],
-    match_groups: list[MatchGroup],
-) -> ApplicabilityConditionDetectionResult:
-    true_spans = true_condition_spans_by_topic(requirements_fixture)
-    predicted_spans = predicted_condition_spans_by_requirement(
-        predicted_requirements
-    )
-    return compute_applicability_condition_detection(
-        match_groups, true_spans, predicted_spans,
-        EVALUATION_CONDITION_MATCH_MINIMUM_OVERLAP_RATIO,
-    )
-
-
-def _compute_condition_holds_result(
-    verdicts_fixture: TrueVerdictsFixture,
-    predicted_verdicts: list[Verdict],
-    match_groups: list[MatchGroup],
-) -> ConditionHoldsResult:
-    true_condition_holds = true_condition_holds_by_topic(verdicts_fixture)
-    predicted_condition_holds = predicted_condition_holds_by_requirement(
-        predicted_verdicts
-    )
-    return compute_condition_holds_accuracy(
-        match_groups, true_condition_holds, predicted_condition_holds
-    )
-
-
 def _acceptable_verdicts_by_topic(
     fixture: TrueVerdictsFixture,
 ) -> dict[str, list[str] | None]:
@@ -249,10 +205,8 @@ def _compute_verdict_accuracy_result(
     predicted_by_requirement = _predicted_verdict_by_requirement(
         predicted_verdicts
     )
-    true_condition_holds = true_condition_holds_by_topic(verdicts_fixture)
     return compute_verdict_accuracy(
-        match_groups, acceptable, predicted_by_requirement,
-        true_condition_holds,
+        match_groups, acceptable, predicted_by_requirement
     )
 
 
@@ -264,11 +218,11 @@ def _all_evidence_verified_flags(verdicts: list[Verdict]) -> list[bool]:
     return flags
 
 
-def _compute_evidence_citation_verified_result(
+def _compute_evidence_hallucination_result(
     predicted_verdicts: list[Verdict],
-) -> EvidenceResult:
+) -> EvidenceHallucinationResult:
     flags = _all_evidence_verified_flags(predicted_verdicts)
-    return compute_evidence_citation_verified_rate(flags)
+    return compute_evidence_hallucination_rate(flags)
 
 
 def _true_quotes_by_topic(
@@ -362,11 +316,11 @@ def _true_evidence_by_topic(
     return evidence_by_topic
 
 
-def _evaluate_evidence_recall(
+def _evaluate_context_recall(
     verdicts_fixture: TrueVerdictsFixture,
     match_groups: list[MatchGroup],
     retrieved_context: list[RetrievedContextRecord],
-) -> EvidenceRecallResult:
+) -> ContextRecallResult:
     by_requirement = retrieved_by_requirement(retrieved_context)
     group_by_topic = group_lookup_by_topic(match_groups)
     topics = topics_with_evidence(verdicts_fixture)
@@ -375,7 +329,7 @@ def _evaluate_evidence_recall(
     matched_topic_ids = matched_evidence_topic_ids(
         scorable_topics, group_by_topic, by_requirement
     )
-    return compute_evidence_recall(topic_ids, matched_topic_ids)
+    return compute_context_recall(topic_ids, matched_topic_ids)
 
 
 def evaluate(
@@ -401,21 +355,13 @@ def evaluate(
     is_text_verifiable_result = _compute_is_text_verifiable_result(
         requirements_fixture, predicted_requirements, match_groups
     )
-    condition_detection_result = (
-        _compute_applicability_condition_detection_result(
-            requirements_fixture, predicted_requirements, match_groups
-        )
-    )
-    condition_holds_result = _compute_condition_holds_result(
-        verdicts_fixture, predicted_verdicts, match_groups
-    )
     verdict_accuracy = _compute_verdict_accuracy_result(
         verdicts_fixture, predicted_verdicts, match_groups
     )
-    evidence_citation_verified = _compute_evidence_citation_verified_result(
+    evidence_hallucination = _compute_evidence_hallucination_result(
         predicted_verdicts
     )
-    evidence_recall = _evaluate_evidence_recall(
+    context_recall = _evaluate_context_recall(
         verdicts_fixture, match_groups, retrieved_context
     )
     return EvaluationReport(
@@ -424,11 +370,9 @@ def evaluate(
         coverage_flags=coverage_flags,
         is_mandatory_accuracy=is_mandatory_result,
         is_text_verifiable_accuracy=is_text_verifiable_result,
-        applicability_condition_detection=condition_detection_result,
-        condition_holds_accuracy=condition_holds_result,
         verdict_accuracy=verdict_accuracy,
-        evidence_citation_verified=evidence_citation_verified,
-        evidence_recall=evidence_recall,
+        evidence_hallucination=evidence_hallucination,
+        context_recall=context_recall,
         match_groups=match_groups,
         true_quotes_by_topic=_true_quotes_by_topic(requirements_fixture),
         predicted_texts=_predicted_texts(predicted_requirements),
@@ -467,11 +411,5 @@ def evaluate(
             _predicted_is_text_verifiable_by_requirement(
                 predicted_requirements
             )
-        ),
-        condition_holds_true_by_topic=true_condition_holds_by_topic(
-            verdicts_fixture
-        ),
-        condition_holds_predicted_by_requirement=(
-            predicted_condition_holds_by_requirement(predicted_verdicts)
         ),
     )

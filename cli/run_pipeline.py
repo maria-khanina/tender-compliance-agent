@@ -3,17 +3,11 @@ import json
 import pathlib
 import sys
 from collections.abc import Sequence
-from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
 
-if TYPE_CHECKING:
-    from schemas import PipelineResult
-
-
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+from logging_config import configure_logging, get_logger
+from schemas import PipelineResult
 
 
 def _parse_arguments() -> argparse.Namespace:
@@ -39,8 +33,7 @@ def _write_json_list(
 
 def _run_or_exit(
     requirements_paths: list[str], application_paths: list[str]
-) -> "PipelineResult":
-    from logging_config import get_logger
+) -> PipelineResult:
     from pipeline import run_pipeline
 
     logger = get_logger(__name__)
@@ -68,7 +61,7 @@ def _output_paths(
 
 def _write_outputs(
     output_path: pathlib.Path,
-    result: "PipelineResult",
+    result: PipelineResult,
     paths: tuple[pathlib.Path, pathlib.Path, pathlib.Path],
 ) -> None:
     requirements_path, verdicts_path, retrieved_context_path = paths
@@ -83,9 +76,6 @@ def _write_outputs(
 
 
 def main() -> None:
-    _add_project_root_to_path()
-    from logging_config import configure_logging
-
     configure_logging()
     arguments = _parse_arguments()
     result = _run_or_exit(arguments.requirements, arguments.application)
