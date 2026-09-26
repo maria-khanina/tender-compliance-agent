@@ -1,16 +1,11 @@
 import argparse
 import pathlib
-import sys
 
-
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+from evaluation.case_metrics import find_case_dirs, metrics_for_case
 
 
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser(
         description=(
             "Scan every case under --data-dir that has been evaluated "
@@ -33,7 +28,7 @@ TABLE_COLUMNS = [
     ("verdict_accuracy", "Verdict acc."),
     ("false_compliant_rate", "False-compliant"),
     ("false_issue_rate", "False-issue"),
-    ("evidence_recall", "Evidence recall"),
+    ("context_recall", "Context recall"),
     ("verdict_only_accuracy", "Verdict-only acc."),
 ]
 
@@ -87,8 +82,6 @@ def _render_table(
 
 
 def _collect_case_metrics(data_dir: pathlib.Path, variant: str, run_label: str):
-    from evaluation.case_metrics import find_case_dirs, metrics_for_case
-
     case_names = []
     rows = []
     skipped = []
@@ -112,7 +105,6 @@ def _write_output(table_text: str, output_arg: str | None) -> None:
 
 
 def main() -> None:
-    _add_project_root_to_path()
     arguments = _parse_arguments()
     data_dir = pathlib.Path(arguments.data_dir)
     case_names, rows, skipped = _collect_case_metrics(

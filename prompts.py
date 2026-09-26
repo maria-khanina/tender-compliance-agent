@@ -63,24 +63,17 @@ single requirement instead of one requirement per item.
 
 For each requirement, also decide whether it is mandatory. Mark it
 mandatory if the text uses language such as "shall", "must", "is
-required to", or "NO EXCEPTIONS" -- including when that obligation
-only applies conditionally (see below); conditional obligation is
-still obligation once the condition holds, not optionality. Mark it
-not mandatory only if the text explicitly frames it as encouraged,
-recommended, or optional regardless of any condition, such as "is
-urged to", "is encouraged to", or "preferably". Do not extract purely
-encouraged/optional language as a requirement unless it still imposes
-some concrete, checkable expectation on the bidder.
-
-For each requirement, also decide whether its applicability is itself
-conditional on a fact about the bidder or its offer that may or may
-not hold (for example "if applicable", "if vendor is an FSS contract
-holder", "in any case an amendment was posted", "if offering an equal
-product"). If so, return "applicability_condition_quote": the exact
-verbatim text of the clause stating that condition, as it appears in
-the chunk -- this may be part of the same sentence as the requirement
-itself, or a separate lead-in sentence. Leave it null when the
-requirement applies to every bidder unconditionally.
+required to", or "NO EXCEPTIONS". Mark it not mandatory if the text
+explicitly frames it as encouraged, recommended, or optional, such
+as "is urged to", "is encouraged to", or "preferably" -- or if its
+applicability is itself conditional on a fact about the bidder that
+may or may not hold (for example "if applicable", "if vendor is an
+FSS contract holder", "in any case an amendment was posted"). Text
+like that still uses "must" or "shall", but the obligation only
+exists for some bidders, so mark it not mandatory rather than
+unconditionally mandatory. Do not extract purely encouraged/optional
+language as a requirement unless it still imposes some concrete,
+checkable expectation on the bidder.
 
 For each requirement, also decide whether it is verifiable from the
 application's text alone: whether a reader could confirm the
@@ -129,7 +122,7 @@ specific requirement from the tender's requirements document.
 
 Requirement:
 {requirement_text}
-{condition_section}
+
 Relevant excerpts from the bidder's application:
 {context_text}
 
@@ -142,28 +135,20 @@ Decide one of the following verdicts:
 - contradictory: the excerpts contain statements that conflict with
   each other regarding this requirement.
 
+If the requirement is explicitly conditional (for example "if
+applicable", "if any", "in any case X was posted") and the excerpts
+never establish whether the triggering condition applies to this
+bidder at all, do not conclude non_compliant merely because the
+excerpts are silent about it -- silence about an unconfirmed
+condition is not evidence that the condition applies. Prefer
+insufficient_information, or compliant if the silence is exactly
+what "the condition never applied" would look like; reserve
+non_compliant for cases where the excerpts show the condition did
+apply and the bidder failed to act on it.
+
 For every excerpt you rely on, quote it verbatim and label whether
 it supports, contradicts, or is inconclusive with respect to the
 requirement. Explain your reasoning briefly.
-"""
-
-VERDICT_CONDITION_SECTION = """\
-This requirement only applies if the following condition holds for
-this bidder:
-{condition_text}
-
-First decide "condition_holds": true if the excerpts show this
-condition applies to this bidder, false if the excerpts show it does
-not apply. If the excerpts never establish whether the condition
-applies at all, make your best-guess determination of
-"condition_holds" from the available context, but do not conclude
-non_compliant merely because the excerpts are silent about it --
-silence about an unconfirmed condition is not evidence that the
-condition applies. In that situation prefer insufficient_information,
-or compliant if the silence is exactly what "the condition never
-applied" would look like; reserve non_compliant for cases where the
-excerpts show the condition did apply and the bidder failed to act on
-it.
 """
 
 CONDITION_EXTRACTION_PROMPT = """\

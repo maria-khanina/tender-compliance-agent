@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 from backends.llm_client import get_structured_chat_model, invoke_structured
 from logging_config import get_logger
-from prompts import VERDICT_CONDITION_SECTION, VERDICT_GENERATION_PROMPT
+from prompts import VERDICT_GENERATION_PROMPT
 from schemas import (
     Chunk,
     ConditionSpec,
@@ -29,7 +29,6 @@ class EvidenceQuote(BaseModel):
 
 
 class VerdictResult(BaseModel):
-    condition_holds: bool
     verdict: VerdictLabel
     evidence_quotes: list[EvidenceQuote]
     reasoning: str
@@ -70,15 +69,6 @@ def _build_evidence_list(
     return evidence_list
 
 
-def _build_condition_section(requirement: Requirement) -> str:
-    condition_citation = requirement.applicability_condition_citation
-    if condition_citation is None:
-        return ""
-    return "\n" + VERDICT_CONDITION_SECTION.format(
-        condition_text=condition_citation.quote
-    )
-
-
 def _generate_verdict_with_language_model(
     requirement: Requirement,
     context_chunks: list[Chunk],
@@ -86,7 +76,6 @@ def _generate_verdict_with_language_model(
     context_text = format_chunks_as_prompt_text(context_chunks)
     prompt_text = VERDICT_GENERATION_PROMPT.format(
         requirement_text=requirement.text,
-        condition_section=_build_condition_section(requirement),
         context_text=context_text,
     )
     structured_model = get_structured_chat_model(VerdictResult)
@@ -94,17 +83,12 @@ def _generate_verdict_with_language_model(
     evidence_list = _build_evidence_list(
         context_chunks, result.evidence_quotes
     )
-    if requirement.applicability_condition_citation is None:
-        condition_holds = True
-    else:
-        condition_holds = result.condition_holds
     return Verdict(
         requirement_id=requirement.requirement_id,
         requirement_text=requirement.text,
         verdict=result.verdict,
         evidence=evidence_list,
         reasoning=result.reasoning,
-        condition_holds=condition_holds,
     )
 
 
@@ -216,7 +200,6 @@ def _generate_verdict_deterministically(
         verdict=verdict_label,
         evidence=evidence_list,
         reasoning=reasoning,
-        condition_holds=requirement.applicability_condition_citation is None,
     )
 
 

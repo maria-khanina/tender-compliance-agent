@@ -360,14 +360,4 @@ def render_verdict_section(report: EvaluationReport) -> list[str]:
     )
     lines.extend(render_verdict_group_list(result.unscored_groups, report))
     lines.append("")
-    lines.append(
-        "**Not applicable** — the requirement's applicability condition "
-        "was judged not to hold for this bidder, so its verdict is "
-        "excluded from every metric above; see \"Applicability "
-        "conditions\" below for whether that judgment was correct."
-    )
-    lines.extend(
-        render_verdict_group_list(result.not_applicable_groups, report)
-    )
-    lines.append("")
     return lines

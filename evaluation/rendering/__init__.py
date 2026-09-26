@@ -1,6 +1,5 @@
 """Renders an EvaluationReport as a human-readable markdown report."""
 from evaluation.orchestrator import EvaluationReport
-from evaluation.rendering._condition_section import render_condition_section
 from evaluation.rendering._coverage_section import render_coverage_section
 from evaluation.rendering._evidence_section import render_evidence_section
 from evaluation.rendering._flag_accuracy_sections import (
@@ -36,7 +35,6 @@ def render_report_as_markdown(
     sections.extend(render_coverage_section(report))
     sections.extend(render_is_mandatory_section(report))
     sections.extend(render_is_text_verifiable_section(report))
-    sections.extend(render_condition_section(report))
     sections.extend(render_verdict_section(report))
     sections.extend(render_evidence_section(report))
     return "\n".join(sections)

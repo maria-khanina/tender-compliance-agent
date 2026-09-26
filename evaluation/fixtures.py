@@ -24,7 +24,6 @@ class TrueRequirement(BaseModel):
     is_mandatory: bool
     is_text_verifiable: bool
     source: TrueSource
-    applicability_condition: TrueSource | None = None
 
 
 class TrueRequirementsFixture(BaseModel):
@@ -46,7 +45,6 @@ class TrueVerdict(BaseModel):
     evidence: list[TrueEvidenceSpan]
     primary_verdict: str | None = None
     primary_verdict_source: str | None = None
-    condition_holds: bool | None = None
 
 
 class TrueVerdictsFixture(BaseModel):

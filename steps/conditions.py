@@ -150,9 +150,6 @@ def _build_requirement(draft: RequirementDraft) -> Requirement:
         is_mandatory=draft.is_mandatory,
         is_text_verifiable=draft.is_text_verifiable,
         citations=draft.citations,
-        applicability_condition_citation=(
-            draft.applicability_condition_citation
-        ),
         conditions=conditions,
     )
 

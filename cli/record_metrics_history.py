@@ -3,17 +3,17 @@ import datetime
 import json
 import pathlib
 import subprocess
-import sys
 
-
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+from config import (
+    DEFAULT_APPLICATION_VARIANT,
+    DEFAULT_RUN_LABEL,
+    REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD,
+    Settings,
+)
+from evaluation.case_metrics import find_case_dirs, metrics_for_case
 
 
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser(
         description=(
             "Append one row per case to a JSONL history log of summary "
@@ -65,11 +65,6 @@ def _git_dirty_paths(paths: list[str]) -> list[str]:
 
 
 def main() -> None:
-    _add_project_root_to_path()
-    from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
-    from config import Settings
-    from evaluation.case_metrics import find_case_dirs, metrics_for_case
-
     arguments = _parse_arguments()
     data_dir = pathlib.Path(arguments.data_dir)
     recorded_at = datetime.datetime.now(datetime.UTC).isoformat()

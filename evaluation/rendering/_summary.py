@@ -49,15 +49,6 @@ def build_summary_metrics(
         "is_text_verifiable_scored": (
             report.is_text_verifiable_accuracy.scored_topic_count
         ),
-        "condition_detection_recall": round(
-            report.applicability_condition_detection.detection_recall, 4
-        ),
-        "condition_holds_accuracy": round(
-            report.condition_holds_accuracy.accuracy, 4
-        ),
-        "condition_holds_scored": (
-            report.condition_holds_accuracy.scored_topic_count
-        ),
         "verdict_clean_match_count": (
             report.verdict_accuracy.clean_match_count
         ),
@@ -70,10 +61,10 @@ def build_summary_metrics(
         "false_issue_rate": round(
             report.verdict_accuracy.false_issue_rate, 4
         ),
-        "evidence_citation_verified_rate": round(
-            report.evidence_citation_verified.citation_verified_rate, 4
+        "evidence_hallucination_rate": round(
+            report.evidence_hallucination.hallucination_rate, 4
         ),
-        "evidence_recall": round(report.evidence_recall.recall, 4),
+        "context_recall": round(report.context_recall.recall, 4),
         "verdict_only_accuracy": round_or_none(verdict_only_accuracy),
         "verdict_only_scored": verdict_only_scored,
     }

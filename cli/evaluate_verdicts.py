@@ -1,24 +1,23 @@
 import argparse
 import json
 import pathlib
-import sys
 from collections.abc import Sequence
-from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
 
-if TYPE_CHECKING:
-    from schemas import Requirement, RetrievedContextRecord, Verdict
-
-
-def _add_project_root_to_path() -> None:
-    project_root = pathlib.Path(__file__).resolve().parent.parent
-    sys.path.insert(0, str(project_root))
+from case_layout import application_path as case_application_path
+from case_layout import run_dir, true_verdicts_path
+from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
+from evaluation.fixtures import load_true_requirements, load_true_verdicts
+from evaluation.verdict_only import (
+    build_synthetic_requirements,
+    render_verdict_only_report,
+    score_verdicts,
+)
+from schemas import Requirement, RetrievedContextRecord, Verdict
 
 
 def _parse_arguments() -> argparse.Namespace:
-    from config import DEFAULT_APPLICATION_VARIANT, DEFAULT_RUN_LABEL
-
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate the verdict-generation step in isolation: run it "
@@ -43,10 +42,9 @@ def _parse_arguments() -> argparse.Namespace:
 
 
 def _generate_predictions(
-    synthetic_requirements: list["Requirement"],
+    synthetic_requirements: list[Requirement],
     collection_name: str,
-) -> tuple[list["Verdict"], list["RetrievedContextRecord"]]:
-    from schemas import RetrievedContextRecord, Verdict
+) -> tuple[list[Verdict], list[RetrievedContextRecord]]:
     from steps.evidence_retrieval import retrieve_context_chunks
     from steps.verdicts import generate_verdict
 
@@ -90,19 +88,10 @@ def _write_report(arguments: argparse.Namespace, report_text: str) -> None:
 
 
 def main() -> None:
-    _add_project_root_to_path()
-    from backends.vectorstore import case_collection_name, index_chunks
-    from evaluation.fixtures import load_true_requirements, load_true_verdicts
-    from evaluation.verdict_only import (
-        build_synthetic_requirements,
-        render_verdict_only_report,
-        score_verdicts,
-    )
-    from steps.chunking import split_application_document
-    from case_layout import application_path as case_application_path
-    from case_layout import run_dir, true_verdicts_path
-
     arguments = _parse_arguments()
+    from backends.vectorstore import case_collection_name, index_chunks
+    from steps.chunking import split_application_document
+
     case_dir = pathlib.Path(arguments.case_dir)
     variant = arguments.variant
 

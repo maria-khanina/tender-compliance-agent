@@ -1,7 +1,7 @@
 import json
 from typing import Any, cast
 
-from sft.schemas import PreferencePair
+from sft.training_schemas import PreferencePair
 from sft.train_dpo import to_dpo_chat_example
 
 

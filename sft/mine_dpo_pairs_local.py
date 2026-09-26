@@ -31,7 +31,7 @@ from transformers import (
     PreTrainedTokenizerBase,
 )
 
-from sft.schemas import PreferencePair, TrainingRow, VerdictCompletion
+from sft.training_schemas import PreferencePair, TrainingRow, VerdictCompletion
 from sft.train_verdict_lora import TOOL_SCHEMA, VERDICT_LABELS
 from sft.training_config import (
     DPO_TRAIN_DATA_PATH,

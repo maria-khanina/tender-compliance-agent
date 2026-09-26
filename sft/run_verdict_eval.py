@@ -18,21 +18,22 @@ import pathlib
 import subprocess
 import sys
 
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
-os.chdir(PROJECT_ROOT)
-
-from config import (  # noqa: E402
-    CLI_STDERR_TAIL_CHARACTER_COUNT,
-    DEFAULT_APPLICATION_VARIANT,
+from case_layout import run_dir, true_verdicts_path
+from config import CLI_STDERR_TAIL_CHARACTER_COUNT, DEFAULT_APPLICATION_VARIANT
+from evaluation.fixtures import (
+    load_predicted_verdicts,
+    load_retrieved_context,
+    load_true_verdicts,
 )
+from evaluation.verdict_only import score_verdicts
+
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+os.chdir(PROJECT_ROOT)
 
 SPLIT_CONFIG = json.load(open("sft/split.json", encoding="utf-8"))
 
 
 def cases_for(selection: list[str]) -> list[str]:
-    from case_layout import true_verdicts_path
-
     all_cases = sorted(
         os.path.basename(d) for d in glob.glob("data/*")
         if os.path.isdir(d)
@@ -69,8 +70,6 @@ def run_one_case(
     base_url: str,
     model: str,
 ) -> dict[str, object]:
-    from case_layout import run_dir, true_verdicts_path
-
     case_dir = pathlib.Path(f"data/{case}")
     out_dir = f"sft/eval_runs/{label}"
     os.makedirs(out_dir, exist_ok=True)
@@ -99,12 +98,6 @@ def run_one_case(
     if ok:
         artifacts_dir = run_dir(case_dir, DEFAULT_APPLICATION_VARIANT, label)
         verdicts_path = artifacts_dir / "verdict_only_verdicts.json"
-        from evaluation.fixtures import (
-            load_predicted_verdicts,
-            load_retrieved_context,
-            load_true_verdicts,
-        )
-        from evaluation.verdict_only import score_verdicts
         try:
             true_verdicts = load_true_verdicts(
                 true_verdicts_path(case_dir, DEFAULT_APPLICATION_VARIANT)

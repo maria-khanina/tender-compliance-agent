@@ -141,8 +141,7 @@
         }
       ],
       "primary_verdict": "contradictory",
-      "primary_verdict_source": "acceptable_verdicts_first",
-      "condition_holds": true
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "capabilities_statement_required",
@@ -239,8 +238,7 @@
         }
       ],
       "primary_verdict": "insufficient_information",
-      "primary_verdict_source": "acceptable_verdicts_first",
-      "condition_holds": true
+      "primary_verdict_source": "acceptable_verdicts_first"
     },
     {
       "topic_id": "submission_deadline_and_channel",

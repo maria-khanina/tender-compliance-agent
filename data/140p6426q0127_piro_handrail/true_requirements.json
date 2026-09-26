@@ -195,16 +195,6 @@
             "end_char": 13077
           }
         ]
-      },
-      "applicability_condition": {
-        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
-        "quote": "if quoting an \"or equal\" item,",
-        "spans": [
-          {
-            "start_char": 12916,
-            "end_char": 12946
-          }
-        ]
       }
     },
     {
@@ -288,16 +278,6 @@
           {
             "start_char": 11303,
             "end_char": 11518
-          }
-        ]
-      },
-      "applicability_condition": {
-        "document_path": "data/140p6426q0127_piro_handrail/tender.txt",
-        "quote": "in any case an amendment was posted",
-        "spans": [
-          {
-            "start_char": 11340,
-            "end_char": 11375
           }
         ]
       }

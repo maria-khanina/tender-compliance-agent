@@ -1,8 +1,6 @@
 import json
 import math
 import os
-import pathlib
-import sys
 from dataclasses import dataclass, field
 
 import torch
@@ -22,7 +20,7 @@ from transformers import (
 import trl.trainer.dpo_trainer as _dpo_trainer_module
 from trl import DPOConfig, DPOTrainer  # type: ignore[reportPrivateImportUsage]
 
-from sft.schemas import (
+from sft.training_schemas import (
     ChatExample,
     DpoChatExample,
     EvalHistoryEntry,
@@ -49,8 +47,6 @@ from sft.training_config import (
     VAL_DATA_PATH,
 )
 
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
 _dpo_trainer_module.entropy_from_logits = (  # type: ignore[reportPrivateImportUsage]
     lambda logits, chunk_size=128: torch.zeros(
         logits.shape[:-1], device=logits.device
