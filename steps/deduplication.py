@@ -179,6 +179,13 @@ def _resolve_cluster(
     grouping_result = invoke_structured(structured_model, prompt_text)
     resolved_drafts = []
     for group in grouping_result.groups:
+        for member_position in group.member_indices:
+            if not 0 <= member_position < len(cluster_indices):
+                raise ValueError(
+                    f"Dedup grouping returned out-of-range candidate "
+                    f"index {member_position} for a cluster of "
+                    f"{len(cluster_indices)} candidates"
+                )
         group_draft_indices = [
             cluster_indices[member_position]
             for member_position in group.member_indices
