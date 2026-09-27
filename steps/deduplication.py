@@ -7,7 +7,10 @@ from pydantic import BaseModel
 
 from backends.embeddings import embed_texts
 from backends.llm_client import get_structured_chat_model, invoke_structured
-from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+from config import (
+    REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO,
+    REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD,
+)
 from logging_config import get_logger
 from prompts import DEDUP_GROUPING_PROMPT, DEDUP_MERGE_PROMPT
 from schemas import RequirementDraft, TextSpan
@@ -99,38 +102,55 @@ def _cluster_by_similarity(
     return _group_by_root(parent_by_index, candidate_count)
 
 
-def _spans_overlap(first: TextSpan, second: TextSpan) -> bool:
+def _span_overlap_ratio(first: TextSpan, second: TextSpan) -> float:
     if first.document_path != second.document_path:
-        return False
+        return 0.0
     if first.start_char is None or first.end_char is None:
-        return False
+        return 0.0
     if second.start_char is None or second.end_char is None:
-        return False
+        return 0.0
     overlap_start = max(first.start_char, second.start_char)
     overlap_end = min(first.end_char, second.end_char)
-    return overlap_end > overlap_start
+    overlap_length = max(0, overlap_end - overlap_start)
+    first_length = first.end_char - first.start_char
+    second_length = second.end_char - second.start_char
+    shorter_length = min(first_length, second_length)
+    if shorter_length <= 0:
+        return 0.0
+    return overlap_length / shorter_length
+
+
+def _matching_citations(draft: RequirementDraft) -> list[TextSpan]:
+    return [
+        citation for citation in draft.citations if citation.used_for_matching
+    ]
 
 
 def _drafts_share_overlapping_citation(
     first: RequirementDraft,
     second: RequirementDraft,
+    minimum_overlap_ratio: float,
 ) -> bool:
-    for first_citation in first.citations:
-        for second_citation in second.citations:
-            if _spans_overlap(first_citation, second_citation):
+    for first_citation in _matching_citations(first):
+        for second_citation in _matching_citations(second):
+            ratio = _span_overlap_ratio(first_citation, second_citation)
+            if ratio >= minimum_overlap_ratio:
                 return True
     return False
 
 
 def _cluster_by_citation_overlap(
     drafts: list[RequirementDraft],
+    minimum_overlap_ratio: float = (
+        REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    ),
 ) -> list[list[int]]:
     draft_count = len(drafts)
     parent_by_index = list(range(draft_count))
     index_pairs = itertools.combinations(range(draft_count), 2)
     for first_index, second_index in index_pairs:
         if _drafts_share_overlapping_citation(
-            drafts[first_index], drafts[second_index]
+            drafts[first_index], drafts[second_index], minimum_overlap_ratio
         ):
             _union_indices(parent_by_index, first_index, second_index)
     return _group_by_root(parent_by_index, draft_count)
@@ -234,13 +254,33 @@ def _resolve_cluster(
     return resolved_drafts
 
 
+def _widest_matching_span_length(draft: RequirementDraft) -> int:
+    widest = 0
+    for citation in _matching_citations(draft):
+        if citation.start_char is None or citation.end_char is None:
+            continue
+        widest = max(widest, citation.end_char - citation.start_char)
+    return widest
+
+
+def _widest_citation_draft_text(
+    drafts: list[RequirementDraft],
+    cluster_indices: list[int],
+) -> str:
+    widest_index = max(
+        cluster_indices,
+        key=lambda index: _widest_matching_span_length(drafts[index]),
+    )
+    return drafts[widest_index].text
+
+
 def _merge_citation_overlap_clusters(
     drafts: list[RequirementDraft],
     clusters: list[list[int]],
 ) -> list[RequirementDraft]:
     merged_drafts = []
     for cluster_indices in clusters:
-        canonical_text = _merge_canonical_text(drafts, cluster_indices)
+        canonical_text = _widest_citation_draft_text(drafts, cluster_indices)
         merged_drafts.append(
             _resolve_group(drafts, cluster_indices, canonical_text)
         )
