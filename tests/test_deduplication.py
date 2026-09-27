@@ -3,6 +3,7 @@ from steps.deduplication import (
     _cluster_by_citation_overlap,
     _cluster_by_similarity,
     _embedding_text,
+    _merge_citation_overlap_clusters,
     _resolve_group,
 )
 
@@ -142,6 +143,68 @@ def test_citation_overlap_keeps_non_overlapping_spans_separate() -> None:
     assert normalized_clusters == [[0], [1]]
 
 
+def test_citation_overlap_ignores_shared_lead_in_between_requirements() -> None:
+    # Several genuinely different requirements can share one lead-in
+    # sentence (e.g. "the Government will not enter into a contract
+    # with any corporation that--" followed by unrelated conditions).
+    # A shared lead-in span must never make them look like duplicates.
+    shared_lead_in = TextSpan(
+        document_path="tender.txt",
+        quote="shared lead-in",
+        start_char=0,
+        end_char=20,
+        citation_verified=True,
+        used_for_matching=False,
+    )
+    drafts = [
+        RequirementDraft(
+            requirement_id="draft_a",
+            text="shared lead-in ... condition A",
+            is_mandatory=True,
+            is_text_verifiable=True,
+            citations=[
+                shared_lead_in,
+                TextSpan(
+                    document_path="tender.txt", quote="condition A",
+                    start_char=100, end_char=150, citation_verified=True,
+                ),
+            ],
+        ),
+        RequirementDraft(
+            requirement_id="draft_b",
+            text="shared lead-in ... condition B",
+            is_mandatory=True,
+            is_text_verifiable=True,
+            citations=[
+                shared_lead_in,
+                TextSpan(
+                    document_path="tender.txt", quote="condition B",
+                    start_char=500, end_char=550, citation_verified=True,
+                ),
+            ],
+        ),
+    ]
+
+    clusters = _cluster_by_citation_overlap(drafts)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0], [1]]
+
+
+def test_citation_overlap_requires_minimum_overlap_ratio() -> None:
+    # A marginal touch between two adjacent-but-distinct requirements'
+    # spans must not count as the same physical mention.
+    drafts = [
+        _draft("draft_a", "text a", start_char=100, end_char=200),
+        _draft("draft_b", "text b", start_char=195, end_char=300),
+    ]
+
+    clusters = _cluster_by_citation_overlap(drafts)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0], [1]]
+
+
 def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> None:
     drafts = [
         _draft(
@@ -158,6 +221,21 @@ def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> N
 
     normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
     assert normalized_clusters == [[0], [1]]
+
+
+def test_merge_citation_overlap_clusters_keeps_widest_span_text() -> None:
+    # The shorter span is assumed to be a chunk-boundary truncation of
+    # the same physical requirement, so the wider one wins without
+    # calling an LLM.
+    drafts = [
+        _draft("draft_a", "truncated text", start_char=150, end_char=200),
+        _draft("draft_b", "the complete text", start_char=100, end_char=250),
+    ]
+
+    merged = _merge_citation_overlap_clusters(drafts, [[0, 1]])
+
+    assert len(merged) == 1
+    assert merged[0].text == "the complete text"
 
 
 def test_similar_vectors_are_grouped_together() -> None:
