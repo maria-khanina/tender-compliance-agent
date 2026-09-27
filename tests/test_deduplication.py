@@ -223,10 +223,9 @@ def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> N
     assert normalized_clusters == [[0], [1]]
 
 
-def test_merge_citation_overlap_clusters_keeps_widest_span_text() -> None:
-    # The shorter span is assumed to be a chunk-boundary truncation of
-    # the same physical requirement, so the wider one wins without
-    # calling an LLM.
+def test_merge_citation_overlap_clusters_keeps_containing_span_text() -> None:
+    # A span fully contained in another contributes nothing new to the
+    # union, so the containing span's own text is the result.
     drafts = [
         _draft("draft_a", "truncated text", start_char=150, end_char=200),
         _draft("draft_b", "the complete text", start_char=100, end_char=250),
@@ -236,6 +235,20 @@ def test_merge_citation_overlap_clusters_keeps_widest_span_text() -> None:
 
     assert len(merged) == 1
     assert merged[0].text == "the complete text"
+
+
+def test_merge_citation_overlap_clusters_unions_partially_overlapping_spans() -> None:
+    # Neither span fully contains the other, so merging must keep both
+    # spans' exclusive content instead of discarding one of them.
+    drafts = [
+        _draft("draft_a", "A" * 100, start_char=0, end_char=100),
+        _draft("draft_b", "B" * 100, start_char=50, end_char=150),
+    ]
+
+    merged = _merge_citation_overlap_clusters(drafts, [[0, 1]])
+
+    assert len(merged) == 1
+    assert merged[0].text == "A" * 100 + "B" * 50
 
 
 def test_similar_vectors_are_grouped_together() -> None:
