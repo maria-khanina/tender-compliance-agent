@@ -1,0 +1,893 @@
+[
+  {
+    "requirement_id": "e0a7aae0-dfcb-48fd-b74f-3d3d53126099",
+    "text": "All Invoices from the contractor shall be submitted electronically in accordance with VAAR Clause 852.232-72 Electronic Submission of Payment Requests.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "All Invoices from the contractor shall be submitted electronically in accordance with VAAR Clause 852.232-72 Electronic Submission of Payment Requests.",
+        "start_char": 874,
+        "end_char": 1025,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d43b2681-e8e5-4e91-b2a4-806c5349816d",
+    "text": "The offeror acknowledges receipt of amendments to the Solicitation numbered and dated as follows:",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The offeror acknowledges receipt of amendments to the Solicitation numbered and dated as follows:",
+        "start_char": 1153,
+        "end_char": 1250,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9cbf0de0-7758-440d-af89-884314c90c88",
+    "text": "All Labor hours in Section 3.2 is exclusive of section 3.1 and ... shall be bid as a separate line item.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "All Labor hours in Section 3.2 is exclusive of section 3.1 and",
+        "start_char": 1654,
+        "end_char": 1716,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "shall be bid as a separate line item.",
+        "start_char": 1717,
+        "end_char": 1754,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5c8165f3-45c6-4cd3-b462-af59f2c1c9c7",
+    "text": "All Material allowances in Section 3.3 are exclusive of section 3.1 and 3.2 and ... shall be bid as a separate line item.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "All Material allowances in Section 3.3 are exclusive of section 3.1 and 3.2 and",
+        "start_char": 1893,
+        "end_char": 1972,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "shall be bid as a separate line item.",
+        "start_char": 1717,
+        "end_char": 1754,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2f52a7ca-7e29-4b19-b676-d4ad37f80a81",
+    "text": "Offerors are responsible for submitting signed and dated offers and any modifications or revisions to the Government office designated in the solicitation by the time specified in the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation.",
+        "start_char": 3598,
+        "end_char": 3733,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Offerors are responsible for submitting offers and any modifications or revisions to the Government office designated in the solicitation by the time specified in the solicitation.",
+        "start_char": 4785,
+        "end_char": 4965,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c24a226b-7813-4500-bea5-6d202163974b",
+    "text": "As a minimum, offers shall include: (1) The solicitation number; (2) The name, address, telephone number of the Offeror; (3) The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator; (4) Information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation; (5) Responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via the System for Award Management (SAM)); (6) A statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(1) The solicitation number;",
+        "start_char": 3774,
+        "end_char": 3802,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(2) The name, address, telephone number of the Offeror;",
+        "start_char": 3807,
+        "end_char": 3862,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(3) The Offeror’s Unique Entity Identifier (UEI) and, if applicable, Electronic Funds Transfer (EFT) indicator;",
+        "start_char": 3867,
+        "end_char": 3978,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(4) Information necessary to evaluate the factors contained in the provision at 52.212-2 or as described in the solicitation;",
+        "start_char": 3983,
+        "end_char": 4108,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(5) Responses to provisions that require Offeror completion of information, representations, and certifications (other than those collected via the System for Award Management (SAM));",
+        "start_char": 4113,
+        "end_char": 4296,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "As a minimum, offers shall include—",
+        "start_char": 3734,
+        "end_char": 3769,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "(6) A statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and any solicitation amendments.",
+        "start_char": 4305,
+        "end_char": 4460,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "47bd02d1-25f7-40c1-9227-f4ef682c3ecb",
+    "text": "The Offeror agrees to hold the prices in its offer firm for 60 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Offeror agrees to hold the prices in its offer firm for 60 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation.",
+        "start_char": 4500,
+        "end_char": 4699,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b0065a74-8840-4913-b481-48eeb7e17c65",
+    "text": "Offerors may withdraw their offers by written notice to the Government received at any time before award.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Offerors may withdraw their offers by written notice to the Government received at any time before award.",
+        "start_char": 5993,
+        "end_char": 6098,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Offerors may withdraw their offers by written notice to the Government received at any time before award.",
+        "start_char": 5993,
+        "end_char": 6098,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "93f6523c-b770-4a54-89a7-8789759e0b51",
+    "text": "The Government will award a contract resulting from this solicitation to the responsible Offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Government will award a contract resulting from this solicitation to the responsible Offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered.",
+        "start_char": 7705,
+        "end_char": 7925,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "bb947449-ff25-4447-b205-34f00f2b2d21",
+    "text": "The concern must qualify as a small business concern under the size standard corresponding to the NAICS code assigned to the contract and be listed as an SDVOSB participant in the SBA certification database as set forth in 13 CFR 128. Any award resulting from this solicitation shall be made to a certified SDVOSB listed in the SBA certification database who is eligible at the time of submission of offer(s) and at the time of award. By submitting an offer, the prospective contractor represents that it is an eligible and certified SDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "the concern must qualify as a small business concern under the size standard corresponding to the NAICS code assigned to the contract and be listed as an SDVOSB participant in the SBA certification database as set forth in 13 CFR 128.",
+        "start_char": 11887,
+        "end_char": 12121,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Offers received from entities that are not certified SDVOSBs and listed in the SBA certification database at the time of offer shall not be considered.",
+        "start_char": 12131,
+        "end_char": 12282,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Any award resulting from this solicitation shall be made to a certified SDVOSB listed in the SBA certification database who is eligible at the time of submission of offer(s) and at the time of award.",
+        "start_char": 12291,
+        "end_char": 12490,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "By submitting an offer, the prospective contractor represents that it is an eligible and certified SDVOSB as defined in this clause, 13 CFR 121, 125, and 128, and VAAR subpart 819.70.",
+        "start_char": 12911,
+        "end_char": 13094,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c236966b-7c42-4cc5-bf0f-2834ad3da02e",
+    "text": "By submitting an offer, the offeror represents that it has conducted a reasonable inquiry, and that the offeror does not propose to provide or use in response to this solicitation any covered article, or any products or services produced or provided by a source, if the covered article or the source is prohibited by an applicable FASCSA order in effect on the date the solicitation was issued, except as waived by the solicitation, or as disclosed in paragraph (g).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "By submission of this offer, the offeror represents that it has conducted a reasonable inquiry, and that the offeror does not propose to provide or use in response to this solicitation any covered article, or any products or services produced or provided by a source, if the covered article or the source is prohibited by an applicable FASCSA order in effect on the date the solicitation was issued, except as waived by the solicitation, or as disclosed in paragraph (g).",
+        "start_char": 13237,
+        "end_char": 13708,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "99d417fc-9cdf-4b34-ba06-110a55704822",
+    "text": "By submission of this offer, the offeror certifies, after conducting a reasonable inquiry (that looks at any information in the offeror’s possession but does not need to include an internal or third-party audit), that the offeror does not conduct any restricted business operations in Sudan.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "By submission of its offer, the offeror certifies, after conducting a reasonable inquiry (that looks at any information in the offeror’s possession but does not need to include an internal or third-party audit), that the offeror does not conduct any restricted business operations in Sudan.",
+        "start_char": 13877,
+        "end_char": 14167,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b01e1a96-9d2e-4341-be49-cb5872e66747",
+    "text": "The Manchester VA Medical Center (MVAMC) operates an elevated steel water storage tank that must undergo routine inspections, maintenance, and repairs in accordance with Environmental Protection Agency (EPA), New Hampshire Department of Environmental Services (NHDES), Occupational Safety and Health Administration (OSHA), and National Fire Protection Association (NFPA) requirements; provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Manchester VA Medical Center (MVAMC) operates an elevated steel water storage tank that must undergo routine inspections, maintenance, and repairs in accordance with Environmental Protection Agency (EPA), New Hampshire Department of Environmental Services (NHDES), Occupational Safety and Health Administration (OSHA), and National Fire Protection Association (NFPA) requirements.",
+        "start_char": 2676,
+        "end_char": 3060,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation demonstrating understanding and application of all relevant AWWA, NHDES, OSHA, and EPA requirements.",
+        "start_char": 8210,
+        "end_char": 8332,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f47df950-3578-48f1-ab3f-4b379c5f1874",
+    "text": "Provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a detailed inspection and cleaning methodology, including procedures, equipment, and verification steps.",
+        "start_char": 8335,
+        "end_char": 8447,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6dde95b2-7efc-4df2-bffe-24ad60e2501d",
+    "text": "Provide technical specifications and procedures for ROV use in submerged surface inspections.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide technical specifications and procedures for ROV use in submerged surface inspections.",
+        "start_char": 8450,
+        "end_char": 8543,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "eae827b2-9546-4667-afd0-960f0388145c",
+    "text": "Provide evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of capability to identify structural defects, coating failures, corrosion, erosion, sanitation deficiencies, and contamination routes, supported by sample reports or prior work.",
+        "start_char": 8546,
+        "end_char": 8740,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3d1a694d-2fdc-4961-84de-10de7cd9eb4d",
+    "text": "Provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide complete, technically sound work plans and operational procedures for reviewer evaluation.",
+        "start_char": 8743,
+        "end_char": 8841,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e8a77ea1-82a5-414d-b554-f512fe0dc563",
+    "text": "The Contractor will: ... Provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Contractor will:",
+        "start_char": 8883,
+        "end_char": 8903,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation of previous performance on potable water tower inspection, cleaning, or repair contracts.",
+        "start_char": 8906,
+        "end_char": 9017,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a9fec023-68b4-44c5-a29a-8efa40e0c1ee",
+    "text": "The Contractor will: ... Provide evidence of performance in hospital or other high-interval environments.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Contractor will:",
+        "start_char": 8883,
+        "end_char": 8903,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of performance in hospital or other high-risk environments.",
+        "start_char": 9020,
+        "end_char": 9096,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "75ae9934-65ce-46d0-829b-44ca9946f9c8",
+    "text": "Provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Contractor will:",
+        "start_char": 8883,
+        "end_char": 8903,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide records demonstrating contract quality, timeliness, customer satisfaction, safety compliance, and responsiveness.",
+        "start_char": 9099,
+        "end_char": 9220,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "09657de2-c201-4c13-91b1-51ff200043f9",
+    "text": "The Contractor will: ... Provide three references and/or three CPARS entries within the past 3 years.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "The Contractor will:",
+        "start_char": 8883,
+        "end_char": 8903,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide three references and/or three CPARS entries within the past 3 years",
+        "start_char": 9223,
+        "end_char": 9298,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "193c8b12-7500-48e2-bf5c-558b35a57260",
+    "text": "Contractor Personnel must: ... Provide proof of OSHA 10 and OSHA 30 certifications.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide proof of OSHA 10 and OSHA 30 certifications.",
+        "start_char": 9368,
+        "end_char": 9420,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a73c6043-bd4d-4c64-a6d7-9fa5dd7fd13d",
+    "text": "Contractor Personnel must: ... Provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a copy of the NH Water System Operator License (certified Water Works Operator).",
+        "start_char": 9423,
+        "end_char": 9511,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4d424be2-41c2-4fc6-ad68-e5b231ad777d",
+    "text": "Contractor Personnel must: ... Provide documentation confirming current standing with NHDES.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation confirming current standing with NHDES.",
+        "start_char": 9514,
+        "end_char": 9575,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5212c01f-5d36-4548-afcf-fa69195e08ac",
+    "text": "Contractor Personnel must provide Confined Space Entry certification and provide an OSHA-compliant Confined Space Entry plan.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide Confined Space Entry certification.",
+        "start_char": 9578,
+        "end_char": 9621,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide an OSHA-compliant Confined Space Entry plan.",
+        "start_char": 9985,
+        "end_char": 10037,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0fece50c-d858-4940-be78-d17d64c7592b",
+    "text": "Contractor Personnel must provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout, and provide equipment-specific Lockout/Tagout procedures and a comprehensive fall protection plan.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide certifications for Fall Protection, Stairways/Ladders, and Lockout/Tagout.",
+        "start_char": 9624,
+        "end_char": 9706,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide equipment-specific Lockout/Tagout procedures.",
+        "start_char": 10040,
+        "end_char": 10093,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a comprehensive fall protection plan.",
+        "start_char": 10096,
+        "end_char": 10141,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "51d5cb79-cb7c-49bd-a7c9-9242ec2ddd27",
+    "text": "Contractor Personnel must: ... Provide evidence of coating integrity assessment training.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of coating integrity assessment training.",
+        "start_char": 9709,
+        "end_char": 9767,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "86a1e2a8-2248-422e-b9d3-65d782e04daf",
+    "text": "Contractor Personnel must: ... Provide documentation of Healthcare Environmental Sanitation training.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation of Healthcare Environmental Sanitation training.",
+        "start_char": 9770,
+        "end_char": 9840,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c607e0a5-a1f3-4c03-8993-6296107c6841",
+    "text": "Provide evidence of demonstrated experience in structural water tower inspections.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Contractor Personnel must:",
+        "start_char": 9339,
+        "end_char": 9365,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of demonstrated experience in structural water tower inspections.",
+        "start_char": 9843,
+        "end_char": 9925,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2a54d819-44d2-43f6-affb-0c58f26a7824",
+    "text": "Provide procedures for SDS management and a defined hazard communication methodology.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide procedures for SDS management.",
+        "start_char": 10144,
+        "end_char": 10182,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide a defined hazard communication methodology.",
+        "start_char": 10280,
+        "end_char": 10331,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "60de5798-df45-4444-a94c-b48b7fd51727",
+    "text": "Provide documentation demonstrating compliance with hospital Infection Control requirements.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide documentation demonstrating compliance with hospital Infection Control requirements.",
+        "start_char": 10185,
+        "end_char": 10277,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9fe8f674-7294-49d6-96f0-e7237e869d86",
+    "text": "Provide evidence of safety controls for tools, ladders, cages, and access systems.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0704/36C24126Q0704_condensed.txt",
+        "quote": "Provide evidence of safety controls for tools, ladders, cages, and access systems.",
+        "start_char": 10334,
+        "end_char": 10416,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

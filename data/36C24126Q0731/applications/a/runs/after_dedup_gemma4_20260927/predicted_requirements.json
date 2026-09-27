@@ -1,0 +1,1235 @@
+[
+  {
+    "requirement_id": "b4e2a337-9b42-461d-afbb-d81018d1676c",
+    "text": "The RFQ due date is extended to 09/18/26 at 11:00 AM EDT.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "MOD P0003 extends the RFQ due date to 09/18/26 at 11:00 AM EDT.",
+        "start_char": 558,
+        "end_char": 621,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Submission shall be received no later than 11:00 AM EDT 09/18/26.",
+        "start_char": 14120,
+        "end_char": 14185,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "02c14cb5-7aa9-4739-8afd-4a6e7cf02ecf",
+    "text": "This is a brand name only requirement for the Sorna Vertex 25ei Platform and Sorna CD Burner.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "This solicitation: 36C24126Q0731 P0003 is confirmed as a brand name only requirement.",
+        "start_char": 472,
+        "end_char": 557,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quotations shall be brand name for the for Sorna Vertex 25ei & CD Burner listed in the Product Chart above and as described in detail in the combined synopsis solicitation, Intent to Compete/ RFQ as posted on Contract Opportunities starting on Page 1 (P1).",
+        "start_char": 2948,
+        "end_char": 3208,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The requirement is for the procurement of Sorna Vertex 25ei & CD Burner listed on (P5) for VAMC CWM; no substitutions can be considered.",
+        "start_char": 4330,
+        "end_char": 4466,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The Sorna Vertex 25ei Platform with integrated Sorna CD Burner is peculiar to one manufacturer and essential to the Government’s requirements at CWM.",
+        "start_char": 35283,
+        "end_char": 35432,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The FAR 11.105 brand-name requirement for the Sorna Vertex 25ei Platform replacement is supported for the purpose of maintaining full system integration of existing and new Sorna Vertex 25ei platforms.",
+        "start_char": 38515,
+        "end_char": 38716,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "402818e5-71b2-43a2-80bf-abc4dd312588",
+    "text": "The requirement is for the procurement of one (1) Sorna Vertex 25ei Platform and Sorna CD Burner for VAMC Central Western Massachusetts (CWM).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "This acquisition is being conducted as a Total SD/VOSB Set-Aside for the procurement of one (1) Sorna brand Vertex 25ei Platform and Sorna CD Burner for VAMC Central Western Massachusetts (CWM).",
+        "start_char": 1356,
+        "end_char": 1550,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The VA Central Western Massachusetts (CWM) Healthcare System requires the acquisition of one (1) Vertex 25ei Optical Media Package.",
+        "start_char": 34368,
+        "end_char": 34499,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "453b38e2-886d-4f3c-8bd6-2798bb0d923f",
+    "text": "Quotes must be submitted via email.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quotes will be submitted via email.",
+        "start_char": 1891,
+        "end_char": 1930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "64354a63-fcb1-4da9-9022-40727e0ec6e6",
+    "text": "If shipping costs are $250.00 or more, the cost of shipping must be rolled into the line-item price.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Delivery (Must be <$250.00) *",
+        "start_char": 2852,
+        "end_char": 2881,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "If shipping will not fall below $250.00, the cost of shipping needs to be rolled into the line-item price for the Vertex 25ei/CD Burner line-item pricing.",
+        "start_char": 4173,
+        "end_char": 4327,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ad656b6b-f7f4-433a-85cf-5c4b1ffa4c15",
+    "text": "Award shall be made to a responsible, VIP-listed SD/VOSB or VOSB quoter that meets all eligibility requirements.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Award shall be made to the responsible SBA SBS VetCert-certified SD/VOSB quoter whose quote is determined to be the lowest price for the brand name product required.",
+        "start_char": 3922,
+        "end_char": 4087,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "All SD/VOSB eligibility requirements must be met for quotes to be considered.",
+        "start_char": 10387,
+        "end_char": 10464,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers are solicited only from VIP-listed SDVOSBs.",
+        "start_char": 16872,
+        "end_char": 16922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any award resulting from this solicitation shall be made to a VIP-listed SDVOSB who is eligible at the time of submission of offer(s) and at the time of award.",
+        "start_char": 17035,
+        "end_char": 17194,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers are solicited only from VIP-listed VOSBs, including VIP-listed SDVOSBs.",
+        "start_char": 25117,
+        "end_char": 25195,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any award resulting from this solicitation shall be made only to a VIP-listed VOSB who is eligible at the time of submission of offer(s) and at time of award.",
+        "start_char": 25300,
+        "end_char": 25458,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "48a26019-bd8c-49d7-87dc-f8450f12ad4d",
+    "text": "Pricing must be entered for each line item as listed in the Product Chart.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Pricing shall be entered for each line item as listed in the PRODUCT CHART above.",
+        "start_char": 4089,
+        "end_char": 4170,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b01a82d0-0b91-47ce-adca-575b7d210441",
+    "text": "Offeror must be registered in SAM and provide their Unique Entity Identifier (UEI) on the quote cover page.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be registered in SAM.",
+        "start_char": 4468,
+        "end_char": 4502,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter must enter, in the block with its name and address on the cover page of its quote, the annotation \"Unique Entity Identifier\" followed by the unique entity identifier that identifies the quoter's name and address.",
+        "start_char": 11259,
+        "end_char": 11482,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "92ee7fda-6212-48d4-8bf1-ab5e0c654bc3",
+    "text": "Offeror must be a verified SD/VOSB or VOSB listed in the SBA SBS VetCert and VA's Vendor Information Pages (VIP) database.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must be certified/verified as an SD/VOSB in the SBA SBS VIP (Veteran Information Pages) VetCert as an SD/VOSB.",
+        "start_char": 4503,
+        "end_char": 4621,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business has been verified for ownership and control pursuant to 38 CFR part 74 and is listed in VA's Vendor Information Pages (VIP) database at https://www.vetbiz.va.gov/vip/;",
+        "start_char": 15555,
+        "end_char": 15735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers are solicited only from VIP-listed SDVOSBs.",
+        "start_char": 16872,
+        "end_char": 16922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers received from entities that are not VIP-listed SDVOSBs at the time of offer shall not be considered.",
+        "start_char": 16923,
+        "end_char": 17030,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any award resulting from this solicitation shall be made to a VIP-listed SDVOSB who is eligible at the time of submission of offer(s) and at the time of award.",
+        "start_char": 17035,
+        "end_char": 17194,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offers are solicited only from VIP-listed VOSBs, including VIP-listed SDVOSBs.",
+        "start_char": 25117,
+        "end_char": 25195,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any award resulting from this solicitation shall be made only to a VIP-listed VOSB who is eligible at the time of submission of offer(s) and at time of award.",
+        "start_char": 25300,
+        "end_char": 25458,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "340c6dcc-c392-4fe3-9a65-3c04999934fd",
+    "text": "Offeror must comply with Limitations on Subcontracting (LOS) requirements and assert compliance in the accompanying email.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Offeror must meet LOS (Limitations on Subcontracting) requirements and per the LOS listed clauses below.",
+        "start_char": 4622,
+        "end_char": 4726,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Compliance with the LOS clauses must be asserted by the offeror in the email accompanying their quote.",
+        "start_char": 4727,
+        "end_char": 4829,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When awarded a contract action, including orders under multiple-award contracts, an SDVOSB agrees that in the performance of the contract, the SDVOSB shall comply with requirements in VAAR subpart 819.70 and SBA regulations on small business size and government contracting programs at 13 CFR part 121 and part 125, including the non-manufacturer rule and limitations on subcontracting requirements in 13 CFR 121.406(b) and 13 CFR 125.6.",
+        "start_char": 17746,
+        "end_char": 18183,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "An otherwise eligible firm further agrees to comply with the required certification requirements in this solicitation (see 852.219-75 or 852.219-76 as applicable).",
+        "start_char": 18607,
+        "end_char": 18770,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "An SDVOSB shall comply with the limitations on subcontracting as follows:\n[Contracting Officer check as appropriate.]\n__By the end of the base term of the contract or order, and then by the end of each subsequent option period; or\n__By the end of the performance period for each order issued under the contract.",
+        "start_char": 21564,
+        "end_char": 21875,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A VOSB shall comply with the limitations on subcontracting as follows: __By the end of the base term of the contract or order, and then by the end of each subsequent option period; or __By the end of the performance period for each order issued under the contract.",
+        "start_char": null,
+        "end_char": null,
+        "citation_verified": false,
+        "match_precision": null,
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "01d0b17f-60d3-44a0-a0a7-630db333cdf4",
+    "text": "Capability to provide all required Sorna Vertex 25ei & CD Burner products in accordance with the Statement of Work (SOW).",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Capability to provide all required Sorna Vertex 25ei & CD Burner products in accordance with the Statement of Work (SOW)(P13).",
+        "start_char": 5290,
+        "end_char": 5416,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a7820ab4-3511-4d3b-8845-e3a55d35b3bb",
+    "text": "Quotes must include the following: solicitation number, receipt time, quoter's name/address/phone, technical description, warranty terms, price/discounts, 'Remit to' address, completed FAR 52.212-3 reps/certs, and acknowledgment of amendments.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(1) The solicitation number;",
+        "start_char": 6931,
+        "end_char": 6959,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(2) The time specified in the solicitation for receipt of quotations;",
+        "start_char": 6960,
+        "end_char": 7029,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(3) The name, address, and telephone number of the quoter;",
+        "start_char": 7030,
+        "end_char": 7088,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(4) A technical description of the items being quoted in sufficient detail to evaluate\n     compliance with the requirements in the solicitation. This may include product literature, or \n     other documents, if necessary.",
+        "start_char": 7089,
+        "end_char": 7311,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(5) Terms of any express warranty;",
+        "start_char": 7313,
+        "end_char": 7347,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(6) Price and any discount terms;",
+        "start_char": 7349,
+        "end_char": 7382,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(7) \"Remit to\" address, if different from the mailing address;",
+        "start_char": 7384,
+        "end_char": 7446,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(8) A completed copy of the representations and certifications under the \nFederal Acquisition Regulation (FAR) 52.212-3 (see FAR 52.212-3(b) for those representations and certifications that the quoter shall complete electronically).",
+        "start_char": 7452,
+        "end_char": 7685,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "As a minimum, quotes must show—",
+        "start_char": 6899,
+        "end_char": 6930,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(9) Acknowledgment Request for Quotation amendments;",
+        "start_char": 7691,
+        "end_char": 7743,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(11) Quote should include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation. Quotes that fail to furnish required representations and certifications, information requested in (1) to (9), and accept the terms and conditions of the solicitation may be excluded from consideration.",
+        "start_char": 7835,
+        "end_char": 8182,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "51561a6f-0b58-4e35-b8af-a1ab1ef9bf61",
+    "text": "Prices in the quote must be held firm for 30 calendar days from the receipt date unless otherwise specified.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter agrees to hold the prices in its quote firm for 30 calendar days from the date specified for receipt of quotes unless another time period is specified in an addendum to the solicitation.",
+        "start_char": 8221,
+        "end_char": 8418,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a88372ef-adc7-438c-875f-7be0dd5eae30",
+    "text": "Quoters should submit one (1) quote presenting their best price and best terms.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Quoters are requested to submit one (1) quote presenting their best price for the required Sorna Vertex 25ei & CD Burner.",
+        "start_char": 8489,
+        "end_char": 8610,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "the quoter’s initial quote should contain the best terms and the best quoted price.",
+        "start_char": 10050,
+        "end_char": 10133,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0e589bc5-7acf-4a9e-84b2-c92d51dbad8d",
+    "text": "Offeror must include its Electronic Funds Transfer (EFT) indicator, if applicable.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The quoter also must enter its Electronic Funds Transfer (EFT) indicator, if applicable.",
+        "start_char": 11483,
+        "end_char": 11571,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "87cbb4da-5672-466a-ab52-2b559a43f407",
+    "text": "Quotes must include a statement regarding the acceptance of the solicitation's terms and conditions, listing any exceptions and rationale.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "all quotes must include a statement regarding the terms and conditions herein as follows:\n\"The terms and conditions in the solicitation are acceptable to be included in the award document without modification, deletion, or addition.\"\nOR\n\"The terms and conditions in the solicitation are acceptable to be included in the award document with the exception, deletion, or addition of the following:\"",
+        "start_char": 12100,
+        "end_char": 12495,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Quoters shall list exception(s) and rationale for the exception(s), if any.",
+        "start_char": 12498,
+        "end_char": 12573,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "def1116d-1b3c-4e1e-a45c-a898081df797",
+    "text": "SD/VOSB eligibility requires at least 51% ownership by service-disabled Veterans and management/control by service-disabled Veterans.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Not less than 51 percent of which is owned by one or more service-disabled Veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled Veterans or eligible surviving spouses (see VAAR 802.101, Surviving Spouse definition);",
+        "start_char": 14778,
+        "end_char": 15085,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The management and daily business operations of which are controlled by one or more service-disabled Veterans (or eligible surviving spouses) or, in the case of a service-disabled Veteran with permanent and severe disability, the spouse or permanent caregiver of such Veteran;",
+        "start_char": 15091,
+        "end_char": 15367,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "By submitting an offer, the prospective contractor represents that it is an eligible SDVOSB as defined in this clause, 38 CFR part 74, and VAAR subpart 819.70.",
+        "start_char": 17570,
+        "end_char": 17729,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ec205f9d-396c-4838-a6f3-2792c6f62205",
+    "text": "The business must meet the applicable NAICS size standard and be listed in VIP to count as similarly situated.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business meets Federal small business size standards for the applicable North American Industry Classification System (NAICS) code identified in the solicitation document;",
+        "start_char": 15374,
+        "end_char": 15549,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business meets Federal small business size standards for the applicable North American Industry Classification System (NAICS) code identified in the solicitation document;",
+        "start_char": 23734,
+        "end_char": 23909,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A VOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+        "start_char": 29035,
+        "end_char": 29161,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "An SDVOSB must meet the NAICS size standard assigned by the prime contractor and be listed in VIP to count as similarly situated.",
+        "start_char": 20809,
+        "end_char": 20938,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "8a22cab2-1932-47f6-8d6b-16ddcb05ed7b",
+    "text": "The business must comply with VAAR subpart 819.70 and SBA regulations regarding small business size and government contracting programs.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business will comply with VAAR subpart 819.70 and Small Business Administration (SBA) regulations regarding small business size and government contracting programs at 13 CFR parts 121 and 125, provided that any reference therein to a service-disabled veteran-owned small business concern or SDVO SBC, is to be construed to apply to a VA verified and VIP-listed SDVOSB, unless otherwise stated in this clause.",
+        "start_char": 15744,
+        "end_char": 16156,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The business will comply with VAAR subpart 819.70 and Small Business Administration (SBA) regulations regarding small business size and government contracting programs at 13 CFR parts 121 and 125, provided that any requirement therein that applies to a service-disabled veteran-owned small business concern or SDVO SBC, is to be construed to also apply to a VA verified and VIP-listed VOSB, unless otherwise stated in this clause.",
+        "start_char": 24105,
+        "end_char": 24535,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "eb74bc58-c5eb-4ccc-bac0-7bb5c106ef78",
+    "text": "Limitations on subcontracting for services or supplies (or both) are subject to specific percentage limits (e.g., 50% for services/supplies, 85% for construction, 75% for special trade) and apply to the relevant portion of the contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for services (except construction), the SDVOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance to firms that are not VIP-listed SDVOSBs (excluding direct costs to the extent they are not the principal purpose of the acquisition and the SDVOSB/VOSB does not provide the service, such as airline travel, cloud computing services, or mass media purchases).",
+        "start_char": 18831,
+        "end_char": 19281,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the service portion of the contract",
+        "start_char": 19282,
+        "end_char": 19416,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(i) In the case of a contract for supplies or products (other than from a non-manufacturer of such supplies), the SDVOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed SDVOSBs.",
+        "start_char": 19440,
+        "end_char": 19755,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both supply and services, the 50 percent limitation shall apply only to the supply portion of the contract.",
+        "start_char": 19756,
+        "end_char": 19888,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+        "start_char": 21209,
+        "end_char": 21417,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for services (except construction), the VOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance to firms that are not VIP-listed VOSBs (excluding direct costs to the extent they are not the principal purpose of the acquisition and the SDVOSB/VOSB does not provide the service, such as airline travel, cloud computing services, or mass media purchases).",
+        "start_char": 27072,
+        "end_char": 27518,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the service portion of the contract.",
+        "start_char": 27519,
+        "end_char": 27654,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for supplies or products (other than from a non-manufacturer of such supplies), the VOSB prime contractor will not pay more than 50% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+        "start_char": 27682,
+        "end_char": 27989,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both supply and services, the 50 percent limitation shall apply only to the supply portion of the contract.",
+        "start_char": 27990,
+        "end_char": 28122,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "When a contract includes both services and supplies, the 50 percent limitation shall apply only to the portion of the contract with the preponderance of the expenditure upon which the assigned NAICS is based.",
+        "start_char": 29430,
+        "end_char": 29638,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4c950ada-85d2-4175-94e3-ee3a35edacd5",
+    "text": "For supplies from a non-manufacturer, the SDVOSB/VOSB prime contractor must supply a domestic small business manufacturer or processor.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(ii) In the case of a contract for supplies from a non-manufacturer, the SDVOSB prime contractor will supply the product of a domestic small business manufacturer or processor, unless a waiver as described in 13 CFR 121.406(b)(5) has been granted.",
+        "start_char": 19889,
+        "end_char": 20136,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for supplies from a non-manufacturer, the VOSB prime contractor will supply the product of a domestic small business manufacturer or processor, unless a waiver as described in 13 CFR 121.406(b)(5) has been granted.",
+        "start_char": 28128,
+        "end_char": 28368,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "81446fd9-a679-4779-acd0-72aa06bc8a54",
+    "text": "Limitations on subcontracting for general construction (85%) and special trade contractors (75%) are subject to specific percentage limits.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(3) General construction. In the case of a contract for general construction, the SDVOSB prime contractor will not pay more than 85% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed SDVOSBs.",
+        "start_char": 20224,
+        "end_char": 20507,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "(4) Special trade construction contractors. In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed SDVOSBs.",
+        "start_char": 20508,
+        "end_char": 20788,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed SDVOSBs.",
+        "start_char": 20552,
+        "end_char": 20788,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for general construction, the VOSB prime contractor will not pay more than 85% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, to firms that are not VIP-listed VOSBs.",
+        "start_char": 28482,
+        "end_char": 28735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+        "start_char": 28780,
+        "end_char": 29014,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "In the case of a contract for special trade contractors, no more than 75% of the amount paid by the government to the prime for contract performance, excluding the cost of materials, may be paid to firms that are not VIP-listed VOSBs.",
+        "start_char": 28780,
+        "end_char": 29014,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c3e185b0-f9ed-430f-a106-85b623f43947",
+    "text": "Work subcontracted by a first-tier VIP-listed SDVOSB/VOSB subcontractor counts towards the subcontracting percentage limit.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any work that a first tier VIP-listed SDVOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
+        "start_char": 20939,
+        "end_char": 21096,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Any work that a first tier VIP-listed VOSB subcontractor further subcontracts will count towards the percent of subcontract amount that cannot be exceeded.",
+        "start_char": 29162,
+        "end_char": 29317,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "18c08e0b-e39b-43ed-8ae7-9a4f8eddc96c",
+    "text": "text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_generation_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_in_json_text_component_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in_json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json_text_content_missing_placeholder_error_in/json",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "For supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted.",
+        "start_char": 21097,
+        "end_char": 21208,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "For supply or construction contracts, the cost of materials is excluded and not considered to be subcontracted.",
+        "start_char": 29318,
+        "end_char": 29429,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3a29e72f-199a-4474-8f1d-728969185df8",
+    "text": "No substitutions can be considered.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "No substitutions can be considered.",
+        "start_char": 3617,
+        "end_char": 3652,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c48a5b9a-bb32-4dfd-9702-ae9a879922d2",
+    "text": "Pre-configured Windows 11 Professional PC",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Pre-configured Windows 11 Professional PC",
+        "start_char": 31991,
+        "end_char": 32032,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a0c4190f-0c3c-4d06-9ba6-6e813e10519f",
+    "text": "Monitor",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Monitor",
+        "start_char": 32033,
+        "end_char": 32040,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "26d7b0b3-8b15-4204-9196-cde163c1d598",
+    "text": "Keyboard",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Keyboard",
+        "start_char": 32041,
+        "end_char": 32049,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2989c9cf-6aaa-4b9c-b7e8-6f3268be81f1",
+    "text": "Mouse",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Mouse",
+        "start_char": 32050,
+        "end_char": 32055,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "dc23682f-e511-44f4-af05-797d64a1f4e8",
+    "text": "Dimensions: 13.7”H x 14.8” W x 20.2” D",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Dimensions: 13.7”H x 14.8” W x 20.2” D",
+        "start_char": 32371,
+        "end_char": 32409,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b14d824a-14c6-4ead-ba04-4b8c6bfff198",
+    "text": "Deliver to: \tVAMC CWM (Northampton)\n421 N. Main Street\nLeeds, MA 01053",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Deliver to: \tVAMC CWM (Northampton)\n421 N. Main Street\nLeeds, MA 01053",
+        "start_char": 32438,
+        "end_char": 32508,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "68b2f091-a7dd-4a4c-ad8c-2b187b02ffaf",
+    "text": "The package includes all associated software, hardware, implementation services, project management, installation, UPS backup power supply, and required accessories.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "The package includes all associated software, hardware, implementation services, project management, installation, UPS backup power supply, and required accessories.",
+        "start_char": 34557,
+        "end_char": 34722,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "990aacb8-d92f-47e9-ba9f-bb2582e15f49",
+    "text": "A recent Subject Matter Expert review confirms that brand-equal products cannot meet the minimum need without revalidation, retraining, and supply-chain changes that introduce operational and patient-care risk.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "A recent Subject Matter Expert review confirms that brand-equal products cannot meet the minimum need without revalidation, retraining, and supply-chain changes that introduce operational and patient-care risk.",
+        "start_char": 36074,
+        "end_char": 36284,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "e655e26c-f6e7-402c-89a3-b61f81265941",
+    "text": "Description of market research conducted and results or statement why it was not conducted:",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Description of market research conducted and results or statement why it was not conducted:",
+        "start_char": 38878,
+        "end_char": 38969,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b0fc93c1-9f09-4c52-aea5-1910e41e801e",
+    "text": "Fewer than 500 employees",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C24126Q0731/tender.txt",
+        "quote": "Fewer than 500 employees",
+        "start_char": 42021,
+        "end_char": 42045,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]

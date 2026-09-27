@@ -1,0 +1,35 @@
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 7597.18it/s]
+140p6426q0127_piro_handrail: 68 drafts -> 50 requirements -> data\140p6426q0127_piro_handrail\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+19EN1026Q0383: 47 drafts -> 35 requirements -> data\19EN1026Q0383\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+36C24126Q0704: 47 drafts -> 32 requirements -> data\36C24126Q0704\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+Could not locate quote in chunk 25 of data/36C24126Q0731/tender.txt: 'A VOSB shall comply with the limitations on subcontracting as follows: __By the '
+Call failed (attempt 1), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 2), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 3), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 4), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 5), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 6), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+Call failed (attempt 7), retrying: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+36C24126Q0731: FAILED - Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+36C25226Q0525: 30 drafts -> 9 requirements -> data\36C25226Q0525\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+36C25526Q0501: 54 drafts -> 21 requirements -> data\36C25526Q0501\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+Could not locate quote in chunk 15 of data/36C25926Q0699/36C25926Q0699_condensed.txt: 'A detailed field service report upon completion of work, including at a minimum:'
+Could not locate quote in chunk 15 of data/36C25926Q0699/36C25926Q0699_condensed.txt: 'A detailed field service report upon completion of work, including at a minimum:'
+Could not locate quote in chunk 15 of data/36C25926Q0699/36C25926Q0699_condensed.txt: 'A detailed field service report upon completion of work, including at a minimum:'
+Could not locate quote in chunk 15 of data/36C25926Q0699/36C25926Q0699_condensed.txt: 'A detailed field service report upon completion of work, including at a minimum:'
+36C25926Q0699: 102 drafts -> 43 requirements -> data\36C25926Q0699\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+36C26226Q1367: 110 drafts -> 30 requirements -> data\36C26226Q1367\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+Could not locate quote in chunk 15 of data/36C26226Q1384/RFQ+36C26226Q1384+AquaSept+Handpieces+Brand+Name+or+Equal+Updated.docx: 'Non-Manufacturer Status: The Contractor does not manufacture the products being '
+36C26226Q1384: 90 drafts -> 24 requirements -> data\36C26226Q1384\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+36C26326Q0197: 68 drafts -> 29 requirements -> data\36C26326Q0197\applications\a\runs\baseline_dedup_gemma4_20260927\predicted_requirements.json
+ALL DONE

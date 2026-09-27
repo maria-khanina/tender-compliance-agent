@@ -1,0 +1,1397 @@
+[
+  {
+    "requirement_id": "d6ceac48-27d8-456b-b070-aee9a9d8b841",
+    "text": "Offerors must demonstrate that their products meet all specified salient physical, functional, or performance characteristics, including providing clear evidence for 'equal' products and ensuring the lowest priced, responsive, and responsible quotation is selected.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offeror quotations must demonstrate meeting the salient physical, functional, or performance characteristic specified in this solicitation, otherwise it will be considered non-responsive.",
+        "start_char": 1266,
+        "end_char": 1453,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "If providing an equivalent product, offerors shall either provide information regarding how their product meets the salient characteristics or alternatively may state where in the offeror’s overall submission that information can be found.",
+        "start_char": 4647,
+        "end_char": 4886,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Lowest priced quotation that meets all salient characteristics in attachment B and (any other stated requirements such as additional delivery requirements) that is both responsive and responsible.",
+        "start_char": 5265,
+        "end_char": 5461,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Submissions to this solicitation must show clear, compelling and convincing evidence that equal-to items meet all the salient characteristics (see Attachment A and B).",
+        "start_char": 5695,
+        "end_char": 5862,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must—",
+        "start_char": 7448,
+        "end_char": 7568,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(1) Meet the salient physical, functional, or performance characteristic specified in this solicitation;",
+        "start_char": 7569,
+        "end_char": 7673,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "78318e93-cc3c-478d-ba73-e5575baf1dd6",
+    "text": "Quotations must be submitted electronically via email to Rochelle.Malveaux@va.gov, including the solicitation number in the subject line, no later than Thursday, August 27th, 2026, at 9:00am PT.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Delivery Timeframe shall be 30 Days ARO.",
+        "start_char": 2095,
+        "end_char": 2139,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All offeror quotes for this solicitation must be received electronically through email no later than Thursday, August 27th, 2026 9:00am PT.",
+        "start_char": 2291,
+        "end_char": 2430,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure to reference solicitation number [36C26226Q1367] within subject line of the email.",
+        "start_char": 2431,
+        "end_char": 2520,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offers shall be sent by email to Rochelle.Malveaux@va.gov",
+        "start_char": 2793,
+        "end_char": 2850,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "89d4e2fd-ab3a-47a7-907e-519e82842300",
+    "text": "Offerors must provide vendor information including SAM UEI, indicate business size (small or large), and ensure SAM.gov is updated with current representations and certifications (including 52.212-3).",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Vendor Information with SAM UEI.",
+        "start_char": 2923,
+        "end_char": 2955,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offeror must indicate whether the items are manufactured by a small or large business",
+        "start_char": 4238,
+        "end_char": 4323,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Must include a completed copy of the provision at 52.212-3 -- Offeror Representations and Certifications -- Commercial Items, with this solicitation or ensure SAM.gov is updated with current information.",
+        "start_char": 6559,
+        "end_char": 6762,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Small Business Status:\nThe Contractor qualifies as a small business under the SBA size standards.",
+        "start_char": 18087,
+        "end_char": 18184,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Source of Supply:\nThe Contractor will supply the product of a small business manufacturer or processor, unless a waiver of this requirement has been granted by the SBA.",
+        "start_char": 18439,
+        "end_char": 18607,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d900cf43-37c1-4f44-99ec-7e2f0ae24c76",
+    "text": "The offeror must comply with all specified solicitation requirements, including FOB destination, manufacturer/part number identification, authorized distributor verification, Buy American Act compliance, non-gray market/remanufactured items, and adherence to OEM terms and conditions for software and service.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Concurrence/non-concurrence with solicitation terms, conditions, and provisions",
+        "start_char": 2961,
+        "end_char": 3040,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Items shall be FOB destination.",
+        "start_char": 3046,
+        "end_char": 3077,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Please specify offered item manufacturer and part number.",
+        "start_char": 3079,
+        "end_char": 3136,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Provide an Authorized Distributor Letter/Memo from the manufacturer.",
+        "start_char": 3142,
+        "end_char": 3210,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Ensure the following are completed and/or included in the quote packet:",
+        "start_char": 2851,
+        "end_char": 2922,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Product must comply with the Buy American Act; Trade Agreement Act and all other clauses found in the FAR and any agency-specific regulations that are relevant and specific to this solicitation",
+        "start_char": 3216,
+        "end_char": 3409,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Please include a Country of Origin for the items being offered (see column A)",
+        "start_char": 4031,
+        "end_char": 4108,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offerors shall provide verification that their items are not Gray Market such as examples on Page 4, section Gray Market",
+        "start_char": 4113,
+        "end_char": 4233,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offeror must indicate whether the items are manufactured by a small or large business",
+        "start_char": 4238,
+        "end_char": 4323,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All items must be listed on FSS contract if vendor is an FSS contract holder: please list number and expiration date if applicable",
+        "start_char": 4328,
+        "end_char": 4458,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Offerors shall fill out columns “F-K” of Attachment A conforming to requirements stated by the salient characteristics which includes exact measurements and the instructions below.",
+        "start_char": 4463,
+        "end_char": 4643,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "To be considered for award, offers of “equal” products, including “equal” products of the brand name manufacturer, must—",
+        "start_char": 7448,
+        "end_char": 7568,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(2) Clearly identify the item by—",
+        "start_char": 7674,
+        "end_char": 7707,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(i) Brand name, if any; and",
+        "start_char": 7708,
+        "end_char": 7735,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(ii) Make or model number;",
+        "start_char": 7736,
+        "end_char": 7762,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(3) Include descriptive literature such as illustrations, drawings, or a clear reference to previously furnished descriptive data or information available to the Contracting Officer; and",
+        "start_char": 7763,
+        "end_char": 7949,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(4) Clearly describe any modification the offeror plans to make in a product to make it conform to the solicitation requirements. Mark any descriptive material to clearly show the modification.",
+        "start_char": 7950,
+        "end_char": 8143,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Unless the offeror clearly indicates in its offer that the product being offered is an “equal” product, the offeror shall provide the brand name product referenced in the solicitation.",
+        "start_char": 8454,
+        "end_char": 8638,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "No remanufactures or gray market items will be acceptable.",
+        "start_char": 9013,
+        "end_char": 9071,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Vendor shall be an OEM, authorized dealer, authorized distributor or authorized reseller for the proposed medical supplies, medical equipment and/or services contracts for maintenance of medical equipment (i.e. replacement parts), verified by an authorization letter or other documents from the OEM, such that the OEM’s warranty and service are provided and maintained by the OEM.",
+        "start_char": 9076,
+        "end_char": 9456,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All software licensing, warranty and service associated with the medical supplies, medical equipment and/or services contracts for maintenance of medical equipment shall be in accordance with the OEM terms and conditions.",
+        "start_char": 9457,
+        "end_char": 9678,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "A commercial product (as defined in paragraph (1) of the definition of “commercial product” at Federal Acquisition Regulation (FAR) 2.101);\n(ii) Sold in substantial quantities in the commercial marketplace; and\n(iii) Offered to the Government, under a contract or subcontract at any tier, without modification, in the same form in which it is sold in the commercial marketplace; and\n(2) Does not include bulk cargo, as defined in 46 U.S.C. 40102(4), such as agricultural products and petroleum products.",
+        "start_char": 10354,
+        "end_char": 10857,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The cost of its components mined, produced, or manufactured in the United States exceeds 60 percent of the cost of all its components, except that the percentage will be 65 percent for items delivered in calendar years 2024 through 2028 and 75 percent for items delivered starting in calendar year 2029.",
+        "start_char": 12085,
+        "end_char": 12388,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(B) The end product is a COTS item; or\n(2) For an end product that consists wholly or predominantly of iron or steel or a combination of both, an end product manufactured in the United States, if the cost of foreign iron and steel constitutes less than 5 percent of the cost of all the components used in the end product. The cost of foreign iron and steel includes but is not limited to the cost of foreign iron or steel mill products (such as bar, billet, slab, wire, plate, or sheet), castings, or forgings utilized in the manufacture of the end product and a good faith estimate of the cost of all foreign iron or steel components excluding COTS fasteners. Iron or steel components of unknown origin are treated as foreign. If the end product contains multiple components, the cost of all the materials used in such end product is calculated in accordance with the definition of \"cost of compone",
+        "start_char": 12790,
+        "end_char": 13689,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Predominantly of iron or steel or a combination of both means that the cost of the iron and steel content exceeds 50 percent of the total cost of all its components.",
+        "start_char": 14534,
+        "end_char": 14699,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The cost of iron and steel is the cost of the iron or steel mill products (such as bar, billet, slab, wire, plate, or sheet), castings, or forgings utilized in the manufacture of the product and a good faith estimate of the cost of iron or steel components excluding COTS fasteners.",
+        "start_char": 14700,
+        "end_char": 14982,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Steel means an alloy that includes at least 50 percent iron, between 0.02 and 2 percent carbon, and may include other elements.",
+        "start_char": 14983,
+        "end_char": 15110,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(b) 41 U.S.C. chapter 83, Buy American, provides a preference for domestic end products for supplies acquired for use in the United States. In accordance with 41 U.S.C. 1907, the domestic content test of the Buy American statute is waived for an end product that is a COTS item (see 12.505(a)(1)), except that for an end product that consists wholly or predominantly of iron or steel or a combination of both, the domestic content test is applied only to the iron and steel content of the end product, excluding COTS fasteners.",
+        "start_char": 15192,
+        "end_char": 15719,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(c) Offerors may obtain from the Contracting Officer a list of foreign articles that the Contracting Officer will treat as domestic for this contract.",
+        "start_char": 15720,
+        "end_char": 15870,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Offeror certifies that each end product, except those listed in paragraph (b) of this provision, is a domestic end product and that each domestic end product listed in paragraph (c) of this provision contains a critical component.",
+        "start_char": 16149,
+        "end_char": 16383,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products.",
+        "start_char": 16388,
+        "end_char": 16533,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "For those foreign end products that do not consist wholly or predominantly of iron or steel or a combination of both, the Offeror shall also indicate whether these foreign end products exceed 55 percent domestic content, except for those that are COTS items.",
+        "start_char": 16534,
+        "end_char": 16792,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "If the percentage of the domestic content is unknown, select “no”.",
+        "start_char": 16793,
+        "end_char": 16859,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Offeror shall separately list the line item numbers of domestic end products that contain a critical component (see FAR 25.105).",
+        "start_char": 16864,
+        "end_char": 16996,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(d) The Government will evaluate offers in accordance with the policies and procedures of part  25 of the Federal Acquisition Regulation.",
+        "start_char": 17601,
+        "end_char": 17738,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Non-Manufacturer Status:\nThe Contractor is primarily engaged in the retail or wholesale trade and normally supplies the type of product being provided in this contract.",
+        "start_char": 18185,
+        "end_char": 18353,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Contractor does not manufacture the products being supplied under this contract.",
+        "start_char": 18354,
+        "end_char": 18438,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The products supplied will be manufactured or produced in the United States, unless an exception is permitted by applicable regulations.",
+        "start_char": 18900,
+        "end_char": 19036,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Documentation and Compliance:\nThe Contractor agrees to maintain and provide documentation that verifies compliance with the NMR, upon request by the Contracting Officer or the SBA.",
+        "start_char": 19037,
+        "end_char": 19217,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Contractor will flow down this certification requirement to any subcontractors where applicable.",
+        "start_char": 19218,
+        "end_char": 19318,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "By entering into this contract, the Contractor certifies that:",
+        "start_char": 18024,
+        "end_char": 18086,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "No Alteration of Goods:\nThe Contractor will not alter, modify, repackage, or rebrand the products supplied under this contract.",
+        "start_char": 19319,
+        "end_char": 19446,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Contractor will not alter, modify, repackage, or rebrand the products supplied under this contract.",
+        "start_char": 19343,
+        "end_char": 19446,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The Contractor has made this certification at the time of submitting the offer in response to the solicitation.",
+        "start_char": 19472,
+        "end_char": 19583,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "All information provided in this certification is accurate and truthful to the best of the Contractor’s knowledge and belief.",
+        "start_char": 19584,
+        "end_char": 19709,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b6ea2c0d-92ea-486f-b3c7-80e63b577aed",
+    "text": "The Government may accept an offer within the specified time, and a written notice of award results in a binding contract.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "(b) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance specified with a minimum of at least sixty days, shall result in a binding contract without further action by either party.",
+        "start_char": 6042,
+        "end_char": 6309,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "Before the offer’s specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award.",
+        "start_char": 6310,
+        "end_char": 6534,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f5745b22-19ec-46e8-883e-f55b5c197d40",
+    "text": "The clauses 52.212-4 and 52.212-5 apply to this acquisition.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The clause at 52.212-4, Contract Terms and Conditions -- Commercial Items, applies to this acquisition.",
+        "start_char": 6769,
+        "end_char": 6872,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "The clause at 52.212-5, Contract Terms and Conditions Required To Implement Statutes Or Executive Orders -- Commercial Items, applies to this acquisition.",
+        "start_char": 6880,
+        "end_char": 7034,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ca97aaec-5c3d-4ea7-87bc-6c062b7a828f",
+    "text": "The following FAR/VA/852 series clauses and provisions are incorporated by reference into this solicitation/contract:",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.209-6 | Protecting the government’s interest when subcontracting with contractors debarred, suspended, or proposed for debarment | Aug 2013",
+        "start_char": 20521,
+        "end_char": 20663,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.232-18 | Availability of Funds | Apr 1984",
+        "start_char": 20664,
+        "end_char": 20708,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.232-33 | Payment by electronic funds transfer – system for award management | Jul 2013",
+        "start_char": 20709,
+        "end_char": 20798,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.232-40 | Providing accelerated payments to small business subcontractors | Dec 2013",
+        "start_char": 20799,
+        "end_char": 20885,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.233-1 | Disputes | May 2014",
+        "start_char": 20886,
+        "end_char": 20916,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.233-3 | Protest after award | Aug 1996",
+        "start_char": 20917,
+        "end_char": 20958,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.252-2 | Clauses incorporated by reference | Feb 1998",
+        "start_char": 20959,
+        "end_char": 21014,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.203-70 | Commercial advertising | Jan 2008",
+        "start_char": 21015,
+        "end_char": 21061,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.232-72 | Electronic submission of payment requests | Nov 2012",
+        "start_char": 21062,
+        "end_char": 21127,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.237-70",
+        "start_char": 21128,
+        "end_char": 21138,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.219-78 | Contractor responsibilities \nNotice of Limitations on Subcontracting – Supplies and Services | Apr 1984",
+        "start_char": 21139,
+        "end_char": 21255,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.219-73 | VA Notice of Total Set-Aside For Certified Service-Disabled Veteran-Owned Small Businesses | Jan 2023",
+        "start_char": 21256,
+        "end_char": 21370,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.204-7 | System for Award Management | Oct 2018",
+        "start_char": 21584,
+        "end_char": 21633,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.204-16 | Commercial and Government Entity Code Reporting | Oct 2016",
+        "start_char": 21634,
+        "end_char": 21704,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.209-7 | Information Regarding Responsibility Matters | Oct 2018",
+        "start_char": 21705,
+        "end_char": 21771,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.217-5 | Evaluation of Options | Jul 1990",
+        "start_char": 21772,
+        "end_char": 21815,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "52.233-2 | Service of Protest | Sep 2006",
+        "start_char": 21816,
+        "end_char": 21856,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.233-70 | Protest Content/Alternative Dispute Resolution | Oct 2018",
+        "start_char": 21857,
+        "end_char": 21927,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "852.252-70 | Solicitation Provisions or Clauses Incorporated by Reference | Jan 2008",
+        "start_char": 21928,
+        "end_char": 22012,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "b16450da-0bea-4fa9-9976-ff027b331794",
+    "text": "Products must comply with the specified IEC, CAN/CSA, and AAMI medical safety and performance standards.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012, IEC 60601-1:200 5/AMD2:202",
+        "start_char": 2637,
+        "end_char": 2709,
+        "citation_verified": true,
+        "match_precision": "fuzzy",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "CAN/CSA-C22.2 No. 60601-1:08, CAN/CSA-C22.2 No. 60601-1:14 (i ncluding amendment 1) and Amendment 2:2022 (MOD) to\nCAN/CSA-C22.2 No. 60601-1:14",
+        "start_char": 2713,
+        "end_char": 2855,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "AAMI ES60601-1:2005, ES60601-1:2005/AMD1 1:2012 , ES60601-1:2 005/AMD2:2021",
+        "start_char": 2858,
+        "end_char": 2933,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "IEC 60601-1-6:2010, IEC 60601-1-6:2010/AMD1:2013, IEC 60601-1 -6:2010/AMD2:2020 for use in conjunction with IEC\n62366-1:2015, IEC 62366-1:2015/AMD1:2020, and IEC 60601-1:200 5, IEC 60601-1:2005/AMD1:2012, IEC 60601-1:2005/AMD2:2020",
+        "start_char": 2936,
+        "end_char": 3167,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "IEC 60601-1-2:2014, AMD1:2020",
+        "start_char": 3168,
+        "end_char": 3197,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "180f374d-67c8-4859-819d-04d5c420b869",
+    "text": "United States means the 50 States, the District of Columbia, and outlying areas.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/RFQ+36C26226Q1367+Echo+Bed+Brand+Name+or+Equal.docx",
+        "quote": "United States means the 50 States, the District of Columbia, and outlying areas.",
+        "start_char": 15111,
+        "end_char": 15191,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "43e32f13-83c6-4b58-9230-4f9e0cc4069d",
+    "text": "Weight capacity: Standard models up to 750 lbs, with bariatric-rated versions supporting up to 1,250 lbs with a 500 lb powered lift.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Bariatric-rated load capacity: Supports up to 1,250 lbs with a 500 lb powered lift for stability and strength during complex exams",
+        "start_char": 417,
+        "end_char": 547,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Patient weight capacity: Up to 750 lbs on standard EchoBed® models, with bariatric-rated versions for heavier patients",
+        "start_char": 712,
+        "end_char": 830,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f32b9063-b39a-4ea7-ba05-05d96ce5c5a6",
+    "text": "ADA-compliant low-entry height: 17\" to 19\" (or 19\"-37\" on some models) to accommodate wheelchair transfers and mobility challenges.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "ADA-compliant low-entry height: Entry heights from 17\" to 19\" (or 19\"–37\" on some models) to accommodate wheelchair transfers and patients with mobility challenges",
+        "start_char": 548,
+        "end_char": 711,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a491604c-45ba-4c68-b383-683934f3f2d7",
+    "text": "Four flexible hand control storage loops.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "4 FLEXIBLE HAND CONTROL STORAGE LOOPS",
+        "start_char": 831,
+        "end_char": 868,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "425db30b-7574-4b0a-9373-b1048083f751",
+    "text": "Electric locking casters for smooth movement and stability.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "ELECTRIC LOCKING CASTERS",
+        "start_char": 869,
+        "end_char": 893,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Electric locking casters for smooth movement and stability",
+        "start_char": 2244,
+        "end_char": 2302,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "923a697a-6bf4-43ee-a821-880301b6de0f",
+    "text": "Patient surface footprint: 30\"W x 83\"L.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "PATIENT SURFACE FOOTPRINT 30\"Wx83\"L",
+        "start_char": 894,
+        "end_char": 929,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "138d96e3-4d4f-4d7b-894b-4a9e7da94063",
+    "text": "Electrically adjustable Fowler backrest positioning.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Electrically adjustable Fowler backrest: Positionable from 0° to 65° (or 0–80° on some variants) to support natural body extension and reduce strain",
+        "start_char": 955,
+        "end_char": 1103,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "ELECTRIC PATIENT BACK SUPPORT POSITIONING",
+        "start_char": 1388,
+        "end_char": 1429,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "92c78af3-b451-4ee7-9ebe-d07dc9a3f79d",
+    "text": "Trendelenburg and Reverse Trendelenburg tilt capability for enhanced imaging access.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Trendelenburg/Reverse Trendelenburg: Adjustable tilt for specific imaging angles; +/-15° TRENDELENBURG POSITIONING",
+        "start_char": 1104,
+        "end_char": 1218,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Trendelenburg capability on certain models for enhanced imaging access",
+        "start_char": 1317,
+        "end_char": 1387,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "180dc925-2825-482d-971b-d94aed09f880",
+    "text": "Height adjustment range (e.g., 24\"-34\") for optimal sonographer access.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Height adjustment: Adjustable range (e.g., 24\"–34\" on many models) for optimal sonographer access",
+        "start_char": 1219,
+        "end_char": 1316,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "daaf32ba-af68-40e9-8d08-b40c7c08205e",
+    "text": "Dual rapid release imaging drop sections or wall-ways models for left, right, or multi-access scanning.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Dual rapid release imaging drop sections or wall-ways models for left, right, or multi-access scanning",
+        "start_char": 1461,
+        "end_char": 1563,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Dual rapid release imaging drop sections or wall-ways models for left, right, or multi-access scanning",
+        "start_char": 1461,
+        "end_char": 1563,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "977141f6-874a-4ffb-b83f-caa5455f4142",
+    "text": "Standard 14\" x 14\" drop section to reduce repositioning during exams.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Standard 14\" x 14\" drop section to reduce repositioning during exams",
+        "start_char": 1564,
+        "end_char": 1632,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Standard 14\" x 14\" drop section to reduce repositioning during exams",
+        "start_char": 1564,
+        "end_char": 1632,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "54f7c156-f113-4d7e-895b-78c101c38318",
+    "text": "Open apical window with a large cardiac scanning cutout (e.g., 9.5\"W x 15.75\"L) for unobstructed imaging.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Open apical window with large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging",
+        "start_char": 1633,
+        "end_char": 1737,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Open apical window with large cardiac scanning cutout (e.g., 9.5\" W x 15.75\" L) for unobstructed imaging",
+        "start_char": 1633,
+        "end_char": 1737,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a965c195-1238-42d3-98e7-21625176fc3f",
+    "text": "Drop-down cushion that releases from either side for barrier-free access.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Drop-down cushion that releases from either side for barrier-free access",
+        "start_char": 1738,
+        "end_char": 1810,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0c213f08-13dd-4450-bf47-fc2860f41da0",
+    "text": "Memory hand controller with programmable positions and optional foot control.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Memory hand controller with programmable positions; optional foot control for hands-free operation",
+        "start_char": 1840,
+        "end_char": 1938,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "3f42bf60-4d7b-4296-8b37-140bab0381cf",
+    "text": "Single-pedal brake and steering for mobility.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Single-pedal brake and steering for mobility",
+        "start_char": 1939,
+        "end_char": 1983,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1ec52907-b6ff-4535-be03-b5957a7c76bc",
+    "text": "Protective corner bumpers and optional collapsible/removable side rails.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Protective corner bumpers and optional collapsible/removable side rails",
+        "start_char": 1984,
+        "end_char": 2055,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c23b018c-eab7-47f8-bca6-5a66445d7995",
+    "text": "Integrated conveniences: IV pole holder, storage tray, paper roll holder with cutter.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Integrated conveniences: IV pole holder, storage tray, paper roll holder with cutter",
+        "start_char": 2056,
+        "end_char": 2140,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "03810f13-bde6-40a8-8c07-0660974a125c",
+    "text": "Naugahyde antimicrobial mattress cover for patient comfort and infection control.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Naugahyde® antimicrobial mattress cover for patient comfort and infection control",
+        "start_char": 2141,
+        "end_char": 2222,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "76034980-ca33-48c9-baae-7fe35a7f512a",
+    "text": "Central floor-locking system to maintain table stability during imaging.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Central floor-locking system to maintain table stability during imaging",
+        "start_char": 2303,
+        "end_char": 2374,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "9b975336-3de1-448a-8c21-a95ee88150fa",
+    "text": "Designed for echocardiography and other ultrasound applications (stress echo, transesophageal echo, and general cardiac imaging).",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C26226Q1367/ATTACHMENT+B+-+SALIENT+CHARACTERISTICS+ECHO+BED.docx",
+        "quote": "Designed for echocardiography, but also suitable for other ultrasound applications such as stress echo, transesophageal echo, and general cardiac imaging",
+        "start_char": 2388,
+        "end_char": 2541,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]
