@@ -118,9 +118,6 @@ def test_embedding_text_falls_back_to_full_text_without_citations() -> None:
 
 
 def test_citation_overlap_merges_drafts_with_overlapping_spans() -> None:
-    # Same physical requirement extracted twice from overlapping chunks
-    # (chunk_overlap duplication) -- their citation spans overlap in the
-    # source document even though the exact quoted text may differ.
     drafts = [
         _draft("draft_a", "text a", start_char=100, end_char=200),
         _draft("draft_b", "text b", start_char=150, end_char=250),
@@ -144,10 +141,6 @@ def test_citation_overlap_keeps_non_overlapping_spans_separate() -> None:
 
 
 def test_citation_overlap_ignores_shared_lead_in_between_requirements() -> None:
-    # Several genuinely different requirements can share one lead-in
-    # sentence (e.g. "the Government will not enter into a contract
-    # with any corporation that--" followed by unrelated conditions).
-    # A shared lead-in span must never make them look like duplicates.
     shared_lead_in = TextSpan(
         document_path="tender.txt",
         quote="shared lead-in",
@@ -192,8 +185,6 @@ def test_citation_overlap_ignores_shared_lead_in_between_requirements() -> None:
 
 
 def test_citation_overlap_requires_minimum_overlap_ratio() -> None:
-    # A marginal touch between two adjacent-but-distinct requirements'
-    # spans must not count as the same physical mention.
     drafts = [
         _draft("draft_a", "text a", start_char=100, end_char=200),
         _draft("draft_b", "text b", start_char=195, end_char=300),
@@ -224,8 +215,6 @@ def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> N
 
 
 def test_merge_citation_overlap_clusters_keeps_containing_span_text() -> None:
-    # A span fully contained in another contributes nothing new to the
-    # union, so the containing span's own text is the result.
     drafts = [
         _draft("draft_a", "truncated text", start_char=150, end_char=200),
         _draft("draft_b", "the complete text", start_char=100, end_char=250),
@@ -238,8 +227,6 @@ def test_merge_citation_overlap_clusters_keeps_containing_span_text() -> None:
 
 
 def test_merge_citation_overlap_clusters_unions_partially_overlapping_spans() -> None:
-    # Neither span fully contains the other, so merging must keep both
-    # spans' exclusive content instead of discarding one of them.
     drafts = [
         _draft("draft_a", "A" * 100, start_char=0, end_char=100),
         _draft("draft_b", "B" * 100, start_char=50, end_char=150),
