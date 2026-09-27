@@ -254,24 +254,47 @@ def _resolve_cluster(
     return resolved_drafts
 
 
-def _widest_matching_span_length(draft: RequirementDraft) -> int:
-    widest = 0
-    for citation in _matching_citations(draft):
+def _sorted_matching_citations(
+    drafts: list[RequirementDraft],
+    cluster_indices: list[int],
+) -> list[TextSpan]:
+    citations = []
+    for index in cluster_indices:
+        citations.extend(_matching_citations(drafts[index]))
+    return sorted(
+        (c for c in citations if c.start_char is not None),
+        key=lambda span: (span.start_char, span.end_char),
+    )
+
+
+def _union_span_text(citations: list[TextSpan]) -> str:
+    pieces: list[str] = []
+    covered_end: int | None = None
+    for citation in citations:
         if citation.start_char is None or citation.end_char is None:
             continue
-        widest = max(widest, citation.end_char - citation.start_char)
-    return widest
+        if covered_end is None:
+            pieces.append(citation.quote)
+            covered_end = citation.end_char
+            continue
+        if citation.end_char <= covered_end:
+            continue
+        new_portion_start = max(0, covered_end - citation.start_char)
+        pieces.append(citation.quote[new_portion_start:])
+        covered_end = citation.end_char
+    return "".join(pieces)
 
 
-def _widest_citation_draft_text(
+def _citation_overlap_canonical_text(
     drafts: list[RequirementDraft],
     cluster_indices: list[int],
 ) -> str:
-    widest_index = max(
-        cluster_indices,
-        key=lambda index: _widest_matching_span_length(drafts[index]),
-    )
-    return drafts[widest_index].text
+    if len(cluster_indices) == 1:
+        return drafts[cluster_indices[0]].text
+    citations = _sorted_matching_citations(drafts, cluster_indices)
+    if not citations:
+        return drafts[cluster_indices[0]].text
+    return _union_span_text(citations)
 
 
 def _merge_citation_overlap_clusters(
@@ -280,7 +303,9 @@ def _merge_citation_overlap_clusters(
 ) -> list[RequirementDraft]:
     merged_drafts = []
     for cluster_indices in clusters:
-        canonical_text = _widest_citation_draft_text(drafts, cluster_indices)
+        canonical_text = _citation_overlap_canonical_text(
+            drafts, cluster_indices
+        )
         merged_drafts.append(
             _resolve_group(drafts, cluster_indices, canonical_text)
         )
