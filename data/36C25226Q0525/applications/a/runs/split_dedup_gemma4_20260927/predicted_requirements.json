@@ -1,0 +1,506 @@
+[
+  {
+    "requirement_id": "949c22b6-8304-48ea-941b-2b0de3ccf5eb",
+    "text": "Contractor shall provide all labor, materials, equipment, and tools necessary to clean grease traps and to remove and dispose of grease in accordance with the Performance Work Statement and all Federal, State, and Local regulations; grease traps shall be cleaned after removal of grease is completed.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Contractor shall provide \nall labor, materials, equipment, and tools necessary to clean grease \ntraps and to dispose of grease in accordance with the Performance \nWork Statement.",
+        "start_char": 1024,
+        "end_char": 1202,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Contractor shall provide all labor, materials, equipment, and tools necessary to clean grease traps and to \ndispose of grease.",
+        "start_char": 2142,
+        "end_char": 2268,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Clean grease traps after removal of grease is completed.",
+        "start_char": 3010,
+        "end_char": 3066,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Each service inspection shall require contractor to:",
+        "start_char": 2874,
+        "end_char": 2926,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Remove and dispose of grease per all Federal, State and Local regulations.",
+        "start_char": 2931,
+        "end_char": 3005,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1ab99050-9292-4882-b280-89e3f972468e",
+    "text": "Each service inspection shall require contractor to: ... Clean grease traps after removal of grease is completed.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Each service inspection shall require contractor to:",
+        "start_char": 2874,
+        "end_char": 2926,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Clean grease traps after removal of grease is completed.",
+        "start_char": 3010,
+        "end_char": 3066,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "a4928b9a-ebde-4625-8a95-2b9452f5f279",
+    "text": "The contractor is responsible for transporting the waste to an \noffsite location.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The contractor is responsible for transporting the waste to an \noffsite location.",
+        "start_char": 3903,
+        "end_char": 3984,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "63408f14-d877-411c-bc28-928d7fa77e2d",
+    "text": "Please provide the number, location, type, rated capacity, approximate current \ncontents, and required cleaning frequency of each grease trap or interceptor.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Please provide the number, location, type, rated capacity, approximate current \ncontents, and required cleaning frequency of each grease trap or interceptor.",
+        "start_char": 4073,
+        "end_char": 4230,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d1dc2eaa-005e-43ad-920b-b8009d16ca75",
+    "text": "Please also \nspecify required service documentation, including disposal manifests, volume tickets, \nphotographs, and inspection reports.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Please also \nspecify required service documentation, including disposal manifests, volume tickets, \nphotographs, and inspection reports.",
+        "start_char": 4231,
+        "end_char": 4367,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "cf282800-64a4-4cfd-9328-4e83bdd80f1d",
+    "text": "Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that, if awarded a contract, it will comply with the limitations on subcontracting as specified in the solicitation, this clause, and the resultant contract, and further certifies that the individual signing the certification is authorized to execute it on behalf of the offeror.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "(a) Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that—",
+        "start_char": 4806,
+        "end_char": 4871,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "If awarded a contract (see FAR 2.101 definition), it will comply with the limitations on \nsubcontracting requirement as provided in the solicitation and the resultant contract, as follows:",
+        "start_char": 4881,
+        "end_char": 5069,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "I hereby certify that if awarded the contract, [insert name of offeror] will comply with the limitations on",
+        "start_char": 9323,
+        "end_char": 9430,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "I hereby certify that if awarded the contract, [insert name of offeror] will comply with the limitations on \nsubcontracting specified in this clause and in the resultant contract. I further certify that I am authorized to \nexecute this certification on behalf of [insert name of offeror]. \nPrinted Name of Signee: ________________________________ \nPrinted Title of Signee: _________________________________ \nSignature: ____________________________________________ \nDate: ______________ \nCompany Name and Address: ________________________________________________________",
+        "start_char": 9323,
+        "end_char": 9892,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Complete certification for Clause 852.219-75 VA Notice of Limitations on Subcontracting—\nCertificate of Compliance for Services and Construction (for SDVOSB/VOSB set-asides or \nwhen using SDVOSB and VOSB small business evaluation factors under clause 852-215-70), \nif included in Section C.",
+        "start_char": 11663,
+        "end_char": 11953,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "d67166b0-ea0c-4b26-8945-eb7e25d7a28e",
+    "text": "Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that in the case of a contract for services (except construction), the contractor will not pay more than 50% of the amount paid by the the government to it to firms that are not certified SDVOSBs listed in the SBA certification database as set forth in 852.219-73 or certified VOSBs listed in the SBA certification database as set forth in 852.219-74; in the case of a contract for general construction, the contractor will not pay more than 85% of the amount paid by the government to it to firms that are not certified SDVOSBs listed in the SBA certification database as set forth in 852.219-73 or certified VOSBs listed in the in the SBA certification database as set forth in 852.219-74; and in the case of a contract for special trade contractors, the contractor will not pay more than 75% of the amount paid by the government to it to firms that are not certified SDVOSBs listed in the SBA certification database as set forth in 852.219-73 or certified VOSBs listed in the SBA certification database as set forth in 852.219-74. For all such contracts, any work that a similarly situated certified SDVOSB/VOSB subcontractor further subcontracts will count towards the respective subcontracting percentage limit that cannot be exceeded. For service contracts (except construction), other direct costs may be excluded to the extent they are not the principal purpose of the acquisition and small business concerns do not provide the service as set forth in 13 CFR 125.6. For general construction contracts, the cost of materials are excluded and not considered to be subcontracted.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "(a) Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that—",
+        "start_char": 4806,
+        "end_char": 4871,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "[X] Services. In the case of a contract for services (except construction), the contractor will not pay \nmore than 50% of the amount paid by the government to it to firms that are not certified SDVOSBs listed \nin the SBA certification database as set forth in 852.219–73 or certified VOSBs listed in the SBA \ncertification database as set forth in 852.219–74. Any work that a similarly situated certified \nSDVOSB/VOSB subcontractor further subcontracts will count towards the 50% subcontract amount that \ncannot be exceeded. Other direct costs may be excluded to the extent they are not the principal purpose of \nthe acquisition and small business concerns do not provide the service as set forth in 13 CFR 125.6.",
+        "start_char": 5081,
+        "end_char": 5794,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "(a) Pursuant to 38 U.S.C. 8127(l)(2), the offeror certifies that—",
+        "start_char": 4806,
+        "end_char": 4871,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "[] General construction. In the case of a contract for general construction, the contractor will not \npay more than 85% of the amount paid by the government to it to firms that are not certified SDVOSBs \nlisted in the SBA certification database as set forth in 852.219–73 or certified VOSBs listed in the SBA \ncertification database as set forth in 852.219–74. Any work that a similarly situated certified \nSDVOSB/VOSB subcontractor further subcontracts will count towards the 85% subcontract amount that \ncannot be exceeded. Cost of materials are excluded and not considered to be subcontracted.",
+        "start_char": 5807,
+        "end_char": 6403,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "In the case of a contract for special trade contractors, \nthe contractor will not pay more than 75% of the amount paid by the government to it to firms that are not \ncertified SDVOSBs listed in the SBA certification database as set forth in 852.219–73 or certified VOSBs \nlisted in the SBA certification database as set forth in 852.219–74.",
+        "start_char": 6460,
+        "end_char": 6800,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Any work that a similarly situated \ncertified SDVOSB/VOSB subcontractor further subcontracts will count towards the 75% subcontract \namount that cannot be exceeded.",
+        "start_char": 6801,
+        "end_char": 6965,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "1e86db52-b939-41dd-808b-2069f40cd99e",
+    "text": "Cost of materials are excluded and not considered to be subcontracted.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Cost of materials are excluded and not considered to be subcontracted.",
+        "start_char": 6333,
+        "end_char": 6403,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "c7e64775-8f19-46be-9680-2381a8aaadee",
+    "text": "The formal certification must be completed, signed \nand returned with the offeror’s bid, quotation, or proposal.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The formal certification must be completed, signed \nand returned with the offeror’s bid, quotation, or proposal.",
+        "start_char": 9014,
+        "end_char": 9126,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "daf47df5-8c18-4e25-8ae1-adde16aadd2c",
+    "text": "All SDVOSBs submitting quotes must be listed as certified by the Small \nBusiness Administration on its Small Business Search website, available at SBA: Small Business \nSearch, to have their quotes considered, in accordance with VAAR 819.7003.",
+    "is_mandatory": false,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "All SDVOSBs submitting quotes must be listed as certified by the Small \nBusiness Administration on its Small Business Search website, available at SBA: Small Business \nSearch, to have their quotes considered, in accordance with VAAR 819.7003.",
+        "start_char": 10642,
+        "end_char": 10884,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "39b9a3b1-387c-4c00-9366-213f9c381a5e",
+    "text": "Quotes must be complete, \nself-sufficient, and respond directly to the requirements of this solicitation.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Quotes must be complete, \nself-sufficient, and respond directly to the requirements of this solicitation.",
+        "start_char": 11141,
+        "end_char": 11246,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0c607fee-3e9e-48a2-afcb-1da66cd18fa0",
+    "text": "Acknowledgement of Amendments (if any) on page 2.",
+    "is_mandatory": false,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Acknowledgement of Amendments (if any) on page 2.",
+        "start_char": 11571,
+        "end_char": 11620,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "5f0ae325-2683-4ae7-9b7f-490a1e6237e2",
+    "text": "Contractor information on page 2.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Contractor information on page 2.",
+        "start_char": 11625,
+        "end_char": 11658,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "ed902202-3a58-4ead-942b-d542e68cfc12",
+    "text": "The Offeror shall describe its technical approach to performing the \nrequired grease trap cleaning services.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The Offeror shall describe its technical approach to performing the \nrequired grease trap cleaning services.",
+        "start_char": 12937,
+        "end_char": 13045,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "0f122666-bfcb-4ac4-a64b-5d9889ee3c6d",
+    "text": "The quotation shall identify the work to be performed by the \nprime contractor and any proposed subcontractors, including their respective roles and \nresponsibilities.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The quotation shall identify the work to be performed by the \nprime contractor and any proposed subcontractors, including their respective roles and \nresponsibilities.",
+        "start_char": 13046,
+        "end_char": 13213,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "6a5fe853-7f4f-4348-a664-5a021d2055aa",
+    "text": "The Offeror shall demonstrate that its proposed approach is consistent with the \napplicable limitations on subcontracting requirements for this SDVOSB set-aside.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The Offeror shall demonstrate that its proposed approach is consistent with the \napplicable limitations on subcontracting requirements for this SDVOSB set-aside.",
+        "start_char": 13214,
+        "end_char": 13375,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "4300e10b-a342-4231-a698-2ecdb636303d",
+    "text": "Submit information, if any, of contracts providing services similar to the requirements of this Contract, particularly if that experience is at a VA facility. Information shall include the contract number, size/scope of each contract, the total number of years of experience providing such services, and when those services were provided.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Submit information, if any, of contracts providing services similar \nto the requirements of this Contract, particularly if that experience is at a VA facility. Information \nshall include the contract number, size/scope of each contract, the total number of years of experience \nproviding such services, and when those services were provided.",
+        "start_char": 13409,
+        "end_char": 13750,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Information \nshall include the contract number, size/scope of each contract, the total number of years of experience \nproviding such services, and when those services were provided.",
+        "start_char": 13569,
+        "end_char": 13750,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "eb57f735-aaed-4a2c-96e3-511ba64c0ea5",
+    "text": "Provide up to three (3) service calls per contract year to pump the lift station located in Building 410.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Provide up to three (3) service calls per contract year to pump lift station",
+        "start_char": 3073,
+        "end_char": 3149,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Provide up to three (3) service calls per contract year to pump lift station located in Building \n410.",
+        "start_char": 3073,
+        "end_char": 3175,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fca12bcb-bcd2-4266-90d8-15040f32c9d4",
+    "text": "SF 1449 (first page) with completed blocks 17a, 30a, 30b, and 30c.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "SF 1449 (first page) with completed blocks 17a, 30a, 30b, and 30c.",
+        "start_char": 11500,
+        "end_char": 11566,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "f54e2be7-440b-42b7-a0ba-77dff4bf0413",
+    "text": "The Contractor must provide firm-fixed pricing for all line items listed in the Price \nSchedule for the Base Period and all four (4) Option Periods.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The Contractor must provide firm-fixed pricing for all line items listed in the Price \nSchedule for the Base Period and all four (4) Option Periods.",
+        "start_char": 12547,
+        "end_char": 12695,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]
