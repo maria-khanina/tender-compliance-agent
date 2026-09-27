@@ -1,6 +1,6 @@
 from collections.abc import Callable
 from functools import lru_cache
-from typing import TypeVar, cast
+from typing import TypedDict, TypeVar, cast
 
 from langchain_core.language_models import LanguageModelInput
 from langchain_core.language_models.chat_models import BaseChatModel
@@ -26,6 +26,14 @@ StructuredSchema = TypeVar("StructuredSchema", bound=BaseModel)
 logger = get_logger(__name__)
 
 
+class ChatTemplateKwargs(TypedDict):
+    enable_thinking: bool
+
+
+class OpenAICompatibleExtraBody(TypedDict):
+    chat_template_kwargs: ChatTemplateKwargs
+
+
 @lru_cache(maxsize=8)
 def _build_openai_compatible_chat_model(
     temperature: float,
@@ -41,7 +49,7 @@ def _build_openai_compatible_chat_model(
         seed,
         disable_thinking,
     )
-    extra_body: dict[str, dict[str, bool]] | None = None
+    extra_body: OpenAICompatibleExtraBody | None = None
     if disable_thinking:
         extra_body = {"chat_template_kwargs": {"enable_thinking": False}}
     return ChatOpenAI(
