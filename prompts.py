@@ -101,10 +101,17 @@ superficially similar but describe genuinely different requirements.
 
 Group the candidates into non-overlapping groups such that every
 candidate in a group expresses the same underlying requirement. A
-group may contain a single candidate if it has no duplicates. For
-each group, provide a single canonical requirement text that
-captures the full requirement, drawing on all candidates in the
-group.
+group may contain a single candidate if it has no duplicates.
+
+Candidates:
+{numbered_candidates}
+"""
+
+DEDUP_MERGE_PROMPT = """\
+Below is a numbered list of requirement candidates that all express
+the same underlying requirement in different words. Write a single
+canonical requirement text that captures the full requirement,
+drawing on all of the candidates below.
 
 Candidates:
 {numbered_candidates}
