@@ -1,6 +1,5 @@
 from schemas import RequirementDraft, TextSpan
 from steps.deduplication import (
-    RequirementGroup,
     _cluster_by_similarity,
     _embedding_text,
     _resolve_group,
@@ -33,9 +32,8 @@ def test_resolve_group_is_mandatory_is_true_if_any_member_is_mandatory() -> None
         _draft("draft_a", "text a", is_mandatory=False),
         _draft("draft_b", "text b", is_mandatory=True),
     ]
-    group = RequirementGroup(member_indices=[0, 1], canonical_text="merged")
 
-    resolved = _resolve_group(drafts, [0, 1], group)
+    resolved = _resolve_group(drafts, [0, 1], "merged")
 
     assert resolved.is_mandatory is True
 
@@ -45,9 +43,8 @@ def test_resolve_group_is_text_verifiable_is_false_if_any_member_is_not() -> Non
         _draft("draft_a", "text a", is_text_verifiable=True),
         _draft("draft_b", "text b", is_text_verifiable=False),
     ]
-    group = RequirementGroup(member_indices=[0, 1], canonical_text="merged")
 
-    resolved = _resolve_group(drafts, [0, 1], group)
+    resolved = _resolve_group(drafts, [0, 1], "merged")
 
     assert resolved.is_text_verifiable is False
 
@@ -65,18 +62,11 @@ def test_resolve_group_never_reuses_a_draft_id_across_groups() -> None:
         _draft("draft_b", "text b"),
         _draft("draft_c", "text c"),
     ]
-    cluster_indices = [0, 1, 2]
-    first_group = RequirementGroup(
-        member_indices=[0],
-        canonical_text="first canonical text",
-    )
-    second_group = RequirementGroup(
-        member_indices=[0, 1, 2],
-        canonical_text="second canonical text",
-    )
 
-    first_resolved = _resolve_group(drafts, cluster_indices, first_group)
-    second_resolved = _resolve_group(drafts, cluster_indices, second_group)
+    first_resolved = _resolve_group(drafts, [0], "first canonical text")
+    second_resolved = _resolve_group(
+        drafts, [0, 1, 2], "second canonical text"
+    )
 
     assert first_resolved.requirement_id != second_resolved.requirement_id
 

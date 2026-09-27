@@ -9,7 +9,7 @@ from backends.embeddings import embed_texts
 from backends.llm_client import get_structured_chat_model, invoke_structured
 from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
 from logging_config import get_logger
-from prompts import DEDUP_GROUPING_PROMPT
+from prompts import DEDUP_GROUPING_PROMPT, DEDUP_MERGE_PROMPT
 from schemas import RequirementDraft, TextSpan
 
 
@@ -18,11 +18,14 @@ logger = get_logger(__name__)
 
 class RequirementGroup(BaseModel):
     member_indices: list[int]
-    canonical_text: str
 
 
 class RequirementGroupList(BaseModel):
     groups: list[RequirementGroup]
+
+
+class CanonicalText(BaseModel):
+    canonical_text: str
 
 
 def _cosine_similarity(
@@ -128,22 +131,36 @@ def _merged_is_text_verifiable(
 
 def _resolve_group(
     drafts: list[RequirementDraft],
-    cluster_indices: list[int],
-    group: RequirementGroup,
+    group_draft_indices: list[int],
+    canonical_text: str,
 ) -> RequirementDraft:
-    group_draft_indices = []
-    for member_position in group.member_indices:
-        group_draft_indices.append(cluster_indices[member_position])
     merged_citations = _merge_citations(drafts, group_draft_indices)
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
-        text=group.canonical_text,
+        text=canonical_text,
         is_mandatory=_merged_is_mandatory(drafts, group_draft_indices),
         is_text_verifiable=_merged_is_text_verifiable(
             drafts, group_draft_indices
         ),
         citations=merged_citations,
     )
+
+
+def _merge_canonical_text(
+    drafts: list[RequirementDraft],
+    group_draft_indices: list[int],
+) -> str:
+    if len(group_draft_indices) == 1:
+        return drafts[group_draft_indices[0]].text
+    numbered_candidates = _format_numbered_candidates(
+        drafts, group_draft_indices
+    )
+    prompt_text = DEDUP_MERGE_PROMPT.format(
+        numbered_candidates=numbered_candidates
+    )
+    structured_model = get_structured_chat_model(CanonicalText)
+    merge_result = invoke_structured(structured_model, prompt_text)
+    return merge_result.canonical_text
 
 
 def _resolve_cluster(
@@ -162,8 +179,13 @@ def _resolve_cluster(
     grouping_result = invoke_structured(structured_model, prompt_text)
     resolved_drafts = []
     for group in grouping_result.groups:
+        group_draft_indices = [
+            cluster_indices[member_position]
+            for member_position in group.member_indices
+        ]
+        canonical_text = _merge_canonical_text(drafts, group_draft_indices)
         resolved_drafts.append(
-            _resolve_group(drafts, cluster_indices, group)
+            _resolve_group(drafts, group_draft_indices, canonical_text)
         )
     return resolved_drafts
 
