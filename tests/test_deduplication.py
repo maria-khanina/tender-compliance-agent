@@ -1,3 +1,4 @@
+from config import REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
 from schemas import RequirementDraft, TextSpan
 from steps.deduplication import (
     _cluster_by_citation_overlap,
@@ -55,13 +56,6 @@ def test_resolve_group_is_text_verifiable_is_false_if_any_member_is_not() -> Non
 
 
 def test_resolve_group_never_reuses_a_draft_id_across_groups() -> None:
-    # Regression test: at REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD=0.6
-    # a real run produced two RequirementGroup entries from the LLM whose
-    # member_indices both started at cluster position 0, and the old
-    # implementation derived each group's requirement_id from
-    # drafts[group_draft_indices[0]] -- giving two unrelated final
-    # requirements (shop drawings vs. capabilities statement) the exact
-    # same requirement_id.
     drafts = [
         _draft("draft_a", "text a"),
         _draft("draft_b", "text b"),
@@ -77,9 +71,6 @@ def test_resolve_group_never_reuses_a_draft_id_across_groups() -> None:
 
 
 def test_embedding_text_excludes_lead_in_citations() -> None:
-    # Two drafts sharing an identical lead-in but with genuinely
-    # different specific content must not be pulled closer together
-    # in embedding space just because of the shared lead-in text.
     draft = RequirementDraft(
         requirement_id="draft_a",
         text="shared lead-in ... specific condition A",
@@ -123,7 +114,9 @@ def test_citation_overlap_merges_drafts_with_overlapping_spans() -> None:
         _draft("draft_b", "text b", start_char=150, end_char=250),
     ]
 
-    clusters = _cluster_by_citation_overlap(drafts)
+    clusters = _cluster_by_citation_overlap(
+        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    )
 
     assert sorted(clusters[0]) == [0, 1]
 
@@ -134,7 +127,9 @@ def test_citation_overlap_keeps_non_overlapping_spans_separate() -> None:
         _draft("draft_b", "text b", start_char=500, end_char=600),
     ]
 
-    clusters = _cluster_by_citation_overlap(drafts)
+    clusters = _cluster_by_citation_overlap(
+        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    )
 
     normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
     assert normalized_clusters == [[0], [1]]
@@ -178,7 +173,9 @@ def test_citation_overlap_ignores_shared_lead_in_between_requirements() -> None:
         ),
     ]
 
-    clusters = _cluster_by_citation_overlap(drafts)
+    clusters = _cluster_by_citation_overlap(
+        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    )
 
     normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
     assert normalized_clusters == [[0], [1]]
@@ -190,7 +187,9 @@ def test_citation_overlap_requires_minimum_overlap_ratio() -> None:
         _draft("draft_b", "text b", start_char=195, end_char=300),
     ]
 
-    clusters = _cluster_by_citation_overlap(drafts)
+    clusters = _cluster_by_citation_overlap(
+        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    )
 
     normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
     assert normalized_clusters == [[0], [1]]
@@ -208,7 +207,9 @@ def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> N
         ),
     ]
 
-    clusters = _cluster_by_citation_overlap(drafts)
+    clusters = _cluster_by_citation_overlap(
+        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
+    )
 
     normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
     assert normalized_clusters == [[0], [1]]
@@ -247,7 +248,7 @@ def test_similar_vectors_are_grouped_together() -> None:
         [0.0, 0.0, 1.0],
     ]
     clusters = _cluster_by_similarity(embedding_vectors)
-    normalized_clusters = []
+    normalized_clusters: list[list[int]] = []
     for cluster in clusters:
         normalized_clusters.append(sorted(cluster))
     normalized_clusters.sort()
