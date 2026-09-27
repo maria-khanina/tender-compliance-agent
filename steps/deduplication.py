@@ -99,6 +99,43 @@ def _cluster_by_similarity(
     return _group_by_root(parent_by_index, candidate_count)
 
 
+def _spans_overlap(first: TextSpan, second: TextSpan) -> bool:
+    if first.document_path != second.document_path:
+        return False
+    if first.start_char is None or first.end_char is None:
+        return False
+    if second.start_char is None or second.end_char is None:
+        return False
+    overlap_start = max(first.start_char, second.start_char)
+    overlap_end = min(first.end_char, second.end_char)
+    return overlap_end > overlap_start
+
+
+def _drafts_share_overlapping_citation(
+    first: RequirementDraft,
+    second: RequirementDraft,
+) -> bool:
+    for first_citation in first.citations:
+        for second_citation in second.citations:
+            if _spans_overlap(first_citation, second_citation):
+                return True
+    return False
+
+
+def _cluster_by_citation_overlap(
+    drafts: list[RequirementDraft],
+) -> list[list[int]]:
+    draft_count = len(drafts)
+    parent_by_index = list(range(draft_count))
+    index_pairs = itertools.combinations(range(draft_count), 2)
+    for first_index, second_index in index_pairs:
+        if _drafts_share_overlapping_citation(
+            drafts[first_index], drafts[second_index]
+        ):
+            _union_indices(parent_by_index, first_index, second_index)
+    return _group_by_root(parent_by_index, draft_count)
+
+
 def _format_numbered_candidates(
     drafts: list[RequirementDraft],
     indices: list[int],
@@ -197,6 +234,19 @@ def _resolve_cluster(
     return resolved_drafts
 
 
+def _merge_citation_overlap_clusters(
+    drafts: list[RequirementDraft],
+    clusters: list[list[int]],
+) -> list[RequirementDraft]:
+    merged_drafts = []
+    for cluster_indices in clusters:
+        canonical_text = _merge_canonical_text(drafts, cluster_indices)
+        merged_drafts.append(
+            _resolve_group(drafts, cluster_indices, canonical_text)
+        )
+    return merged_drafts
+
+
 def _embedding_text(draft: RequirementDraft) -> str:
     matching_quotes = [
         citation.quote
@@ -216,19 +266,26 @@ def deduplicate_requirements(
 ) -> list[RequirementDraft]:
     if not drafts:
         return []
-    draft_texts = [_embedding_text(draft) for draft in drafts]
+    citation_overlap_clusters = _cluster_by_citation_overlap(drafts)
+    merged_drafts = _merge_citation_overlap_clusters(
+        drafts, citation_overlap_clusters
+    )
+    draft_texts = [_embedding_text(draft) for draft in merged_drafts]
     embedding_vectors = embed_texts(draft_texts)
     clusters = _cluster_by_similarity(embedding_vectors, similarity_threshold)
     deduplicated_drafts = []
     for cluster_indices in clusters:
         deduplicated_drafts.extend(
-            _resolve_cluster(drafts, cluster_indices)
+            _resolve_cluster(merged_drafts, cluster_indices)
         )
     logger.info(
         "Deduplicated %d requirement candidates into %d requirements "
-        "across %d clusters",
+        "(%d after merging %d overlapping-citation clusters) "
+        "across %d similarity clusters",
         len(drafts),
         len(deduplicated_drafts),
+        len(merged_drafts),
+        len(citation_overlap_clusters),
         len(clusters),
     )
     return deduplicated_drafts
