@@ -1,5 +1,6 @@
 from schemas import RequirementDraft, TextSpan
 from steps.deduplication import (
+    _cluster_by_citation_overlap,
     _cluster_by_similarity,
     _embedding_text,
     _resolve_group,
@@ -11,6 +12,9 @@ def _draft(
     text: str,
     is_mandatory: bool = True,
     is_text_verifiable: bool = True,
+    document_path: str = "tender.txt",
+    start_char: int = 0,
+    end_char: int | None = None,
 ) -> RequirementDraft:
     return RequirementDraft(
         requirement_id=requirement_id,
@@ -18,10 +22,10 @@ def _draft(
         is_mandatory=is_mandatory,
         is_text_verifiable=is_text_verifiable,
         citations=[TextSpan(
-            document_path="tender.txt",
+            document_path=document_path,
             quote=text,
-            start_char=0,
-            end_char=len(text),
+            start_char=start_char,
+            end_char=end_char if end_char is not None else start_char + len(text),
             citation_verified=True,
         )],
     )
@@ -110,6 +114,50 @@ def test_embedding_text_falls_back_to_full_text_without_citations() -> None:
         citations=[],
     )
     assert _embedding_text(draft) == "fallback text"
+
+
+def test_citation_overlap_merges_drafts_with_overlapping_spans() -> None:
+    # Same physical requirement extracted twice from overlapping chunks
+    # (chunk_overlap duplication) -- their citation spans overlap in the
+    # source document even though the exact quoted text may differ.
+    drafts = [
+        _draft("draft_a", "text a", start_char=100, end_char=200),
+        _draft("draft_b", "text b", start_char=150, end_char=250),
+    ]
+
+    clusters = _cluster_by_citation_overlap(drafts)
+
+    assert sorted(clusters[0]) == [0, 1]
+
+
+def test_citation_overlap_keeps_non_overlapping_spans_separate() -> None:
+    drafts = [
+        _draft("draft_a", "text a", start_char=100, end_char=200),
+        _draft("draft_b", "text b", start_char=500, end_char=600),
+    ]
+
+    clusters = _cluster_by_citation_overlap(drafts)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0], [1]]
+
+
+def test_citation_overlap_ignores_matching_offsets_in_different_documents() -> None:
+    drafts = [
+        _draft(
+            "draft_a", "text a", document_path="rfq.txt",
+            start_char=100, end_char=200,
+        ),
+        _draft(
+            "draft_b", "text b", document_path="attachment.txt",
+            start_char=100, end_char=200,
+        ),
+    ]
+
+    clusters = _cluster_by_citation_overlap(drafts)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0], [1]]
 
 
 def test_similar_vectors_are_grouped_together() -> None:
