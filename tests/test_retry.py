@@ -47,7 +47,7 @@ def test_wait_function_falls_back_to_exponential_without_suggested_delay() -> No
 
 
 def test_retry_decorator_succeeds_after_transient_failures() -> None:
-    attempts = {"count": 0}
+    attempts: dict[str, int] = {"count": 0}
 
     @build_retry_decorator(
         attempt_count=3, wait_minimum_seconds=0.001, wait_maximum_seconds=0.002

@@ -41,7 +41,7 @@ def _build_openai_compatible_chat_model(
         seed,
         disable_thinking,
     )
-    extra_body = None
+    extra_body: dict[str, dict[str, bool]] | None = None
     if disable_thinking:
         extra_body = {"chat_template_kwargs": {"enable_thinking": False}}
     return ChatOpenAI(
