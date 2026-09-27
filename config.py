@@ -75,6 +75,8 @@ class Settings(BaseSettings):
     language_model_base_url: str | None = None
     language_model_name: str
     language_model_api_key: str
+    language_model_seed: int | None = None
+    language_model_disable_thinking: bool = False
     vector_store_provider: VectorStoreProvider = (
         DEFAULT_VECTOR_STORE_PROVIDER
     )
