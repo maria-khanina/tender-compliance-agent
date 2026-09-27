@@ -7,12 +7,9 @@ from pydantic import BaseModel
 
 from backends.embeddings import embed_texts
 from backends.llm_client import get_structured_chat_model, invoke_structured
-from config import (
-    REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO,
-    REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD,
-)
+from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
 from logging_config import get_logger
-from prompts import DEDUP_GROUPING_PROMPT, DEDUP_MERGE_PROMPT
+from prompts import DEDUP_GROUPING_PROMPT
 from schemas import RequirementDraft, TextSpan
 
 
@@ -21,14 +18,13 @@ logger = get_logger(__name__)
 
 class RequirementGroup(BaseModel):
     member_indices: list[int]
+    canonical_text: str
+    is_mandatory: bool
+    is_text_verifiable: bool
 
 
 class RequirementGroupList(BaseModel):
     groups: list[RequirementGroup]
-
-
-class CanonicalText(BaseModel):
-    canonical_text: str
 
 
 def _cosine_similarity(
@@ -102,60 +98,6 @@ def _cluster_by_similarity(
     return _group_by_root(parent_by_index, candidate_count)
 
 
-def _span_overlap_ratio(first: TextSpan, second: TextSpan) -> float:
-    if first.document_path != second.document_path:
-        return 0.0
-    if first.start_char is None or first.end_char is None:
-        return 0.0
-    if second.start_char is None or second.end_char is None:
-        return 0.0
-    overlap_start = max(first.start_char, second.start_char)
-    overlap_end = min(first.end_char, second.end_char)
-    overlap_length = max(0, overlap_end - overlap_start)
-    first_length = first.end_char - first.start_char
-    second_length = second.end_char - second.start_char
-    shorter_length = min(first_length, second_length)
-    if shorter_length <= 0:
-        return 0.0
-    return overlap_length / shorter_length
-
-
-def _matching_citations(draft: RequirementDraft) -> list[TextSpan]:
-    matching_citations: list[TextSpan] = []
-    for citation in draft.citations:
-        if citation.used_for_matching:
-            matching_citations.append(citation)
-    return matching_citations
-
-
-def _drafts_share_overlapping_citation(
-    first: RequirementDraft,
-    second: RequirementDraft,
-    minimum_overlap_ratio: float,
-) -> bool:
-    for first_citation in _matching_citations(first):
-        for second_citation in _matching_citations(second):
-            ratio = _span_overlap_ratio(first_citation, second_citation)
-            if ratio >= minimum_overlap_ratio:
-                return True
-    return False
-
-
-def _cluster_by_citation_overlap(
-    drafts: list[RequirementDraft],
-    minimum_overlap_ratio: float,
-) -> list[list[int]]:
-    draft_count = len(drafts)
-    parent_by_index = list(range(draft_count))
-    index_pairs = itertools.combinations(range(draft_count), 2)
-    for first_index, second_index in index_pairs:
-        if _drafts_share_overlapping_citation(
-            drafts[first_index], drafts[second_index], minimum_overlap_ratio
-        ):
-            _union_indices(parent_by_index, first_index, second_index)
-    return _group_by_root(parent_by_index, draft_count)
-
-
 def _format_numbered_candidates(
     drafts: list[RequirementDraft],
     indices: list[int],
@@ -176,48 +118,22 @@ def _merge_citations(
     return citations
 
 
-def _merged_is_mandatory(drafts: list[RequirementDraft], indices: list[int]) -> bool:
-    return any(drafts[draft_index].is_mandatory for draft_index in indices)
-
-
-def _merged_is_text_verifiable(
-    drafts: list[RequirementDraft], indices: list[int]
-) -> bool:
-    return all(drafts[draft_index].is_text_verifiable for draft_index in indices)
-
-
 def _resolve_group(
     drafts: list[RequirementDraft],
-    group_draft_indices: list[int],
-    canonical_text: str,
+    cluster_indices: list[int],
+    group: RequirementGroup,
 ) -> RequirementDraft:
+    group_draft_indices = []
+    for member_position in group.member_indices:
+        group_draft_indices.append(cluster_indices[member_position])
     merged_citations = _merge_citations(drafts, group_draft_indices)
     return RequirementDraft(
         requirement_id=str(uuid.uuid4()),
-        text=canonical_text,
-        is_mandatory=_merged_is_mandatory(drafts, group_draft_indices),
-        is_text_verifiable=_merged_is_text_verifiable(
-            drafts, group_draft_indices
-        ),
+        text=group.canonical_text,
+        is_mandatory=group.is_mandatory,
+        is_text_verifiable=group.is_text_verifiable,
         citations=merged_citations,
     )
-
-
-def _merge_canonical_text(
-    drafts: list[RequirementDraft],
-    group_draft_indices: list[int],
-) -> str:
-    if len(group_draft_indices) == 1:
-        return drafts[group_draft_indices[0]].text
-    numbered_candidates = _format_numbered_candidates(
-        drafts, group_draft_indices
-    )
-    prompt_text = DEDUP_MERGE_PROMPT.format(
-        numbered_candidates=numbered_candidates
-    )
-    structured_model = get_structured_chat_model(CanonicalText)
-    merge_result = invoke_structured(structured_model, prompt_text)
-    return merge_result.canonical_text
 
 
 def _resolve_cluster(
@@ -234,100 +150,12 @@ def _resolve_cluster(
     )
     structured_model = get_structured_chat_model(RequirementGroupList)
     grouping_result = invoke_structured(structured_model, prompt_text)
-    resolved_drafts: list[RequirementDraft] = []
+    resolved_drafts = []
     for group in grouping_result.groups:
-        _validate_group_member_indices(group, len(cluster_indices))
-        group_draft_indices = _group_draft_indices(cluster_indices, group)
-        canonical_text = _merge_canonical_text(drafts, group_draft_indices)
         resolved_drafts.append(
-            _resolve_group(drafts, group_draft_indices, canonical_text)
+            _resolve_group(drafts, cluster_indices, group)
         )
     return resolved_drafts
-
-
-def _validate_group_member_indices(
-    group: RequirementGroup,
-    cluster_size: int,
-) -> None:
-    for member_position in group.member_indices:
-        if not 0 <= member_position < cluster_size:
-            raise ValueError(
-                f"Dedup grouping returned out-of-range candidate "
-                f"index {member_position} for a cluster of "
-                f"{cluster_size} candidates"
-            )
-
-
-def _group_draft_indices(
-    cluster_indices: list[int],
-    group: RequirementGroup,
-) -> list[int]:
-    group_draft_indices: list[int] = []
-    for member_position in group.member_indices:
-        group_draft_indices.append(cluster_indices[member_position])
-    return group_draft_indices
-
-
-def _sorted_matching_citations(
-    drafts: list[RequirementDraft],
-    cluster_indices: list[int],
-) -> list[TextSpan]:
-    citations: list[TextSpan] = []
-    for index in cluster_indices:
-        citations.extend(_matching_citations(drafts[index]))
-    located_citations: list[TextSpan] = []
-    for citation in citations:
-        if citation.start_char is not None:
-            located_citations.append(citation)
-    return sorted(
-        located_citations,
-        key=lambda span: (span.start_char, span.end_char),
-    )
-
-
-def _union_span_text(citations: list[TextSpan]) -> str:
-    pieces: list[str] = []
-    covered_end = None
-    for citation in citations:
-        if citation.start_char is None or citation.end_char is None:
-            continue
-        if covered_end is None:
-            pieces.append(citation.quote)
-            covered_end = citation.end_char
-            continue
-        if citation.end_char <= covered_end:
-            continue
-        new_portion_start = max(0, covered_end - citation.start_char)
-        pieces.append(citation.quote[new_portion_start:])
-        covered_end = citation.end_char
-    return "".join(pieces)
-
-
-def _citation_overlap_canonical_text(
-    drafts: list[RequirementDraft],
-    cluster_indices: list[int],
-) -> str:
-    if len(cluster_indices) == 1:
-        return drafts[cluster_indices[0]].text
-    citations = _sorted_matching_citations(drafts, cluster_indices)
-    if not citations:
-        return drafts[cluster_indices[0]].text
-    return _union_span_text(citations)
-
-
-def _merge_citation_overlap_clusters(
-    drafts: list[RequirementDraft],
-    clusters: list[list[int]],
-) -> list[RequirementDraft]:
-    merged_drafts: list[RequirementDraft] = []
-    for cluster_indices in clusters:
-        canonical_text = _citation_overlap_canonical_text(
-            drafts, cluster_indices
-        )
-        merged_drafts.append(
-            _resolve_group(drafts, cluster_indices, canonical_text)
-        )
-    return merged_drafts
 
 
 def _embedding_text(draft: RequirementDraft) -> str:
@@ -349,28 +177,19 @@ def deduplicate_requirements(
 ) -> list[RequirementDraft]:
     if not drafts:
         return []
-    citation_overlap_clusters = _cluster_by_citation_overlap(
-        drafts, REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
-    )
-    merged_drafts = _merge_citation_overlap_clusters(
-        drafts, citation_overlap_clusters
-    )
-    draft_texts = [_embedding_text(draft) for draft in merged_drafts]
+    draft_texts = [_embedding_text(draft) for draft in drafts]
     embedding_vectors = embed_texts(draft_texts)
     clusters = _cluster_by_similarity(embedding_vectors, similarity_threshold)
-    deduplicated_drafts: list[RequirementDraft] = []
+    deduplicated_drafts = []
     for cluster_indices in clusters:
         deduplicated_drafts.extend(
-            _resolve_cluster(merged_drafts, cluster_indices)
+            _resolve_cluster(drafts, cluster_indices)
         )
     logger.info(
         "Deduplicated %d requirement candidates into %d requirements "
-        "(%d after merging %d overlapping-citation clusters) "
-        "across %d similarity clusters",
+        "across %d clusters",
         len(drafts),
         len(deduplicated_drafts),
-        len(merged_drafts),
-        len(citation_overlap_clusters),
         len(clusters),
     )
     return deduplicated_drafts
