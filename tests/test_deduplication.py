@@ -1,7 +1,9 @@
 from config import REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO
 from schemas import RequirementDraft, TextSpan
 from steps.deduplication import (
+    _all_index_pairs,
     _cluster_by_citation_overlap,
+    _cluster_by_reranker_score,
     _cluster_by_similarity,
     _embedding_text,
     _merge_citation_overlap_clusters,
@@ -253,3 +255,27 @@ def test_similar_vectors_are_grouped_together() -> None:
         normalized_clusters.append(sorted(cluster))
     normalized_clusters.sort()
     assert normalized_clusters == [[0, 1], [2, 3], [4]]
+
+
+def test_all_index_pairs_enumerates_every_combination() -> None:
+    assert _all_index_pairs(3) == [(0, 1), (0, 2), (1, 2)]
+
+
+def test_cluster_by_reranker_score_groups_pairs_above_threshold() -> None:
+    index_pairs = [(0, 1), (0, 2), (1, 2)]
+    scores = [0.95, 0.2, 0.1]
+
+    clusters = _cluster_by_reranker_score(3, index_pairs, scores, 0.9)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0, 1], [2]]
+
+
+def test_cluster_by_reranker_score_keeps_all_separate_below_threshold() -> None:
+    index_pairs = [(0, 1), (0, 2), (1, 2)]
+    scores = [0.5, 0.5, 0.5]
+
+    clusters = _cluster_by_reranker_score(3, index_pairs, scores, 0.9)
+
+    normalized_clusters = sorted(sorted(cluster) for cluster in clusters)
+    assert normalized_clusters == [[0], [1], [2]]

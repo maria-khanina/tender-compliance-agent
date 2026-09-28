@@ -7,24 +7,18 @@ from pydantic import BaseModel
 
 from backends.embeddings import embed_texts
 from backends.llm_client import get_structured_chat_model, invoke_structured
+from backends.reranker import score_text_pairs
 from config import (
+    REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD,
     REQUIREMENT_DEDUPLICATION_CITATION_OVERLAP_MINIMUM_RATIO,
-    REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD,
+    REQUIREMENT_DEDUPLICATION_RERANKER_MINIMUM_SCORE,
 )
 from logging_config import get_logger
-from prompts import DEDUP_GROUPING_PROMPT, DEDUP_MERGE_PROMPT
+from prompts import DEDUP_MERGE_PROMPT
 from schemas import RequirementDraft, TextSpan
 
 
 logger = get_logger(__name__)
-
-
-class RequirementGroup(BaseModel):
-    member_indices: list[int]
-
-
-class RequirementGroupList(BaseModel):
-    groups: list[RequirementGroup]
 
 
 class CanonicalText(BaseModel):
@@ -91,7 +85,7 @@ def _group_by_root(
 def _cluster_by_similarity(
     embedding_vectors: list[list[float]],
     similarity_threshold: float = (
-        REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+        REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD
     ),
 ) -> list[list[int]]:
     candidate_count = len(embedding_vectors)
@@ -220,52 +214,63 @@ def _merge_canonical_text(
     return merge_result.canonical_text
 
 
+def _all_index_pairs(candidate_count: int) -> list[tuple[int, int]]:
+    return list(itertools.combinations(range(candidate_count), 2))
+
+
+def _union_pairs_by_reranker_score(
+    index_pairs: list[tuple[int, int]],
+    scores: list[float],
+    parent_by_index: list[int],
+    minimum_score: float,
+) -> None:
+    for pair_position, score in enumerate(scores):
+        if score >= minimum_score:
+            first_index, second_index = index_pairs[pair_position]
+            _union_indices(parent_by_index, first_index, second_index)
+
+
+def _cluster_by_reranker_score(
+    candidate_count: int,
+    index_pairs: list[tuple[int, int]],
+    scores: list[float],
+    minimum_score: float,
+) -> list[list[int]]:
+    parent_by_index = list(range(candidate_count))
+    _union_pairs_by_reranker_score(
+        index_pairs, scores, parent_by_index, minimum_score
+    )
+    return _group_by_root(parent_by_index, candidate_count)
+
+
 def _resolve_cluster(
     drafts: list[RequirementDraft],
     cluster_indices: list[int],
+    reranker_minimum_score: float,
 ) -> list[RequirementDraft]:
     if len(cluster_indices) == 1:
         return [drafts[cluster_indices[0]]]
-    numbered_candidates = _format_numbered_candidates(
-        drafts, cluster_indices
+    texts: list[str] = []
+    for index in cluster_indices:
+        texts.append(_embedding_text(drafts[index]))
+    index_pairs = _all_index_pairs(len(texts))
+    text_pairs: list[tuple[str, str]] = []
+    for first_index, second_index in index_pairs:
+        text_pairs.append((texts[first_index], texts[second_index]))
+    scores = score_text_pairs(text_pairs)
+    sub_clusters = _cluster_by_reranker_score(
+        len(texts), index_pairs, scores, reranker_minimum_score
     )
-    prompt_text = DEDUP_GROUPING_PROMPT.format(
-        numbered_candidates=numbered_candidates
-    )
-    structured_model = get_structured_chat_model(RequirementGroupList)
-    grouping_result = invoke_structured(structured_model, prompt_text)
     resolved_drafts: list[RequirementDraft] = []
-    for group in grouping_result.groups:
-        _validate_group_member_indices(group, len(cluster_indices))
-        group_draft_indices = _group_draft_indices(cluster_indices, group)
+    for sub_cluster in sub_clusters:
+        group_draft_indices: list[int] = []
+        for position in sub_cluster:
+            group_draft_indices.append(cluster_indices[position])
         canonical_text = _merge_canonical_text(drafts, group_draft_indices)
         resolved_drafts.append(
             _resolve_group(drafts, group_draft_indices, canonical_text)
         )
     return resolved_drafts
-
-
-def _validate_group_member_indices(
-    group: RequirementGroup,
-    cluster_size: int,
-) -> None:
-    for member_position in group.member_indices:
-        if not 0 <= member_position < cluster_size:
-            raise ValueError(
-                f"Dedup grouping returned out-of-range candidate "
-                f"index {member_position} for a cluster of "
-                f"{cluster_size} candidates"
-            )
-
-
-def _group_draft_indices(
-    cluster_indices: list[int],
-    group: RequirementGroup,
-) -> list[int]:
-    group_draft_indices: list[int] = []
-    for member_position in group.member_indices:
-        group_draft_indices.append(cluster_indices[member_position])
-    return group_draft_indices
 
 
 def _sorted_matching_citations(
@@ -343,8 +348,11 @@ def _embedding_text(draft: RequirementDraft) -> str:
 
 def deduplicate_requirements(
     drafts: list[RequirementDraft],
-    similarity_threshold: float = (
-        REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+    candidate_similarity_threshold: float = (
+        REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD
+    ),
+    reranker_minimum_score: float = (
+        REQUIREMENT_DEDUPLICATION_RERANKER_MINIMUM_SCORE
     ),
 ) -> list[RequirementDraft]:
     if not drafts:
@@ -357,11 +365,15 @@ def deduplicate_requirements(
     )
     draft_texts = [_embedding_text(draft) for draft in merged_drafts]
     embedding_vectors = embed_texts(draft_texts)
-    clusters = _cluster_by_similarity(embedding_vectors, similarity_threshold)
+    clusters = _cluster_by_similarity(
+        embedding_vectors, candidate_similarity_threshold
+    )
     deduplicated_drafts: list[RequirementDraft] = []
     for cluster_indices in clusters:
         deduplicated_drafts.extend(
-            _resolve_cluster(merged_drafts, cluster_indices)
+            _resolve_cluster(
+                merged_drafts, cluster_indices, reranker_minimum_score
+            )
         )
     logger.info(
         "Deduplicated %d requirement candidates into %d requirements "
