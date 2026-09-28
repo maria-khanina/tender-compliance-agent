@@ -1,0 +1,146 @@
+[
+  {
+    "requirement_id": "e9400cb3-d772-420f-ad3b-1f5dcbba9e29",
+    "text": "The Contractor shall provide all labor, materials, equipment, and tools necessary to clean grease traps and to remove and dispose of grease at an offsite location in accordance with the Performance Work Statement and all applicable Federal, State, and Local regulations.",
+    "is_mandatory": true,
+    "is_text_verifiable": false,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Contractor shall provide \nall labor, materials, equipment, and tools necessary to clean grease \ntraps and to dispose of grease in accordance with the Performance \nWork Statement.",
+        "start_char": 1024,
+        "end_char": 1202,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Contractor shall provide all labor, materials, equipment, and tools necessary to clean grease traps and to \ndispose of grease.",
+        "start_char": 2142,
+        "end_char": 2268,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Clean grease traps after removal of grease is completed.",
+        "start_char": 3010,
+        "end_char": 3066,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Each service inspection shall require contractor to:",
+        "start_char": 2874,
+        "end_char": 2926,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Clean grease traps after removal of grease is completed.",
+        "start_char": 3010,
+        "end_char": 3066,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Each service inspection shall require contractor to:",
+        "start_char": 2874,
+        "end_char": 2926,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": false
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Remove and dispose of grease per all Federal, State and Local regulations.",
+        "start_char": 2931,
+        "end_char": 3005,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The contractor is responsible for transporting the waste to an \noffsite location.",
+        "start_char": 3903,
+        "end_char": 3984,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "2a366e58-48ac-4412-a9f3-baefdadee320",
+    "text": "Provide up to three (3) service calls per contract year to pump lift station located in Building \n410.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Provide up to three (3) service calls per contract year to pump lift station",
+        "start_char": 3073,
+        "end_char": 3149,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      },
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "Provide up to three (3) service calls per contract year to pump lift station located in Building \n410.",
+        "start_char": 3073,
+        "end_char": 3175,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "fa0858f9-5c25-41a0-ab62-ae8ed6963680",
+    "text": "SF 1449 (first page) with completed blocks 17a, 30a, 30b, and 30c.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "SF 1449 (first page) with completed blocks 17a, 30a, 30b, and 30c.",
+        "start_char": 11500,
+        "end_char": 11566,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  },
+  {
+    "requirement_id": "328bc811-896e-409f-a308-aaec8d6931e0",
+    "text": "The Contractor must provide firm-fixed pricing for all line items listed in the Price \nSchedule for the Base Period and all four (4) Option Periods.",
+    "is_mandatory": true,
+    "is_text_verifiable": true,
+    "citations": [
+      {
+        "document_path": "data/36C25226Q0525/36C25226Q0525_condensed.txt",
+        "quote": "The Contractor must provide firm-fixed pricing for all line items listed in the Price \nSchedule for the Base Period and all four (4) Option Periods.",
+        "start_char": 12547,
+        "end_char": 12695,
+        "citation_verified": true,
+        "match_precision": "precise",
+        "used_for_matching": true
+      }
+    ],
+    "conditions": []
+  }
+]
