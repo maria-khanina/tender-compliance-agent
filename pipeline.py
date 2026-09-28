@@ -38,6 +38,7 @@ def run_pipeline(
     logger.info("Finished pipeline run %s", thread_id)
     return PipelineResult(
         report=final_state["report"],
+        requirement_drafts=final_state["requirement_drafts"],
         requirements=final_state["requirements"],
         verdicts=final_state["verdicts"],
         retrieved_context=final_state["retrieved_context"],

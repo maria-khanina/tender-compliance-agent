@@ -101,6 +101,7 @@ class RetrievedContextRecord(BaseModel):
 
 class PipelineResult(BaseModel):
     report: str
+    requirement_drafts: list[RequirementDraft]
     requirements: list[Requirement]
     verdicts: list[Verdict]
     retrieved_context: list[RetrievedContextRecord]
