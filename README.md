@@ -193,12 +193,14 @@ Point `--output` under the application variant's own
 should be checked against and separated from any other run-label's
 results for the same variant, instead of scattered in the project
 root or overwriting a previous run. Besides the Markdown report, this
-writes three underlying JSON files next to it, named to mirror the
+writes four underlying JSON files next to it, named to mirror the
 `true_*.json` fixtures for easy comparison:
-`predicted_requirements.json` (the deduplicated `Requirement` list),
-`predicted_verdicts.json` (the `Verdict` list), and
-`predicted_retrieved_context.json` (per requirement, the full set of
-application chunks `retrieve_context_chunks` handed to the verdict
+`predicted_requirement_drafts.json` (the `RequirementDraft` list
+before deduplication), `predicted_requirements.json` (the
+deduplicated `Requirement` list), `predicted_verdicts.json` (the
+`Verdict` list), and `predicted_retrieved_context.json` (per
+requirement, the full set of application chunks
+`retrieve_context_chunks` handed to the verdict
 step *before* it chose what to cite — the artifact needed to tell
 apart "retrieval never surfaced the evidence" from "it saw the
 evidence and didn't act on it," see `NOTES.md`). Application chunks

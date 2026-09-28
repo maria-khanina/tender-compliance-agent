@@ -85,8 +85,12 @@ def test_render_retrieval_report_handles_no_gold_evidence():
 
 def test_output_paths_derive_from_the_report_path_stem():
     output_path = pathlib.Path("data/case/predicted.md")
-    requirements_path, verdicts_path, retrieved_context_path = _output_paths(
-        output_path
+    (
+        requirement_drafts_path, requirements_path, verdicts_path,
+        retrieved_context_path,
+    ) = _output_paths(output_path)
+    assert requirement_drafts_path == pathlib.Path(
+        "data/case/predicted_requirement_drafts.json"
     )
     assert requirements_path == pathlib.Path("data/case/predicted_requirements.json")
     assert verdicts_path == pathlib.Path("data/case/predicted_verdicts.json")

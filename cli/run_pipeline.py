@@ -46,7 +46,10 @@ def _run_or_exit(
 
 def _output_paths(
     output_path: pathlib.Path,
-) -> tuple[pathlib.Path, pathlib.Path, pathlib.Path]:
+) -> tuple[pathlib.Path, pathlib.Path, pathlib.Path, pathlib.Path]:
+    requirement_drafts_path = output_path.with_name(
+        output_path.stem + "_requirement_drafts.json"
+    )
     requirements_path = output_path.with_name(
         output_path.stem + "_requirements.json"
     )
@@ -56,20 +59,28 @@ def _output_paths(
     retrieved_context_path = output_path.with_name(
         output_path.stem + "_retrieved_context.json"
     )
-    return requirements_path, verdicts_path, retrieved_context_path
+    return (
+        requirement_drafts_path, requirements_path, verdicts_path,
+        retrieved_context_path,
+    )
 
 
 def _write_outputs(
     output_path: pathlib.Path,
     result: PipelineResult,
-    paths: tuple[pathlib.Path, pathlib.Path, pathlib.Path],
+    paths: tuple[pathlib.Path, pathlib.Path, pathlib.Path, pathlib.Path],
 ) -> None:
-    requirements_path, verdicts_path, retrieved_context_path = paths
+    (
+        requirement_drafts_path, requirements_path, verdicts_path,
+        retrieved_context_path,
+    ) = paths
     output_path.write_text(result.report, encoding="utf-8")
+    _write_json_list(requirement_drafts_path, result.requirement_drafts)
     _write_json_list(requirements_path, result.requirements)
     _write_json_list(verdicts_path, result.verdicts)
     _write_json_list(retrieved_context_path, result.retrieved_context)
     print(f"Report written to {output_path}")
+    print(f"Requirement drafts written to {requirement_drafts_path}")
     print(f"Requirements written to {requirements_path}")
     print(f"Verdicts written to {verdicts_path}")
     print(f"Retrieved context written to {retrieved_context_path}")
