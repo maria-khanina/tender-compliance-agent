@@ -341,6 +341,50 @@ listed as skipped rather than silently dropped. Reuses
 each case's own "Summary metrics" JSON block, so the two never drift
 apart.
 
+## Fine-tuning the verdict model
+
+The verdict step can run on a local Qwen3-4B fine-tuned for this task
+instead of a hosted model. The training targets are the gold verdicts of
+the cases: verdict, evidence quotes and reasoning written by a stronger
+LLM, so supervised fine-tuning distills that model's verdicts into the
+small one. The prompts are built with the real retrieval step, so the
+model is trained on the same context it sees at inference. Cases are split
+into train (431 rows), validation (96) and test (96) by `sft/split.json`.
+
+Training (`sft/`, Hugging Face TRL):
+
+1. **SFT** (`train_verdict_lora.py`): the base model is loaded in 4-bit
+   NF4 with double quantization and a LoRA adapter (rank 16) is trained on
+   the attention and MLP projections, with bf16 compute, gradient
+   checkpointing and 8 gradient accumulation steps; training stops early
+   on validation macro F1.
+2. **Merge** (`merge_sft_adapter.py`): the adapter is added to the bf16
+   base shard by shard and saved as safetensors, which becomes the
+   reference model of DPO.
+3. **Preference pairs** (`mine_dpo_pairs_local.py`): 8 answers per prompt
+   are sampled from the merged model in the same 4-bit quantization that
+   DPO trains; each distinct wrong verdict among them becomes a rejected
+   answer paired with the gold answer (99 pairs). An earlier run took the samples from an AWQ-quantized model
+   served by vLLM; because its quantization differs from the model being
+   trained, its pairs did not reflect that model's own mistakes.
+4. **DPO** (`train_dpo.py`): a new LoRA adapter on the merged model, beta
+   0.1, learning rate 5e-5.
+5. **Comparison** (`compare_models.py`) of the base model, SFT and DPO on
+   the validation split:
+
+| Metric | Base | SFT | DPO |
+|---|---|---|---|
+| Verdict accuracy | 0.531 | 0.573 | 0.583 |
+| Macro F1 | 0.254 | 0.292 | 0.436 |
+| Evidence recall | 0.922 | 0.947 | 0.931 |
+| Answers that failed to parse (of 96) | 13 | 3 | 1 |
+
+SFT mostly teaches the answer format (13 unparseable answers down to 3);
+DPO raises macro F1, largely through the `contradictory` class (F1 0 to
+0.55), which has only 4 validation examples, so that gain is uncertain.
+`non_compliant` stays below 0.1 F1 at every stage. Full numbers per class
+are in `sft/eval_runs/20260917_123332_qwen3-4b-v1_bnb4bit/`.
+
 ## Training pipeline on Slurm
 
 The verdict model is post-trained in five stages, each a separate Slurm
