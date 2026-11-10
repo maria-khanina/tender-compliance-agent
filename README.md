@@ -375,6 +375,42 @@ Job resources and the training virtual environment are set in
 `slurm/settings.sh`; logs go to `slurm/logs/<stage>-<job id>.log`, and
 finished jobs are recorded in `/var/log/slurm/job_completions.log`.
 
+## Training memory and step time
+
+`slurm/submit_memory_experiment.sh` measures the QLoRA SFT setup (4-bit
+base, LoRA adapter, bf16 autocast, AdamW) in seven configurations, one
+Slurm job each, and `sft.memory_report` writes
+`sft/memory_runs/memory_report.md`. Each job trains 2 warm-up and 6
+measured optimizer steps on real training text packed to a fixed length.
+Measured on an 8 GB laptop GPU under WSL2:
+
+| Setup | Peak allocated | Seconds per step | Tokens per second |
+|---|---|---|---|
+| Checkpointing on, 1024 tokens | 4.81 GiB | 1.74 | 590 |
+| Checkpointing off, 1024 tokens | 11.67 GiB | 19.91 | 51 |
+| Checkpointing on, 2048 tokens | 6.73 GiB | 3.84 | 534 |
+| Checkpointing off, 2048 tokens | out of memory | | |
+| Checkpointing on, 8 × 1024 tokens in one micro-batch | out of memory | | |
+| Checkpointing on, 1 × 1024 tokens, 8 accumulation steps | 4.93 GiB | 13.97 | 586 |
+
+What the numbers show:
+
+- The frozen 4-bit base and the adapter take 2.62 GiB; LoRA weights,
+  gradients and Adam moments are only 0.49 GiB of it. Everything above that
+  is activations, so activation memory decides what fits.
+- Gradient checkpointing keeps activations within the GPU. Without it, a
+  1024-token step needs 11.7 GiB: the Windows driver silently spills the
+  excess into shared system memory instead of failing, and the step becomes
+  11 times slower. A peak above the card's 8 GiB in this table means spilled
+  memory, not a measurement error.
+- Gradient accumulation gives the effective batch of 8 × 1024 tokens with
+  the memory of a single micro-batch (4.93 GiB against out of memory) and
+  the same throughput, so the real SFT and DPO runs use micro-batch 1 with
+  8 accumulation steps.
+- Full fine-tuning of the same 4B model with Adam would need about 60 GiB
+  before activations (16 bytes per parameter), which is why the model is
+  quantized and only a LoRA adapter is trained.
+
 ## Tests, style, and types
 
 ```
