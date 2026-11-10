@@ -6,3 +6,6 @@ checkpoints.db
 *.egg-info/
 venv/
 .venv/
+slurm/logs/
+sft/runs/**/merged/
+sft/runs/**/*_checkpoints/
