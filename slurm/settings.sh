@@ -1,0 +1,7 @@
+TRAINING_VENV=/root/sft/venv
+RUN_DIR=sft/runs/qwen3-4b-v1
+SLURM_LOG_DIR=slurm/logs
+GPU_JOB_CPUS=8
+GPU_JOB_MEMORY=9G
+CPU_JOB_CPUS=4
+CPU_JOB_MEMORY=9G

@@ -341,6 +341,40 @@ listed as skipped rather than silently dropped. Reuses
 each case's own "Summary metrics" JSON block, so the two never drift
 apart.
 
+## Training pipeline on Slurm
+
+The verdict model is post-trained in five stages, each a separate Slurm
+job on a single-node cluster inside WSL2:
+
+| Stage | Module | Resources |
+|---|---|---|
+| SFT | `sft.train_verdict_lora` | GPU |
+| Merge the SFT adapter into bf16 safetensors | `sft.merge_sft_adapter` | CPU only |
+| Mine on-policy DPO pairs | `sft.mine_dpo_pairs_local` | GPU |
+| DPO | `sft.train_dpo` | GPU |
+| Compare base, SFT, and DPO on validation | `sft.compare_models` | GPU |
+
+Each stage starts only after the previous one succeeded
+(`--dependency=afterok`), and a failed stage cancels the rest of the
+chain. The GPU is a generic resource (`gres/gpu`, mapped to `/dev/dxg`
+in WSL2), so only one GPU job runs at a time and the others wait in the
+queue instead of running out of GPU memory. Every stage gets the same run
+id, which ties its outputs together under `sft/runs/`.
+
+```
+sudo bash slurm/setup_wsl.sh
+bash slurm/smoke_test.sh
+bash slurm/submit_pipeline.sh [run_id]
+```
+
+`setup_wsl.sh` installs Slurm and MUNGE and writes `/etc/slurm` from the
+templates in `slurm/`; it needs systemd enabled in `/etc/wsl.conf`.
+`smoke_test.sh` checks that a job sees the GPU, that a second GPU job
+waits for the first, and that a dependent job starts after its parent.
+Job resources and the training virtual environment are set in
+`slurm/settings.sh`; logs go to `slurm/logs/<stage>-<job id>.log`, and
+finished jobs are recorded in `/var/log/slurm/job_completions.log`.
+
 ## Tests, style, and types
 
 ```

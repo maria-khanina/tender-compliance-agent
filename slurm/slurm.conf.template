@@ -1,0 +1,22 @@
+ClusterName=tender
+SlurmctldHost=@HOSTNAME@
+SlurmUser=slurm
+AuthType=auth/munge
+StateSaveLocation=/var/spool/slurmctld
+SlurmdSpoolDir=/var/spool/slurmd
+SlurmctldPidFile=/run/slurmctld.pid
+SlurmdPidFile=/run/slurmd.pid
+ProctrackType=proctrack/linuxproc
+TaskPlugin=task/none
+SchedulerType=sched/backfill
+SelectType=select/cons_tres
+SelectTypeParameters=CR_Core_Memory
+GresTypes=gpu
+JobAcctGatherType=jobacct_gather/linux
+JobCompType=jobcomp/filetxt
+JobCompLoc=/var/log/slurm/job_completions.log
+SlurmctldLogFile=/var/log/slurm/slurmctld.log
+SlurmdLogFile=/var/log/slurm/slurmd.log
+ReturnToService=2
+@NODE_LINE@ Gres=gpu:1 State=UNKNOWN
+PartitionName=gpu Nodes=@HOSTNAME@ Default=YES MaxTime=INFINITE State=UP
