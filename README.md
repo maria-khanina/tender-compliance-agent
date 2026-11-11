@@ -455,6 +455,54 @@ What the numbers show:
   before activations (16 bytes per parameter), which is why the model is
   quantized and only a LoRA adapter is trained.
 
+## Full fine-tuning with ZeRO-Offload
+
+`slurm/submit_full_fine_tuning.sh` trains all 596M parameters of Qwen3-0.6B
+with DeepSpeed ZeRO stage 2 (`sft/train_full_zero.py`) and, for comparison,
+a QLoRA adapter on the same model with the SFT settings above. Both runs use
+the same data, micro-batch 1 with 8 accumulation steps, gradient
+checkpointing and early stopping on validation macro F1. The training
+environment needs `pip install deepspeed==0.19.9` in addition to the SFT
+packages.
+
+| Run | Placement | Result |
+|---|---|---|
+| ZeRO-2, GPU only (`deepspeed_zero2_gpu.json`) | bf16 weights, fp32 master weights, gradients and Adam moments on the GPU | out of memory on the first step at 11.23 GiB: the failed 2.38 GB allocation is the fp32 copy of the weights |
+| ZeRO-2 with optimizer offload (`deepspeed_zero2_offload.json`) | bf16 weights and activations on the GPU; fp32 master weights, gradients and Adam moments in host memory, the Adam step on the CPU | 216 steps, 94 s per step, 3.51 GiB peak GPU memory, 10.67 GiB peak host memory |
+| QLoRA, rank 16 | frozen 4-bit base and the adapter on the GPU | 7335 s in total, about 23 s per step |
+
+Pinned host memory is off in the offload configuration: under WSL2 a pinned
+buffer of this size fails with `cuMemHostAlloc` out of memory.
+
+Validation macro F1 (96 cases) at the same optimizer steps:
+
+| Step | Full fine-tuning (lr 1e-5, 4 epochs) | QLoRA (lr 1e-4, 6 epochs) |
+|---|---|---|
+| 40 | 0.293 | 0.255 |
+| 80 | 0.188 | 0.292 |
+| 120 | 0.307 | 0.270 |
+| 160 | 0.307 | 0.329 |
+| 200 | **0.348** | 0.261 |
+| 280 | | **0.371** |
+
+What the numbers show:
+
+- Offload makes full fine-tuning fit: GPU memory falls from more than the
+  card has to 3.5 GiB. The price is speed: each step moves the gradients and
+  the updated weights over PCIe and runs Adam on the CPU, so a step is about
+  four times slower than a QLoRA step.
+- At equal steps neither method is ahead; QLoRA's best score comes from
+  steps that the 4-epoch full run does not reach, with a ten times larger
+  learning rate. The gap between the best scores (0.348 against 0.371) is
+  small for 96 validation cases and was not tested for significance.
+- The full run fits the training answers almost exactly (training loss
+  0.03, token accuracy 0.99) while validation stays near 0.3, so with 431
+  training rows the extra freedom of full fine-tuning goes into memorizing
+  the training set rather than into better verdicts.
+
+Summaries are in `sft/runs/qwen3-0.6b-full/` and
+`sft/runs/qwen3-0.6b-lora/sft_runs/qlora/`.
+
 ## Tests, style, and types
 
 ```

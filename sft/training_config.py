@@ -2,8 +2,8 @@
 import datetime
 import os
 
-BASE_MODEL = "Qwen/Qwen3-4B"
-RUN_DIR = "sft/runs/qwen3-4b-v1"
+BASE_MODEL = os.environ.get("BASE_MODEL", "Qwen/Qwen3-4B")
+RUN_DIR = os.environ.get("MODEL_RUN_DIR", "sft/runs/qwen3-4b-v1")
 DATA_DIR = "sft/data"
 TRAIN_DATA_PATH = f"{DATA_DIR}/sft_train_dataset.jsonl"
 VAL_DATA_PATH = f"{DATA_DIR}/sft_validation_dataset.jsonl"
