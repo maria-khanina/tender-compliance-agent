@@ -1,7 +1,7 @@
 import numpy as np
 
 from backends.embeddings import embed_texts
-from config import REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+from config import REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD
 from evaluation.fixtures import TrueRequirementsFixture
 from evaluation.matching import MatchGroup
 from schemas import Requirement
@@ -42,7 +42,7 @@ def _dedup_visibility_note(
     if best_sibling_id is None:
         return "could not compare against the matched predicted requirement"
     would_cluster = (
-        best_similarity >= REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+        best_similarity >= REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD
     )
     verdict = (
         "would likely have been clustered together and compared by the "
@@ -54,7 +54,7 @@ def _dedup_visibility_note(
     return (
         f"vs matched predicted [{short_id}]: cosine={best_similarity:.2f} "
         f"({'>=' if would_cluster else '<'} dedup threshold "
-        f"{REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD}) -> {verdict}"
+        f"{REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD}) -> {verdict}"
     )
 
 

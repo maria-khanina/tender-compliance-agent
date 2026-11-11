@@ -7,7 +7,7 @@ import subprocess
 from config import (
     DEFAULT_APPLICATION_VARIANT,
     DEFAULT_RUN_LABEL,
-    REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD,
+    REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD,
     Settings,
 )
 from evaluation.case_metrics import find_case_dirs, metrics_for_case
@@ -72,7 +72,7 @@ def main() -> None:
     history_path = pathlib.Path(arguments.history_file)
 
     language_model_name = Settings().language_model_name  # type: ignore[call-arg]
-    dedup_threshold = REQUIREMENT_DEDUPLICATION_SIMILARITY_THRESHOLD
+    dedup_threshold = REQUIREMENT_DEDUPLICATION_CANDIDATE_SIMILARITY_THRESHOLD
     dirty_paths = _git_dirty_paths(["config.py", "prompts.py"])
     if dirty_paths:
         print(
