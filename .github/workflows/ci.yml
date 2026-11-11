@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      LANGUAGE_MODEL_NAME: ci-placeholder
+      LANGUAGE_MODEL_API_KEY: ci-placeholder
+      VECTOR_STORE_URL: http://localhost:6333
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt -r requirements-dev.txt
+          pip install transformers==5.16.1 peft==0.20.0 trl==1.13.0 datasets==5.0.1 accelerate==1.15.0
+      - name: Style
+        run: pycodestyle --max-line-length=88 --exclude=.venv,sft/runs .
+      - name: Types
+        run: pyright
+      - name: Tests
+        run: python -m pytest -q
