@@ -249,15 +249,22 @@ def evaluate_task_accuracy(
     model.eval()
     correct = 0
     per_class = empty_class_counts()
+    predicted_verdicts: list[str | None] = []
     for row in val_rows:
         predicted_label = predict_verdict_label(model, tokenizer, row)
+        predicted_verdicts.append(predicted_label)
         if update_class_counts(per_class, row["true_verdict"], predicted_label):
             correct += 1
 
     accuracy = correct / len(val_rows) if val_rows else 0.0
     macro_f1 = macro_f1_from_class_counts(per_class)
     model.train()
-    return {"task_accuracy": accuracy, "macro_f1": macro_f1, "n": len(val_rows)}
+    return {
+        "task_accuracy": accuracy,
+        "macro_f1": macro_f1,
+        "n": len(val_rows),
+        "predicted_verdicts": predicted_verdicts,
+    }
 
 
 @dataclass

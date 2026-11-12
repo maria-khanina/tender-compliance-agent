@@ -16,3 +16,14 @@ EARLY_STOP_MINIMUM_DELTA = 0.01
 LOGGING_STEPS = 10
 WARMUP_OPTIMIZER_STEPS = 2
 BYTES_PER_GIBIBYTE = 1024 ** 3
+QLORA_EQUAL_EPOCHS_HISTORY = (
+    "sft/runs/qwen3-0.6b-lora/sft_runs/qlora_4_epochs/sft_training_history.json"
+)
+FULL_EQUAL_EPOCHS_HISTORY = (
+    "sft/runs/qwen3-0.6b-full/zero2_offload_4_epochs/validation_history.json"
+)
+EQUAL_EPOCHS_REPORT = "sft/runs/equal_epoch_comparison.json"
+BOOTSTRAP_RESAMPLES = 10000
+BOOTSTRAP_SEED = 0
+CONFIDENCE_LEVEL = 0.95
+PERCENT = 100
