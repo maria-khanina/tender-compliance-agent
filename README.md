@@ -468,40 +468,59 @@ packages.
 | Run | Placement | Result |
 |---|---|---|
 | ZeRO-2, GPU only (`deepspeed_zero2_gpu.json`) | bf16 weights, fp32 master weights, gradients and Adam moments on the GPU | out of memory on the first step at 11.23 GiB: the failed 2.38 GB allocation is the fp32 copy of the weights |
-| ZeRO-2 with optimizer offload (`deepspeed_zero2_offload.json`) | bf16 weights and activations on the GPU; fp32 master weights, gradients and Adam moments in host memory, the Adam step on the CPU | 216 steps, 94 s per step, 3.51 GiB peak GPU memory, 10.67 GiB peak host memory |
+| ZeRO-2 with optimizer offload (`deepspeed_zero2_offload.json`) | bf16 weights and activations on the GPU; fp32 master weights, gradients and Adam moments in host memory, the Adam step on the CPU | 94–110 s per step, 3.51 GiB peak GPU memory, 10.5–10.7 GiB peak host memory |
 | QLoRA, rank 16 | frozen 4-bit base and the adapter on the GPU | 7335 s in total, about 23 s per step |
 
 Pinned host memory is off in the offload configuration: under WSL2 a pinned
 buffer of this size fails with `cuMemHostAlloc` out of memory.
 
-Validation macro F1 (96 cases) at the same optimizer steps:
+Equal-epoch comparison (`slurm/submit_equal_epoch_comparison.sh qlora` and
+`... full`): both methods train for 4 epochs (216 optimizer steps) with their
+own learning rates (full 1e-5, QLoRA 1e-4), the same linear decay to zero
+without warmup and the same early stopping (3 evaluations without a gain of
+0.01). Every evaluation
+stores the predicted verdict of each validation case, and
+`python -m sft.compare_equal_epochs` scores the best step of each run with a
+paired bootstrap: 10,000 resamples of the 96 validation cases, the same
+resample for both runs, 95% percentile intervals
+(`sft/runs/equal_epoch_comparison.json`).
 
-| Step | Full fine-tuning (lr 1e-5, 4 epochs) | QLoRA (lr 1e-4, 6 epochs) |
+| Step | Full fine-tuning | QLoRA |
 |---|---|---|
-| 40 | 0.293 | 0.255 |
-| 80 | 0.188 | 0.292 |
-| 120 | 0.307 | 0.270 |
-| 160 | 0.307 | 0.329 |
-| 200 | **0.348** | 0.261 |
-| 280 | | **0.371** |
+| 40 | **0.331** | 0.263 |
+| 80 | 0.188 | 0.267 |
+| 120 | 0.243 | 0.216 |
+| 160 | 0.295 (early stop) | 0.309 |
+| 200 | | **0.356** |
+
+| | Best validation macro F1 | 95% interval |
+|---|---|---|
+| Full fine-tuning (step 40) | 0.331 | 0.216 – 0.447 |
+| QLoRA (step 200) | 0.356 | 0.268 – 0.443 |
+| Difference, full minus QLoRA | −0.025 | −0.171 – 0.122 |
+
+Full fine-tuning is better in 34% of the resamples. The best step is chosen
+on the same validation cases, so both scores are optimistic in the same way.
 
 What the numbers show:
 
 - Offload makes full fine-tuning fit: GPU memory falls from more than the
   card has to 3.5 GiB. The price is speed: each step moves the gradients and
-  the updated weights over PCIe and runs Adam on the CPU, so a step is about
-  four times slower than a QLoRA step.
-- At equal steps neither method is ahead; QLoRA's best score comes from
-  steps that the 4-epoch full run does not reach, with a ten times larger
-  learning rate. The gap between the best scores (0.348 against 0.371) is
-  small for 96 validation cases and was not tested for significance.
-- The full run fits the training answers almost exactly (training loss
-  0.03, token accuracy 0.99) while validation stays near 0.3, so with 431
-  training rows the extra freedom of full fine-tuning goes into memorizing
-  the training set rather than into better verdicts.
+  the updated weights over PCIe and runs Adam on the CPU, about 110 s per
+  step against about 23 s for QLoRA.
+- With equal epochs the two methods are not distinguishable on 96
+  validation cases: the interval of the difference spans from 17 points in
+  favour of QLoRA to 12 points in favour of full fine-tuning.
+- Full fine-tuning peaks early and then drops while the training loss keeps
+  falling (0.10 and token accuracy 0.98 at step 160), so with 431 training
+  rows its extra freedom goes into fitting the training answers rather than
+  into better verdicts.
+- Two full runs with the same settings gave 0.293 and 0.331 at step 40
+  (`sft/runs/qwen3-0.6b-full/zero2_offload/`), a run-to-run spread of the
+  same size as the difference between the methods.
 
 Summaries are in `sft/runs/qwen3-0.6b-full/` and
-`sft/runs/qwen3-0.6b-lora/sft_runs/qlora/`.
+`sft/runs/qwen3-0.6b-lora/sft_runs/`.
 
 ## Tests, style, and types
 

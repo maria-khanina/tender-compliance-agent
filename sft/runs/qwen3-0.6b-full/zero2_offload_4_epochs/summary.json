@@ -1,0 +1,9 @@
+{
+  "out_of_memory": false,
+  "optimizer_steps": 160,
+  "seconds_per_step": 110.5469856650698,
+  "peak_gpu_gibibytes": 3.50819730758667,
+  "peak_host_gibibytes": 10.515068054199219,
+  "best_macro_f1": 0.3305145941015506,
+  "best_step": 40
+}

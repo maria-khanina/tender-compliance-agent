@@ -81,6 +81,7 @@ class TaskEvalResult(TypedDict):
     task_accuracy: float
     macro_f1: float
     n: int
+    predicted_verdicts: list[str | None]
 
 
 class EvalHistoryEntry(TaskEvalResult):
