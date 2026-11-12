@@ -99,3 +99,12 @@ class DpoChatExample(TypedDict):
     tools: list[dict[str, object]]
     topic_id: str
     case: str
+
+
+class ModelSource(TypedDict):
+    """Where the tokenizer, the weights and an optional adapter of a model are."""
+
+    tokenizer: str
+    weights: str
+    adapter: str | None
+    quantized: bool

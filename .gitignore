@@ -9,3 +9,4 @@ venv/
 slurm/logs/
 sft/runs/**/merged/
 sft/runs/**/*_checkpoints/
+sft/runs/**/checkpoints/

@@ -522,6 +522,44 @@ What the numbers show:
 Summaries are in `sft/runs/qwen3-0.6b-full/` and
 `sft/runs/qwen3-0.6b-lora/sft_runs/`.
 
+## Review workload saved by the verdict model
+
+The business question is how much of the requirement-by-requirement reading
+a person can skip without missing problems. A case needs review when its
+gold verdict is anything but `compliant`. Instead of taking one generated
+verdict, `sft/verdict_probabilities.py` forces the answer up to the verdict
+field of the `submit_verdict` call and reads the probability of each of the
+four verdicts from the tokens of the model; the needs-review score is one
+minus the probability of `compliant`. A reviewer reads every case at or
+above a threshold, and the threshold is the highest one that still reads
+`MINIMUM_PROBLEM_RECALL` = 95% of the needs-review cases
+(`sft/review_workload_settings.py`). The metric is the share of cases left
+unread. ROC AUC of the score measures the ranking without a threshold.
+
+```
+python -m sft.score_review_models --model qlora_4b   # on the GPU, one model
+python -m sft.compare_review_models                  # sft/runs/review_workload_comparison.json
+```
+
+Validation set (96 cases, 38 need review), paired bootstrap with 10,000
+resamples and the threshold chosen again in every resample:
+
+| Model | Work saved at 95% of problems caught | ROC AUC |
+|---|---|---|
+| Qwen3-0.6B, no training | 8% [4; 19] | 0.61 [0.50; 0.73] |
+| Qwen3-0.6B, QLoRA | 9% [4; 27] | 0.80 [0.69; 0.89] |
+| Qwen3-4B, no training | 20% [12; 31] | 0.75 [0.64; 0.84] |
+| Qwen3-4B, QLoRA | 26% [18; 42] | 0.86 [0.78; 0.93] |
+| Qwen3-4B, QLoRA + DPO | 29% [20; 45] | 0.87 [0.79; 0.93] |
+
+- Fine-tuning improves the ranking: QLoRA raises ROC AUC by 0.18
+  [0.04; 0.32] for 0.6B and by 0.11 [0.02; 0.21] for 4B.
+- At 95% of problems caught the saved work is small for 0.6B, about a
+  quarter of the reading for 4B, and DPO adds 3 points [−3; 8] over QLoRA.
+- The threshold is chosen on the same cases it is applied to, so the saved
+  work is the best a threshold could do on them; the intervals cover one
+  tender only.
+
 ## Tests, style, and types
 
 ```
