@@ -21,7 +21,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, PreTrainedTokenize
 
 from sft.compare_models import bnb_config
 from sft.review_workload_settings import REVIEW_MODELS, REVIEW_SCORES_DIRECTORY
-from sft.training_schemas import ModelSource
+from sft.training_schemas import ChatExample, ModelSource
 from sft.train_verdict_lora import build_datasets
 from sft.verdict_probabilities import VerdictModel, verdict_probabilities
 
@@ -55,15 +55,15 @@ def load_model(source: ModelSource) -> VerdictModel:
     return PeftModel.from_pretrained(model, source["adapter"])
 
 
-def score_cases(
+def score_rows(
     model: VerdictModel,
     tokenizer: PreTrainedTokenizerBase,
+    rows: list[ChatExample],
 ) -> list[ScoredCase]:
-    """Return the verdict probabilities of every validation case."""
-    _, validation_rows = build_datasets()
+    """Return the verdict probabilities of every case of the rows."""
     model.eval()
     scored: list[ScoredCase] = []
-    for row in validation_rows:
+    for row in rows:
         scored.append({
             "case": row["case"],
             "topic_id": row["topic_id"],
@@ -73,17 +73,22 @@ def score_cases(
     return scored
 
 
+def save_scores(scored: list[ScoredCase], path: str) -> None:
+    """Write the scored cases to a JSON file, creating its directory."""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as scores_file:
+        json.dump(scored, scores_file, indent=2)
+    print(f"scored {len(scored)} cases into {path}")
+
+
 def main() -> None:
     """Score the validation cases with the named model and save the scores."""
     arguments = parse_arguments()
     source = REVIEW_MODELS[arguments.model]
     tokenizer = AutoTokenizer.from_pretrained(source["tokenizer"])
-    scored = score_cases(load_model(source), tokenizer)
-    os.makedirs(REVIEW_SCORES_DIRECTORY, exist_ok=True)
-    path = f"{REVIEW_SCORES_DIRECTORY}/{arguments.model}.json"
-    with open(path, "w", encoding="utf-8") as scores_file:
-        json.dump(scored, scores_file, indent=2)
-    print(f"scored {len(scored)} cases into {path}")
+    _, validation_rows = build_datasets()
+    scored = score_rows(load_model(source), tokenizer, validation_rows)
+    save_scores(scored, f"{REVIEW_SCORES_DIRECTORY}/{arguments.model}.json")
 
 
 if __name__ == "__main__":

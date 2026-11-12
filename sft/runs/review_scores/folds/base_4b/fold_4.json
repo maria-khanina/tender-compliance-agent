@@ -1,0 +1,1058 @@
+[
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "small_business_size_standard",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.6224678158760071,
+      "non_compliant": 0.37753140926361084,
+      "insufficient_information": 7.074723953337525e-07,
+      "contradictory": 1.0324384576432255e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "uei_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 1.72571699152968e-08,
+      "insufficient_information": 1.3176514046531196e-10,
+      "contradictory": 9.959845719432342e-14
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_unpaid_federal_tax_liability",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999946355819702,
+      "non_compliant": 5.422178219305351e-06,
+      "insufficient_information": 3.1608524131421234e-10,
+      "contradictory": 2.7074761703438366e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_recent_felony_conviction",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999979734420776,
+      "non_compliant": 1.9946992324548773e-06,
+      "insufficient_information": 4.8473405844795536e-11,
+      "contradictory": 1.542631446844675e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_complete",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9579090476036072,
+      "non_compliant": 0.04208822920918465,
+      "insufficient_information": 2.7801906981039792e-06,
+      "contradictory": 1.7080517555889685e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_must_not_be_edited",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9932860732078552,
+      "non_compliant": 0.0066926064901053905,
+      "insufficient_information": 2.1301670130924322e-05,
+      "contradictory": 1.1435903439493966e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "or_equal_product_documentation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9576037526130676,
+      "non_compliant": 0.022521110251545906,
+      "insufficient_information": 0.019875114783644676,
+      "contradictory": 1.0564619179476153e-09
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "capabilities_statement_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.0006234417087398469,
+      "non_compliant": 0.9947698712348938,
+      "insufficient_information": 0.004606698174029589,
+      "contradictory": 4.821262139520499e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "shop_drawings_and_product_data_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999991655349731,
+      "non_compliant": 8.851231996231945e-07,
+      "insufficient_information": 1.1744044625672245e-09,
+      "contradictory": 3.700698059626306e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_count",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.0026007811538875103,
+      "non_compliant": 0.07140398770570755,
+      "insufficient_information": 0.9259951710700989,
+      "contradictory": 3.1466236283250737e-09
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_poc_required",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999148845672607,
+      "non_compliant": 8.481069380650297e-05,
+      "insufficient_information": 2.1022549390181666e-07,
+      "contradictory": 3.9392659056600166e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "amendment_acknowledgment_if_posted",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9700962901115417,
+      "non_compliant": 0.0006079829181544483,
+      "insufficient_information": 0.02929571084678173,
+      "contradictory": 3.296722450585321e-09
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "contractor_core_data",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 1.8189131312240647e-09,
+      "insufficient_information": 2.020676161118562e-11,
+      "contradictory": 1.5426581453231725e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "final_offer_total_no_alternates",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999948740005493,
+      "non_compliant": 5.0936855586769525e-06,
+      "insufficient_information": 6.286154929924237e-10,
+      "contradictory": 9.450274764122302e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "small_business_size_standard",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 6.880677574372385e-06,
+      "non_compliant": 0.9883059859275818,
+      "insufficient_information": 0.011687133461236954,
+      "contradictory": 2.934447962399389e-10
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "uei_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999971389770508,
+      "non_compliant": 2.902234427892836e-06,
+      "insufficient_information": 1.0261850397208505e-10,
+      "contradictory": 1.3749628605813635e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_unpaid_federal_tax_liability",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9945422410964966,
+      "non_compliant": 0.0046057323925197124,
+      "insufficient_information": 0.000851984485052526,
+      "contradictory": 2.606101168201036e-10
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_recent_felony_conviction",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 6.684646725041432e-10,
+      "non_compliant": 3.0894691462890478e-06,
+      "insufficient_information": 0.9999963045120239,
+      "contradictory": 6.475310669884493e-07
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_complete",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.208016328746453e-06,
+      "non_compliant": 0.9985882639884949,
+      "insufficient_information": 0.0014103566063567996,
+      "contradictory": 6.815603370569079e-08
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_must_not_be_edited",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9883008003234863,
+      "non_compliant": 0.01168711669743061,
+      "insufficient_information": 1.207626974064624e-05,
+      "contradictory": 1.9968303052730896e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "or_equal_product_documentation",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 5.183666507946327e-05,
+      "non_compliant": 0.3073418438434601,
+      "insufficient_information": 0.6926055550575256,
+      "contradictory": 7.394385193038033e-07
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "capabilities_statement_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 7.16152825930294e-08,
+      "non_compliant": 0.9859362840652466,
+      "insufficient_information": 0.01406362559646368,
+      "contradictory": 2.0522037402770366e-08
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "shop_drawings_and_product_data_required",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 3.839735200017458e-06,
+      "non_compliant": 0.665407657623291,
+      "insufficient_information": 0.3345879912376404,
+      "contradictory": 5.197547352508991e-07
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_count",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.00010209953325102106,
+      "non_compliant": 0.8807055950164795,
+      "insufficient_information": 0.11919236183166504,
+      "contradictory": 3.574136819839424e-10
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_poc_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6206657290458679,
+      "non_compliant": 0.3764599859714508,
+      "insufficient_information": 0.002874318277463317,
+      "contradictory": 1.731274429372931e-10
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "amendment_acknowledgment_if_posted",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9989677667617798,
+      "non_compliant": 0.0010322073940187693,
+      "insufficient_information": 2.333164328405246e-09,
+      "contradictory": 1.7637507123205443e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "contractor_core_data",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.4064022898674011,
+      "non_compliant": 0.5913276076316833,
+      "insufficient_information": 0.0022702051792293787,
+      "contradictory": 2.8947785835065076e-10
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "final_offer_total_no_alternates",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 8.043510206334759e-06,
+      "non_compliant": 0.9579041600227356,
+      "insufficient_information": 0.042087212204933167,
+      "contradictory": 7.029065614005958e-07
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "small_business_size_standard",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9433344006538391,
+      "non_compliant": 0.056651633232831955,
+      "insufficient_information": 1.3903993931307923e-05,
+      "contradictory": 7.0122592628341085e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "uei_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999991655349731,
+      "non_compliant": 8.851231996231945e-07,
+      "insufficient_information": 3.3647379327206295e-10,
+      "contradictory": 1.2916310816041277e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_unpaid_federal_tax_liability",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.999896764755249,
+      "non_compliant": 0.0001022993674268946,
+      "insufficient_information": 9.421482332072628e-07,
+      "contradictory": 5.492116830763116e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "no_recent_felony_conviction",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999985694885254,
+      "non_compliant": 1.4592760635423474e-06,
+      "insufficient_information": 3.812730686725274e-10,
+      "contradictory": 2.267020121973773e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_complete",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9998511075973511,
+      "non_compliant": 0.00014883790572639555,
+      "insufficient_information": 4.644172157952653e-09,
+      "contradictory": 1.4635214698119348e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "price_schedule_must_not_be_edited",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999573230743408,
+      "non_compliant": 4.2646817746572196e-05,
+      "insufficient_information": 5.963868510150405e-09,
+      "contradictory": 1.4636657771210926e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "or_equal_product_documentation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999097585678101,
+      "non_compliant": 9.027935448102653e-05,
+      "insufficient_information": 8.07083455622859e-10,
+      "contradictory": 4.507969952188828e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "capabilities_statement_required",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9722648859024048,
+      "non_compliant": 0.027581138536334038,
+      "insufficient_information": 0.0001540663797641173,
+      "contradictory": 3.906706208534061e-11
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "shop_drawings_and_product_data_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9997833371162415,
+      "non_compliant": 0.0002165431942557916,
+      "insufficient_information": 7.264269896722908e-08,
+      "contradictory": 7.4318147122443e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_count",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999988079071045,
+      "non_compliant": 1.1365506225047284e-06,
+      "insufficient_information": 2.3125386328093356e-10,
+      "contradictory": 4.193327000738545e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "prior_experience_poc_required",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.999373733997345,
+      "non_compliant": 0.0006263342220336199,
+      "insufficient_information": 3.222179856265939e-08,
+      "contradictory": 3.7353913365234526e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "amendment_acknowledgment_if_posted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9979493021965027,
+      "non_compliant": 0.0020507201552391052,
+      "insufficient_information": 9.71619673606483e-10,
+      "contradictory": 2.125385371171129e-12
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "contractor_core_data",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 2.358820339054546e-08,
+      "insufficient_information": 3.3315444153414475e-11,
+      "contradictory": 3.0680357343201847e-13
+    }
+  },
+  {
+    "case": "140p6426q0127_piro_handrail",
+    "topic_id": "final_offer_total_no_alternates",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 9.146243762359063e-10,
+      "insufficient_information": 1.783247334519178e-11,
+      "contradictory": 1.5425169279902062e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "los_compliance_assertion",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.16643400490283966,
+      "non_compliant": 0.7940334677696228,
+      "insufficient_information": 0.03953244537115097,
+      "contradictory": 8.759954983617035e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "uei_provided_on_quote",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9990302324295044,
+      "non_compliant": 0.0009697519708424807,
+      "insufficient_information": 3.847022256309174e-09,
+      "contradictory": 2.410847780090486e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "eft_indicator_if_applicable",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9960278272628784,
+      "non_compliant": 0.0038239022251218557,
+      "insufficient_information": 0.0001482699008192867,
+      "contradictory": 1.3970238854632555e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quote_signed_and_dated",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 2.666937177764339e-07,
+      "non_compliant": 0.32082122564315796,
+      "insufficient_information": 0.6791785359382629,
+      "contradictory": 1.0343204515095294e-08
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999984502792358,
+      "non_compliant": 1.5534621979895746e-06,
+      "insufficient_information": 1.9171686460595083e-10,
+      "contradictory": 3.266026500896996e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "time_specified_for_receipt_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999963045120239,
+      "non_compliant": 3.7266108847688884e-06,
+      "insufficient_information": 1.0923673771090492e-10,
+      "contradictory": 1.7481876406558183e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quoter_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999997615814209,
+      "non_compliant": 2.6995573421118024e-07,
+      "insufficient_information": 1.9171711440613137e-10,
+      "contradictory": 1.5426695294459836e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "technical_description_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999995231628418,
+      "non_compliant": 5.043378337177273e-07,
+      "insufficient_information": 3.5817598886822566e-10,
+      "contradictory": 7.360028385361428e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "warranty_terms_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9980723857879639,
+      "non_compliant": 0.0019267476163804531,
+      "insufficient_information": 8.834548452796298e-07,
+      "contradictory": 3.730627352177551e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "price_and_discount_terms_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9966225624084473,
+      "non_compliant": 0.003376635489985347,
+      "insufficient_information": 8.82174902017141e-07,
+      "contradictory": 1.4733596287452855e-11
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "remit_to_address_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999951124191284,
+      "non_compliant": 4.784984867001185e-06,
+      "insufficient_information": 6.825570153523586e-08,
+      "contradictory": 5.108830025690736e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 1.4918576096700775e-10,
+      "non_compliant": 0.9999798536300659,
+      "insufficient_information": 2.014569145103451e-05,
+      "contradictory": 4.508492537635966e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999966621398926,
+      "non_compliant": 3.2886862300074426e-06,
+      "insufficient_information": 3.160871009377786e-10,
+      "contradictory": 1.3750146854452083e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "terms_and_conditions_acceptance_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999994039535522,
+      "non_compliant": 6.083544121793238e-07,
+      "insufficient_information": 4.320410140756792e-10,
+      "contradictory": 8.33978123105511e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "product_chart_full_pricing",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 1.869078005256597e-06,
+      "non_compliant": 0.9975255131721497,
+      "insufficient_information": 0.002472618594765663,
+      "contradictory": 5.588868479122766e-09
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "brand_name_no_substitutes",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999756813049316,
+      "non_compliant": 2.4300239601871e-05,
+      "insufficient_information": 8.591957700865294e-10,
+      "contradictory": 1.463675968621514e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "shipping_cost_handling",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.0015975807327777147,
+      "non_compliant": 0.9982442855834961,
+      "insufficient_information": 0.00015818310203030705,
+      "contradictory": 2.308463697975327e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "single_best_price_quote",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.00020337465684860945,
+      "non_compliant": 0.9995661377906799,
+      "insufficient_information": 0.00023045895795803517,
+      "contradictory": 4.097221228960279e-09
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "los_compliance_assertion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999785423278809,
+      "non_compliant": 2.1444866433739662e-05,
+      "insufficient_information": 3.3982079372663065e-09,
+      "contradictory": 7.834066511822058e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "uei_provided_on_quote",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.998498797416687,
+      "non_compliant": 0.0015011822106316686,
+      "insufficient_information": 2.3553242911589223e-08,
+      "contradictory": 2.2635079574562234e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "eft_indicator_if_applicable",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9979766011238098,
+      "non_compliant": 0.0011685059871524572,
+      "insufficient_information": 0.0008549037738703191,
+      "contradictory": 5.1492417968423965e-11
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quote_signed_and_dated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.00039973773527890444,
+      "non_compliant": 0.9879174828529358,
+      "insufficient_information": 0.011682761833071709,
+      "contradictory": 2.93330554290705e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999994039535522,
+      "non_compliant": 5.368585789256031e-07,
+      "insufficient_information": 2.0408172374253297e-10,
+      "contradictory": 4.4639969888973785e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "time_specified_for_receipt_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999996423721313,
+      "non_compliant": 3.9277423979910964e-07,
+      "insufficient_information": 1.6918974554691601e-10,
+      "contradictory": 1.3613905196305925e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quoter_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 6.348509273834679e-09,
+      "insufficient_information": 2.76194744158742e-11,
+      "contradictory": 1.8605170843625368e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "technical_description_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9993314743041992,
+      "non_compliant": 0.0006666756235063076,
+      "insufficient_information": 1.872633333732665e-06,
+      "contradictory": 7.907399561524198e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "warranty_terms_stated",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9999971389770508,
+      "non_compliant": 2.9022235139564145e-06,
+      "insufficient_information": 5.905287370211454e-10,
+      "contradictory": 6.494964071776521e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "price_and_discount_terms_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.999890923500061,
+      "non_compliant": 0.0001088964709197171,
+      "insufficient_information": 6.022939658123505e-08,
+      "contradictory": 3.098386564676092e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "remit_to_address_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999339580535889,
+      "non_compliant": 6.60491205053404e-05,
+      "insufficient_information": 2.7892624321346204e-10,
+      "contradictory": 2.881995586189595e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.999841570854187,
+      "non_compliant": 0.0001584356214152649,
+      "insufficient_information": 2.215606365041367e-08,
+      "contradictory": 2.412814739671809e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.357315682071203e-07,
+      "non_compliant": 0.999970555305481,
+      "insufficient_information": 2.93122047878569e-05,
+      "contradictory": 6.982984503134393e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "terms_and_conditions_acceptance_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.0008557908586226404,
+      "non_compliant": 0.9990540146827698,
+      "insufficient_information": 9.020312427310273e-05,
+      "contradictory": 1.2489225209577626e-09
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "product_chart_full_pricing",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.004320723470300436,
+      "non_compliant": 0.993217408657074,
+      "insufficient_information": 0.0024619305040687323,
+      "contradictory": 3.557345806814993e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "brand_name_no_substitutes",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 3.0280684626404764e-08,
+      "non_compliant": 0.9999997615814209,
+      "insufficient_information": 1.9750534363538463e-07,
+      "contradictory": 4.362512573408139e-09
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "shipping_cost_handling",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999485015869141,
+      "non_compliant": 5.144182068761438e-05,
+      "insufficient_information": 2.646437291531356e-09,
+      "contradictory": 1.0708272376452888e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "single_best_price_quote",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999942779541016,
+      "non_compliant": 5.7718102652870584e-06,
+      "insufficient_information": 2.620437755673777e-10,
+      "contradictory": 6.913700840126269e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "los_compliance_assertion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999992847442627,
+      "non_compliant": 6.893478712299839e-07,
+      "insufficient_information": 2.6204707848087594e-10,
+      "contradictory": 3.4764977897318305e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "uei_provided_on_quote",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999667406082153,
+      "non_compliant": 3.321381154819392e-05,
+      "insufficient_information": 2.9692745484588556e-10,
+      "contradictory": 2.3889446193817165e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "eft_indicator_if_applicable",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9998509883880615,
+      "non_compliant": 0.0001488367561250925,
+      "insufficient_information": 1.1977567737631034e-07,
+      "contradictory": 5.788051895411206e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quote_signed_and_dated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8159214854240417,
+      "non_compliant": 0.1820559948682785,
+      "insufficient_information": 0.0020224980544298887,
+      "contradictory": 9.0011531561629e-10
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999997615814209,
+      "non_compliant": 1.974993182329854e-07,
+      "insufficient_information": 5.159995694614672e-11,
+      "contradictory": 2.389388058070263e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "time_specified_for_receipt_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999992847442627,
+      "non_compliant": 7.337314400501782e-07,
+      "insufficient_information": 1.0261871907779607e-10,
+      "contradictory": 1.4492031706614394e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "quoter_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 1.0,
+      "non_compliant": 2.081596051084489e-08,
+      "insufficient_information": 3.546410734522887e-11,
+      "contradictory": 1.278732978879371e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "technical_description_stated",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9994470477104187,
+      "non_compliant": 0.0005527595640160143,
+      "insufficient_information": 2.534607403958944e-07,
+      "contradictory": 2.2657440160167575e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "warranty_terms_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999097585678101,
+      "non_compliant": 9.028005297295749e-05,
+      "insufficient_information": 9.832288760946994e-09,
+      "contradictory": 1.879244589803042e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "price_and_discount_terms_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9896711707115173,
+      "non_compliant": 0.010328184813261032,
+      "insufficient_information": 6.822438081144355e-07,
+      "contradictory": 7.83110989249769e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "remit_to_address_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999995231628418,
+      "non_compliant": 4.181091242116963e-07,
+      "insufficient_information": 3.812734294950104e-10,
+      "contradictory": 6.101491382450031e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999861717224121,
+      "non_compliant": 1.3845846297044773e-05,
+      "insufficient_information": 2.6465369895589674e-09,
+      "contradictory": 5.384578416825492e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.002050247974693775,
+      "non_compliant": 0.9976890087127686,
+      "insufficient_information": 0.00026066674035973847,
+      "contradictory": 7.036527610582155e-11
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "terms_and_conditions_acceptance_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999852180480957,
+      "non_compliant": 1.4738193385710474e-05,
+      "insufficient_information": 5.211355236234283e-10,
+      "contradictory": 1.765486303158259e-12
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "product_chart_full_pricing",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9964002370834351,
+      "non_compliant": 0.003593594068661332,
+      "insufficient_information": 6.122118065832183e-06,
+      "contradictory": 7.027330106712526e-11
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "brand_name_no_substitutes",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999997615814209,
+      "non_compliant": 2.8735979640259757e-07,
+      "insufficient_information": 4.553680349461686e-11,
+      "contradictory": 4.751358269501627e-13
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "shipping_cost_handling",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.008061667904257774,
+      "non_compliant": 0.991917073726654,
+      "insufficient_information": 2.1271986042847857e-05,
+      "contradictory": 4.808023076896539e-11
+    }
+  },
+  {
+    "case": "36C24126Q0731",
+    "topic_id": "single_best_price_quote",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999991655349731,
+      "non_compliant": 8.851164352563501e-07,
+      "insufficient_information": 6.286158260593311e-10,
+      "contradictory": 8.338887848464982e-13
+    }
+  }
+]

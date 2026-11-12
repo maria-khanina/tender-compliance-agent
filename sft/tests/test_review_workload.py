@@ -1,9 +1,19 @@
 import numpy
 
-from sft.review_workload import ranking_auc, required_catches, saved_work
+from sft.review_workload import (
+    cross_fitted_review,
+    ranking_auc,
+    required_catches,
+    saved_work,
+)
 from sft.tests.review_fixture_settings import (
     CHANCE_AUC,
     EQUAL_SCORES,
+    FOLDED_FOLDS,
+    FOLDED_LABELS,
+    FOLDED_RECALL,
+    FOLDED_SAVED_WORK,
+    FOLDED_SCORES,
     LAST_LABELS,
     LAST_SCORES,
     PROBLEM_COUNTS_AND_CATCHES,
@@ -43,3 +53,13 @@ def test_ranking_auc_counts_ties_as_half() -> None:
     labels = numpy.array(TIED_LABELS)
     assert ranking_auc(labels, numpy.array(SEPARATED_SCORES)) == 1.0
     assert ranking_auc(labels, numpy.array(EQUAL_SCORES)) == CHANCE_AUC
+
+
+def test_cross_fitted_review_uses_the_threshold_of_the_other_fold() -> None:
+    saved, recall = cross_fitted_review(
+        numpy.array(FOLDED_LABELS),
+        numpy.array(FOLDED_SCORES),
+        numpy.array(FOLDED_FOLDS),
+    )
+    assert saved == FOLDED_SAVED_WORK
+    assert recall == FOLDED_RECALL

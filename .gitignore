@@ -10,3 +10,4 @@ slurm/logs/
 sft/runs/**/merged/
 sft/runs/**/*_checkpoints/
 sft/runs/**/checkpoints/
+sft/runs/qwen3-0.6b-lora/folds/

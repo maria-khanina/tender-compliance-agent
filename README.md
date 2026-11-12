@@ -560,6 +560,37 @@ resamples and the threshold chosen again in every resample:
   work is the best a threshold could do on them; the intervals cover one
   tender only.
 
+### Tender-grouped cross-validation
+
+To narrow the intervals and test whether the threshold carries over to new
+tenders, `sft/folds.py` pools the training and validation cases (527 cases,
+168 need review) and splits them into 5 folds so that every tender lies
+in one fold only (`sft/folds.json`). Every case is scored by a model that
+never saw its tender: the untrained models score every fold, and QLoRA is
+trained again for 4 epochs on the other four folds. Every fold is read at
+the threshold chosen on the other folds, so the recall it reaches is
+measured, not assumed. The bootstrap resamples the cases within every fold.
+
+```
+python -m sft.folds                                # sft/folds.json
+sbatch slurm/submit_fold_comparison.sh             # fold scores and QLoRA per fold
+python -m sft.compare_fold_models                  # sft/runs/review_workload_folds.json
+```
+
+| Model | Work saved | Recall reached | ROC AUC |
+|---|---|---|---|
+| Qwen3-0.6B, no training | 11% [9; 19] | 95% [91; 96] | 0.64 [0.59; 0.69] |
+| Qwen3-0.6B, QLoRA | 12% [7; 20] | 95% [91; 96] | 0.69 [0.64; 0.74] |
+| Qwen3-4B, no training | 24% [14; 34] | 95% [92; 96] | 0.79 [0.75; 0.83] |
+
+- The intervals of ROC AUC are about half as wide as on the validation set.
+- A threshold chosen on other tenders keeps the recall at 95% on average.
+- QLoRA on 0.6B adds 0.05 [−0.004; 0.10] to ROC AUC and no saved work
+  (0.2 points [−7; 8]): most of its gain on the validation set came from
+  that split.
+- Qwen3-4B without training saves 13 points [0.4; 22] more work than 0.6B
+  without training and 13 points [2; 21] more than 0.6B with QLoRA.
+
 ## Tests, style, and types
 
 ```
