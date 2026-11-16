@@ -1,0 +1,1256 @@
+[
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "offer_content_minimum_elements",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9222085475921631,
+      "non_compliant": 0.07566007971763611,
+      "insufficient_information": 0.002017807913944125,
+      "contradictory": 0.00011372364679118618
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9887765049934387,
+      "non_compliant": 0.010980125516653061,
+      "insufficient_information": 0.00020122005662415177,
+      "contradictory": 4.215027001919225e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5555403232574463,
+      "non_compliant": 0.38171714544296265,
+      "insufficient_information": 0.06234832480549812,
+      "contradictory": 0.0003941416507586837
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.858291745185852,
+      "non_compliant": 0.14003880321979523,
+      "insufficient_information": 0.0015568661037832499,
+      "contradictory": 0.00011268417438259348
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "two_part_proposal_format",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9220475554466248,
+      "non_compliant": 0.07565899193286896,
+      "insufficient_information": 0.0021474186796694994,
+      "contradictory": 0.0001460060739191249
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_capabilities_letter",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.897507905960083,
+      "non_compliant": 0.08877993375062943,
+      "insufficient_information": 0.013631084002554417,
+      "contradictory": 8.09714911156334e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "prior_experience_documentation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.583359956741333,
+      "non_compliant": 0.37632521986961365,
+      "insufficient_information": 0.03971238061785698,
+      "contradictory": 0.0006024419562891126
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "past_performance_contracts_submission",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5608702898025513,
+      "non_compliant": 0.3618944585323334,
+      "insufficient_information": 0.0759301483631134,
+      "contradictory": 0.0013051205314695835
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_experience_examples_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9718911051750183,
+      "non_compliant": 0.024308783933520317,
+      "insufficient_information": 0.003731799777597189,
+      "contradictory": 6.829739140812308e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "subcontractor_technical_experience_submission",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9463645815849304,
+      "non_compliant": 0.050118573009967804,
+      "insufficient_information": 0.003413755213841796,
+      "contradictory": 0.00010298152483301237
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "electrical_safety_training_certification_submission",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.7616347670555115,
+      "non_compliant": 0.19237136840820312,
+      "insufficient_information": 0.04575403407216072,
+      "contradictory": 0.0002398250944679603
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "offer_content_minimum_elements",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9751113653182983,
+      "non_compliant": 0.022928178310394287,
+      "insufficient_information": 0.0018827992025762796,
+      "contradictory": 7.762292807456106e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9921448826789856,
+      "non_compliant": 0.007115419954061508,
+      "insufficient_information": 0.0007047289400361478,
+      "contradictory": 3.504853157210164e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.7281683683395386,
+      "non_compliant": 0.22208429872989655,
+      "insufficient_information": 0.04956883192062378,
+      "contradictory": 0.00017855367332231253
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9899598360061646,
+      "non_compliant": 0.009702004492282867,
+      "insufficient_information": 0.00029312437982298434,
+      "contradictory": 4.491077197599225e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "two_part_proposal_format",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8260507583618164,
+      "non_compliant": 0.14352254569530487,
+      "insufficient_information": 0.030092857778072357,
+      "contradictory": 0.0003339069662615657
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_capabilities_letter",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9343167543411255,
+      "non_compliant": 0.059698574244976044,
+      "insufficient_information": 0.005914827808737755,
+      "contradictory": 6.986172957113013e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "prior_experience_documentation",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.7277577519416809,
+      "non_compliant": 0.2513648569583893,
+      "insufficient_information": 0.02064836397767067,
+      "contradictory": 0.0002291324781253934
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "past_performance_contracts_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6337189078330994,
+      "non_compliant": 0.24812199175357819,
+      "insufficient_information": 0.11726444959640503,
+      "contradictory": 0.0008946951711550355
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_experience_examples_submission",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6619790196418762,
+      "non_compliant": 0.18959541618824005,
+      "insufficient_information": 0.14774185419082642,
+      "contradictory": 0.0006837148685008287
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "subcontractor_technical_experience_submission",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8153638243675232,
+      "non_compliant": 0.12501934170722961,
+      "insufficient_information": 0.059073545038700104,
+      "contradictory": 0.0005433185142464936
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "electrical_safety_training_certification_submission",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.42807257175445557,
+      "non_compliant": 0.3548365533351898,
+      "insufficient_information": 0.21534201502799988,
+      "contradictory": 0.0017488276353105903
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "offer_content_minimum_elements",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8898013830184937,
+      "non_compliant": 0.10622987151145935,
+      "insufficient_information": 0.0038718811701983213,
+      "contradictory": 9.683751704869792e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9425589442253113,
+      "non_compliant": 0.056597184389829636,
+      "insufficient_information": 0.0007587239379063249,
+      "contradictory": 8.506900485372171e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6090160608291626,
+      "non_compliant": 0.2702152132987976,
+      "insufficient_information": 0.11996103078126907,
+      "contradictory": 0.0008076777448877692
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5700859427452087,
+      "non_compliant": 0.4170376658439636,
+      "insufficient_information": 0.01259827520698309,
+      "contradictory": 0.00027812516782432795
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "two_part_proposal_format",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8868109583854675,
+      "non_compliant": 0.1058710366487503,
+      "insufficient_information": 0.007208697032183409,
+      "contradictory": 0.00010936208127532154
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_capabilities_letter",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6282511949539185,
+      "non_compliant": 0.3360561430454254,
+      "insufficient_information": 0.0354539193212986,
+      "contradictory": 0.00023869032156653702
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "prior_experience_documentation",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.645327627658844,
+      "non_compliant": 0.30458128452301025,
+      "insufficient_information": 0.04977627843618393,
+      "contradictory": 0.00031483659404329956
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "past_performance_contracts_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6180790066719055,
+      "non_compliant": 0.3305726945400238,
+      "insufficient_information": 0.050748560577631,
+      "contradictory": 0.000599660852458328
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "technical_experience_examples_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.937690258026123,
+      "non_compliant": 0.0562775656580925,
+      "insufficient_information": 0.0059362067840993404,
+      "contradictory": 9.588032844476402e-05
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "subcontractor_technical_experience_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6991176009178162,
+      "non_compliant": 0.2269083559513092,
+      "insufficient_information": 0.07370851933956146,
+      "contradictory": 0.0002654650597833097
+    }
+  },
+  {
+    "case": "36C25526Q0501",
+    "topic_id": "electrical_safety_training_certification_submission",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.5693634152412415,
+      "non_compliant": 0.28606465458869934,
+      "insufficient_information": 0.14401941001415253,
+      "contradictory": 0.0005524116568267345
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "sam_uei_vendor_info",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9781854152679443,
+      "non_compliant": 0.021608252078294754,
+      "insufficient_information": 0.00014563885633833706,
+      "contradictory": 6.066200148779899e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "terms_concurrence_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9950161576271057,
+      "non_compliant": 0.0049036904238164425,
+      "insufficient_information": 2.5747032850631513e-05,
+      "contradictory": 5.4448904847959056e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fob_destination_manufacturer_part_number",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9939873218536377,
+      "non_compliant": 0.005909664556384087,
+      "insufficient_information": 6.567072705365717e-05,
+      "contradictory": 3.7379177229013294e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "authorized_distributor_letter",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9932329654693604,
+      "non_compliant": 0.00669095991179347,
+      "insufficient_information": 4.510061990004033e-05,
+      "contradictory": 3.097022636211477e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "country_of_origin_disclosure",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9993615746498108,
+      "non_compliant": 0.0006261485978029668,
+      "insufficient_information": 5.419592980615562e-06,
+      "contradictory": 6.951015166123398e-06
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "buy_american_certificate_completed",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8312373757362366,
+      "non_compliant": 0.1636391431093216,
+      "insufficient_information": 0.004943642299622297,
+      "contradictory": 0.0001798771700123325
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "gray_market_verification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8805755376815796,
+      "non_compliant": 0.1191636249423027,
+      "insufficient_information": 0.00019076834723819047,
+      "contradictory": 7.011259731370956e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "business_size_designation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9550524950027466,
+      "non_compliant": 0.04466456547379494,
+      "insufficient_information": 0.00020689242228399962,
+      "contradictory": 7.600861135870218e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fss_contract_listing",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.3421388268470764,
+      "non_compliant": 0.6139914989471436,
+      "insufficient_information": 0.04179149121046066,
+      "contradictory": 0.002078141551464796
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "or_equal_submission_requirements",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8219775557518005,
+      "non_compliant": 0.1722685843706131,
+      "insufficient_information": 0.0055391909554600716,
+      "contradictory": 0.0002145505277439952
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.557171106338501,
+      "non_compliant": 0.43397000432014465,
+      "insufficient_information": 0.008463392034173012,
+      "contradictory": 0.00039548115455545485
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "nmr_certification_signed",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9939699172973633,
+      "non_compliant": 0.005909132305532694,
+      "insufficient_information": 6.990117253735662e-05,
+      "contradictory": 5.10924328409601e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_electric_locking_casters",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8070778250694275,
+      "non_compliant": 0.19167731702327728,
+      "insufficient_information": 0.0010061908978968859,
+      "contradictory": 0.00023869109281804413
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_height_adjustment",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.7863051891326904,
+      "non_compliant": 0.2116142064332962,
+      "insufficient_information": 0.0017203736351802945,
+      "contradictory": 0.000360206380719319
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_hand_control_storage_loops",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8424212336540222,
+      "non_compliant": 0.15582334995269775,
+      "insufficient_information": 0.0014354803133755922,
+      "contradictory": 0.00031996070174500346
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_surface_footprint",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6135374307632446,
+      "non_compliant": 0.3720909357070923,
+      "insufficient_information": 0.013558273203670979,
+      "contradictory": 0.0008133263909257948
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_ada_entry_height",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5191941261291504,
+      "non_compliant": 0.45816361904144287,
+      "insufficient_information": 0.021434485912322998,
+      "contradictory": 0.00120771792717278
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_trendelenburg_positioning",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9225674867630005,
+      "non_compliant": 0.07571494579315186,
+      "insufficient_information": 0.0014767611864954233,
+      "contradictory": 0.00024075113469734788
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_open_apical_window",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.763871967792511,
+      "non_compliant": 0.23292335867881775,
+      "insufficient_information": 0.002755414927378297,
+      "contradictory": 0.0004492801090236753
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_weight_capacity",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5731981992721558,
+      "non_compliant": 0.41928717494010925,
+      "insufficient_information": 0.007217069622129202,
+      "contradictory": 0.0002975490060634911
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_rapid_release_drop_sections",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8976444602012634,
+      "non_compliant": 0.10069851577281952,
+      "insufficient_information": 0.00143691326957196,
+      "contradictory": 0.00022012379486113787
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_adjustable_back_support",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9277913570404053,
+      "non_compliant": 0.07153894752264023,
+      "insufficient_information": 0.00051326141692698,
+      "contradictory": 0.00015634372539352626
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_drop_section_size",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.81554114818573,
+      "non_compliant": 0.1819555163383484,
+      "insufficient_information": 0.0021523202303797007,
+      "contradictory": 0.0003510083188302815
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_dropdown_cushion",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5387021899223328,
+      "non_compliant": 0.44294941425323486,
+      "insufficient_information": 0.017180420458316803,
+      "contradictory": 0.0011679764138534665
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "delivery_timeframe_30_days_aro",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7763457298278809,
+      "non_compliant": 0.22241829335689545,
+      "insufficient_information": 0.001096723135560751,
+      "contradictory": 0.0001392583508277312
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "software_licensing_oem_terms_conformance",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8733209371566772,
+      "non_compliant": 0.1258176565170288,
+      "insufficient_information": 0.0006603852962143719,
+      "contradictory": 0.00020118193060625345
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "brand_name_required_unless_equal_indicated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5553566813468933,
+      "non_compliant": 0.43250396847724915,
+      "insufficient_information": 0.011529006995260715,
+      "contradictory": 0.000610287010204047
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "sam_uei_vendor_info",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.877733588218689,
+      "non_compliant": 0.11879942566156387,
+      "insufficient_information": 0.0033713660668581724,
+      "contradictory": 9.555442375130951e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "terms_concurrence_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9389708638191223,
+      "non_compliant": 0.06002387776970863,
+      "insufficient_information": 0.0008565980824641883,
+      "contradictory": 0.00014866887067910284
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fob_destination_manufacturer_part_number",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8060061931610107,
+      "non_compliant": 0.17983227968215942,
+      "insufficient_information": 0.013873974792659283,
+      "contradictory": 0.0002876114740502089
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "authorized_distributor_letter",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9274295568466187,
+      "non_compliant": 0.07151705026626587,
+      "insufficient_information": 0.0009586490341462195,
+      "contradictory": 9.479570871917531e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "country_of_origin_disclosure",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9354961514472961,
+      "non_compliant": 0.06364892423152924,
+      "insufficient_information": 0.0006646391120739281,
+      "contradictory": 0.00019020306353922933
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "buy_american_certificate_completed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5420041680335999,
+      "non_compliant": 0.39668169617652893,
+      "insufficient_information": 0.060850050300359726,
+      "contradictory": 0.0004640344122890383
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "gray_market_verification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5833514928817749,
+      "non_compliant": 0.4067900478839874,
+      "insufficient_information": 0.009569778107106686,
+      "contradictory": 0.00028865557396784425
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "business_size_designation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5844761729240417,
+      "non_compliant": 0.4017264246940613,
+      "insufficient_information": 0.012918992899358273,
+      "contradictory": 0.0008784026722423732
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fss_contract_listing",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8494881391525269,
+      "non_compliant": 0.1386822611093521,
+      "insufficient_information": 0.011388532817363739,
+      "contradictory": 0.00044103761320002377
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "or_equal_submission_requirements",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9481738805770874,
+      "non_compliant": 0.0502530038356781,
+      "insufficient_information": 0.0015179318143054843,
+      "contradictory": 5.521963248611428e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7472255825996399,
+      "non_compliant": 0.2426515519618988,
+      "insufficient_information": 0.010018444620072842,
+      "contradictory": 0.00010441274935146794
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "nmr_certification_signed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8042610287666321,
+      "non_compliant": 0.19102108478546143,
+      "insufficient_information": 0.0044944253750145435,
+      "contradictory": 0.00022351983352564275
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_electric_locking_casters",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7162035703659058,
+      "non_compliant": 0.28048059344291687,
+      "insufficient_information": 0.0031168563291430473,
+      "contradictory": 0.00019905227236449718
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_height_adjustment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9930139183998108,
+      "non_compliant": 0.00669134734198451,
+      "insufficient_information": 0.00024378437956329435,
+      "contradictory": 5.102829891256988e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_hand_control_storage_loops",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9909268617630005,
+      "non_compliant": 0.008573769591748714,
+      "insufficient_information": 0.00045447461889125407,
+      "contradictory": 4.493800952332094e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_surface_footprint",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9912312626838684,
+      "non_compliant": 0.008575912564992905,
+      "insufficient_information": 0.0001672425860306248,
+      "contradictory": 2.5613016987335868e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_ada_entry_height",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8610799312591553,
+      "non_compliant": 0.13207228481769562,
+      "insufficient_information": 0.006576796993613243,
+      "contradictory": 0.00027103102183900774
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_trendelenburg_positioning",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9959444403648376,
+      "non_compliant": 0.0038236621767282486,
+      "insufficient_information": 0.00020270078675821424,
+      "contradictory": 2.9161241400288418e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_open_apical_window",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9960158467292786,
+      "non_compliant": 0.0038240456487983465,
+      "insufficient_information": 0.00013088210835121572,
+      "contradictory": 2.9149985493859276e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_weight_capacity",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7192884087562561,
+      "non_compliant": 0.26463818550109863,
+      "insufficient_information": 0.015897123143076897,
+      "contradictory": 0.0001763533364282921
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_rapid_release_drop_sections",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8958341479301453,
+      "non_compliant": 0.10051881521940231,
+      "insufficient_information": 0.003440732602030039,
+      "contradictory": 0.00020634139946196228
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_adjustable_back_support",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9925200939178467,
+      "non_compliant": 0.007119183428585529,
+      "insufficient_information": 0.0003128786338493228,
+      "contradictory": 4.788686419487931e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_drop_section_size",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9321369528770447,
+      "non_compliant": 0.0634373128414154,
+      "insufficient_information": 0.004317885730415583,
+      "contradictory": 0.0001079303037840873
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_dropdown_cushion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8483961820602417,
+      "non_compliant": 0.13850955665111542,
+      "insufficient_information": 0.012886269949376583,
+      "contradictory": 0.00020803266670554876
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "delivery_timeframe_30_days_aro",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8007118701934814,
+      "non_compliant": 0.19019335508346558,
+      "insufficient_information": 0.008898312225937843,
+      "contradictory": 0.0001964075636351481
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "software_licensing_oem_terms_conformance",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9575135707855225,
+      "non_compliant": 0.04207606613636017,
+      "insufficient_information": 0.00036413001362234354,
+      "contradictory": 4.622979031410068e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "brand_name_required_unless_equal_indicated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.4322533905506134,
+      "non_compliant": 0.5216179490089417,
+      "insufficient_information": 0.04282958805561066,
+      "contradictory": 0.0032990556210279465
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "sam_uei_vendor_info",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8967514038085938,
+      "non_compliant": 0.10056782513856888,
+      "insufficient_information": 0.0025198375806212425,
+      "contradictory": 0.0001609100290806964
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "terms_concurrence_statement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9984062314033508,
+      "non_compliant": 0.0015002673026174307,
+      "insufficient_information": 4.534477920969948e-05,
+      "contradictory": 4.8215530114248395e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fob_destination_manufacturer_part_number",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8018196821212769,
+      "non_compliant": 0.19040164351463318,
+      "insufficient_information": 0.007387532386928797,
+      "contradictory": 0.0003911121457349509
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "authorized_distributor_letter",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.953882098197937,
+      "non_compliant": 0.04457954689860344,
+      "insufficient_information": 0.0014345605159178376,
+      "contradictory": 0.00010381620813859627
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "country_of_origin_disclosure",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9835756421089172,
+      "non_compliant": 0.015884561464190483,
+      "insufficient_information": 0.0004510961880441755,
+      "contradictory": 8.874042396200821e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "buy_american_certificate_completed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8201452493667603,
+      "non_compliant": 0.16148509085178375,
+      "insufficient_information": 0.018126903101801872,
+      "contradictory": 0.0002426492137601599
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "gray_market_verification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9911733269691467,
+      "non_compliant": 0.008569524623453617,
+      "insufficient_information": 0.0002147680352209136,
+      "contradictory": 4.2245192162226886e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "business_size_designation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8218890428543091,
+      "non_compliant": 0.17221751809120178,
+      "insufficient_information": 0.005539630074054003,
+      "contradictory": 0.0003538402961567044
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "fss_contract_listing",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5360819101333618,
+      "non_compliant": 0.2869417667388916,
+      "insufficient_information": 0.1741645187139511,
+      "contradictory": 0.0028117639012634754
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "or_equal_submission_requirements",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.899886429309845,
+      "non_compliant": 0.09483521431684494,
+      "insufficient_information": 0.005028335377573967,
+      "contradictory": 0.00025010554236359894
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "far_52_212_3_reps_and_certs",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7040119767189026,
+      "non_compliant": 0.2756834924221039,
+      "insufficient_information": 0.019981950521469116,
+      "contradictory": 0.0003225663094781339
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "nmr_certification_signed",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6730917096138,
+      "non_compliant": 0.29860687255859375,
+      "insufficient_information": 0.027792837470769882,
+      "contradictory": 0.000508572906255722
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_electric_locking_casters",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9250816702842712,
+      "non_compliant": 0.07132375985383987,
+      "insufficient_information": 0.003337593749165535,
+      "contradictory": 0.00025700998958200216
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_height_adjustment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8619145154953003,
+      "non_compliant": 0.13215215504169464,
+      "insufficient_information": 0.005457109771668911,
+      "contradictory": 0.00047624611761420965
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_hand_control_storage_loops",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9342467188835144,
+      "non_compliant": 0.06357337534427643,
+      "insufficient_information": 0.001920386916026473,
+      "contradictory": 0.00025952901341952384
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_surface_footprint",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8569968342781067,
+      "non_compliant": 0.1314302384853363,
+      "insufficient_information": 0.010791949927806854,
+      "contradictory": 0.0007809569360688329
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_ada_entry_height",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6913033127784729,
+      "non_compliant": 0.288218230009079,
+      "insufficient_information": 0.019617462530732155,
+      "contradictory": 0.0008610159275121987
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_trendelenburg_positioning",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9957380294799805,
+      "non_compliant": 0.004068298265337944,
+      "insufficient_information": 0.00013927777763456106,
+      "contradictory": 5.447261355584487e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_open_apical_window",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9796392917633057,
+      "non_compliant": 0.019099706783890724,
+      "insufficient_information": 0.0011474533239379525,
+      "contradictory": 0.00011346102110110223
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_patient_weight_capacity",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.5592261552810669,
+      "non_compliant": 0.3844197690486908,
+      "insufficient_information": 0.05540194734930992,
+      "contradictory": 0.0009521147003397346
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_rapid_release_drop_sections",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9896397590637207,
+      "non_compliant": 0.009698719717562199,
+      "insufficient_information": 0.0005828145076520741,
+      "contradictory": 7.876592280808836e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_adjustable_back_support",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.983235239982605,
+      "non_compliant": 0.01589006371796131,
+      "insufficient_information": 0.0007914546295069158,
+      "contradictory": 8.332377910846844e-05
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_drop_section_size",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8774034380912781,
+      "non_compliant": 0.11871601641178131,
+      "insufficient_information": 0.003586595645174384,
+      "contradictory": 0.0002940543636213988
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "salient_char_dropdown_cushion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8953248858451843,
+      "non_compliant": 0.09434027969837189,
+      "insufficient_information": 0.009949348866939545,
+      "contradictory": 0.0003853964153677225
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "delivery_timeframe_30_days_aro",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7945189476013184,
+      "non_compliant": 0.1887180358171463,
+      "insufficient_information": 0.01649676077067852,
+      "contradictory": 0.0002663621853571385
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "software_licensing_oem_terms_conformance",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7939808964729309,
+      "non_compliant": 0.2007410079240799,
+      "insufficient_information": 0.0050280895084142685,
+      "contradictory": 0.0002500637201592326
+    }
+  },
+  {
+    "case": "36C26226Q1367",
+    "topic_id": "brand_name_required_unless_equal_indicated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.24977493286132812,
+      "non_compliant": 0.5289067029953003,
+      "insufficient_information": 0.2072398066520691,
+      "contradictory": 0.014078550040721893
+    }
+  }
+]

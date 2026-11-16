@@ -1,0 +1,1058 @@
+[
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9980092644691467,
+      "non_compliant": 0.0019254796206951141,
+      "insufficient_information": 4.257047476130538e-05,
+      "contradictory": 2.2765523681300692e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5824211239814758,
+      "non_compliant": 0.4001223146915436,
+      "insufficient_information": 0.01652538776397705,
+      "contradictory": 0.000931159476749599
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9566122889518738,
+      "non_compliant": 0.04201417788863182,
+      "insufficient_information": 0.0012693742755800486,
+      "contradictory": 0.00010407562513137236
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "rov_technical_specifications",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.971846878528595,
+      "non_compliant": 0.027548884972929955,
+      "insufficient_information": 0.0005050105974078178,
+      "contradictory": 9.934143599821255e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_defect_capability_evidence",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.692564845085144,
+      "non_compliant": 0.2885938882827759,
+      "insufficient_information": 0.01845865696668625,
+      "contradictory": 0.00038270140066742897
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "references_cpars_requirement",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6851197481155396,
+      "non_compliant": 0.30395743250846863,
+      "insufficient_information": 0.010405216366052628,
+      "contradictory": 0.0005175909027457237
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "tool_ladder_access_safety_evidence",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8440659642219543,
+      "non_compliant": 0.1465952843427658,
+      "insufficient_information": 0.008810182102024555,
+      "contradictory": 0.0005284218350425363
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9995520710945129,
+      "non_compliant": 0.000430258980486542,
+      "insufficient_information": 6.96016832080204e-06,
+      "contradictory": 1.0767009371193126e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9849397540092468,
+      "non_compliant": 0.014944855123758316,
+      "insufficient_information": 7.84895455581136e-05,
+      "contradictory": 3.703117181430571e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_uei_eft_indicator_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9719238877296448,
+      "non_compliant": 0.02754843980073929,
+      "insufficient_information": 0.00047445204108953476,
+      "contradictory": 5.3168321755947545e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fascsa_representation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.4933270514011383,
+      "non_compliant": 0.4931727647781372,
+      "insufficient_information": 0.01315020676702261,
+      "contradictory": 0.0003500657039694488
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sudan_certification",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.3466486632823944,
+      "non_compliant": 0.6081646084785461,
+      "insufficient_information": 0.04408395662903786,
+      "contradictory": 0.001102675567381084
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "technical_standards_compliance_documentation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9073533415794373,
+      "non_compliant": 0.08979835361242294,
+      "insufficient_information": 0.0027134341653436422,
+      "contradictory": 0.00013492578000295907
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "inspection_cleaning_methodology",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9618210792541504,
+      "non_compliant": 0.03726810961961746,
+      "insufficient_information": 0.0008240510942414403,
+      "contradictory": 8.674804848851636e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "work_plans_operational_procedures",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9031899571418762,
+      "non_compliant": 0.09516647458076477,
+      "insufficient_information": 0.001538921264000237,
+      "contradictory": 0.000104611310234759
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "osha_10_30_certifications",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.6580798625946045,
+      "non_compliant": 0.33075252175331116,
+      "insufficient_information": 0.010638757608830929,
+      "contradictory": 0.0005289012333378196
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nh_water_operator_license_copy",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6909277439117432,
+      "non_compliant": 0.30639973282814026,
+      "insufficient_information": 0.0024923118762671947,
+      "contradictory": 0.0001803077757358551
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nhdes_standing_documentation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9753782749176025,
+      "non_compliant": 0.024396702647209167,
+      "insufficient_information": 0.00016455809236504138,
+      "contradictory": 6.046945782145485e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_water_tower_contracts",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7754968404769897,
+      "non_compliant": 0.2219938039779663,
+      "insufficient_information": 0.0023191580548882484,
+      "contradictory": 0.00019012641860172153
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_hospital_high_risk_environment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6509292721748352,
+      "non_compliant": 0.32710185647010803,
+      "insufficient_information": 0.02092803828418255,
+      "contradictory": 0.0010408571688458323
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_quality_records",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9682336449623108,
+      "non_compliant": 0.031103406101465225,
+      "insufficient_information": 0.0005701070185750723,
+      "contradictory": 9.295742347603664e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "coating_integrity_training_evidence",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5977325439453125,
+      "non_compliant": 0.38567864894866943,
+      "insufficient_information": 0.015931887552142143,
+      "contradictory": 0.0006569319521076977
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "healthcare_environmental_sanitation_training",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9320452809333801,
+      "non_compliant": 0.06745792180299759,
+      "insufficient_information": 0.00040154429734684527,
+      "contradictory": 9.527404472464696e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_water_tower_inspection_experience",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.7025709748268127,
+      "non_compliant": 0.29271432757377625,
+      "insufficient_information": 0.004447863437235355,
+      "contradictory": 0.00026686591445468366
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sds_management_procedures",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8416967391967773,
+      "non_compliant": 0.15564420819282532,
+      "insufficient_information": 0.0025171509478241205,
+      "contradictory": 0.0001418633764842525
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hospital_infection_control_compliance_documentation",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7232391834259033,
+      "non_compliant": 0.2659892141819,
+      "insufficient_information": 0.010318676941096783,
+      "contradictory": 0.0004529336583800614
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hazard_communication_methodology",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8258166313171387,
+      "non_compliant": 0.17304842174053192,
+      "insufficient_information": 0.0009671311127021909,
+      "contradictory": 0.0001678808475844562
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_certification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7160797715187073,
+      "non_compliant": 0.2802315950393677,
+      "insufficient_information": 0.0033169107045978308,
+      "contradictory": 0.00037176039768382907
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.726265549659729,
+      "non_compliant": 0.2671169936656952,
+      "insufficient_information": 0.006284771021455526,
+      "contradictory": 0.0003327079175505787
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_plan",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6770588755607605,
+      "non_compliant": 0.3195919096469879,
+      "insufficient_information": 0.00313606858253479,
+      "contradictory": 0.000213159917620942
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "lockout_tagout_procedures",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6757639646530151,
+      "non_compliant": 0.3191309869289398,
+      "insufficient_information": 0.004848429001867771,
+      "contradictory": 0.000256693281698972
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_plan",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8331602215766907,
+      "non_compliant": 0.16401799023151398,
+      "insufficient_information": 0.0026524036657065153,
+      "contradictory": 0.00016938988119363785
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9723942875862122,
+      "non_compliant": 0.025907400995492935,
+      "insufficient_information": 0.0016568365972489119,
+      "contradictory": 4.1447881812928244e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6751218438148499,
+      "non_compliant": 0.2332971692085266,
+      "insufficient_information": 0.09139342606067657,
+      "contradictory": 0.0001876105525298044
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.865602970123291,
+      "non_compliant": 0.12467243522405624,
+      "insufficient_information": 0.009617723524570465,
+      "contradictory": 0.00010675261000869796
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "rov_technical_specifications",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6188720464706421,
+      "non_compliant": 0.21383321285247803,
+      "insufficient_information": 0.1666148155927658,
+      "contradictory": 0.0006800107657909393
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_defect_capability_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6061215400695801,
+      "non_compliant": 0.30473169684410095,
+      "insufficient_information": 0.08733624219894409,
+      "contradictory": 0.0018105189083144069
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "references_cpars_requirement",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.5217879414558411,
+      "non_compliant": 0.29725533723831177,
+      "insufficient_information": 0.18038322031497955,
+      "contradictory": 0.0005734318983741105
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "tool_ladder_access_safety_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7897089719772339,
+      "non_compliant": 0.16546538472175598,
+      "insufficient_information": 0.04456108435988426,
+      "contradictory": 0.0002645598433446139
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9223976731300354,
+      "non_compliant": 0.07570764422416687,
+      "insufficient_information": 0.001781040453352034,
+      "contradictory": 0.00011373439338058233
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7337107062339783,
+      "non_compliant": 0.2535123825073242,
+      "insufficient_information": 0.012627705931663513,
+      "contradictory": 0.0001491773291490972
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_uei_eft_indicator_stated",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6857138872146606,
+      "non_compliant": 0.2857881188392639,
+      "insufficient_information": 0.028307542204856873,
+      "contradictory": 0.00019056780729442835
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fascsa_representation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6330617070198059,
+      "non_compliant": 0.33878564834594727,
+      "insufficient_information": 0.02782391756772995,
+      "contradictory": 0.00032876417390070856
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sudan_certification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5611280798912048,
+      "non_compliant": 0.36228808760643005,
+      "insufficient_information": 0.07596693933010101,
+      "contradictory": 0.0006168538820929825
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "technical_standards_compliance_documentation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5524783730506897,
+      "non_compliant": 0.35662248730659485,
+      "insufficient_information": 0.09021111577749252,
+      "contradictory": 0.000688054773490876
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "inspection_cleaning_methodology",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5262641906738281,
+      "non_compliant": 0.33978432416915894,
+      "insufficient_information": 0.1331099271774292,
+      "contradictory": 0.0008416259661316872
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "work_plans_operational_procedures",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5628573894500732,
+      "non_compliant": 0.28299763798713684,
+      "insufficient_information": 0.15154042840003967,
+      "contradictory": 0.002604444744065404
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "osha_10_30_certifications",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.46200454235076904,
+      "non_compliant": 0.4338698983192444,
+      "insufficient_information": 0.10311625152826309,
+      "contradictory": 0.0010093286400660872
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nh_water_operator_license_copy",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6240419149398804,
+      "non_compliant": 0.31365272402763367,
+      "insufficient_information": 0.06180384010076523,
+      "contradictory": 0.0005014874041080475
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nhdes_standing_documentation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7783010601997375,
+      "non_compliant": 0.18476611375808716,
+      "insufficient_information": 0.03641391545534134,
+      "contradictory": 0.0005189016810618341
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_water_tower_contracts",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5917698740959167,
+      "non_compliant": 0.38196972012519836,
+      "insufficient_information": 0.026005761697888374,
+      "contradictory": 0.0002546676842030138
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_hospital_high_risk_environment",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5144901871681213,
+      "non_compliant": 0.29309847950935364,
+      "insufficient_information": 0.18935413658618927,
+      "contradictory": 0.003057240741327405
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_quality_records",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5620043873786926,
+      "non_compliant": 0.2654523253440857,
+      "insufficient_information": 0.17145921289920807,
+      "contradictory": 0.001084106625057757
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "coating_integrity_training_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.4792517125606537,
+      "non_compliant": 0.35037267208099365,
+      "insufficient_information": 0.16568057239055634,
+      "contradictory": 0.00469506811350584
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "healthcare_environmental_sanitation_training",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6690098643302917,
+      "non_compliant": 0.2788486182689667,
+      "insufficient_information": 0.05160365626215935,
+      "contradictory": 0.0005379042122513056
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_water_tower_inspection_experience",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5554328560829163,
+      "non_compliant": 0.35857611894607544,
+      "insufficient_information": 0.08520698547363281,
+      "contradictory": 0.0007840125472284853
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sds_management_procedures",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6896329522132874,
+      "non_compliant": 0.2102712243795395,
+      "insufficient_information": 0.09938383102416992,
+      "contradictory": 0.0007121178205125034
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hospital_infection_control_compliance_documentation",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.368341326713562,
+      "non_compliant": 0.444294273853302,
+      "insufficient_information": 0.18530799448490143,
+      "contradictory": 0.002056364668533206
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hazard_communication_methodology",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5614637136459351,
+      "non_compliant": 0.31989774107933044,
+      "insufficient_information": 0.11774038523435593,
+      "contradictory": 0.000898132799193263
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_certification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7240330576896667,
+      "non_compliant": 0.18303942680358887,
+      "insufficient_information": 0.09208033233880997,
+      "contradictory": 0.0008471719920635223
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.6988961696624756,
+      "non_compliant": 0.22686073184013367,
+      "insufficient_information": 0.07368124276399612,
+      "contradictory": 0.0005619561998173594
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_plan",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5877079367637634,
+      "non_compliant": 0.2954425811767578,
+      "insufficient_information": 0.11578439921140671,
+      "contradictory": 0.0010650508338585496
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "lockout_tagout_procedures",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7512314915657043,
+      "non_compliant": 0.17839908599853516,
+      "insufficient_information": 0.06989887356758118,
+      "contradictory": 0.0004704712191596627
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_plan",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8169519305229187,
+      "non_compliant": 0.15108631551265717,
+      "insufficient_information": 0.0316879041492939,
+      "contradictory": 0.0002738786570262164
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9890034794807434,
+      "non_compliant": 0.010318933054804802,
+      "insufficient_information": 0.0006199672934599221,
+      "contradictory": 5.7617788115749136e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7561638951301575,
+      "non_compliant": 0.20350827276706696,
+      "insufficient_information": 0.040089741349220276,
+      "contradictory": 0.00023804474039934576
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "price_schedule_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9716532230377197,
+      "non_compliant": 0.025887804105877876,
+      "insufficient_information": 0.0024089838843792677,
+      "contradictory": 4.993472248315811e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "rov_technical_specifications",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9819621443748474,
+      "non_compliant": 0.016884123906493187,
+      "insufficient_information": 0.0010803380282595754,
+      "contradictory": 7.339141302509233e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_defect_capability_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8638017773628235,
+      "non_compliant": 0.10978049784898758,
+      "insufficient_information": 0.026089578866958618,
+      "contradictory": 0.00032808625837787986
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "references_cpars_requirement",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6857360601425171,
+      "non_compliant": 0.23692619800567627,
+      "insufficient_information": 0.07695873826742172,
+      "contradictory": 0.00037893871194683015
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "tool_ladder_access_safety_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8973830938339233,
+      "non_compliant": 0.08879434317350388,
+      "insufficient_information": 0.013628615066409111,
+      "contradictory": 0.00019398248696234077
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9882408380508423,
+      "non_compliant": 0.010973465628921986,
+      "insufficient_information": 0.0007019920158199966,
+      "contradictory": 8.374414028367028e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7837343811988831,
+      "non_compliant": 0.21086683869361877,
+      "insufficient_information": 0.005282231606543064,
+      "contradictory": 0.00011654198169708252
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "offer_uei_eft_indicator_stated",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.7965403199195862,
+      "non_compliant": 0.17767523229122162,
+      "insufficient_information": 0.0256121214479208,
+      "contradictory": 0.00017237442079931498
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fascsa_representation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.563014030456543,
+      "non_compliant": 0.41181638836860657,
+      "insufficient_information": 0.02474423497915268,
+      "contradictory": 0.00042538525303825736
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sudan_certification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.490558385848999,
+      "non_compliant": 0.4329633414745331,
+      "insufficient_information": 0.07526271790266037,
+      "contradictory": 0.0012155297445133328
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "technical_standards_compliance_documentation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8736447095870972,
+      "non_compliant": 0.10427751392126083,
+      "insufficient_information": 0.02187664993107319,
+      "contradictory": 0.00020121736451983452
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "inspection_cleaning_methodology",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9746142029762268,
+      "non_compliant": 0.0229126438498497,
+      "insufficient_information": 0.0024163248017430305,
+      "contradictory": 5.6729586503934115e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "work_plans_operational_procedures",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8981894254684448,
+      "non_compliant": 0.08889887481927872,
+      "insufficient_information": 0.012814061716198921,
+      "contradictory": 9.765758295543492e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "osha_10_30_certifications",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7475737929344177,
+      "non_compliant": 0.20115073025226593,
+      "insufficient_information": 0.050887882709503174,
+      "contradictory": 0.0003875715774483979
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nh_water_operator_license_copy",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.72332763671875,
+      "non_compliant": 0.22050698101520538,
+      "insufficient_information": 0.05578991398215294,
+      "contradictory": 0.0003754057688638568
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "nhdes_standing_documentation",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.7219223380088806,
+      "non_compliant": 0.23428671061992645,
+      "insufficient_information": 0.043366383761167526,
+      "contradictory": 0.00042449033935554326
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_water_tower_contracts",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8802371621131897,
+      "non_compliant": 0.11185048520565033,
+      "insufficient_information": 0.0076174610294401646,
+      "contradictory": 0.000294964702334255
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_hospital_high_risk_environment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.777894914150238,
+      "non_compliant": 0.19657573103904724,
+      "insufficient_information": 0.02501087449491024,
+      "contradictory": 0.0005184806068427861
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "past_performance_quality_records",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9052281379699707,
+      "non_compliant": 0.07905888557434082,
+      "insufficient_information": 0.015578489750623703,
+      "contradictory": 0.00013453018618747592
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "coating_integrity_training_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6727217435836792,
+      "non_compliant": 0.19263364374637604,
+      "insufficient_information": 0.1325051635503769,
+      "contradictory": 0.002139427699148655
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "healthcare_environmental_sanitation_training",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8545271754264832,
+      "non_compliant": 0.13944479823112488,
+      "insufficient_information": 0.005758966784924269,
+      "contradictory": 0.00026903674006462097
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "structural_water_tower_inspection_experience",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7146714329719543,
+      "non_compliant": 0.24686798453330994,
+      "insufficient_information": 0.03788595274090767,
+      "contradictory": 0.0005746437818743289
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "sds_management_procedures",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9837315082550049,
+      "non_compliant": 0.014926095493137836,
+      "insufficient_information": 0.0013054920127615333,
+      "contradictory": 3.6957608244847506e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hospital_infection_control_compliance_documentation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8435277938842773,
+      "non_compliant": 0.1376488208770752,
+      "insufficient_information": 0.018641039729118347,
+      "contradictory": 0.00018237529729958624
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "hazard_communication_methodology",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9919963479042053,
+      "non_compliant": 0.007571255788207054,
+      "insufficient_information": 0.0004014723817817867,
+      "contradictory": 3.0901297577656806e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_certification",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5967482924461365,
+      "non_compliant": 0.24875269830226898,
+      "insufficient_information": 0.1509547084569931,
+      "contradictory": 0.0035442758817225695
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_stairways_ladders_lockout_certifications",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5427882671356201,
+      "non_compliant": 0.29050925374031067,
+      "insufficient_information": 0.1655881106853485,
+      "contradictory": 0.0011143224546685815
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "confined_space_entry_plan",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9229620099067688,
+      "non_compliant": 0.07113373279571533,
+      "insufficient_information": 0.005843379534780979,
+      "contradictory": 6.0864938859594986e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "lockout_tagout_procedures",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9391945004463196,
+      "non_compliant": 0.05637558549642563,
+      "insufficient_information": 0.004350511357188225,
+      "contradictory": 7.951387669891119e-05
+    }
+  },
+  {
+    "case": "36C24126Q0704",
+    "topic_id": "fall_protection_plan",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9348894953727722,
+      "non_compliant": 0.05973927304148674,
+      "insufficient_information": 0.005223316140472889,
+      "contradictory": 0.00014790271234232932
+    }
+  }
+]

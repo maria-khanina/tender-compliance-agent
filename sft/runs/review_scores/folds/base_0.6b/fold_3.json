@@ -1,0 +1,1157 @@
+[
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9992997646331787,
+      "non_compliant": 0.0006662909290753305,
+      "insufficient_information": 2.0135137674515136e-05,
+      "contradictory": 1.3827846487401985e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9998750686645508,
+      "non_compliant": 0.00011585022002691403,
+      "insufficient_information": 2.561354676799965e-06,
+      "contradictory": 6.533865416713525e-06
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "uei_eft_indicator_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9959543943405151,
+      "non_compliant": 0.003821498481556773,
+      "insufficient_information": 0.00017886619025375694,
+      "contradictory": 4.518573769018985e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9998546838760376,
+      "non_compliant": 0.0001313041284447536,
+      "insufficient_information": 7.411176284222165e-06,
+      "contradictory": 6.535900865856092e-06
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "signed_dated_offer_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8057791590690613,
+      "non_compliant": 0.1912083476781845,
+      "insufficient_information": 0.0029067585710436106,
+      "contradictory": 0.0001057718982337974
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sf1449_section1_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.998354971408844,
+      "non_compliant": 0.0015004049055278301,
+      "insufficient_information": 0.00012322371185291559,
+      "contradictory": 2.1384745195973665e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "project_manager_english_liaison",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9989114999771118,
+      "non_compliant": 0.0010316926054656506,
+      "insufficient_information": 3.5323057090863585e-05,
+      "contradictory": 2.1404624931165017e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "estonia_business_registration_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9984159469604492,
+      "non_compliant": 0.0014999929117038846,
+      "insufficient_information": 5.821076047141105e-05,
+      "contradictory": 2.5805162295000628e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sam_registration_proof",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9700760245323181,
+      "non_compliant": 0.029274988919496536,
+      "insufficient_information": 0.0005366310942918062,
+      "contradictory": 0.00011235876445425674
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "past_performance_references",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.580859899520874,
+      "non_compliant": 0.3108520209789276,
+      "insufficient_information": 0.10746835917234421,
+      "contradictory": 0.000819676963146776
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "capability_evidence_personnel_equipment_financial",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9920392036437988,
+      "non_compliant": 0.007568016182631254,
+      "insufficient_information": 0.00037714597419835627,
+      "contradictory": 1.5551953765680082e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "local_license_permit_conditional",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.7836962342262268,
+      "non_compliant": 0.21087266504764557,
+      "insufficient_information": 0.005281450692564249,
+      "contradictory": 0.0001497026823926717
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "menu_plan_sample_20day",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7517688274383545,
+      "non_compliant": 0.24393238127231598,
+      "insufficient_information": 0.00420009158551693,
+      "contradictory": 9.8688731668517e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "risk_management_plan_with_proposal",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7379128336906433,
+      "non_compliant": 0.21136677265167236,
+      "insufficient_information": 0.050228435546159744,
+      "contradictory": 0.0004919444327242672
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999274015426636,
+      "non_compliant": 5.826319829793647e-05,
+      "insufficient_information": 4.7856005949142855e-06,
+      "contradictory": 9.504024092166219e-06
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9999557733535767,
+      "non_compliant": 3.761653715628199e-05,
+      "insufficient_information": 8.852367159306596e-07,
+      "contradictory": 5.7648326219350565e-06
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "uei_eft_indicator_stated",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.8469544649124146,
+      "non_compliant": 0.14714184403419495,
+      "insufficient_information": 0.005708563141524792,
+      "contradictory": 0.00019515010353643447
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9988754391670227,
+      "non_compliant": 0.0009107817895710468,
+      "insufficient_information": 0.00019096049072686583,
+      "contradictory": 2.27875862037763e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "signed_dated_offer_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9971479773521423,
+      "non_compliant": 0.002799528418108821,
+      "insufficient_information": 3.112012564088218e-05,
+      "contradictory": 2.1374091375037096e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sf1449_section1_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9982946515083313,
+      "non_compliant": 0.0015001854626461864,
+      "insufficient_information": 0.00017928305896930397,
+      "contradictory": 2.5810148144955747e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "project_manager_english_liaison",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9863720536231995,
+      "non_compliant": 0.01321426685899496,
+      "insufficient_information": 0.0002920698607340455,
+      "contradictory": 0.00012160290498286486
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "estonia_business_registration_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9899731874465942,
+      "non_compliant": 0.009113269858062267,
+      "insufficient_information": 0.0008481658878736198,
+      "contradictory": 6.535228021675721e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sam_registration_proof",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9884938597679138,
+      "non_compliant": 0.010978913865983486,
+      "insufficient_information": 0.0004533371247816831,
+      "contradictory": 7.393400301225483e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "past_performance_references",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.4536192715167999,
+      "non_compliant": 0.3532958924770355,
+      "insufficient_information": 0.18916194140911102,
+      "contradictory": 0.003922914154827595
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "capability_evidence_personnel_equipment_financial",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.8905810117721558,
+      "non_compliant": 0.09382949024438858,
+      "insufficient_information": 0.015326068736612797,
+      "contradictory": 0.00026342913042753935
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "local_license_permit_conditional",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.6755015850067139,
+      "non_compliant": 0.2997571527957916,
+      "insufficient_information": 0.02461227774620056,
+      "contradictory": 0.0001290123036596924
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "menu_plan_sample_20day",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.21617840230464935,
+      "non_compliant": 0.5521951913833618,
+      "insufficient_information": 0.2302590310573578,
+      "contradictory": 0.001367327757179737
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "risk_management_plan_with_proposal",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9686582088470459,
+      "non_compliant": 0.02581012435257435,
+      "insufficient_information": 0.00541217066347599,
+      "contradictory": 0.00011949359759455547
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "solicitation_number_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9702489972114563,
+      "non_compliant": 0.02929462306201458,
+      "insufficient_information": 0.0003689055738504976,
+      "contradictory": 8.755559247219935e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "offeror_contact_info_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9993933439254761,
+      "non_compliant": 0.000588230905123055,
+      "insufficient_information": 8.395065378863364e-06,
+      "contradictory": 1.0117172678292263e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "uei_eft_indicator_stated",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9227849245071411,
+      "non_compliant": 0.07573871314525604,
+      "insufficient_information": 0.0013877585297450423,
+      "contradictory": 8.86347406776622e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "statement_of_agreement_with_terms",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.995094895362854,
+      "non_compliant": 0.004328833427280188,
+      "insufficient_information": 0.0005505068693310022,
+      "contradictory": 2.5729679691721685e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "signed_dated_offer_submission",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8975573778152466,
+      "non_compliant": 0.10068893432617188,
+      "insufficient_information": 0.0016281339339911938,
+      "contradictory": 0.00012546921789180487
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sf1449_section1_completion",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9934432506561279,
+      "non_compliant": 0.006285526789724827,
+      "insufficient_information": 0.00024386464792769402,
+      "contradictory": 2.734301597229205e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "project_manager_english_liaison",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9223651885986328,
+      "non_compliant": 0.07571277767419815,
+      "insufficient_information": 0.0015718152280896902,
+      "contradictory": 0.0003502040053717792
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "estonia_business_registration_evidence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9861714243888855,
+      "non_compliant": 0.01320913527160883,
+      "insufficient_information": 0.0005455452483147383,
+      "contradictory": 7.37723967176862e-05
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "sam_registration_proof",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.3974058926105499,
+      "non_compliant": 0.47937580943107605,
+      "insufficient_information": 0.12125953286886215,
+      "contradictory": 0.0019587220158427954
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "past_performance_references",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.43121814727783203,
+      "non_compliant": 0.3805668354034424,
+      "insufficient_information": 0.1798119693994522,
+      "contradictory": 0.008403070271015167
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "capability_evidence_personnel_equipment_financial",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.5491088032722473,
+      "non_compliant": 0.2593193054199219,
+      "insufficient_information": 0.18982484936714172,
+      "contradictory": 0.0017471297178417444
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "local_license_permit_conditional",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6752291321754456,
+      "non_compliant": 0.2996242642402649,
+      "insufficient_information": 0.024603523313999176,
+      "contradictory": 0.0005430890596471727
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "menu_plan_sample_20day",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8490622043609619,
+      "non_compliant": 0.14753419160842896,
+      "insufficient_information": 0.0032605056185275316,
+      "contradictory": 0.00014312416897155344
+    }
+  },
+  {
+    "case": "19EN1026Q0383",
+    "topic_id": "risk_management_plan_with_proposal",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.6695384979248047,
+      "non_compliant": 0.3162350058555603,
+      "insufficient_information": 0.013899831101298332,
+      "contradictory": 0.0003266895073466003
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "delivery_frequency_compliance",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.24706198275089264,
+      "non_compliant": 0.5568711161613464,
+      "insufficient_information": 0.1925431340932846,
+      "contradictory": 0.0035237197298556566
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "geographic_facility_or_resources_presence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.282344251871109,
+      "non_compliant": 0.5979759693145752,
+      "insufficient_information": 0.11777810007333755,
+      "contradictory": 0.0019017423037439585
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_replacement_cost_in_proposal",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.34067240357398987,
+      "non_compliant": 0.4958409368991852,
+      "insufficient_information": 0.16104353964328766,
+      "contradictory": 0.002443028148263693
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_delivery",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.14932627975940704,
+      "non_compliant": 0.7585902810096741,
+      "insufficient_information": 0.09062056243419647,
+      "contradictory": 0.0014628603821620345
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_facility",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.1060343086719513,
+      "non_compliant": 0.6915162801742554,
+      "insufficient_information": 0.18619614839553833,
+      "contradictory": 0.01625322923064232
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "reporting_capabilities_proposal",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.3807387948036194,
+      "non_compliant": 0.5205293297767639,
+      "insufficient_information": 0.09632369130849838,
+      "contradictory": 0.0024081256706267595
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "difficult_to_fill_items_flagged",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.4852151870727539,
+      "non_compliant": 0.45581749081611633,
+      "insufficient_information": 0.057971253991127014,
+      "contradictory": 0.0009960322640836239
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "project_management_plan_submitted",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.28480076789855957,
+      "non_compliant": 0.6418329477310181,
+      "insufficient_information": 0.07204806804656982,
+      "contradictory": 0.0013181875692680478
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "quote_identification_and_solicitation_number",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9962061643600464,
+      "non_compliant": 0.0035906743723899126,
+      "insufficient_information": 0.00017891242168843746,
+      "contradictory": 2.4180766558856703e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_schedule_attachment_c_completed",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5189969539642334,
+      "non_compliant": 0.4580044746398926,
+      "insufficient_information": 0.022813359275460243,
+      "contradictory": 0.00018517770513426512
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_firm_90_days",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6807417869567871,
+      "non_compliant": 0.3020629286766052,
+      "insufficient_information": 0.017047954723238945,
+      "contradictory": 0.00014731095870956779
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sf1449_completed",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.5260147452354431,
+      "non_compliant": 0.29979708790779114,
+      "insufficient_information": 0.17086125910282135,
+      "contradictory": 0.0033269210252910852
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6270849704742432,
+      "non_compliant": 0.20364566147327423,
+      "insufficient_information": 0.1688764989376068,
+      "contradictory": 0.0003928100340999663
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_operational_capability_narrative",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5327187180519104,
+      "non_compliant": 0.3897118866443634,
+      "insufficient_information": 0.07676912099123001,
+      "contradictory": 0.0008003176772035658
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_continuity_of_operations",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.0691617801785469,
+      "non_compliant": 0.698854386806488,
+      "insufficient_information": 0.2269752472639084,
+      "contradictory": 0.0050086104311048985
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_cylinder_management_innovation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.2087063193321228,
+      "non_compliant": 0.6040084958076477,
+      "insufficient_information": 0.1843109428882599,
+      "contradictory": 0.002974254311993718
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "past_performance_reference_provided",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.3012649416923523,
+      "non_compliant": 0.3012953996658325,
+      "insufficient_information": 0.3871322572231293,
+      "contradictory": 0.010307342745363712
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "phase_in_strategy_submitted",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.4859764277935028,
+      "non_compliant": 0.4859541952610016,
+      "insufficient_information": 0.027425231412053108,
+      "contradictory": 0.0006442013545893133
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5722400546073914,
+      "non_compliant": 0.306392103433609,
+      "insufficient_information": 0.12003637105226517,
+      "contradictory": 0.0013314683455973864
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "subcontracting_limitations_breakdown",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6183062791824341,
+      "non_compliant": 0.35232383012771606,
+      "insufficient_information": 0.028931202366948128,
+      "contradictory": 0.00043860473670065403
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "vaar_852_219_76_certificate_submitted",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5917301774024963,
+      "non_compliant": 0.3589394688606262,
+      "insufficient_information": 0.04859376326203346,
+      "contradictory": 0.0007366086356341839
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "delivery_frequency_compliance",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6165148615837097,
+      "non_compliant": 0.3739266097545624,
+      "insufficient_information": 0.009364444762468338,
+      "contradictory": 0.0001941235241247341
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "geographic_facility_or_resources_presence",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7221001386642456,
+      "non_compliant": 0.2495349645614624,
+      "insufficient_information": 0.028012536466121674,
+      "contradictory": 0.00035229502827860415
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_replacement_cost_in_proposal",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9491181373596191,
+      "non_compliant": 0.05029422417283058,
+      "insufficient_information": 0.0005250986432656646,
+      "contradictory": 6.259087967919186e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_delivery",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.46798479557037354,
+      "non_compliant": 0.46803566813468933,
+      "insufficient_information": 0.06335889548063278,
+      "contradictory": 0.0006206821417436004
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_facility",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6258533596992493,
+      "non_compliant": 0.3147030472755432,
+      "insufficient_information": 0.058235861361026764,
+      "contradictory": 0.0012076420243829489
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "reporting_capabilities_proposal",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9241543412208557,
+      "non_compliant": 0.0712108165025711,
+      "insufficient_information": 0.0045565771870315075,
+      "contradictory": 7.833955169189721e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "difficult_to_fill_items_flagged",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6255623698234558,
+      "non_compliant": 0.3563408851623535,
+      "insufficient_information": 0.017751120030879974,
+      "contradictory": 0.000345660955645144
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "project_management_plan_submitted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8752071857452393,
+      "non_compliant": 0.1184123083949089,
+      "insufficient_information": 0.006279046647250652,
+      "contradictory": 0.00010140425729332492
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "quote_identification_and_solicitation_number",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7705579996109009,
+      "non_compliant": 0.22063598036766052,
+      "insufficient_information": 0.008563457056879997,
+      "contradictory": 0.0002426080172881484
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_schedule_attachment_c_completed",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6807188987731934,
+      "non_compliant": 0.30203089118003845,
+      "insufficient_information": 0.01704881154000759,
+      "contradictory": 0.0002013956691371277
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_firm_90_days",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.9092475771903992,
+      "non_compliant": 0.09002839028835297,
+      "insufficient_information": 0.0006876086117699742,
+      "contradictory": 3.639440910774283e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sf1449_completed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.9882016777992249,
+      "non_compliant": 0.0116834482178092,
+      "insufficient_information": 8.924558642320335e-05,
+      "contradictory": 2.552679507061839e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7747980952262878,
+      "non_compliant": 0.2220083624124527,
+      "insufficient_information": 0.0031678604427725077,
+      "contradictory": 2.567704905231949e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_operational_capability_narrative",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8472697138786316,
+      "non_compliant": 0.14721345901489258,
+      "insufficient_information": 0.0053648073226213455,
+      "contradictory": 0.00015202017675619572
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_continuity_of_operations",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6629655361175537,
+      "non_compliant": 0.2941364347934723,
+      "insufficient_information": 0.04239700734615326,
+      "contradictory": 0.0005009446758776903
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_cylinder_management_innovation",
+    "true_verdict": "insufficient_information",
+    "verdict_probabilities": {
+      "compliant": 0.9564683437347412,
+      "non_compliant": 0.03946084901690483,
+      "insufficient_information": 0.003909717313945293,
+      "contradictory": 0.00016116230108309537
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "past_performance_reference_provided",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8201934695243835,
+      "non_compliant": 0.16148996353149414,
+      "insufficient_information": 0.018127694725990295,
+      "contradictory": 0.0001889374980237335
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "phase_in_strategy_submitted",
+    "true_verdict": "non_compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5907196402549744,
+      "non_compliant": 0.38131654262542725,
+      "insufficient_information": 0.027637390419840813,
+      "contradictory": 0.0003264480910729617
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6785248517990112,
+      "non_compliant": 0.28283071517944336,
+      "insufficient_information": 0.03829238563776016,
+      "contradictory": 0.0003520766331348568
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "subcontracting_limitations_breakdown",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8438447713851929,
+      "non_compliant": 0.14661698043346405,
+      "insufficient_information": 0.00937705859541893,
+      "contradictory": 0.00016113484161905944
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "vaar_852_219_76_certificate_submitted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.7019550204277039,
+      "non_compliant": 0.2925570011138916,
+      "insufficient_information": 0.005362130701541901,
+      "contradictory": 0.00012592639541253448
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "delivery_frequency_compliance",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.281755268573761,
+      "non_compliant": 0.635037362575531,
+      "insufficient_information": 0.08077152073383331,
+      "contradictory": 0.0024357831571251154
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "geographic_facility_or_resources_presence",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.41443881392478943,
+      "non_compliant": 0.44122588634490967,
+      "insufficient_information": 0.14330901205539703,
+      "contradictory": 0.0010262805735692382
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_replacement_cost_in_proposal",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5235603451728821,
+      "non_compliant": 0.4620060324668884,
+      "insufficient_information": 0.013956562615931034,
+      "contradictory": 0.00047711574006825686
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_delivery",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.19082221388816833,
+      "non_compliant": 0.6258406639099121,
+      "insufficient_information": 0.17937920987606049,
+      "contradictory": 0.0039579118601977825
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "cylinder_tracking_plan_facility",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.2791527211666107,
+      "non_compliant": 0.5910903215408325,
+      "insufficient_information": 0.12396521866321564,
+      "contradictory": 0.005791740491986275
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "reporting_capabilities_proposal",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8097293376922607,
+      "non_compliant": 0.16968673467636108,
+      "insufficient_information": 0.020276399329304695,
+      "contradictory": 0.00030751110170967877
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "difficult_to_fill_items_flagged",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.48937785625457764,
+      "non_compliant": 0.40573325753211975,
+      "insufficient_information": 0.10262437909841537,
+      "contradictory": 0.002264506183564663
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "project_management_plan_submitted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5873523950576782,
+      "non_compliant": 0.379212349653244,
+      "insufficient_information": 0.03314898908138275,
+      "contradictory": 0.00028624842525459826
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "quote_identification_and_solicitation_number",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.8792936205863953,
+      "non_compliant": 0.11895383894443512,
+      "insufficient_information": 0.0016979281790554523,
+      "contradictory": 5.450200114864856e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_schedule_attachment_c_completed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5385869145393372,
+      "non_compliant": 0.4194023013114929,
+      "insufficient_information": 0.04154990240931511,
+      "contradictory": 0.00046086517977528274
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "price_firm_90_days",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.42159366607666016,
+      "non_compliant": 0.5083732008934021,
+      "insufficient_information": 0.06885045766830444,
+      "contradictory": 0.0011826349655166268
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sf1449_completed",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.19873572885990143,
+      "non_compliant": 0.6518381834030151,
+      "insufficient_information": 0.13672395050525665,
+      "contradictory": 0.012702157720923424
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "amendment_acknowledgment",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6213904619216919,
+      "non_compliant": 0.29354703426361084,
+      "insufficient_information": 0.08412910252809525,
+      "contradictory": 0.0009333500638604164
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_operational_capability_narrative",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.34196797013282776,
+      "non_compliant": 0.38752487301826477,
+      "insufficient_information": 0.2664666771888733,
+      "contradictory": 0.004040576983243227
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_continuity_of_operations",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.47289708256721497,
+      "non_compliant": 0.47285017371177673,
+      "insufficient_information": 0.05308147147297859,
+      "contradictory": 0.0011712337145581841
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "technical_cylinder_management_innovation",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6305311322212219,
+      "non_compliant": 0.31695908308029175,
+      "insufficient_information": 0.051772650331258774,
+      "contradictory": 0.0007372136460617185
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "past_performance_reference_provided",
+    "true_verdict": "contradictory",
+    "verdict_probabilities": {
+      "compliant": 0.30876287817955017,
+      "non_compliant": 0.5418781042098999,
+      "insufficient_information": 0.14593160152435303,
+      "contradictory": 0.0034273641649633646
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "phase_in_strategy_submitted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.713222324848175,
+      "non_compliant": 0.2792384922504425,
+      "insufficient_information": 0.0074456133879721165,
+      "contradictory": 9.361816773889586e-05
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "sdvosb_subcontractor_disclosure_if_electing_credit",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.40188726782798767,
+      "non_compliant": 0.4556194841861725,
+      "insufficient_information": 0.13901998102664948,
+      "contradictory": 0.003473247867077589
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "subcontracting_limitations_breakdown",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.6406862139701843,
+      "non_compliant": 0.3429136574268341,
+      "insufficient_information": 0.016046058386564255,
+      "contradictory": 0.00035400563501752913
+    }
+  },
+  {
+    "case": "36C26326Q0197",
+    "topic_id": "vaar_852_219_76_certificate_submitted",
+    "true_verdict": "compliant",
+    "verdict_probabilities": {
+      "compliant": 0.5542548894882202,
+      "non_compliant": 0.431590735912323,
+      "insufficient_information": 0.013884262181818485,
+      "contradictory": 0.0002701471094042063
+    }
+  }
+]
